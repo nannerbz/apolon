@@ -1,0 +1,37 @@
+{
+	"type": "StatusEffect",
+	"name": "Intense Radiation",
+	"outline": true,
+	"damageMultiplier": 0.75,
+	"healthMultiplier": 0.5,
+	"speedMultiplier": 0.5,
+	"reloadMultiplier": 0.75,
+	"dragMultiplier": 1,
+	"disarm": false,
+	"damage": 0.8,
+	"parentizeEffect": false,
+	"permanent": false,
+	"reactive": false,
+	"show": true,
+	"color": "e657c0",
+	"effect": {
+		"type": "WaveEffect",
+		"colorFrom": "275861",
+		"colorTo": "ffffff",
+		"sizeTo": 4,
+		"lifetime": 10,
+		"strokeFrom": 1
+	},
+	"applyEffect": {
+		"type": "WaveEffect",
+		"colorFrom": "275861",
+		"colorTo": "ffffff",
+		"sizeTo": 16,
+		"lifetime": 120,
+		"strokeFrom": 4
+	},
+	"applyExtend": false,
+	"applyColor": "7eccbc",
+	"parentizeApplyEffect": true,
+	"transitionDamage": 0
+}
