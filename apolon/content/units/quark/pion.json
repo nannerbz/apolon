@@ -1,0 +1,80 @@
+template: UnitType
+name: Pion
+flying: true
+speed: 1.9
+accel: 0.05
+drag: 0.05
+health: 1450
+engineOffset: 8
+hitSize: 22
+itemCapacity: 0
+outlineColor: 222222
+range: 130
+weapons: [
+	{
+		name: pion-weapon
+		reload: 100
+		x: 0
+		y: 0
+		shootSound: artillery
+		mirror: false
+		rotate: false
+		bullet: {
+			type: BasicBulletType
+			damage: 100
+			speed: 4
+			width: 8
+			length: 12
+			lifetime: 23.75
+			trailColor: ffffff
+			trailLength: 8
+			trailWidth: 2
+			shootEffect: shootSmall
+			smokeEffect: shootSmallSmoke
+
+			fragOnHit: true
+			fragRandomSpread: 0
+			fragSpread: 4
+			fragBullets: 16
+			fragVelocityMin: 2.5
+			despawnSound: dullExplosion
+			fragBullet: {
+				type: basicBulletType
+				width: 6
+				height: 10
+				hitSize: 3
+				trailWidth: 2.5
+				trailLength: 5
+				collidesAir: true
+				homingPower: 0.2
+				homingDelay: 5
+				speed: 2
+				damage: 18
+				lifetime: 20
+			}
+		}
+		parts: [
+			{
+      			type : RegionPart
+      			suffix : "-w"
+      			progress : recoil
+      			heatProgress : recoil
+      			heatColor : "ffffff"
+      			mirror : true
+      			under : true
+      			moveX : 1
+				moveY : -1
+      			moveRot : -10 
+    			},
+		]
+	}
+]
+	  "research": {
+		parent: quark
+		objectives: [
+			{
+				type: "SectorComplete"
+				preset: clue
+			}
+		]
+	}

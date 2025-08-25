@@ -1,0 +1,134 @@
+{
+    "type": "ItemTurret",
+    "name": "Blast",
+    "description": "A very strong anti ground turret used for blasting ground units from very far away.",
+    "targetAir": false,
+    "targetGround": true,
+    "health": 2340
+    "size": 2
+    "inaccuracy": 5
+    "outlineColor": 222222
+    "reload": 60
+    "xRand": 0,
+    "heatRequirement": 2
+    "maxHeatEfficiency": 3
+    "squareSprite": false
+    "coolantMultiplier": 0.5
+  "consumes": {
+    "coolant": {
+      "amount": 0.5
+    }
+  }
+    "shootCone": 8,
+    "rotateSpeed": 4,
+    "shots": 1,
+    "range": 235
+    "ammoTypes": {
+               metaglass: {
+    type: ArtilleryBulletType
+    knockback: 0.6
+    trailWidth: 1
+    trailLength: 5
+    speed: 4
+    lifetime: 58.75
+    damage: 50
+    burstSpacing: 4,
+	buildingDamageMultiplier : 0.05
+    width: 10
+    height: 10
+    collidesTiles: false
+    splashDamage: 35
+    splashDamageRadius: 45
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    hitSound: Implode
+    despawnSound: Implode
+	hitEffect: hitLancer
+    ammoMultiplier: 2
+	shrinkY: 0.3
+	pierce: false
+	sprite: bullet
+  }
+               carbide: {
+    type: ArtilleryBulletType
+    knockback: 0.6
+    trailWidth: 1
+    trailLength: 5
+    speed: 4
+    lifetime: 58.75
+    damage: 75
+    burstSpacing: 4,
+    width: 10
+    height: 10
+    collidesTiles: false
+    splashDamage: 60
+    splashDamageRadius: 65
+	buildingDamageMultiplier : 0.05
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    hitSound: Implode
+    despawnSound: Implode
+	hitEffect: hitLancer
+    ammoMultiplier: 1
+	shrinkY: 0.3
+	pierce: false
+	sprite: bullet
+  }
+    },
+	shoot: {
+		type: shootAlternate
+		x: 5
+	}
+	recoils: 2
+	drawer: {
+		type: DrawTurret,
+     		basePrefix: base,
+		parts : [
+    			{
+      			type : RegionPart
+      			suffix : "-wr"
+      			progress : recoil
+      			heatProgress : recoil
+      			heatColor : "ffffff"
+      			mirror : false
+      			under : false
+			recoilIndex: 1
+      			moveX : 0
+			moveY : -4
+      			moveRot : 0
+    			},
+    			{
+      			type : RegionPart
+      			suffix : "-wl"
+      			progress : recoil
+      			heatProgress : recoil
+      			heatColor : "ffffff"
+      			mirror : false
+      			under : false
+			recoilIndex: 0
+      			moveX : 0
+			moveY : -4
+      			moveRot : 0
+    			},
+		]
+	}
+    "requirements": [
+        { "item": "metaglass", "amount": 65 },
+	  { "item": "carbide", "amount": 75 },
+        { "item": "bismuth", "amount": 45 },
+	  { "item": "cobalt", "amount": 95 },
+    ],
+    "category": "turret"
+    "shootSound": "Bam"
+	  "research": {
+		parent: chisel
+		objectives: [
+			{
+				type: "OnSector"
+				preset: tide
+			}
+		]
+	}
+    "shake": 1
+    "researchCostMultiplier": 0.05
+}

@@ -1,0 +1,18 @@
+type: PayloadLoader
+name: Cargo Loader
+description: Loads cargo inside it with given items or liquids.
+category: units
+hasPower: true
+consumes: {
+	power: 0.5
+}
+size: 3
+requirements: [
+	carbide/50
+	cobalt/50
+	bismuth/50
+	metaglass/50
+	kobra-alloy/25
+]
+research: cargo-conveyor
+researchCostMultiplier: 0.05

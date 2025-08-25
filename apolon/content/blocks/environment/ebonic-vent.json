@@ -1,0 +1,8 @@
+type: SteamVent
+name: Ebonic Vent
+parent: ebonic-stone
+blendGroup: ebonic-stone
+variants: 2
+attributes: {
+	steam: 1
+}

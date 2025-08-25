@@ -1,0 +1,47 @@
+{
+	type: AttributeCrafter
+	name: Hydrodenser
+	description: Uses power to make hydrogen from vents
+	attribute: steam
+	minEfficiency: 8.8
+	baseEfficiency: 0
+	displayEfficiency: false
+	craftEffect: turbinegenerate
+	craftTime: 40
+	size: 3
+	ambientSound: hum
+	ambientSoundVolume: 0.08
+	hasLiquids: true
+	squareSprite: false
+	boostScale: 1.2
+	outputLiquid: {"liquid": "hydrogen", "amount": 0.8}
+	hasPower: false
+	hasLiquids: true
+	liquidCapacity: 100
+	category: production
+	research: cobalt-extractor
+	researchCostMultiplier: 0.05
+	requirements: [
+	  cobalt/35
+	  bismuth/45
+	  metaglass/35
+	]
+	drawer: {
+	    type: DrawMulti
+	    drawers : [
+	            	{
+	            	  type : DrawRegion
+	            	  suffix : "-bottom"
+	            	},
+	            	{
+	            	  type : DrawBlurSpin
+	            	  suffix : "-rotator"
+	            	  rotateSpeed: 10
+	            	},
+	            	{
+	            	  type : DrawRegion
+	            	  suffix : "-top"
+	            	},
+			]
+		}
+}

@@ -1,0 +1,58 @@
+atemplate: UnitType
+name: Tritium
+flying: true
+speed: 1.4
+accel: 0.04
+drag: 0.03
+health: 2545
+hitSize: 30
+itemCapacity: 0
+outlineColor: 222222
+range: 145
+weapons: [
+	{
+		name: tritium-w
+		reload: 70
+		x: 0
+		y: 3
+		shootSound: bolt
+		mirror: false
+		rotate: false
+		pierce: true
+		pierceCap: 10
+		bullet: {
+			type: BasicBulletType
+			damage: 164
+			speed: 2
+			width: 25
+			length: 25
+			sprite: large-orb
+			lifetime: 72.5
+			trailColor: ffffff
+			trailLength: 12
+			trailWidth: 5
+			pierce: true
+			pierceCap: 10
+			pierceBuilding: true
+			shootEffect: shootSmall
+			smokeEffect: shootSmallSmoke
+				intervalBullet: {
+					type: lightningBulletType
+					damage: 30
+					collidesAir: true
+					lightningLength: 5
+					lightningLengthRand: 7
+					buildingDamageMultiplier: 0.1			
+    	      	}
+				bulletInterval: 10
+				intervalRandomSpread: 360
+				intervalBullets: 3
+				intervalAngle: 360
+				IntervalSpread: 360
+				fragVelocityMin: 0
+				fragVelocityMax: 0
+				fragLifeMin: 0.6
+		}
+	}
+]
+	research: pion

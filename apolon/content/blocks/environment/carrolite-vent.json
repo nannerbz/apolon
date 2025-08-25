@@ -1,0 +1,8 @@
+type: SteamVent
+name: Carrolite Vent
+parent: carrolite-floor
+blendGroup: carrolite-floor
+variants: 2
+attributes: {
+	steam: 1
+}

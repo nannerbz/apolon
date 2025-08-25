@@ -1,0 +1,118 @@
+type: hover
+name: Prisma
+hovering: true
+rotateShooting: true
+speed: 1.7
+accel: 0.3
+drag: 0.08
+health: 2045
+targetAir: true,
+targetGround: true,
+hitSize: 20
+itemCapacity: 30
+outlineColor: 222222
+armour: 4
+range: 160
+parts: [
+	{
+		type: HoverPart
+		x: 7
+		y: -7
+		radius: 7
+		phase: 90
+		stroke: 1
+		layerOffset: -0.001
+		color: dbd9d4
+	}
+	{
+		type: HoverPart
+		x: -7
+		y: -7
+		radius: 7
+		phase: 90
+		stroke: 1
+		layerOffset: -0.001
+		color: dbd9d4
+	}
+]
+weapons: [
+	{
+		name: prisma-w
+		reload: 192
+		x: 0
+		y: -5
+		shootSound: artillery
+		top: false
+		rotate: false
+		bullet: {
+			type: ArtilleryBulletType
+			damage: 128
+			splashDamage: 64
+			splashDamageRadius: 64
+			hitEffect: blastExplosion
+			speed: 4
+			knockback: 0.9
+			width: 14
+			height: 14
+			lifetime: 40
+			shootEffect: shootSmall
+			smokeEffect: shootSmallSmoke
+			rangeOverride: 160
+			drag: 0.05
+
+			fragOnHit: false
+			fragRandomSpread: 0
+			fragSpread: 0
+			fragBullets: 1
+			fragVelocityMin: 0
+			fragVelocityMax: 0
+			despawnSound: dullExplosion
+			fragBullet: {
+				type: basicBulletType
+				width: 10
+				height: 10
+				sprite: large-orb
+				hitSize: 3
+				trailWidth: 2.5
+				trailLength: 5
+				collidesAir: true
+				speed: 0
+				damage: 20
+				spin: 2
+				shrinkX: 0
+				shrinkY: 0
+				pierce: true
+				pierceCap: 100
+				pierceBuilding: true
+				pierceArmor: true
+				lifetime: 150
+
+				bulletInterval: 20
+				intervalRandomSpread: 360
+				intervalBullets: 1
+				intervalAngle: 360
+				IntervalSpread: 360
+				fragVelocityMin: 1
+				fragVelocityMax: 2
+				fragLifeMin: 1
+
+				intervalBullet: {
+					type: basicBulletType
+					width: 8
+					height: 12
+					hitSize: 3
+					trailColor: dbd9d4
+					trailLength: 6
+					trailWidth: 4
+					collidesAir: true
+					homingPower: 0.6
+					homingDelay: 3
+					homingRange: 256
+					speed: 4
+					damage: 40
+					lifetime: 48
+    	      			}
+		}
+		}
+	}
+]

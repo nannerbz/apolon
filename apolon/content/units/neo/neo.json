@@ -1,0 +1,49 @@
+type: legs
+name: Neo
+speed: 0.9
+health: 575
+armor: 5
+rotateShoot: true
+shootSound: lasershoot
+legCount: 6
+hovering: true
+allowLegStep: true
+legStraightness: 0.4
+legContinuousMove: true
+legLength: 8
+lockLegBase: true
+legExtension: -1.5
+legMaxLength: 0.9
+legMinLength: 0.3
+rippleScale: 0.3
+legLengthScl : 1.9
+legForwardScl : 2.1
+legBaseOffset: 3.5
+legMoveSpace: 1.1
+legGroupSize: 3
+outlineColor: 222222
+hitSize: 12
+range: 45
+weapons: [
+    {
+        name: neo-w
+        reload: 45
+        x: 0
+        y: 3
+        top: false
+        shots: 2
+        spacing: 3
+        mirror: false
+	  recoil: 0
+	  shootSound: lasershoot
+        ejectEffect: casing1
+        bullet: {
+            type: ShrapnelBulletType
+            damage: 30
+		length: 55
+		width: 9
+		toColor: 37727d
+        }
+    }
+]
+	research: crawl-fabricator

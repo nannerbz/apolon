@@ -1,0 +1,187 @@
+type: legs
+name: Solaris
+speed: 0.35
+health: 12500
+armor: 6
+drag: 0.2
+rotateSpeed: 3
+rotateShoot: true
+shootSound: lasershoot
+legCount: 6
+hovering: true
+allowLegStep: true
+legStraightness: 3
+legContinuousMove: true
+legLength: 38
+lockLegBase: true
+stepShake: 1.3
+legExtension: -4
+legMaxLength: 1.7
+legMinLength: 0.5
+rippleScale: 0.7
+legLengthScl : 1.06
+legForwardScl : 0.8
+legMoveSpace: 1.7
+legGroupSize: 2
+legSplashDamage: 75
+legSplashRange: 15
+outlineColor: 222222
+range: 245
+hitSize: 48
+abilities: [
+	{
+		type: SpawnDeathAbility
+		unit: neo
+		amount: 6
+		spread: 16
+	}
+]
+weapons: [
+    {
+        name: solaris-w
+	layerOffset: 1
+	minWarmup: 0.98
+	warmupMaintainTime: 20
+	shootWarmupSpeed: 0.02
+        reload: 20
+        x: 12
+        y: -6
+        top: true
+        shots: 2
+        spacing: 3
+        mirror: true
+	  recoil: 1
+	  shootSound: lasershoot
+        ejectEffect: casing1
+	  rotationLimit: 45
+	  rotate: true
+        bullet: {
+            type: LaserBulletType
+		recoil: 0.1
+		hitSize: 6
+		lifetime: 6
+		drawSize: 520
+		collidesAir: true
+                damage: 110
+		length: 245
+		toColor: 37727d
+        }
+	parts: [
+		{
+      		type : RegionPart
+      		suffix : "-p"
+      		progress : warmup
+      		heatProgress : recoil
+      		heatColor : "ffffff"
+      		mirror : true
+      		under : true
+      		moveX : 2
+		moveY : -3
+      		moveRot : -15
+		outline: true
+    		},
+		{
+      		type : RegionPart
+      		suffix : "-p"
+      		progress : recoil
+      		heatProgress : recoil
+      		heatColor : "ffffff"
+      		mirror : true
+      		under : false
+      		moveX : 3
+		moveY : -2
+      		moveRot : -35
+		top: true
+		outline: true
+    		},
+		{
+      		type : RegionPart
+      		suffix : "-p"
+      		progress : recoil
+      		heatProgress : recoil
+      		heatColor : "ffffff"
+      		mirror : true
+      		under : false
+      		moveX : 2
+		moveY : -1
+      		moveRot : -15
+		top: true
+		outline: true
+    		},
+	]
+    }
+    {
+        name: solaris-w
+	layerOffset: 1
+	minWarmup: 0.98
+	warmupMaintainTime: 20
+	shootWarmupSpeed: 0.02
+        reload: 35
+        x: 10
+        y: 6
+        top: true
+        shots: 2
+        spacing: 3
+        mirror: true
+	  recoil: 1
+	  shootSound: lasershoot
+        ejectEffect: casing1
+	  rotationLimit: 45
+	  rotate: true
+        bullet: {
+            type: LaserBulletType
+		recoil: 0.2
+		hitSize: 6
+		lifetime: 6
+		drawSize: 520
+		collidesAir: true
+                damage: 210
+		length: 245
+		toColor: 37727d
+        }
+	parts: [
+		{
+      		type : RegionPart
+      		suffix : "-p"
+      		progress : warmup
+      		heatProgress : recoil
+      		heatColor : "ffffff"
+      		mirror : true
+      		under : true
+      		moveX : 2
+		moveY : -3
+      		moveRot : -15
+		outline: true
+    		},
+		{
+      		type : RegionPart
+      		suffix : "-p"
+      		progress : recoil
+      		heatProgress : recoil
+      		heatColor : "ffffff"
+      		mirror : true
+      		under : false
+      		moveX : 3
+		moveY : -2
+      		moveRot : -35
+		top: true
+		outline: true
+    		},
+		{
+      		type : RegionPart
+      		suffix : "-p"
+      		progress : recoil
+      		heatProgress : recoil
+      		heatColor : "ffffff"
+      		mirror : true
+      		under : false
+      		moveX : 2
+		moveY : -1
+      		moveRot : -15
+		top: true
+		outline: true
+    		},
+	]
+    }
+]
+	research: chronos

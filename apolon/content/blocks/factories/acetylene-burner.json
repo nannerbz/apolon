@@ -1,0 +1,27 @@
+{
+	type: ConsumeGenerator
+	name: Acetylene Burner
+	description: Takes acetylene and makes power.
+	powerProduction: 2
+	liquidDuration: 120
+	ambientSound: smelter
+	ambientSoundVolume: 0.05
+	generateEffect: blastExplosion
+	size: 2
+	category: power
+	consumes: {
+		liquids: {
+			liquids: [
+				{ "liquid": "acetylene", "amount": 0.4 }
+			]
+		}
+	}
+	
+	requirements: [
+		{ "item": "chromium", "amount": 80 }
+		{ "item": "cobalt", "amount": 120 }
+		{ "item": "metaglass", "amount": 60 }
+	]
+	researchCostMultiplier: 0.05
+	research: rdg-oscillator
+}

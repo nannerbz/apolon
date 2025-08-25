@@ -1,0 +1,12 @@
+{
+	type: DuctBridge
+	name: Cobalt Bridge
+	health: 90
+	speed: 4
+	requirements: [
+		cobalt/5
+		bismuth/5
+	]
+	research: cobalt-duct
+	researchCostMultiplier: 0.25
+}

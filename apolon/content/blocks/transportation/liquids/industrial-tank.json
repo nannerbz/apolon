@@ -1,0 +1,17 @@
+type: LiquidRouter
+name: Industrial Tank
+description: Used to store massive amounts of liquid.
+size: 4
+solid: true
+liquidCapacity: 2400
+liquidPadding: 3
+health: 750
+research: bismuth-conduit
+researchCostMultiplier: 0.05
+requirements: [
+	carbide/50
+	metaglass/75
+	cobalt/50
+	bismuth/25
+]
+category: liquid

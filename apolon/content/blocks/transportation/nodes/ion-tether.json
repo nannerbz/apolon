@@ -1,0 +1,23 @@
+{
+    type: BeamNode
+    name: Ion Tether
+    description: An upgraded way to transport power over distances.
+    consumesPower: true
+    outputsPower: true
+    size: 3
+    range: 16
+    requirements: [
+           { "item": "bismuth", "amount": 50 }
+           { "item": "carbide", "amount": 25 }
+           { "item": "metaglass", "amount": 35 }
+           { "item": "neodymium", "amount": 25 }
+    ]
+    researchCostMultiplier: 0.05
+    research: ion-link
+    consumes: {
+       powerBuffered: 2000
+    }
+    laserColor1: de8ec9
+    laserColor2: cf5bc1
+    category: power
+}

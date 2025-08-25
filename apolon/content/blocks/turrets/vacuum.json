@@ -1,0 +1,122 @@
+{
+    "type": "ContinuousLiquidTurret",
+    "name": "Vacuum",
+    "description": "A simple turret. Fires a gas laser that draws in air units while slightly immobilizing them.",
+    "targetAir": true,
+    "targetGround": false,
+    "health": 650
+    "size": 2
+    "squareSprite": false
+    "outlineColor": 222222
+    "shootCone": 8,
+    "rotateSpeed": 6,
+    "range": 250
+    "ammoTypes": {
+               hydrogen: {
+	type: ContinuousFlameBulletType
+	collidesGround : false
+	damage : 35
+	length : 250
+	knockback : -5
+	pierceCap : 2
+	buildingDamageMultiplier : 0.05
+	colors : [
+	d1e4ff,
+	97a5f7,
+	7b64ff,
+	]
+	status: vacuumed
+	statusDuration: 120
+	lightColor : d1e4ff,
+	hitColor : d1e4ff,
+	flareColor : d1e4ff,
+}
+               methane: {
+	type: ContinuousFlameBulletType
+	collidesGround : false
+	damage : 80
+	length : 325
+	rangeChange : 75
+	knockback : -7
+	pierceCap : 3
+	buildingDamageMultiplier : 0.05
+	colors : [
+	b9d43f,
+	89a11e,
+	686b0d,
+	]
+	status: burning
+	statusDuration: 120
+	lightColor : b9d43f,
+	hitColor : b9d43f,
+	flareColor : b9d43f,
+}
+    },
+	drawer: {
+		type: DrawTurret,
+     		basePrefix: base,
+		parts : [
+    			{
+      			type : RegionPart
+      			suffix : "-plate"
+      			progress : warmup
+      			heatProgress : recoil
+      			heatColor : "ffffff"
+      			mirror : true
+      			under : true
+      			moveX : 1
+			moveY : 1
+      			moveRot : -35
+    			},
+    			{
+      			type : RegionPart
+      			suffix : "-w"
+      			progress : warmup
+      			heatProgress : recoil
+      			heatColor : "ffffff"
+      			mirror : true
+      			under : true
+      			moveX : 1
+			moveY : -1
+      			moveRot : 0
+    			},
+    			{
+      			type : RegionPart
+      			suffix : "-b"
+      			progress : recoil
+      			heatProgress : recoil
+      			heatColor : "ffffff"
+      			mirror : false
+      			under : false
+      			moveX : 0
+			moveY : 0
+      			moveRot : 0
+    			},
+		]
+	}
+    "requirements": [
+        { "item": "bismuth", "amount": 30 },
+	  { "item": "cobalt", "amount": 45 },
+        { "item": "carbide", "amount": 30 },
+	  { "item": "metaglass", "amount": 45 },
+    ],
+    "category": "turret"
+    "shootSound": "none"
+    "loopSound": torch
+    "loopSoundVolume": 0.5
+	  "research": {
+		parent: chisel
+		objectives: [
+			{
+				type: "OnSector"
+				preset: spiral
+			}
+		]
+	}
+    "shake": 0
+    "liquidConsumed": 0.4
+    "targetInterval" : 5
+    "newTargetInterval" : 30
+    "targetUnderBlocks" : false
+    "researchCostMultiplier": 0.05
+}

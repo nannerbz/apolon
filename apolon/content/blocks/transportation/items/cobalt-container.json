@@ -1,0 +1,12 @@
+type: StorageBlock
+name: Cobalt Container
+description: A simple block used for storing items in bulk.
+size: 2
+itemCapacity: 200
+research: cobalt-unloader
+researchCostMultiplier: 0.05
+requirements: [
+	cobalt/25
+	carbide/50
+]
+category: effect

@@ -1,0 +1,98 @@
+type: tank
+name: Triumph
+speed: 0.3
+health: 19550
+omniMovement: false
+rotateSpeed: 1
+armor: 22
+treadPullOffset: 9
+rotateShooting: false
+shootSound: lasershoot
+hitSize: 36
+range: 225
+itemCapacity: 0
+buildSpeed: 1.4
+crushDamage: 3.4
+outlineColor: 222222
+treadRects: [
+	{
+		type: rect
+		x: -67
+		y: -78
+		width: 56
+		height: 156
+	},
+	{
+		type: rect
+		x: 11
+		y: -78
+		width: 56
+		height: 156
+	}
+]
+weapons: [
+    {
+        name: triumph-w
+        reload: 40
+        x: 0
+        y: 0
+        top: true
+        shoot: {
+		shots: 4
+		shotDelay: 8
+	}
+	minWarmup: 0.96
+	shootWarmupSpeed: 0.03
+	xRand: 3
+        spacing: 3
+	innacuracy: 35
+	rotate: true
+        mirror: false
+	shootY: 16
+	  recoil: 2
+	  shootSound: malignShoot
+        ejectEffect: none
+        bullet: {
+    		type: MissileBulletType
+    		trailWidth: 3
+    		trailLength: 25
+    		speed: 0.5
+		lifetime: 96
+		    damage: 128
+		    width: 10
+		    height: 10
+		    drag: -0.03
+			collidesTeam: true
+			healPercent: 1.4
+		    shootEffect: shootBig2
+		    smokeEffect: shootSmokeTitan
+		    splashDamage: 45
+		    splashDamageRadius: 48
+		    hitSound: none
+		    weaveMag: 6
+		    weaveScale: 4
+		    trailChance: -1
+		    despawnSound: dullExplosion
+		    despawnEffect: none
+ 		   knockback: 0
+        }
+
+	parts: [
+		{
+      		type : RegionPart
+      		suffix : "-w"
+      		progress : warmup
+      		heatProgress : recoil
+      		heatColor : "ffffff"
+      		mirror : true
+      		under : true
+		x: 0
+		y: 11
+      		moveX : 0
+		moveY : 0
+      		moveRot : 90
+    		},
+	]
+    }
+]
+	research: centurion

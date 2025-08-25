@@ -1,0 +1,106 @@
+{
+    "type": "ItemTurret",
+    "name": "Fizz",
+    "description": "A long range missle turret, causes immense death! :D",
+    "targetAir": true,
+    "targetGround": true,
+    "predictTarget": false
+    "health": 8750
+    "size": 5
+    "inaccuracy": 0
+    "reload": 900
+    "xRand": 0,
+    "squareSprite": false,
+    "outlineColor": "222222",
+    "shootCone": 8,
+    "rotateSpeed": 1,
+    "shots": 1,
+    "minWarmup": 0.96,
+    "shootWarmupSpeed": 0.02,
+    "range": 850
+    "consumes": {
+	"liquids": {
+		"liquids": [
+			{ "liquid": "cyanogen", "amount": 0.2 }
+		]
+	}
+    }
+    "ammoTypes": {
+               photoglass: {
+    type: BasicBulletType
+    shootEffect: shootBig
+    smokeEffect: shootSmokeMissile
+    ammoMultiplier: 1
+    spawnUnit: fizz-missile
+  }
+},
+	drawer: {
+		type: DrawTurret,
+     		basePrefix: base,
+		parts : [
+    			{
+      			type : RegionPart
+      			suffix : "-blade"
+      			progress : warmup
+      			heatProgress : recoil
+      			heatColor : "ffffff"
+      			mirror : true
+      			under : false
+      			moveX : 3
+			moveY : 1
+      			moveRot : -25
+    			},
+    			{
+      			type : RegionPart
+      			suffix : "-plate"
+      			progress : recoil
+      			heatProgress : recoil
+      			heatColor : "ffffff"
+      			mirror : false
+      			under : false
+      			moveX : 0
+			moveY : 0
+      			moveRot : 0
+    			},
+    			{
+      			type : RegionPart
+      			suffix : "-weapon"
+      			progress : recoil
+      			heatProgress : recoil
+      			heatColor : "ffffff"
+      			mirror : false
+      			under : false
+      			moveX : 0
+			moveY : -4
+      			moveRot : 0
+    			},
+    			{
+      			type : RegionPart
+      			suffix : "-missile"
+      			progress : reload
+      			heatProgress : recoil
+      			heatColor : "ffffff"
+      			mirror : false
+      			under : true
+      			moveX : 0
+			moveY : -4
+      			moveRot : 0
+			color: ffffffff
+			colorTo: ffffff00
+			mixColor: 00000000
+			mixColorTo: ffd37fff
+			layerOffset: -0.01
+    			},
+		]
+	}
+    "requirements": [
+        { "item": "photoglass", "amount": 240 },
+	  { "item": "carbide", "amount": 300 },
+        { "item": "kobra-alloy", "amount": 280 },
+    ],
+    "category": "turret"
+    "shootSound": "mediumCannon"
+    "research": bit
+    "shake": 10
+    "researchCostMultiplier": 0.05
+}

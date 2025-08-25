@@ -1,0 +1,21 @@
+{
+  "localizedName": "Fusion",
+  "description": "Enemy waves have been detected here, make new resources and research.",
+  "difficulty": 1,
+  "captureWave": 11,
+  "planet": "akyao",
+  "allowLaunchLoadout": false,
+  "allowLaunchSchematics": false,
+  "sector": 23,
+  "addStartingItems": false
+  "overrideLaunchDefaults": true
+	  "research": {
+		parent: launch
+		objectives: [
+			{
+				type: "SectorComplete"
+				preset: launch
+			}
+		]
+	}
+}

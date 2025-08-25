@@ -1,0 +1,10 @@
+type: wall
+name: Cobalt Wall
+health: 240
+category: defense
+size: 1
+requirements: [
+	cobalt/6
+]
+research: ash
+researchCostMultiplier: 0.05

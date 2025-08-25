@@ -1,0 +1,51 @@
+type: flying
+name: Spark
+speed: 2.4
+drag: 0.06
+accel: 0.11
+flying: true
+coreUnitDock: true
+health: 360
+hitSize: 12
+mineSpeed: 9
+minePower: 1
+drillPower: 1
+buildSpeed: 3
+buildPower: 1.6
+mineTier: 1
+rotateShooting: true
+armor: 2
+range: 75
+fogRadius: 0
+outlineColor: 222222
+itemCapacity: 30
+isEnemy: false
+weapons: [
+    		{
+        	name: spark-w
+        	reload: 60
+        	x: 3.5
+        	y: 1.75
+		shootSound: bolt
+        	top: false
+        	shots: 1
+        	spacing: 4
+        	rotate: false
+		under: true
+        	ejectEffect: casing1
+        		bullet: {
+            		type: LaserBulletType
+            		damage: 36
+				buildingDamageMultiplier: 0.01
+				length: 140
+				smokeEffect: colorSpark
+				shootEffect: lancerLaserShoot
+				hitEffect: hitLancer
+				hitSize: 4
+				lifetime: 30
+				drawSize: 345
+				pierceCap: 4
+    	      	}
+         }
+]
+alwaysUnlocked: true

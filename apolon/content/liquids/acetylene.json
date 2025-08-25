@@ -1,0 +1,14 @@
+{
+	"type": "liquid",
+	"name": "Acetylene",
+	"description": "A strong gas",
+	"flammability": 3,
+	"temperature": 0.4,
+	"boilPoint": 0.2,
+	"color": "d65e74"
+	"gasColor": "d65e74"
+	"research": cobalt
+	"explosiveness": 12,
+	"barColor": "d65e74"
+	"gas": true
+}

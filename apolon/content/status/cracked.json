@@ -1,0 +1,24 @@
+{
+	type: StatusEffect
+	name: Cracked
+	outline: false
+	damageMultiplier: 0.75
+	healthMultiplier: 0.5
+	speedMultiplier: 1
+	reloadMultiplier: 0.75
+	dragMultiplier: 0.75
+	disarm: false
+	damage: 0.01
+	effectChance: 0.1
+	parentizeEffect: false
+	permanent: false
+	reactive: false
+	show: true
+	color: ffffff
+	effect: sapped
+	applyEffect: sapped
+	applyExtend: false
+	applyColor: ffffff
+	parentizeApplyEffect: true
+	transitionDamage: 0
+}

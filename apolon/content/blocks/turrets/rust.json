@@ -1,0 +1,95 @@
+{
+    "type": "LiquidTurret",
+    "name": "Rust",
+    "description": "A large, useful fire turret used for burning down your problems!",
+    "targetAir": true,
+    "targetGround": true,
+    "health": 1950
+    "size": 3
+    "inaccuracy": 0
+    "reload": 8
+    "xRand": 4,
+    "squareSprite": false
+    "coolantMultiplier": 0.5
+    "outlineColor": 222222
+    shootEffect: shootSmallFlame
+    "heatRequirement": 4
+    "maxHeatEfficiency": 4
+  "consumes": {
+    "coolant": {
+      "amount": 0.5
+    }
+  }
+    "shootCone": 10,
+    "rotateSpeed": 4,
+    "shots": 1,
+    "range": 65
+    "ammoTypes": {
+               hydrogen: {
+    type: BulletType
+    damage: 96
+    ammoMultiplier: 1
+    hitSize: 6
+    lifetime: 65
+    speed: 1
+    pierce: true
+    statusDuration: 240
+    shootEffect: shootSmallFlame
+    hitEffect: hitFlameSmall
+	buildingDamageMultiplier : 0.05
+    despawnEffect: none
+    status: burning
+    keepVelocity: false
+    hittable: false
+  }
+               methane: {
+    type: BulletType
+    damage: 146
+    ammoMultiplier: 2
+    hitSize: 8
+    lifetime: 75
+    speed: 1
+    pierce: true
+    statusDuration: 240
+    shootEffect: shootSmallFlame
+    hitEffect: hitFlameSmall
+	buildingDamageMultiplier : 0.05
+    despawnEffect: none
+    status: burning
+    keepVelocity: false
+    hittable: false
+  }
+               cyanogen: {
+    type: BulletType
+    damage: 196
+    ammoMultiplier: 2
+    hitSize: 10
+    lifetime: 85
+    speed: 1
+    pierce: true
+    statusDuration: 320
+    shootEffect: shootSmallFlame
+    hitEffect: hitFlameSmall
+	buildingDamageMultiplier : 0.05
+    despawnEffect: none
+    status: melting
+    keepVelocity: false
+    hittable: false
+  }
+    },
+	drawer: {
+		type: DrawTurret,
+     		basePrefix: base,
+	}
+    "requirements": [
+        { "item": "bismuth", "amount": 105 },
+	  { "item": "cobalt", "amount": 85 },
+        { "item": "kobra-alloy", "amount": 120 },
+	  { "item": "carbide", "amount": 95 },
+    ],
+    "category": "turret"
+    "shootSound": "flame"
+    "research": chisel
+    "shake": 0
+    "researchCostMultiplier": 0.05
+}

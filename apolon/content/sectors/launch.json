@@ -1,0 +1,14 @@
+{
+  "localizedName": "Launch",
+  "description": "A landing zone, very simple, very easy.",
+  "difficulty": 1,
+  "captureWave": 8,
+  "planet": "akyao",
+  "allowLaunchLoadout": false,
+  "allowLaunchSchematics": false,
+  "sector": 6,
+  "addStartingItems": false
+  "research": ash
+  "alwaysUnlocked": true
+  "overrideLaunchDefaults": true
+} 

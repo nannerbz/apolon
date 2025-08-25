@@ -1,0 +1,21 @@
+{
+  "localizedName": "Compact",
+  "description": "A handful of new resources have been found here, research them and stay alive!",
+  "difficulty": 3,
+  "captureWave": 31,
+  "planet": "akyao",
+  "allowLaunchLoadout": false,
+  "allowLaunchSchematics": false,
+  "sector": 19,
+  "addStartingItems": false
+  "overrideLaunchDefaults": true
+	  "research": {
+		parent: tide
+		objectives: [
+			{
+				type: "SectorComplete"
+				preset: tide
+			}
+		]
+	}
+} 

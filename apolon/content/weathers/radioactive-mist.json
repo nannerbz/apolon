@@ -1,0 +1,18 @@
+type: ParticleWeather
+color: 6fb573
+noiseColor: 8adda6
+sizeMax: 4
+sizeMin: 1
+density: 7500
+status: irradiated
+statusDuration: 60
+useWindVector: true
+drawNoise: true
+opacityMultiplier: 0.95
+baseSpeed: 4
+force: 0
+attrs: {
+  heat: 2
+  water: 1.8
+  spores: -7.4
+}

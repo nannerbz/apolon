@@ -1,0 +1,12 @@
+type: AutoDoor
+name: Large Carbide Door
+health: 1120
+category: defense
+size: 2
+requirements: [
+	carbide/24
+	bismuth/12
+	cobalt/12
+]
+research: carbide-door
+researchCostMultiplier: 0.05

@@ -1,0 +1,40 @@
+{
+	type: StatusEffect
+	name: Irradiated
+	outline: false
+	damageMultiplier: 0.6
+	healthMultiplier: 0.75
+	speedMultiplier: 1
+	reloadMultiplier: 1
+	dragMultiplier: 1
+	disarm: false
+	damage: 0
+	effectChance: 0.7
+	parentizeEffect: true
+	permanent: false
+	reactive: false
+	show: true
+	color: 6fb573
+	effect: {
+		"type": "WaveEffect",
+		"colorFrom": "6fb573",
+		"colorTo": "ffffff",
+		"sides": 12
+		"sizeTo": 1,
+		"lifetime": 5,
+		"strokeFrom": 1
+	}
+	applyEffect: {
+		"type": "WaveEffect",
+		"colorFrom": "ffffff",
+		"colorTo": "6fb573",
+		"sides": 12
+		"sizeTo": 12,
+		"lifetime": 20,
+		"strokeFrom": 20
+	}
+	applyExtend: false
+	applyColor: 6fb573
+	parentizeApplyEffect: true
+	transitionDamage: 0
+}

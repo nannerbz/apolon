@@ -1,0 +1,44 @@
+template: UnitType
+name: Quark
+flying: true
+speed: 2.8
+accel: 0.09
+drag: 0.03
+health: 755
+hitSize: 12
+itemCapacity: 0
+outlineColor: 222222
+circleTarget: true
+range: 65
+weapons: [
+	{
+		name: quark-w
+		reload: 90
+		x: 4
+		y: 3
+		shootSound: Pulse
+		rotate: false
+		bullet: {
+			type: BasicBulletType
+			damage: 48
+			speed: 2
+			width: 8
+			length: 12
+			lifetime: 32.5
+			trailColor: ffffff
+			trailLength: 8
+			trailWidth: 2
+			shootEffect: shootSmall
+			smokeEffect: shootSmallSmoke
+		}
+	}
+]
+	  "research": {
+		parent: airborne-fabricator
+		objectives: [
+			{
+				type: "SectorComplete"
+				preset: tide
+			}
+		]
+	}

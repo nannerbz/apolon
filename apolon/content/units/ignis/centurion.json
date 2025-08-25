@@ -1,0 +1,92 @@
+type: tank
+name: Centurion
+speed: 0.4
+health: 6450
+omniMovement: false
+rotateSpeed: 2
+armor: 12
+treadPullOffset: 7
+rotateShooting: false
+shootSound: lasershoot
+hitSize: 28
+range: 175
+itemCapacity: 0
+crushDamage: 1.6
+buildSpeed: 1.3
+outlineColor: 222222
+treadRects: [
+	{
+		type: rect
+		x: -41
+		y: -51
+		width: 17
+		height: 102
+	},
+	{
+		type: rect
+		x: 24
+		y: -31
+		width: 13
+		height: 62
+	}
+]
+weapons: [
+    {
+        name: centurion-w
+        reload: 30
+        x: 0
+        y: 0
+        top: true
+	xRand: 2
+        spacing: 3
+	innacuracy: 15
+	rotate: true
+        mirror: false
+	  recoil: 2
+	  shootSound: shootBig
+        ejectEffect: none
+        bullet: {
+		type: BasicBulletType
+		damage: 125
+		collidesTeam: true
+		healPercent: 0.8
+		speed: 4
+		width: 8
+		length: 12
+		lifetime: 43.75
+		trailColor: ffffff
+		trailLength: 10
+		trailWidth: 4
+		shootEffect: shootSmall
+		smokeEffect: shootSmallSmoke
+
+			fragOnHit: true
+			fragRandomSpread: 4
+			fragSpread: 9
+			fragBullets: 5
+			fragVelocityMin: 1
+			despawnSound: dullExplosion
+			fragBullet: {
+				type: basicBulletType
+				width: 6
+				height: 10
+				hitSize: 3
+				trailWidth: 2.5
+				trailLength: 5
+				collidesAir: true
+				speed: 2
+				damage: 28
+				lifetime: 20
+		}
+        }
+    }
+]
+	  "research": {
+		parent: vanguard
+		objectives: [
+			{
+				type: "SectorComplete"
+				preset: clue
+			}
+		]
+	}

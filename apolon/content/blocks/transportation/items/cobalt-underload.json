@@ -1,0 +1,16 @@
+{
+	type: OverflowDuct
+	name: Cobalt Underload
+	description: Inverse of the Cobalt Overload. Outputs items the front if the left and right paths are blocked.
+	health: 100
+	speed: 4
+	regionRotated1: 1
+	solid: false
+	invert: true
+	requirements: [
+		cobalt/2
+		carbide/2
+	]
+	research: cobalt-overload
+	researchCostMultiplier: 0.25
+}

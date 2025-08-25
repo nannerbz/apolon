@@ -1,0 +1,35 @@
+type: PayloadMassDriver
+name: Cargo Driver
+description: Launches cargo across very long distances.
+category: units
+size: 3
+reload: 240
+chargeTime: 120
+range: 700
+maxPayloadSize: 2.5
+fogRadius: 5
+regionSuffix: -dark
+consumes: {
+	power: 1.2
+	liquids: {
+		liquids: [
+			{ liquid: hydrogen, amount: 0.3 }
+		]
+	}
+}
+requirements: [
+	bismuth/75
+	cobalt/95
+	carbide/110
+	metaglass/85
+]
+	  "research": {
+		parent: cargo-conveyor
+		objectives: [
+			{
+				type: "OnSector"
+				preset: compact
+			}
+		]
+	}
+researchCostMultiplier: 0.05

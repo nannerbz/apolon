@@ -1,0 +1,10 @@
+type: wall
+name: Large Kobra Wall
+health: 1680
+category: defense
+size: 2
+requirements: [
+	kobra-alloy/24
+]
+research: kobra-wall
+researchCostMultiplier: 0.05

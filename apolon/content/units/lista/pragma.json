@@ -1,0 +1,92 @@
+template: UnitType
+name: Pragma
+flying: true
+speed: 2.6
+accel: 0.06
+drag: 0.05
+health: 1350
+hitSize: 20
+armor: 6
+itemCapacity: 0
+outlineColor: 222222
+range: 95
+isEnemy: false
+abilities: [
+	{
+		type: RepairFieldAbility
+		amount: 14
+		reload: 360
+		range: 60
+	}
+]
+weapons: [
+	{
+		name: pragma-w2
+		reload: 120
+		x: 0
+		y: 0
+		shootSound: mineDeploy
+		rotateSpeed: 180
+		shoot: {
+			shots: 3
+			shotDelay: 10
+		}
+		shootY: 0
+		rotate: true
+		mirror: false
+		bullet: {
+			type: BasicBulletType
+			sprite: mine-bullet
+			width: 8
+			height: 8
+			shootEffect: none
+			smokeEffect: none
+			maxRange: 95
+			ignoreRotation: false
+			hitSound: plasmaboom
+			hitSize: 16
+			lifetime: 95
+			speed: 1
+			hitEffect: blastExplosion
+			keepVelocity: false
+			shrinkX: 0
+			shrinkY: 0
+			inaccuracy: 5
+			weaveMag: 5
+			weaveScale: 4
+			homingPower: 0.04
+			trailColor: 64c990
+			trailWidth: 3
+			trailLength: 8
+			splashDamage: 32
+			splashDamageRadius: 48
+		}
+	}
+	{
+		type: PointDefenseWeapon
+		name: pragma-w
+		reload: 15
+		targetInterval: 15
+		targetSwitchInterval: 10
+		recoil: 0.8
+		x: 6
+		y: -5.5
+		bullet: {
+			type: BulletType
+			shootSound: lasershoot
+			shootEffect: sparkShoot
+			hitEffect: pointHit
+			maxRange: 95
+			damage: 48
+		}
+	}
+]
+	  "research": {
+		parent: lista
+		objectives: [
+			{
+				type: "OnSector"
+				preset: clue
+			}
+		]
+	}

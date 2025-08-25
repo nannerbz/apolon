@@ -1,0 +1,19 @@
+type: switchBlock
+name: Processor Switch
+description: Click to turn on and off. Can be used by processors.
+size: 1
+requirements: [
+	cobalt/5
+	carbide/5
+]
+	  "research": {
+		parent: simple-processor
+		objectives: [
+			{
+				type: "SectorComplete"
+				preset: swarm
+			}
+		]
+	}
+researchCostMultiplier: 0.1
+category: logic

@@ -1,0 +1,72 @@
+type: flying
+name: Volt
+speed: 2.9
+drag: 0.07
+accel: 0.13
+flying: true
+coreUnitDock: true
+health: 560
+hitSize: 24
+mineSpeed: 10
+minePower: 2
+drillPower: 2
+buildSpeed: 4
+buildPower: 1.9
+mineTier: 1
+rotateShooting: true
+armor: 3
+range: 270
+fogRadius: 0
+outlineColor: 222222
+itemCapacity: 65
+isEnemy: false
+weapons: [
+    		{
+        	name: volt-w
+        	reload: 20
+        	x: 5
+        	y: 4
+		shootSound: bolt
+        	top: false
+        	shots: 1
+        	spacing: 4
+        	rotate: false
+		under: true
+		inaccuracy: 35
+        	ejectEffect: casing1
+        	bullet: {
+			type: BasicBulletType
+			damage: 0
+			speed: 6
+			lifetime: 33.75
+			trailWidth: 2
+			trailHeight: 8
+			width: 25
+			height: 25
+			spin: 8
+			sprite: mine-bullet
+			homingRange: 955
+			homingPower: 0.06
+			homingDelay: 5
+			backSprite: large-bomb-back
+			fragBullets: 1
+			fragSpread: 0
+			fragRandomSpread: 0
+			fragBullet: {
+				type: LaserBulletType
+				damage: 45
+				buildingDamageMultiplier: 0.01
+				width: 15
+				hitEffect: hitLancer
+				sideAngle: 180
+				sideWidth: 1
+				sideLength: 40
+				lifetime: 11.25
+				drawSize: 33.75
+				length: 33.75
+				pierceCap: 3
+			}
+    	      	}
+         }
+]
+alwaysUnlocked: true

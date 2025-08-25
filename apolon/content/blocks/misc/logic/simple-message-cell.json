@@ -1,0 +1,19 @@
+type: messageBlock
+name: Simple Message Cell
+description: Displays a message, can be controlled with processors.
+size: 1
+requirements: [
+	cobalt/5
+	carbide/5
+]
+	  "research": {
+		parent: simple-processor
+		objectives: [
+			{
+				type: "SectorComplete"
+				preset: swarm
+			}
+		]
+	}
+researchCostMultiplier: 0.1
+category: logic

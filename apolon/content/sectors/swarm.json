@@ -1,0 +1,20 @@
+{
+  "localizedName": "Swarm",
+  "description": "A enemy base has been detected here, make carbide and research your own units.",
+  "difficulty": 1,
+  "planet": "akyao",
+  "allowLaunchLoadout": false,
+  "allowLaunchSchematics": false,
+  "sector": 14,
+  "addStartingItems": false
+  "overrideLaunchDefaults": true
+	  "research": {
+		parent: fusion
+		objectives: [
+			{
+				type: "SectorComplete"
+				preset: fusion
+			}
+		]
+	}
+}

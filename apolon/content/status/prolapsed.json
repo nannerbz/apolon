@@ -1,0 +1,40 @@
+{
+	type: StatusEffect
+	name: Prolapsed
+	outline: false
+	damageMultiplier: 0.8
+	healthMultiplier: 1
+	speedMultiplier: 0.4
+	reloadMultiplier: 1
+	dragMultiplier: 1.4
+	disarm: false
+	damage: 0
+	effectChance: 0.3
+	parentizeEffect: true
+	permanent: false
+	reactive: false
+	show: true
+	color: d65e74
+	effect: {
+		"type": "WaveEffect",
+		"colorFrom": "d65e74",
+		"colorTo": "8a1d3f",
+		"sides": 8
+		"sizeTo": 4,
+		"lifetime": 5,
+		"strokeFrom": 3
+	}
+	applyEffect: {
+		"type": "WaveEffect",
+		"colorFrom": "ffffff",
+		"colorTo": "8a1d3f",
+		"sides": 8
+		"sizeTo": 8,
+		"lifetime": 60,
+		"strokeFrom": 8
+	}
+	applyExtend: false
+	applyColor: d65e74
+	parentizeApplyEffect: true
+	transitionDamage: 0
+}

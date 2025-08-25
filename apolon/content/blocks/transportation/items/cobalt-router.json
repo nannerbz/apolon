@@ -1,0 +1,14 @@
+{
+	type: DuctRouter
+	name: Cobalt Router
+	health: 90
+	speed: 4
+	regionRotated1: 1
+	solid: false
+	requirements: [
+		cobalt/5
+		bismuth/5
+	]
+	research: cobalt-duct
+	researchCostMultiplier: 0.25
+}

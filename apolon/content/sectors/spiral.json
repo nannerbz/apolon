@@ -1,0 +1,21 @@
+{
+  "localizedName": "Spiral",
+  "description": "This sector doesnt have any Neodymium or Chromium, but has just as hard units. Research new advanced versions of old factories.",
+  "difficulty": 3,
+  "captureWave": 31,
+  "planet": "akyao",
+  "allowLaunchLoadout": false,
+  "allowLaunchSchematics": false,
+  "sector": 4,
+  "addStartingItems": true
+  "overrideLaunchDefaults": true
+	  "research": {
+		parent: unite
+		objectives: [
+			{
+				type: "SectorComplete"
+				preset: unite
+			}
+		]
+	}
+} 

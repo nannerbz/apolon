@@ -1,0 +1,12 @@
+type: wall
+name: Chromium Wall
+health: 280
+category: defense
+size: 1
+requirements: [
+	chromium/12
+]
+research: blast-carbide-wall
+researchCostMultiplier: 0.05
+flashHit: true
+chanceDeflect: 4

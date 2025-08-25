@@ -1,0 +1,14 @@
+type: LiquidRouter
+name: Bismuth Router
+health: 100
+liquidCapacity: 10
+category: liquid
+size: 1
+placeableLiquid: true
+hasPower: false
+requirements: [
+  bismuth/8
+  metaglass/8
+]
+research: bismuth-conduit
+researchCostMultiplier: 0.1

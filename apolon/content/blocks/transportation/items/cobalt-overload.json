@@ -1,0 +1,15 @@
+{
+	type: OverflowDuct
+	name: Cobalt Overload
+	description: Outputs items to the left and the right if the front is blocked.
+	health: 100
+	speed: 4
+	regionRotated1: 1
+	solid: false
+	requirements: [
+		cobalt/2
+		carbide/2
+	]
+	research: cobalt-duct
+	researchCostMultiplier: 0.25
+}

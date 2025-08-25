@@ -1,0 +1,26 @@
+type: CoreBlock
+name : Core: Ash
+size: 4
+alwaysUnlocked: true
+hasItems: true
+itemCapacity: 3500
+health: 5000
+category: effect
+unitType: spark
+unitCapModifier: 12
+lightRadius: 16
+buildCost: 25
+squareSprite: false
+requirements: [
+  cobalt/250
+  bismuth/500
+]
+solid: true
+armor: 7
+   research: {
+    root: true
+    name: Apolon
+    requiresUnlock: false
+    planet: akyao
+    }
+    alwaysUnlocked: true

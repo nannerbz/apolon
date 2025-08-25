@@ -1,0 +1,17 @@
+name: Bismuth Conduit
+type: conduit
+description: A useful liquid conduit.
+requirements: [
+bismuth/1
+metaglass/1
+]
+health: 75
+liquidCapacity: 15
+liquidPressur: 1.03
+leaks: true
+bridgeReplacement: bismuth-bridge
+junctionReplacement: conduit-junction
+category: liquid
+placeableLiquid: true
+research: cobalt-duct
+"researchCostMultiplier": 0.05

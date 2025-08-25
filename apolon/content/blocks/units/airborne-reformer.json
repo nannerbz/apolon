@@ -1,0 +1,42 @@
+type: UnitAssembler
+
+health: 1250
+name: Airborne Reformer
+size: 7
+itemCapacity: 100
+constructTime: 4500
+areaSize: 8
+
+requirements: [
+    bismuth/230
+    cobalt/380
+    metaglass/320
+    carbide/280
+    neodymium/330
+    photoglass/110
+    tungsten/60
+]
+
+consumes: {
+	power: 2.5
+	liquids: [
+	cyanogen/0.2
+	]
+}
+
+plans: [
+	{
+		type: AssemblerUnitPlan
+		unit: desmos
+		time: 2950
+        	requirements: [
+			apolon-quark/4
+			apolon-large-neodymium-wall/2
+			apolon-chisel/2
+		]
+	},
+]
+
+category: units
+research: circum-refabricator
+"researchCostMultiplier": 0.05

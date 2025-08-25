@@ -1,0 +1,43 @@
+{
+	"type": "GenericCrafter",
+	"name": "Light Carburator",
+	"description": "Uses cobalt, and rad snow to make carbide",
+	"outputItem": {"item": "carbide", "amount": 2},
+	"size": 3,
+	"hasPower": true,
+	"hasItems": true,
+	"hasLiquids": true,
+	"craftTime": 60,
+	"updateEffect": "smeltsmoke",
+	"consumes": {
+		power: 1
+		"items": {
+			"items": [
+				{ "item": "cobalt", "amount": 2 }
+				{ "item": "rad-snow", "amount": 1 }
+			]
+                }
+		"liquids": {
+			"liquids": [
+			]
+		}
+	},
+	"requirements": [
+		{ "item": "bismuth", "amount": 80 }
+		{ "item": "cobalt", "amount": 100 }
+		{ "item": "metaglass", "amount": 50 }
+	],
+	"category": "crafting",
+	  "research": {
+		parent: pearl-glasswork
+		objectives: [
+			{
+				type: "OnSector"
+				preset: swarm
+			}
+		]
+	}
+	"idleSound": "respawning",
+	"idleSoundVolume": 0.5
+	"researchCostMultiplier": 0.05
+}

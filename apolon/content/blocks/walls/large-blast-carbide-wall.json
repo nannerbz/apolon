@@ -1,0 +1,10 @@
+type: wall
+name: Large Blast Carbide Wall
+health: 1280
+category: defense
+size: 2
+requirements: [
+	carbide/24
+]
+research: blast-carbide-wall
+researchCostMultiplier: 0.05

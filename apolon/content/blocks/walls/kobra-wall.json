@@ -1,0 +1,10 @@
+type: wall
+name: Kobra Wall
+health: 420
+category: defense
+size: 1
+requirements: [
+	kobra-alloy/6
+]
+research: chromium-wall
+researchCostMultiplier: 0.05

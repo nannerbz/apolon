@@ -1,0 +1,42 @@
+type: UnitAssembler
+
+health: 1250
+name: Float Reformer
+size: 7
+itemCapacity: 100
+constructTime: 4500
+areaSize: 8
+
+requirements: [
+    bismuth/320
+    cobalt/240
+    metaglass/380
+    carbide/280
+    neodymium/320
+    photoglass/160
+    tungsten/60
+]
+
+consumes: {
+	power: 3
+	liquids: [
+	cyanogen/0.3
+	]
+}
+
+plans: [
+	{
+		type: AssemblerUnitPlan
+		unit: enigma
+		time: 2850
+        	requirements: [
+			apolon-vice/4
+			apolon-blast/4
+			apolon-blast-carbide-wall/2
+		]
+	},
+]
+
+category: units
+research: circum-refabricator
+"researchCostMultiplier": 0.05

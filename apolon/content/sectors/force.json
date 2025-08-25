@@ -1,0 +1,20 @@
+{
+  "localizedName": "Force",
+  "description": "An enemy base resides here. They are anticpating your arrival and are setting up something [red]massive. [white]Destory the enemy base and don't take too long.",
+  "difficulty": 3,
+  "planet": "akyao",
+  "allowLaunchLoadout": false,
+  "allowLaunchSchematics": false,
+  "sector": 26,
+  "addStartingItems": false
+  "overrideLaunchDefaults": true
+	  "research": {
+		parent: unite
+		objectives: [
+			{
+				type: "SectorComplete"
+				preset: spiral
+			}
+		]
+	}
+}

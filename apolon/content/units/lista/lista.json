@@ -1,0 +1,30 @@
+template: UnitType
+unitController: DefenderAI
+name: Lista
+flying: true
+speed: 2.9
+accel: 0.07
+drag: 0.04
+health: 950
+hitSize: 14
+armor: 2
+itemCapacity: 0
+outlineColor: 222222
+range: 75
+isEnemy: false
+weapons: [
+	{
+		type: RepairBeamWeapon
+		name: lista-w
+		beamWidth: 0.8
+		repairSpeed: 0.3
+		mirror: false
+		x: 0
+		y: -2
+		bullet: {
+			type: BulletType
+			maxRange: 75
+		}
+	}
+]
+	research: airborne-fabricator

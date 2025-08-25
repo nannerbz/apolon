@@ -1,0 +1,38 @@
+{
+	type: UnitFactory
+	name: Crawl Fabricator
+	health: 540
+	size: 3
+	consumes: {
+		power: 0.8
+	}
+
+	requirements: [
+		cobalt/85
+		carbide/45
+		metaglass/55
+	]
+
+	plans: [
+		{
+			unit: neo
+			requirements: [
+				cobalt/8
+				carbide/6
+			]
+			time: 1350
+		}
+		{
+			unit: ignis
+			requirements: [
+				cobalt/8
+				carbide/6
+				bismuth/6
+			]
+			time: 1950
+		}
+	]
+	category: units
+	research: ash
+	researchCostMultiplier: 0.05
+}

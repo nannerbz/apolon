@@ -1,0 +1,56 @@
+{
+	"type": "GenericCrafter",
+	"name": "Methanization Plant",
+	"description": "Uses acetylene and hydrogen and makes methane",
+	"outputLiquid": {"liquid": "methane", "amount": 0.8},
+	"size": 3,
+	"hasPower": true,
+	"hasItems": true,
+	"hasLiquids": true,
+	"craftTime": 60,
+	"updateEffect": "smeltsmoke",
+	"consumes": {
+		power: 2
+		"items": {
+			"items": [
+			]
+                }
+		"liquids": {
+			"liquids": [
+				{ "liquid": "hydrogen", "amount": 0.4 }
+				{ "liquid": "acetylene", "amount": 0.4 }
+			]
+		}
+	},
+	"requirements": [
+		{ "item": "carbide", "amount": 50 }
+		{ "item": "cobalt", "amount": 180 }
+		{ "item": "metaglass", "amount": 80 }
+	],
+	"category": "crafting",
+	  "research": {
+		parent: light-carburator
+		objectives: [
+			{
+				type: "OnSector"
+				preset: clue
+			}
+		]
+	}
+	"idleSound": "respawning",
+	"idleSoundVolume": 0.5
+	"researchCostMultiplier": 0.05
+	drawer: {
+	    type: DrawMulti
+	    drawers : [
+	            	{
+	            	  type : DrawLiquidRegion
+	            	  suffix : "-liquid"
+			  drawLiquid : "methane"
+	            	},
+	            	{
+	            	  type : DrawDefault
+	            	},
+	    ]
+	}
+}

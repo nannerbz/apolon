@@ -1,0 +1,54 @@
+{
+	template: MissileUnitType
+	name: Extravagant Quark Missile
+	hitSize: 16
+	maxRange: 12
+	rotateSpeed: 1.6
+	trailLength: 96
+	missileAccelTime: 120
+	lowAltitude: true
+	loopSound: missileTrail
+	loopSoundVolume: 4
+	deathSound: largeExplosion
+	targetAir: true
+	targetGround: true
+	speed: 6
+	lifetime: 300
+	health: 7550
+	abilities: [
+		{
+			type: SpawnDeathAbility
+			unit: tritium
+			amount: 2
+			randAmount: 3
+			spread: 25
+			faceOutwards: true
+			
+		}
+	]
+	weapons: [
+		{
+			name: weapon
+			shootCone: 360
+			mirror: false
+			reload: 1
+			deathExplosionEffect: {
+				type: MultiEffect
+				effects: [
+					bigShockwave
+					titanSmoke
+					neoplasmiaSmoke
+				]
+			}
+			deathSound: largeExplosion
+			shootOnDeath: true
+			shake: 10
+			bullet: {
+				type: ExplosionBulletType
+				splashDamage: 128
+				splashDamageRadius: 64
+				ammoMultiplier: 1
+		}
+	}
+	]
+}

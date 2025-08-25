@@ -1,0 +1,147 @@
+{
+    "type": "ItemTurret",
+    "name": "Dart",
+    "description": "A small sharp shooting turret. does very well against typical units.",
+    "targetAir": true,
+    "targetGround": true,
+    "health": 1350
+    "size": 2
+    "inaccuracy": 15
+    "reload": 10
+    "xRand": 0,
+    "squareSprite": false
+    "coolantMultiplier": 0.5
+    "outlineColor": 222222
+  "consumes": {
+    "coolant": {
+      "amount": 0.5
+    }
+  }
+    "shootCone": 8,
+    "rotateSpeed": 4,
+    "shots": 1,
+    "range": 110
+    "ammoTypes": {
+               cobalt: {
+    type: BasicBulletType
+    trailWidth: 1
+    trailLength: 5
+    speed: 3
+	lifetime: 36.6
+    damage: 32
+    burstSpacing: 4,
+    width: 8
+    height: 12
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+	hitEffect: hitLancer
+	buildingDamageMultiplier : 0.1
+    ammoMultiplier: 3
+	shrinkY: 0.3
+	pierce: false
+	sprite: bullet
+  }
+               carbide: {
+    type: BasicBulletType
+    trailWidth: 1
+    trailLength: 6
+    rangeChange: 30
+    reloadMultiplier: 1.2
+    speed: 3
+	lifetime: 46.6
+    damage: 42
+    burstSpacing: 4,
+    width: 8
+    height: 12
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+	hitEffect: hitLancer
+	buildingDamageMultiplier : 0.1
+    ammoMultiplier: 3
+	shrinkY: 0.3
+	pierce: true
+	pierceCap: 2
+	sprite: bullet
+  }
+               tungsten: {
+    type: BasicBulletType
+    trailWidth: 1
+    trailLength: 6
+    rangeChange: 60
+    reloadMultiplier: 1.5
+    speed: 6
+	lifetime: 28.3
+    damage: 86
+    burstSpacing: 4,
+    width: 8
+    height: 12
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+	hitEffect: hitLancer
+	buildingDamageMultiplier : 0.1
+    ammoMultiplier: 2
+	shrinkY: 0.3
+	pierce: true
+	pierceCap: 5
+	sprite: bullet
+  }
+    },
+	shoot: {
+		type: shootAlternate
+		x: 4
+	}
+	recoils: 2
+	drawer: {
+		type: DrawTurret,
+     		basePrefix: base,
+		parts : [
+    			{
+      			type : RegionPart
+      			suffix : "-wr"
+      			progress : recoil
+      			heatProgress : recoil
+      			heatColor : "ffffff"
+      			mirror : false
+      			under : false
+			recoilIndex: 1
+      			moveX : 0
+			moveY : -2
+      			moveRot : 0
+    			},
+    			{
+      			type : RegionPart
+      			suffix : "-wl"
+      			progress : recoil
+      			heatProgress : recoil
+      			heatColor : "ffffff"
+      			mirror : false
+      			under : false
+			recoilIndex: 0
+      			moveX : 0
+			moveY : -2
+      			moveRot : 0
+    			},
+    			{
+      			type : RegionPart
+      			suffix : "-wm"
+      			progress : recoil
+      			heatProgress : recoil
+      			heatColor : "ffffff"
+      			mirror : false
+      			under : false
+      			moveX : 0
+			moveY : -1
+      			moveRot : 0
+    			},
+		]
+	}
+    "requirements": [
+        { "item": "bismuth", "amount": 25 },
+	  { "item": "cobalt", "amount": 35 },
+    ],
+    "category": "turret"
+    "shootSound": "SmallPew"
+    "research": ash
+    "shake": 0
+    "researchCostMultiplier": 0.05
+}

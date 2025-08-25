@@ -1,0 +1,21 @@
+type: LogicBlock
+name: Advanced Processor
+description: used to control, locate, and do lots of advanced things. Bigger and better than the previous tier.
+instructionsPerTick: 8
+size: 2
+requirements: [
+	cobalt/25
+	carbide/25
+]
+range: 128
+	  "research": {
+		parent: simple-processor
+		objectives: [
+			{
+				type: "SectorComplete"
+				preset: tide
+			}
+		]
+	}
+researchCostMultiplier: 0.15
+category: logic

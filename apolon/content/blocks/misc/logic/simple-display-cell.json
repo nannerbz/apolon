@@ -1,0 +1,21 @@
+type: logicDisplay
+name: Simple Display Cell
+description: Shows images given to it by processors.
+size: 2
+displaySize: 48
+requirements: [
+	cobalt/15
+	bismuth/30
+	carbide/15
+]
+	  "research": {
+		parent: simple-processor
+		objectives: [
+			{
+				type: "SectorComplete"
+				preset: swarm
+			}
+		]
+	}
+researchCostMultiplier: 0.1
+category: logic

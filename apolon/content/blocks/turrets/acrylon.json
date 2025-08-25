@@ -1,0 +1,226 @@
+{
+    "type": "ItemTurret",
+    "name": "Acrylon",
+    "description": "Charges up and fires walls of piercing bullets at lots of enemies. Can be given Photoglass instead for increased range.",
+    "targetAir": true,
+    "targetGround": true,
+    "health": 9560
+    "size": 4
+    "inaccuracy": 0
+    "reload": 90
+    "outlineColor": 222222
+    "xRand": 0,
+    "squareSprite": false
+    "coolantMultiplier": 0.65
+  "consumes": {
+	"liquids": {
+		"liquids": [
+			{ "liquid": "acetylene", "amount": 0.2 }
+		]
+	}
+    "coolant": {
+      "amount": 0.6
+    }
+  }
+    "shootCone": 8,
+    "rotateSpeed": 2,
+    "shots": 1,
+    "range": 140
+    "ammoTypes": {
+               kobra-alloy: {
+    type: BasicBulletType
+    trailWidth: 2
+    trailLength: 8
+    speed: 4
+	lifetime: 35
+    damage: 135
+    burstSpacing: 4,
+    width: 15
+    height: 15
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+	hitEffect: hitLancer
+    ammoMultiplier: 1
+	pierce: true
+	pierceCap: 5
+	pierceBuilding: true
+	buildingDamageMultiplier : 0.05
+	knockback: 1
+	sprite: large-orb
+	}
+               photoglass: {
+    type: BasicBulletType
+    trailWidth: 4
+    trailLength: 14
+    speed: 6
+	lifetime: 44.1
+	rangeChange: 125
+    damage: 115
+    burstSpacing: 4,
+    width: 25
+    height: 25
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+	hitEffect: hitLancer
+    ammoMultiplier: 1
+	pierce: true
+	pierceCap: 8
+	pierceBuilding: true
+	buildingDamageMultiplier : 0.05
+	knockback: 3
+	sprite: large-orb
+	}
+    }
+	shoot: {
+			type: shootAlternate
+			shots: 6
+			barrels: 6
+			x: 6
+	}
+	drawer: {
+		type: DrawTurret,
+     		basePrefix: base,
+		parts : [
+    			{
+      			type : RegionPart
+      			suffix : "-magic-plate"
+      			progress : warmup
+      			heatProgress : warmup
+      			heatColor : "c7455a"
+      			mirror : true
+      			under : true
+      			moveX : 1
+			moveY : -1
+      			moveRot : -15
+    			},
+    			{
+      			type : RegionPart
+      			suffix : "-plate"
+      			progress : warmup
+      			heatProgress : warmup
+      			heatColor : "c7455a"
+      			mirror : true
+      			under : false
+      			moveX : 2
+			moveY : 0
+      			moveRot : -25
+    			},
+    			{
+      			type : RegionPart
+      			suffix : "-b"
+      			progress : recoil
+      			heatProgress : warmup
+      			heatColor : "c7455a"
+      			mirror : false
+      			under : false
+      			moveX : 0
+			moveY : 0
+      			moveRot : 0
+    			},
+    			{
+      			type : RegionPart
+      			suffix : "-neck"
+      			progress : recoil
+      			heatProgress : warmup
+      			heatColor : "c7455a"
+      			mirror : false
+      			under : false
+      			moveX : 0
+			moveY : 0
+      			moveRot : 0
+    			},
+    			{
+      			type : RegionPart
+      			suffix : "-magic-w"
+      			progress : warmup
+      			heatProgress : warmup
+      			heatColor : "c7455a"
+      			mirror : false
+      			under : false
+      			moveX : 0
+			moveY : -2
+      			moveRot : 0
+    			},
+    			{
+      			type : RegionPart
+      			suffix : "-w"
+      			progress : warmup
+      			heatProgress : warmup
+      			heatColor : "c7455a"
+      			mirror : true
+      			under : false
+      			moveX : 2
+			moveY : -2
+      			moveRot : 0
+    			},
+			{
+			type: ShapePart
+			progress: warmup
+			color: d65e74
+			layer: 110
+			sides: 3
+			rotation: 90
+			hollow: true
+			stroke: 0
+			strokeTo: 2
+			radius: 2
+			y: 6
+			},
+			{
+			type: ShapePart
+			progress: warmup
+			color: d65e74
+			layer: 110
+			sides: 6
+			rotation: 0
+			hollow: true
+			stroke: 0
+			strokeTo: 2
+			radius: 4
+			y: 6
+			rotateSpeed: 3
+			},
+			{
+			type: HaloPart
+			progress: warmup
+			color: d65e74
+			layer: 110
+			y: 6
+			haloRotation: 90
+			shapes: 4
+			triLength: 0
+			triLengthTo: 6
+			haloRadius: 14
+			tri: true
+			radius: 3
+			shapeRotation: 180
+			haloRotateSpeed: -5
+			},
+		]
+	}
+    "requirements": [
+        { "item": "carbide", "amount": 195 },
+	  { "item": "neodymium", "amount": 195 },
+        { "item": "metaglass", "amount": 145 },
+	  { "item": "cobalt", "amount": 245 },
+        { "item": "bismuth", "amount": 225 },
+	  { "item": "kobra-alloy", "amount": 95 },
+    ],
+    "category": "turret"
+    "minWarmup": 0.96
+    "shootWarmupSpeed": 0.02
+    "shootSound": "PlasmaRipple"
+    "loopSound": "glow"
+    "loopSoundVolume": 0.5
+	  "research": {
+		parent: dash
+		objectives: [
+			{
+				type: "SectorComplete"
+				preset: force
+			}
+		]
+	}
+    "shake": 3
+    "researchCostMultiplier": 0.05
+}

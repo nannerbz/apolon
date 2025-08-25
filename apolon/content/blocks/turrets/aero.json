@@ -1,0 +1,109 @@
+{
+    "type": "LiquidTurret",
+    "name": "Aero",
+    "description": "A bulky liquid missile launching turret, good for applying effects and support.",
+    "targetAir": true,
+    "targetGround": true,
+    "health": 1750
+    "size": 3
+    "inaccuracy": 20
+    "reload": 20
+    "xRand": 0,
+    "squareSprite": false
+    "outlineColor": 222222
+    "shootCone": 8,
+    "rotateSpeed": 4,
+    "shots": 1,
+    "range": 265
+    "ammoTypes": {
+               cryofluid: {
+        type: MissileBulletType
+	frontColor: 7ec0cc
+	backColor: 37727d
+	trailColor: 599ca8
+	speed: 3
+	lifetime: 88
+	damage: 25
+	width: 8
+	height: 8
+	shrinkY: 0
+	splashDamage: 25
+	splashDamageRadius: 45
+	ammoMultiplier: 1
+	hitEffect: hitLiquid
+	despawnEffect: hitLiquid
+	buildingDamageMultiplier : 0.05
+	homingPower: 0.04
+	status: freezing
+	statusDuration: 120
+  }
+               arkycite: {
+        type: MissileBulletType
+	frontColor: 7ec0cc
+	backColor: 37727d
+	trailColor: 599ca8
+	speed: 3
+	lifetime: 88
+	damage: 35
+	width: 8
+	height: 8
+	shrinkY: 0
+	splashDamage: 35
+	splashDamageRadius: 65
+	ammoMultiplier: 1
+	hitEffect: hitLiquid
+	despawnEffect: hitLiquid
+	buildingDamageMultiplier : 0.05
+	homingPower: 0.04
+  }
+    },
+	shoot: {
+		type: shootAlternate
+		x: 5
+	}
+	recoils: 2
+	recoil: 3
+	drawer: {
+		type: DrawTurret,
+     		basePrefix: base,
+		parts : [
+    			{
+      			type : RegionPart
+      			suffix : "-r"
+      			progress : recoil
+      			heatProgress : recoil
+      			heatColor : "ffffff"
+      			mirror : false
+      			under : true
+			recoilIndex: 1
+      			moveX : 2
+			moveY : -2
+      			moveRot : -5
+    			},
+    			{
+      			type : RegionPart
+      			suffix : "-l"
+      			progress : recoil
+      			heatProgress : recoil
+      			heatColor : "ffffff"
+      			mirror : false
+      			under : true
+			recoilIndex: 0
+      			moveX : -2
+			moveY : -2
+      			moveRot : 5
+    			},
+		]
+	}
+    "requirements": [
+        { "item": "bismuth", "amount": 85 },
+	  { "item": "cobalt", "amount": 75 },
+        { "item": "carbide", "amount": 125 },
+	  { "item": "metaglass", "amount": 95 },
+    ],
+    "category": "turret"
+    "shootSound": "LiquidPew"
+    "research": chisel
+    "shake": 0
+    "researchCostMultiplier": 0.05
+}

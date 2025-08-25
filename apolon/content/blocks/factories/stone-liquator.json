@@ -1,0 +1,56 @@
+{
+	"type": "GenericCrafter",
+	"name": "Stone Liquator",
+	"description": "Turns Carbide into arkycite",
+	"outputLiquid": {"liquid": "arkycite", "amount": 0.6},
+	"size": 2,
+	"hasPower": false,
+	"hasItems": true,
+	"hasLiquids": false,
+	"craftTime": 60,
+	"updateEffect": "smeltsmoke",
+	"consumes": {
+		"items": {
+			"items": [
+				{ "item": "carbide", "amount": 1 }
+			]
+                }
+		"liquids": {
+			"liquids": [
+			]
+		}
+	},
+	"requirements": [
+		{ "item": "metaglass", "amount": 30 }
+		{ "item": "carbide", "amount": 60 }
+	],
+	"category": "crafting",
+	  "research": {
+		parent: light-carburator
+		objectives: [
+			{
+				type: "SectorComplete"
+				preset: tide
+			}
+		]
+	}
+	"idleSound": "respawning",
+	"idleSoundVolume": 0.5
+"researchCostMultiplier": 0.05
+	drawer: {
+	    type: DrawMulti
+	    drawers : [
+	            	{
+	            	  type : DrawDefault
+	            	},
+	            	{
+	            	  type : DrawRegion
+	            	  suffix : "-bottom"
+	            	},
+				{
+				  type : drawPistons
+				  sinMag: 0.8
+				}
+			]
+		}
+}

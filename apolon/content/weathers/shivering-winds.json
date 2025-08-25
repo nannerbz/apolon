@@ -1,0 +1,19 @@
+type: ParticleWeather
+color: ffffff
+noiseColor: e6e6e6
+sizeMax: 2
+sizeMin: 1
+density: 75
+status: freezing
+useWindVector: true
+drawNoise: true
+opacityMultiplier: 0.45
+baseSpeed: 7
+sound: clockwork
+soundVol: 0.65
+force: 0.1
+attrs: {
+  heat: -0.9
+  water: -0.5
+  spores: -1.3
+}

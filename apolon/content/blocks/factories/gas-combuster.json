@@ -1,0 +1,33 @@
+{
+	type: ConsumeGenerator
+	name: Gas Combuster
+	description: Takes in lots of hydrogen and rad snow, producing lots of power in return.
+	powerProduction: 8.2
+	itemDuration: 30
+	ambientSound: smelter
+	ambientSoundVolume: 0.05
+	generateEffect: blastExplosion
+	size: 4
+	category: power
+	consumes: {
+		items: {
+			items: [
+				{ "item": "rad-snow", "amount": 3 }
+			]
+		}
+		liquids: {
+			liquids: [
+				{ "liquid": "hydrogen", "amount": 1.6 }
+			]
+		}
+	}
+	
+	requirements: [
+		{ "item": "chromium", "amount": 80 }
+		{ "item": "cobalt", "amount": 150 }
+		{ "item": "metaglass", "amount": 100 }
+		{ "item": "carbide", "amount": 80 }
+	]
+	research: rdg-compressor
+	researchCostMultiplier: 0.05
+}

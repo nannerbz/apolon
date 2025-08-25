@@ -1,0 +1,80 @@
+{
+	template: MissileUnitType
+	name: Extravagant Missile
+	hitSize: 14
+	maxRange: 12
+	rotateSpeed: 1.2
+	trailLength: 64
+	missileAccelTime: 0
+	lowAltitude: true
+	loopSound: missileTrail
+	loopSoundVolume: 2
+	deathSound: largeExplosion
+	targetAir: true
+	speed: 1
+	lifetime: 900
+	health: 2550
+	abilities: [
+		{
+			type: EnergyFieldAbility
+			damage: 20
+			reload: 30
+			range:  128
+			layer: -1
+			statusDuration: 60
+			status: sapped
+			maxTargets: 10
+			healPercent: 0.1
+			sameTypeHealMult: 2
+		}
+	]
+	weapons: [
+		{
+			name: weapon
+			shootCone: 360
+			mirror: false
+			reload: 1
+			deathExplosionEffect: {
+				type: MultiEffect
+				effects: [
+					{
+   						layer: 60
+        					length: 300
+        					lifetime: 600
+       						cone: 360
+        					particles: 10
+          					interp: pow2Out
+       					   	sizeInterp: linear 
+       					   	region: particle
+       					   	sizeFrom: 80
+       						sizeTo: 0
+       					   	colorFrom: ffffff
+       						colorTo: 000000
+       					 }
+					{
+   						layer: 60
+        					length: 300
+        					lifetime: 600
+       						cone: 360
+        					particles: 30
+          					interp: pow2Out
+       					   	sizeInterp: linear 
+       					   	region: particle
+       					   	sizeFrom: 125
+       						sizeTo: 0
+       					   	colorFrom: ffffff
+       						colorTo: 000000
+       					 }
+				]
+			}
+			shootOnDeath: true
+			shake: 10
+			bullet: {
+				type: ExplosionBulletType
+				splashDamage: 128
+				splashDamageRadius: 64
+				ammoMultiplier: 1
+		}
+	}
+	]
+}

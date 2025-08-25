@@ -1,0 +1,69 @@
+{
+    "type": "PowerTurret",
+    "name": "Chip",
+    "description": "A skillful laser blasting turret, good for anything ground related.",
+    "targetAir": false,
+    "targetGround": true,
+    "collidesAir": false,
+    "health": 1450
+    "size": 2
+    "outlineColor": 222222
+    "inaccuracy": 0
+    "reload": 60
+    "xRand": 0,
+    "coolantMultiplier": 0.5
+    "heatRequirement": 6
+    "maxHeatEfficiency": 3
+    "squareSprite": false
+    "shootCone": 8,
+    "rotateSpeed": 4,
+    "shots": 1,
+    "moveWhileCharging": false
+    "range": 125
+    "consumes": {
+	power: 0.4
+    	"coolant": {
+    	  "amount": 1.2
+    	}
+    }
+	shootType: {
+		Type: LaserBulletType
+		chargeEffect: lancerLaserCharge
+		hitEffect: hitLancer
+		hitSize: 5
+		drawSize: 550
+		collidesAir: false
+		length: 140
+		ammoMultiplier: 2
+		pierceCap: 5
+		damage: 25
+		buildingDamageMultiplier : 0.05
+	}
+	shoot: {
+		firstShotDelay: 25
+		shots: 6
+		shotDelay: 3
+	}
+    "requirements": [
+        { "item": "carbide", "amount": 55 },
+	  { "item": "cobalt", "amount": 40 },
+	  { "item": "metaglass", "amount": 45 },
+    ],
+	drawer: {
+		type: DrawTurret,
+     		basePrefix: base,
+	}
+    "category": "turret"
+    "shootSound": "LaserBurst"
+	  "research": {
+		parent: vacuum
+		objectives: [
+			{
+				type: "OnSector"
+				preset: tide
+			}
+		]
+	}
+    "shake": 1
+    "researchCostMultiplier": 0.05
+}

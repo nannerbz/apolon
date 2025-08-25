@@ -1,0 +1,101 @@
+{
+	template: MissileUnitType
+	name: Fizz Missile
+	maxRange: 8
+	rotateSpeed: 0.4
+	trailLength: 48
+	missileAccelTime: 60
+	lowAltitude: true
+	loopSound: missileTrail
+	loopSoundVolume: 3.5
+	deathSound: largeExplosion
+	targetAir: true
+	speed: 5
+	lifetime: 170
+	health: 4850
+	weapons: [
+		{
+			name: weapon
+			shootCone: 360
+			mirror: false
+			reload: 1
+			deathExplosionEffect: {
+				type: MultiEffect
+				effects: [
+					{
+   						layer: 60
+        					length: 300
+        					lifetime: 600
+       						cone: 360
+        					particles: 10
+          					interp: pow2Out
+       					   	sizeInterp: linear 
+       					   	region: particle
+       					   	sizeFrom: 80
+       						sizeTo: 0
+       					   	colorFrom: ffffff
+       						colorTo: 000000
+       					 }
+					{
+   						layer: 60
+        					length: 300
+        					lifetime: 600
+       						cone: 360
+        					particles: 30
+          					interp: pow2Out
+       					   	sizeInterp: linear 
+       					   	region: particle
+       					   	sizeFrom: 125
+       						sizeTo: 0
+       					   	colorFrom: ffffff
+       						colorTo: 000000
+       					 }
+				]
+			}
+			shootOnDeath: true
+			shake: 10
+			bullet: {
+				type: ExplosionBulletType
+				splashDamage: 125
+				splashDamageRadius: 95
+				ammoMultiplier: 1
+				fragBullets: 1
+				fragRandomSpread: 0
+				buildingDamageMultiplier : 0.05
+				fragSpread: 0
+				fragBullet: {
+					type: BasicBulletType
+					speed: 0
+					damage: 100
+					lifetime: 200
+					spin: 18
+					width: 100
+					height: 100
+					sprite: mine-bullet
+					backSprite: large-bomb-back
+					pierce: true
+					pierceBuilding: true
+					pierceCap: 500
+					buildingDamageMultiplier : 0.05
+					intervalBullet: {
+						type: lightningBulletType
+						damage: 15
+						collidesAir: true
+						lightningLength: 10
+						lightningLengthRand: 15
+						buildingDamageMultiplier : 0.05
+    	      				}
+
+					bulletInterval: 5
+					intervalRandomSpread: 360
+					intervalBullets: 5
+					intervalAngle: 360
+					IntervalSpread: 360
+					fragVelocityMin: 0
+					fragVelocityMax: 0
+					fragLifeMin: 0.6
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,36 @@
+{
+	type: UnitFactory
+	name: Airborne Fabricator
+	health: 540
+	size: 3
+	consumes: {
+		power: 0.8
+	}
+
+	requirements: [
+		carbide/35
+		bismuth/65
+	]
+
+	plans: [
+		{
+			unit: quark
+			requirements: [
+				bismuth/10
+				carbide/4
+			]
+			time: 1080
+		}
+		{
+			unit: lista
+			requirements: [
+				metaglass/6
+				carbide/12
+			]
+			time: 975
+		}
+	]
+	category: units
+	research: crawl-fabricator
+	researchCostMultiplier: 0.05
+}

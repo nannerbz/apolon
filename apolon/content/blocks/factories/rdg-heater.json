@@ -1,0 +1,25 @@
+type: HeatProducer
+name: Rdg Heater
+category: crafting
+description: Takes Rad Snow and turns it into heat, at the downside of it being innefficient.
+rotateDraw: false
+craftTime: 30
+rotate: true
+size: 1
+heatOutput: 1
+regionRotated1: 1
+ambientSound: hum
+	consumes: {
+		items: {
+			items: [
+				{ "item": "rad-snow", "amount": 1 }
+			]
+		}
+	}
+requirements: [
+	cobalt/30
+	metaglass/25
+	carbide/20
+]
+research: hydric-heater
+researchCostMultiplier: 0.02

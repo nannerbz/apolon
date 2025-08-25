@@ -1,0 +1,179 @@
+{
+    "type": "ItemTurret",
+    "name": "Clang",
+    "description": "A high damage cluster bomb launching turret, firing a single long range shot that splits apart into lots of bullets.",
+    "targetAir": true,
+    "targetGround": true,
+    "collidesGround": false
+    "hasPower": false
+    "health": 8550
+    "size": 5
+    "inaccuracy": 0
+    "reload": 750
+    "outlineColor": 222222
+    "xRand": 0,
+    "squareSprite": false
+    "coolantMultiplier": 0.65
+    "shootY": 0
+  "consumes": {
+    "coolant": {
+      "amount": 0.5
+    }
+  }
+    "shootCone": 3
+    "rotateSpeed": 3
+    "shots": 1,
+    "range": 650
+    "ammoTypes": {
+               photoglass: {
+    type: BasicBulletType
+    trailWidth: 4
+    trailLength: 18
+    speed: 3
+	lifetime: 200
+    damage: 600
+    burstSpacing: 4,
+    width: 35
+    height: 35
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+	hitEffect: hitLancer
+    ammoMultiplier: 1
+	buildingDamageMultiplier : 0.05
+	knockback: 0
+	shrinkY: 0
+	fragBullets: 300
+	fragRandomSpread: 360
+	fragVelocityMin: 0.6
+	fragBullet: {
+		type: BasicBulletType
+		trailWidth: 2
+		trailLength: 6
+		width: 5
+		length: 10
+		damage: 4
+		speed: 6
+		lifetime: 60
+		shrinkY: 0
+		buildingDamageMultiplier : 0.05
+    		homingPower: 0.2
+    		homingDelay: 10
+    		homingRange: 300
+    		homingCone: 360
+	}
+	}
+               hypersteel: {
+    type: BasicBulletType
+    trailWidth: 4
+    trailLength: 18
+    speed: 3
+	lifetime: 200
+    damage: 800
+    burstSpacing: 4,
+    width: 35
+    height: 35
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+	hitEffect: hitLancer
+    ammoMultiplier: 1
+	buildingDamageMultiplier : 0.05
+	knockback: 0
+	shrinkY: 0
+	fragBullets: 400
+	fragRandomSpread: 360
+	fragVelocityMin: 0.6
+	fragBullet: {
+		type: BasicBulletType
+		trailWidth: 2
+		trailLength: 6
+		width: 5
+		length: 10
+		damage: 6
+		speed: 8
+		lifetime: 30
+		shrinkY: 0
+		buildingDamageMultiplier : 0.05
+    		homingPower: 0.4
+    		homingDelay: 5
+    		homingRange: 400
+    		homingCone: 360
+	}
+	}
+	}
+	drawer: {
+		type: DrawTurret,
+     		basePrefix: base,
+		parts : [
+    			{
+      			type : RegionPart
+      			suffix : "-b"
+      			progress : warmup
+      			heatProgress : recoil
+      			heatColor : "ffffff"
+      			mirror : true
+      			under : true
+      			moveX : 1
+			moveY : 1
+      			moveRot : -15
+
+			moves: [
+				{
+					x: 0
+					y: 0
+					rot: -5
+					progress: recoil
+				}
+			]
+    			},
+    			{
+      			type : RegionPart
+      			suffix : "-m"
+      			progress : recoil
+      			heatProgress : recoil
+      			heatColor : "ffffff"
+      			mirror : false
+      			under : false
+      			moveX : 0
+			moveY : 0
+      			moveRot : 0
+    			},
+    			{
+      			type : RegionPart
+      			suffix : "-w"
+      			progress : warmup
+      			heatProgress : recoil
+      			heatColor : "ffffff"
+      			mirror : true
+      			under : false
+      			moveX : 2
+			moveY : -1
+      			moveRot : 0
+			
+			moves: [
+				{
+					x: 1
+					y: -4
+					rot: -10
+					progress: recoil
+				}
+			]
+    			},
+		]
+	}
+    "requirements": [
+        { "item": "carbide", "amount": 175 },
+	  { "item": "hypersteel", "amount": 85 },
+        { "item": "metaglass", "amount": 250 },
+	  { "item": "cobalt", "amount": 345 },
+        { "item": "bismuth", "amount": 250 },
+	  { "item": "photoglass", "amount": 345 },
+	  { "item": "kobra-alloy", "amount": 115 },
+    ],
+    "category": "turret"
+    "minWarmup": 0.9
+    "shootWarmupSpeed": 0.08
+    "shootSound": "mediumCannon"
+    "research": acrylon
+    "shake": 4
+    "researchCostMultiplier": 0.05
+}

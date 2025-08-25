@@ -1,0 +1,9 @@
+{
+	"type": "material",
+	"name": "Chromium",
+	"description": "A advanced resource used for alloys.",
+	"hardness": 2,
+	"cost": 1.8,
+	"color": "e2ca4b"
+	"research": "cobalt"
+}

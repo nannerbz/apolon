@@ -1,0 +1,76 @@
+type: tank
+name: Vanguard
+speed: 0.5
+health: 2450
+omniMovement: false
+rotateSpeed: 2.5
+armor: 9
+treadPullOffset: 5
+rotateShooting: false
+shootSound: lasershoot
+hitSize: 20
+range: 95
+itemCapacity: 0
+buildSpeed: 1.1
+outlineColor: 222222
+treadRects: [
+	{
+		type: rect
+		x: -26
+		y: -31
+		width: 13
+		height: 62
+	},
+	{
+		type: rect
+		x: -13
+		y: -31
+		width: 13
+		height: 62
+	}
+]
+weapons: [
+    {
+        name: vanguard-w
+        reload: 60
+        x: 0
+        y: 0
+        top: true
+        shoot: {
+		shots: 5
+		shotDelay: 5
+	}
+	xRand: 3
+        spacing: 3
+	innacuracy: 10
+	rotate: true
+        mirror: false
+	  recoil: 1
+	  shootSound: shootBig
+        ejectEffect: none
+        bullet: {
+		type: BasicBulletType
+		damage: 42
+		collidesTeam: true
+		healPercent: 0.5
+		speed: 3
+		width: 6
+		length: 10
+		lifetime: 31.6
+		trailColor: ffffff
+		trailLength: 8
+		trailWidth: 2
+		shootEffect: shootSmall
+		smokeEffect: shootSmallSmoke
+        }
+    }
+]
+	  "research": {
+		parent: ignis
+		objectives: [
+			{
+				type: "SectorComplete"
+				preset: clue
+			}
+		]
+	}

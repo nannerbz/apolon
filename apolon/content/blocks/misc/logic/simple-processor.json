@@ -1,0 +1,21 @@
+type: LogicBlock
+name: Simple Processor
+description: used to control, locate, and do lots of advanced things.
+instructionsPerTick: 4
+size: 1
+requirements: [
+	cobalt/10
+	carbide/10
+]
+range: 32
+	  "research": {
+		parent: ash
+		objectives: [
+			{
+				type: "SectorComplete"
+				preset: swarm
+			}
+		]
+	}
+researchCostMultiplier: 0.1
+category: logic

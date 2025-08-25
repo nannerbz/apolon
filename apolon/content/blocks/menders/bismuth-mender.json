@@ -1,0 +1,30 @@
+{
+  "name": "Bismuth Mender",
+  "description": "Heals nearby blocks rapidly.",
+  "type": "RegenProjector",
+  "health": 265,
+  "size": 1,
+  "range": 11,
+  "healPercent": 0.04,
+ "consumes": {
+    "power": 0.1,
+  },
+
+  "requirements": [
+    {
+      "item": "cobalt",
+      "amount": 25
+    },
+    {
+      "item": "bismuth",
+      "amount": 20
+    },
+    {
+      "item": "metaglass",
+      "amount": 10
+    },
+  ],
+  "category": "effect",
+  "research": "cobalt-wall"
+researchCostMultiplier: 0.05
+}

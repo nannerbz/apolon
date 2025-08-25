@@ -1,0 +1,147 @@
+{
+    "type": "ItemTurret",
+    "name": "Dash",
+    "description": "A really good anti air turret, shooting a single burst spray of bullets that home onto enemies.",
+    "targetAir": true,
+    "targetGround": false,
+    "collidesGround": false
+    "health": 2125
+    "size": 3
+    "inaccuracy": 10
+    "reload": 120
+    "xRand": 2,
+    "coolantMultiplier": 0.5
+    "squareSprite": false
+    "outlineColor": 222222
+    "shootCone": 8,
+    "rotateSpeed": 2,
+    "shots": 1,
+    "range": 320
+    "heatRequirement": 4
+    "consumes": {
+	"liquids": {
+		"liquids": [
+		]
+	}
+    	"coolant": {
+    		"amount": 1.2
+    	}
+    }
+    "ammoTypes": {
+               carbide: {
+    type: BasicBulletType
+    trailWidth: 2
+    trailLength: 6
+    speed: 6
+	lifetime: 60
+    damage: 20
+    collidesGround: false
+    drag: 0.015
+    burstSpacing: 4,
+    homingDelay: 15
+    homingRange: 95
+    homingPower: 0.15
+    width: 8
+    height: 12
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+	hitEffect: hitLancer
+    ammoMultiplier: 3
+	shrinkY: 0.3
+	pierce: true
+	pierceCap: 8
+	sprite: large-orb
+  }
+               chromium: {
+    type: BasicBulletType
+    trailWidth: 4
+    trailLength: 10
+    speed: 8
+	lifetime: 60
+    rangeChange: 75
+    damage: 60
+    collidesGround: false
+    drag: 0.015
+    burstSpacing: 4,
+    homingDelay: 15
+    homingRange: 125
+    homingPower: 0.15
+    width: 10
+    height: 16
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+	hitEffect: hitLancer
+    ammoMultiplier: 2
+	shrinkY: 0.4
+	pierce: true
+	pierceCap: 12
+	sprite: large-orb
+  }
+    },
+shoot: {
+	type: ShootSpread
+	shots: 20
+	spread: 2.25
+}
+	drawer: {
+		type: DrawTurret,
+     		basePrefix: base,
+		parts : [
+    			{
+      			type : RegionPart
+      			suffix : "-wf"
+      			progress : recoil
+      			heatProgress : recoil
+      			heatColor : "ffffff"
+      			mirror : false
+      			under : false
+      			moveX : 0
+			moveY : -3
+      			moveRot : 0
+    			},
+    			{
+      			type : RegionPart
+      			suffix : "-wm"
+      			progress : recoil
+      			heatProgress : recoil
+      			heatColor : "ffffff"
+      			mirror : false
+      			under : false
+      			moveX : 0
+			moveY : -2
+      			moveRot : 0
+    			},
+    			{
+      			type : RegionPart
+      			suffix : "-wb"
+      			progress : recoil
+      			heatProgress : recoil
+      			heatColor : "ffffff"
+      			mirror : false
+      			under : false
+      			moveX : 0
+			moveY : -1
+      			moveRot : 0
+    			},
+		]
+	}
+    "requirements": [
+        { "item": "bismuth", "amount": 95 },
+	  { "item": "metaglass", "amount": 65 },
+	{ "item": "carbide", "amount": 85 },
+	  { "item": "cobalt", "amount": 75 },
+    ],
+    "category": "turret"
+    "shootSound": "ShotgunRipple"
+	  "research": {
+		parent: chisel
+		objectives: [
+			{
+				type: "OnSector"
+				preset: tide
+			}
+		]
+	}
+    "shake": 0
+    "researchCostMultiplier": 0.05
+}

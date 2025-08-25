@@ -1,0 +1,145 @@
+{
+    "type": "ItemTurret",
+    "name": "Quake",
+    "description": "A heavy powerful cannon forged to stop the enemies where they are.",
+    "targetAir": true,
+    "targetGround": true,
+    "health": 4550
+    "size": 3
+    "inaccuracy": 10
+    "reload": 90
+    "outlineColor": 222222
+    "xRand": 0,
+    "squareSprite": false
+    "coolantMultiplier": 0.45
+  "consumes": {
+    "coolant": {
+      "amount": 0.5
+    }
+  }
+    "shootCone": 8,
+    "rotateSpeed": 3,
+    "shots": 1,
+    "range": 288
+    "ammoTypes": {
+               chromium: {
+    type: MissileBulletType
+    trailWidth: 3
+    trailLength: 25
+    speed: 3
+	lifetime: 96
+    damage: 45
+    width: 10
+    height: 10
+    shootEffect: shootBig2
+    smokeEffect: shootSmokeTitan
+    splashDamage: 75
+    splashDamageRadius: 45
+	buildingDamageMultiplier : 0.05
+    frontColor: ffffff
+    hitSound: none
+    lightColor: e2ca4b
+    trailColor: e2ca4b
+    backColor: 544736
+    weaveMag: 5
+    weaveScale: 4
+    trailChance: -1
+    despawnSound: dullExplosion
+    despawnEffect: none
+    knockback: 2
+    rangeChange: 0
+    status: sapped
+    statusDuration: 90
+    reloadMultiplier: 1
+	}
+               carbide: {
+    type: MissileBulletType
+    trailWidth: 3
+    trailLength: 25
+    speed: 2
+	lifetime: 124
+    damage: 45
+    width: 10
+    height: 10
+    weaveMag: 6
+    weaveScale: 5
+    shootEffect: shootBig2
+    smokeEffect: shootSmokeTitan
+    splashDamage: 85
+    splashDamageRadius: 55
+	buildingDamageMultiplier : 0.05
+    frontColor: ffffff
+    hitSound: none
+    lightColor: e2ca4b
+    trailColor: e2ca4b
+    backColor: 544736
+    trailChance: -1
+    despawnSound: dullExplosion
+    despawnEffect: none
+    knockback: 2
+    rangeChange: -40
+    status: sapped
+    statusDuration: 120
+    reloadMultiplier: 0.7
+	},
+},
+	drawer: {
+		type: DrawTurret,
+     		basePrefix: base,
+		parts : [
+    			{
+      			type : RegionPart
+      			suffix : "-b"
+      			progress : warmup
+      			heatProgress : warmup
+      			heatColor : "ffffff"
+      			mirror : false
+      			under : false
+      			moveX : 0
+			moveY : 0
+      			moveRot : 0
+    			},
+    			{
+      			type : RegionPart
+      			suffix : "-blade"
+      			progress : warmup
+      			heatProgress : warmup
+      			heatColor : "ffffff"
+      			mirror : true
+      			under : false
+      			moveX : 3
+			moveY : -3
+      			moveRot : 0
+			children: [
+    					{
+      					type : RegionPart
+      					suffix : "-recoil"
+      					progress : recoil
+      					heatProgress : recoil
+      					heatColor : "ffffff"
+      					mirror : true
+      					under : false
+      					moveX : 2
+					moveY : -2
+      					moveRot : 0
+					},
+				]
+			},
+		]
+	}
+    "requirements": [
+        { "item": "cobalt", "amount": 200 },
+	  { "item": "carbide", "amount": 80 },
+        { "item": "chromium", "amount": 120 },
+	  { "item": "metaglass", "amount": 120 },
+    ],
+    "category": "turret"
+    "minWarmup": 0.9
+    "shootWarmupSpeed": 0.06
+    "shootSound": "malignShoot"
+    "loopSound": "glow"
+    "loopSoundVolume": 0.5
+    "research": blast
+    "shake": 5
+    "researchCostMultiplier": 0.05
+}

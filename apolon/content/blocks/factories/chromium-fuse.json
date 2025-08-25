@@ -1,0 +1,55 @@
+{
+	type: NuclearReactor
+	name: Chromium Fuse
+	description: Takes in chromium. If not given enough cryofluid, will explode violently.
+	powerProduction: 7.2
+	itemDuration: 120
+	ambientSound: hum
+	ambientSoundVolume: 0.3
+	health: 1250
+	heating: 0.02
+	size: 3
+	category: power
+	fuelItem: "chromium"
+	coolantPower: 0.4
+        explosionShake: 8
+        explosionShakeDuration: 32
+        explosionRadius: 24
+        explosionDamage: 7500
+        explodeEffect: reactorExplosion
+        explodeSound: explosionbig
+	
+	consumes: {
+		items: {
+			items: [
+				{ "item": "chromium", "amount": 1 }
+			]
+		}
+		liquids: {
+			liquids: [
+				{ "liquid": "cryofluid", "amount": 0.4 }
+			]
+		}
+	}
+	drawer: {
+	    type: DrawMulti
+	    drawers : [
+	            	{
+	            	  type : DrawRegion
+	            	  suffix : "-bottom"
+	            	},
+	            	{
+	            	  type : DrawDefault
+	            	},
+			]
+		}
+	requirements: [
+		{ "item": "bismuth", "amount": 60 }
+		{ "item": "cobalt", "amount": 50 }
+		{ "item": "metaglass", "amount": 40 }
+		{ "item": "chromium", "amount": 30 }
+		{ "item": "carbide", "amount": 40 }
+	]
+	researchCostMultiplier: 0.05
+	research: rdg-oscillator
+}

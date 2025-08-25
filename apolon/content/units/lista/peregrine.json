@@ -1,0 +1,100 @@
+template: UnitType
+name: Peregrine
+flying: true
+speed: 2.3
+accel: 0.05
+drag: 0.04
+health: 1350
+hitSize: 48
+armor: 2
+itemCapacity: 0
+outlineColor: 222222
+range: 125
+isEnemy: false
+payloadCapacity: 96
+weapons: [
+	{
+		name: peregrine-w
+		reload: 60
+		x: -10
+		y: 8
+		shootSound: missile
+		rotateSpeed: 3
+		rotationLimit: 35
+		shoot: {
+			shots: 4
+			shotDelay: 3
+		}
+		shootY: 0
+		top: false
+		under: true
+		rotate: true
+		mirror: true
+		bullet: {
+			type: MissileBulletType
+			width: 8
+			height: 8
+			shootEffect: none
+			smokeEffect: none
+			maxRange: 95
+			hitSound: plasmaboom
+			hitSize: 16
+			lifetime: 41.6
+			speed: 3
+			hitEffect: blastExplosion
+			keepVelocity: false
+			shrinkX: 0
+			shrinkY: 0
+			inaccuracy: 5
+			weaveMag: 5
+			weaveScale: 4
+			homingPower: 0.04
+			trailColor: 64c990
+			trailWidth: 3
+			trailLength: 8
+			splashDamage: 12
+			splashDamageRadius: 24
+		}
+	}
+	{
+		type: PointDefenseWeapon
+		name: peregrine-p
+		reload: 10
+		targetInterval: 10
+		targetSwitchInterval: 8
+		mirror: false
+		recoil: 0.8
+		x: 0
+		y: -8
+		bullet: {
+			type: BulletType
+			shootSound: lasershoot
+			shootEffect: sparkShoot
+			hitEffect: pointHit
+			maxRange: 150
+			damage: 85
+		}
+	}
+	{
+		type: RepairBeamWeapon
+		name: peregrine-h
+		beamWidth: 1.2
+		repairSpeed: 0.5
+		mirror: true
+		x: -12
+		y: -9
+		bullet: {
+			type: BulletType
+			maxRange: 125
+		}
+	}
+]
+	  "research": {
+		parent: pragma
+		objectives: [
+			{
+				type: "SectorComplete"
+				preset: clue
+			}
+		]
+	}

@@ -1,0 +1,12 @@
+type: LiquidJunction
+name: Bismuth Junction
+health: 100
+size: 1
+category: liquid
+hasPower: false
+requirements: [
+  bismuth/4
+  metaglass/4
+]
+research: bismuth-conduit
+researchCostMultiplier: 0.1

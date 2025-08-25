@@ -1,0 +1,21 @@
+type: logicDisplay
+name: Hyper Display Cell
+description: Shows images given to it by processors. Can handle much larger images.
+size: 5
+displaySize: 144
+requirements: [
+	cobalt/75
+	bismuth/75
+	carbide/75
+]
+	  "research": {
+		parent: advanced-display-cell
+		objectives: [
+			{
+				type: "SectorComplete"
+				preset: clue
+			}
+		]
+	}
+researchCostMultiplier: 0.2
+category: logic

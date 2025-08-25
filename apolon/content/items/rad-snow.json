@@ -1,0 +1,10 @@
+{
+	"type": "material",
+	"name": "Rad Snow",
+	"description": "Snow that has high radiaton due to the environment",
+	"hardness": 1,
+	"cost": 0.3,
+	"color": "6fb573"
+	"research": "pearl-dust"
+	"lowPriority": true
+}

@@ -1,0 +1,103 @@
+type: hover
+name: Logos
+hovering: true
+rotateShooting: true
+speed: 1.1
+accel: 0.08
+drag: 0.07
+health: 2950
+hitSize: 22
+itemCapacity: 0
+armour: 4
+outlineColor: 222222
+range: 145
+abilities: [
+	{
+		type: SuppressionFieldAbility
+		x: 0
+		Y: 0
+		orbRadius: 2
+		particleSize: 1
+		particles: 4
+		display: false
+		active: false
+		layerOffset: -0.001
+		color: e2ca4b
+		particleColor: e2ca4b
+	}
+]
+weapons: [
+	{
+		name: logos-w
+		reload: 0
+		x: 0
+		y: 0
+		loopSound: torch
+		shootSound: torch
+		shootY: 0
+		randX: 0
+		rotate: true
+		mirror: false
+		continuous: true
+		bullet: {
+			type: ContinuousFlameBulletType
+			damage: 4
+			flareWidth: 3
+			flareColor: e2c94b
+			knockback: -0.2
+			length: 145
+			pierceCap: 3
+			lifetime: 10
+			colors: [
+				544736,
+				cf936a,
+				e2c94b,
+				e2c94b,
+				ffffff
+			]
+		}
+	}
+	{
+		name: logos-w2
+		reload: 60
+		x: 6
+		y: 6
+		shootSound: lasershoot
+		shootY: 0
+		randX: 0
+		mirror: true
+		rotate: true
+		bullet: {
+			type: LaserBoltBulletType
+			damage: 76
+			speed: 4
+			lifetime: 43.75
+			frontColor: cf936a
+			backColor: e2c94b
+			shootEffect: shootSmall
+			smokeEffect: shootSmallSmoke
+		}
+	}
+	{
+		name: logos-w3
+		reload: 60
+		x: -6
+		y: -6
+		shootSound: lasershoot
+		shootY: 0
+		randX: 0
+		mirror: true
+		rotate: true
+		bullet: {
+			type: LaserBoltBulletType
+			damage: 76
+			speed: 4
+			lifetime: 43.75
+			frontColor: cf936a
+			backColor: e2c94b
+			shootEffect: shootSmall
+			smokeEffect: shootSmallSmoke
+		}
+	}
+]
+	research: dota

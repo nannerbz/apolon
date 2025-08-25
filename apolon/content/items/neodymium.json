@@ -1,0 +1,9 @@
+{
+	"type": "material",
+	"name": "Neodymium",
+	"description": "A advanced resource used for electricity and liquid based transport.",
+	"hardness": 2,
+	"cost": 2.8,
+	"color": "ffffff"
+	"research": "cobalt"
+}

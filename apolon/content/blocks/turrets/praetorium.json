@@ -1,0 +1,283 @@
+{
+    "type": "ItemTurret",
+    "name": "Praetorium",
+    "description": "A sharp shooting turret that fires a bullet that frags into a bunch of air destroying frag.",
+    "targetAir": true,
+    "targetGround": false,
+    "collidesGround": false
+    "hasPower": true
+    "health": 7540
+    "size": 4
+    "inaccuracy": 0
+    "reload": 120
+    "outlineColor": 222222
+    "xRand": 0,
+    "squareSprite": false
+    "coolantMultiplier": 0.65
+    "heatRequirement": 6
+    "maxHeatEfficiency": 4
+    "shootY": 0
+  "consumes": {
+	"power": 0.7
+    "coolant": {
+      "amount": 0.5
+    }
+  }
+    "shootCone": 15
+    "rotateSpeed": 6
+    "shots": 1,
+    "range": 460
+    "ammoTypes": {
+               neodymium: {
+    type: BasicBulletType
+    trailWidth: 2
+    trailLength: 8
+    speed: 4
+	lifetime: 110
+    damage: 60
+    burstSpacing: 4,
+    width: 15
+    height: 15
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+	hitEffect: hitLancer
+    ammoMultiplier: 1
+	pierce: true
+	pierceCap: 5
+	pierceBuilding: true
+	buildingDamageMultiplier : 0.05
+	knockback: 0
+	collidesGround: false
+	sprite: large-orb
+	shrinkY: 0
+	fragBullets: 5
+	fragRandomSpread: 360
+	fragVelocityMin: 1
+	fragBullet: {
+		type: BasicBulletType
+		trailWidth: 2
+		trailLength: 6
+		width: 10
+		length: 10
+		sprite: large-orb
+		collidesGround: false
+		buildingDamageMultiplier : 0.05
+		damage: 20
+		speed: 6
+		lifetime: 60
+		pierce: true
+		shrinkY: 0
+
+		intervalBullet: {
+			type: BasicBulletType
+			trailWidth: 2
+			trailLength: 4
+			width: 5
+			length: 5
+			sprite: large-orb
+			damage: 6
+			collidesAir: true
+			collidesGround: false
+			pierce: true
+			pierceCap: 4
+			shrinkY: 0
+			speed: 1
+			buildingDamageMultiplier : 0.05
+			lifetime: 120
+			knockback: 0.253
+			homingPower: 0.04
+			homingRange: 128	
+    	      	}
+
+		bulletInterval: 8
+		intervalRandomSpread: 15
+		intervalBullets: 2
+		intervalAngle: 180
+		IntervalSpread: 65
+	}
+	}
+               photoglass: {
+    type: BasicBulletType
+    trailWidth: 4
+    trailLength: 12
+    speed: 10
+	rangeChange: 75
+    homingDelay: 15
+    homingRange: 125
+    homingPower: 0.05
+	lifetime: 53.5
+	buildingDamageMultiplier : 0.05
+    damage: 110
+    burstSpacing: 4,
+    width: 20
+    height: 20
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+	hitEffect: hitLancer
+    ammoMultiplier: 2
+	pierce: true
+	pierceCap: 5
+	pierceBuilding: true
+	knockback: 0
+	collidesGround: false
+	sprite: large-orb
+	shrinkY: 0
+	fragBullets: 8
+	fragRandomSpread: 360
+	fraVelocityMin: 1
+	fragBullet: {
+		type: BasicBulletType
+		trailWidth: 4
+		trailLength: 8
+		width: 15
+		length: 15
+		sprite: large-orb
+		collidesGround: false
+		buildingDamageMultiplier : 0.05
+		damage: 20
+		speed: 4
+		lifetime: 90
+		pierce: true
+		shrinkY: 0
+
+		intervalBullet: {
+			type: BasicBulletType
+			trailWidth: 2
+			trailLength: 4
+			width: 5
+			length: 5
+			sprite: large-orb
+			damage: 10
+			collidesAir: true
+			collidesGround: false
+			pierce: true
+			pierceCap: 4
+			buildingDamageMultiplier : 0.05
+			shrinkY: 0
+			speed: 2
+			lifetime: 60
+			knockback: 0.4
+			homingPower: 0.04
+			homingRange: 128	
+    	      	}
+
+		bulletInterval: 6
+		intervalRandomSpread: 15
+		intervalBullets: 2
+		intervalAngle: 180
+		IntervalSpread: 65
+	}
+	}
+	}
+	drawer: {
+		type: DrawTurret,
+     		basePrefix: base,
+		parts : [
+    			{
+      			type : RegionPart
+      			suffix : "-b"
+      			progress : recoil
+      			heatProgress : recoil
+      			heatColor : "ffffff"
+      			mirror : false
+      			under : true
+      			moveX : 0
+			moveY : -2
+      			moveRot : 0
+    			},
+    			{
+      			type : RegionPart
+      			suffix : "-recoil"
+      			progress : recoil
+      			heatProgress : recoil
+      			heatColor : "ffffff"
+      			mirror : true
+      			under : false
+      			moveX : 1
+			moveY : -2
+      			moveRot : 0
+    			},
+    			{
+      			type : RegionPart
+      			suffix : "-blade"
+      			progress : warmup
+      			heatProgress : recoil
+      			heatColor : "ffffff"
+      			mirror : true
+      			under : false
+      			moveX : 2
+			moveY : -2
+      			moveRot : -35
+			children: [
+    				{
+      				type : RegionPart
+      				suffix : "-reload"
+      				progress : recoil
+      				heatProgress : recoil
+      				heatColor : "ffffff"
+      				mirror : true
+      				under : false
+      				moveX : 0
+				moveY : -2
+      				moveRot : 0
+    				},
+			]
+    			},
+			{
+			type: ShapePart
+			progress: warmup
+			color: d65e74
+			sides: 3
+			rotation: 90
+			hollow: true
+			stroke: 0
+			strokeTo: 2
+			radius: 8
+			y: -18
+			},
+			{
+			type: ShapePart
+			progress: warmup
+			color: d65e74
+			sides: 6
+			rotation: 0
+			hollow: true
+			stroke: 0
+			strokeTo: 2
+			radius: 6
+			y: -18
+			rotateSpeed: 3
+			},
+			{
+			type: HaloPart
+			progress: warmup
+			color: d65e74
+			y: -18
+			haloRotation: 90
+			shapes: 4
+			triLength: 0
+			triLengthTo: 4
+			haloRadius: 10
+			tri: true
+			radius: 6
+			shapeRotation: 0
+			haloRotateSpeed: -5
+			},
+		]
+	}
+    "requirements": [
+        { "item": "carbide", "amount": 150 },
+	  { "item": "neodymium", "amount": 190 },
+        { "item": "metaglass", "amount": 175 },
+	  { "item": "cobalt", "amount": 325 },
+    ],
+    "category": "turret"
+    "minWarmup": 0.9
+    "shootWarmupSpeed": 0.06
+    "shootSound": "cannon"
+    "loopSound": "glow"
+    "loopSoundVolume": 0.5
+    "research": dash
+    "shake": 2
+    "researchCostMultiplier": 0.05
+}

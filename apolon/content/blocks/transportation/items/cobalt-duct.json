@@ -1,0 +1,13 @@
+{
+	type: Duct
+	name: Cobalt Duct
+	description: A simple transport duct.
+	health: 100
+	speed: 5
+	bridgeReplacement: cobalt-bridge
+	requirements: [
+		cobalt/2
+	]
+	research: ash
+	researchCostMultiplier: 0.15
+}

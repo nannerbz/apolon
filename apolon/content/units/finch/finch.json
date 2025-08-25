@@ -1,0 +1,40 @@
+template: UnitType
+name: Finch
+flying: true
+speed: 3.2
+accel: 0.1
+drag: 0.02
+health: 475
+hitSize: 12
+itemCapacity: 0
+outlineColor: 222222
+circleTarget: false
+range: 45
+weapons: [
+	{
+		name: finch-w
+		reload: 90
+		x: 0
+		y: 0
+		shootSound: none
+		rotate: false
+		bullet: {
+            type: BasicBulletType
+            damage: 48
+	    targetAir: false
+            speed: 1.2
+            width: 6
+            height: 10
+            frontColor: bf92f9
+            backColor: 6d56bf
+            inaccuracy: 0
+            lifetime: 45
+	    killShooter: true
+	    hittable: false
+	    collidesAir: true
+	    instantDisappear: true
+	    splashDamage: 128
+	    splashDamageRadius: 96
+		}
+	}
+]

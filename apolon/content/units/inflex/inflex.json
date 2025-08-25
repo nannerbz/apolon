@@ -1,0 +1,59 @@
+type: hover
+name: inflex
+hovering: true
+rotateShooting: true
+speed: 1.9
+accel: 0.2
+drag: 0.07
+health: 855
+hitSize: 14
+itemCapacity: 35
+outlineColor: 222222
+armour: 1
+range: 256
+parts: [
+	{
+		type: HoverPart
+		x: 4
+		y: -3
+		radius: 4
+		phase: 90
+		stroke: 1
+		layerOffset: -0.001
+		color: dbd9d4
+	}
+	{
+		type: HoverPart
+		x: -4
+		y: -3
+		radius: 4
+		phase: 90
+		stroke: 1
+		layerOffset: -0.001
+		color: dbd9d4
+	}
+]
+weapons: [
+    {
+        name: inflex-w
+	layerOffset: 1
+        reload: 128
+        x: 0
+        y: 1
+        top: true
+        spacing: 3
+        mirror: false
+	inaccuracy: 30
+	  recoil: 0
+        ejectEffect: none
+	  rotate: false
+	  shootSound: pew
+        bullet: {
+    		type: BasicBulletType
+    		shootEffect: shootBig
+    		smokeEffect: none
+    		ammoMultiplier: 1
+    		spawnUnit: inflex-missile
+        }
+    }
+]

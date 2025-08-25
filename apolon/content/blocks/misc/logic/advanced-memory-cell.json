@@ -1,0 +1,21 @@
+type: memoryBlock
+name: Advanced Memory Cell
+description: Holds lots of data given to it by processors.
+size: 2
+memoryCapacity: 256
+requirements: [
+	cobalt/35
+	bismuth/35
+	carbide/35
+]
+	  "research": {
+		parent: simple-memory-cell
+		objectives: [
+			{
+				type: "SectorComplete"
+				preset: tide
+			}
+		]
+	}
+researchCostMultiplier: 0.15
+category: logic

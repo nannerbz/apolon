@@ -1,0 +1,32 @@
+type: HeatProducer
+name: Neo Heater
+category: crafting
+description: Takes Neodymium and Cryofluid, turning it into a big chunk of heat.
+rotateDraw: false
+craftTime: 60,
+rotate: true
+size: 2
+heatOutput: 3
+regionRotated1: 1
+ambientSound: hum
+	consumes: {
+		items: {
+			items: [
+				{ "item": "neodymium", "amount": 1 }
+			]
+		}
+		liquids: {
+			liquids: [
+				{ "liquid": "cryofluid", "amount": 0.2 }
+			]
+		}
+	}
+requirements: [
+	cobalt/30
+	metaglass/25
+	carbide/20
+	neodymium/25
+	chromium/20
+]
+research: rdg-heater
+researchCostMultiplier: 0.02

@@ -1,0 +1,9 @@
+{
+	"type": "material",
+	"name": "Kobra Alloy",
+	"description": "A high tech resource used for strong tanky related stuff",
+	"hardness": 2,
+	"cost": 2.4,
+	"color": "c74567"
+	"research": "chromium"
+}

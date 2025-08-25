@@ -1,0 +1,35 @@
+template: UnitType
+name: Sparrow
+flying: true
+speed: 2
+accel: 0.07
+drag: 0.04
+health: 1650
+hitSize: 22
+itemCapacity: 10
+outlineColor: 222222
+circleTarget: false
+range: 192
+weapons: [
+	{
+		name: sparrow-w
+		reload: 128
+		x: 0
+		y: 2
+		shootSound: Pulse
+		rotate: false
+		bullet: {
+			type: BasicBulletType
+			damage: 150
+			speed: 5
+			width: 8
+			length: 12
+			lifetime: 38.4
+			trailColor: ffffff
+			trailLength: 8
+			trailWidth: 4
+			shootEffect: shootSmall
+			smokeEffect: shootSmallSmoke
+		}
+	}
+]

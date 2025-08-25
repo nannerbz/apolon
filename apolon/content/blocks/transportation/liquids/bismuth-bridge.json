@@ -1,0 +1,18 @@
+type: LiquidBridge
+name: Bismuth Bridge
+description: Used to transport liquids over large gaps or walls.
+fadeIn: true
+moveArrows: true
+arrowSpacing: 8
+range: 8
+hasPower: false
+pulse: true
+arrowTimeScl: 3
+arrowPerioid: 0.8
+category: liquid
+research: bismuth-conduit
+researchCostMultiplier: 0.05
+requirements: [
+	bismuth/5
+	metaglass/10
+]

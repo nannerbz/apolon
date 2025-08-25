@@ -1,0 +1,14 @@
+type: Unloader
+name: Cobalt Unloader
+description: Unloads items items form containers
+health: 120
+speed: 4
+research: cobalt-duct
+researchCostMultiplier: 0.25
+underBullets: true
+solid: false
+requirements: [
+	cobalt/10
+	carbide/5
+]
+category: distribution

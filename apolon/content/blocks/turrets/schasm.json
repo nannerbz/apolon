@@ -1,0 +1,161 @@
+{
+    "type": "ItemTurret",
+    "name": "Schasm",
+    "description": "Long range energy railgun, shoots small rapid bursts of cutter rays.",
+    "targetAir": true,
+    "targetGround": true,
+    "health": 9560
+    "size": 4
+    "inaccuracy": 0
+    "reload": 240
+    "recoil": 2
+    "outlineColor": 222222
+    "xRand": 0,
+    "squareSprite": false
+    "coolantMultiplier": 0.75
+  "consumes": {
+    "coolant": {
+      "amount": 0.6
+    }
+  }
+    "shootCone": 4,
+    "rotateSpeed": 1.6,
+    "shots": 1,
+    "range": 670
+    "ammoTypes": {
+	hypersteel: {
+		Type: LaserBulletType
+		chargeEffect: lancerLaserCharge
+		hitEffect: hitLancer
+		hitSize: 5
+		drawSize: 550
+		collidesAir: true
+		length: 670
+		ammoMultiplier: 3
+		buildingDamageMultiplier : 0.05
+		pierceCap: 5
+		damage: 300
+		colors: [
+			4b3799
+			645ab0
+			8a7ed9
+		]
+	}
+}
+	shoot: {
+		shots: 3
+		shotDelay: 10
+	}
+	drawer: {
+		type: DrawTurret,
+     		basePrefix: base,
+		parts : [
+    			{
+      			type : RegionPart
+      			suffix : "-b"
+      			progress : recoil
+      			heatProgress : warmup
+      			heatColor : "8a7ed9"
+      			mirror : false
+      			under : false
+      			moveX : 0
+			moveY : 0
+      			moveRot : 0
+    			},
+    			{
+      			type : RegionPart
+      			suffix : "-rl"
+      			progress : recoil
+      			heatProgress : recoil
+      			heatColor : "8a7ed9"
+      			mirror : false
+      			under : false
+      			moveX : -2
+			moveY : 2
+      			moveRot : 0
+    			},
+    			{
+			type : RegionPart
+			suffix : "-rr"
+			progress : recoil
+			heatProgress : recoil
+			heatColor : "8a7ed9"
+			mirror : false
+			under : false
+			moveX : 2
+			moveY : 2
+			moveRot : 0
+			},
+    			{
+      			type : RegionPart
+      			suffix : "-pl"
+      			progress : warmup
+      			heatProgress : warmup
+      			heatColor : "8a7ed9"
+      			mirror : false
+      			under : false
+      			moveX : -2
+			moveY : 0
+      			moveRot : 0
+    			},
+    			{
+      			type : RegionPart
+      			suffix : "-pr"
+      			progress : warmup
+      			heatProgress : warmup
+      			heatColor : "8a7ed9"
+      			mirror : false
+      			under : false
+      			moveX : 2
+			moveY : 0
+      			moveRot : 0
+    			},
+			{
+			type: ShapePart
+			progress: warmup
+			color: 8a7ed9
+			layer: 110
+			sides: 100
+			rotation: 0
+			hollow: true
+			stroke: 0
+			strokeTo: 2
+			radius: 5
+			y: -18
+			},
+			{
+			type: HaloPart
+			progress: warmup
+			color: 8a7ed9
+			layer: 110
+			y: -18
+			haloRotation: 90
+			shapes: 3
+			triLength: 0
+			triLengthTo: 6
+			haloRadius: 14
+			tri: true
+			radius: 6
+			shapeRotation: 180
+			haloRotateSpeed: -5
+			},
+		]
+	}
+    "requirements": [
+        { "item": "carbide", "amount": 215 },
+	  { "item": "neodymium", "amount": 120 },
+        { "item": "photoglass", "amount": 95 },
+	  { "item": "bismuth", "amount": 285 },
+        { "item": "hypersteel", "amount": 80 },
+	  { "item": "kobra-alloy", "amount": 120 },
+    ],
+    "category": "turret"
+    "minWarmup": 0.96
+    "shootWarmupSpeed": 0.02
+    "shootSound": "PlasmaRipple"
+    "loopSound": "glow"
+    "loopSoundVolume": 0.5
+    "research": acrylon
+    "shake": 5
+    "researchCostMultiplier": 0.05
+}

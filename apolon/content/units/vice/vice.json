@@ -1,0 +1,80 @@
+type: hover
+name: Vice
+hovering: true
+rotateShooting: true
+speed: 2.2
+accel: 0.1
+drag: 0.06
+health: 655
+hitSize: 14
+itemCapacity: 0
+outlineColor: 222222
+armour: 3
+buildSpeed: 0.2
+boostMultiplier: 1.5
+canBoost: true
+range: 95
+parts: [
+	{
+		type: HoverPart
+		x: 0
+		y: -4
+		radius: 7
+		phase: 90
+		stroke: 1
+		layerOffset: -0.001
+		color: c9a5c8
+	}
+]
+weapons: [
+	{
+		name: vice-w
+		reload: 60
+		x: 0
+		y: 1
+		recoil: 0
+		shootSound: Pulse
+		shootY: 0
+		layerOffset: 0.001
+		top: true
+		rotate: true
+		mirror: false
+		bullet: {
+			type: LaserBoltBulletType
+			damage: 35
+			speed: 4
+			width: 2
+			length: 6
+			lifetime: 23.75
+			shootEffect: shootSmall
+			smokeEffect: shootSmallSmoke
+		}
+		parts: [
+			{
+      			type : RegionPart
+      			suffix : "-plate"
+      			progress : recoil
+      			heatProgress : recoil
+      			heatColor : "ffffff"
+      			mirror : true
+      			under : true
+      			moveX : 1
+			moveY : -1
+      			moveRot : 0 
+    			},
+			{
+      			type : RegionPart
+      			suffix : "-b"
+      			progress : recoil
+      			heatProgress : recoil
+      			heatColor : "ffffff"
+      			mirror : false
+      			under : false
+      			moveX : 0
+			moveY : 0
+      			moveRot : 0 
+    			},
+		]
+	}
+]
+	research: float-fabricator

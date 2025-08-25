@@ -1,0 +1,60 @@
+type: Reconstructor
+
+health: 850
+name: Deca Refabricator
+size: 3
+itemCapacity: 100
+constructTime: 2200
+
+requirements: [
+    bismuth/125
+    metaglass/115
+    carbide/95
+    chromium/45
+    neodymium/35
+]
+
+upgrades: [
+    [quark, pion]
+    [neo, sigma]
+    [quo, dota]
+    [ignis, vanguard]
+    [vice, argo]
+    [lista, pragma]
+]
+
+consumes: {
+    items: {
+        items: [
+            {
+                item: metaglass
+                amount: 14
+            },
+            {
+                item: cobalt
+                amount: 18
+            },
+            carbide/16
+        ]
+    }
+    liquids: {
+	liquids: [
+	    {
+		liquid: hydrogen
+		amount: 0.4
+	    }
+	]
+    }
+    power: 1.6
+}
+category: units
+	  "research": {
+		parent: crawl-fabricator
+		objectives: [
+			{
+				type: "OnSector"
+				preset: unite
+			}
+		]
+	}
+researchCostMultiplier: 0.05

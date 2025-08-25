@@ -1,0 +1,10 @@
+type: wall
+name: Large Cobalt Wall
+health: 960
+category: defense
+size: 2
+requirements: [
+	cobalt/24
+]
+research: cobalt-wall
+researchCostMultiplier: 0.05

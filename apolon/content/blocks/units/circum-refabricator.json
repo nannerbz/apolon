@@ -1,0 +1,53 @@
+type: Reconstructor
+
+health: 3250
+name: Circum Manipulator
+size: 5
+itemCapacity: 100
+constructTime: 4500
+
+requirements: [
+    bismuth/165
+    cobalt/145
+    metaglass/185
+    carbide/145
+    neodymium/125
+    kobra-alloy/75
+]
+
+upgrades: [
+    [pion, tritium]
+    [sigma, chronos]
+    [dota, logos]
+    [vanguard, centurion]
+    [argo, corsair]
+    [pragma, peregrine]
+]
+
+consumes: {
+    items: {
+        items: [
+            {
+                item: metaglass
+                amount: 32
+            },
+            {
+                item: kobra-alloy
+                amount: 12
+            },
+            carbide/24
+        ]
+    }
+    liquids: {
+	liquids: [
+	    {
+		liquid: methane
+		amount: 0.6
+	    }
+	]
+    }
+    power: 2.4
+}
+category: units
+research: deca-refabricator
+researchCostMultiplier: 0.05

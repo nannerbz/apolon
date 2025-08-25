@@ -1,0 +1,94 @@
+type: legs
+name: Gisma
+speed: 0.6
+health: 1100
+armor: 6
+rotateShoot: true
+shootSound: lasershoot
+legCount: 6
+hovering: true
+allowLegStep: true
+legStraightness: 0
+legContinuousMove: true
+legLength: 20
+lockLegBase: true
+stepShake: 0.8
+legMaxLength: 1.4
+legMinLength: 0.3
+rippleScale: 0.5
+legLengthScl : 0.9
+legForwardScl : 0.8
+legMoveSpace: 1
+legGroupSize: 3
+range: 75
+outlineColor: 222222
+hitSize: 24
+abilities: [
+	{
+		type: SpawnDeathAbility
+		unit: neo
+		amount: 2
+		spread: 10
+	}
+]
+weapons: [
+    {
+        name: sigma-w
+	layerOffset: 1
+        reload: 80
+        x: 5.5
+        y: 0
+        top: true
+        shots: 2
+        spacing: 3
+        mirror: true
+	  recoil: 2
+	  shootSound: lasershoot
+        ejectEffect: casing1
+	  rotationLimit: 65
+	  rotate: true
+        bullet: {
+            type: ShrapnelBulletType
+		recoil: 1
+            damage: 115
+		length: 85
+		width: 11
+		toColor: 37727d
+        }
+	parts: [
+		{
+      		type : RegionPart
+      		suffix : "-plate"
+      		progress : recoil
+      		heatProgress : recoil
+      		heatColor : "ffffff"
+      		mirror : true
+      		under : false
+      		moveX : 3
+		moveY : -3
+      		moveRot : -40
+    		},
+		{
+      		type : RegionPart
+      		suffix : "-plate"
+      		progress : recoil
+      		heatProgress : recoil
+      		heatColor : "ffffff"
+      		mirror : true
+      		under : false
+      		moveX : 2
+		moveY : -1
+      		moveRot : -10
+    		},
+	]
+    }
+]
+	  "research": {
+		parent: neo
+		objectives: [
+			{
+				type: "OnSector"
+				preset: clue
+			}
+		]
+	}

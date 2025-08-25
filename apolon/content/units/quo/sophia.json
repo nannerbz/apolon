@@ -1,0 +1,38 @@
+atemplate: UnitType
+name: Sophia
+flying: true
+speed: 0.9
+accel: 0.04
+drag: 0.05
+health: 15550
+hitSize: 32
+itemCapacity: 0
+outlineColor: 222222
+engineSize: 0
+engineOffset: 0
+range: 350
+research: logos
+abilities: [
+	{
+		type: EnergyFieldAbility
+		damage: 35
+		reload: 30
+		range: 350
+		maxTargets: 50
+		status: burning
+		statusDuration: 120
+	}
+	{
+		type: SuppressionFieldAbility
+		x: 0
+		Y: 0
+		orbRadius: 3
+		particleSize: 2
+		particles: 6
+		display: false
+		active: false
+		layerOffset: -0.001
+		color: e2ca4b
+		particleColor: e2ca4b
+	}
+]

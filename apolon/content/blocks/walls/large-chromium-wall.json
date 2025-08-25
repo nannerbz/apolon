@@ -1,0 +1,12 @@
+type: wall
+name: Large Chromium Wall
+health: 1120
+category: defense
+size: 2
+requirements: [
+	chromium/24
+]
+research: chromium-wall
+researchCostMultiplier: 0.05
+flashHit: true
+chanceDeflect: 16

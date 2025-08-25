@@ -1,0 +1,8 @@
+type: SteamVent
+name: Aragonite Vent
+parent: aragonite-floor
+blendGroup: aragonite-floor
+variants: 2
+attributes: {
+	steam: 1
+}

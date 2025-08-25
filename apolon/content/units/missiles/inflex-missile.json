@@ -1,0 +1,65 @@
+{
+	template: MissileUnitType
+	name: Inflex Missile
+	maxRange: 12
+	rotateSpeed: 8
+	trailLength: 24
+	missileAccelTime: 15
+	lowAltitude: true
+	loopSound: missileTrail
+	loopSoundVolume: 1.5
+	deathSound: largeExplosion
+	targetAir: true
+	speed: 4
+	lifetime: 64
+	health: 128
+	weapons: [
+		{
+			name: weapon
+			shootCone: 360
+			mirror: false
+			reload: 1
+			deathExplosionEffect: {
+				type: MultiEffect
+				effects: [
+					{
+   						layer: 60
+        					length: 300
+        					lifetime: 600
+       						cone: 360
+        					particles: 10
+          					interp: pow2Out
+       					   	sizeInterp: linear 
+       					   	region: particle
+       					   	sizeFrom: 80
+       						sizeTo: 0
+       					   	colorFrom: ffffff
+       						colorTo: 000000
+       					 }
+					{
+   						layer: 60
+        					length: 300
+        					lifetime: 600
+       						cone: 360
+        					particles: 30
+          					interp: pow2Out
+       					   	sizeInterp: linear 
+       					   	region: particle
+       					   	sizeFrom: 125
+       						sizeTo: 0
+       					   	colorFrom: ffffff
+       						colorTo: 000000
+       					 }
+				]
+			}
+			shootOnDeath: true
+			shake: 10
+			bullet: {
+				type: ExplosionBulletType
+				splashDamage: 64
+				splashDamageRadius: 48
+				ammoMultiplier: 1
+			}
+		}
+	]
+}

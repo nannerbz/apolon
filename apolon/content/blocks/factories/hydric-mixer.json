@@ -1,0 +1,70 @@
+{
+	"type": "GenericCrafter",
+	"name": "Hydric Mixer",
+	"description": "Mixes rad snow and arkycite into cryofluid. Produces hydrogen as a byproduct. One of the only reliable ways to get cryofluid if it isn't available naturally.",
+	"outputLiquids": [
+		{
+		"liquid": "hydrogen",
+		"amount": 1.8
+		}
+		{
+		"liquid": "cryofluid",
+		"amount": 2.4
+		}
+	]
+	"rotate": true
+	"size": 3,
+	"hasPower": true,
+	"hasItems": true,
+	"hasLiquids": true,
+	"craftTime": 30,
+	"invertFlip": true
+	"updateEffect": "smeltsmoke",
+	"consumes": {
+		power: 0.6
+		"items": {
+			"items": [
+				{ "item": "rad-snow", "amount": 2 }
+			]
+                }
+		"liquids": {
+			"liquids": [
+				{ "liquid": "arkycite", "amount": 0.4 }
+			]
+		}
+	},
+	"requirements": [
+		{ "item": "bismuth", "amount": 50 }
+		{ "item": "cobalt", "amount": 70 }
+		{ "item": "neodymium", "amount": 80 }
+		{ "item": "kobra-alloy", "amount": 60 }
+	],
+	"category": "crafting",
+	"research": "kobra-forge",
+	"ambientSound": "electricHum",
+	"ambientSoundVolume": 0.5
+	"researchCostMultiplier": 0.05
+	"liquidOutputDirections": [1, 3]
+	"regionRotated1": 3
+	drawer: {
+	    type: DrawMulti
+	    drawers : [
+	            	{
+	            	  type : DrawRegion
+	            	  suffix : "-bottom"
+	            	},
+	            	{
+	            	  type : DrawLiquidRegion
+	            	  suffix : "-liquid"
+			  drawLiquid : "arkycite"
+	            	},
+	            	{
+	            	  type : DrawRegion
+	            	  suffix : "-top"
+	            	},
+			{
+			  type : DrawLiquidOutputs
+			},
+			]
+		}
+}

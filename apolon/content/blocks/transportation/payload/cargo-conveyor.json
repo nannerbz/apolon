@@ -1,0 +1,19 @@
+type: PayloadConveyor
+name: Cargo Conveyor
+description: used to transport cargo.
+requirements: [
+	carbide/10
+	cobalt/10
+]
+category: units
+canOverdrive: false
+	  "research": {
+		parent: cobalt-duct
+		objectives: [
+			{
+				type: "SectorComplete"
+				preset: tide
+			}
+		]
+	}
+researchCostMultiplier: 0.05

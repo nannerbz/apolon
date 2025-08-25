@@ -1,0 +1,21 @@
+{
+  "localizedName": "Tide",
+  "description": "Waves have been detected here. Research new turrets to deal with annoying air units.",
+  "difficulty": 2,
+  "captureWave": 25,
+  "planet": "akyao",
+  "allowLaunchLoadout": false,
+  "allowLaunchSchematics": false,
+  "sector": 17,
+  "addStartingItems": false
+  "overrideLaunchDefaults": true
+	  "research": {
+		parent: swarm
+		objectives: [
+			{
+				type: "SectorComplete"
+				preset: swarm
+			}
+		]
+	}
+}

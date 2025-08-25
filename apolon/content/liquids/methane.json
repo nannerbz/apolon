@@ -1,0 +1,14 @@
+{
+	"type": "liquid",
+	"name": "Methane",
+	"description": "A gas that has a really high burning power.",
+	"flammability": 8,
+	"temperature": 0.6,
+	"boilPoint": 0.1,
+	"color": "e2ca4b"
+	"gasColor": "e2ca4b"
+	"explosiveness": 4,
+	"barColor": "e2ca4b"
+	"gas": true
+	"research": acetylene
+}

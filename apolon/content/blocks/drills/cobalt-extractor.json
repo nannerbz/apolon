@@ -1,0 +1,31 @@
+name: Cobalt Extractor
+description: A big yet somewhat slow drill
+type: Drill
+health: 485
+size: 3
+tier: 1
+drillTime: 575
+liquidBoostIntensity: 1.6
+hardnessDrillMultiplier: 1.5
+warmupSpeed: 0.2
+hasPower: false
+drillEffect: mine
+updateEffect: mineBig
+heatColor: ffffff
+itemCapacity: 30
+liquidCapacity: 30
+drawRim: false
+consumes: {
+  liquid: {
+    liquid: cryofluid
+    amount: 0.2
+    booster: true
+	optional: true
+  }
+}
+requirements: [
+  cobalt/35
+]
+category: production
+research: ash
+"researchCostMultiplier": 0.05

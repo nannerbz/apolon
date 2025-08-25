@@ -1,0 +1,36 @@
+type: HeatConductor
+name: Fusible Conduit
+description: transports heat, can be its own router too!
+size: 2
+regionRotated1: 1
+	  "research": {
+		parent: cobalt-duct
+		objectives: [
+			{
+				type: "OnSector"
+				preset: tide
+			}
+		]
+	}
+requirements: [
+	bismuth/12
+	carbide/8
+]
+	drawer: {
+	    type: DrawMulti
+	    drawers : [
+	            	{
+	            	  type : DrawDefault
+	            	},
+	            	{
+	            	  type : DrawHeatOutput
+			  suffix : "-heat"
+	            	},
+	            	{
+	            	  type : DrawHeatInput
+	            	  suffix : "-heat"
+	            	},
+			]
+		}
+category: crafting
+researchCostMultiplier: 0.05

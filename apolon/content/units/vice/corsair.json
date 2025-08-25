@@ -1,0 +1,58 @@
+type: hover
+name: Corsair
+hovering: true
+rotateShooting: true
+speed: 1.6
+accel: 0.15
+drag: 0.06
+health: 5950
+targetAir: false,
+targetGround: true,
+hitSize: 24
+itemCapacity: 0
+outlineColor: 222222
+armour: 12
+range: 425
+parts: [
+	{
+		type: HoverPart
+		x: 5
+		y: -7
+		mirror: true
+		radius: 7
+		phase: 90
+		stroke: 1
+		layerOffset: -0.001
+		color: c9a5c8
+	}
+]
+weapons: [
+	{
+		name: corsair-w
+		reload: 60
+		x: 8
+		y: 1.4
+		shootSound: artillery
+		top: false
+		rotate: true
+		rotateSpeed: 2
+		rotationLimit: 10
+		bullet: {
+			type: ArtilleryBulletType
+			damage: 40
+			splashDamage: 35
+			splashDamageRadius: 64
+			hitEffect: blastExplosion
+			speed: 4
+			knockback: 1.2
+			collides: true
+			collidesTiles: true
+			width: 20
+			height: 20
+			lifetime: 106.25
+			shootEffect: shootSmall
+			smokeEffect: shootSmallSmoke
+		}
+	}
+]
+	research: argo

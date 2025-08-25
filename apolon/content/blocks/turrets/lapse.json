@@ -1,0 +1,89 @@
+{
+
+	"type": "ContinuousTurret",
+	"name": "Lapse",
+	"description": "An anti-air single point laser turret. Applies heavy slowing and does low damage.",
+	"targetAir": true,
+	"targetGround": false,
+    	"collidesGround": false
+	"health": 850,
+	"size": 2,
+	"hasLiquids": true
+	"outlineColor": "222222",
+	"squareSprite": false,
+	"shootCone": 360,
+	"rotateSpeed": 1.6,
+	"aimChangeSpeed": 1.6,
+	"shootY": 4,
+	"range": 850,
+	"loopSound": "laserbeam",
+	"shootSound": "none"
+	"researchCostMultiplier": 0.05,
+	"shootWarmupSpeed": 0.2,
+	"consumes": {
+		"liquids": {
+			"liquids": [
+				{ "liquid": "acetylene", "amount": 0.6 }
+			]
+		}
+	},
+	"shootType": {
+		"type": "PointLaserBulletType",
+		"damage": 10,
+		"hitColor": "d65e74"
+		"buildingDamageMultiplier": 0.05
+		"status": prolapsed,
+		"statusDuration": 120,
+	},
+	"category": "turret",
+	  "research": {
+		parent: vacuum
+		objectives: [
+			{
+				type: "SectorComplete"
+				preset: spiral
+			}
+		]
+	}
+	"requirements": [
+		"carbide/95",
+		"cobalt/160",
+		"metaglass/115",
+		"neodymium/35",
+	],
+	"drawer": {
+		"type": "DrawTurret",
+		"basePrefix": "base",
+		"parts": [
+			{
+				"type": "RegionPart",
+				"suffix": "-w",
+				"mirror": true,
+				"under": false,
+				"progress": "warmup",
+				"heatColor": "ffffff"
+				"moveX": 1,
+				"moveY": -1
+			},
+			{
+				"type": "RegionPart",
+				"suffix": "-under",
+				"mirror": false,
+				"under": false,
+				"progress": "warmup",
+				"heatColor": "ffffff",
+			}
+			{
+				"type": "RegionPart",
+				"suffix": "-plate",
+				"mirror": true,
+				"under": false,
+				"progress": "warmup",
+				"heatColor": "ffffff",
+				"moveY": 2
+				"moveX": 2
+				"moveRot": -25
+			},
+		]
+	}
+}

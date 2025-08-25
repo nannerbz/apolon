@@ -1,0 +1,107 @@
+type: legs
+name: Chronos
+speed: 0.5
+health: 3750
+armor: 8
+drag: 0.1
+rotateSpeed: 4
+rotateShoot: true
+shootSound: lasershoot
+legCount: 6
+hovering: true
+allowLegStep: true
+legStraightness: 2
+legContinuousMove: true
+legLength: 30
+lockLegBase: true
+stepShake: 1.1
+legExtension: -2
+legMaxLength: 1.6
+legMinLength: 0.4
+rippleScale: 0.6
+legLengthScl : 0.98
+legForwardScl : 0.7
+legMoveSpace: 1.4
+legGroupSize: 2
+outlineColor: 222222
+range: 145
+hitSize: 32
+abilities: [
+	{
+		type: SpawnDeathAbility
+		unit: neo
+		amount: 4
+		spread: 14
+	}
+]
+weapons: [
+    {
+        name: chronos-w
+	layerOffset: 1
+	minWarmup: 0.9
+	warmupMaintainTime: 20
+	shootWarmupSpeed: 0.05
+        reload: 60
+        x: 8
+        y: 0
+        top: true
+        shots: 2
+        spacing: 3
+        mirror: true
+	  recoil: 2
+	  shootSound: lasershoot
+        ejectEffect: casing1
+	  rotationLimit: 45
+	  rotate: true
+        bullet: {
+            type: LaserBulletType
+		recoil: 1.5
+		hitSize: 4
+		lifetime: 12
+		drawSize: 480
+		collidesAir: true
+                damage: 185
+		length: 185
+		toColor: 37727d
+        }
+	parts: [
+		{
+      		type : RegionPart
+      		suffix : "-p"
+      		progress : warmup
+      		heatProgress : recoil
+      		heatColor : "ffffff"
+      		mirror : true
+      		under : true
+      		moveX : 2
+		moveY : -3
+      		moveRot : -15
+		top: true
+		outline: true
+    		},
+		{
+      		type : RegionPart
+      		suffix : "-p"
+      		progress : recoil
+      		heatProgress : recoil
+      		heatColor : "ffffff"
+      		mirror : true
+      		under : false
+      		moveX : 3
+		moveY : -2
+      		moveRot : -35
+		top: true
+		outline: true
+    		},
+	]
+    }
+]
+	  "research": {
+		parent: sigma
+		objectives: [
+			{
+				type: "SectorComplete"
+				preset: clue
+			}
+		]
+	}

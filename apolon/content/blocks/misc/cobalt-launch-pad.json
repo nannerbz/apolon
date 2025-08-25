@@ -1,0 +1,17 @@
+type: LaunchPad
+name: Cobalt Launch Pad
+description: Used to launch resource from one sector to another in small bursts.
+category: effect
+buildVisibility: hidden
+size: 2
+itemCapacity: 20
+launchTime: 600
+hasPower: true
+consumes: {
+	power: 0.6
+}
+requirements: [
+	cobalt/75
+	bismuth/50
+	metaglass/50
+]

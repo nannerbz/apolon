@@ -1,0 +1,55 @@
+{
+	"type": "HeatCrafter",
+	"name": "Hyperlucent Forge",
+	"description": "Uses Neodymium, Carbide, Tungsten, Heat, And power to make Hypersteel.",
+	"outputItem": {"item": "hypersteel", "amount": 2},
+	"size": 5,
+	"hasPower": true,
+	"hasItems": true,
+	"hasLiquids": false,
+	"craftTime": 90,
+	"updateEffect": "smeltsmoke",
+    	"heatRequirement": 5
+	"hasHeat": true
+	"consumes": {
+		power: 2.2
+		"items": {
+			"items": [
+				{ "item": "neodymium", "amount": 1 }
+				{ "item": "carbide", "amount": 1 }
+				{ "item": "tungsten", "amount": 3 }
+			]
+                }
+		"liquids": {
+			"liquids": [
+			]
+		}
+	},
+	"requirements": [
+		{ "item": "carbide", "amount": 120 }
+		{ "item": "cobalt", "amount": 240 }
+		{ "item": "neodymium", "amount": 120 }
+		{ "item": "bismuth", "amount": 160 }
+		{ "item": "kobra-alloy", "amount": 100 }
+		{ "item": "tungsten", "amount": 60 }
+		{ "item": "photoglass", "amount": 80 }
+	],
+	"category": "crafting",
+	"research": "nanotech-dry-stainer",
+	"idleSound": "respawning",
+	"idleSoundVolume": 0.5
+"researchCostMultiplier": 0.05
+	drawer: {
+	    type: DrawMulti
+	    drawers : [
+	            	{
+	            	  type : DrawDefault
+	            	},
+	            	{
+	            	  type : DrawGlowRegion
+	            	  color : 8a7ed9
+			  intensity : 0.9
+	            	},
+	    ]
+	}
+}

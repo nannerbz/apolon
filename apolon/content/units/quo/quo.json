@@ -1,0 +1,82 @@
+type: hover
+name: Quo
+hovering: true
+hoverable: true
+lowAltitude: true
+groundLayer: 60
+useEngineElevation: false
+rotateShooting: true
+speed: 1.6
+accel: 0.09
+drag: 0.06
+health: 955
+hitSize: 14
+itemCapacity: 0
+outlineColor: 222222
+armour: 2
+canBoost: true
+engineOffset: 0
+range: 125
+parts: [
+	{
+		type: HoverPart
+		x: 0
+		Y: 0
+		radius: 7
+		phase: 90
+		stroke: 1
+		layerOffset: -0.001
+		color: cf926a
+	}
+]
+weapons: [
+	{
+		name: quo-w
+		reload: 120
+		x: 0
+		y: 0
+		shootSound: PlasmaPew
+		shootY: 0
+		rotate: true
+		bullet: {
+			type: BasicBulletType
+			splashDamage: 45
+			splashDamageRadius: 35
+			damage: 60
+			speed: 3
+			width: 8
+			length: 12
+			lifetime: 41.6
+			trailColor: ffffff
+			trailLength: 8
+			trailWidth: 2
+			shootEffect: shootSmall
+			smokeEffect: shootSmallSmoke
+			hitEffect: {
+				type: WaveEffect
+				colorFrom: e2ca4b
+				colorTo: e2ca4b
+				sizeTo: 38
+				lifetime: 10
+				strokeFrom: 4
+			}
+			despawnEffect: {
+				type: WaveEffect
+				colorFrom: e2ca4b
+				colorTo: e2ca4b
+				sizeTo: 38
+				lifetime: 10
+				strokeFrom: 4
+			}	
+		}
+	}
+]
+	  "research": {
+		parent: float-fabricator
+		objectives: [
+			{
+				type: "SectorComplete"
+				preset: clue
+			}
+		]
+	}

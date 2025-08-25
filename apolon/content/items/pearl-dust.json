@@ -1,0 +1,10 @@
+{
+	"type": "material",
+	"name": "Pearl Dust",
+	"description": "A simple powder.",
+	"hardness": 1,
+	"cost": 0.25,
+	"color": "f0f0f0"
+	"research": "cobalt"
+	"lowPriority": true
+}

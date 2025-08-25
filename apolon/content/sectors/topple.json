@@ -1,0 +1,21 @@
+{
+  "localizedName": "Topple",
+  "description": "An enemy base has been detected here. Thankfully, the enemy seems to have abandoned this sector and not bothered with unit production. Make units and attack. /n It is suggested you research the Vice from last sector. Make your own and abuse their hovering capabilities.",
+  "difficulty": 2,
+  "planet": "akyao",
+  "allowLaunchLoadout": false,
+  "allowLaunchSchematics": false,
+  "sector": 8,
+  "addStartingItems": false
+  "overrideLaunchDefaults": true
+	  "research": {
+		parent: tide
+		objectives: [
+			vice,
+			{
+				type: "SectorComplete"
+				preset: tide
+			}
+		]
+	}
+}

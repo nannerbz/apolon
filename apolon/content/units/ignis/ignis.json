@@ -1,0 +1,78 @@
+type: tank
+name: Ignis
+speed: 0.6
+health: 955
+omniMovement: false
+rotateSpeed: 3
+armor: 2
+treadPullOffset: 3
+rotateShooting: false
+shootSound: lasershoot
+hitSize: 14
+range: 130
+itemCapacity: 0
+buildSpeed: 0.7
+outlineColor: 222222
+treadRects: [
+	{
+		type: rect
+		x: -18
+		y: -20
+		width: 12
+		height: 40
+	},
+	{
+		type: rect
+		x: 8
+		y: -20
+		width: 12
+		height: 40
+	}
+]
+weapons: [
+    {
+        name: ignis-w
+        reload: 10
+        x: 0
+        y: 0
+        top: true
+        shots: 1
+        spacing: 3
+	innacuracy: 10
+	rotate: true
+        mirror: false
+	  recoil: 1
+	  shootSound: Fling
+        ejectEffect: casing1
+        bullet: {
+		type: BasicBulletType
+		damage: 20
+		collidesTeam: true
+		healPercent: 0.4
+		speed: 3
+		width: 6
+		length: 10
+		lifetime: 43.2
+		trailColor: ffffff
+		trailLength: 8
+		trailWidth: 2
+		shootEffect: shootSmall
+		smokeEffect: shootSmallSmoke
+        }
+
+	shoot: {
+		type: ShootAlternate
+		barrels: 2
+		x: 2
+	}
+    }
+]
+	  "research": {
+		parent: crawl-fabricator
+		objectives: [
+			{
+				type: "SectorComplete"
+				preset: swarm
+			}
+		]
+	}

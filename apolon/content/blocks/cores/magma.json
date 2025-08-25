@@ -1,0 +1,21 @@
+type: CoreBlock
+name : Core: Magma
+size: 6
+research: ash
+hasItems: true
+itemCapacity: 5000
+health: 15000
+category: effect
+unitType: volt
+unitCapModifier: 24
+lightRadius: 24
+buildCost: 35
+squareSprite: false
+requirements: [
+  cobalt/1250
+  metaglass/1000
+  chromium/500
+  neodymium/750
+]
+solid: true
+armor: 16

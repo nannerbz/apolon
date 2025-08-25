@@ -1,0 +1,81 @@
+{
+  "name": "Hyper Bismuth Mender",
+  "description": "Heals nearby blocks slowly, but has singificantly higher range that allows for mass healing. Requires cryofluid to function, and can be boosted with photoglass.",
+  "type": "RegenProjector",
+  "health": 1650,
+  "size": 3,
+  "range": 60,
+  "healPercent": 0.05,
+  "consumes": {
+    "power": 1.4,
+    "items": {
+      "items": [
+        {
+          "amount": 1,
+          "item": "photoglass"
+        }
+      ],
+      "optional": true,
+      "booster": true
+    }
+    "liquids": {
+      "liquids": [
+        {
+          "amount": 0.4,
+          "liquid": "cryofluid"
+        }
+      ],
+      "optional": false,
+      "booster": false,
+    }
+  },
+  "requirements": [
+    {
+      "item": "bismuth",
+      "amount": 175
+    },
+    {
+      "item": "metaglass",
+      "amount": 150
+    },
+    {
+      "item": "carbide",
+      "amount": 125
+    },
+    {
+      "item": "neodymium",
+      "amount": 150
+    },
+    {
+      "item": "chromium",
+      "amount": 125
+    },
+  ],
+  "category": "effect",
+  "research": "advanced-bismuth-mender"
+  "researchCostMultiplier": 0.15
+	drawer: {
+	    type: DrawMulti
+	    drawers : [
+	            	{
+	            	  type : DrawDefault
+	            	},
+	            	{
+	            	  type : DrawRegion
+	            	  suffix : "-rotator-bottom"
+				  spinSprite: true
+				  rotateSpeed: 5
+	            	},
+	            	{
+	            	  type : DrawRegion
+	            	  suffix : "-top"
+	            	},
+	            	{
+	            	  type : DrawRegion
+	            	  suffix : "-rotator-top"
+				  spinSprite: true
+				  rotateSpeed: 2
+	            	},
+			]
+		}
+}

@@ -1,0 +1,43 @@
+type: UnitAssembler
+
+health: 1250
+name: UFO Reformer
+size: 7
+itemCapacity: 100
+constructTime: 4500
+areaSize: 8
+
+requirements: [
+    bismuth/450
+    cobalt/350
+    metaglass/420
+    carbide/360
+    neodymium/380
+    photoglass/160
+    tungsten/60
+    chromium/420
+]
+
+consumes: {
+	power: 3.5
+	liquids: [
+	cyanogen/0.4
+	]
+}
+
+plans: [
+	{
+		type: AssemblerUnitPlan
+		unit: sophia
+		time: 3450
+        	requirements: [
+			apolon-quo/1
+			apolon-dota/3
+			apolon-large-chromium-wall/4
+		]
+	},
+]
+
+category: units
+research: circum-refabricator
+"researchCostMultiplier": 0.05

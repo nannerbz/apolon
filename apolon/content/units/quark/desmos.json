@@ -1,0 +1,59 @@
+atemplate: UnitType
+name: Desmos
+flying: true
+speed: 1.2
+accel: 0.06
+drag: 0.04
+health: 17560
+hitSize: 36
+itemCapacity: 0
+outlineColor: 222222
+engineOffset: 20
+engineSize: 5
+range: 185
+weapons: [
+	{
+		name: desmos-w
+		reload: 120
+		x: 0
+		y: 3
+		shootSound: cannon
+		mirror: false
+		rotate: false
+		bullet: {
+			type: BasicBulletType
+			damage: 90
+			speed: 6
+			width: 20
+			length: 35
+			sprite: large-orb
+			lifetime: 30.8
+			trailColor: ffffff
+			trailLength: 12
+			trailWidth: 5
+			pierce: true
+			pierceCap: 10
+			pierceBuilding: true	
+			shootEffect: shootSmall
+			smokeEffect: shootSmallSmoke
+
+			fragOnHit: false
+			fragRandomSpread: 75
+			fragSpread: 0
+			despawnSound: dullExplosion
+			fragBullets: 6
+			fragBullet: {
+				type: BasicBulletType
+				damage: 145
+				speed: -3
+				lifetime: 90
+				sprite: large-orb
+				width: 15
+				length: 25
+				shrinkY: 0
+				shrinkX: 0
+			}
+		}
+	}
+]
+	research: tritium

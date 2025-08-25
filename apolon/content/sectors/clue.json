@@ -1,0 +1,21 @@
+{
+  "localizedName": "Clue",
+  "description": "Enemy waves have been detected here. Lots of craters are here... but why?",
+  "difficulty": 2,
+  "captureWave": 26,
+  "planet": "akyao",
+  "allowLaunchLoadout": false,
+  "allowLaunchSchematics": false,
+  "sector": 21,
+  "addStartingItems": false
+  "overrideLaunchDefaults": true
+	  "research": {
+		parent: tide
+		objectives: [
+			{
+				type: "SectorComplete"
+				preset: tide
+			}
+		]
+	}
+} 

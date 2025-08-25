@@ -1,0 +1,36 @@
+type: HeatProducer
+name: Hydric Heater
+category: crafting
+description: Takes hydrogen and turns it into heat.
+rotateDraw: false
+rotate: true
+size: 2
+heatOutput: 2
+regionRotated1: 1
+ambientSound: hum
+	consumes: {
+		liquids: {
+			liquids: [
+				{ "liquid": "hydrogen", "amount": 0.2 }
+			]
+		}
+	}
+requirements: [
+	cobalt/50
+	metaglass/40
+	carbide/30
+]
+	drawer: {
+	    type: DrawMulti
+	    drawers : [
+	            	{
+	            	  type : DrawDefault
+	            	},
+	            	{
+	            	  type : DrawHeatOutput
+			  suffix : "-heat"
+	            	},
+			]
+		}
+research: fusible-conduit
+researchCostMultiplier: 0.02

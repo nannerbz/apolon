@@ -1,0 +1,59 @@
+{
+	"type": "HeatCrafter",
+	"name": "Kobra Forge",
+	"description": "Uses cobalt, chromium, and heat to make kobra alloy.",
+	"outputItem": {"item": "kobra-alloy", "amount": 2},
+	"size": 3,
+	"hasPower": false,
+	"hasItems": true,
+	"hasLiquids": false,
+	"craftTime": 60,
+	"updateEffect": "smeltsmoke",
+    	"heatRequirement": 4
+	"hasHeat": true
+	"consumes": {
+		"items": {
+			"items": [
+				{ "item": "cobalt", "amount": 2 }
+				{ "item": "chromium", "amount": 1 }
+			]
+                }
+		"liquids": {
+			"liquids": [
+			]
+		}
+	},
+	"requirements": [
+		{ "item": "carbide", "amount": 60 }
+		{ "item": "cobalt", "amount": 120 }
+		{ "item": "neodymium", "amount": 30 }
+	],
+	"category": "crafting",
+	  "research": {
+		parent: light-carburator
+		objectives: [
+			{
+				type: "OnSector"
+				preset: unite
+			}
+		]
+	}
+	"idleSound": "respawning",
+	"idleSoundVolume": 0.5
+"researchCostMultiplier": 0.05
+	drawer: {
+	    type: DrawMulti
+	    drawers : [
+	            	{
+	            	  type : DrawDefault
+	            	},
+	            	{
+	            	  type : DrawRegion
+	            	  suffix : "-bottom"
+	            	},
+	            	{
+	            	  type : DrawArcSmelt
+	            	},
+	    ]
+	}
+}

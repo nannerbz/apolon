@@ -1,0 +1,20 @@
+type: ParticleWeather
+color: 00fdff
+noiseColor: 4b90c8
+sizeMax: 25
+sizeMin: 10
+density: 1250
+status: cracked
+statusDuration: 60
+useWindVector: true
+drawNoise: true
+opacityMultiplier: 0.95
+baseSpeed: 18
+sound: spellLoop
+soundVol: 0.75
+force: 6.2
+attrs: {
+  heat: -1.8
+  water: -0.9
+  spores: -3.4
+}

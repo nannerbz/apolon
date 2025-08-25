@@ -1,0 +1,9 @@
+{
+	"type": "material",
+	"name": "Cobalt",
+	"description": "A simple resource used to do basic things.",
+	"hardness": 1,
+	"cost": 0.5,
+	"color": "7ec0cc"
+	"research": "ash"
+}

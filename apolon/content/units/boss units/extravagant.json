@@ -1,0 +1,160 @@
+type: legs
+name: Extravagant
+description: Boss unit. Slow yet bulky. Fires unit deploy missiles that lay units of that type onto where they land.
+speed: 0.1
+health: 125750
+armor: 6
+drag: 0.2
+rotateSpeed: 0.6
+rotateShoot: true
+shootSound: lasershoot
+legCount: 6
+hovering: true
+allowLegStep: true
+legStraightness: 3
+legContinuousMove: true
+legLength: 48
+lockLegBase: true
+stepShake: 2.5
+legExtension: -2.5
+legMaxLength: 2.6
+legMinLength: 0.8
+rippleScale: 1.6
+legLengthScl : 1.15
+legForwardScl : 0.9
+legMoveSpace: 1.9
+legGroupSize: 2
+legSplashDamage: 128
+legSplashRange: 64
+outlineColor: 222222
+range: 900
+hitSize: 64
+weapons: [
+    {
+        name: extravagant-w1
+	layerOffset: 1
+        reload: 480
+        x: 12
+        y: 24
+        top: true
+        spacing: 3
+        mirror: true
+	inaccuracy: 30
+	shoot: {
+		shots: 2
+		shotDelay: 15
+	}
+	  recoil: 0
+        ejectEffect: casing1
+	  rotationLimit: 45
+	  rotate: true
+	  shootSound: missileLarge
+        bullet: {
+    		type: BasicBulletType
+    		shootEffect: shootBig
+    		smokeEffect: shootSmokeMissile
+    		ammoMultiplier: 1
+    		spawnUnit: extravagant-missile
+        }
+    }
+    {
+        name: extravagant-neo
+	layerOffset: 1
+        reload: 2400
+        x: 0
+        y: -12
+        top: true
+        spacing: 3
+        mirror: true
+	inaccuracy: 30
+	shoot: {
+		firstShotDelay: 300
+	}
+	  recoil: 0
+        ejectEffect: casing1
+	  rotationLimit: 45
+	  rotate: true
+	  shootSound: missileLarge
+        bullet: {
+    		type: BasicBulletType
+    		shootEffect: shootBig
+    		smokeEffect: shootSmokeMissile
+    		spawnUnit: extravagant-neo-missile
+        }
+    }
+    {
+        name: extravagant-quark
+	layerOffset: 1
+        reload: 2400
+        x: 0
+        y: -12
+        top: true
+        spacing: 3
+        mirror: true
+	inaccuracy: 30
+	shoot: {
+		firstShotDelay: 900
+	}
+	  recoil: 0
+        ejectEffect: casing1
+	  rotationLimit: 45
+	  rotate: true
+	  shootSound: missileLarge
+        bullet: {
+    		type: BasicBulletType
+    		shootEffect: shootBig
+    		smokeEffect: shootSmokeMissile
+    		spawnUnit: extravagant-quark-missile
+        }
+    }
+    {
+        name: extravagant-ignis
+	layerOffset: 1
+        reload: 2400
+        x: 0
+        y: -12
+        top: true
+        spacing: 3
+        mirror: true
+	inaccuracy: 30
+	shoot: {
+		firstShotDelay: 1500
+	}
+	  recoil: 0
+        ejectEffect: casing1
+	  rotationLimit: 45
+	  rotate: true
+	  shootSound: missileLarge
+        bullet: {
+    		type: BasicBulletType
+    		shootEffect: shootBig
+    		smokeEffect: shootSmokeMissile
+    		spawnUnit: extravagant-ignis-missile
+        }
+    }
+    {
+        name: extravagant-quo
+	layerOffset: 1
+        reload: 2400
+        x: 0
+        y: -12
+        top: true
+        spacing: 3
+        mirror: true
+	inaccuracy: 30
+	shoot: {
+		firstShotDelay: 2100
+	}
+	  recoil: 0
+        ejectEffect: casing1
+	  rotationLimit: 45
+	  rotate: true
+	  shootSound: missileLarge
+        bullet: {
+    		type: BasicBulletType
+    		shootEffect: shootBig
+    		smokeEffect: shootSmokeMissile
+    		spawnUnit: extravagant-quo-missile
+        }
+    }
+]

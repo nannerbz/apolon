@@ -1,0 +1,66 @@
+{
+	"type": "GenericCrafter",
+	"name": "Pearl Blasting Press",
+	"description": "Uses pearl dust, bismuth, and rad snow to make metaglass at increased efficiency.",
+	"outputItem": {"item": "metaglass", "amount": 3},
+	"size": 3,
+	"hasPower": false,
+	"hasItems": true,
+	"hasLiquids": false,
+	"craftTime": 60,
+	"updateEffect": "smeltsmoke",
+	"consumes": {
+		"items": {
+			"items": [
+				{ "item": "bismuth", "amount": 1 }
+				{ "item": "pearl-dust", "amount": 3 }
+				{ "item": "rad-snow", "amount": 2 }
+			]
+                }
+		"liquids": {
+			"liquids": [
+			]
+		}
+	},
+	"requirements": [
+		{ "item": "bismuth", "amount": 60 }
+		{ "item": "cobalt", "amount": 75 }
+		{ "item": "metaglass", "amount": 60 }
+		{ "item": "carbide", "amount": 50 }
+	],
+	"category": "crafting",
+	  "research": {
+		parent: pearl-glasswork
+		objectives: [
+			{
+				type: "OnSector"
+				preset: spiral
+			}
+		]
+	}
+	"idleSound": "respawning",
+	"idleSoundVolume": 0.5
+"researchCostMultiplier": 0.05
+	drawer: {
+	    type: DrawMulti
+	    drawers : [
+	            	{
+	            	  type : DrawDefault
+	            	},
+			{
+			  type : drawPistons
+			  sinMag: 2
+			},
+	            	{
+	            	  type : DrawRegion
+	            	  suffix : "-rotator"
+				  spinSprite: true
+				  rotateSpeed: 7
+	            	},
+	            	{
+	            	  type : DrawRegion
+	            	  suffix : "-top"
+	            	},
+			]
+		}
+}

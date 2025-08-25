@@ -1,0 +1,160 @@
+{
+    "type": "ItemTurret",
+    "name": "Chisel",
+    "description": "A simple yet efficient turret, shoots slowly, but has great impact!",
+    "targetAir": true,
+    "targetGround": true,
+    "health": 1225
+    "size": 2
+    "inaccuracy": 15
+    "reload": 90
+    "xRand": 0,
+    "squareSprite": false
+    "coolantMultiplier": 0.5
+    "outlineColor": 222222
+    "shootCone": 8,
+    "rotateSpeed": 4,
+    "minWarmup": 0.96
+    "shots": 1,
+    "range": 190
+    "consumes": {
+	"liquids": {
+		"liquids": [
+			{ "liquid": "hydrogen", "amount": 0.1 }
+		]
+	}
+    "coolant": {
+      "amount": 0.5
+    }
+    }
+    "ammoTypes": {
+               bismuth: {
+    type: BasicBulletType
+    trailWidth: 1
+    trailLength: 6
+    speed: 3
+	lifetime: 63.3
+    damage: 64
+    homingPower: 0.045
+    homingDelay: 15
+    homingRange: 75
+    homingCone: 360
+    burstSpacing: 4,
+    width: 8
+    height: 12
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+	hitEffect: hitLancer
+    ammoMultiplier: 2
+	buildingDamageMultiplier : 0.05
+	shrinkY: 0.3
+	pierce: true
+	pierceCap: 2
+	sprite: bullet
+  }
+               metaglass: {
+    type: BasicBulletType
+    trailWidth: 1
+    trailLength: 8
+    speed: 4
+	lifetime: 53.75
+    damage: 72
+    rangeChange: 25
+    reloadMultiplier: 1.2
+    homingPower: 0.045
+    homingDelay: 15
+    homingRange: 75
+    homingCone: 360
+    burstSpacing: 4,
+    width: 8
+    height: 12
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+	hitEffect: hitLancer
+    ammoMultiplier: 1
+	buildingDamageMultiplier : 0.05
+	shrinkY: 0.3
+	pierce: true
+	pierceCap: 4
+	sprite: bullet
+  }
+               neodymium: {
+    type: BasicBulletType
+    trailWidth: 1
+    trailLength: 12
+    speed: 5
+	lifetime: 53
+    damage: 80
+    rangeChange: 75
+    reloadMultiplier: 1.5
+    homingPower: 0.05
+    homingDelay: 20
+    homingRange: 95
+    homingCone: 360
+    burstSpacing: 4,
+    width: 8
+    height: 12
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+	hitEffect: hitLancer
+    ammoMultiplier: 1
+	buildingDamageMultiplier : 0.05
+	shrinkY: 0.3
+	pierce: true
+	pierceCap: 6
+	sprite: bullet
+  }
+    },
+	drawer: {
+		type: DrawTurret,
+     		basePrefix: base,
+		parts : [
+    			{
+      			type : RegionPart
+      			suffix : "-wr"
+      			progress : warmup
+      			heatProgress : recoil
+      			heatColor : "ffffff"
+      			mirror : false
+      			under : false
+      			moveX : 2
+			moveY : 0
+      			moveRot : -5
+    			},
+    			{
+      			type : RegionPart
+      			suffix : "-wl"
+      			progress : warmup
+      			heatProgress : recoil
+      			heatColor : "ffffff"
+      			mirror : false
+      			under : false
+      			moveX : -2
+			moveY : 0
+      			moveRot : 5
+    			},
+    			{
+      			type : RegionPart
+      			suffix : "-wm"
+      			progress : recoil
+      			heatProgress : recoil
+      			heatColor : "ffffff"
+      			mirror : false
+      			under : true
+      			moveX : 0
+			moveY : -1.5
+      			moveRot : 0
+    			},
+		]
+	}
+    "requirements": [
+        { "item": "bismuth", "amount": 35 },
+	  { "item": "metaglass", "amount": 45 },
+        { "item": "cobalt", "amount": 25 },
+    ],
+    "category": "turret"
+    "shootSound": "artillery"
+    "research": dart
+    "shake": 0
+    "researchCostMultiplier": 0.05
+}

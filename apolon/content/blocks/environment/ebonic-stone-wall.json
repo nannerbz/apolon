@@ -1,0 +1,5 @@
+{
+	type: StaticWall
+	name: Ebonic Stone Wall
+	variants: 2
+}

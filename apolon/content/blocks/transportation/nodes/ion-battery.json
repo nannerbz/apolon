@@ -1,0 +1,14 @@
+type: battery
+name: Ion Battery
+description: used to hold power.
+category: power
+research: ion-link
+researchCostMultiplier: 0.1
+requirements: [
+	metaglass/15
+	bismuth/15
+]
+consumes: {
+	powerBuffered: 6000
+}
+baseExplosiveness: 4

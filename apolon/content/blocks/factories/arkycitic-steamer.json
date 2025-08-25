@@ -1,0 +1,30 @@
+{
+	type: ConsumeGenerator
+	name: Arkycitic Steamer
+	description: Takes arkycite and cyanogen and makes LARGE amounts of power.
+	powerProduction: 28
+	liquidDuration: 90
+	ambientSound: smelter
+	ambientSoundVolume: 1.2
+	generateEffect: blastExplosion
+	size: 5
+	category: power
+	consumes: {
+		liquids: {
+			liquids: [
+				{ "liquid": "cyanogen", "amount": 0.5 }
+				{ "liquid": "arkycite", "amount": 0.5 }
+			]
+		}
+	}
+	
+	requirements: [
+		{ "item": "chromium", "amount": 120 }
+		{ "item": "cobalt", "amount": 180 }
+		{ "item": "neodymium", "amount": 140 }
+		{ "item": "carbide", "amount": 100 }
+		{ "item": "metaglass", "amount": 160 }
+	]
+	research: gas-combuster
+	researchCostMultiplier: 0.05
+}

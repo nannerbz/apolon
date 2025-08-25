@@ -1,0 +1,9 @@
+{
+	"type": "material",
+	"name": "Photoglass",
+	"description": "A very useful resource used for boosting blocks, making units, and a good hyperconductor.",
+	"hardness": 3,
+	"cost": 3.8,
+	"color": "9c9990"
+	"research": "photoglass"
+}

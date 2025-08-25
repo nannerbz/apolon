@@ -1,0 +1,44 @@
+type: UnitAssembler
+
+health: 1250
+name: Tank Reformer
+size: 7
+itemCapacity: 100
+constructTime: 4500
+areaSize: 8
+
+requirements: [
+    bismuth/320
+    cobalt/240
+    metaglass/380
+    carbide/280
+    neodymium/380
+    chromium/360
+    photoglass/180
+    tungsten/60
+]
+
+consumes: {
+	power: 3
+	liquids: [
+	cyanogen/0.3
+	]
+}
+
+plans: [
+	{
+		type: AssemblerUnitPlan
+		unit: triumph
+		time: 3200
+        	requirements: [
+			apolon-ignis/2
+			apolon-large-neodymium-wall/2
+			apolon-kobra-wall/2
+			apolon-chisel/2
+		]
+	},
+]
+
+category: units
+research: circum-refabricator
+"researchCostMultiplier": 0.05

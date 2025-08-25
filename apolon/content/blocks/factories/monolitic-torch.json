@@ -1,0 +1,39 @@
+type: HeatProducer
+name: Monolitic Torch
+category: crafting
+description: Takes arkycite and makes methane and heat.
+outputLiquid: { "liquid": "methane", "amount": 0.4 }
+rotateDraw: false
+rotate: true
+size: 3
+heatOutput: 4
+ambientSound: hum
+	consumes: {
+		liquids: {
+			liquids: [
+				{ "liquid": "arkycite", "amount": 0.2 }
+			]
+		}
+	}
+requirements: [
+	cobalt/50
+	metaglass/40
+	chromium/30
+	neodymium/40
+]
+research: methanization-plant
+researchCostMultiplier: 0.02
+	drawer: {
+	    type: DrawMulti
+	    drawers : [
+	            	{
+	            	  type : DrawDefault
+	            	},
+	            	{
+	            	  type : DrawRegion
+	            	  suffix : "-rotator"
+				  spinSprite: true
+				  rotateSpeed: 6
+	            	},
+			]
+		}

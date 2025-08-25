@@ -1,0 +1,55 @@
+{
+	"type": "GenericCrafter",
+	"name": "Pearl Glasswork",
+	"description": "Uses pearl dust and bismuth to make metaglass",
+	"outputItem": {"item": "metaglass", "amount": 1},
+	"size": 2,
+	"hasPower": false,
+	"hasItems": true,
+	"hasLiquids": false,
+	"craftTime": 30,
+	"updateEffect": "smeltsmoke",
+	"consumes": {
+		"items": {
+			"items": [
+				{ "item": "bismuth", "amount": 1 }
+				{ "item": "pearl-dust", "amount": 2 }
+			]
+                }
+		"liquids": {
+			"liquids": [
+			]
+		}
+	},
+	"requirements": [
+		{ "item": "bismuth", "amount": 50 }
+		{ "item": "cobalt", "amount": 70 }
+	],
+	"category": "crafting",
+	"research": "ash",
+	"idleSound": "respawning",
+	"idleSoundVolume": 0.5
+"researchCostMultiplier": 0.05
+	drawer: {
+	    type: DrawMulti
+	    drawers : [
+	            	{
+	            	  type : DrawDefault
+	            	},
+	            	{
+	            	  type : DrawRegion
+	            	  suffix : "-bottom"
+	            	},
+	            	{
+	            	  type : DrawRegion
+	            	  suffix : "-rotator"
+				  spinSprite: true
+				  rotateSpeed: 4
+	            	},
+	            	{
+	            	  type : DrawRegion
+	            	  suffix : "-top"
+	            	},
+			]
+		}
+}

@@ -1,0 +1,90 @@
+{
+
+	"type": "ContinuousTurret",
+	"name": "Bit",
+	"description": "A very strong single point laser turret, very good at dealing with single units.",
+	"targetAir": true,
+	"targetGround": true,
+	"health": 1975,
+	"size": 3,
+	"hasLiquids": true
+	"outlineColor": "222222",
+	"squareSprite": false,
+	"shootCone": 360,
+	"rotateSpeed": 0.3,
+	"aimChangeSpeed": 0.3,
+	"shootY": 4,
+	"range": 600,
+    	"heatRequirement": 8
+    	"maxHeatEfficiency": 2
+	"loopSound": "laserbeam",
+	"shootSound": "none"
+	"researchCostMultiplier": 0.05,
+	"shootWarmupSpeed": 0.2,
+	"consumes": {
+		"liquids": {
+			"liquids": [
+				{ "liquid": "methane", "amount": 0.6 }
+			]
+		}
+	},
+	"shootType": {
+		"type": "PointLaserBulletType",
+		"damage": 175,
+		"hitColor": "ffffff"
+		"buildingDamageMultiplier": 0.05
+	},
+	"category": "turret",
+	"research": "lapse",
+	"requirements": [
+		"carbide/95",
+		"cobalt/160",
+		"neodymium/145",
+		"chromium/125"
+	],
+	"drawer": {
+		"type": "DrawTurret",
+		"basePrefix": "base",
+		"parts": [
+			{
+				"type": "RegionPart",
+				"suffix": "-pm",
+				"mirror": false,
+				"under": false,
+				"progress": "warmup",
+				"heatColor": "ffffff"
+			},
+			{
+				"type": "RegionPart",
+				"suffix": "-w",
+				"mirror": false,
+				"under": false,
+				"progress": "warmup",
+				"heatColor": "ffffff",
+				"moveY": 2
+			},
+			{
+				"type": "RegionPart",
+				"suffix": "-p",
+				"mirror": true,
+				"under": false,
+				"progress": "warmup",
+				"heatColor": "ffffff",
+				"moveX": 2,
+				"children": [
+					{
+						"type": "RegionPart",
+						"suffix": "-b",
+						"mirror": true,
+						"under": true,
+						"progress": "warmup",
+						"heatColor": "ffffff",
+						"moveX": 1,
+						"moveY": -1,
+						"moveRot":  -10
+					}
+				]
+			}
+		]
+	}
+}

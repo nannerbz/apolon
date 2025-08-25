@@ -1,0 +1,25 @@
+{
+    type: PowerNode
+    name: Ion Tower
+    description: A much larger method of transporting power.
+    consumesPower: true
+    outputsPower: true
+    size: 2
+    laserRange: 65
+    maxNodes: 3
+    schematicPriority: -15
+    requirements: [
+           { "item": "bismuth", "amount": 50 }
+           { "item": "photoglass", "amount": 25 }
+           { "item": "metaglass", "amount": 50 }
+           { "item": "neodymium", "amount": 50 }
+    ]
+    researchCostMultiplier: 0.25
+    research: ion-tether
+    consumes: {
+       powerBuffered: 5000
+    }
+    laserColor1: 64c990
+    laserColor2: 58a68c
+    category: power
+}

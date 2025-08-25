@@ -1,0 +1,165 @@
+# The planet's display name. If you want to support multiple languages, use bundles instead!
+localizedName: Clenus
+# The mesh of the planet. Only NoiseMesh is still supported...
+mesh: {
+  # A class name.
+  type: NoiseMesh
+  # A planet to apply this mesh to.
+  planet: clenus
+  # A number used for mesh generation.
+  seed: 3
+  # Mesh "quality". More divisions = more hexagons.
+  divisions: 2
+  # First color to be used.
+  color1: 24242d
+  # Second color to be used.
+  color2: 7ade75
+  # Mesh radius.
+  radius: 0.8
+  # A noise property.
+  octaves: 4
+  # A noise property.
+  persistence: 0.5
+  # Noise scale.
+  scale: 1.4
+  # A noise property.
+  mag: 1.3
+}
+# The mesh used for clouds. (Now supported btw)
+cloudMesh: {
+  # A class name.
+  type: HexSkyMesh
+  # A planet to apply this mesh to.
+  planet: clenus
+  # A number used for cloud generation.
+  seed: 6
+  # Cloud move speed.
+  speed: 0.4
+  # Cloud sphere radius.
+  radius: 1.1
+  # Clouds "quality". More divisions = more hexagons.
+  divisions: 5
+  # Cloud color.
+  color: e0e0e025
+  # A noise property.
+  octaves: 5
+  # A noise property.
+  persistence: 0.6
+  # Noise scale.
+  scl: 1.4
+  # Maximum number threshold for the noise.
+  thresh: 1.3
+}
+# A planet generator. For (H)JSON planets it's pre-determined (AsteroidGenerator) and cannot be changed.
+# But you can at least modify the existing one's fields. Highly not recommended unless you REALLY know what you're doing,
+# better make sector presets and don't waste your time with this.
+generator: {
+  # Mininum amount of asteroids.
+  min: 3
+  # Maximum amount of asteroids.
+  max: 7
+
+  # Noise properties.
+  octaves: 5
+  persistence: 1.2
+  scale: 6
+  mag: 1.1
+  thresh: 1.6
+  foct: 3.9
+  fmag: 1.2
+  fscl: 1.2
+  fper: 0.8
+
+  # Asteroid radius range.
+  radMin: 100
+  radMax: 125
+
+  # This one is ABSOLUTELY pointless, lmao.
+  stoneChance: 0.2
+
+  # Terrain generation chances, in order: ice > carbon > beryl > ferric.
+  iceChance: 0.8
+  carbonChance: 0.8
+  berylChance: 0
+  ferricChance: 0.2
+}
+# This determines the size of the sector grid.
+# Fun fact: The console will warn you about this "unknown" field, but it also functions properly at the same time.
+sectorSize: 1
+# Spacing between a parent (this) and satellites.
+orbitSpacing: 3
+# Radius of this planet's sphere.
+radius: 0.9
+# Start sector
+startSector: 8
+# Minimum camera zoom.
+minZoom: 0.6
+# Whether to draw the orbit.
+drawOrbit: true
+# Atmosphere offset.
+atmosphereRadIn: 0.2
+atmosphereRadOut: 0.5
+# Whether this can be landed on.
+accessible: true
+# Toggle day-night cycle.
+updateLighting: false
+# A number used for sector generation. If it equals to -1, planet ID is picked instead.
+sectorSeed: -1
+# Whether this planet is blooming.
+bloom: true
+# This is self-explanatory...
+visible: true
+# Also self-explanatory...
+atmosphereColor: 585787
+# The color of the planet's icon displayed in top-left dialog.
+iconColor: 585787
+# Another self-explanatory field...
+hasAtmosphere: true
+# Whether simulate waves when off-planet
+allowWaveSimulation: true
+# Whether sectors are reset when a player loses them
+clearSectorOnLose: true
+# Causes numbered sectors to be playable
+allowLaunchToNumbered: false
+# Whether waves are re-created when a sector is lost
+allowWaves: true
+# Icon's name displayed in top-left dialog.
+icon: clenus
+# Default core block for launch loadouts
+defaultCore: ash
+# The parent of the planet (i marked this one rq for testing)
+parent: akyao
+# The parent of the whole solar system the planet is in. Affects lighting.
+solarSystem: sun
+# Possible planets that could be landed into from this planet.
+# In the current version, only 1 entry is applicable if you decide to use modded accelerators.
+# Probably useless since the Interplanetary Accelerator is hidden and not working.
+launchCandidates: []
+# Items not available in this planet.
+hiddenItems: [
+        "copper",
+        "lead",
+        "scrap",
+        "graphite",
+        "coal",
+        "titanium",
+        "thorium",
+        "silicon",
+        "plastanium",
+        "phase-fabric",
+        "surge-alloy",
+        "spore-pod",
+        "sand",
+        "blast-compound",
+        "pyratite",
+        "beryllium",
+        "oxide",
+        "dormant-cyst"
+]
+bannedBlocks: [
+        "slagIncinerator",
+        "conduit",
+        "reinforcedPayloadConveyor",
+        "reinforcedPayloadRouter",
+]
+alwaysUnlocked: true

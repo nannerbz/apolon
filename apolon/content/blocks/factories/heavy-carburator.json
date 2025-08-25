@@ -1,0 +1,61 @@
+{
+	"type": "HeatCrafter",
+	"name": "Heavy Carburator",
+	"description": "Uses cobalt, rad snow, and heat to make lots of carbide.",
+	"outputItem": {"item": "carbide", "amount": 4},
+	"size": 4,
+	"hasPower": true,
+	"hasItems": true,
+	"hasLiquids": false,
+	"craftTime": 90,
+	"updateEffect": "smeltsmoke",
+    	"heatRequirement": 8
+	"hasHeat": true
+	"consumes": {
+		power: 2.5
+		"items": {
+			"items": [
+				{ "item": "cobalt", "amount": 2 }
+				{ "item": "rad-snow", "amount": 4 }
+			]
+                }
+		"liquids": {
+			"liquids": [
+			]
+		}
+	},
+	"requirements": [
+		{ "item": "carbide", "amount": 75 }
+		{ "item": "cobalt", "amount": 100 }
+		{ "item": "bismuth", "amount": 75 }
+		{ "item": "metaglass", "amount": 75 }
+	],
+	"category": "crafting",
+	  "research": {
+		parent: light-carburator
+		objectives: [
+			{
+				type: "OnSector"
+				preset: spiral
+			}
+		]
+	}
+	"idleSound": "respawning",
+	"idleSoundVolume": 0.5
+"researchCostMultiplier": 0.05
+	drawer: {
+	    type: DrawMulti
+	    drawers : [
+	            	{
+	            	  type : DrawDefault
+	            	},
+	            	{
+	            	  type : DrawHeatInput
+	            	  suffix : "-heat"
+	            	},
+	            	{
+	            	  type : DrawArcSmelt
+	            	},
+	    ]
+	}
+}

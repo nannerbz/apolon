@@ -1,0 +1,21 @@
+type: memoryBlock
+name: Simple Memory Cell
+description: Holds data given to it by processors.
+size: 1
+memoryCapacity: 64
+requirements: [
+	cobalt/10
+	bismuth/10
+	carbide/10
+]
+	  "research": {
+		parent: simple-processor
+		objectives: [
+			{
+				type: "SectorComplete"
+				preset: swarm
+			}
+		]
+	}
+researchCostMultiplier: 0.1
+category: logic

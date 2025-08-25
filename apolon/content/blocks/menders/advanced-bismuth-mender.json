@@ -1,0 +1,65 @@
+{
+  "name": "Advanced Bismuth Mender",
+  "description": "Heals nearby blocks quickly. Can be boosted with photoglass.",
+  "type": "RegenProjector",
+  "health": 600,
+  "size": 2,
+  "range": 16,
+  "healPercent": 0.05,
+  "consumes": {
+    "power": 0.4,
+    "items": {
+      "items": [
+        {
+          "amount": 1,
+          "item": "photoglass"
+        }
+      ],
+      "optional": true,
+      "booster": true
+    }
+  },
+  "requirements": [
+    {
+      "item": "bismuth",
+      "amount": 75
+    },
+    {
+      "item": "metaglass",
+      "amount": 50
+    },
+    {
+      "item": "carbide",
+      "amount": 50
+    },
+    {
+      "item": "neodymium",
+      "amount": 25
+    },
+    {
+      "item": "chromium",
+      "amount": 25
+    },
+  ],
+  "category": "effect",
+  "research": "bismuth-mender"
+  "researchCostMultiplier": 0.15
+	drawer: {
+	    type: DrawMulti
+	    drawers : [
+	            	{
+	            	  type : DrawDefault
+	            	},
+	            	{
+	            	  type : DrawRegion
+	            	  suffix : "-rotator"
+				  spinSprite: true
+				  rotateSpeed: 3
+	            	},
+	            	{
+	            	  type : DrawRegion
+	            	  suffix : "-top"
+	            	},
+			]
+		}
+}

@@ -1,0 +1,21 @@
+type: logicDisplay
+name: Advanced Display Cell
+description: Shows images given to it by processors. Can handle bigger images due to its bigger size.
+size: 3
+displaySize: 80
+requirements: [
+	cobalt/25
+	bismuth/50
+	carbide/50
+]
+	  "research": {
+		parent: simple-display-cell
+		objectives: [
+			{
+				type: "SectorComplete"
+				preset: tide
+			}
+		]
+	}
+researchCostMultiplier: 0.15
+category: logic

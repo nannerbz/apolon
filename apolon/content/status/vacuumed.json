@@ -1,0 +1,24 @@
+{
+	type: StatusEffect
+	name: Vacuumed
+	outline: false
+	damageMultiplier: 1
+	healthMultiplier: 1
+	speedMultiplier: 0.75
+	reloadMultiplier: 1
+	dragMultiplier: 1.1
+	disarm: false
+	damage: 0
+	effectChance: 0.1
+	parentizeEffect: false
+	permanent: false
+	reactive: false
+	show: true
+	color: ffffff
+	effect: freezing
+	applyEffect: freezing
+	applyExtend: false
+	applyColor: ffffff
+	parentizeApplyEffect: true
+	transitionDamage: 0
+}

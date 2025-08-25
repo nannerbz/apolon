@@ -1,0 +1,29 @@
+type: BeamDrill
+name: Tungsten Extractor
+description: Extracts tungsten from any walls with tungsten.
+drillTime: 150
+tier: 6
+size: 3
+range: 1
+requirements: [
+	photoglass/75
+	kobra-alloy/50
+	carbide/75
+	metaglass/100
+]
+category: production
+consumes: {
+	power: 2
+	liquids: {
+		liquids: [
+			{
+			liquid: cyanogen
+			amount: 2
+			booster: false
+			optional: false
+			},
+		]
+	}
+}
+research: fuge-extractor
+researchCostMultiplier: 0.05

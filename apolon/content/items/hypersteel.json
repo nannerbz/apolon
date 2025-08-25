@@ -1,0 +1,9 @@
+{
+	"type": "material",
+	"name": "Hypersteel",
+	"description": "A strong durable alloy, hyperenergetic",
+	"hardness": 3,
+	"cost": 4.2,
+	"color": "645ab0"
+	"research": "photoglass"
+}

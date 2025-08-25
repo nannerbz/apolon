@@ -1,0 +1,53 @@
+{
+	type: AttributeCrafter
+	name: Acetylene Condenser
+	description: Uses heat to make easy acetylene from vents
+	attribute: steam
+	minEfficiency: 8.8
+	baseEfficiency: 0
+	displayEfficiency: false
+	craftEffect: turbinegenerate
+	craftTime: 40
+	size: 3
+	ambientSound: hum
+	ambientSoundVolume: 0.08
+	hasLiquids: true
+	squareSprite: false
+	heatRequirement: 4
+	maxHeatEfficiency: 4
+	boostScale: 1.2
+	outputLiquid: {"liquid": "acetylene", "amount": 0.8}
+	hasHeat: true
+	hasPower: true
+	consumes: {
+		power: 0.4
+	}
+	hasLiquids: true
+	research: hydrodenser
+	researchCostMultiplier: 0.05
+	liquidCapacity: 100
+	category: production
+	requirements: [
+	  cobalt/65
+	  carbide/75
+	  bismuth/95
+	  metaglass/75
+	  neodymium/45
+	]
+	drawer: {
+		type: DrawMulti
+		drawers : [
+	            	{
+	            	  type : DrawDefault
+	            	},
+	            	{
+	            	  type : DrawBlurSpin
+	            	  suffix : "-rotator"
+	            	  rotateSpeed: 8
+	            	},
+	            	{
+	            	  type : DrawHeatInput
+	            	},
+		]
+	}
+}

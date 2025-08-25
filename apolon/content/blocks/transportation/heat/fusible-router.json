@@ -1,0 +1,45 @@
+type: HeatConductor
+name: Fusible Router
+description: Routes heat in three directions.
+size: 2
+regionRotated1: 1
+	  "research": {
+		parent: fusible-conduit
+		objectives: [
+			{
+				type: "OnSector"
+				preset: tide
+			}
+		]
+	}
+requirements: [
+	bismuth/12
+	carbide/12
+	metaglass/8
+]
+	drawer: {
+	    type: DrawMulti
+	    drawers : [
+	            	{
+	            	  type : DrawDefault
+	            	},
+	            	{
+	            	  type : DrawHeatOutput
+			  rotOffset : -1
+	            	},
+	            	{
+	            	  type : DrawHeatOutput
+	            	},
+	            	{
+	            	  type : DrawHeatOutput
+			  rotOffset : 1
+	            	},
+	            	{
+	            	  type : DrawHeatInput
+	            	  suffix : "-heat"
+	            	},
+			]
+		}
+splitHeat: true
+category: crafting
+researchCostMultiplier: 0.05

@@ -1,0 +1,87 @@
+type: tank
+name: Vessel
+speed: 0.4
+health: 3150
+omniMovement: false
+rotateSpeed: 2.3
+armor: 10
+treadPullOffset: 6
+rotateShooting: false
+shootSound: lasershoot
+hitSize: 20
+range: 96
+itemCapacity: 10
+outlineColor: 222222
+abilities: [
+	{
+		type: LiquidExplodeAbility
+		liquid: cryofluid
+		amount: 100
+		radAmountScale: 4
+		radScale: 2
+		noiseMag: 5
+		noiseScl: 5
+	}
+	{
+		type: LiquidRegenAbility
+		liquid: cryofluid
+		slurpSpeed: 6
+		regenPerSlurp: 0.45
+		slurpEffectChance: 0.6
+	}
+]
+treadRects: [
+	{
+		type: rect
+		x: -43
+		y: -44
+		width: 24
+		height: 88
+	},
+	{
+		type: rect
+		x: 20
+		y: -44
+		width: 24
+		height: 88
+	}
+]
+weapons: [
+    {
+        name: vessel-w
+        reload: 64
+        x: 0
+        y: 0
+        top: true
+        shots: 1
+        spacing: 3
+	innacuracy: 0
+	rotate: true
+        mirror: false
+	shootY: 0
+	  recoil: 0
+	  shootSound: Fling
+        ejectEffect: casing1
+        bullet: {
+		type: BasicBulletType
+		damage: 36
+		speed: 6
+		width: 10
+		length: 16
+		lifetime: 32
+		trailColor: ffffff
+		trailLength: 10
+		trailWidth: 4
+    		homingDelay: 10
+    		homingRange: 128
+    		homingPower: 0.3
+		shootEffect: shootSmall
+		smokeEffect: shootSmallSmoke
+        }
+	shoot: {
+		type: ShootSpread
+		shots: 8
+		spread: 22.5
+	}
+    }
+]

@@ -1,0 +1,29 @@
+{
+  "localizedName": "Unite",
+  "description": "This sector is litered with resources for you to use, but that just means the enemy will try harder to take it! Research new tech to overcome them!",
+  "difficulty": 2,
+  "captureWave": 36,
+  "planet": "akyao",
+  "allowLaunchLoadout": false,
+  "allowLaunchSchematics": false,
+  "sector": 7,
+  "addStartingItems": false
+  "overrideLaunchDefaults": true
+	  "research": {
+		parent: compact
+		objectives: [
+			{
+				type: "SectorComplete"
+				preset: compact
+			}
+			{
+				type: "SectorComplete"
+				preset: clue
+			}
+			{
+				type: "SectorComplete"
+				preset: topple
+			}
+		]
+	}
+} 

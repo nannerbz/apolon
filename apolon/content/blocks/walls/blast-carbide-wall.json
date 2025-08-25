@@ -1,0 +1,10 @@
+type: wall
+name: Blast Carbide Wall
+health: 320
+category: defense
+size: 1
+requirements: [
+	carbide/6
+]
+research: cobalt-wall
+researchCostMultiplier: 0.05

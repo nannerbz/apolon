@@ -1,0 +1,50 @@
+{
+	type: ConsumeGenerator
+	name: Rdg Compressor
+	description: Compresses radiation from rad snow and combines it with cryofluid to make power.
+	size: 2
+	ambientSound: hum
+	ambientSoundVolume: 0.04
+	"hasItems": true,
+	"hasLiquids": true,
+	powerProduction: 1.8
+	itemDuration: 90
+	category: power
+	generateEffect: blastExplosion
+	requirements: [
+	  cobalt/25
+	  bismuth/35
+	  metaglass/20
+	  carbide/15
+	]
+	consumes: {
+		items: {
+			items: [
+				{ "item": "rad-snow", "amount": 1 }
+			]
+		}
+		liquids: {
+			liquids: [
+				{ "liquid": "cryofluid", "amount": 0.1 }
+			]
+		}
+	}
+	drawer: {
+	    type: DrawMulti
+	    drawers : [
+	            	{
+	            	  type : DrawDefault
+	            	},
+			{
+			  type : drawPistons
+			  sinMag: 1
+			},
+	            	{
+	            	  type : DrawRegion
+	            	  suffix : "-top"
+	            	},
+			]
+		}
+	research: rdg-oscillator
+	researchCostMultiplier: 0.05
+}

@@ -1,0 +1,34 @@
+{
+	type: ThermalGenerator
+	name: Ebonic Radiator
+	description: Uses radiation from ebonic stone to make power.
+	attribute: plasma
+	powerProduction: 0.05
+	floating: true
+	size: 1
+	ambientSound: hum
+	ambientSoundVolume: 0.04
+	category: power
+	requirements: [
+	  cobalt/15
+	  bismuth/20
+	]
+	drawer: {
+	    type: DrawMulti
+	    drawers : [
+	            	{
+	            	  type : DrawDefault
+	            	},
+	            	{
+	            	  type : DrawRegion
+	            	  suffix : "-bottom"
+	            	},
+			{
+			  type : drawPistons
+			  sinMag: 1
+			}
+			]
+		}
+	research: ash
+	researchCostMultiplier: 0.05
+}

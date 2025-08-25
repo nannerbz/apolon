@@ -1,0 +1,17 @@
+{
+	type: Duct
+	name: Neo Duct
+	description: A high quality transport duct.
+	health: 300
+	speed: 3
+	researchCostMultiplier: 0.05
+	bridgeReplacement: cobalt-bridge
+	armored: true
+	requirements: [
+		cobalt/2
+		metaglass/2
+		neodymium/2
+	]
+	research: cobalt-duct
+	researchCostMultiplier: 0.25
+}

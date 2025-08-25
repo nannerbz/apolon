@@ -1,0 +1,4 @@
+"type": "StaticWall",
+"name": Raw Tungsten Wall
+"itemDrop": "tungsten",
+"variants": 2,

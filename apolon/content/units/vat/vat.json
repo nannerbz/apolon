@@ -1,0 +1,87 @@
+type: tank
+name: Vat
+speed: 0.8
+health: 750
+omniMovement: false
+rotateSpeed: 4
+armor: 1
+treadPullOffset: 4
+rotateShooting: false
+shootSound: lasershoot
+hitSize: 14
+range: 125
+itemCapacity: 30
+outlineColor: 222222
+abilities: [
+	{
+		type: LiquidExplodeAbility
+		liquid: cryofluid
+		amount: 75
+		radAmountScale: 5
+		radScale: 2
+		noiseMag: 5
+		noiseScl: 5
+	}
+	{
+		type: LiquidRegenAbility
+		liquid: cryofluid
+		slurpSpeed: 6
+		regenPerSlurp: 0.3
+		slurpEffectChance: 0.6
+	}
+]
+treadRects: [
+	{
+		type: rect
+		x: -28
+		y: -28
+		width: 9
+		height: 55
+	},
+	{
+		type: rect
+		x: 11
+		y: -28
+		width: 9
+		height: 55
+	}
+]
+weapons: [
+    {
+        name: vat-w
+        reload: 45
+        x: 0
+        y: -2
+        top: true
+        shots: 1
+        spacing: 3
+	innacuracy: 0
+	rotate: true
+        mirror: false
+	shootY: 0
+	  recoil: 0
+	  shootSound: Fling
+        ejectEffect: casing1
+        bullet: {
+		type: BasicBulletType
+		damage: 48
+		speed: 4
+		width: 8
+		length: 14
+		lifetime: 37.5
+		trailColor: ffffff
+		trailLength: 10
+		trailWidth: 4
+    		homingDelay: 10
+    		homingRange: 125
+    		homingPower: 0.25
+		shootEffect: shootSmall
+		smokeEffect: shootSmallSmoke
+        }
+	shoot: {
+		type: ShootSpread
+		shots: 4
+		spread: 45
+	}
+    }
+]

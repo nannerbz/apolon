@@ -1,0 +1,38 @@
+type: HeatProducer
+name: Monolitic Heater
+category: crafting
+description: Takes methane and turns it into heat.
+rotateDraw: false
+rotate: true
+size: 3
+heatOutput: 6
+regionRotated1: 1
+ambientSound: hum
+	consumes: {
+		liquids: {
+			liquids: [
+				{ "liquid": "methane", "amount": 0.3 }
+			]
+		}
+	}
+requirements: [
+	cobalt/75
+	metaglass/65
+	carbide/50
+	bismuth/65
+	chromium/25
+]
+	drawer: {
+	    type: DrawMulti
+	    drawers : [
+	            	{
+	            	  type : DrawDefault
+	            	},
+	            	{
+	            	  type : DrawHeatOutput
+			  suffix : "-heat"
+	            	},
+			]
+		}
+research: hydric-heater
+researchCostMultiplier: 0.02
