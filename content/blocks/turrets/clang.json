@@ -25,7 +25,7 @@
     "shots": 1,
     "range": 650
     "ammoTypes": {
-               photoglass: {
+               kobra-alloy: {
     type: BasicBulletType
     trailWidth: 4
     trailLength: 18
@@ -51,7 +51,7 @@
 		trailLength: 6
 		width: 5
 		length: 10
-		damage: 4
+		damage: 20
 		speed: 6
 		lifetime: 60
 		shrinkY: 0
@@ -62,13 +62,13 @@
     		homingCone: 360
 	}
 	}
-               hypersteel: {
+               tungsten: {
     type: BasicBulletType
     trailWidth: 4
     trailLength: 18
     speed: 3
 	lifetime: 200
-    damage: 800
+    damage: 2500
     burstSpacing: 4,
     width: 35
     height: 35
@@ -79,7 +79,7 @@
 	buildingDamageMultiplier : 0.05
 	knockback: 0
 	shrinkY: 0
-	fragBullets: 400
+	fragBullets: 200
 	fragRandomSpread: 360
 	fragVelocityMin: 0.6
 	fragBullet: {
@@ -88,7 +88,7 @@
 		trailLength: 6
 		width: 5
 		length: 10
-		damage: 6
+		damage: 30
 		speed: 8
 		lifetime: 30
 		shrinkY: 0
@@ -142,7 +142,7 @@
       			suffix : "-w"
       			progress : warmup
       			heatProgress : recoil
-      			heatColor : "ffffff"
+      			heatColor : "a0b0c8"
       			mirror : true
       			under : false
       			moveX : 2
@@ -162,7 +162,7 @@
 	}
     "requirements": [
         { "item": "carbide", "amount": 175 },
-	  { "item": "hypersteel", "amount": 85 },
+	  { "item": "tungsten", "amount": 85 },
         { "item": "metaglass", "amount": 250 },
 	  { "item": "cobalt", "amount": 345 },
         { "item": "bismuth", "amount": 250 },
