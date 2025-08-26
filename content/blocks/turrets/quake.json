@@ -101,42 +101,42 @@
 		type: DrawTurret,
      		basePrefix: base,
 		parts : [
-    			{
-      			type : RegionPart
-      			suffix : "-b"
-      			progress : warmup
-      			heatProgress : warmup
-      			heatColor : "ffffff"
-      			mirror : false
-      			under : false
-      			moveX : 0
-			moveY : 0
-      			moveRot : 0
-    			},
+            {
+                "type": "RegionPart",
+                "suffix": "-b",
+                "progress": "warmup",
+                "heatProgress": "warmup",
+                "heatColor": "e2ca4b",
+                "mirror": false,
+                "under": false,
+                "moveX": 0,
+                "moveY": 0,
+                "moveRot": 0
+            },
     			{
       			type : RegionPart
       			suffix : "-blade"
       			progress : warmup
       			heatProgress : warmup
-      			heatColor : "ffffff"
+      			heatColor : "e2ca4b"
       			mirror : true
       			under : false
       			moveX : 3
 			moveY : -3
       			moveRot : 0
 			children: [
-    					{
-      					type : RegionPart
-      					suffix : "-recoil"
-      					progress : recoil
-      					heatProgress : recoil
-      					heatColor : "ffffff"
-      					mirror : true
-      					under : false
-      					moveX : 2
-					moveY : -2
-      					moveRot : 0
-					},
+                {
+                    "type": "RegionPart",
+                    "suffix": "-recoil",
+                    "progress": "recoil",
+                    "heatProgress": "recoil",
+                    "heatColor": "e2ca4b",
+                    "mirror": true,
+                    "under": false,
+                    "moveX": 2,
+                    "moveY": -2,
+                    "moveRot": 0
+                },
 				]
 			},
 		]

@@ -26,17 +26,17 @@
     "ammoTypes": {
         metaglass: {
             "type": "ArtilleryBulletType",
-            "trailInterval": 5,
+            "trailInterval": 1,
             "trailEffect": {
                 "type": "ParticleEffect",
-                "length": 3,
-                "lifetime": 20,
+                "length": 12,
+                "lifetime": 5,
                 "region": "circle-bullet",
-                "particles": 12,
+                "particles": 4,
                 "lightColor": "ffffff",
                 "colorFrom": "ffffff",
                 "colorTo": "ffffff",
-                "sizeFrom": 1,
+                "sizeFrom": 3,
                 "sizeTo": 1
             },
             "fragOnHit": true,
@@ -48,7 +48,7 @@
             "fragAngle": 0,
             "fragBullet": {
                 "type": "BasicBulletType",
-                "damage": 6,
+                "damage": 8,
                 "smokeEffect": "none",
                 "despawnEffect": "none",
                 "trailWidth": 1,
@@ -57,11 +57,11 @@
                 "backColor": "ffffff",
                 "frontColor": "ffffff",
                 "trailColor": "ffffff",
-                "speed": 3,
+                "speed": 4,
                 "width": 3,
                 "height": 4,
                 "sprite": "circle-bullet",
-                "lifetime": 30
+                "lifetime": 8
             },
             "knockback": 0.6,
             "trailWidth": 1,

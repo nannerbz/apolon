@@ -312,17 +312,17 @@
                     "intervalBullet": {
                         "type": "LightningBulletType",
                         "lightningColor": "7eccbc",
-                        "damage": 80,
+                        "damage": 190,
                         "lightningLength": 10,
                         "fragVelocityMin": 2,
                         "fragVelocityMax": 2,
-                        "fragBullets": 3,
+                        "fragBullets": 2,
                         "fragSpread": 120,
                         "fragRandomSpread": 0,
                         "fragAngle": 0,
                         "fragBullet": {
                             "type": "BasicBulletType",
-                            "damage": 45,
+                            "damage": 75,
                             "smokeEffect": "none",
                             "despawnEffect": "none"
                             "trailWidth": 3,
@@ -331,7 +331,7 @@
                             "backColor": "ffffff",
                             "frontColor": "ffffff",
                             "trailColor": "ffffff",
-                            "speed": 2.6,
+                            "speed": 6,
                             "homingPower": 1,
                             "homingDelay": 3,
                             "homingRange": 380,
@@ -340,7 +340,7 @@
                             "width": 6,
                             "height": 6,
                             "sprite": "circle-bullet",
-                            "lifetime": 40
+                            "lifetime": 9
                         }
                         }
                     }
@@ -445,10 +445,6 @@
         },
         "requirements": [
             {
-                "item": "carbide",
-                "amount": 190
-            },
-            {
                 "item": "hypersteel",
                 "amount": 150
             },
@@ -470,7 +466,7 @@
             },
             {
                 "item": "kobra-alloy",
-                "amount": 190
+                "amount": 390
             }
         ],
         "category": "turret",

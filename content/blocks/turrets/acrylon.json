@@ -27,49 +27,66 @@
     "shots": 1,
     "range": 140
     "ammoTypes": {
-               kobra-alloy: {
-    type: BasicBulletType
-    trailWidth: 2
-    trailLength: 8
-    speed: 4
-	lifetime: 35
-    damage: 135
-    burstSpacing: 4,
-    width: 15
-    height: 15
-    shootEffect: shootSmall
-    smokeEffect: shootSmallSmoke
-	hitEffect: hitLancer
-    ammoMultiplier: 1
-	pierce: true
-	pierceCap: 5
-	pierceBuilding: true
-	buildingDamageMultiplier : 0.05
-	knockback: 1
-	sprite: large-orb
-	}
-               photoglass: {
-    type: BasicBulletType
-    trailWidth: 4
-    trailLength: 14
-    speed: 6
-	lifetime: 44.1
-	rangeChange: 125
-    damage: 115
-    burstSpacing: 4,
-    width: 25
-    height: 25
-    shootEffect: shootSmall
-    smokeEffect: shootSmallSmoke
-	hitEffect: hitLancer
-    ammoMultiplier: 1
-	pierce: true
-	pierceCap: 8
-	pierceBuilding: true
-	buildingDamageMultiplier : 0.05
-	knockback: 3
-	sprite: large-orb
-	}
+        kobra-alloy: {
+            "type": "BasicBulletType",
+            "trailWidth": 2,
+            "trailLength": 8,
+            "speed": 4,
+            "lifetime": 35,
+            "damage": 135,
+            "backColor": "8a1d3f",
+            "frontColor": "c74567",
+            "trailColor": "8a1d3f",
+            "burstSpacing": 4,
+            "width": 15,
+            "height": 15,
+            "shootEffect": "shootSmall",
+            "smokeEffect": "shootSmallSmoke",
+            "hitEffect": "hitLancer",
+            "ammoMultiplier": 1,
+            "pierce": true,
+            "pierceCap": 5,
+            "pierceBuilding": true,
+            "buildingDamageMultiplier": 0.05,
+            "knockback": 1,
+            "sprite": "large-orb"
+        }
+        photoglass: {
+            "type": "BasicBulletType",
+            "trailWidth": 4,
+            "trailLength": 14,
+            "speed": 6,
+            "backColor": "377d6e",
+            "frontColor": "64c990",
+            "trailColor": "377d6e",
+            "trailInterval": 4,
+            "trailEffect": {
+                "type": "WaveEffect",
+                "colorFrom": "64c990",
+                "colorTo": "64c990",
+                "sizeTo": 4,
+                "lifetime": 30,
+                "strokeFrom": 1
+            },
+            "lifetime": 44.1,
+            "rangeChange": 125,
+            "damage": 115,
+            "burstSpacing": 4,
+            "width": 25,
+            "height": 25,
+            "weaveMag": 2,
+            "weaveScale": 6,
+            "shootEffect": "shootSmall",
+            "smokeEffect": "shootSmallSmoke",
+            "hitEffect": "hitLancer",
+            "ammoMultiplier": 2,
+            "pierce": true,
+            "pierceCap": 8,
+            "pierceBuilding": true,
+            "buildingDamageMultiplier": 0.05,
+            "knockback": 3,
+            "sprite": "large-orb"
+        }
     }
 	shoot: {
 			type: shootAlternate
@@ -203,8 +220,7 @@
 	  { "item": "neodymium", "amount": 195 },
         { "item": "metaglass", "amount": 145 },
 	  { "item": "cobalt", "amount": 245 },
-        { "item": "bismuth", "amount": 225 },
-	  { "item": "kobra-alloy", "amount": 95 },
+	  { "item": "kobra-alloy", "amount": 120 },
     ],
     "category": "turret"
     "minWarmup": 0.96

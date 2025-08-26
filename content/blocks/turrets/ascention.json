@@ -28,142 +28,169 @@
     "rotateSpeed": 2,
     "range": 235
     "ammoTypes": {
-               metaglass: {
-    type: BasicBulletType
-    trailWidth: 3
-    trailLength: 40
-    speed: 0.4
-	drag: -0.04
-	lifetime: 80
-	homingPower: 0.4
-	homingRange: 128
-	homingDelay: 32
-    damage: 84
-    width: 15
-    height: 15
-	splashDamage: 64
-	splashDamageRadius: 5
-    shootEffect: shootSmall
-    smokeEffect: shootSmallSmoke
-    ammoMultiplier: 1
-	buildingDamageMultiplier : 0.05
-	pierce: false
-	sprite: large-orb
-	frontColor: ffffff
-	backColor: b0bac0
-	trailColor: b0bac0
-	hitEffect: {
-		type: WaveEffect
-		colorFrom: b0bac0
-		colorTo: ffffff
-		sizeTo: 4
-		lifetime: 15
-		strokeFrom: 1
-	}
-	fragOnHit: true
-	fragVelocityMin: 1
-	fragVelocityMax: 1
-	fragBullets: 6
-	fragSpread: 0
-	fragRandomSpread: 360
-	fragAngle: 0
-	fragBullet: {
-		type: BasicBulletType
-		damage: 29
-					frontColor: ffffff
-					backColor: b0bac0
-		speed: 4
-		width: 2
-		length: 4
-		lifetime: 30
-		trailColor: b0bac0
-		trailLength: 8
-		trailWidth: 2
-		buildingDamageMultiplier : 0.05
-		shootEffect: shootSmall
-		smokeEffect: shootSmallSmoke	
-	}
-	}
-	carbide: {
-		type: BasicBulletType
-		trailWidth: 3
-		trailLength: 40
-		speed: 0.4
-		drag: -0.04
-		lifetime: 80
-		damage: 145
-		width: 15
-		height: 15
-		homingPower: 0.4
-		homingRange: 128
-		homingDelay: 32
-		splashDamage: 86
-		splashDamageRadius: 8
-		shootEffect: shootSmall
-		smokeEffect: shootSmallSmoke
-		ammoMultiplier: 2
-		buildingDamageMultiplier : 0.05
-		pierce: false
-		sprite: large-orb
-		frontColor: 50477b
-		backColor: 89769a
-		trailColor: 89769a
-		hitEffect: {
-			type: WaveEffect
-			colorFrom: 89769a
-			colorTo: 50477b
-			sizeTo: 8
-			lifetime: 20
-			strokeFrom: 1
+		metaglass: {
+			"type": "BasicBulletType",
+			"shrinkY": 0,
+			"shrinkX": 0,
+			"trailWidth": 3,
+			"trailLength": 40,
+			"speed": 0.4,
+			"drag": -0.04,
+			"lifetime": 80,
+			"homingPower": 0.4,
+			"homingRange": 128,
+			"homingDelay": 32,
+			"damage": 84,
+			"width": 15,
+			"height": 15,
+			"splashDamage": 32,
+			"splashDamageRadius": 40,
+			"despawnEffect": {
+				"type": "WaveEffect",
+				"colorFrom": "ffffff",
+				"colorTo": "ffffff",
+				"sizeTo": 40,
+				"lifetime": 75,
+				"strokeFrom": 3
+			},
+			"shootEffect": "shootSmall",
+			"smokeEffect": "shootSmallSmoke",
+			"ammoMultiplier": 1,
+			"buildingDamageMultiplier": 0.05,
+			"pierce": false,
+			"sprite": "large-orb",
+			"frontColor": "ffffff",
+			"backColor": "b0bac0",
+			"trailColor": "b0bac0",
+			"trailInterval": 1,
+			"trailEffect": {
+				"type": "ParticleEffect",
+				"length": 12,
+				"lifetime": 5,
+				"region": "circle-bullet",
+				"particles": 4,
+				"lightColor": "ffffff",
+				"colorFrom": "ffffff",
+				"colorTo": "ffffff",
+				"sizeFrom": 3,
+				"sizeTo": 1
+			},
+			"fragOnHit": true,
+			"fragVelocityMin": 1,
+			"fragVelocityMax": 1,
+			"fragBullets": 6,
+			"fragSpread": 0,
+			"fragRandomSpread": 360,
+			"fragAngle": 0,
+			"fragBullet": {
+				"type": "BasicBulletType",
+				"damage": 29,
+				"frontColor": "ffffff",
+				"backColor": "b0bac0",
+				"speed": 4,
+				"width": 2,
+				"length": 4,
+				"lifetime": 30,
+				"trailColor": "b0bac0",
+				"trailLength": 8,
+				"trailWidth": 2,
+				"buildingDamageMultiplier": 0.05,
+				"shootEffect": "shootSmall",
+				"smokeEffect": "shootSmallSmoke"
+			}
 		}
-		fragOnHit: true
-		fragVelocityMin: 1
-		fragVelocityMax: 1
-		fragBullets: 3
-		fragSpread: 0
-		fragRandomSpread: 360
-		fragAngle: 0
-		fragBullet: {
-			type: BasicBulletType
-			damage: 36
-						frontColor: 50477b
-						backColor: 89769a
-			speed: 4
-			width: 2
-			length: 4
-			lifetime: 30
-			trailColor: 89769a
-			trailLength: 8
-			trailWidth: 2
-			buildingDamageMultiplier : 0.05
-			shootEffect: shootSmall
-			smokeEffect: shootSmallSmoke	
-		}
+		carbide: {
+			"type": "BasicBulletType",
+			"shrinkY": 0,
+			"shrinkX": 0,
+			"trailWidth": 3,
+			"trailLength": 40,
+			"speed": 0.4,
+			"drag": -0.04,
+			"lifetime": 80,
+			"damage": 145,
+			"width": 15,
+			"height": 15,
+			"homingPower": 0.4,
+			"homingRange": 128,
+			"homingDelay": 32,
+			"splashDamage": 86,
+			"splashDamageRadius": 8,
+			"shootEffect": "shootSmall",
+			"smokeEffect": "shootSmallSmoke",
+			"ammoMultiplier": 2,
+			"buildingDamageMultiplier": 0.05,
+			"pierce": false,
+			"sprite": "large-orb",
+			"frontColor": "50477b",
+			"backColor": "89769a",
+			"trailColor": "89769a",
+			"trailEffect": {
+				"type": "WaveEffect",
+				"colorFrom": "89769a",
+				"colorTo": "89769a",
+				"sizeTo": 8,
+				"lifetime": 30,
+				"strokeFrom": 3
+			},
+			"hitEffect": {
+				"type": "WaveEffect",
+				"colorFrom": "89769a",
+				"colorTo": "50477b",
+				"sizeTo": 8,
+				"lifetime": 20,
+				"strokeFrom": 1
+			},
+			"fragOnHit": true,
+			"fragVelocityMin": 1,
+			"fragVelocityMax": 1,
+			"fragBullets": 3,
+			"fragSpread": 0,
+			"fragRandomSpread": 360,
+			"fragAngle": 0,
+			"fragBullet": {
+				"type": "BasicBulletType",
+				"damage": 36,
+				"frontColor": "50477b",
+				"backColor": "89769a",
+				"speed": 4,
+				"width": 2,
+				"length": 4,
+				"lifetime": 30,
+				"trailColor": "89769a",
+				"trailLength": 8,
+				"trailWidth": 2,
+				"buildingDamageMultiplier": 0.05,
+				"shootEffect": "shootSmall",
+				"smokeEffect": "shootSmallSmoke"
+			}
 		}
 		tungsten: {
-			type: BasicBulletType
-			trailWidth: 3
-			trailLength: 40
-			speed: 0.1
-			drag: -0.06
-			lifetime: 80
-			damage: 165
-			width: 15
-			height: 15
-			homingPower: 0.4
-			homingRange: 128
-			homingDelay: 32
-			shootEffect: shootSmall
-			smokeEffect: shootSmallSmoke
-			ammoMultiplier: 1
-			pierce: true
-			pierceCap: 6
-			buildingDamageMultiplier : 0.05
-			sprite: large-orb
-			frontColor: b0bac0
-			backColor: 3d3e47
-			trailColor: 3d3e47
-			}
+			"type": "BasicBulletType",
+			"shrinkY": 0,
+			"shrinkX": 0,
+			"trailWidth": 3,
+			"trailLength": 40,
+			"speed": 0.1,
+			"drag": -0.06,
+			"lifetime": 80,
+			"damage": 165,
+			"width": 15,
+			"height": 15,
+			"homingPower": 0.4,
+			"homingRange": 128,
+			"homingDelay": 32,
+			"shootEffect": "shootSmall",
+			"smokeEffect": "shootSmallSmoke",
+			"ammoMultiplier": 1,
+			"pierce": true,
+			"pierceCap": 6,
+			"buildingDamageMultiplier": 0.05,
+			"sprite": "large-orb",
+			"frontColor": "b0bac0",
+			"backColor": "3d3e47",
+			"trailColor": "3d3e47"
+		}
     }
 	shoot: {
 		shots: 6
@@ -250,13 +277,32 @@
 			},
 		]
 	}
-    "requirements": [
-        { "item": "carbide", "amount": 115 },
-	  { "item": "hypersteel", "amount": 85 },
-        { "item": "metaglass", "amount": 250 },
-	  { "item": "cobalt", "amount": 345 },
-	  { "item": "kobra-alloy", "amount": 115 },
-    ],
+	"requirements": [
+		{
+			"item": "carbide",
+			"amount": 115
+		},
+		{
+			"item": "hypersteel",
+			"amount": 85
+		},
+		{
+			"item": "neodymium",
+			"amount": 250
+		},
+		{
+			"item": "cobalt",
+			"amount": 345
+		},
+		{
+			"item": "kobra-alloy",
+			"amount": 115
+		},
+		{
+			"item": "photoglass",
+			"amount": 50
+		}
+	],
     "category": "turret"
     "minWarmup": 0.96
     "shootWarmupSpeed": 0.02

@@ -14,15 +14,15 @@
     "shootCone": 4,
     "shootY": 8,
     "range": 1600,
-    "recoil": 0
+    "recoil": 0,
     "consumes": {
         "power": 0.1
     },
     "shootType": {
         "Type": "BulletType",
         "instantDisappear": true,
-        "despawnEffect": "none"
-        "smokeEffect": "none"
+        "despawnEffect": "none",
+        "smokeEffect": "none",
         "shootEffect": {
             "type": "WaveEffect",
             "colorFrom": "8c887b",

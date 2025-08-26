@@ -161,10 +161,26 @@
 		]
 	}
     "requirements": [
-        { "item": "carbide", "amount": 175 },
-	  { "item": "tungsten", "amount": 125 },
-	  { "item": "cobalt", "amount": 345 },
-	  { "item": "photoglass", "amount": 85 },
+        {
+            "item": "carbide",
+            "amount": 175
+        },
+        {
+            "item": "tungsten",
+            "amount": 125
+        },
+        {
+            "item": "cobalt",
+            "amount": 345
+        },
+        {
+            "item": "photoglass",
+            "amount": 85
+        },
+        {
+            "item": "neodymium",
+            "amount": 120
+        }
     ],
     "category": "turret"
     "minWarmup": 0.9

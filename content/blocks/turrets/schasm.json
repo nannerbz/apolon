@@ -13,35 +13,86 @@
     "xRand": 0,
     "squareSprite": false
     "coolantMultiplier": 0.75
-  "consumes": {
-    "coolant": {
-      "amount": 0.6
+    "consumes": {
+        "power": 6,
+        "coolant": {
+            "amount": 0.6
+        }
     }
-  }
     "shootCone": 4,
     "rotateSpeed": 1.6,
     "shots": 1,
     "range": 670
     "ammoTypes": {
-	hypersteel: {
-		Type: LaserBulletType
-		chargeEffect: lancerLaserCharge
-		hitEffect: hitLancer
-		hitSize: 5
-		drawSize: 550
-		collidesAir: true
-		length: 670
-		ammoMultiplier: 3
-		buildingDamageMultiplier : 0.05
-		pierceCap: 5
-		damage: 300
-		colors: [
-			4b3799
-			645ab0
-			8a7ed9
-		]
-	}
-}
+        "hypersteel": {
+            "Type": "LaserBulletType",
+            "chargeEffect": "lancerLaserCharge",
+            "hitEffect": "hitLancer",
+            "hitSize": 5,
+            "drawSize": 550,
+            "collidesAir": true,
+            "length": 670,
+            "ammoMultiplier": 3,
+            "buildingDamageMultiplier": 0.05,
+            "pierceCap": 5,
+            "damage": 300,
+            "colors": [
+                "4b3799",
+                "645ab0",
+                "8a7ed9"
+            ]
+        },
+        "fissile-matter": {
+            "type": "BulletType",
+            "hitSound": "lucer",
+            "lightOpacity": 0.6,
+            "lightColor": "7eccbc",
+            "lightRadius": 40,
+            "collidesAir": false,
+            "status": "intense-radiation",
+            "statusDuration": 400,
+            "pierce": true,
+            "pierceCap": 300,
+            "speed": 8,
+            "lifetime": 83.75,
+            "damage": 100,
+            "width": 20,
+            "height": 20,
+            "homingPower": 0.04,
+            "homingRange": 380,
+            "trailInterval": 0.2,
+            "trailEffect": {
+                "type": "WaveEffect",
+                "colorFrom": "58a68c",
+                "colorTo": "58a68c",
+                "sizeTo": 12,
+                "sizeFrom": 14,
+                "lifetime": 60,
+                "strokeFrom": 4
+            },
+            "shootEffect": {
+                "type": "WaveEffect",
+                "colorFrom": "275861",
+                "colorTo": "7eccbc",
+                "sizeTo": 40,
+                "lifetime": 120,
+                "strokeFrom": 4
+            },
+            "intervalBullets": 5,
+            "intervalSpread": 72,
+            "intervalRandomSpread": 0,
+            "intervalAngle": 0,
+            "bulletInterval": 10,
+            "intervalDelay": 0,
+            "intervalBullet": {
+                "type": "ShrapnelBulletType",
+                "damage": 40,
+                "length": 40,
+                "width": 9,
+                "toColor": "58a68c"
+            }
+        }
+    }
 	shoot: {
 		shots: 3
 		shotDelay: 10
