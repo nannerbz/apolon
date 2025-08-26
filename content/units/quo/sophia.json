@@ -14,13 +14,15 @@ range: 350
 research: logos
 abilities: [
 	{
-		type: EnergyFieldAbility
-		damage: 35
-		reload: 30
-		range: 350
-		maxTargets: 50
-		status: burning
-		statusDuration: 120
+		"type": "EnergyFieldAbility",
+		"damage": 70,
+		"reload": 60,
+		"range": 350,
+		"maxTargets": 50,
+		"status": "burning",
+		"statusDuration": 120,
+		"color": "cf926a",
+		"targetAir": false
 	}
 	{
 		type: SuppressionFieldAbility

@@ -29,6 +29,8 @@
     "ammoTypes": {
         kobra-alloy: {
             "type": "BasicBulletType",
+            "shrinkY": 0,
+            "shrinkX": 0,
             "trailWidth": 2,
             "trailLength": 8,
             "speed": 4,
@@ -53,6 +55,8 @@
         }
         photoglass: {
             "type": "BasicBulletType",
+            "shrinkY": 0,
+            "shrinkX": 0,
             "trailWidth": 4,
             "trailLength": 14,
             "speed": 6,

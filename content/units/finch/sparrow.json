@@ -12,24 +12,33 @@ circleTarget: false
 range: 192
 weapons: [
 	{
-		name: sparrow-w
-		reload: 128
-		x: 0
-		y: 2
-		shootSound: Pulse
-		rotate: false
-		bullet: {
-			type: BasicBulletType
-			damage: 150
-			speed: 5
-			width: 8
-			length: 12
-			lifetime: 38.4
-			trailColor: ffffff
-			trailLength: 8
-			trailWidth: 4
-			shootEffect: shootSmall
-			smokeEffect: shootSmallSmoke
+		"name": "sparrow-w",
+		"shoot": {
+			"type": "shootAlternate",
+			"shots": 2,
+			"barrels": 2,
+			"x": 2
+		},
+		"reload": 128,
+		"x": 0,
+		"y": 2,
+		"shootSound": "Pulse",
+		"rotate": false,
+		"bullet": {
+			"type": "BasicBulletType",
+			"damage": 80,
+			"pierceArmor": true,
+			"speed": 5,
+			"width": 8,
+			"length": 12,
+			"lifetime": 38.4,
+			"backColor": "c74567",
+			"frontColor": "c74567",
+			"trailColor": "c74567",
+			"trailLength": 8,
+			"trailWidth": 4,
+			"shootEffect": "shootSmall",
+			"smokeEffect": "shootSmallSmoke"
 		}
 	}
 ]

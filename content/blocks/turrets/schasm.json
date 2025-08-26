@@ -48,7 +48,6 @@
             "lightOpacity": 0.6,
             "lightColor": "7eccbc",
             "lightRadius": 40,
-            "collidesAir": false,
             "status": "intense-radiation",
             "statusDuration": 400,
             "pierce": true,
@@ -60,15 +59,15 @@
             "height": 20,
             "homingPower": 0.04,
             "homingRange": 380,
-            "trailInterval": 0.2,
+            "trailInterval": 1.4,
             "trailEffect": {
                 "type": "WaveEffect",
                 "colorFrom": "58a68c",
                 "colorTo": "58a68c",
-                "sizeTo": 12,
-                "sizeFrom": 14,
+                "sizeTo": 4,
+                "sizeFrom": 10,
                 "lifetime": 60,
-                "strokeFrom": 4
+                "strokeFrom": 5
             },
             "shootEffect": {
                 "type": "WaveEffect",
@@ -82,11 +81,11 @@
             "intervalSpread": 72,
             "intervalRandomSpread": 0,
             "intervalAngle": 0,
-            "bulletInterval": 10,
+            "bulletInterval": 5,
             "intervalDelay": 0,
             "intervalBullet": {
                 "type": "ShrapnelBulletType",
-                "damage": 40,
+                "damage": 14,
                 "length": 40,
                 "width": 9,
                 "toColor": "58a68c"

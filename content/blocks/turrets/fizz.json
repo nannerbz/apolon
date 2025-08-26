@@ -94,9 +94,26 @@
 		]
 	}
     "requirements": [
-        { "item": "photoglass", "amount": 240 },
-	  { "item": "carbide", "amount": 300 },
-        { "item": "kobra-alloy", "amount": 280 },
+        {
+            "item": "photoglass",
+            "amount": 240
+        },
+        {
+            "item": "carbide",
+            "amount": 320
+        },
+        {
+            "item": "kobra-alloy",
+            "amount": 280
+        },
+        {
+            "item": "cobalt",
+            "amount": 485
+        }
+        {
+            "item": "neodymium",
+            "amount": 300
+        }
     ],
     "category": "turret"
     "shootSound": "mediumCannon"

@@ -65,8 +65,8 @@
 			"trailInterval": 1,
 			"trailEffect": {
 				"type": "ParticleEffect",
-				"length": 12,
-				"lifetime": 5,
+				"length": 18,
+				"lifetime": 10,
 				"region": "circle-bullet",
 				"particles": 4,
 				"lightColor": "ffffff",

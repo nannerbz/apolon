@@ -40,20 +40,32 @@ weapons: [
 		mirror: false
 		continuous: true
 		bullet: {
-			type: ContinuousFlameBulletType
-			damage: 4
-			flareWidth: 3
-			flareColor: e2c94b
-			knockback: -0.2
-			length: 145
-			pierceCap: 3
-			lifetime: 10
-			colors: [
+			"type": "ContinuousFlameBulletType",
+			"damage": 4,
+			"flareWidth": 3,
+			"flareColor": "e2c94b",
+			"knockback": -0.2,
+			"length": 145,
+			"pierceCap": 3,
+			"lifetime": 10,
+			"hitEffect": {
+				"type": "ParticleEffect",
+				"length": 16,
+				"lifetime": 20,
+				"region": "circle-bullet",
+				"particles": 2,
+				"lightColor": "e2ca4b",
+				"colorFrom": "e2ca4b",
+				"colorTo": "e2ca4b",
+				"sizeFrom": 2,
+				"sizeTo": 1
+			},
+			"colors": [
 				544736,
-				cf936a,
-				e2c94b,
-				e2c94b,
-				ffffff
+				"cf936a",
+				"e2c94b",
+				"e2c94b",
+				"ffffff"
 			]
 		}
 	}

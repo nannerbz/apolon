@@ -39,35 +39,50 @@ weapons: [
 		shootY: 0
 		rotate: true
 		bullet: {
-			type: BasicBulletType
-			splashDamage: 45
-			splashDamageRadius: 35
-			damage: 60
-			speed: 3
-			width: 8
-			length: 12
-			lifetime: 41.6
-			trailColor: ffffff
-			trailLength: 8
-			trailWidth: 2
-			shootEffect: shootSmall
-			smokeEffect: shootSmallSmoke
-			hitEffect: {
-				type: WaveEffect
-				colorFrom: e2ca4b
-				colorTo: e2ca4b
-				sizeTo: 38
-				lifetime: 10
-				strokeFrom: 4
+			"type": "BasicBulletType",
+			"splashDamage": 45,
+			"splashDamageRadius": 35,
+			"damage": 60,
+			"speed": 3,
+			"width": 8,
+			"length": 12,
+			"lifetime": 41.6,
+			"backColor": "cf926a",
+			"frontColor": "e2ca4b",
+			"trailColor": "e2ca4b",
+			"trailLength": 8,
+			"trailWidth": 2,
+			"trailInterval": 20,
+			"trailEffect": {
+				"type": "ParticleEffect",
+				"length": 8,
+				"lifetime": 50,
+				"region": "circle-bullet",
+				"particles": 3,
+				"lightColor": "e2ca4b",
+				"colorFrom": "e2ca4b",
+				"colorTo": "cf926a",
+				"sizeFrom": 5,
+				"sizeTo": 2
+			},
+			"shootEffect": "shootSmall",
+			"smokeEffect": "shootSmallSmoke",
+			"hitEffect": {
+				"type": "WaveEffect",
+				"colorFrom": "e2ca4b",
+				"colorTo": "e2ca4b",
+				"sizeTo": 38,
+				"lifetime": 10,
+				"strokeFrom": 4
+			},
+			"despawnEffect": {
+				"type": "WaveEffect",
+				"colorFrom": "e2ca4b",
+				"colorTo": "e2ca4b",
+				"sizeTo": 38,
+				"lifetime": 10,
+				"strokeFrom": 4
 			}
-			despawnEffect: {
-				type: WaveEffect
-				colorFrom: e2ca4b
-				colorTo: e2ca4b
-				sizeTo: 38
-				lifetime: 10
-				strokeFrom: 4
-			}	
 		}
 	}
 ]
