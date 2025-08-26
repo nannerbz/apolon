@@ -1,0 +1,187 @@
+{
+    "type": "ItemTurret",
+    "name": "Tension",
+    "description": "Fires quick and piercing shots that shove back enemies. Starts out slow, but picks up pace as it keeps firing.",
+    "targetAir": true,
+    "targetGround": true,
+    "hasPower": false
+    "health": 9550
+    "size": 5
+    "inaccuracy": 0
+    "reload": 200
+    "outlineColor": 222222
+    "xRand": 0,
+    "squareSprite": false
+    "coolantMultiplier": 0.65
+    "shootY": -8
+  "consumes": {
+	"liquids": {
+		"liquids": [
+			{ "liquid": "hydrogen", "amount": 0.8 }
+		]
+	}
+    "coolant": {
+      "amount": 0.5
+    }
+  }
+    "shootCone": 3
+    "rotateSpeed": 3
+    "shots": 1,
+    "range": 375
+    "ammoTypes": {
+               kobra-alloy: {
+    type: BasicBulletType
+    trailWidth: 4
+    trailLength: 10
+    speed: 6
+	lifetime: 62.5
+    damage: 60
+    burstSpacing: 4,
+    width: 6
+    height: 10
+    shootEffect: colorSparkBig
+    smokeEffect: shootSmallSmoke
+	hitEffect: hitLancer
+    ammoMultiplier: 1
+	buildingDamageMultiplier : 0.05
+	knockback: 18
+	shrinkY: 0
+	pierce: true
+	pierceCap: 5
+	}
+               tungsten: {
+    type: BasicBulletType
+    trailWidth: 4
+    trailLength: 16
+    speed: 8
+	lifetime: 46.875
+    damage: 120
+    burstSpacing: 4,
+    width: 8
+    height: 12
+    shootEffect: colorSparkBig
+    smokeEffect: shootSmallSmoke
+	hitEffect: hitLancer
+    ammoMultiplier: 1
+	buildingDamageMultiplier : 0.05
+	knockback: 35
+	shrinkY: 0
+	pierce: true
+	pierceCap: 8
+	}
+}
+	shoot: {
+		shots: 18
+		shotDelay: 42.
+	}
+	drawer: {
+		type: DrawTurret,
+     		basePrefix: base,
+		parts : [
+    			{
+      			type : RegionPart
+      			suffix : "-b"
+      			progress : recoil
+      			heatProgress : recoil
+      			heatColor : "ffffff"
+      			mirror : false
+      			under : false
+      			moveX : 0
+			moveY : 0
+      			moveRot : 0
+    			},
+    			{
+      			type : RegionPart
+      			suffix : "-w"
+      			progress : warmup
+      			heatProgress : recoil
+      			heatColor : "ffffff"
+      			mirror : true
+      			under : false
+      			moveX : 0
+			moveY : 0
+      			moveRot : 5
+
+			moves: [
+				{
+					x: 4
+					y: 0
+					rot: -15
+					progress: recoil
+				}
+			]
+    			},
+    			{
+      			type : RegionPart
+      			suffix : "-spike"
+      			progress : recoil
+      			heatProgress : recoil
+      			heatColor : "a0b0c8"
+      			mirror : true
+      			under : true
+			x: 12
+			y: 5
+      			moveX : 5
+			moveY : 0
+      			moveRot : 0
+    			},
+    			{
+      			type : RegionPart
+      			suffix : "-spike"
+      			progress : recoil
+      			heatProgress : recoil
+      			heatColor : "a0b0c8"
+      			mirror : true
+      			under : true
+			x: 9
+			y: -3
+      			moveX : 5
+			moveY : 0
+      			moveRot : 0
+    			},
+    			{
+      			type : RegionPart
+      			suffix : "-spike"
+      			progress : recoil
+      			heatProgress : recoil
+      			heatColor : "a0b0c8"
+      			mirror : true
+      			under : true
+			x: 7
+			y: -8
+      			moveX : 5
+			moveY : 0
+      			moveRot : 0
+    			},
+		]
+	}
+    "requirements": [
+        {
+            "item": "carbide",
+            "amount": 300
+        },
+        {
+            "item": "tungsten",
+            "amount": 150
+        },
+        {
+            "item": "kobra-alloy",
+            "amount": 125
+        },
+        {
+            "item": "photoglass",
+            "amount": 50
+        },
+        {
+            "item": "neodymium",
+            "amount": 300
+        }
+    ],
+    "category": "turret"
+    "minWarmup": 0.9
+    "shootWarmupSpeed": 0.15
+    "shootSound": "shootAlt"
+    "research": acrylon
+    "shake": 0
+    "researchCostMultiplier": 0.05
+}
