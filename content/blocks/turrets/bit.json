@@ -39,6 +39,7 @@
 	"requirements": [
 		"carbide/95",
 		"cobalt/160",
+		"metaglass/120",
 		"neodymium/145",
 		"chromium/125"
 	],

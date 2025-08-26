@@ -23,12 +23,12 @@
 	trailColor: 599ca8
 	speed: 3
 	lifetime: 88
-	damage: 25
+	damage: 35
 	width: 8
 	height: 8
 	shrinkY: 0
-	splashDamage: 25
-	splashDamageRadius: 45
+	splashDamage: 15
+	splashDamageRadius: 48
 	ammoMultiplier: 1
 	hitEffect: hitLiquid
 	despawnEffect: hitLiquid
@@ -39,17 +39,17 @@
   }
                arkycite: {
         type: MissileBulletType
-	frontColor: 7ec0cc
-	backColor: 37727d
-	trailColor: 599ca8
+	frontColor: d2dd76
+	backColor: 84a94b
+	trailColor: 3c7141
 	speed: 3
 	lifetime: 88
-	damage: 35
+	damage: 25
 	width: 8
 	height: 8
 	shrinkY: 0
-	splashDamage: 35
-	splashDamageRadius: 65
+	splashDamage: 25
+	splashDamageRadius: 24
 	ammoMultiplier: 1
 	hitEffect: hitLiquid
 	despawnEffect: hitLiquid

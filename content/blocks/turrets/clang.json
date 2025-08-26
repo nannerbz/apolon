@@ -162,12 +162,9 @@
 	}
     "requirements": [
         { "item": "carbide", "amount": 175 },
-	  { "item": "tungsten", "amount": 85 },
-        { "item": "metaglass", "amount": 250 },
+	  { "item": "tungsten", "amount": 125 },
 	  { "item": "cobalt", "amount": 345 },
-        { "item": "bismuth", "amount": 250 },
-	  { "item": "photoglass", "amount": 345 },
-	  { "item": "kobra-alloy", "amount": 115 },
+	  { "item": "photoglass", "amount": 85 },
     ],
     "category": "turret"
     "minWarmup": 0.9

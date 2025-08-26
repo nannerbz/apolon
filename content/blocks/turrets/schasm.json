@@ -147,7 +147,6 @@
         { "item": "photoglass", "amount": 95 },
 	  { "item": "bismuth", "amount": 285 },
         { "item": "hypersteel", "amount": 80 },
-	  { "item": "kobra-alloy", "amount": 120 },
     ],
     "category": "turret"
     "minWarmup": 0.96

@@ -49,7 +49,7 @@
     ammoMultiplier: 3
 	shrinkY: 0.3
 	pierce: true
-	pierceCap: 8
+	pierceCap: 6
 	sprite: large-orb
   }
                chromium: {
@@ -74,7 +74,31 @@
     ammoMultiplier: 2
 	shrinkY: 0.4
 	pierce: true
-	pierceCap: 12
+	pierceCap: 10
+	sprite: large-orb
+  }
+               tungsten: {
+    type: BasicBulletType
+    trailWidth: 4
+    trailLength: 15
+    speed: 8
+	lifetime: 70
+    rangeChange: 140
+    damage: 160
+    collidesGround: false
+    drag: 0.015
+    burstSpacing: 4,
+    homingDelay: 25
+    homingRange: 125
+    homingPower: 0.15
+    width: 10
+    height: 20
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+	hitEffect: hitLancer
+    ammoMultiplier: 2
+	shrinkY: 0.4
+	pierce: false
 	sprite: large-orb
   }
     },
