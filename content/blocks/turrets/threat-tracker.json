@@ -1,0 +1,72 @@
+{
+    "type": "PowerTurret",
+    "name": "Threat Tracker",
+    "description": "Tracks enemy entities such as units or bases up to 200 blocks of distance. Pings to alert the user about the threats.",
+    "targetAir": true,
+    "targetGround": true,
+    "health": 650,
+    "size": 2,
+    "outlineColor": 222222,
+    "inaccuracy": 0,
+    "reload": 360,
+    "xRand": 0,
+    "squareSprite": false,
+    "shootCone": 4,
+    "shootY": 8,
+    "range": 1600,
+    "recoil": 0
+    "consumes": {
+        "power": 0.1
+    },
+    "shootType": {
+        "Type": "BulletType",
+        "instantDisappear": true,
+        "despawnEffect": "none"
+        "smokeEffect": "none"
+        "shootEffect": {
+            "type": "WaveEffect",
+            "colorFrom": "8c887b",
+            "colorTo": "ffffff",
+            "sizeTo": 64,
+            "lifetime": 240,
+            "strokeFrom": 3
+        }
+    },
+    "requirements": [
+        {
+            "item": "cobalt",
+            "amount": 30
+        },
+        {
+            "item": "neodymium",
+            "amount": 20
+        },
+        {
+            "item": "metaglass",
+            "amount": 20
+        }
+    ],
+    "drawer": {
+        "type": "DrawTurret",
+        "basePrefix": "radar1",
+        "parts": [
+            {
+                "type": "RegionPart",
+                "suffix": "-b",
+                "progress": "warmup",
+                "mirror": false,
+                "under": false,
+                "moveX": 0,
+                "moveY": 0,
+                "moveRot": 0
+            }
+        ]
+    },
+    "category": "effect",
+    "shootSound": "pingradar",
+    "research": {
+        "parent": "cobalt-radar"
+    },
+    "shake": 3,
+    "researchCostMultiplier": 0.05
+}

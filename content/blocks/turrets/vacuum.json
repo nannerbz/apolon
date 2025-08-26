@@ -95,7 +95,6 @@
 		]
 	}
     "requirements": [
-        { "item": "bismuth", "amount": 30 },
 	  { "item": "cobalt", "amount": 45 },
         { "item": "carbide", "amount": 30 },
 	  { "item": "metaglass", "amount": 45 },

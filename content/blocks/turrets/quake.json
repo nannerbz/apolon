@@ -22,66 +22,80 @@
     "shots": 1,
     "range": 288
     "ammoTypes": {
-               chromium: {
-    type: MissileBulletType
-    trailWidth: 3
-    trailLength: 25
-    speed: 3
-	lifetime: 96
-    damage: 45
-    width: 10
-    height: 10
-    shootEffect: shootBig2
-    smokeEffect: shootSmokeTitan
-    splashDamage: 75
-    splashDamageRadius: 45
-	buildingDamageMultiplier : 0.05
-    frontColor: ffffff
-    hitSound: none
-    lightColor: e2ca4b
-    trailColor: e2ca4b
-    backColor: 544736
-    weaveMag: 5
-    weaveScale: 4
-    trailChance: -1
-    despawnSound: dullExplosion
-    despawnEffect: none
-    knockback: 2
-    rangeChange: 0
-    status: sapped
-    statusDuration: 90
-    reloadMultiplier: 1
-	}
-               carbide: {
-    type: MissileBulletType
-    trailWidth: 3
-    trailLength: 25
-    speed: 2
-	lifetime: 124
-    damage: 45
-    width: 10
-    height: 10
-    weaveMag: 6
-    weaveScale: 5
-    shootEffect: shootBig2
-    smokeEffect: shootSmokeTitan
-    splashDamage: 85
-    splashDamageRadius: 55
-	buildingDamageMultiplier : 0.05
-    frontColor: ffffff
-    hitSound: none
-    lightColor: e2ca4b
-    trailColor: e2ca4b
-    backColor: 544736
-    trailChance: -1
-    despawnSound: dullExplosion
-    despawnEffect: none
-    knockback: 2
-    rangeChange: -40
-    status: sapped
-    statusDuration: 120
-    reloadMultiplier: 0.7
-	},
+        chromium: {
+            "type": "MissileBulletType",
+            "trailWidth": 3,
+            "trailLength": 25,
+            "speed": 3,
+            "lifetime": 96,
+            "damage": 45,
+            "width": 10,
+            "height": 10,
+            "shootEffect": "shootBig2",
+            "smokeEffect": "shootSmokeTitan",
+            "splashDamage": 75,
+            "splashDamageRadius": 30,
+            "despawnEffect": {
+                "type": "WaveEffect",
+                "colorFrom": "e2ca4b",
+                "colorTo": "cf926a",
+                "sizeTo": 30,
+                "lifetime": 20,
+                "strokeFrom": 2
+            },
+            "buildingDamageMultiplier": 0.05,
+            "frontColor": "e2ca4b",
+            "hitSound": "none",
+            "lightColor": "e2ca4b",
+            "trailColor": "e2ca4b",
+            "backColor": "cf926a",
+            "weaveMag": 5,
+            "weaveScale": 4,
+            "trailChance": -1,
+            "despawnSound": "dullExplosion",
+            "despawnEffect": "none",
+            "knockback": 2,
+            "rangeChange": 0,
+            "reloadMultiplier": 1
+        }
+        carbide: {
+            "type": "MissileBulletType",
+            "trailWidth": 3,
+            "trailLength": 25,
+            "speed": 2,
+            "lifetime": 124,
+            "damage": 45,
+            "width": 10,
+            "height": 10,
+            "weaveMag": 6,
+            "weaveScale": 5,
+            "shootEffect": "shootBig2",
+            "smokeEffect": "shootSmokeTitan",
+            "splashDamage": 90,
+            "splashDamageRadius": 45,
+            "despawnEffect": {
+                "type": "WaveEffect",
+                "colorFrom": "89769a",
+                "colorTo": "50477b",
+                "sizeTo": 45,
+                "lifetime": 30,
+                "strokeFrom": 3
+            },
+            "buildingDamageMultiplier": 0.05,
+            "frontColor": "c9a5c8",
+            "hitSound": "none",
+            "lightColor": "c9a5c8",
+            "trailColor": "c9a5c8",
+            "backColor": "89769a",
+            "trailChance": -1,
+            "despawnSound": "dullExplosion",
+            "despawnEffect": "none",
+            "knockback": 2,
+            "rangeChange": -40,
+            "status": "sapped",
+            "statusDuration": 120,
+            "reloadMultiplier": 0.7
+        },
 },
 	drawer: {
 		type: DrawTurret,
@@ -136,7 +150,7 @@
     "category": "turret"
     "minWarmup": 0.9
     "shootWarmupSpeed": 0.06
-    "shootSound": "malignShoot"
+    "shootSound": "caboom"
     "loopSound": "glow"
     "loopSoundVolume": 0.5
     "research": blast

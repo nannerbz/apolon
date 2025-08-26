@@ -30,9 +30,9 @@
 	},
 	"shootType": {
 		"type": "PointLaserBulletType",
-		"damage": 175,
+		"damage": 145,
 		"hitColor": "ffffff"
-		"buildingDamageMultiplier": 0.05
+		"buildingDamageMultiplier": 0.001
 	},
 	"category": "turret",
 	"research": "lapse",

@@ -24,56 +24,112 @@
     "shots": 1,
     "range": 235
     "ammoTypes": {
-               metaglass: {
-    type: ArtilleryBulletType
-    knockback: 0.6
-    trailWidth: 1
-    trailLength: 5
-    speed: 4
-    lifetime: 58.75
-    damage: 50
-    burstSpacing: 4,
-	buildingDamageMultiplier : 0.05
-    width: 10
-    height: 10
-    collidesTiles: false
-    splashDamage: 35
-    splashDamageRadius: 45
-    shootEffect: shootSmall
-    smokeEffect: shootSmallSmoke
-    hitSound: Implode
-    despawnSound: Implode
-	hitEffect: hitLancer
-    ammoMultiplier: 2
-	shrinkY: 0.3
-	pierce: false
-	sprite: bullet
-  }
-               carbide: {
-    type: ArtilleryBulletType
-    knockback: 0.6
-    trailWidth: 1
-    trailLength: 5
-    speed: 4
-    lifetime: 58.75
-    damage: 75
-    burstSpacing: 4,
-    width: 10
-    height: 10
-    collidesTiles: false
-    splashDamage: 60
-    splashDamageRadius: 65
-	buildingDamageMultiplier : 0.05
-    shootEffect: shootSmall
-    smokeEffect: shootSmallSmoke
-    hitSound: Implode
-    despawnSound: Implode
-	hitEffect: hitLancer
-    ammoMultiplier: 1
-	shrinkY: 0.3
-	pierce: false
-	sprite: bullet
-  }
+        metaglass: {
+            "type": "ArtilleryBulletType",
+            "trailInterval": 5,
+            "trailEffect": {
+                "type": "ParticleEffect",
+                "length": 3,
+                "lifetime": 20,
+                "region": "circle-bullet",
+                "particles": 12,
+                "lightColor": "ffffff",
+                "colorFrom": "ffffff",
+                "colorTo": "ffffff",
+                "sizeFrom": 1,
+                "sizeTo": 1
+            },
+            "fragOnHit": true,
+            "fragVelocityMin": 2,
+            "fragVelocityMax": 2,
+            "fragBullets": 5,
+            "fragSpread": 0,
+            "fragRandomSpread": 360,
+            "fragAngle": 0,
+            "fragBullet": {
+                "type": "BasicBulletType",
+                "damage": 6,
+                "smokeEffect": "none",
+                "despawnEffect": "none",
+                "trailWidth": 1,
+                "trailLength": 2,
+                "color": "ffffff",
+                "backColor": "ffffff",
+                "frontColor": "ffffff",
+                "trailColor": "ffffff",
+                "speed": 3,
+                "width": 3,
+                "height": 4,
+                "sprite": "circle-bullet",
+                "lifetime": 30
+            },
+            "knockback": 0.6,
+            "trailWidth": 1,
+            "trailLength": 5,
+            "speed": 4,
+            "lifetime": 58.75,
+            "damage": 34,
+            "burstSpacing": 4,
+            "buildingDamageMultiplier": 0.05,
+            "width": 10,
+            "height": 10,
+            "collidesTiles": false,
+            "splashDamage": 25,
+            "splashDamageRadius": 65,
+            "shootEffect": "shootSmall",
+            "smokeEffect": "shootSmallSmoke",
+            "hitSound": "Implode",
+            "despawnSound": "Implode",
+            "hitEffect": "hitLancer",
+            "despawnEffect": {
+                "type": "WaveEffect",
+                "colorFrom": "ffffff",
+                "colorTo": "ffffff",
+                "sizeTo": 65,
+                "lifetime": 60,
+                "strokeFrom": 2
+            },
+            "ammoMultiplier": 2,
+            "shrinkY": 0.3,
+            "pierce": false,
+            "sprite": "bullet"
+        }
+        carbide: {
+            "type": "ArtilleryBulletType",
+            "knockback": 0.6,
+            "trailWidth": 3,
+            "trailLength": 5,
+            "backColor": "50477b",
+            "frontColor": "50477b",
+            "trailColor": "89769a",
+            "speed": 4,
+            "lifetime": 58.75,
+            "damage": 88,
+            "burstSpacing": 4,
+            "width": 10,
+            "height": 10,
+            "collidesTiles": false,
+            "splashDamage": 60,
+            "splashDamageRadius": 45,
+            "buildingDamageMultiplier": 0.05,
+            "despawnEffect": {
+                "type": "WaveEffect",
+                "colorFrom": "89769a",
+                "colorTo": "50477b",
+                "sizeTo": 45,
+                "lifetime": 30,
+                "strokeFrom": 3
+            },
+            "shootEffect": "shootSmall",
+            "smokeEffect": "shootSmallSmoke",
+            "hitSound": "Implode",
+            "despawnSound": "Implode",
+            "hitEffect": "hitLancer",
+            "ammoMultiplier": 1,
+            "shrinkY": 0.3,
+            "pierce": false,
+            "sprite": "bullet"
+        }
     },
 	shoot: {
 		type: shootAlternate
@@ -113,8 +169,7 @@
 		]
 	}
     "requirements": [
-        { "item": "metaglass", "amount": 65 },
-	  { "item": "carbide", "amount": 75 },
+	  { "item": "carbide", "amount": 85 },
         { "item": "bismuth", "amount": 45 },
 	  { "item": "cobalt", "amount": 95 },
     ],

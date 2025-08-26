@@ -46,9 +46,9 @@
 		]
 	}
 	"requirements": [
-		"carbide/95",
-		"cobalt/160",
-		"metaglass/115",
+		"carbide/85",
+		"cobalt/120",
+		"metaglass/85",
 		"neodymium/35",
 	],
 	"drawer": {
