@@ -25,7 +25,7 @@
     "ammoTypes": {
         "technetium": {
             "type": "BulletType",
-            "hitSound": "lucer",
+            "hitSound": "none",
             "lightOpacity": 0.6,
             "lightColor": "7eccbc",
             "lightRadius": 40,
@@ -94,7 +94,7 @@
         },
         "hypersteel": {
             "type": "BulletType",
-            "hitSound": "lucer",
+            "hitSound": "none",
             "lightOpacity": 0.6,
             "lightColor": "7eccbc",
             "lightRadius": 40,
