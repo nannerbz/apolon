@@ -1,0 +1,212 @@
+atemplate: UnitType
+name: Severance
+flying: true
+speed: 0.9
+accel: 0.05
+drag: 0.06
+health: 75850
+hitSize: 68
+itemCapacity: 0
+outlineColor: 222222
+engineOffset: 10
+engineSize: 10
+range: 350
+abilities: [
+	{
+		type: SuppressionFieldAbility
+		x: 0
+		Y: -30
+		orbRadius: 6
+		particleSize: 6
+		particles: 30
+		display: true
+		active: true
+		layerOffset: -0.001
+		color: 64c990
+		particleColor: 64c990
+	}
+]
+weapons: [
+	{
+		name: severence-weapon
+		reload: 120
+		x: 22
+		y: 10
+		shootSound: laser
+		mirror: true
+		rotate: true
+		top: true
+		bullet: {
+			type: BasicBulletType
+			damage: 300
+			speed: 10
+			width: 20
+			length: 35
+			sprite: large-orb
+			lifetime: 35
+			trailColor: 64c990
+			trailChance: 0.6
+			trailRotation: true
+			trailEffect: disperseTrail
+			pierce: true
+			pierceCap: 10
+			pierceBuilding: true	
+			shootEffect: shootSmall
+			smokeEffect: shootSmallSmoke
+
+			intervalBullet: {
+				Type: LaserBulletType
+				hitEffect: hitLancer
+				hitSize: 5
+				drawSize: 550
+				collidesAir: true
+				length: 140
+				pierceCap: 5
+				damage: 165
+    	      		}
+	
+			bulletInterval: 2
+			intervalRandomSpread: 0
+			intervalBullets: 2
+			intervalAngle: 180
+			intervalSpread: 120
+		}
+		parts: [
+			{
+      			type : RegionPart
+      			suffix : "-plate"
+      			progress : recoil
+      			heatProgress : recoil
+      			heatColor : "ffffff"
+      			mirror : true
+      			under : true
+      			moveX : 1
+			moveY : -1
+      			moveRot : -10 
+    			},
+		]
+	}
+	{
+		name: severence-weapon
+		reload: 180
+		x: -18
+		y: -8
+		shootSound: laser
+		mirror: true
+		rotate: true
+		top: true
+		bullet: {
+			type: BasicBulletType
+			damage: 500
+			speed: 5
+			width: 20
+			length: 35
+			sprite: mine-bullet
+			backSprite: large-bomb-back
+			lifetime: 70
+			trailColor: 64c990
+			trailChance: 0.35
+			trailRotation: true
+			trailEffect: disperseTrail
+			pierce: true
+			pierceCap: 10
+			pierceBuilding: true	
+			shootEffect: shootSmall
+			smokeEffect: shootSmallSmoke
+
+			intervalBullet: {
+				"type": "LightningBulletType",
+				"damage": 150,
+				"lightningColor": "64c990",
+				"lightningLength": 14,
+				"lightningCone": 10,
+				"collidesAir": true,
+    	      		}
+	
+			bulletInterval: 1
+			intervalRandomSpread: 360
+			intervalBullets: 3
+			intervalAngle: 0
+			intervalSpread: 65
+		}
+		parts: [
+			{
+      			type : RegionPart
+      			suffix : "-plate"
+      			progress : recoil
+      			heatProgress : recoil
+      			heatColor : "ffffff"
+      			mirror : true
+      			under : true
+      			moveX : 1
+			moveY : -1
+      			moveRot : -10 
+    			},
+		]
+	}
+	{
+		name: severence-laser
+		reload: 2400
+		x: 0
+		y: 10
+		shootSound: beam
+		continuous: true
+		cooldownTime: 1200
+		shootStatus: unmoving
+		shootStatusDuration: 360
+		mirror: false
+		rotate: false
+		bullet: {
+			type: ContinuousLaserBulletType
+			damage: 1750
+			maxRange: 800
+			length: 400
+			drawSize: 800
+			lifetime: 360
+			shake: 3
+			width: 24
+			largeHit: false
+		}
+	}
+	{
+		name: severence-volley
+		reload: 800
+		x: 0
+		y: -5
+		shootSound: malignShoot
+		mirror: false
+		rotate: false
+		baseRotation: 180
+		shootStatus: slow
+		shootStatusDuration: 250
+		shootCone: 360
+		inaccuracy: 30
+		shoot: {
+			shots: 50
+			shotDelay: 5
+		}
+		bullet: {
+			type: BasicBulletType
+			damage: 75
+			speed: 8
+			width: 30
+			length: 30
+			shrinkX: 0
+			shrinkY: 0
+			sprite: mine-bullet
+			backSprite: large-bomb-back
+			shake: 1
+			lifetime: 75
+			trailColor: 64c990
+			trailChance: 0.35
+			trailRotation: true
+			trailEffect: disperseTrail
+			pierce: false
+			shootEffect: shootBig2
+			smokeEffect: shootSmokeTitan
+			homingPower: 0.15
+			homingDelay: 10
+			homingRange: 425
+		}
+	}
+]
