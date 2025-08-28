@@ -24,7 +24,7 @@
 			{
 				"type": "DrawBlurSpin",
 				"suffix": "-rotator",
-				"rotateSpeed": 22
+				"rotateSpeed": 18
 			},
 			{
 				"type": "DrawRegion",

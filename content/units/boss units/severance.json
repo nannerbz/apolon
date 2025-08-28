@@ -32,7 +32,7 @@ weapons: [
 		reload: 120
 		x: 22
 		y: 10
-		shootSound: laser
+		shootSound: blobble
 		mirror: true
 		rotate: true
 		top: true
@@ -91,7 +91,7 @@ weapons: [
 		reload: 180
 		x: -18
 		y: -8
-		shootSound: laser
+		shootSound: blobble
 		mirror: true
 		rotate: true
 		top: true
@@ -149,7 +149,7 @@ weapons: [
 		reload: 2400
 		x: 0
 		y: 10
-		shootSound: beam
+		shootSound: ultrass
 		continuous: true
 		cooldownTime: 1200
 		shootStatus: unmoving
@@ -173,7 +173,7 @@ weapons: [
 		reload: 800
 		x: 0
 		y: -5
-		shootSound: malignShoot
+		shootSound: pfoom
 		mirror: false
 		rotate: false
 		baseRotation: 180
@@ -193,7 +193,7 @@ weapons: [
 			length: 30
 			shrinkX: 0
 			shrinkY: 0
-			sprite: mine-bullet
+			sprite: blobble
 			backSprite: large-bomb-back
 			shake: 1
 			lifetime: 75
