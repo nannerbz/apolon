@@ -236,18 +236,18 @@
                         }
                     }
                 ]
-                    "shootEffect",
-                    :,
-                    {
-                        "type": "WaveEffect",
-                        "colorFrom": "4b3799",
-                        "colorTo": "8a7ed9",
-                        "sizeTo": 6,
-                        "lifetime": 30,
-                        "strokeFrom": 3
-                    }
+            },
+            "shootEffect":,
+            {
+                "type": "WaveEffect",
+                "colorFrom": "4b3799",
+                "colorTo": "8a7ed9",
+                "sizeTo": 6,
+                "lifetime": 30,
+                "strokeFrom": 3
             }
         }
+    }
 	drawer: {
 		type: DrawTurret,
      		basePrefix: base,
