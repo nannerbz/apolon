@@ -19,5 +19,5 @@
 		}
 	],
 	"rotate": true,
-	"BuildVisibility": "editorOnly"
+	"buildVisibility": "editorOnly"
 }

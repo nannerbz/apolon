@@ -8,7 +8,7 @@
 		{
 			"item": "cobalt",
 			"amount": 10
-		},
+		}
 	],
-	"BuildVisibility": "editorOnly"
+	"buildVisibility": "editorOnly"
 }

@@ -44,5 +44,5 @@
 		"collidesTeam": true,
 		"despawnEffect": "none"
 	},
-	"BuildVisibility": "editorOnly"
+	"buildVisibility": "editorOnly"
 }

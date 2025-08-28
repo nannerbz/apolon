@@ -1,23 +1,14 @@
 {
 	"type": "wall",
-	"name": "Gas Pipe",
+	"name": "Old Computer",
 	"generateEffect": "none",
 	"size": 2,
 	"category": "effect",
 	"requirements": [
 		{
 			"item": "cobalt",
-			"amount": 10
-		},
-		{
-			"item": "bismuth",
-			"amount": 10
-		},
-		{
-			"item": "metaglass",
-			"amount": 6
+			"amount": 40
 		}
 	],
-	"rotate": true,
 	"buildVisibility": "editorOnly"
 }

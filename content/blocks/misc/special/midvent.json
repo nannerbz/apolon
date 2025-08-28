@@ -1,0 +1,15 @@
+{
+	"type": "GenericCrafter",
+	"name": "Medium Grate",
+	"attribute": "steam",
+	"craftEffect": "turbinegenerate",
+	"size": 2,
+	"craftTime": 1,
+	"ambientSound": "hum",
+	"ambientSoundVolume": 0.08,
+	"category": "effect",
+	"requirements": [
+		"cobalt/40"
+	],
+	"buildVisibility": "editorOnly"
+}

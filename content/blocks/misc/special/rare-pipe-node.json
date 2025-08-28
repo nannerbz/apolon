@@ -18,5 +18,5 @@
 			"amount": 12
 		}
 	],
-	"BuildVisibility": "editorOnly"
+	"buildVisibility": "editorOnly"
 }
