@@ -10,5 +10,5 @@
 	"explosiveness": 4,
 	"barColor": "e2ca4b"
 	"gas": true
-	"research": acetylene
+	"research": [acetylene, methane]
 }

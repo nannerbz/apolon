@@ -1,2 +1,2 @@
 shownPlanets: [ akyao ]
-research: methane
+research: [methane, cyanogen]

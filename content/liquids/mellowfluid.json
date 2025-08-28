@@ -9,7 +9,7 @@
 	"gasColor": "82ffff",
 	"viscosity": 0.1,
 	"heatCapacity": 0.8,
-	"research": "cryogel",
+	"research": [ cryogel, mellowfluid ]
 	"explosiveness": 0,
 	"barColor": "82ffff",
 	"gas": false

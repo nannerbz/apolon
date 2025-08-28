@@ -7,7 +7,7 @@
 	"boilPoint": 0.2,
 	"color": "d65e74"
 	"gasColor": "d65e74"
-	"research": hydrogen
+	"research": [ hydrogen, acetylene ]
 	"explosiveness": 12,
 	"barColor": "d65e74"
 	"gas": true

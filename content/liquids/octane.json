@@ -10,5 +10,5 @@
 	"explosiveness": 4,
 	"barColor": "3d4b82",
 	"gas": true,
-	"research": "methane"
+	"research": [methane, octane]
 }
