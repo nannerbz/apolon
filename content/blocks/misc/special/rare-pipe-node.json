@@ -1,0 +1,22 @@
+{
+	"type": "wall",
+	"name": "Gas Pipe Node",
+	"generateEffect": "none",
+	"size": 2,
+	"category": "effect",
+	"requirements": [
+		{
+			"item": "cobalt",
+			"amount": 20
+		},
+		{
+			"item": "bismuth",
+			"amount": 20
+		},
+		{
+			"item": "metaglass",
+			"amount": 12
+		}
+	],
+	"BuildVisibility": "editorOnly"
+}

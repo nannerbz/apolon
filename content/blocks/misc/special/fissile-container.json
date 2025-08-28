@@ -1,0 +1,48 @@
+{
+	"type": "wall",
+	"name": "Fissile Container",
+	"generateEffect": "none",
+	"size": 2,
+	"category": "effect",
+	"requirements": [
+		{
+			"item": "tungsten",
+			"amount": 40
+		},
+		{
+			"item": "cryogel",
+			"amount": 10
+		},
+		{
+			"item": "fissile-matter",
+			"amount": 20
+		}
+	],
+	"baseExplosiveness": 80,
+	"destroyEffect": {
+		"type": "WaveEffect",
+		"colorFrom": "275861",
+		"colorTo": "7eccbc",
+		"sizeTo": 160,
+		"lifetime": 120,
+		"strokeFrom": 5
+	},
+	"destroySound": "largeExplosion",
+	"destroyBullet": {
+		"Type": "BulletType",
+		"instantDisappear": false,
+		"despawnEffect": "none",
+		"shootSound": "none",
+		"despawnSound": "none",
+		"hitSound": "none",
+		"splashDamage": 5600,
+		"splashDamageRadius": 160,
+		"splashDamagePierce": true,
+		"speed": 0,
+		"lifespan": 1,
+		"smokeEffect": "none",
+		"collidesTeam": true,
+		"despawnEffect": "none"
+	},
+	"BuildVisibility": "editorOnly"
+}

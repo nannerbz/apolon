@@ -26,7 +26,7 @@ parts: [
 weapons: [
 	{
 		name: dota-w
-		reload: 14
+		reload: 7
 		x: 0
 		y: 0
 		shootSound: spark
@@ -35,12 +35,12 @@ weapons: [
 		rotate: true
 		bullet: {
 			"type": "LightningBulletType",
-			"damage": 16,
+			"damage": 8,
 			"lightningColor": "cf926a",
 			"lightningLength": 14,
-			"lightningCone": 10,
+			"lightningCone": 2,
 			"collidesAir": true,
-			"despawnEffect": {
+			"hitEffect": {
 				"type": "WaveEffect",
 				"colorFrom": "cf926a",
 				"colorTo": "e2ca4b",
@@ -52,7 +52,7 @@ weapons: [
 	}
 	{
 		name: dota-w2
-		reload: 26
+		reload: 13
 		x: 0
 		y: 0
 		shootSound: spark
@@ -61,12 +61,12 @@ weapons: [
 		rotate: true
 		bullet: {
 			"type": "LightningBulletType",
-			"damage": 26,
+			"damage": 13,
 			"lightningColor": "e2ca4b",
 			"lightningLength": 25,
-			"lightningCone": 4,
+			"lightningCone": 0.5,
 			"collidesAir": true,
-			"despawnEffect": {
+			"hitEffect": {
 				"type": "WaveEffect",
 				"colorFrom": "cf926a",
 				"colorTo": "e2ca4b",

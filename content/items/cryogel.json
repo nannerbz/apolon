@@ -1,0 +1,8 @@
+{
+	"type": "material",
+	"name": "Cryogel",
+	"description": "Advanced material used in nuclear tech and hypercomputers.",
+	"hardness": 1,
+	"cost": 3,
+	"color": "c0ecff"
+}

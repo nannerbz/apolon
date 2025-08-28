@@ -1,0 +1,14 @@
+{
+	"type": "wall",
+	"name": "Small Plates",
+	"generateEffect": "none",
+	"size": 1,
+	"category": "effect",
+	"requirements": [
+		{
+			"item": "cobalt",
+			"amount": 10
+		},
+	],
+	"BuildVisibility": "editorOnly"
+}

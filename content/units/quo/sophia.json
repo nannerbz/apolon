@@ -4,8 +4,9 @@ flying: true
 speed: 0.9
 accel: 0.04
 drag: 0.05
-health: 15550
+health: 16550
 hitSize: 32
+armor:7
 itemCapacity: 0
 outlineColor: 222222
 engineSize: 0
@@ -15,10 +16,10 @@ research: logos
 abilities: [
 	{
 		"type": "EnergyFieldAbility",
-		"damage": 70,
-		"reload": 60,
+		"damage": 80,
+		"reload": 20,
 		"range": 350,
-		"maxTargets": 50,
+		"maxTargets": 14,
 		"status": "burning",
 		"statusDuration": 120,
 		"color": "cf926a",
