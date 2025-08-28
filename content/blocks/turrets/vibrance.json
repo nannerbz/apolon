@@ -237,8 +237,7 @@
                     }
                 ]
             },
-            "shootEffect":,
-            {
+            "shootEffect": {
                 "type": "WaveEffect",
                 "colorFrom": "4b3799",
                 "colorTo": "8a7ed9",
@@ -247,7 +246,7 @@
                 "strokeFrom": 3
             }
         }
-    }
+    },
 	drawer: {
 		type: DrawTurret,
      		basePrefix: base,
