@@ -44,7 +44,7 @@
                 "type": "WaveEffect",
                 "colorFrom": "c71245",
                 "colorTo": "e69cd3",
-                "sizeTo": 2,
+                "sizeTo": 4,
                 "sizeFrom": 8,
                 "lifetime": 15,
                 "strokeFrom": 3
@@ -77,7 +77,7 @@
                     "type": "WaveEffect",
                     "colorFrom": "c71245",
                     "colorTo": "e69cd3",
-                    "sizeTo": 2,
+                    "sizeTo": 4,
                     "sizeFrom": 8,
                     "lifetime": 15,
                     "strokeFrom": 3
@@ -137,7 +137,7 @@
                 "pierceArmor": true,
                 "speed": 12,
                 "lifetime": 15,
-                "damage": 140,
+                "damage": 40,
                 "width": 20,
                 "height": 20,
                 "trailInterval": 0.5,
@@ -150,16 +150,103 @@
                     "lifetime": 15,
                     "strokeFrom": 3
                 },
-                "shootEffect": {
-                    "type": "WaveEffect",
-                    "colorFrom": "4b3799",
-                    "colorTo": "8a7ed9",
-                    "sizeTo": 6,
-                    "lifetime": 30,
-                    "strokeFrom": 3
-                }
+                "spawnBullets": [
+                    {
+                        "type": "BulletType",
+                        "collides": false,
+                        "despawnEffect": "none",
+                        "speed": 0,
+                        "lifespan": 15,
+                        "fragOnHit": false,
+                        "fragVelocityMin": 1,
+                        "fragVelocityMax": 1,
+                        "fragBullets": 1,
+                        "fragSpread": 0,
+                        "fragRandomSpread": 0,
+                        "fragAngle": 0,
+                        "fragBullet": {
+                            "type": "BulletType",
+                            "hitSound": "lucer",
+                            "lightOpacity": 0.6,
+                            "lightColor": "7eccbc",
+                            "lightRadius": 40,
+                            "status": "intense-radiation",
+                            "statusDuration": 400,
+                            "pierce": true,
+                            "pierceCap": 300,
+                            "pierceArmor": true,
+                            "speed": 12,
+                            "lifetime": 15,
+                            "damage": 50,
+                            "width": 20,
+                            "height": 20,
+                            "trailInterval": 0.5,
+                            "trailEffect": {
+                                "type": "WaveEffect",
+                                "colorFrom": "4b3799",
+                                "colorTo": "8a7ed9",
+                                "sizeTo": 8,
+                                "sizeFrom": 12,
+                                "lifetime": 15,
+                                "strokeFrom": 3
+                            }
+
+                        }
+                    },
+                    {
+                        "type": "BulletType",
+                        "collides": false,
+                        "despawnEffect": "none",
+                        "speed": 0,
+                        "lifespan": 30,
+                        "fragOnHit": false,
+                        "fragVelocityMin": 1,
+                        "fragVelocityMax": 1,
+                        "fragBullets": 1,
+                        "fragSpread": 0,
+                        "fragRandomSpread": 0,
+                        "fragAngle": 0,
+                        "fragBullet": {
+                            "type": "BulletType",
+                            "hitSound": "lucer",
+                            "lightOpacity": 0.6,
+                            "lightColor": "7eccbc",
+                            "lightRadius": 40,
+                            "status": "intense-radiation",
+                            "statusDuration": 400,
+                            "pierce": true,
+                            "pierceCap": 300,
+                            "pierceArmor": true,
+                            "speed": 12,
+                            "lifetime": 15,
+                            "damage": 60,
+                            "width": 20,
+                            "height": 20,
+                            "trailInterval": 0.5,
+                            "trailEffect": {
+                                "type": "WaveEffect",
+                                "colorFrom": "4b3799",
+                                "colorTo": "8a7ed9",
+                                "sizeTo": 8,
+                                "sizeFrom": 12,
+                                "lifetime": 15,
+                                "strokeFrom": 3
+                            }
+
+                        }
+                    }
+                ]
+                    "shootEffect",
+                    :,
+                    {
+                        "type": "WaveEffect",
+                        "colorFrom": "4b3799",
+                        "colorTo": "8a7ed9",
+                        "sizeTo": 6,
+                        "lifetime": 30,
+                        "strokeFrom": 3
+                    }
             }
-        }
         }
 	drawer: {
 		type: DrawTurret,
@@ -168,6 +255,30 @@
             {
                 "type": "RegionPart",
                 "suffix": "-ul",
+                "progress": "warmup",
+                "heatProgress": "warmup",
+                "heatColor": "d45984",
+                "mirror": false,
+                "under": false,
+                "moveX": -4,
+                "moveY": 4,
+                "moveRot": 0
+            },
+            {
+                "type": "RegionPart",
+                "suffix": "-ul",
+                "progress": "warmup",
+                "heatProgress": "warmup",
+                "heatColor": "d45984",
+                "mirror": false,
+                "under": false,
+                "moveX": -2,
+                "moveY": 2,
+                "moveRot": 0
+            },
+            {
+                "type": "RegionPart",
+                "suffix": "-dl",
                 "progress": "warmup",
                 "heatProgress": "warmup",
                 "heatColor": "d45984",
@@ -192,6 +303,30 @@
             {
                 "type": "RegionPart",
                 "suffix": "-ur",
+                "progress": "warmup",
+                "heatProgress": "warmup",
+                "heatColor": "d45984",
+                "mirror": false,
+                "under": false,
+                "moveX": 4,
+                "moveY": 4,
+                "moveRot": 0
+            },
+            {
+                "type": "RegionPart",
+                "suffix": "-ur",
+                "progress": "warmup",
+                "heatProgress": "warmup",
+                "heatColor": "d45984",
+                "mirror": false,
+                "under": false,
+                "moveX": 2,
+                "moveY": 2,
+                "moveRot": 0
+            },
+            {
+                "type": "RegionPart",
+                "suffix": "-dr",
                 "progress": "warmup",
                 "heatProgress": "warmup",
                 "heatColor": "d45984",
