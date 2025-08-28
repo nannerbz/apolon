@@ -4,7 +4,7 @@
 	"attribute": "steam",
 	"craftEffect": "turbinegenerate",
 	"size": 2,
-	"craftTime": 60,
+	"craftTime": 20,
 	"ambientSound": "hum",
 	"ambientSoundVolume": 0.08,
 	"category": "effect",
