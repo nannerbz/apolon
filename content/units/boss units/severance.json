@@ -193,7 +193,7 @@ weapons: [
 			length: 30
 			shrinkX: 0
 			shrinkY: 0
-			sprite: blobble
+			sprite: mine-bullet
 			backSprite: large-bomb-back
 			shake: 1
 			lifetime: 75

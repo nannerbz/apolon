@@ -2,17 +2,17 @@
 	"type": "HeatCrafter",
 	"name": "Hyperlucent Forge",
 	"description": "Uses Neodymium, Carbide, Tungsten, Heat, And power to make Hypersteel.",
-	"outputItem": {"item": "hypersteel", "amount": 2},
+	"outputItem": {"item": "hypersteel", "amount": 3},
 	"size": 5,
 	"hasPower": true,
 	"hasItems": true,
 	"hasLiquids": false,
-	"craftTime": 90,
+	"craftTime": 180,
 	"updateEffect": "smeltsmoke",
-    	"heatRequirement": 5
+    	"heatRequirement": 4
 	"hasHeat": true
 	"consumes": {
-		power: 2.2
+		power: 2
 		"items": {
 			"items": [
 				{ "item": "neodymium", "amount": 1 }
@@ -29,7 +29,7 @@
 		{ "item": "carbide", "amount": 120 }
 		{ "item": "cobalt", "amount": 240 }
 		{ "item": "neodymium", "amount": 120 }
-		{ "item": "bismuth", "amount": 160 }
+		{ "item": "cryogel", "amount": 80 }
 		{ "item": "kobra-alloy", "amount": 100 }
 		{ "item": "tungsten", "amount": 60 }
 		{ "item": "photoglass", "amount": 80 }

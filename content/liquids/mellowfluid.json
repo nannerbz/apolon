@@ -1,7 +1,7 @@
 {
 	"type": "liquid",
-	"name": "Mellowlfuid",
-	"description": "A strong gas",
+	"name": "Mellowfluid",
+	"description": "Extremely expensive hyperfluid-hypercoolant photoluminic substance.",
 	"flammability": 0,
 	"temperature": 0,
 	"boilPoint": 0.2,

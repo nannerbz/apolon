@@ -1,0 +1,45 @@
+{
+	"type": "GenericCrafter",
+	"name": "Supercritical Chamber",
+	"description": "Induces a colloidal suspension of Pearl Dust and Cryofluid into forming Cryogel.",
+	"outputItem": {"item": "cryogel", "amount": 10},
+	"size": 2,
+	"hasPower": true,
+	"hasItems": true,
+	"hasLiquids": true,
+	"craftTime": 180,
+	"updateEffect": "turbinegenerate",
+	"consumes": {
+		power: 2
+		"items": {
+			"items": [
+				{ "item": "pearl-dust", "amount": 4 }
+			]
+                }
+		"liquids": {
+			"liquids": [
+				{
+					"liquid": "hydrogen",
+					"amount": 0.1
+				},
+				{
+					"liquid": "cryofluid",
+					"amount": 0.2
+				}
+			]
+		}
+	},
+	"requirements": [
+		{ "item": "kobra-alloy", "amount": 40 }
+		{ "item": "cobalt", "amount": 100 }
+		{ "item": "metaglass", "amount": 60 }
+		{ "item": "chromium", "amount": 50 }
+	],
+	"category": "crafting",
+	  "research": {
+		parent: kobra-forge
+	}
+	"idleSound": "respawning",
+	"idleSoundVolume": 0.5
+	"researchCostMultiplier": 0.05
+}
