@@ -17,8 +17,8 @@
                 }
 		"liquids": {
 			"liquids": [
-				{ "liquid": "hydrogen", "amount": 0.4 }
-				{ "liquid": "acetylene", "amount": 0.4 }
+				{ "liquid": "hydrogen", "amount": 0.6 }
+				{ "liquid": "acetylene", "amount": 0.2 }
 			]
 		}
 	},

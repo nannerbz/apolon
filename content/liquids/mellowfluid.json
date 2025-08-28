@@ -1,0 +1,16 @@
+{
+	"type": "liquid",
+	"name": "Acetylene",
+	"description": "A strong gas",
+	"flammability": 0,
+	"temperature": 0,
+	"boilPoint": 0.2,
+	"color": "82ffff",
+	"gasColor": "82ffff",
+	"viscosity": 0.1,
+	"heatCapacity": 0.8,
+	"research": "cryogel",
+	"explosiveness": 0,
+	"barColor": "82ffff",
+	"gas": false
+}

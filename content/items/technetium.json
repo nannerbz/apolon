@@ -1,0 +1,10 @@
+{
+	"type": "material",
+	"name": "Technetium",
+	"description": "Unstable radioactive isotope used in nuclear and laser tech.",
+	"hardness": 5,
+	"explosiveness": 2,
+	"cost": 3,
+	"color": "d45984",
+	"research": "photoglass"
+}

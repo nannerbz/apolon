@@ -1,0 +1,9 @@
+{
+	"type": "material",
+	"name": "Hyemos",
+	"description": "Tungsten particles covered in upersolid layers of isolated permafrost and stabilizing agents. Effectively the most powerful ammunition in Akyao.",
+	"hardness": 5,
+	"cost": 4.2,
+	"color": "d2f5fc"
+    "research": "cryogel"
+}

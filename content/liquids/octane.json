@@ -1,0 +1,14 @@
+{
+	"type": "liquid",
+	"name": "Octane",
+	"description": "Decent fuel, used for stabilizing certain chemical reactions.",
+	"flammability": 6,
+	"temperature": 0.5,
+	"boilPoint": 0.1,
+	"color": "3d4b82",
+	"gasColor": "3d4b82",
+	"explosiveness": 4,
+	"barColor": "3d4b82",
+	"gas": true,
+	"research": "methane"
+}
