@@ -1,7 +1,7 @@
 {
 	"type": "material",
-	"name": "Kobra Alloy",
-	"description": "A high tech resource used for strong tanky related stuff",
+	"name": "Flux",
+	"description": "Photocatalist and photoluminescent alloy, energetic and vibrant. Interesting properties as ammunition, and also in the synthesis of Octane and Mellowfluid.",
 	"hardness": 2,
 	"cost": 2.4,
 	"color": "4bdebc",
