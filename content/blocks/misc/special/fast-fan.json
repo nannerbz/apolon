@@ -1,0 +1,36 @@
+{
+	"type": "GenericCrafter",
+	"name": "Fast Fan",
+	"craftEffect": "none",
+	"size": 3,
+	"ambientSound": "hum",
+	"ambientSoundVolume": 0.8,
+	"hasPower": true,
+	"consumes": {
+		"power": 0.05
+	},
+	"category": "effect",
+	"requirements": [
+		"cobalt/35",
+		"kobra-alloy/20"
+	],
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			{
+				"type": "DrawRegion",
+				"suffix": "-bottom"
+			},
+			{
+				"type": "DrawBlurSpin",
+				"suffix": "-rotator",
+				"rotateSpeed": 18
+			},
+			{
+				"type": "DrawRegion",
+				"suffix": "-top"
+			}
+		]
+	},
+	"buildVisibility": "editorOnly"
+}

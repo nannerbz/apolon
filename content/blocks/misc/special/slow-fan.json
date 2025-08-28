@@ -1,0 +1,37 @@
+{
+	"type": "GenericCrafter",
+	"name": "Slow Fan",
+	"craftEffect": "none",
+	"size": 3,
+	"ambientSound": "hum",
+	"ambientSoundVolume": 0.2,
+	"hasPower": true,
+	"consumes": {
+		"power": 0.01
+	},
+	"category": "effect",
+	"requirements": [
+		"cobalt/35",
+		"bismuth/10"
+	],
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			{
+				"type": "DrawRegion",
+				"suffix": "-bottom"
+			},
+			{
+				"type": "DrawBlurSpin",
+				"suffix": "-rotator",
+				"rotateSpeed": 5,
+				"blurThresh": 0
+			},
+			{
+				"type": "DrawRegion",
+				"suffix": "-top"
+			}
+		]
+	},
+	"buildVisibility": "editorOnly"
+}
