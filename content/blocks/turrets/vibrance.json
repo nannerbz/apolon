@@ -9,7 +9,7 @@
     "inaccuracy": 5,
     "reload": 60,
     "recoil": 1,
-    "shootY": -8,
+    "shootY": 0,
     "outlineColor": 222222,
     "xRand": 0,
     "squareSprite": false,
@@ -25,7 +25,7 @@
         "shots": 3,
         "shotDelay": 6
     },
-    "range": 90,
+    "range": 110.5,
     "ammoTypes": {
         "neodymium": {
             "type": "BulletType",
@@ -37,7 +37,7 @@
             "statusDuration": 60,
             "pierceArmor": true,
             "speed": 4.5,
-            "lifetime": 4,
+            "lifetime": 5,
             "damage": 16,
             "width": 8,
             "height": 8,
@@ -63,7 +63,7 @@
                 "colorFrom": "8c887b",
                 "colorTo": "dbd9d4",
                 "sizeTo": 18,
-                "lifetime": 30,
+                "lifetime": 10,
                 "strokeFrom": 4
             },
             "fragOnHit": true,
@@ -71,7 +71,7 @@
             "fragVelocityMax": 1,
             "fragBullets": 1,
             "fragSpread": 0,
-            "fragRandomSpread": 10,
+            "fragRandomSpread": 40,
             "fragAngle": 0,
             "fragBullet": {
                 "type": "BulletType",
@@ -83,7 +83,7 @@
                 "statusDuration": 60,
                 "pierceArmor": true,
                 "speed": 4.5,
-                "lifetime": 4,
+                "lifetime": 5,
                 "damage": 16,
                 "width": 8,
                 "height": 8,
@@ -115,7 +115,7 @@
                     "colorFrom": "8c887b",
                     "colorTo": "dbd9d4",
                     "sizeTo": 18,
-                    "lifetime": 30,
+                    "lifetime": 10,
                     "strokeFrom": 4
                 },
                 "fragOnHit": true,
@@ -123,7 +123,7 @@
                 "fragVelocityMax": 1,
                 "fragBullets": 1,
                 "fragSpread": 0,
-                "fragRandomSpread": 10,
+                "fragRandomSpread": 40,
                 "fragAngle": 0,
                 "fragBullet": {
                     "type": "BulletType",
@@ -135,7 +135,7 @@
                     "statusDuration": 60,
                     "pierceArmor": true,
                     "speed": 4.5,
-                    "lifetime": 4,
+                    "lifetime": 5,
                     "damage": 16,
                     "width": 8,
                     "height": 8,
@@ -167,15 +167,15 @@
                         "colorFrom": "8c887b",
                         "colorTo": "dbd9d4",
                         "sizeTo": 18,
-                        "lifetime": 30,
+                        "lifetime": 10,
                         "strokeFrom": 4
                     },
                     "fragOnHit": true,
                     "fragVelocityMin": 1,
                     "fragVelocityMax": 1,
-                    "fragBullets": 1,
+                    "fragBullets": 2,
                     "fragSpread": 0,
-                    "fragRandomSpread": 10,
+                    "fragRandomSpread": 40,
                     "fragAngle": 0,
                     "fragBullet": {
                         "type": "BulletType",
@@ -187,10 +187,10 @@
                         "statusDuration": 60,
                         "pierceArmor": true,
                         "speed": 4.5,
-                        "lifetime": 4,
+                        "lifetime": 5,
                         "damage": 16,
-                        "width": 8,
-                        "height": 8,
+                        "width": 4,
+                        "height": 4,
                         "intervalBullet": {
                             "type": "LightningBulletType",
                             "lightningColor": "8c887b",
@@ -210,7 +210,7 @@
                             "colorFrom": "8c887b",
                             "colorTo": "dbd9d4",
                             "sizeTo": 0,
-                            "sizeFrom": 6,
+                            "sizeFrom": 3,
                             "lifetime": 8,
                             "strokeFrom": 2
                         },
@@ -219,15 +219,15 @@
                             "colorFrom": "8c887b",
                             "colorTo": "dbd9d4",
                             "sizeTo": 18,
-                            "lifetime": 30,
+                            "lifetime": 10,
                             "strokeFrom": 4
                         },
                         "fragOnHit": true,
                         "fragVelocityMin": 1,
                         "fragVelocityMax": 1,
-                        "fragBullets": 1,
+                        "fragBullets": 2,
                         "fragSpread": 0,
-                        "fragRandomSpread": 10,
+                        "fragRandomSpread": 40,
                         "fragAngle": 0,
                         "fragBullet": {
                             "type": "BulletType",
@@ -239,10 +239,10 @@
                             "statusDuration": 60,
                             "pierceArmor": true,
                             "speed": 4.5,
-                            "lifetime": 4,
+                            "lifetime": 5,
                             "damage": 16,
-                            "width": 8,
-                            "height": 8,
+                            "width": 4,
+                            "height": 4,
                             "intervalBullet": {
                                 "type": "LightningBulletType",
                                 "lightningColor": "8c887b",
@@ -262,7 +262,7 @@
                                 "colorFrom": "8c887b",
                                 "colorTo": "dbd9d4",
                                 "sizeTo": 0,
-                                "sizeFrom": 6,
+                                "sizeFrom": 3,
                                 "lifetime": 8,
                                 "strokeFrom": 2
                             },
@@ -271,7 +271,7 @@
                                 "colorFrom": "8c887b",
                                 "colorTo": "dbd9d4",
                                 "sizeTo": 18,
-                                "lifetime": 30,
+                                "lifetime": 10,
                                 "strokeFrom": 4
                             }
                         }
