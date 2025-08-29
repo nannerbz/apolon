@@ -44,7 +44,7 @@
             "intervalBullet": {
                 "type": "LightningBulletType",
                 "lightningColor": "8c887b",
-                "damage": 10,
+                "damage": 4,
                 "pierceArmor": true,
                 "lightningLength": 10
             },
@@ -84,13 +84,13 @@
                 "pierceArmor": true,
                 "speed": 4.5,
                 "lifetime": 5,
-                "damage": 16,
+                "damage": 12,
                 "width": 8,
                 "height": 8,
                 "intervalBullet": {
                     "type": "LightningBulletType",
                     "lightningColor": "8c887b",
-                    "damage": 10,
+                    "damage": 4,
                     "pierceArmor": true,
                     "lightningLength": 10
                 },
@@ -136,13 +136,13 @@
                     "pierceArmor": true,
                     "speed": 4.5,
                     "lifetime": 5,
-                    "damage": 16,
+                    "damage": 6,
                     "width": 8,
                     "height": 8,
                     "intervalBullet": {
                         "type": "LightningBulletType",
                         "lightningColor": "8c887b",
-                        "damage": 10,
+                        "damage": 4,
                         "pierceArmor": true,
                         "lightningLength": 10
                     },
@@ -188,13 +188,13 @@
                         "pierceArmor": true,
                         "speed": 4.5,
                         "lifetime": 5,
-                        "damage": 16,
+                        "damage": 4,
                         "width": 4,
                         "height": 4,
                         "intervalBullet": {
                             "type": "LightningBulletType",
                             "lightningColor": "8c887b",
-                            "damage": 10,
+                            "damage": 2,
                             "pierceArmor": true,
                             "lightningLength": 10
                         },
@@ -240,16 +240,9 @@
                             "pierceArmor": true,
                             "speed": 4.5,
                             "lifetime": 5,
-                            "damage": 16,
+                            "damage": 4,
                             "width": 4,
                             "height": 4,
-                            "intervalBullet": {
-                                "type": "LightningBulletType",
-                                "lightningColor": "8c887b",
-                                "damage": 10,
-                                "pierceArmor": true,
-                                "lightningLength": 10
-                            },
                             "homingPower": 1,
                             "followAimSpeed": 5,
                             "homingRange": 380,
