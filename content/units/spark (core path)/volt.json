@@ -36,18 +36,19 @@ weapons: [
         "under": true,
         "inaccuracy": 10,
         "ejectEffect": "casing1",
-        "bullet": null,
-        "type": "LaserBulletType",
-        "damage": 16,
-        "buildingDamageMultiplier": 0.01,
-        "length": 270,
-        "smokeEffect": "colorSpark",
-        "shootEffect": "lancerLaserShoot",
-        "hitEffect": "hitLancer",
-        "hitSize": 4,
-        "lifetime": 10,
-        "drawSize": 345,
-        "pierceCap": 8
+        "bullet": {
+            "type": "LaserBulletType",
+            "damage": 16,
+            "buildingDamageMultiplier": 0.01,
+            "length": 270,
+            "smokeEffect": "colorSpark",
+            "shootEffect": "lancerLaserShoot",
+            "hitEffect": "hitLancer",
+            "hitSize": 4,
+            "lifetime": 10,
+            "drawSize": 540,
+            "pierceCap": 8
+        }
     }
 ]
 alwaysUnlocked: true
