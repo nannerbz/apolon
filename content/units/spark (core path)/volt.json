@@ -23,14 +23,14 @@ isEnemy: false
 weapons: [
     {
         "name": "volt-w",
-        "reload": 20,
+        "reload": 30,
         "x": 6.25,
         "y": 4.5,
         "shootSound": "Fling",
         "top": false,
         "shoot": {
-            "shots": 6,
-            "shotDelay": 3
+            "shots": 9,
+            "shotDelay": 2
         },
         "rotate": false,
         "under": true,
@@ -39,10 +39,12 @@ weapons: [
         "bullet": {
             "type": "LaserBoltBulletType",
             "damage": 16,
-            "speed": 5,
+            "pierce": true,
+            "pierceCap": 300,
+            "speed": 9,
             "width": 2,
             "length": 6,
-            "lifetime": 54,
+            "lifetime": 30,
             "shootEffect": "shootSmall",
             "smokeEffect": "shootSmallSmoke"
         }
