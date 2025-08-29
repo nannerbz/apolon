@@ -10,11 +10,19 @@
   "addStartingItems": true
   "overrideLaunchDefaults": true
 	  "research": {
-		parent: unite
+		parent: clue
 		objectives: [
 			{
-				type: "SectorComplete"
-				preset: unite
+				"type": "SectorComplete",
+				"preset": "compact"
+			},
+			{
+				"type": "SectorComplete",
+				"preset": "clue"
+			},
+			{
+				"type": "SectorComplete",
+				"preset": "topple"
 			}
 		]
 	}

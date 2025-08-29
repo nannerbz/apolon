@@ -17,14 +17,16 @@
                 }
 		"liquids": {
 			"liquids": [
-				{ "liquid": "cryofluid", "amount": 0.4 }
-				{ "liquid": "methane", "amount": 0.5 }
+				{ "liquid": "cryofluid", "amount": 0.2 }
+				{ "liquid": "chromatic-fluid", "amount": 0.1 }
+				{ "liquid": "acetylene", "amount": 0.3 }
 			]
 		}
 	},
 	"requirements": [
 		{ "item": "kobra-alloy", "amount": 80 }
 		{ "item": "metaglass", "amount": 40 }
+		{ "item": "cobalt", "amount": 85 }
 	],
 	"category": "crafting",
 	"research": "methanization-plant",

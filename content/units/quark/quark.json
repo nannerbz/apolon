@@ -38,7 +38,7 @@ weapons: [
 		objectives: [
 			{
 				type: "SectorComplete"
-				preset: tide
+				preset: topple
 			}
 		]
 	}

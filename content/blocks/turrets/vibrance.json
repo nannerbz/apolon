@@ -282,7 +282,7 @@
         },
         "flux": {
             "type": "BulletType",
-            "rangeChange": 150,
+            "rangeChange": 130,
             "hitSound": "none",
             "lightOpacity": 0.6,
             "lightColor": "7eccbc",
@@ -302,7 +302,7 @@
                 "pierceArmor": true,
                 "lightningLength": 10
             },
-            "trailInterval": 1,
+            "trailInterval": 0.2,
             "trailEffect": {
                 "type": "ParticleEffect",
                 "colorFrom": "4bdebc",
@@ -334,7 +334,6 @@
             "fragAngle": 0,
             "fragBullet": {
                 "type": "BulletType",
-                "rangeChange": 150,
                 "hitSound": "none",
                 "lightOpacity": 0.6,
                 "lightColor": "7eccbc",
@@ -354,7 +353,7 @@
                     "pierceArmor": true,
                     "lightningLength": 10
                 },
-                "trailInterval": 1,
+                "trailInterval": 0.5,
                 "trailEffect": {
                     "type": "ParticleEffect",
                     "colorFrom": "4bdebc",
@@ -386,7 +385,6 @@
                 "fragAngle": 0,
                 "fragBullet": {
                     "type": "BulletType",
-                    "rangeChange": 150,
                     "hitSound": "none",
                     "lightOpacity": 0.6,
                     "lightColor": "7eccbc",

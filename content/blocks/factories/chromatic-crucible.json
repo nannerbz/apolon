@@ -30,17 +30,13 @@
 					"item": "chromium",
 					"amount": 2
 				},
-				{
-					"item": "bismuth",
-					"amount": 1
-				}
 			]
 		},
 		"liquids": {
 			"liquids": [
 				{
-					"liquid": "arkycite",
-					"amount": 0.2
+					"liquid": "chromatic-fluid",
+					"amount": 0.3
 				}
 			]
 		}

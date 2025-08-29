@@ -10,19 +10,11 @@
   "addStartingItems": false
   "overrideLaunchDefaults": true
 	  "research": {
-		parent: compact
+		parent: spiral
 		objectives: [
 			{
 				type: "SectorComplete"
-				preset: compact
-			}
-			{
-				type: "SectorComplete"
-				preset: clue
-			}
-			{
-				type: "SectorComplete"
-				preset: topple
+				preset: spiral
 			}
 		]
 	}
