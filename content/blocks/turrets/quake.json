@@ -22,7 +22,7 @@
     "shots": 1,
     "range": 288
     "ammoTypes": {
-        chromium: {
+        "chromium": {
             "type": "MissileBulletType",
             "trailWidth": 3,
             "trailLength": 25,
@@ -57,8 +57,8 @@
             "knockback": 2,
             "rangeChange": 0,
             "reloadMultiplier": 1
-        }
-        carbide: {
+        },
+        "carbide": {
             "type": "MissileBulletType",
             "trailWidth": 3,
             "trailLength": 25,
@@ -96,7 +96,56 @@
             "statusDuration": 120,
             "reloadMultiplier": 0.7
         },
-},
+        "flux": {
+            "type": "BasicBulletType",
+            "trailWidth": 4,
+            "trailLength": 5,
+            "speed": 4,
+            "lifetime": 65,
+            "damage": 60,
+            "backColor": "4bdebc",
+            "frontColor": "4bdebc",
+            "trailColor": "0bbfb9",
+            "trailInterval": 8,
+            "trailEffect": {
+                "type": "ParticleEffect",
+                "colorFrom": "4bdebc",
+                "colorTo": "38738a",
+                "lifetime": 20,
+                "length": 16,
+                "region": "circle-small",
+                "particles": 12,
+                "sizeFrom": 3,
+                "sizeTo": 0
+            },
+            "collidesGround": false,
+            "width": 10,
+            "height": 10,
+            "shootEffect": "shootBig2",
+            "smokeEffect": "shootSmokeTitan",
+            "splashDamage": 95,
+            "splashDamageRadius": 10,
+            "despawnEffect": {
+                "type": "ParticleEffect",
+                "colorFrom": "4bdebc",
+                "colorTo": "38738a",
+                "lifetime": 30,
+                "length": 10,
+                "region": "circle-small",
+                "particles": 12,
+                "sizeFrom": 3,
+                "sizeTo": 0
+            },
+            "hitEffect": "hitLancer",
+            "ammoMultiplier": 3,
+            "reloadMultiplier": 2,
+            "status": "superflux",
+            "statusDuration": 480,
+            "shrinkY": 0,
+            "pierce": true,
+            "pierceCap": 2,
+        }
+    },
 	drawer: {
 		type: DrawTurret,
      		basePrefix: base,

@@ -10,7 +10,7 @@
 	"hasPower": true,
 	"hasItems": true,
 	"hasLiquids": true,
-	"craftTime": 40,
+	"craftTime": 50,
 	"updateEffect": {
 		"type": "ParticleEffect",
 		"colorFrom": "4bdebc",
@@ -23,7 +23,7 @@
 		"sizeTo": 0
 	},
 	"consumes": {
-		"power": 1,
+		"power": 3,
 		"items": {
 			"items": [
 				{
@@ -76,7 +76,8 @@
 			},
 			{
 				"type": "DrawArcSmelt",
-				"flameColor": "0bbfb9"
+				"flameColor": "0bbfb9",
+				"midColor": "0bbfb9"
 			}
 		]
 	},
