@@ -8,7 +8,7 @@
     "size": 3
     "inaccuracy": 0
     "reload": 60
-    "recoil": 0
+    "recoil": 1
     "outlineColor": 222222
     "xRand": 0,
     "squareSprite": false
@@ -19,7 +19,7 @@
         }
     }
     "shootCone": 4,
-    "rotateSpeed": 3,
+    "rotateSpeed": 4,
     "shots": 1,
     "range": 180
     "ammoTypes": {
@@ -36,7 +36,7 @@
             "pierceArmor": true,
             "speed": 6,
             "lifetime": 30,
-            "damage": 20,
+            "damage": 16,
             "width": 10,
             "height": 10,
             "trailInterval": 1,
@@ -58,7 +58,7 @@
             "fragAngle": 180,
             "fragBullet": {
                 "type": "BulletType",
-                "hitSound": "lucer",
+                "hitSound": "none",
                 "lightOpacity": 0.6,
                 "lightColor": "7eccbc",
                 "lightRadius": 40,
@@ -69,7 +69,7 @@
                 "pierceArmor": true,
                 "speed": 6,
                 "lifetime": 30,
-                "damage": 45,
+                "damage": 32,
                 "width": 10,
                 "height": 10,
                 "trailInterval": 1,
@@ -104,7 +104,7 @@
             "pierceArmor": true,
             "speed": 12,
             "lifetime": 15,
-            "damage": 50,
+            "damage": 30,
             "width": 20,
             "height": 20,
             "trailInterval": 0.5,
@@ -126,7 +126,7 @@
             "fragAngle": 180,
             "fragBullet": {
                 "type": "BulletType",
-                "hitSound": "lucer",
+                "hitSound": "none",
                 "lightOpacity": 0.6,
                 "lightColor": "7eccbc",
                 "lightRadius": 40,
@@ -166,7 +166,7 @@
                         "fragAngle": 0,
                         "fragBullet": {
                             "type": "BulletType",
-                            "hitSound": "lucer",
+                            "hitSound": "none",
                             "lightOpacity": 0.6,
                             "lightColor": "7eccbc",
                             "lightRadius": 40,
@@ -206,7 +206,7 @@
                                     "fragAngle": 0,
                                     "fragBullet": {
                                         "type": "BulletType",
-                                        "hitSound": "lucer",
+                                        "hitSound": "none",
                                         "lightOpacity": 0.6,
                                         "lightColor": "7eccbc",
                                         "lightRadius": 40,
@@ -369,9 +369,9 @@
                 "rotation": 0,
                 "hollow": true,
                 "stroke": 0,
-                "strokeTo": 3,
+                "strokeTo": 4,
                 "radius": 7,
-                "y": 1
+                "y": 4
             }
         ]
 	}
@@ -382,8 +382,6 @@
 	  { "item": "cobalt", "amount": 185 },
     ],
     "category": "turret"
-    "minWarmup": 0.96
-    "shootWarmupSpeed": 0.02
     "shootSound": "boomrnga"
     "loopSound": "glow"
     "loopSoundVolume": 0.5
