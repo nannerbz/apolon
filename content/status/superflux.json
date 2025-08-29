@@ -37,8 +37,6 @@
 		"sizeFrom": 3,
 		"sizeTo": 0
 	},
-	"affinities": "intense-radiation",
-	"transitionDamage": 80,
 	"applyExtend": false,
 	"applyColor": "4bdebc",
 	"parentizeApplyEffect": true

@@ -422,7 +422,8 @@
                         "sizeFrom": 2,
                         "sizeTo": 0
                     }
-                },
+                }
+            }
                 "shootEffect": {
                     "type": "ParticleEffect",
                     "colorFrom": "4bdebc",
