@@ -1,163 +1,186 @@
 {
     "type": "ItemTurret",
     "name": "Vibrance",
-    "description": "Raw energy armor-piercing boomergang. Shoots radioactive decay rings that completely ignore enemy armor.",
+    "description": "Casts electric orbs that chain up to 4 enemies.",
     "targetAir": true,
     "targetGround": true,
-    "health": 1950
-    "size": 3
-    "inaccuracy": 0
-    "reload": 60
-    "recoil": 1
-    "outlineColor": 222222
+    "health": 1950,
+    "size": 3,
+    "inaccuracy": 5,
+    "reload": 60,
+    "recoil": 1,
+    "outlineColor": 222222,
     "xRand": 0,
-    "squareSprite": false
-    "coolantMultiplier": 0.75
+    "squareSprite": false,
+    "coolantMultiplier": 0.75,
     "consumes": {
         "coolant": {
             "amount": 0.6
         }
-    }
-    "shootCone": 4,
-    "rotateSpeed": 4,
-    "shots": 1,
-    "range": 180
+    },
+    "shootCone": 10,
+    "rotateSpeed": 5,
+    "shoot": {
+        "shots": 3,
+        "shotDelay": 6
+    },
+    "range": 90,
     "ammoTypes": {
-        "technetium": {
+        "neodymium": {
             "type": "BulletType",
             "hitSound": "none",
             "lightOpacity": 0.6,
             "lightColor": "7eccbc",
             "lightRadius": 40,
-            "status": "intense-radiation",
-            "statusDuration": 400,
-            "pierce": true,
-            "pierceCap": 300,
+            "status": "shocked",
+            "statusDuration": 60,
             "pierceArmor": true,
-            "speed": 6,
-            "lifetime": 30,
+            "speed": 4.5,
+            "lifetime": 20,
             "damage": 16,
-            "width": 10,
-            "height": 10,
-            "trailInterval": 1,
+            "width": 8,
+            "height": 8,
+            "intervalBullet": {
+                "type": "LightningBulletType",
+                "lightningColor": "8c887b",
+                "damage": 10,
+                "pierceArmor": true,
+                "lightningLength": 10
+            },
+            "trailInterval": 0.3,
             "trailEffect": {
                 "type": "WaveEffect",
-                "colorFrom": "c71245",
-                "colorTo": "e69cd3",
-                "sizeTo": 4,
-                "sizeFrom": 8,
-                "lifetime": 15,
-                "strokeFrom": 3
+                "colorFrom": "dbd9d4",
+                "colorTo": "8c887b",
+                "sizeTo": 0,
+                "sizeFrom": 6,
+                "lifetime": 8,
+                "strokeFrom": 2
             },
-            "fragOnHit": false,
+            "fragOnHit": true,
             "fragVelocityMin": 1,
             "fragVelocityMax": 1,
             "fragBullets": 1,
             "fragSpread": 0,
             "fragRandomSpread": 0,
-            "fragAngle": 180,
+            "fragAngle": 0,
             "fragBullet": {
                 "type": "BulletType",
                 "hitSound": "none",
                 "lightOpacity": 0.6,
                 "lightColor": "7eccbc",
                 "lightRadius": 40,
-                "status": "intense-radiation",
-                "statusDuration": 400,
-                "pierce": true,
-                "pierceCap": 300,
+                "status": "shocked",
+                "statusDuration": 60,
                 "pierceArmor": true,
-                "speed": 6,
-                "lifetime": 30,
-                "damage": 32,
-                "width": 10,
-                "height": 10,
-                "trailInterval": 1,
-                "trailEffect": {
-                    "type": "WaveEffect",
-                    "colorFrom": "c71245",
-                    "colorTo": "e69cd3",
-                    "sizeTo": 4,
-                    "sizeFrom": 8,
-                    "lifetime": 15,
-                    "strokeFrom": 3
-                }
-            },
-            "shootEffect": {
-                "type": "WaveEffect",
-                "colorFrom": "c71245",
-                "colorTo": "e69cd3",
-                "sizeTo": 6,
-                "lifetime": 30,
-                "strokeFrom": 3
-            }
-        },
-        "hypersteel": {
-            "type": "BulletType",
-            "hitSound": "none",
-            "lightOpacity": 0.6,
-            "lightColor": "7eccbc",
-            "lightRadius": 40,
-            "statusDuration": 400,
-            "pierce": true,
-            "pierceCap": 300,
-            "pierceArmor": true,
-            "speed": 12,
-            "lifetime": 15,
-            "damage": 30,
-            "width": 20,
-            "height": 20,
-            "trailInterval": 0.5,
-            "trailEffect": {
-                "type": "WaveEffect",
-                "colorFrom": "4b3799",
-                "colorTo": "8a7ed9",
-                "sizeTo": 8,
-                "sizeFrom": 12,
-                "lifetime": 15,
-                "strokeFrom": 3
-            },
-            "fragOnHit": false,
-            "fragVelocityMin": 1,
-            "fragVelocityMax": 1,
-            "fragBullets": 1,
-            "fragSpread": 0,
-            "fragRandomSpread": 0,
-            "fragAngle": 180,
-            "fragBullet": {
-                "type": "BulletType",
-                "hitSound": "none",
-                "lightOpacity": 0.6,
-                "lightColor": "7eccbc",
-                "lightRadius": 40,
-                "status": "intense-radiation",
-                "statusDuration": 400,
-                "pierce": true,
-                "pierceCap": 300,
-                "pierceArmor": true,
-                "speed": 12,
-                "lifetime": 15,
-                "damage": 40,
-                "width": 20,
-                "height": 20,
-                "trailInterval": 0.5,
-                "trailEffect": {
-                    "type": "WaveEffect",
-                    "colorFrom": "4b3799",
-                    "colorTo": "8a7ed9",
-                    "sizeTo": 8,
-                    "sizeFrom": 12,
-                    "lifetime": 15,
-                    "strokeFrom": 3
+                "speed": 4.5,
+                "lifetime": 20,
+                "damage": 16,
+                "width": 8,
+                "height": 8,
+                "intervalBullet": {
+                    "type": "LightningBulletType",
+                    "lightningColor": "8c887b",
+                    "damage": 10,
+                    "pierceArmor": true,
+                    "lightningLength": 10
                 },
-                "spawnBullets": [
-                    {
+                "homingPower": 1,
+                "followAimSpeed": 5,
+                "homingRange": 380,
+                "trailInterval": 0.3,
+                "trailEffect": {
+                    "type": "WaveEffect",
+                    "colorFrom": "dbd9d4",
+                    "colorTo": "8c887b",
+                    "sizeTo": 0,
+                    "sizeFrom": 6,
+                    "lifetime": 8,
+                    "strokeFrom": 2
+                },
+                "fragOnHit": true,
+                "fragVelocityMin": 1,
+                "fragVelocityMax": 1,
+                "fragBullets": 1,
+                "fragSpread": 0,
+                "fragRandomSpread": 0,
+                "fragAngle": 0,
+                "fragBullet": {
+                    "type": "BulletType",
+                    "hitSound": "none",
+                    "lightOpacity": 0.6,
+                    "lightColor": "7eccbc",
+                    "lightRadius": 40,
+                    "status": "shocked",
+                    "statusDuration": 60,
+                    "pierceArmor": true,
+                    "speed": 4.5,
+                    "lifetime": 20,
+                    "damage": 16,
+                    "width": 8,
+                    "height": 8,
+                    "intervalBullet": {
+                        "type": "LightningBulletType",
+                        "lightningColor": "8c887b",
+                        "damage": 10,
+                        "pierceArmor": true,
+                        "lightningLength": 10
+                    },
+                    "homingPower": 1,
+                    "followAimSpeed": 5,
+                    "homingRange": 380,
+                    "trailInterval": 0.3,
+                    "trailEffect": {
+                        "type": "WaveEffect",
+                        "colorFrom": "dbd9d4",
+                        "colorTo": "8c887b",
+                        "sizeTo": 0,
+                        "sizeFrom": 6,
+                        "lifetime": 8,
+                        "strokeFrom": 2
+                    },
+                    "fragOnHit": true,
+                    "fragVelocityMin": 1,
+                    "fragVelocityMax": 1,
+                    "fragBullets": 1,
+                    "fragSpread": 0,
+                    "fragRandomSpread": 0,
+                    "fragAngle": 0,
+                    "fragBullet": {
                         "type": "BulletType",
-                        "collides": false,
-                        "despawnEffect": "none",
-                        "speed": 0,
-                        "lifespan": 2,
-                        "fragOnHit": false,
+                        "hitSound": "none",
+                        "lightOpacity": 0.6,
+                        "lightColor": "7eccbc",
+                        "lightRadius": 40,
+                        "status": "shocked",
+                        "statusDuration": 60,
+                        "pierceArmor": true,
+                        "speed": 4.5,
+                        "lifetime": 20,
+                        "damage": 16,
+                        "width": 8,
+                        "height": 8,
+                        "intervalBullet": {
+                            "type": "LightningBulletType",
+                            "lightningColor": "8c887b",
+                            "damage": 10,
+                            "pierceArmor": true,
+                            "lightningLength": 10
+                        },
+                        "homingPower": 1,
+                        "followAimSpeed": 5,
+                        "homingRange": 380,
+                        "trailInterval": 0.3,
+                        "trailEffect": {
+                            "type": "WaveEffect",
+                            "colorFrom": "dbd9d4",
+                            "colorTo": "8c887b",
+                            "sizeTo": 0,
+                            "sizeFrom": 6,
+                            "lifetime": 8,
+                            "strokeFrom": 2
+                        },
+                        "fragOnHit": true,
                         "fragVelocityMin": 1,
                         "fragVelocityMax": 1,
                         "fragBullets": 1,
@@ -170,222 +193,196 @@
                             "lightOpacity": 0.6,
                             "lightColor": "7eccbc",
                             "lightRadius": 40,
-                            "status": "intense-radiation",
-                            "statusDuration": 400,
-                            "pierce": true,
-                            "pierceCap": 300,
+                            "status": "shocked",
+                            "statusDuration": 60,
                             "pierceArmor": true,
-                            "speed": 18,
-                            "lifetime": 10,
-                            "damage": 50,
-                            "width": 20,
-                            "height": 20,
-                            "trailInterval": 0.8,
+                            "speed": 4.5,
+                            "lifetime": 20,
+                            "damage": 16,
+                            "width": 8,
+                            "height": 8,
+                            "intervalBullet": {
+                                "type": "LightningBulletType",
+                                "lightningColor": "8c887b",
+                                "damage": 10,
+                                "pierceArmor": true,
+                                "lightningLength": 10
+                            },
+                            "homingPower": 1,
+                            "followAimSpeed": 5,
+                            "homingRange": 380,
+                            "trailInterval": 0.3,
                             "trailEffect": {
                                 "type": "WaveEffect",
-                                "colorFrom": "8a7ed9",
-                                "colorTo": "ffffff",
+                                "colorFrom": "dbd9d4",
+                                "colorTo": "8c887b",
                                 "sizeTo": 0,
-                                "sizeFrom": 10,
-                                "lifetime": 15,
+                                "sizeFrom": 6,
+                                "lifetime": 8,
                                 "strokeFrom": 2
-                            },
-                            "spawnBullets": [
-                                {
-                                    "type": "BulletType",
-                                    "collides": false,
-                                    "despawnEffect": "none",
-                                    "speed": 0,
-                                    "lifespan": 2,
-                                    "fragOnHit": false,
-                                    "fragVelocityMin": 1,
-                                    "fragVelocityMax": 1,
-                                    "fragBullets": 1,
-                                    "fragSpread": 0,
-                                    "fragRandomSpread": 0,
-                                    "fragAngle": 0,
-                                    "fragBullet": {
-                                        "type": "BulletType",
-                                        "hitSound": "none",
-                                        "lightOpacity": 0.6,
-                                        "lightColor": "7eccbc",
-                                        "lightRadius": 40,
-                                        "status": "intense-radiation",
-                                        "statusDuration": 400,
-                                        "pierce": true,
-                                        "pierceCap": 300,
-                                        "pierceArmor": true,
-                                        "speed": 18,
-                                        "lifetime": 10,
-                                        "damage": 50,
-                                        "width": 20,
-                                        "height": 20,
-                                        "trailInterval": 0.8,
-                                        "trailEffect": {
-                                            "type": "WaveEffect",
-                                            "colorFrom": "8a7ed9",
-                                            "colorTo": "ffffff",
-                                            "sizeTo": 0,
-                                            "sizeFrom": 10,
-                                            "lifetime": 15,
-                                            "strokeFrom": 2
-                                        }
-
-                                    }
-                                }
-                            ]
+                            }
                         }
-                    },
-                ]
-            },
+                    }
+                }
+            }
             "shootEffect": {
                 "type": "WaveEffect",
-                "colorFrom": "4b3799",
-                "colorTo": "8a7ed9",
+                "colorFrom": "dbd9d4",
+                "colorTo": "8c887b",
                 "sizeTo": 6,
                 "lifetime": 30,
                 "strokeFrom": 3
             }
-        }
-    },
-	drawer: {
-		type: DrawTurret,
-     		basePrefix: base,
-        parts: [
-            {
-                "type": "RegionPart",
-                "suffix": "-ul",
-                "progress": "warmup",
-                "heatProgress": "warmup",
-                "heatColor": "d45984",
-                "mirror": false,
-                "under": false,
-                "moveX": -4,
-                "moveY": 4,
-                "moveRot": 0
+                }
             },
-            {
-                "type": "RegionPart",
-                "suffix": "-ul",
-                "progress": "warmup",
-                "heatProgress": "warmup",
-                "heatColor": "d45984",
-                "mirror": false,
-                "under": false,
-                "moveX": -2,
-                "moveY": 2,
-                "moveRot": 0
-            },
-            {
-                "type": "RegionPart",
-                "suffix": "-dl",
-                "progress": "warmup",
-                "heatProgress": "warmup",
-                "heatColor": "d45984",
-                "mirror": false,
-                "under": false,
-                "moveX": -4,
-                "moveY": 4,
-                "moveRot": 0
-            },
-            {
-                "type": "RegionPart",
-                "suffix": "-dl",
-                "progress": "warmup",
-                "heatProgress": "warmup",
-                "heatColor": "d45984",
-                "mirror": false,
-                "under": false,
-                "moveX": -2,
-                "moveY": 2,
-                "moveRot": 0
-            },
-            {
-                "type": "RegionPart",
-                "suffix": "-ur",
-                "progress": "warmup",
-                "heatProgress": "warmup",
-                "heatColor": "d45984",
-                "mirror": false,
-                "under": false,
-                "moveX": 4,
-                "moveY": 4,
-                "moveRot": 0
-            },
-            {
-                "type": "RegionPart",
-                "suffix": "-ur",
-                "progress": "warmup",
-                "heatProgress": "warmup",
-                "heatColor": "d45984",
-                "mirror": false,
-                "under": false,
-                "moveX": 2,
-                "moveY": 2,
-                "moveRot": 0
-            },
-            {
-                "type": "RegionPart",
-                "suffix": "-dr",
-                "progress": "warmup",
-                "heatProgress": "warmup",
-                "heatColor": "d45984",
-                "mirror": false,
-                "under": false,
-                "moveX": 4,
-                "moveY": 4,
-                "moveRot": 0
-            },
-            {
-                "type": "RegionPart",
-                "suffix": "-dr",
-                "progress": "warmup",
-                "heatProgress": "warmup",
-                "heatColor": "d45984",
-                "mirror": false,
-                "under": false,
-                "moveX": 2,
-                "moveY": 2,
-                "moveRot": 0
-            },
-            {
-                "type": "RegionPart",
-                "suffix": "-b",
-                "progress": "recoil",
-                "heatProgress": "warmup",
-                "heatColor": "d45984",
-                "mirror": false,
-                "under": false,
-                "moveX": 0,
-                "moveY": 0,
-                "moveRot": 0
-            },
-            {
-                "type": "ShapePart",
-                "progress": "reload",
-                "color": "d45984",
-                "layer": 110,
-                "sides": 100,
-                "rotation": 0,
-                "hollow": true,
-                "stroke": 0,
-                "strokeTo": 4,
-                "radius": 7,
-                "y": 4
+                "drawer": {
+                    "type": "DrawTurret",
+                    "basePrefix": "base",
+                    "parts": [
+                        {
+                            "type": "RegionPart",
+                            "suffix": "-ul",
+                            "progress": "warmup",
+                            "heatProgress": "warmup",
+                            "heatColor": "9c9990",
+                            "mirror": false,
+                            "under": false,
+                            "moveX": -4,
+                            "moveY": 4,
+                            "moveRot": 0
+                        },
+                        {
+                            "type": "RegionPart",
+                            "suffix": "-ul",
+                            "progress": "warmup",
+                            "heatProgress": "warmup",
+                            "heatColor": "9c9990",
+                            "mirror": false,
+                            "under": false,
+                            "moveX": -2,
+                            "moveY": 2,
+                            "moveRot": 0
+                        },
+                        {
+                            "type": "RegionPart",
+                            "suffix": "-dl",
+                            "progress": "warmup",
+                            "heatProgress": "warmup",
+                            "heatColor": "9c9990",
+                            "mirror": false,
+                            "under": false,
+                            "moveX": -4,
+                            "moveY": 4,
+                            "moveRot": 0
+                        },
+                        {
+                            "type": "RegionPart",
+                            "suffix": "-dl",
+                            "progress": "warmup",
+                            "heatProgress": "warmup",
+                            "heatColor": "9c9990",
+                            "mirror": false,
+                            "under": false,
+                            "moveX": -2,
+                            "moveY": 2,
+                            "moveRot": 0
+                        },
+                        {
+                            "type": "RegionPart",
+                            "suffix": "-ur",
+                            "progress": "warmup",
+                            "heatProgress": "warmup",
+                            "heatColor": "9c9990",
+                            "mirror": false,
+                            "under": false,
+                            "moveX": 4,
+                            "moveY": 4,
+                            "moveRot": 0
+                        },
+                        {
+                            "type": "RegionPart",
+                            "suffix": "-ur",
+                            "progress": "warmup",
+                            "heatProgress": "warmup",
+                            "heatColor": "9c9990",
+                            "mirror": false,
+                            "under": false,
+                            "moveX": 2,
+                            "moveY": 2,
+                            "moveRot": 0
+                        },
+                        {
+                            "type": "RegionPart",
+                            "suffix": "-dr",
+                            "progress": "warmup",
+                            "heatProgress": "warmup",
+                            "heatColor": "9c9990",
+                            "mirror": false,
+                            "under": false,
+                            "moveX": 4,
+                            "moveY": 4,
+                            "moveRot": 0
+                        },
+                        {
+                            "type": "RegionPart",
+                            "suffix": "-dr",
+                            "progress": "warmup",
+                            "heatProgress": "warmup",
+                            "heatColor": "9c9990",
+                            "mirror": false,
+                            "under": false,
+                            "moveX": 2,
+                            "moveY": 2,
+                            "moveRot": 0
+                        },
+                        {
+                            "type": "RegionPart",
+                            "suffix": "-b",
+                            "progress": "recoil",
+                            "heatProgress": "warmup",
+                            "heatColor": "9c9990",
+                            "mirror": false,
+                            "under": false,
+                            "moveX": 0,
+                            "moveY": 0,
+                            "moveRot": 0
+                        },
+                        {
+                            "type": "ShapePart",
+                            "progress": "warmup",
+                            "color": "9c9990",
+                            "layer": 110,
+                            "sides": 100,
+                            "rotation": 0,
+                            "hollow": true,
+                            "stroke": 0,
+                            "strokeTo": 4,
+                            "radius": 7,
+                            "y": 4
+                        }
+                    ]
+                },
+                "requirements": [
+                    {
+                        "item": "carbide",
+                        "amount": 85
+                    },
+                    {
+                        "item": "metaglass",
+                        "amount": 60
+                    },
+                    {
+                        "item": "neodymium",
+                        "amount": 85
+                    },
+                    {
+                        "item": "cobalt",
+                        "amount": 125
+                    }
+                ],
+                "category": "turret",
+                "shootSound": "supspark",
+                "research": "vacuum",
+                "shake": 0,
+                "researchCostMultiplier": 0.05
             }
-        ]
-	}
-    "requirements": [
-        { "item": "cryogel", "amount": 40 },
-	  { "item": "technetium", "amount": 60 },
-        { "item": "tungsten", "amount": 120 },
-	  { "item": "cobalt", "amount": 185 },
-    ],
-    "category": "turret"
-    "shootSound": "boomrnga"
-    "loopSound": "glow"
-    "loopSoundVolume": 0.5
-    "research": tension
-    "shake": 0
-    "researchCostMultiplier": 0.05
-}

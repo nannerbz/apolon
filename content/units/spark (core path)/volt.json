@@ -26,7 +26,7 @@ weapons: [
         "reload": 20,
         "x": 6.25,
         "y": 4.5,
-        "shootSound": "bolt",
+        "shootSound": "Fling",
         "top": false,
         "shoot": {
             "shots": 6,
@@ -37,17 +37,14 @@ weapons: [
         "inaccuracy": 10,
         "ejectEffect": "casing1",
         "bullet": {
-            "type": "LaserBulletType",
+            "type": "LaserBoltBulletType",
             "damage": 16,
-            "buildingDamageMultiplier": 0.01,
-            "length": 270,
-            "smokeEffect": "colorSpark",
-            "shootEffect": "lancerLaserShoot",
-            "hitEffect": "hitLancer",
-            "hitSize": 4,
-            "lifetime": 10,
-            "drawSize": 540,
-            "pierceCap": 8
+            "speed": 5,
+            "width": 2,
+            "length": 6,
+            "lifetime": 54,
+            "shootEffect": "shootSmall",
+            "smokeEffect": "shootSmallSmoke"
         }
     }
 ]
