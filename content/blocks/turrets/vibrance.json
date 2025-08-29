@@ -1,7 +1,7 @@
 {
     "type": "ItemTurret",
     "name": "Vibrance",
-    "description": "Casts electric orbs that chain up to 4 enemies.",
+    "description": "Casts electric orbs that chain on the enemies.",
     "targetAir": true,
     "targetGround": true,
     "health": 1950,
@@ -9,6 +9,7 @@
     "inaccuracy": 5,
     "reload": 60,
     "recoil": 1,
+    "shootY": -8,
     "outlineColor": 222222,
     "xRand": 0,
     "squareSprite": false,
@@ -36,7 +37,7 @@
             "statusDuration": 60,
             "pierceArmor": true,
             "speed": 4.5,
-            "lifetime": 20,
+            "lifetime": 4,
             "damage": 16,
             "width": 8,
             "height": 8,
@@ -57,12 +58,20 @@
                 "lifetime": 8,
                 "strokeFrom": 2
             },
+            "despawnEffect": {
+                "type": "WaveEffect",
+                "colorFrom": "8c887b",
+                "colorTo": "dbd9d4",
+                "sizeTo": 18,
+                "lifetime": 30,
+                "strokeFrom": 4
+            },
             "fragOnHit": true,
             "fragVelocityMin": 1,
             "fragVelocityMax": 1,
             "fragBullets": 1,
             "fragSpread": 0,
-            "fragRandomSpread": 0,
+            "fragRandomSpread": 10,
             "fragAngle": 0,
             "fragBullet": {
                 "type": "BulletType",
@@ -74,7 +83,7 @@
                 "statusDuration": 60,
                 "pierceArmor": true,
                 "speed": 4.5,
-                "lifetime": 20,
+                "lifetime": 4,
                 "damage": 16,
                 "width": 8,
                 "height": 8,
@@ -101,12 +110,20 @@
                     "lifetime": 8,
                     "strokeFrom": 2
                 },
+                "despawnEffect": {
+                    "type": "WaveEffect",
+                    "colorFrom": "8c887b",
+                    "colorTo": "dbd9d4",
+                    "sizeTo": 18,
+                    "lifetime": 30,
+                    "strokeFrom": 4
+                },
                 "fragOnHit": true,
                 "fragVelocityMin": 1,
                 "fragVelocityMax": 1,
                 "fragBullets": 1,
                 "fragSpread": 0,
-                "fragRandomSpread": 0,
+                "fragRandomSpread": 10,
                 "fragAngle": 0,
                 "fragBullet": {
                     "type": "BulletType",
@@ -118,7 +135,7 @@
                     "statusDuration": 60,
                     "pierceArmor": true,
                     "speed": 4.5,
-                    "lifetime": 20,
+                    "lifetime": 4,
                     "damage": 16,
                     "width": 8,
                     "height": 8,
@@ -145,12 +162,20 @@
                         "lifetime": 8,
                         "strokeFrom": 2
                     },
+                    "despawnEffect": {
+                        "type": "WaveEffect",
+                        "colorFrom": "8c887b",
+                        "colorTo": "dbd9d4",
+                        "sizeTo": 18,
+                        "lifetime": 30,
+                        "strokeFrom": 4
+                    },
                     "fragOnHit": true,
                     "fragVelocityMin": 1,
                     "fragVelocityMax": 1,
                     "fragBullets": 1,
                     "fragSpread": 0,
-                    "fragRandomSpread": 0,
+                    "fragRandomSpread": 10,
                     "fragAngle": 0,
                     "fragBullet": {
                         "type": "BulletType",
@@ -162,7 +187,7 @@
                         "statusDuration": 60,
                         "pierceArmor": true,
                         "speed": 4.5,
-                        "lifetime": 20,
+                        "lifetime": 4,
                         "damage": 16,
                         "width": 8,
                         "height": 8,
@@ -189,12 +214,20 @@
                             "lifetime": 8,
                             "strokeFrom": 2
                         },
+                        "despawnEffect": {
+                            "type": "WaveEffect",
+                            "colorFrom": "8c887b",
+                            "colorTo": "dbd9d4",
+                            "sizeTo": 18,
+                            "lifetime": 30,
+                            "strokeFrom": 4
+                        },
                         "fragOnHit": true,
                         "fragVelocityMin": 1,
                         "fragVelocityMax": 1,
                         "fragBullets": 1,
                         "fragSpread": 0,
-                        "fragRandomSpread": 0,
+                        "fragRandomSpread": 10,
                         "fragAngle": 0,
                         "fragBullet": {
                             "type": "BulletType",
@@ -206,7 +239,7 @@
                             "statusDuration": 60,
                             "pierceArmor": true,
                             "speed": 4.5,
-                            "lifetime": 20,
+                            "lifetime": 4,
                             "damage": 16,
                             "width": 8,
                             "height": 8,
@@ -232,11 +265,19 @@
                                 "sizeFrom": 6,
                                 "lifetime": 8,
                                 "strokeFrom": 2
+                            },
+                            "despawnEffect": {
+                                "type": "WaveEffect",
+                                "colorFrom": "8c887b",
+                                "colorTo": "dbd9d4",
+                                "sizeTo": 18,
+                                "lifetime": 30,
+                                "strokeFrom": 4
                             }
                         }
                     }
                 }
-            }
+            },
             "shootEffect": {
                 "type": "WaveEffect",
                 "colorFrom": "8c887b",
@@ -245,156 +286,156 @@
                 "lifetime": 30,
                 "strokeFrom": 3
             }
-                }
+        }
+    },
+    "drawer": {
+        "type": "DrawTurret",
+        "basePrefix": "base",
+        "parts": [
+            {
+                "type": "RegionPart",
+                "suffix": "-ul",
+                "progress": "warmup",
+                "heatProgress": "warmup",
+                "heatColor": "9c9990",
+                "mirror": false,
+                "under": false,
+                "moveX": -4,
+                "moveY": 4,
+                "moveRot": 0
             },
-                "drawer": {
-                    "type": "DrawTurret",
-                    "basePrefix": "base",
-                    "parts": [
-                        {
-                            "type": "RegionPart",
-                            "suffix": "-ul",
-                            "progress": "warmup",
-                            "heatProgress": "warmup",
-                            "heatColor": "9c9990",
-                            "mirror": false,
-                            "under": false,
-                            "moveX": -4,
-                            "moveY": 4,
-                            "moveRot": 0
-                        },
-                        {
-                            "type": "RegionPart",
-                            "suffix": "-ul",
-                            "progress": "warmup",
-                            "heatProgress": "warmup",
-                            "heatColor": "9c9990",
-                            "mirror": false,
-                            "under": false,
-                            "moveX": -2,
-                            "moveY": 2,
-                            "moveRot": 0
-                        },
-                        {
-                            "type": "RegionPart",
-                            "suffix": "-dl",
-                            "progress": "warmup",
-                            "heatProgress": "warmup",
-                            "heatColor": "9c9990",
-                            "mirror": false,
-                            "under": false,
-                            "moveX": -4,
-                            "moveY": 4,
-                            "moveRot": 0
-                        },
-                        {
-                            "type": "RegionPart",
-                            "suffix": "-dl",
-                            "progress": "warmup",
-                            "heatProgress": "warmup",
-                            "heatColor": "9c9990",
-                            "mirror": false,
-                            "under": false,
-                            "moveX": -2,
-                            "moveY": 2,
-                            "moveRot": 0
-                        },
-                        {
-                            "type": "RegionPart",
-                            "suffix": "-ur",
-                            "progress": "warmup",
-                            "heatProgress": "warmup",
-                            "heatColor": "9c9990",
-                            "mirror": false,
-                            "under": false,
-                            "moveX": 4,
-                            "moveY": 4,
-                            "moveRot": 0
-                        },
-                        {
-                            "type": "RegionPart",
-                            "suffix": "-ur",
-                            "progress": "warmup",
-                            "heatProgress": "warmup",
-                            "heatColor": "9c9990",
-                            "mirror": false,
-                            "under": false,
-                            "moveX": 2,
-                            "moveY": 2,
-                            "moveRot": 0
-                        },
-                        {
-                            "type": "RegionPart",
-                            "suffix": "-dr",
-                            "progress": "warmup",
-                            "heatProgress": "warmup",
-                            "heatColor": "9c9990",
-                            "mirror": false,
-                            "under": false,
-                            "moveX": 4,
-                            "moveY": 4,
-                            "moveRot": 0
-                        },
-                        {
-                            "type": "RegionPart",
-                            "suffix": "-dr",
-                            "progress": "warmup",
-                            "heatProgress": "warmup",
-                            "heatColor": "9c9990",
-                            "mirror": false,
-                            "under": false,
-                            "moveX": 2,
-                            "moveY": 2,
-                            "moveRot": 0
-                        },
-                        {
-                            "type": "RegionPart",
-                            "suffix": "-b",
-                            "progress": "recoil",
-                            "heatProgress": "warmup",
-                            "heatColor": "9c9990",
-                            "mirror": false,
-                            "under": false,
-                            "moveX": 0,
-                            "moveY": 0,
-                            "moveRot": 0
-                        },
-                        {
-                            "type": "ShapePart",
-                            "progress": "warmup",
-                            "color": "9c9990",
-                            "layer": 110,
-                            "sides": 100,
-                            "rotation": 0,
-                            "hollow": true,
-                            "stroke": 0,
-                            "strokeTo": 2,
-                            "radius": 7,
-                            "y": 4
-                        }
-                    ]
-                },
-                "requirements": [
-                    {
-                        "item": "carbide",
-                        "amount": 85
-                    },
-                    {
-                        "item": "metaglass",
-                        "amount": 60
-                    },
-                    {
-                        "item": "neodymium",
-                        "amount": 85
-                    },
-                    {
-                        "item": "cobalt",
-                        "amount": 125
-                    }
-                ],
-                "category": "turret",
-                "shootSound": "supspark",
-                "research": "vacuum",
-                "shake": 0,
-                "researchCostMultiplier": 0.05
+            {
+                "type": "RegionPart",
+                "suffix": "-ul",
+                "progress": "warmup",
+                "heatProgress": "warmup",
+                "heatColor": "9c9990",
+                "mirror": false,
+                "under": false,
+                "moveX": -2,
+                "moveY": 2,
+                "moveRot": 0
+            },
+            {
+                "type": "RegionPart",
+                "suffix": "-dl",
+                "progress": "warmup",
+                "heatProgress": "warmup",
+                "heatColor": "9c9990",
+                "mirror": false,
+                "under": false,
+                "moveX": -4,
+                "moveY": 4,
+                "moveRot": 0
+            },
+            {
+                "type": "RegionPart",
+                "suffix": "-dl",
+                "progress": "warmup",
+                "heatProgress": "warmup",
+                "heatColor": "9c9990",
+                "mirror": false,
+                "under": false,
+                "moveX": -2,
+                "moveY": 2,
+                "moveRot": 0
+            },
+            {
+                "type": "RegionPart",
+                "suffix": "-ur",
+                "progress": "warmup",
+                "heatProgress": "warmup",
+                "heatColor": "9c9990",
+                "mirror": false,
+                "under": false,
+                "moveX": 4,
+                "moveY": 4,
+                "moveRot": 0
+            },
+            {
+                "type": "RegionPart",
+                "suffix": "-ur",
+                "progress": "warmup",
+                "heatProgress": "warmup",
+                "heatColor": "9c9990",
+                "mirror": false,
+                "under": false,
+                "moveX": 2,
+                "moveY": 2,
+                "moveRot": 0
+            },
+            {
+                "type": "RegionPart",
+                "suffix": "-dr",
+                "progress": "warmup",
+                "heatProgress": "warmup",
+                "heatColor": "9c9990",
+                "mirror": false,
+                "under": false,
+                "moveX": 4,
+                "moveY": 4,
+                "moveRot": 0
+            },
+            {
+                "type": "RegionPart",
+                "suffix": "-dr",
+                "progress": "warmup",
+                "heatProgress": "warmup",
+                "heatColor": "9c9990",
+                "mirror": false,
+                "under": false,
+                "moveX": 2,
+                "moveY": 2,
+                "moveRot": 0
+            },
+            {
+                "type": "RegionPart",
+                "suffix": "-b",
+                "progress": "recoil",
+                "heatProgress": "warmup",
+                "heatColor": "9c9990",
+                "mirror": false,
+                "under": false,
+                "moveX": 0,
+                "moveY": 0,
+                "moveRot": 0
+            },
+            {
+                "type": "ShapePart",
+                "progress": "warmup",
+                "color": "9c9990",
+                "layer": 110,
+                "sides": 100,
+                "rotation": 0,
+                "hollow": true,
+                "stroke": 0,
+                "strokeTo": 2,
+                "radius": 7,
+                "y": 4
             }
+        ]
+    },
+    "requirements": [
+        {
+            "item": "carbide",
+            "amount": 85
+        },
+        {
+            "item": "metaglass",
+            "amount": 60
+        },
+        {
+            "item": "neodymium",
+            "amount": 85
+        },
+        {
+            "item": "cobalt",
+            "amount": 125
+        }
+    ],
+    "category": "turret",
+    "shootSound": "supspark",
+    "research": "vacuum",
+    "shake": 0,
+    "researchCostMultiplier": 0.05
+}
