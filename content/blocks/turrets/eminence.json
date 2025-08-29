@@ -1,27 +1,33 @@
 {
     "type": "ItemTurret",
-    "name": "Vibrance",
-    "description": "Raw energy armor-piercing boomergang. Shoots radioactive decay rings that completely ignore enemy armor.",
+    "name": "Eminence",
+    "description": "Juggles two raw energy armor-piercing boomerangs. These radioactive decay rings completely ignore enemy armor.",
     "targetAir": true,
     "targetGround": true,
-    "health": 1950
-    "size": 3
-    "inaccuracy": 0
-    "reload": 60
-    "recoil": 1
-    "outlineColor": 222222
+    "health": 12600,
+    "size": 5,
+    "inaccuracy": 0,
+    "reload": 60,
+    "recoil": 1,
+    "shootY": -32
+    "outlineColor": 222222,
     "xRand": 0,
-    "squareSprite": false
-    "coolantMultiplier": 0.75
+    "squareSprite": false,
+    "coolantMultiplier": 0.75,
     "consumes": {
         "coolant": {
             "amount": 0.6
         }
-    }
+    },
     "shootCone": 4,
     "rotateSpeed": 4,
-    "shots": 1,
-    "range": 180
+    "shoot": {
+        "type": "shootAlternate",
+        "shots": 1,
+        "barrels": 2,
+        "spread": 20
+    },
+    "range": 180,
     "ammoTypes": {
         "technetium": {
             "type": "BulletType",
@@ -235,7 +241,7 @@
                                 }
                             ]
                         }
-                    },
+                    }
                 ]
             },
             "shootEffect": {
@@ -248,10 +254,10 @@
             }
         }
     },
-	drawer: {
-		type: DrawTurret,
-     		basePrefix: base,
-        parts: [
+    "drawer": {
+        "type": "DrawTurret",
+        "basePrefix": "base",
+        "parts": [
             {
                 "type": "RegionPart",
                 "suffix": "-ul",
@@ -284,13 +290,25 @@
                 "heatColor": "d45984",
                 "mirror": false,
                 "under": false,
+                "moveX": -6,
+                "moveY": 6,
+                "moveRot": 0
+            },
+            {
+                "type": "RegionPart",
+                "suffix": "-dl",
+                "progress": "warmup",
+                "heatProgress": "warmup",
+                "heatColor": "d45984",
+                "mirror": false,
+                "under": false,
                 "moveX": -4,
                 "moveY": 4,
                 "moveRot": 0
             },
             {
                 "type": "RegionPart",
-                "suffix": "-dl",
+                "suffix": "-al",
                 "progress": "warmup",
                 "heatProgress": "warmup",
                 "heatColor": "d45984",
@@ -332,13 +350,25 @@
                 "heatColor": "d45984",
                 "mirror": false,
                 "under": false,
+                "moveX": 6,
+                "moveY": 6,
+                "moveRot": 0
+            },
+            {
+                "type": "RegionPart",
+                "suffix": "-dr",
+                "progress": "warmup",
+                "heatProgress": "warmup",
+                "heatColor": "d45984",
+                "mirror": false,
+                "under": false,
                 "moveX": 4,
                 "moveY": 4,
                 "moveRot": 0
             },
             {
                 "type": "RegionPart",
-                "suffix": "-dr",
+                "suffix": "-ar",
                 "progress": "warmup",
                 "heatProgress": "warmup",
                 "heatColor": "d45984",
@@ -371,21 +401,56 @@
                 "stroke": 0,
                 "strokeTo": 4,
                 "radius": 7,
-                "y": 4
+                "y": -8
+                "x": 10
+            }
+            {
+                "type": "ShapePart",
+                "progress": "reload",
+                "color": "d45984",
+                "layer": 110,
+                "sides": 100,
+                "rotation": 0,
+                "hollow": true,
+                "stroke": 0,
+                "strokeTo": 4,
+                "radius": 7,
+                "y": -8
+                "x":-10 
             }
         ]
-	}
+    },
     "requirements": [
-        { "item": "cryogel", "amount": 40 },
-	  { "item": "technetium", "amount": 60 },
-        { "item": "tungsten", "amount": 120 },
-	  { "item": "cobalt", "amount": 185 },
+        {
+            "item": "cryogel",
+            "amount": 40
+        },
+        {
+            "item": "technetium",
+            "amount": 60
+        },
+        {
+            "item": "kobra-alloy",
+            "amount": 85
+        },
+        {
+            "item": "tungsten",
+            "amount": 120
+        },
+        {
+            "item": "cobalt",
+            "amount": 185
+        },
+        {
+            "item": "neodymium",
+            "amount": 120
+        }
     ],
-    "category": "turret"
-    "shootSound": "boomrnga"
-    "loopSound": "glow"
-    "loopSoundVolume": 0.5
-    "research": tension
-    "shake": 0
+    "category": "turret",
+    "shootSound": "boomrnga",
+    "loopSound": "glow",
+    "loopSoundVolume": 0.5,
+    "research": "tension",
+    "shake": 0,
     "researchCostMultiplier": 0.05
 }
