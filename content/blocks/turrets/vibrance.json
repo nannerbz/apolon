@@ -441,24 +441,47 @@
         "parts": [
             {
                 "type": "RegionPart",
-                "suffix": "-ul",
+                "suffix": "-plate-r",
                 "progress": "warmup",
                 "heatProgress": "warmup",
                 "heatColor": "9c9990",
                 "mirror": false,
                 "under": false,
-                "moveX": -4,
-                "moveY": 4,
+                "moveX": 1,
+                "moveY": -1,
                 "moveRot": 0
+		moves: [
+			{
+				x: 0
+				y: 2
+				rot: -15
+				progress: recoil
+			}
+		]
+		children: [
+    			{
+      			type : RegionPart
+      			suffix : "-under"
+      			progress : recoil
+      			heatProgress : recoil
+      			heatColor : "ffffff"
+      			mirror : false
+      			under : true
+      			moveX : 0
+			moveY : 0
+      			moveRot : 0
+    			},
+		]
             },
             {
                 "type": "RegionPart",
-                "suffix": "-ul",
+                "suffix": "-plate-l",
                 "progress": "warmup",
                 "heatProgress": "warmup",
                 "heatColor": "9c9990",
                 "mirror": false,
                 "under": false,
+<<<<<<< Updated upstream
                 "moveX": -2,
                 "moveY": 2,
                 "moveRot": 0
@@ -545,7 +568,33 @@
                 "under": false,
                 "moveX": 0,
                 "moveY": 0,
+=======
+                "moveX": -1,
+                "moveY": -1,
+>>>>>>> Stashed changes
                 "moveRot": 0
+		moves: [
+			{
+				x: 0
+				y: 2
+				rot: 15
+				progress: recoil
+			}
+		]
+		children: [
+    			{
+      			type : RegionPart
+      			suffix : "-under"
+      			progress : recoil
+      			heatProgress : recoil
+      			heatColor : "ffffff"
+      			mirror : false
+      			under : true
+      			moveX : 0
+			moveY : 0
+      			moveRot : 0
+    			},
+		]
             },
             {
                 "type": "ShapePart",
