@@ -1,14 +1,14 @@
 {
 	"type": "liquid",
 	"name": "Mellowfluid",
-	"description": "Extremely expensive hyperfluid-hypercoolant photoluminic substance.",
+	"description": "Extremely expensive hyperfluid-hypercoolant substance.",
 	"flammability": 0,
 	"temperature": 0,
 	"boilPoint": 0.9,
 	"color": "82ffff",
 	"gasColor": "82ffff",
-	"viscosity": 0.05,
-	"heatCapacity": 0.9,
+	"viscosity": 0.1,
+	"heatCapacity": 1,
 	"research": [ cryogel, mellowfluid ]
 	"explosiveness": 0,
 	"barColor": "82ffff",

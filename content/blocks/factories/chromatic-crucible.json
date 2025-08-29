@@ -1,7 +1,7 @@
 {
 	"type": "GenericCrafter",
 	"name": "Chromatic Crucible",
-	"description": "Dissolves high concentrations of chromatic metals together with Arkycite to form photoluminescent Flux.",
+	"description": "Dissolves high concentrations of chromatic metals to form photoluminescent Flux.",
 	"outputItem": {
 		"item": "flux",
 		"amount": 2
