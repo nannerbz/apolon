@@ -120,7 +120,7 @@
             "backColor": "4bdebc",
             "frontColor": "4bdebc",
             "trailColor": "0bbfb9",
-            "trailInterval": 2,
+            "trailInterval": 0.1,
             "trailEffect": {
                 "type": "ParticleEffect",
                 "colorFrom": "4bdebc",
@@ -128,7 +128,7 @@
                 "lifetime": 20,
                 "length": 16,
                 "region": "circle-small",
-                "particles": 12,
+                "particles": 2,
                 "sizeFrom": 3,
                 "sizeTo": 0
             },

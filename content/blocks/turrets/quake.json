@@ -106,7 +106,7 @@
             "backColor": "4bdebc",
             "frontColor": "4bdebc",
             "trailColor": "0bbfb9",
-            "trailInterval": 8,
+            "trailInterval": 1,
             "trailEffect": {
                 "type": "ParticleEffect",
                 "colorFrom": "4bdebc",
@@ -114,11 +114,10 @@
                 "lifetime": 20,
                 "length": 16,
                 "region": "circle-small",
-                "particles": 12,
+                "particles": 3,
                 "sizeFrom": 3,
                 "sizeTo": 0
             },
-            "collidesGround": false,
             "width": 10,
             "height": 10,
             "shootEffect": "shootBig2",
