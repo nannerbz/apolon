@@ -192,10 +192,10 @@
 		]
 	}
     "requirements": [
-        { "item": "carbide", "amount": 215 },
+        { "item": "cobalt", "amount": 215 },
 	  { "item": "neodymium", "amount": 120 },
         { "item": "photoglass", "amount": 95 },
-	  { "item": "bismuth", "amount": 285 },
+	  { "item": "cryogel", "amount": 75 },
         { "item": "hypersteel", "amount": 80 },
     ],
     "category": "turret"

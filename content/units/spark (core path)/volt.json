@@ -21,52 +21,33 @@ outlineColor: 222222
 itemCapacity: 65
 isEnemy: false
 weapons: [
-    		{
-        	name: volt-w
-        	reload: 20
-        	x: 5
-        	y: 4
-		shootSound: bolt
-        	top: false
-        	shots: 1
-        	spacing: 4
-        	rotate: false
-		under: true
-		inaccuracy: 35
-        	ejectEffect: casing1
-        	bullet: {
-			type: BasicBulletType
-			damage: 0
-			speed: 6
-			lifetime: 33.75
-			trailWidth: 2
-			trailHeight: 8
-			width: 25
-			height: 25
-			spin: 8
-			sprite: mine-bullet
-			homingRange: 955
-			homingPower: 0.06
-			homingDelay: 5
-			backSprite: large-bomb-back
-			fragBullets: 1
-			fragSpread: 0
-			fragRandomSpread: 0
-			fragBullet: {
-				type: LaserBulletType
-				damage: 45
-				buildingDamageMultiplier: 0.01
-				width: 15
-				hitEffect: hitLancer
-				sideAngle: 180
-				sideWidth: 1
-				sideLength: 40
-				lifetime: 11.25
-				drawSize: 33.75
-				length: 33.75
-				pierceCap: 3
-			}
-    	      	}
-         }
+    {
+        "name": "volt-w",
+        "reload": 20,
+        "x": 5,
+        "y": 4,
+        "shootSound": "bolt",
+        "top": false,
+        "shoot": {
+            "shots": 6,
+            "shotDelay": 3
+        },
+        "rotate": false,
+        "under": true,
+        "inaccuracy": 10,
+        "ejectEffect": "casing1",
+        "bullet": null,
+        "type": "LaserBulletType",
+        "damage": 16,
+        "buildingDamageMultiplier": 0.01,
+        "length": 270,
+        "smokeEffect": "colorSpark",
+        "shootEffect": "lancerLaserShoot",
+        "hitEffect": "hitLancer",
+        "hitSize": 4,
+        "lifetime": 10,
+        "drawSize": 345,
+        "pierceCap": 8
+    }
 ]
 alwaysUnlocked: true
