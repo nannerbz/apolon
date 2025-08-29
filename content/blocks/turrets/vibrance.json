@@ -461,7 +461,7 @@
 		children: [
     			{
       			type : RegionPart
-      			suffix : "-under"
+      			suffix : "-r-under"
       			progress : recoil
       			heatProgress : recoil
       			heatColor : "ffffff"
@@ -481,97 +481,8 @@
                 "heatColor": "9c9990",
                 "mirror": false,
                 "under": false,
-<<<<<<< Updated upstream
-                "moveX": -2,
-                "moveY": 2,
-                "moveRot": 0
-            },
-            {
-                "type": "RegionPart",
-                "suffix": "-dl",
-                "progress": "warmup",
-                "heatProgress": "warmup",
-                "heatColor": "9c9990",
-                "mirror": false,
-                "under": false,
-                "moveX": -4,
-                "moveY": 4,
-                "moveRot": 0
-            },
-            {
-                "type": "RegionPart",
-                "suffix": "-dl",
-                "progress": "warmup",
-                "heatProgress": "warmup",
-                "heatColor": "9c9990",
-                "mirror": false,
-                "under": false,
-                "moveX": -2,
-                "moveY": 2,
-                "moveRot": 0
-            },
-            {
-                "type": "RegionPart",
-                "suffix": "-ur",
-                "progress": "warmup",
-                "heatProgress": "warmup",
-                "heatColor": "9c9990",
-                "mirror": false,
-                "under": false,
-                "moveX": 4,
-                "moveY": 4,
-                "moveRot": 0
-            },
-            {
-                "type": "RegionPart",
-                "suffix": "-ur",
-                "progress": "warmup",
-                "heatProgress": "warmup",
-                "heatColor": "9c9990",
-                "mirror": false,
-                "under": false,
-                "moveX": 2,
-                "moveY": 2,
-                "moveRot": 0
-            },
-            {
-                "type": "RegionPart",
-                "suffix": "-dr",
-                "progress": "warmup",
-                "heatProgress": "warmup",
-                "heatColor": "9c9990",
-                "mirror": false,
-                "under": false,
-                "moveX": 4,
-                "moveY": 4,
-                "moveRot": 0
-            },
-            {
-                "type": "RegionPart",
-                "suffix": "-dr",
-                "progress": "warmup",
-                "heatProgress": "warmup",
-                "heatColor": "9c9990",
-                "mirror": false,
-                "under": false,
-                "moveX": 2,
-                "moveY": 2,
-                "moveRot": 0
-            },
-            {
-                "type": "RegionPart",
-                "suffix": "-b",
-                "progress": "recoil",
-                "heatProgress": "warmup",
-                "heatColor": "9c9990",
-                "mirror": false,
-                "under": false,
-                "moveX": 0,
-                "moveY": 0,
-=======
                 "moveX": -1,
                 "moveY": -1,
->>>>>>> Stashed changes
                 "moveRot": 0
 		moves: [
 			{
@@ -584,7 +495,7 @@
 		children: [
     			{
       			type : RegionPart
-      			suffix : "-under"
+      			suffix : "-l-under"
       			progress : recoil
       			heatProgress : recoil
       			heatColor : "ffffff"
