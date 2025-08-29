@@ -1,0 +1,90 @@
+{
+	"type": "GenericCrafter",
+	"name": "Chromatic Crucible",
+	"description": "Dissolves high concentrations of chromatic metals together with Arkycite to form photoluminescent Flux.",
+	"outputItem": {
+		"item": "flux",
+		"amount": 2
+	},
+	"size": 3,
+	"hasPower": true,
+	"hasItems": true,
+	"hasLiquids": true,
+	"craftTime": 40,
+	"updateEffect": {
+		"type": "ParticleEffect",
+		"colorFrom": "4bdebc",
+		"colorTo": "38738a",
+		"lifetime": 60,
+		"length": 16,
+		"region": "circle-small",
+		"particles": 12,
+		"sizeFrom": 3,
+		"sizeTo": 0
+	},
+	"consumes": {
+		"power": 1,
+		"items": {
+			"items": [
+				{
+					"item": "chromium",
+					"amount": 2
+				},
+				{
+					"item": "bismuth",
+					"amount": 1
+				}
+			]
+		},
+		"liquids": {
+			"liquids": [
+				{
+					"liquid": "arkycite",
+					"amount": 0.2
+				}
+			]
+		}
+	},
+	"requirements": [
+		{
+			"item": "carbide",
+			"amount": 85
+		},
+		{
+			"item": "cobalt",
+			"amount": 120
+		},
+		{
+			"item": "metaglass",
+			"amount": 80
+		},
+		{
+			"item": "chromium",
+			"amount": 50
+		}
+	],
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			{
+				"type": "DrawDefault"
+			},
+			{
+				"type": "DrawGlowRegion",
+				"color": "4bdebc",
+				"glowIntensity": 0.9
+			},
+			{
+				"type": "DrawArcSmelt",
+				"flameColor": "0bbfb9"
+			}
+		]
+	},
+	"category": "crafting",
+	"research": {
+		"parent": "light-carburator"
+	},
+	"idleSound": "fluxloop",
+	"idleSoundVolume": 0.1,
+	"researchCostMultiplier": 0.05
+}
