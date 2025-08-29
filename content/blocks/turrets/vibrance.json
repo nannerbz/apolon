@@ -156,7 +156,7 @@
                         "collides": false,
                         "despawnEffect": "none",
                         "speed": 0,
-                        "lifespan": 5,
+                        "lifespan": 2,
                         "fragOnHit": false,
                         "fragVelocityMin": 1,
                         "fragVelocityMax": 1,
@@ -175,20 +175,20 @@
                             "pierce": true,
                             "pierceCap": 300,
                             "pierceArmor": true,
-                            "speed": 12,
+                            "speed": 18,
                             "lifetime": 15,
                             "damage": 50,
                             "width": 20,
                             "height": 20,
-                            "trailInterval": 0.5,
+                            "trailInterval": 0.8,
                             "trailEffect": {
                                 "type": "WaveEffect",
-                                "colorFrom": "4b3799",
-                                "colorTo": "8a7ed9",
-                                "sizeTo": 8,
-                                "sizeFrom": 12,
+                                "colorFrom": "8a7ed9",
+                                "colorTo": "ffffff",
+                                "sizeTo": 0,
+                                "sizeFrom": 10,
                                 "lifetime": 15,
-                                "strokeFrom": 3
+                                "strokeFrom": 2
                             },
                             "spawnBullets": [
                                 {
@@ -196,7 +196,7 @@
                                     "collides": false,
                                     "despawnEffect": "none",
                                     "speed": 0,
-                                    "lifespan": 5,
+                                    "lifespan": 2,
                                     "fragOnHit": false,
                                     "fragVelocityMin": 1,
                                     "fragVelocityMax": 1,
@@ -215,20 +215,20 @@
                                         "pierce": true,
                                         "pierceCap": 300,
                                         "pierceArmor": true,
-                                        "speed": 12,
+                                        "speed": 18,
                                         "lifetime": 15,
-                                        "damage": 60,
+                                        "damage": 50,
                                         "width": 20,
                                         "height": 20,
-                                        "trailInterval": 0.5,
+                                        "trailInterval": 0.8,
                                         "trailEffect": {
                                             "type": "WaveEffect",
-                                            "colorFrom": "4b3799",
-                                            "colorTo": "8a7ed9",
-                                            "sizeTo": 8,
-                                            "sizeFrom": 12,
+                                            "colorFrom": "8a7ed9",
+                                            "colorTo": "ffffff",
+                                            "sizeTo": 0,
+                                            "sizeFrom": 10,
                                             "lifetime": 15,
-                                            "strokeFrom": 3
+                                            "strokeFrom": 2
                                         }
 
                                     }
