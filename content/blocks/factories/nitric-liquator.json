@@ -1,7 +1,7 @@
 {
 	"type": "GenericCrafter",
 	"name": "Nitric Liquator",
-	"description": "Uses cryofluid and methane to make cyanogen",
+	"description": "Uses Cryofluid, Acetylene, and Chromatic slag to make cyanogen",
 	"outputLiquid": {"liquid": "cyanogen", "amount": 2},
 	"size": 2,
 	"hasPower": true,
