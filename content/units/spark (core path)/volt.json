@@ -24,8 +24,8 @@ weapons: [
     {
         "name": "volt-w",
         "reload": 20,
-        "x": 5,
-        "y": 4,
+        "x": 6.25,
+        "y": 4.5,
         "shootSound": "bolt",
         "top": false,
         "shoot": {
