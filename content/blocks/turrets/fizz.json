@@ -25,6 +25,7 @@
 		]
 	}
     }
+    "ammoPerShot": 8
     "ammoTypes": {
                photoglass: {
     type: BasicBulletType

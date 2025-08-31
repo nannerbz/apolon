@@ -24,6 +24,7 @@
     "rotateSpeed": 3
     "shots": 1,
     "range": 650
+    "ammoPerShot": 6
     "ammoTypes": {
                kobra-alloy: {
     type: BasicBulletType
