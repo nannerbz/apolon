@@ -19,10 +19,10 @@ parts: [
 		"y": -16,
 		"type": "FlarePart",
 		"color1": "8c887b",
-		"color2" "dbd9d4",
+		"color2": "dbd9d4",
 		"followRotation": false,
 		"sides": 6,
-		"radiusTo": 12
+		"radiusTo": 12,
 		"layer": 59
 	}
 	{
@@ -30,7 +30,7 @@ parts: [
 		"y": -16,
 		"type": "FlarePart",
 		"color1": "8c887b",
-		"color2" "dbd9d4",
+		"color2": "dbd9d4",
 		"followRotation": false,
 		"sides": 6,
 		"radiusTo": 12,
@@ -41,7 +41,7 @@ parts: [
 		"y": 16,
 		"type": "FlarePart",
 		"color1": "8c887b",
-		"color2" "dbd9d4",
+		"color2": "dbd9d4",
 		"followRotation": false,
 		"sides": 6,
 		"radiusTo": 12,
@@ -52,7 +52,7 @@ parts: [
 		"y": 16,
 		"type": "FlarePart",
 		"color1": "8c887b",
-		"color2" "dbd9d4",
+		"color2": "dbd9d4",
 		"followRotation": false,
 		"sides": 6,
 		"radiusTo": 12,

@@ -15,7 +15,7 @@ parts: [
     {
         "type": "FlarePart",
         "color1": "8c887b",
-        "color2" "dbd9d4",
+        "color2": "dbd9d4",
         "followRotation": false,
         "sides": 3,
         "x": 0,
