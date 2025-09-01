@@ -14,12 +14,12 @@ range: 192
 		{
 			"type": "EffectSpawnerPart",
 			"effectColor": "c25757",
-			"useProgress": false,
-			"effectChance": 1,
+			"useProgress": true,
+			"progress": "reload",
 			"x": 0,
 			"y": 0,
-			"width": 0.1,
-			"height": 0.1,
+			"width": 1,
+			"height": 1,
 			"effect": {
 				"type": "ParticleEffect",
 				"colorFrom": "c25757",
@@ -31,6 +31,17 @@ range: 192
 				"sizeFrom": 3,
 				"sizeTo": 0
 			}
+		}
+		{
+			"type": "FlarePart",
+			"color1": "c25757",
+			"color2": "c99784",
+			"followRotation": true,
+			"sides": 6,
+			"x": 0,
+			"y": -3,
+			"radius": 9,
+			"stroke": 1
 		}
 ]
 weapons: [
