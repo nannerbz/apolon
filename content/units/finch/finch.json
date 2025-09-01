@@ -12,27 +12,6 @@ circleTarget: false
 range: 45
 	parts: [
 		{
-			"type": "EffectSpawnerPart",
-			"effectColor": "c25757",
-			"useProgress": true,
-			"progress": reload,
-			"x": 0,
-			"y": 0,
-			"width": 1,
-			"height": 1,
-			"effect": {
-				"type": "ParticleEffect",
-				"colorFrom": "c25757",
-				"colorTo": "c99784",
-				"lifetime": 10,
-				"length": 8,
-				"region": "circle-small",
-				"particles": 2,
-				"sizeFrom": 1,
-				"sizeTo": 0
-			}
-		}
-		{
 			"type": "FlarePart",
 			"color1": "c25757",
 			"color2": "c99784",
@@ -41,7 +20,8 @@ range: 45
 			"x": 0,
 			"y": -3,
 			"radius": 12,
-			"stroke": 1.5
+			"stroke": 1.5,
+			"layerOffset": 0.001
 		}
 ]
 weapons: [
