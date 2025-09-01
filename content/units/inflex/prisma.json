@@ -40,6 +40,17 @@ parts: [
 		"spinSpeed": 1,
 		"layer": 59
 	}
+	{
+		"type": "HoverPart",
+		"x": 0,
+		"Y": 0,
+		"radius": 16,
+		"phase": 90,
+		"stroke": 2,
+		"sides": 6,
+		"layerOffset": -0.001,
+		"color": "dbd9d4"
+	}
 ]
 weapons: [
 	{

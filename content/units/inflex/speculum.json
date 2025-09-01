@@ -13,6 +13,19 @@ itemCapacity: 60
 outlineColor: 222222
 armor: 7
 range: 220
+	abilities: [
+  {
+    type: ShieldArcAbility
+    max: 1300
+    regen: 0.2
+    cooldown: 600
+	x: 0
+	y: 8
+    whenShooting: true
+    region: apolon-speculum-shield
+    drawArc: false
+  }
+]
 parts: [
 	{
 		"x": 8,
@@ -22,8 +35,8 @@ parts: [
 		"color2": "dbd9d4",
 		"followRotation": false,
 		"sides": 6,
-		"radius": 12,
-		"stroke": 1.5,
+		"radius": 14,
+		"stroke": 2.5,
 		"spinSpeed": 1,
 		"layer": 59
 	}
@@ -35,8 +48,8 @@ parts: [
 		"color2": "dbd9d4",
 		"followRotation": false,
 		"sides": 6,
-		"radius": 12,
-		"stroke": 1.5,
+		"radius": 14,
+		"stroke": 2.5,
 		"spinSpeed": 1,
 		"layer": 59
 	}
@@ -48,8 +61,8 @@ parts: [
 		"color2": "dbd9d4",
 		"followRotation": false,
 		"sides": 6,
-		"radius": 12,
-		"stroke": 1.5,
+		"radius": 14,
+		"stroke": 2.5,
 		"spinSpeed": 1,
 		"layer": 59
 	}
@@ -61,17 +74,40 @@ parts: [
 		"color2": "dbd9d4",
 		"followRotation": false,
 		"sides": 6,
-		"radius": 12,
-		"stroke": 1.5,
+		"radius": 14,
+		"stroke": 2.5,
 		"spinSpeed": 1,
 		"layer": 59
+	}
+	{
+		"x": 0,
+		"y": -4,
+		"type": "FlarePart",
+		"color1": "8c887b",
+		"color2": "dbd9d4",
+		"followRotation": false,
+		"sides": 8,
+		"radius": 8,
+		"stroke": 3,
+		"spinSpeed": 3,
+	}
+	{
+		"type": "HoverPart",
+		"x": 0,
+		"Y": 0,
+		"radius": 24,
+		"phase": 90,
+		"stroke": 2,
+		"sides": 8,
+		"layerOffset": -0.001,
+		"color": "dbd9d4"
 	}
 ]
 weapons: [
 	{
 		name: speculum-w
-		reload: 20
-		x: 10
+		reload: 10
+		x: 9
 		y: -8
 		shootSound: bolt
 		top: true
@@ -92,7 +128,7 @@ weapons: [
 			"homingDelay": 3,
 			"homingRange": 256,
 			"speed": 11,
-			"damage": 60,
+			"damage": 20,
 			"lifetime": 20
 		}
 	}
