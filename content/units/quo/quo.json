@@ -13,7 +13,7 @@ health: 955
 hitSize: 14
 itemCapacity: 0
 outlineColor: 222222
-armour: 2
+armor: 1
 canBoost: true
 engineOffset: 0
 range: 125
@@ -22,9 +22,10 @@ parts: [
 		type: HoverPart
 		x: 0
 		Y: 0
-		radius: 7
+		radius: 8
 		phase: 90
 		stroke: 1
+		sides: 100
 		layerOffset: -0.001
 		color: cf926a
 	}

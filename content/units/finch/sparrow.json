@@ -10,6 +10,27 @@ itemCapacity: 10
 outlineColor: 222222
 circleTarget: false
 range: 192
+	parts: [
+		{
+			"type": "EffectSpawnerPart",
+			"effectColor": "c25757",
+			"x": 0,
+			"y": 0,
+			"width": 0.1,
+			"height": 0.1,
+			"effect": {
+				"type": "ParticleEffect",
+				"colorFrom": "c25757",
+				"colorTo": "c99784",
+				"lifetime": 15,
+				"length": 16,
+				"region": "circle-small",
+				"particles": 4,
+				"sizeFrom": 3,
+				"sizeTo": 0
+			}
+		}
+]
 weapons: [
 	{
 		"name": "sparrow-w",
@@ -17,7 +38,7 @@ weapons: [
 			"type": "shootAlternate",
 			"shots": 2,
 			"barrels": 2,
-			"x": 2
+			"x": 6
 		},
 		"reload": 128,
 		"x": 0,

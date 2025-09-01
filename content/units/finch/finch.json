@@ -10,6 +10,27 @@ itemCapacity: 0
 outlineColor: 222222
 circleTarget: false
 range: 45
+	parts: [
+		{
+			"type": "EffectSpawnerPart",
+			"effectColor": "c25757",
+			"x": 0,
+			"y": 0,
+			"width": 0.1,
+			"height": 0.1,
+			"effect": {
+				"type": "ParticleEffect",
+				"colorFrom": "c25757",
+				"colorTo": "c99784",
+				"lifetime": 10,
+				"length": 8,
+				"region": "circle-small",
+				"particles": 2,
+				"sizeFrom": 1,
+				"sizeTo": 0
+			}
+		}
+]
 weapons: [
 	{
 		name: finch-w

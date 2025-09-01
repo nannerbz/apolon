@@ -6,6 +6,7 @@ accel: 0.06
 drag: 0.04
 health: 17560
 hitSize: 36
+armor: 11
 itemCapacity: 0
 outlineColor: 222222
 engineOffset: 20

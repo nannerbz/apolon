@@ -8,7 +8,7 @@
 	lowAltitude: true
 	loopSound: missileTrail
 	loopSoundVolume: 1.5
-	deathSound: largeExplosion
+	deathSound: caboom
 	targetAir: true
 	speed: 4
 	lifetime: 64
@@ -53,7 +53,7 @@
 				]
 			}
 			shootOnDeath: true
-			shake: 10
+			shake: 4
 			bullet: {
 				type: ExplosionBulletType
 				splashDamage: 64

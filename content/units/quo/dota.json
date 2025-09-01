@@ -9,7 +9,7 @@ health: 1475
 hitSize: 18
 itemCapacity: 0
 outlineColor: 222222
-armour: 4
+armor: 2
 range: 95
 parts: [
 	{

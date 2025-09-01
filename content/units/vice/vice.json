@@ -9,7 +9,7 @@ health: 655
 hitSize: 14
 itemCapacity: 0
 outlineColor: 222222
-armour: 3
+armor: 1
 buildSpeed: 0.2
 boostMultiplier: 1.5
 canBoost: true
