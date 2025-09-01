@@ -20,7 +20,10 @@ parts: [
         "sides": 3,
         "x": 0,
         "y": -3,
-        "layer": 59
+        "layer": 59,
+        "radius": 8,
+        "stroke": 1.5,
+        "spinSpeed": 1
     }
 ]
 weapons: [

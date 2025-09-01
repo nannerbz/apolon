@@ -22,7 +22,9 @@ parts: [
 		"color2": "dbd9d4",
 		"followRotation": false,
 		"sides": 6,
-		"radiusTo": 12,
+		"radius": 12,
+		"stroke": 1.5,
+		"spinSpeed": 1,
 		"layer": 59
 	}
 	{
@@ -33,7 +35,9 @@ parts: [
 		"color2": "dbd9d4",
 		"followRotation": false,
 		"sides": 6,
-		"radiusTo": 12,
+		"radius": 12,
+		"stroke": 1.5,
+		"spinSpeed": 1,
 		"layer": 59
 	}
 	{
@@ -44,7 +48,9 @@ parts: [
 		"color2": "dbd9d4",
 		"followRotation": false,
 		"sides": 6,
-		"radiusTo": 12,
+		"radius": 12,
+		"stroke": 1.5,
+		"spinSpeed": 1,
 		"layer": 59
 	}
 	{
@@ -55,7 +61,9 @@ parts: [
 		"color2": "dbd9d4",
 		"followRotation": false,
 		"sides": 6,
-		"radiusTo": 12,
+		"radius": 12,
+		"stroke": 1.5,
+		"spinSpeed": 1,
 		"layer": 59
 	}
 ]

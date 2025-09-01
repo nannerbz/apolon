@@ -14,6 +14,8 @@ range: 45
 		{
 			"type": "EffectSpawnerPart",
 			"effectColor": "c25757",
+			"useProgress": false,
+			"effectChance": 1,
 			"x": 0,
 			"y": 0,
 			"width": 0.1,
