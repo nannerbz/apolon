@@ -15,8 +15,8 @@ armor: 7
 range: 220
 parts: [
 	{
-		"x": 16,
-		"y": -16,
+		"x": 8,
+		"y": -8,
 		"type": "FlarePart",
 		"color1": "8c887b",
 		"color2": "dbd9d4",
@@ -28,8 +28,8 @@ parts: [
 		"layer": 59
 	}
 	{
-		"x": -16,
-		"y": -16,
+		"x": -8,
+		"y": -8,
 		"type": "FlarePart",
 		"color1": "8c887b",
 		"color2": "dbd9d4",
@@ -41,8 +41,8 @@ parts: [
 		"layer": 59
 	}
 	{
-		"x": -16,
-		"y": 16,
+		"x": -8,
+		"y": 8,
 		"type": "FlarePart",
 		"color1": "8c887b",
 		"color2": "dbd9d4",
@@ -54,8 +54,8 @@ parts: [
 		"layer": 59
 	}
 	{
-		"x": 16,
-		"y": 16,
+		"x": 8,
+		"y": 8,
 		"type": "FlarePart",
 		"color1": "8c887b",
 		"color2": "dbd9d4",
@@ -71,8 +71,8 @@ weapons: [
 	{
 		name: speculum-w
 		reload: 20
-		x: 20
-		y: -16
+		x: 10
+		y: -8
 		shootSound: bolt
 		top: true
 		mirror: true
