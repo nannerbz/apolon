@@ -105,7 +105,7 @@ parts: [
 weapons: [
 	{
 		name: speculum-w
-		reload: 10
+		reload: 5
 		x: 9
 		y: -8
 		shootSound: bolt
@@ -127,7 +127,7 @@ weapons: [
 			"homingDelay": 3,
 			"homingRange": 256,
 			"speed": 11,
-			"damage": 20,
+			"damage": 35,
 			"lifetime": 20
 		}
 	}
