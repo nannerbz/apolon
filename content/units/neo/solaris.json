@@ -2,7 +2,7 @@ type: legs
 name: Solaris
 speed: 0.35
 health: 12500
-armor: 6
+armor: 9
 drag: 0.2
 rotateSpeed: 3
 rotateShoot: true

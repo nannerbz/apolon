@@ -10,6 +10,20 @@ itemCapacity: 10
 outlineColor: 222222
 circleTarget: false
 range: 192
+	parts: [
+		{
+			"type": "FlarePart",
+			"color1": "c25757",
+			"color2": "c99784",
+			"followRotation": true,
+			"sides": 6,
+			"x": 0,
+			"y": -3,
+			"radius": 9,
+			"stroke": 1,
+			"layerOffset": 0.001
+		}
+]
 weapons: [
 	{
 		"name": "sparrow-w",
@@ -17,7 +31,7 @@ weapons: [
 			"type": "shootAlternate",
 			"shots": 2,
 			"barrels": 2,
-			"x": 2
+			"x": 6
 		},
 		"reload": 128,
 		"x": 0,

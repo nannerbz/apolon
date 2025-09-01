@@ -11,7 +11,7 @@ targetGround: true,
 hitSize: 24
 itemCapacity: 0
 outlineColor: 222222
-armour: 12
+armor: 7
 range: 425
 parts: [
 	{

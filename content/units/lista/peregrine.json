@@ -6,7 +6,7 @@ accel: 0.05
 drag: 0.04
 health: 1350
 hitSize: 48
-armor: 2
+armor: 9
 itemCapacity: 0
 outlineColor: 222222
 range: 125

@@ -1,5 +1,6 @@
 template: UnitType
 name: Pion
+armor: 3
 flying: true
 speed: 1.9
 accel: 0.05

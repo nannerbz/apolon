@@ -10,6 +10,20 @@ itemCapacity: 0
 outlineColor: 222222
 circleTarget: false
 range: 45
+	parts: [
+		{
+			"type": "FlarePart",
+			"color1": "c25757",
+			"color2": "c99784",
+			"followRotation": true,
+			"sides": 4,
+			"x": 0,
+			"y": -3,
+			"radius": 12,
+			"stroke": 1.5,
+			"layerOffset": 0.001
+		}
+]
 weapons: [
 	{
 		name: finch-w

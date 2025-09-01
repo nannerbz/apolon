@@ -4,7 +4,7 @@ speed: 0.6
 health: 955
 omniMovement: false
 rotateSpeed: 3
-armor: 2
+armor: 5
 treadPullOffset: 3
 rotateShooting: false
 shootSound: lasershoot

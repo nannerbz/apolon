@@ -1,0 +1,134 @@
+type: hover
+name: Speculum
+hovering: true
+rotateShooting: true
+speed: 1.3
+accel: 0.3
+drag: 0.08
+health: 4350
+targetAir: true,
+targetGround: true,
+hitSize: 26
+itemCapacity: 60
+outlineColor: 222222
+armor: 7
+range: 220
+	abilities: [
+  {
+    type: ShieldArcAbility
+    max: 1300
+    regen: 0.2
+    cooldown: 600
+	x: 0
+	y: 8
+    whenShooting: true
+    region: apolon-speculum-shield
+    drawArc: false
+  }
+]
+parts: [
+	{
+		"x": 8,
+		"y": -8,
+		"type": "FlarePart",
+		"color1": "8c887b",
+		"color2": "dbd9d4",
+		"followRotation": false,
+		"sides": 6,
+		"radius": 10,
+		"stroke": 4,
+		"spinSpeed": 4,
+		"layer": 59
+	}
+	{
+		"x": -8,
+		"y": -8,
+		"type": "FlarePart",
+		"color1": "8c887b",
+		"color2": "dbd9d4",
+		"followRotation": false,
+		"sides": 6,
+		"radius": 10,
+		"stroke": 4,
+		"spinSpeed": 4,
+		"layer": 59
+	}
+	{
+		"x": -8,
+		"y": 8,
+		"type": "FlarePart",
+		"color1": "8c887b",
+		"color2": "dbd9d4",
+		"followRotation": false,
+		"sides": 6,
+		"radius": 10,
+		"stroke": 4,
+		"spinSpeed": 4,
+		"layer": 59
+	}
+	{
+		"x": 8,
+		"y": 8,
+		"type": "FlarePart",
+		"color1": "8c887b",
+		"color2": "dbd9d4",
+		"followRotation": false,
+		"sides": 6,
+		"radius": 10,
+		"stroke": 4,
+		"spinSpeed": 4,
+		"layer": 59
+	}
+	{
+		"x": 0,
+		"y": -4,
+		"type": "FlarePart",
+		"color1": "8c887b",
+		"color2": "dbd9d4",
+		"followRotation": false,
+		"sides": 8,
+		"radius": 18,
+		"stroke": 0.5,
+	}
+	{
+		"type": "HoverPart",
+		"x": 0,
+		"Y": 0,
+		"radius": 24,
+		"phase": 90,
+		"stroke": 2,
+		"sides": 8,
+		"layerOffset": -0.001,
+		"color": "dbd9d4"
+	}
+]
+weapons: [
+	{
+		name: speculum-w
+		reload: 5
+		x: 9
+		y: -8
+		shootSound: bolt
+		top: true
+		mirror: true
+		rotate: true
+		bullet: {
+			"type": "basicBulletType",
+			"width": 8,
+			"height": 12,
+			"hitSize": 3,
+			"backColor": "dbd9d4",
+			"frontColor": "8c887b",
+			"trailColor": "dbd9d4",
+			"trailLength": 2,
+			"trailWidth": 4,
+			"collidesAir": true,
+			"homingPower": 0.6,
+			"homingDelay": 3,
+			"homingRange": 256,
+			"speed": 11,
+			"damage": 35,
+			"lifetime": 20
+		}
+	}
+]
