@@ -32,7 +32,7 @@ consumes: {
                 amount: 32
             },
             {
-                item: kobra-alloy
+                item: kobra-alloy-item
                 amount: 12
             },
             carbide/24

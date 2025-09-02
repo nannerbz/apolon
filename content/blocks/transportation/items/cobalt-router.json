@@ -6,8 +6,8 @@
 	regionRotated1: 1
 	solid: false
 	requirements: [
-		cobalt/5
-		bismuth/5
+		cobalt-item/5
+		bismuth-item/5
 	]
 	research: cobalt-duct
 	researchCostMultiplier: 0.25

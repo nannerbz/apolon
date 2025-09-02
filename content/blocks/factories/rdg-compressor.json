@@ -12,8 +12,8 @@
 	category: power
 	generateEffect: blastExplosion
 	requirements: [
-	  cobalt/25
-	  bismuth/35
+	  cobalt-item/25
+	  bismuth-item/35
 	  metaglass/20
 	  carbide/15
 	]

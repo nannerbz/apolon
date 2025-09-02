@@ -1,6 +1,6 @@
 {
 	"type": "Floor",
 	"name": "Pearl Dust"
-	"itemDrop": "pearl-dust"
+	"itemDrop": "pearl-dust-item"
 	"variants": 3
 }

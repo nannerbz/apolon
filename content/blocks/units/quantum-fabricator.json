@@ -17,8 +17,8 @@
 			unit: vat
 			requirements: [
 				carbide/6
-				rad-snow/4
-				chromium/4
+				rad-snow-item/4
+				chromium-item/4
 			]
 			time: 350
 		}
@@ -27,7 +27,7 @@
 			requirements: [
 				carbide/8
 				metaglass/6
-				neodymium/4
+				neodymium-item/4
 			]
 			time: 300
 		}
@@ -35,7 +35,7 @@
 			unit: finch
 			requirements: [
 				carbide/4
-				rad-snow/8
+				rad-snow-item/8
 			]
 			time: 275
 		}

@@ -33,7 +33,7 @@
 		{ "item": "kobra-alloy-item", "amount": 40 }
 		{ "item": "cobalt-item", "amount": 100 }
 		{ "item": "metaglass", "amount": 60 }
-		{ "item": "chromium", "amount": 50 }
+		{ "item": "chromium-item", "amount": 50 }
 	],
 	"category": "crafting",
 	  "research": {

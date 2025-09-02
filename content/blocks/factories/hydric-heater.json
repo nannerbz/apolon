@@ -18,7 +18,7 @@ ambientSound: hum
 requirements: [
 	cobalt-item/50
 	metaglass/40
-	carbide-item/30
+	carbide/30
 ]
 	drawer: {
 	    type: DrawMulti

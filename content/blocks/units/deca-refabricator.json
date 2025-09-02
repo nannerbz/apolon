@@ -31,7 +31,7 @@ consumes: {
                 amount: 14
             },
             {
-                item: cobalt
+                item: cobalt-item
                 amount: 18
             },
             carbide/16

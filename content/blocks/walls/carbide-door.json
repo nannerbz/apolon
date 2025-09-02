@@ -4,7 +4,7 @@ health: 280
 category: defense
 size: 1
 requirements: [
-	carbide-item/6
+	carbide/6
 	bismuth-item/3
 	neodymium-item/6
 ]

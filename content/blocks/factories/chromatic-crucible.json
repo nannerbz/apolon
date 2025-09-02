@@ -27,7 +27,7 @@
 		"items": {
 			"items": [
 				{
-					"item": "chromium",
+					"item": "chromium-item",
 					"amount": 2
 				},
 			]

@@ -17,7 +17,7 @@
 			"items": [
 				{ "item": "neodymium-item", "amount": 1 }
 				{ "item": "carbide", "amount": 1 }
-				{ "item": "tungsten-item", "amount": 3 }
+				{ "item": "tungsten", "amount": 3 }
 			]
                 }
 		"liquids": {

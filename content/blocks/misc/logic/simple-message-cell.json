@@ -4,7 +4,7 @@ description: Displays a message, can be controlled with processors.
 size: 1
 requirements: [
 	cobalt-item/5
-	carbide-item/5
+	carbide/5
 ]
 	  "research": {
 		parent: simple-processor

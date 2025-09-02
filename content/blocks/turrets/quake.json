@@ -22,7 +22,7 @@
     "shots": 1,
     "range": 288
     "ammoTypes": {
-        "chromium": {
+        "chromium-item": {
             "type": "MissileBulletType",
             "trailWidth": 3,
             "trailLength": 25,
@@ -96,7 +96,7 @@
             "statusDuration": 120,
             "reloadMultiplier": 0.7
         },
-        "flux": {
+        "flux-item": {
             "type": "BasicBulletType",
             "trailWidth": 4,
             "trailLength": 5,

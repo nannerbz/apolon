@@ -1,7 +1,7 @@
 {
 	"type": "Floor",
 	"name": "Rad Snow Floor"
-	"itemDrop": "rad-snow"
+	"itemDrop": "rad-snow-item"
 	"variants": 4
 	"lowPriority": true
 }

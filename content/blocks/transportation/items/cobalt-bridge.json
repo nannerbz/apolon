@@ -5,7 +5,7 @@
 	speed: 4
 	requirements: [
 		cobalt-item/5
-		bismuth/5
+		bismuth-item/5
 	]
 	research: cobalt-duct
 	researchCostMultiplier: 0.25

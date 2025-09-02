@@ -13,7 +13,7 @@ buildCost: 35
 squareSprite: false
 requirements: [
   cobalt-item/1250
-  metaglass-item/1000
+  metaglass/1000
   chromium-item/500
   neodymium-item/750
 ]

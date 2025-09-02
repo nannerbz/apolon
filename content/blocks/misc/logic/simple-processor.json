@@ -5,7 +5,7 @@ instructionsPerTick: 4
 size: 1
 requirements: [
 	cobalt-item/10
-	carbide-item/10
+	carbide/10
 ]
 range: 32
 	  "research": {
