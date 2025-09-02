@@ -43,7 +43,7 @@
 	},
 	"requirements": [
 		{
-			"item": "carbide-item",
+			"item": "carbide",
 			"amount": 85
 		},
 		{
