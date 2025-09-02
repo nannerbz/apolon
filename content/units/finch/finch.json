@@ -21,7 +21,7 @@ range: 45
 			"y": -3,
 			"radius": 12,
 			"stroke": 1.5,
-			"layerOffset": 0.001
+			"layer": 116
 		}
 ]
 weapons: [

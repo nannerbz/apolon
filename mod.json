@@ -8,17 +8,20 @@ Discord: fandslimu
   "version": 1.0
   "minGameVersion": 150
     "contentOrder": [
-		# Items
+        #Items
         "cobalt",
         "bismuth",
         "pearl-dust",
         "rad-snow",
-        "neodymium",
         "chromium",
+        "neodymium",
         "kobra-alloy",
+        "flux",
         "photoglass",
+        "technetium",
         "hypersteel",
-		# Units
+        "hyemos"
+        #Units
         "spark",
         "volt",
         "neo",
@@ -40,31 +43,47 @@ Discord: fandslimu
         "argo",
         "corsair",
         "enigma",
-		# Turrets
+        "quo",
+        "dota",
+        "logos",
+        "sophia",
+        "vat",
+        "vessel",
+        "vitrine",
+        "finch",
+        "sparrow",
+        "condor",
+        "inflex",
+        "refract",
+        "speculum",
+        #Turrets
         "dart",
         "chisel",
         "blast",
         "chip",
-	"dash"
+        "dash",
         "aero",
         "vacuum",
-	"quake",
-	"praetorium",
-	"lapse",
+        "quake",
+        "vibrance",
+        "praetorium",
+        "lapse",
         "bit",
         "acrylon",
         "rust",
         "fizz",
-        "ascention",
-        "schasm",
+        "tension",
         "clang",
-		# Drills
+        "schasm",
+        "ascention",
+        "apotheosis"
+        #Drills
         "cobalt-extractor",
         "fuge-extractor",
         "tungsten-extractor",
         "hydrodenser",
         "acetylene-condenser",
-		# Transport
+        #Transport
         "cobalt-duct",
         "neo-duct",
         "cobalt-router",
@@ -72,14 +91,14 @@ Discord: fandslimu
         "cobalt-overload",
         "cobalt-underload",
         "cobalt-unloader",
-		# Liquids
+        #Liquids
         "bismuth-conduit",
         "bismuth-junction",
         "bismuth-router",
         "bismuth-bridge",
         "cobalt-pump",
         "industrial-tank",
-		# Power
+        #Power
         "ion-link",
         "ion-tether",
         "ion-tower",
@@ -92,7 +111,7 @@ Discord: fandslimu
         "acetylene-burner",
         "gas-combuster",
         "arkycitic-steamer",
-		# Walls
+        #Walls
         "cobalt-wall",
         "large-cobalt-wall",
         "blast-carbide-wall",
@@ -105,7 +124,7 @@ Discord: fandslimu
         "large-kobra-wall",
         "carbide-door",
         "large-carbide-door",
-		# Factories
+        #Factories
         "fusible-conduit",
         "fusible-router",
         "rdg-heater",
@@ -123,8 +142,8 @@ Discord: fandslimu
         "monolitic-torch",
         "nitric-liquator",
         "hydric-mixer",
-	"stone-liquator",
-		# Units
+        "stone-liquator",
+        #Units
         "crawl-fabricator",
         "airborne-fabricator",
         "float-fabricator",
@@ -142,15 +161,16 @@ Discord: fandslimu
         "airborne-reformer",
         "float-reformer",
         "ufo-reformer",
-		# Effect
+        #Effect
         "ash",
         "magma",
         "cobalt-container",
         "cobalt-radar",
+        "threat-tracker"
         "bismuth-mender",
         "advanced-bismuth-mender",
         "hyper-bismuth-mender",
-		# Logic
+        #Logic
         "simple-processor",
         "advanced-processor",
         "simple-memory-cell",
@@ -159,6 +179,6 @@ Discord: fandslimu
         "advanced-display-cell",
         "hyper-display-cell",
         "simple-message-cell",
-        "processor-switch",
+        "processor-switch"
     ]
 }

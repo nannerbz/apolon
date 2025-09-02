@@ -5,7 +5,7 @@ health: 8600
 omniMovement: false
 rotateSpeed: 2.3
 armor: 11
-treadPullOffset: 6
+treadPullOffset: 8
 rotateShooting: false
 shootSound: lasershoot
 hitSize: 30

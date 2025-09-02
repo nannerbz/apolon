@@ -1,56 +1,58 @@
 template: UnitType
 name: Sparrow
 flying: true
-speed: 2
+speed: 1.7
 accel: 0.07
 drag: 0.04
-health: 1650
+health: 2800
 hitSize: 22
 itemCapacity: 10
 outlineColor: 222222
 circleTarget: false
-range: 192
+range: 240
 	parts: [
 		{
 			"type": "FlarePart",
 			"color1": "c25757",
 			"color2": "c99784",
 			"followRotation": true,
-			"sides": 6,
+			"sides": 7,
 			"x": 0,
 			"y": -3,
 			"radius": 9,
 			"stroke": 1,
-			"layer": 116
+			"layer":116
 		}
 ]
 weapons: [
 	{
-		"name": "sparrow-w",
+		"name": "condor-w",
 		"shoot": {
-			"type": "shootAlternate",
-			"shots": 2,
-			"barrels": 2,
-			"x": 6
+			"type": "shootPattern",
+			"shotDelay": 6,
+			"shots": 3
 		},
-		"reload": 128,
-		"x": 0,
-		"y": 2,
+		"reload": 80,
+		"x": 2,
+		"y": 8,
+		"baseRotation": 20,
+		"top": true,
+		"layerOffset": -2,
 		"shootSound": "Pulse",
 		"rotate": false,
 		"bullet": {
 			"type": "BasicBulletType",
 			"damage": 80,
 			"pierceArmor": true,
-			"speed": 5,
+			"speed": 6,
 			"width": 8,
 			"length": 12,
-			"lifetime": 38.4,
+			"lifetime": 40,
 			"backColor": "c74567",
 			"frontColor": "c74567",
 			"trailColor": "c74567",
-			"trailLength": 8,
-			"trailWidth": 4,
+			"trailLength": 3,
+			"trailWidth": 3,
 			"shootEffect": "shootSmall",
 			"smokeEffect": "shootSmallSmoke"
 		}
