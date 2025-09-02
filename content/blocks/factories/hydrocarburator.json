@@ -24,8 +24,8 @@
 	}
 	
 	requirements: [
-		{ "item": "cobalt", "amount": 250 }
-		{ "item": "bismuth", "amount": 80 }
+		{ "item": "cobalt-item", "amount": 250 }
+		{ "item": "bismuth-item", "amount": 80 }
 		{ "item": "carbide", "amount": 40 }
 		{ "item": "metaglass", "amount": 50 }
 	]

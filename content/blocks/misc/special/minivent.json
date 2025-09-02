@@ -9,7 +9,7 @@
 	"ambientSoundVolume": 0.08,
 	"category": "effect",
 	"requirements": [
-		"cobalt/20"
+		"cobalt-item/20"
 	],
 	"buildVisibility": "editorOnly"
 }

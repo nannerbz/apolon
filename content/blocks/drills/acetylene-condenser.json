@@ -28,11 +28,11 @@
 	liquidCapacity: 100
 	category: production
 	requirements: [
-	  cobalt/65
+	  cobalt-item/65
 	  carbide/75
-	  bismuth/95
+	  bismuth-item/95
 	  metaglass/75
-	  neodymium/45
+	  neodymium-item/45
 	]
 	drawer: {
 		type: DrawMulti

@@ -12,7 +12,7 @@ ambientSound: hum
 	consumes: {
 		items: {
 			items: [
-				{ "item": "neodymium", "amount": 1 }
+				{ "item": "neodymium-item", "amount": 1 }
 			]
 		}
 		liquids: {
@@ -22,11 +22,11 @@ ambientSound: hum
 		}
 	}
 requirements: [
-	cobalt/30
+	cobalt-item/30
 	metaglass/25
 	carbide/20
-	neodymium/25
-	chromium/20
+	neodymium-item/25
+	chromium-item/20
 ]
 research: rdg-heater
 researchCostMultiplier: 0.02

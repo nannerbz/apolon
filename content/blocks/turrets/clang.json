@@ -26,7 +26,7 @@
     "range": 650
     "ammoPerShot": 6
     "ammoTypes": {
-               kobra-alloy: {
+               kobra-alloy-item: {
     type: BasicBulletType
     trailWidth: 4
     trailLength: 18
@@ -171,15 +171,15 @@
             "amount": 125
         },
         {
-            "item": "cobalt",
+            "item": "cobalt-item",
             "amount": 345
         },
         {
-            "item": "photoglass",
+            "item": "photoglass-item",
             "amount": 85
         },
         {
-            "item": "neodymium",
+            "item": "neodymium-item",
             "amount": 120
         }
     ],

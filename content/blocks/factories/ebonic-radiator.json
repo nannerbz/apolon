@@ -10,8 +10,8 @@
 	ambientSoundVolume: 0.04
 	category: power
 	requirements: [
-	  cobalt/15
-	  bismuth/20
+	  cobalt-item/15
+	  bismuth-item/20
 	]
 	drawer: {
 	    type: DrawMulti

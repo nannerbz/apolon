@@ -12,11 +12,11 @@
 
   "requirements": [
     {
-      "item": "cobalt",
+      "item": "cobalt-item",
       "amount": 25
     },
     {
-      "item": "bismuth",
+      "item": "bismuth-item",
       "amount": 20
     },
     {

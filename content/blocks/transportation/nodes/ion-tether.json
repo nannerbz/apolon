@@ -7,10 +7,10 @@
     size: 3
     range: 16
     requirements: [
-           { "item": "bismuth", "amount": 50 }
+           { "item": "bismuth-item", "amount": 50 }
            { "item": "carbide", "amount": 25 }
            { "item": "metaglass", "amount": 35 }
-           { "item": "neodymium", "amount": 25 }
+           { "item": "neodymium-item", "amount": 25 }
     ]
     researchCostMultiplier: 0.05
     research: ion-link

@@ -4,8 +4,8 @@ description: Shows images given to it by processors. Can handle much larger imag
 size: 5
 displaySize: 144
 requirements: [
-	cobalt/75
-	bismuth/75
+	cobalt-item/75
+	bismuth-item/75
 	carbide/75
 ]
 	  "research": {

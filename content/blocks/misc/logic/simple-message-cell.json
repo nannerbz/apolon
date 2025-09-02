@@ -3,8 +3,8 @@ name: Simple Message Cell
 description: Displays a message, can be controlled with processors.
 size: 1
 requirements: [
-	cobalt/5
-	carbide/5
+	cobalt-item/5
+	carbide-item/5
 ]
 	  "research": {
 		parent: simple-processor

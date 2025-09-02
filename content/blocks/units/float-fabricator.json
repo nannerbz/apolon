@@ -8,7 +8,7 @@
 	}
 
 	requirements: [
-		bismuth/65
+		bismuth-item/65
 		carbide/45
 		metaglass/55
 	]
@@ -18,17 +18,17 @@
 			unit: quo
 			requirements: [
 				carbide/8
-				chromium/6
+				chromium-item/6
 			]
-			time: 1655
+			time: 2520
 		}
 		{
 			unit: vice
 			requirements: [
 				carbide/8
-				pearl-dust/4
+				pearl-dust-item/4
 			]
-			time: 840
+			time: 1200
 		}
 	]
 	category: units

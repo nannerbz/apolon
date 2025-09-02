@@ -6,7 +6,7 @@
 	speed: 5
 	bridgeReplacement: cobalt-bridge
 	requirements: [
-		cobalt/2
+		cobalt-item/2
 	]
 	research: ash
 	researchCostMultiplier: 0.15

@@ -11,7 +11,7 @@ researchCostMultiplier: 0.05
 requirements: [
 	carbide/50
 	metaglass/75
-	cobalt/50
-	bismuth/25
+	cobalt-item/50
+	bismuth-item/25
 ]
 category: liquid

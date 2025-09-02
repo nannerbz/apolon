@@ -9,17 +9,17 @@
 
 	requirements: [
 		carbide/35
-		bismuth/65
+		bismuth-item/65
 	]
 
 	plans: [
 		{
 			unit: quark
 			requirements: [
-				bismuth/10
+				bismuth-item/10
 				carbide/4
 			]
-			time: 1080
+			time: 1440
 		}
 		{
 			unit: lista
@@ -27,7 +27,7 @@
 				metaglass/6
 				carbide/12
 			]
-			time: 975
+			time: 2280
 		}
 	]
 	category: units

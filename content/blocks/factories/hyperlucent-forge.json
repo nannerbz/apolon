@@ -2,7 +2,7 @@
 	"type": "HeatCrafter",
 	"name": "Hyperlucent Forge",
 	"description": "Uses Neodymium, Carbide, Tungsten, Heat, And power to make Hypersteel.",
-	"outputItem": {"item": "hypersteel", "amount": 3},
+	"outputItem": {"item": "hypersteel-item", "amount": 3},
 	"size": 5,
 	"hasPower": true,
 	"hasItems": true,
@@ -15,9 +15,9 @@
 		power: 2
 		"items": {
 			"items": [
-				{ "item": "neodymium", "amount": 1 }
+				{ "item": "neodymium-item", "amount": 1 }
 				{ "item": "carbide", "amount": 1 }
-				{ "item": "tungsten", "amount": 3 }
+				{ "item": "tungsten-item", "amount": 3 }
 			]
                 }
 		"liquids": {
@@ -27,12 +27,12 @@
 	},
 	"requirements": [
 		{ "item": "carbide", "amount": 120 }
-		{ "item": "cobalt", "amount": 240 }
-		{ "item": "neodymium", "amount": 120 }
-		{ "item": "cryogel", "amount": 80 }
-		{ "item": "kobra-alloy", "amount": 100 }
+		{ "item": "cobalt-item", "amount": 240 }
+		{ "item": "neodymium-item", "amount": 120 }
+		{ "item": "cryogel-item", "amount": 80 }
+		{ "item": "kobra-alloy-item", "amount": 100 }
 		{ "item": "tungsten", "amount": 60 }
-		{ "item": "photoglass", "amount": 80 }
+		{ "item": "photoglass-item", "amount": 80 }
 	],
 	"category": "crafting",
 	"research": "nanotech-dry-stainer",

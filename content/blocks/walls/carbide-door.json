@@ -4,9 +4,9 @@ health: 280
 category: defense
 size: 1
 requirements: [
-	carbide/6
-	bismuth/3
-	cobalt/3
+	carbide-item/6
+	bismuth-item/3
+	neodymium-item/6
 ]
 research: blast-carbide-wall
 researchCostMultiplier: 0.05

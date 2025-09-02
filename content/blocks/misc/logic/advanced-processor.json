@@ -4,7 +4,7 @@ description: used to control, locate, and do lots of advanced things. Bigger and
 instructionsPerTick: 8
 size: 2
 requirements: [
-	cobalt/25
+	cobalt-item/25
 	carbide/25
 ]
 range: 128

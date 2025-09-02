@@ -5,8 +5,8 @@ category: defense
 size: 2
 requirements: [
 	carbide/24
-	bismuth/12
-	cobalt/12
+	bismuth-item/12
+	neodymium-item/24
 ]
 research: carbide-door
 researchCostMultiplier: 0.05

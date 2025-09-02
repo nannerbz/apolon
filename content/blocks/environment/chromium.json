@@ -1,5 +1,5 @@
 {
 	"type": "OreBlock",
-	"itemDrop": "chromium"
+	"itemDrop": "chromium-item"
 	"variants": 3
 }

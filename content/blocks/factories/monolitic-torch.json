@@ -16,10 +16,10 @@ ambientSound: hum
 		}
 	}
 requirements: [
-	cobalt/50
+	cobalt-item/50
 	metaglass/40
-	chromium/30
-	neodymium/40
+	chromium-item/30
+	neodymium-item/40
 ]
 research: methanization-plant
 researchCostMultiplier: 0.02

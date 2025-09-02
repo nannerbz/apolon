@@ -16,9 +16,9 @@ ambientSound: hum
 		}
 	}
 requirements: [
-	cobalt/50
+	cobalt-item/50
 	metaglass/40
-	carbide/30
+	carbide-item/30
 ]
 	drawer: {
 	    type: DrawMulti

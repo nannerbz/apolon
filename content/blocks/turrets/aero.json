@@ -97,11 +97,11 @@
     },
     "requirements": [
         {
-            "item": "bismuth",
+            "item": "bismuth-item",
             "amount": 85
         },
         {
-            "item": "cobalt",
+            "item": "cobalt-item",
             "amount": 75
         },
         {

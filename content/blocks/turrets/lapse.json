@@ -47,9 +47,9 @@
 	}
 	"requirements": [
 		"carbide/85",
-		"cobalt/120",
+		"cobalt-item/120",
 		"metaglass/85",
-		"neodymium/35",
+		"neodymium-item/35",
 	],
 	"drawer": {
 		"type": "DrawTurret",

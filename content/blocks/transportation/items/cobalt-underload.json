@@ -8,7 +8,7 @@
 	solid: false
 	invert: true
 	requirements: [
-		cobalt/2
+		cobalt-item/2
 		carbide/2
 	]
 	research: cobalt-overload

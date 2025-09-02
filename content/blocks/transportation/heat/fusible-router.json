@@ -13,7 +13,7 @@ regionRotated1: 1
 		]
 	}
 requirements: [
-	bismuth/12
+	bismuth-item/12
 	carbide/12
 	metaglass/8
 ]

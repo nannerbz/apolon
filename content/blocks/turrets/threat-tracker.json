@@ -34,11 +34,11 @@
     },
     "requirements": [
         {
-            "item": "cobalt",
+            "item": "cobalt-item",
             "amount": 30
         },
         {
-            "item": "neodymium",
+            "item": "carbide",
             "amount": 20
         },
         {
@@ -63,6 +63,7 @@
         ]
     },
     "category": "effect",
+    "fogRadiusMultiplier": 0,
     "shootSound": "pingradar",
     "research": {
         "parent": "cobalt-radar"

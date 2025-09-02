@@ -8,14 +8,14 @@ constructTime: 4500
 areaSize: 8
 
 requirements: [
-    bismuth/450
-    cobalt/350
+    bismuth-item/450
+    cobalt-item/350
     metaglass/420
     carbide/360
-    neodymium/380
-    photoglass/160
+    neodymium-item/380
+    photoglass-item/160
     tungsten/60
-    chromium/420
+    chromium-item/420
 ]
 
 consumes: {

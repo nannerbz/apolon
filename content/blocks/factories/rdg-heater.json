@@ -12,12 +12,12 @@ ambientSound: hum
 	consumes: {
 		items: {
 			items: [
-				{ "item": "rad-snow", "amount": 1 }
+				{ "item": "rad-snow-item", "amount": 1 }
 			]
 		}
 	}
 requirements: [
-	cobalt/30
+	cobalt-item/30
 	metaglass/25
 	carbide/20
 ]

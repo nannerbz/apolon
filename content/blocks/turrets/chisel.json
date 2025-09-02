@@ -28,7 +28,7 @@
     }
     }
     "ammoTypes": {
-        bismuth: {
+        bismuth-item: {
             "type": "BasicBulletType",
             "backColor": "cf5bc1",
             "frontColor": "cf5bc1",
@@ -130,7 +130,7 @@
                 "lifetime": 6
             }
         }
-        neodymium: {
+        neodymium-item: {
             "type": "BasicBulletType",
             "backColor": "8c887b",
             "frontColor": "8c887b",
@@ -224,9 +224,9 @@
 		]
 	}
     "requirements": [
-        { "item": "bismuth", "amount": 35 },
+        { "item": "bismuth-item", "amount": 35 },
 	  { "item": "metaglass", "amount": 45 },
-        { "item": "cobalt", "amount": 25 },
+        { "item": "cobalt-item", "amount": 25 },
     ],
     "category": "turret"
     "shootSound": "artillery"

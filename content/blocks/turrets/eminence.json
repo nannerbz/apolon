@@ -29,7 +29,7 @@
     },
     "range": 180,
     "ammoTypes": {
-        "technetium": {
+        "technetium-item": {
             "type": "BulletType",
             "hitSound": "none",
             "lightOpacity": 0.6,
@@ -98,7 +98,7 @@
                 "strokeFrom": 3
             }
         },
-        "hypersteel": {
+        "hypersteel-item": {
             "type": "BulletType",
             "hitSound": "none",
             "lightOpacity": 0.6,
@@ -416,15 +416,15 @@
     },
     "requirements": [
         {
-            "item": "cryogel",
+            "item": "cryogel-item",
             "amount": 40
         },
         {
-            "item": "technetium",
+            "item": "technetium-item",
             "amount": 60
         },
         {
-            "item": "kobra-alloy",
+            "item": "kobra-alloy-item",
             "amount": 85
         },
         {
@@ -432,11 +432,11 @@
             "amount": 120
         },
         {
-            "item": "cobalt",
+            "item": "cobalt-item",
             "amount": 185
         },
         {
-            "item": "neodymium",
+            "item": "neodymium-item",
             "amount": 120
         }
     ],

@@ -10,6 +10,6 @@ category: effect
 research: ash
 researchCostMultiplier: 0.05
 requirements: [
-	cobalt/50
-	bismuth/50
+	cobalt-item/50
+	bismuth-item/50
 ]

@@ -11,8 +11,8 @@ size: 3
 itemCapacity: 200
 requirements: [
 	carbide/25
-	cobalt/25
-	bismuth/25
+	cobalt-item/25
+	bismuth-item/25
 	metaglass/25
 ]
 research: cargo-constructor

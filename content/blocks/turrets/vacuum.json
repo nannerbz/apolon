@@ -95,7 +95,7 @@
 		]
 	}
     "requirements": [
-	  { "item": "cobalt", "amount": 45 },
+	  { "item": "cobalt-item", "amount": 45 },
         { "item": "carbide", "amount": 30 },
 	  { "item": "metaglass", "amount": 45 },
     ],

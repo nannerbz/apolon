@@ -16,11 +16,11 @@ ambientSound: hum
 		}
 	}
 requirements: [
-	cobalt/75
+	cobalt-item/75
 	metaglass/65
 	carbide/50
-	bismuth/65
-	chromium/25
+	bismuth-item/65
+	chromium-item/25
 ]
 	drawer: {
 	    type: DrawMulti

@@ -3,7 +3,7 @@ name: Cargo Conveyor
 description: used to transport cargo.
 requirements: [
 	carbide/10
-	cobalt/10
+	cobalt-item/10
 ]
 category: units
 canOverdrive: false

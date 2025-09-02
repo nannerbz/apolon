@@ -12,10 +12,10 @@ lightRadius: 24
 buildCost: 35
 squareSprite: false
 requirements: [
-  cobalt/1250
-  metaglass/1000
-  chromium/500
-  neodymium/750
+  cobalt-item/1250
+  metaglass-item/1000
+  chromium-item/500
+  neodymium-item/750
 ]
 solid: true
 armor: 16

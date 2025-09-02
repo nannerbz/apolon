@@ -4,8 +4,8 @@ description: used to control, locate, and do lots of advanced things.
 instructionsPerTick: 4
 size: 1
 requirements: [
-	cobalt/10
-	carbide/10
+	cobalt-item/10
+	carbide-item/10
 ]
 range: 32
 	  "research": {

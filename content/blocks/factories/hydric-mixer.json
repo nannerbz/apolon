@@ -24,7 +24,7 @@
 		power: 0.6
 		"items": {
 			"items": [
-				{ "item": "rad-snow", "amount": 2 }
+				{ "item": "rad-snow-item", "amount": 2 }
 			]
                 }
 		"liquids": {
@@ -34,10 +34,10 @@
 		}
 	},
 	"requirements": [
-		{ "item": "bismuth", "amount": 50 }
-		{ "item": "cobalt", "amount": 70 }
-		{ "item": "neodymium", "amount": 80 }
-		{ "item": "kobra-alloy", "amount": 60 }
+		{ "item": "bismuth-item", "amount": 50 }
+		{ "item": "cobalt-item", "amount": 70 }
+		{ "item": "neodymium-item", "amount": 80 }
+		{ "item": "kobra-alloy-item", "amount": 60 }
 	],
 	"category": "crafting",
 	"research": "kobra-forge",

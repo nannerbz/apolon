@@ -4,7 +4,7 @@ health: 340
 category: defense
 size: 1
 requirements: [
-	neodymium/6
+	neodymium-item/6
 ]
 research: blast-carbide-wall
 researchCostMultiplier: 0.05

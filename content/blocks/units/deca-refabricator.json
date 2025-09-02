@@ -4,14 +4,14 @@ health: 850
 name: Deca Refabricator
 size: 3
 itemCapacity: 100
-constructTime: 2200
+constructTime: 2400
 
 requirements: [
-    bismuth/125
+    bismuth-item/125
     metaglass/115
     carbide/95
-    chromium/45
-    neodymium/35
+    chromium-item/45
+    neodymium-item/35
 ]
 
 upgrades: [

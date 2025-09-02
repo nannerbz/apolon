@@ -6,7 +6,7 @@ research: ion-link
 researchCostMultiplier: 0.1
 requirements: [
 	metaglass/15
-	bismuth/15
+	bismuth-item/15
 ]
 consumes: {
 	powerBuffered: 6000

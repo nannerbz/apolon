@@ -4,15 +4,15 @@ health: 3250
 name: Circum Manipulator
 size: 5
 itemCapacity: 100
-constructTime: 4500
+constructTime: 4800
 
 requirements: [
-    bismuth/165
-    cobalt/145
+    bismuth-item/165
+    cobalt-item/145
     metaglass/185
     carbide/145
-    neodymium/125
-    kobra-alloy/75
+    neodymium-item/125
+    kobra-alloy-item/75
 ]
 
 upgrades: [

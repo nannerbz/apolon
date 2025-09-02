@@ -24,7 +24,7 @@ consumes: {
   }
 }
 requirements: [
-  cobalt/35
+  cobalt-item/35
 ]
 category: production
 research: ash

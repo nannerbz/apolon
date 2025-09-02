@@ -6,7 +6,7 @@
 	"category": "effect",
 	"requirements": [
 		{
-			"item": "cobalt",
+			"item": "cobalt-item",
 			"amount": 40
 		}
 	],

@@ -7,7 +7,7 @@
     size: 1
     range: 7
     requirements: [
-           { "item": "bismuth", "amount": 2 }
+           { "item": "bismuth-item", "amount": 2 }
     ]
     researchCostMultiplier: 0.05
     research: cobalt-duct

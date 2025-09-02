@@ -13,6 +13,6 @@ category: liquid
 research: bismuth-conduit
 researchCostMultiplier: 0.05
 requirements: [
-	bismuth/5
+	bismuth-item/5
 	metaglass/10
 ]

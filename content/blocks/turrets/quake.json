@@ -190,9 +190,9 @@
 		]
 	}
     "requirements": [
-        { "item": "cobalt", "amount": 200 },
+        { "item": "cobalt-item", "amount": 200 },
 	  { "item": "carbide", "amount": 80 },
-        { "item": "chromium", "amount": 120 },
+        { "item": "chromium-item", "amount": 120 },
 	  { "item": "metaglass", "amount": 120 },
     ],
     "category": "turret"

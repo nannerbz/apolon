@@ -15,8 +15,8 @@
 		power: 2.5
 		"items": {
 			"items": [
-				{ "item": "cobalt", "amount": 2 }
-				{ "item": "rad-snow", "amount": 4 }
+				{ "item": "cobalt-item", "amount": 2 }
+				{ "item": "rad-snow-item", "amount": 4 }
 			]
                 }
 		"liquids": {
@@ -26,8 +26,8 @@
 	},
 	"requirements": [
 		{ "item": "carbide", "amount": 75 }
-		{ "item": "cobalt", "amount": 100 }
-		{ "item": "bismuth", "amount": 75 }
+		{ "item": "cobalt-item", "amount": 100 }
+		{ "item": "bismuth-item", "amount": 75 }
 		{ "item": "metaglass", "amount": 75 }
 	],
 	"category": "crafting",

@@ -170,8 +170,8 @@
 	}
     "requirements": [
 	  { "item": "carbide", "amount": 85 },
-        { "item": "bismuth", "amount": 45 },
-	  { "item": "cobalt", "amount": 95 },
+        { "item": "bismuth-item", "amount": 45 },
+	  { "item": "cobalt-item", "amount": 95 },
     ],
     "category": "turret"
     "shootSound": "Bam"

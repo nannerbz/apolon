@@ -27,7 +27,7 @@ consumes: {
 	}
 }
 requirements: [
-  cobalt/100
+  cobalt-item/100
   carbide/40
   metaglass/50
 ]

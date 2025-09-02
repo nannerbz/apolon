@@ -4,7 +4,7 @@
 	health: 90
 	speed: 4
 	requirements: [
-		cobalt/5
+		cobalt-item/5
 		bismuth/5
 	]
 	research: cobalt-duct

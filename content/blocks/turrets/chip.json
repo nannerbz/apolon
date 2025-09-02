@@ -46,7 +46,7 @@
 	}
     "requirements": [
         { "item": "carbide", "amount": 55 },
-	  { "item": "cobalt", "amount": 40 },
+	  { "item": "cobalt-item", "amount": 40 },
 	  { "item": "metaglass", "amount": 45 },
     ],
 	drawer: {

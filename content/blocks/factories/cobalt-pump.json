@@ -12,7 +12,7 @@ consumes: {
 	}
 }
 requirements: [
-	cobalt/10
+	cobalt-item/10
 	metaglass/10
 	carbide/10
 ]

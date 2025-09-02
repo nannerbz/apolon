@@ -9,10 +9,10 @@ consumes: {
 size: 3
 requirements: [
 	carbide/50
-	cobalt/50
-	bismuth/50
+	cobalt-item/50
+	bismuth-item/50
 	metaglass/50
-	kobra-alloy/25
+	kobra-alloy-item/25
 ]
 research: cargo-loader
 researchCostMultiplier: 0.05

@@ -4,7 +4,7 @@ health: 1360
 category: defense
 size: 2
 requirements: [
-	neodymium/24
+	neodymium-item/24
 ]
 research: neodymium-wall
 researchCostMultiplier: 0.05

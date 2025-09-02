@@ -3,7 +3,7 @@
 	"name": "Chromatic Crucible",
 	"description": "Dissolves high concentrations of chromatic metals to form photoluminescent Flux.",
 	"outputItem": {
-		"item": "flux",
+		"item": "flux-item",
 		"amount": 2
 	},
 	"size": 3,
@@ -43,11 +43,11 @@
 	},
 	"requirements": [
 		{
-			"item": "carbide",
+			"item": "carbide-item",
 			"amount": 85
 		},
 		{
-			"item": "cobalt",
+			"item": "cobalt-item",
 			"amount": 120
 		},
 		{
@@ -55,7 +55,7 @@
 			"amount": 80
 		},
 		{
-			"item": "chromium",
+			"item": "chromium-item",
 			"amount": 50
 		}
 	],

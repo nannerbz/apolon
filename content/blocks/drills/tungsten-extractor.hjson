@@ -6,8 +6,8 @@ tier: 6
 size: 3
 range: 1
 requirements: [
-	photoglass/75
-	kobra-alloy/50
+	photoglass-item/75
+	kobra-alloy-item/50
 	carbide/75
 	metaglass/100
 ]

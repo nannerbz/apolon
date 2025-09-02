@@ -8,7 +8,7 @@ researchCostMultiplier: 0.25
 underBullets: true
 solid: false
 requirements: [
-	cobalt/10
+	cobalt-item/10
 	carbide/5
 ]
 category: distribution

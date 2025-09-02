@@ -22,7 +22,7 @@
     "shots": 1,
     "range": 110
     "ammoTypes": {
-               cobalt: {
+               cobalt-item: {
     type: BasicBulletType
     trailWidth: 1
     trailLength: 5
@@ -136,8 +136,8 @@
 		]
 	}
     "requirements": [
-        { "item": "bismuth", "amount": 25 },
-	  { "item": "cobalt", "amount": 35 },
+        { "item": "bismuth-item", "amount": 25 },
+	  { "item": "cobalt-item", "amount": 35 },
     ],
     "category": "turret"
     "shootSound": "SmallPew"

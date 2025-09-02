@@ -55,7 +55,7 @@
             "pierceCap": 6,
             "sprite": "large-orb"
         },
-        "chromium": {
+        "chromium-item": {
             "type": "BasicBulletType",
             "trailWidth": 4,
             "trailLength": 10,
@@ -110,7 +110,7 @@
             "pierce": false,
             "sprite": "large-orb"
         },
-        "flux": {
+        "flux-item": {
             "type": "BasicBulletType",
             "trailWidth": 4,
             "trailLength": 5,
@@ -199,10 +199,10 @@ shoot: {
 		]
 	}
     "requirements": [
-        { "item": "bismuth", "amount": 95 },
+        { "item": "bismuth-item", "amount": 95 },
 	  { "item": "metaglass", "amount": 65 },
 	{ "item": "carbide", "amount": 85 },
-	  { "item": "cobalt", "amount": 75 },
+	  { "item": "cobalt-item", "amount": 75 },
     ],
     "category": "turret"
     "shootSound": "ShotgunRipple"

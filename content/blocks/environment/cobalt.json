@@ -1,5 +1,5 @@
 {
 	"type": "OreBlock",
-	"itemDrop": "cobalt"
+	"itemDrop": "cobalt-item"
 	"variants": 3
 }

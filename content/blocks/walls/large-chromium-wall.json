@@ -4,7 +4,7 @@ health: 1120
 category: defense
 size: 2
 requirements: [
-	chromium/24
+	chromium-item/24
 ]
 research: chromium-wall
 researchCostMultiplier: 0.05

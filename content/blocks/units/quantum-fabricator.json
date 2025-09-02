@@ -1,21 +1,16 @@
 {
 	type: UnitFactory
 	name: Quantum Fabricator
-	health: 540
+	health: 2800
 	size: 3
 	consumes: {
-		power: 2.5
+		power: 0.2
 		liquids: [
-		arkycite/0.3
+		chromatic-fluid/0.2
 		]
 	}
 
-	requirements: [
-		carbide/45
-		chromium/45
-		neodymium/25
-		metaglass/55
-	]
+	buildVisibility: editorOnly
 
 	plans: [
 		{
@@ -25,7 +20,7 @@
 				rad-snow/4
 				chromium/4
 			]
-			time: 1650
+			time: 350
 		}
 		{
 			unit: inflex
@@ -34,7 +29,7 @@
 				metaglass/6
 				neodymium/4
 			]
-			time: 2240
+			time: 300
 		}
 		{
 			unit: finch
@@ -42,18 +37,8 @@
 				carbide/4
 				rad-snow/8
 			]
-			time: 740
+			time: 275
 		}
 	]
 	category: units
-	  "research": {
-		parent: airborne-fabricator
-		objectives: [
-			{
-				type: "OnSector"
-				preset: tide
-			}
-		]
-	}
-	researchCostMultiplier: 0.05
 }

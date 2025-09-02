@@ -2,7 +2,7 @@
 	"type": "GenericCrafter",
 	"name": "Nanotech Dry Stainer",
 	"description": "Takes metaglass, chromium, neodymium, and cyanogen to make photoglass.",
-	"outputItem": {"item": "photoglass", "amount": 5},
+	"outputItem": {"item": "photoglass-item", "amount": 5},
 	"size": 4,
 	"hasPower": true,
 	"hasItems": true,
@@ -14,8 +14,8 @@
 		"items": {
 			"items": [
 				{ "item": "metaglass", "amount": 1 }
-				{ "item": "neodymium", "amount": 2 }
-				{ "item": "chromium", "amount": 2 }
+				{ "item": "neodymium-item", "amount": 2 }
+				{ "item": "chromium-item", "amount": 2 }
 			]
                 }
 		"liquids": {
@@ -25,10 +25,10 @@
 		}
 	},
 	"requirements": [
-		{ "item": "kobra-alloy", "amount": 250 }
+		{ "item": "kobra-alloy-item", "amount": 250 }
 		{ "item": "carbide", "amount": 80 }
-		{ "item": "chromium", "amount": 80 }
-		{ "item": "neodymium", "amount": 50 }
+		{ "item": "chromium-item", "amount": 80 }
+		{ "item": "neodymium-item", "amount": 50 }
 	],
 	"category": "crafting",
 	"research": "kobra-forge",

@@ -38,10 +38,10 @@
 	"research": "lapse",
 	"requirements": [
 		"carbide/95",
-		"cobalt/160",
+		"cobalt-item/160",
 		"metaglass/120",
-		"neodymium/145",
-		"chromium/125"
+		"neodymium-item/145",
+		"chromium-item/125"
 	],
 	"drawer": {
 		"type": "DrawTurret",

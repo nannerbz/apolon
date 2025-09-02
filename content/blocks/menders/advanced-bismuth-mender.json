@@ -12,7 +12,7 @@
       "items": [
         {
           "amount": 1,
-          "item": "photoglass"
+          "item": "photoglass-item"
         }
       ],
       "optional": true,
@@ -21,7 +21,7 @@
   },
   "requirements": [
     {
-      "item": "bismuth",
+      "item": "bismuth-item",
       "amount": 75
     },
     {
@@ -33,11 +33,11 @@
       "amount": 50
     },
     {
-      "item": "neodymium",
+      "item": "neodymium-item",
       "amount": 25
     },
     {
-      "item": "chromium",
+      "item": "chromium-item",
       "amount": 25
     },
   ],

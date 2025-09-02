@@ -20,7 +20,7 @@
 	consumes: {
 		items: {
 			items: [
-				{ "item": "rad-snow", "amount": 1 }
+				{ "item": "rad-snow-item", "amount": 1 }
 			]
 		}
 		liquids: {

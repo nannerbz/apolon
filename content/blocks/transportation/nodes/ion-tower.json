@@ -9,10 +9,10 @@
     maxNodes: 3
     schematicPriority: -15
     requirements: [
-           { "item": "bismuth", "amount": 50 }
-           { "item": "photoglass", "amount": 25 }
+           { "item": "bismuth-item", "amount": 50 }
+           { "item": "photoglass-item", "amount": 25 }
            { "item": "metaglass", "amount": 50 }
-           { "item": "neodymium", "amount": 50 }
+           { "item": "neodymium-item", "amount": 50 }
     ]
     researchCostMultiplier: 0.25
     research: ion-tether

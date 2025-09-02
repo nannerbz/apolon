@@ -5,14 +5,14 @@
   "health": 1650,
   "size": 3,
   "range": 60,
-  "healPercent": 0.05,
+  "healPercent": 0.4,
   "consumes": {
     "power": 1.4,
     "items": {
       "items": [
         {
           "amount": 1,
-          "item": "photoglass"
+          "item": "photoglass-item"
         }
       ],
       "optional": true,
@@ -22,7 +22,7 @@
       "liquids": [
         {
           "amount": 0.4,
-          "liquid": "cryofluid"
+          "liquid": "chromatic-fluid"
         }
       ],
       "optional": false,
@@ -31,7 +31,7 @@
   },
   "requirements": [
     {
-      "item": "bismuth",
+      "item": "bismuth-item",
       "amount": 175
     },
     {
@@ -43,12 +43,16 @@
       "amount": 125
     },
     {
-      "item": "neodymium",
+      "item": "neodymium-item",
       "amount": 150
     },
     {
-      "item": "chromium",
+      "item": "chromium-item",
       "amount": 125
+    },
+    {
+      "item": "hypersteel-item",
+      "amount": 25
     },
   ],
   "category": "effect",

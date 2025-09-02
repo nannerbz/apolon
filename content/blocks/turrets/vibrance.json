@@ -27,7 +27,7 @@
     },
     "range": 110.5,
     "ammoTypes": {
-        "neodymium": {
+        "neodymium-item": {
             "type": "BulletType",
             "hitSound": "none",
             "lightOpacity": 0.6,
@@ -280,7 +280,7 @@
                 "strokeFrom": 3
             }
         },
-        "flux": {
+        "flux-item": {
             "type": "BulletType",
             "rangeChange": 130,
             "hitSound": "none",
@@ -532,11 +532,11 @@
             "amount": 60
         },
         {
-            "item": "neodymium",
+            "item": "neodymium-item",
             "amount": 85
         },
         {
-            "item": "cobalt",
+            "item": "cobalt-item",
             "amount": 125
         }
     ],

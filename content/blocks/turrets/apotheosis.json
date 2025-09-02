@@ -445,7 +445,7 @@
         },
         "requirements": [
             {
-                "item": "hypersteel",
+                "item": "hypersteel-item",
                 "amount": 150
             },
             {
@@ -453,7 +453,7 @@
                 "amount": 180
             },
             {
-                "item": "cobalt",
+                "item": "cobalt-item",
                 "amount": 840
             },
             {
@@ -461,11 +461,11 @@
                 "amount": 100
             },
             {
-                "item": "photoglass",
+                "item": "photoglass-item",
                 "amount": 540
             },
             {
-                "item": "kobra-alloy",
+                "item": "kobra-alloy-item",
                 "amount": 390
             }
         ],

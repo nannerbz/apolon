@@ -2,7 +2,7 @@ name: Bismuth Conduit
 type: conduit
 description: A useful liquid conduit.
 requirements: [
-bismuth/1
+bismuth-item/1
 metaglass/1
 ]
 health: 75

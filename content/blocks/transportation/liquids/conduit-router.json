@@ -7,7 +7,7 @@ size: 1
 placeableLiquid: true
 hasPower: false
 requirements: [
-  bismuth/8
+  bismuth-item/8
   metaglass/8
 ]
 research: bismuth-conduit

@@ -18,8 +18,8 @@ consumes: {
 	}
 }
 requirements: [
-	bismuth/75
-	cobalt/95
+	bismuth-item/75
+	cobalt-item/95
 	carbide/110
 	metaglass/85
 ]

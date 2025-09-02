@@ -10,7 +10,7 @@
 	heating: 0.02
 	size: 3
 	category: power
-	fuelItem: "chromium"
+	fuelItem: "chromium-item"
 	coolantPower: 0.4
         explosionShake: 8
         explosionShakeDuration: 32
@@ -22,7 +22,7 @@
 	consumes: {
 		items: {
 			items: [
-				{ "item": "chromium", "amount": 1 }
+				{ "item": "chromium-item", "amount": 1 }
 			]
 		}
 		liquids: {
@@ -44,10 +44,10 @@
 			]
 		}
 	requirements: [
-		{ "item": "bismuth", "amount": 60 }
-		{ "item": "cobalt", "amount": 50 }
+		{ "item": "bismuth-item", "amount": 60 }
+		{ "item": "cobalt-item", "amount": 50 }
 		{ "item": "metaglass", "amount": 40 }
-		{ "item": "chromium", "amount": 30 }
+		{ "item": "chromium-item", "amount": 30 }
 		{ "item": "carbide", "amount": 40 }
 	]
 	researchCostMultiplier: 0.05

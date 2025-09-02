@@ -24,7 +24,7 @@
 	},
 	"requirements": [
 		{ "item": "carbide", "amount": 50 }
-		{ "item": "cobalt", "amount": 180 }
+		{ "item": "cobalt-item", "amount": 180 }
 		{ "item": "metaglass", "amount": 80 }
 	],
 	"category": "crafting",

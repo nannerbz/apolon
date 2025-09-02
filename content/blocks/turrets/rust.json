@@ -82,9 +82,9 @@
      		basePrefix: base,
 	}
     "requirements": [
-        { "item": "bismuth", "amount": 105 },
-	  { "item": "cobalt", "amount": 85 },
-        { "item": "kobra-alloy", "amount": 120 },
+        { "item": "bismuth-item", "amount": 105 },
+	  { "item": "cobalt-item", "amount": 85 },
+        { "item": "kobra-alloy-item", "amount": 120 },
 	  { "item": "carbide", "amount": 95 },
     ],
     "category": "turret"

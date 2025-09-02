@@ -11,8 +11,8 @@
 	},
 	"category": "effect",
 	"requirements": [
-		"cobalt/35",
-		"bismuth/10"
+		"cobalt-item/35",
+		"bismuth-item/10"
 	],
 	"drawer": {
 		"type": "DrawMulti",

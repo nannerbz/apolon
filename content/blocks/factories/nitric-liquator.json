@@ -24,9 +24,9 @@
 		}
 	},
 	"requirements": [
-		{ "item": "kobra-alloy", "amount": 80 }
+		{ "item": "kobra-alloy-item", "amount": 80 }
 		{ "item": "metaglass", "amount": 40 }
-		{ "item": "cobalt", "amount": 85 }
+		{ "item": "cobalt-item", "amount": 85 }
 	],
 	"category": "crafting",
 	"research": "methanization-plant",

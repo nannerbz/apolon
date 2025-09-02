@@ -19,9 +19,9 @@
 	}
 	
 	requirements: [
-		{ "item": "chromium", "amount": 120 }
-		{ "item": "cobalt", "amount": 180 }
-		{ "item": "neodymium", "amount": 140 }
+		{ "item": "chromium-item", "amount": 120 }
+		{ "item": "cobalt-item", "amount": 180 }
+		{ "item": "neodymium-item", "amount": 140 }
 		{ "item": "carbide", "amount": 100 }
 		{ "item": "metaglass", "amount": 160 }
 	]

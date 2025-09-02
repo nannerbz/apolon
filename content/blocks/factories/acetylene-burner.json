@@ -18,8 +18,8 @@
 	}
 	
 	requirements: [
-		{ "item": "chromium", "amount": 80 }
-		{ "item": "cobalt", "amount": 120 }
+		{ "item": "chromium-item", "amount": 80 }
+		{ "item": "cobalt-item", "amount": 120 }
 		{ "item": "metaglass", "amount": 60 }
 	]
 	researchCostMultiplier: 0.05

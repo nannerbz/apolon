@@ -12,8 +12,8 @@ lightRadius: 16
 buildCost: 25
 squareSprite: false
 requirements: [
-  cobalt/250
-  bismuth/500
+  cobalt-item/250
+  bismuth-item/500
 ]
 solid: true
 armor: 7

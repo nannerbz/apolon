@@ -1,7 +1,7 @@
 {
 	type: AttributeCrafter
 	name: Hydrodenser
-	description: Uses power to make hydrogen from vents
+	description: Makes hydrogen from vents.
 	attribute: steam
 	minEfficiency: 8.8
 	baseEfficiency: 0
@@ -22,8 +22,8 @@
 	research: cobalt-extractor
 	researchCostMultiplier: 0.05
 	requirements: [
-	  cobalt/35
-	  bismuth/45
+	  cobalt-item/35
+	  bismuth-item/45
 	  metaglass/35
 	]
 	drawer: {

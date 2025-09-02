@@ -8,9 +8,9 @@
 	bridgeReplacement: cobalt-bridge
 	armored: true
 	requirements: [
-		cobalt/2
+		cobalt-item/2
 		metaglass/2
-		neodymium/2
+		neodymium-item/2
 	]
 	research: cobalt-duct
 	researchCostMultiplier: 0.25

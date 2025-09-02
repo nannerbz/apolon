@@ -4,8 +4,8 @@ description: Holds data given to it by processors.
 size: 1
 memoryCapacity: 64
 requirements: [
-	cobalt/10
-	bismuth/10
+	cobalt-item/10
+	bismuth-item/10
 	carbide/10
 ]
 	  "research": {

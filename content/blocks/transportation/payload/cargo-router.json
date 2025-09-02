@@ -3,7 +3,7 @@ name: Cargo Router
 description: used to route payload.
 requirements: [
 	carbide/15
-	cobalt/15
+	cobalt-item/15
 	metaglass/15
 ]
 category: units

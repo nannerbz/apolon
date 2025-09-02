@@ -4,8 +4,8 @@ description: Shows images given to it by processors.
 size: 2
 displaySize: 48
 requirements: [
-	cobalt/15
-	bismuth/30
+	cobalt-item/15
+	bismuth-item/30
 	carbide/15
 ]
 	  "research": {

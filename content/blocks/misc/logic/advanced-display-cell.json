@@ -4,8 +4,8 @@ description: Shows images given to it by processors. Can handle bigger images du
 size: 3
 displaySize: 80
 requirements: [
-	cobalt/25
-	bismuth/50
+	cobalt-item/25
+	bismuth-item/50
 	carbide/50
 ]
 	  "research": {

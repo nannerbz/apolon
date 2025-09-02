@@ -12,7 +12,7 @@
 	consumes: {
 		items: {
 			items: [
-				{ "item": "rad-snow", "amount": 3 }
+				{ "item": "rad-snow-item", "amount": 3 }
 			]
 		}
 		liquids: {
@@ -23,8 +23,8 @@
 	}
 	
 	requirements: [
-		{ "item": "chromium", "amount": 80 }
-		{ "item": "cobalt", "amount": 150 }
+		{ "item": "chromium-item", "amount": 80 }
+		{ "item": "cobalt-item", "amount": 150 }
 		{ "item": "metaglass", "amount": 100 }
 		{ "item": "carbide", "amount": 80 }
 	]

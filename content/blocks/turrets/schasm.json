@@ -24,7 +24,7 @@
     "shots": 1,
     "range": 670
     "ammoTypes": {
-        "hypersteel": {
+        "hypersteel-item": {
             "Type": "LaserBulletType",
             "chargeEffect": "lancerLaserCharge",
             "hitEffect": "hitLancer",
@@ -192,11 +192,11 @@
 		]
 	}
     "requirements": [
-        { "item": "cobalt", "amount": 215 },
-	  { "item": "neodymium", "amount": 120 },
-        { "item": "photoglass", "amount": 95 },
-	  { "item": "cryogel", "amount": 75 },
-        { "item": "hypersteel", "amount": 80 },
+        { "item": "cobalt-item", "amount": 215 },
+	  { "item": "neodymium-item", "amount": 120 },
+        { "item": "photoglass-item", "amount": 95 },
+	  { "item": "cryogel-item", "amount": 75 },
+        { "item": "hypersteel-item", "amount": 80 },
     ],
     "category": "turret"
     "minWarmup": 0.96

@@ -27,7 +27,7 @@
     "shots": 1,
     "range": 140
     "ammoTypes": {
-        kobra-alloy: {
+        kobra-alloy-item: {
             "type": "BasicBulletType",
             "shrinkY": 0,
             "shrinkX": 0,
@@ -53,7 +53,7 @@
             "knockback": 1,
             "sprite": "large-orb"
         }
-        photoglass: {
+        photoglass-item: {
             "type": "BasicBulletType",
             "shrinkY": 0,
             "shrinkX": 0,
@@ -221,10 +221,10 @@
 	}
     "requirements": [
         { "item": "carbide", "amount": 195 },
-	  { "item": "neodymium", "amount": 195 },
+	  { "item": "neodymium-item", "amount": 195 },
         { "item": "metaglass", "amount": 145 },
-	  { "item": "cobalt", "amount": 245 },
-	  { "item": "kobra-alloy", "amount": 120 },
+	  { "item": "cobalt-item", "amount": 245 },
+	  { "item": "kobra-alloy-item", "amount": 120 },
     ],
     "category": "turret"
     "minWarmup": 0.96

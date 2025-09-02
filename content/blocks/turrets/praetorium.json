@@ -28,7 +28,7 @@
     "shots": 1,
     "range": 460
     "ammoTypes": {
-               neodymium: {
+               neodymium-item: {
     type: BasicBulletType
     trailWidth: 2
     trailLength: 8
@@ -96,7 +96,7 @@
 		IntervalSpread: 65
 	}
 	}
-               photoglass: {
+               photoglass-item: {
     type: BasicBulletType
     trailWidth: 4
     trailLength: 12
@@ -267,9 +267,9 @@
 	}
     "requirements": [
         { "item": "carbide", "amount": 150 },
-	  { "item": "neodymium", "amount": 190 },
+	  { "item": "neodymium-item", "amount": 190 },
         { "item": "metaglass", "amount": 175 },
-	  { "item": "cobalt", "amount": 325 },
+	  { "item": "cobalt-item", "amount": 325 },
     ],
     "category": "turret"
     "minWarmup": 0.9
