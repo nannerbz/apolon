@@ -1,6 +1,7 @@
 type: hover
 name: inflex
 hovering: true
+canDrown: false
 rotateShooting: true
 speed: 1.8
 accel: 0.2

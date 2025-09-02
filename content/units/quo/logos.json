@@ -1,6 +1,7 @@
 type: hover
 name: Logos
 hovering: true
+canDrown: false
 rotateShooting: true
 speed: 1.1
 accel: 0.08

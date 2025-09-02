@@ -1,6 +1,7 @@
 type: hover
 name: Corsair
 hovering: true
+canDrown: false
 rotateShooting: true
 speed: 1.6
 accel: 0.15

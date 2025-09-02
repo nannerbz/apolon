@@ -1,6 +1,7 @@
 type: hover
 name: Quo
 hovering: true
+canDrown: false
 hoverable: true
 lowAltitude: true
 groundLayer: 60

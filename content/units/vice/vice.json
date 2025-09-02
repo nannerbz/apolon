@@ -1,6 +1,7 @@
 type: hover
 name: Vice
 hovering: true
+canDrown: false
 rotateShooting: true
 speed: 2.2
 accel: 0.1

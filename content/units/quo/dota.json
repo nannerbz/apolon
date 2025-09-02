@@ -1,6 +1,7 @@
 type: hover
 name: Dota
 hovering: true
+canDrown: false
 rotateShooting: true
 speed: 1.3
 accel: 0.09

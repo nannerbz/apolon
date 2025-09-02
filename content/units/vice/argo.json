@@ -1,6 +1,7 @@
 type: hover
 name: Argo
 hovering: true
+canDrown: false
 rotateShooting: true
 speed: 1.9
 accel: 0.2

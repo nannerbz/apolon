@@ -1,8 +1,9 @@
 type: hover
 name: Prisma
 hovering: true
+canDrown: false
 rotateShooting: true
-speed: 1.7
+speed: 1.5
 accel: 0.3
 drag: 0.08
 health: 2045

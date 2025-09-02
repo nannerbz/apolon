@@ -1,8 +1,9 @@
 type: hover
 name: Speculum
 hovering: true
+canDrown: false
 rotateShooting: true
-speed: 1.3
+speed: 1.1
 accel: 0.3
 drag: 0.08
 health: 4350
