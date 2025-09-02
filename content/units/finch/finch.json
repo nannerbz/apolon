@@ -9,19 +9,20 @@ hitSize: 12
 itemCapacity: 0
 outlineColor: 222222
 circleTarget: false
+lowAltitude: true
 range: 45
 	parts: [
 		{
 			"type": "FlarePart",
 			"color1": "c25757",
 			"color2": "c99784",
-			"followRotation": true,
+			"followRotation": false,
 			"sides": 4,
 			"x": 0,
 			"y": -3,
 			"radius": 12,
 			"stroke": 1.5,
-			"layer": 116
+			"layer": 106
 		}
 ]
 weapons: [

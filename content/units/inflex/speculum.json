@@ -123,9 +123,6 @@ weapons: [
 			"trailLength": 2,
 			"trailWidth": 4,
 			"collidesAir": true,
-			"homingPower": 0.6,
-			"homingDelay": 3,
-			"homingRange": 256,
 			"speed": 11,
 			"damage": 35,
 			"lifetime": 20

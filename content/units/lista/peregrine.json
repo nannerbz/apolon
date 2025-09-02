@@ -26,8 +26,8 @@ weapons: [
 			shotDelay: 3
 		}
 		shootY: 0
-		top: false
-		under: true
+		top: true,
+		layerOffset: -2,
 		rotate: true
 		mirror: true
 		bullet: {

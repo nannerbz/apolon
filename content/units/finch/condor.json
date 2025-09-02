@@ -1,5 +1,5 @@
 template: UnitType
-name: Sparrow
+name: Condor
 flying: true
 speed: 1.7
 accel: 0.07
@@ -9,22 +9,22 @@ hitSize: 22
 itemCapacity: 10
 outlineColor: 222222
 circleTarget: false
-range: 240
-	parts: [
-		{
-			"type": "FlarePart",
-			"color1": "c25757",
-			"color2": "c99784",
-			"followRotation": true,
-			"sides": 7,
-			"x": 0,
-			"y": -3,
-			"radius": 9,
-			"stroke": 1,
-			"layer":116
-		}
-]
-weapons: [
+	lowAltitude: true
+range: 240 
+   parts: [
+	{
+		"type": "FlarePart",
+		"color1": "c25757",
+		"color2": "c99784",
+		"followRotation": false,
+		"sides": 7,
+		"x": 0,
+		"y": -3,
+		"radius": 9,
+		"stroke": 1,
+		"layer": 106
+	}
+] weapons: [
 	{
 		"name": "condor-w",
 		"shoot": {
@@ -33,13 +33,15 @@ weapons: [
 			"shots": 3
 		},
 		"reload": 80,
-		"x": 2,
+		"x": 4,
 		"y": 8,
-		"baseRotation": 20,
+		"baseRotation": -20,
 		"top": true,
+		"shootCone": 60,
 		"layerOffset": -2,
 		"shootSound": "Pulse",
 		"rotate": false,
+		"mirror": false,
 		"bullet": {
 			"type": "BasicBulletType",
 			"damage": 80,
@@ -48,6 +50,198 @@ weapons: [
 			"width": 8,
 			"length": 12,
 			"lifetime": 40,
+			"homingPower": 0.6,
+			"homingDelay": 3,
+			"homingRange": 256,
+			"backColor": "c74567",
+			"frontColor": "c74567",
+			"trailColor": "c74567",
+			"trailLength": 3,
+			"trailWidth": 3,
+			"shootEffect": "shootSmall",
+			"smokeEffect": "shootSmallSmoke"
+		}
+	},
+	{
+		"name": "condor-w",
+		"shoot": {
+			"type": "shootPattern",
+			"shotDelay": 6,
+			"shots": 3
+		},
+		"reload": 80,
+		"x": -4,
+		"y": 8,
+		"baseRotation": 20,
+		"top": true,
+		"shootCone": 60,
+		"layerOffset": -2,
+		"shootSound": "Pulse",
+		"rotate": false,
+		"mirror": false,
+		"bullet": {
+			"type": "BasicBulletType",
+			"damage": 80,
+			"pierceArmor": true,
+			"speed": 6,
+			"width": 8,
+			"length": 12,
+			"lifetime": 40,
+			"homingPower": 0.6,
+			"homingDelay": 3,
+			"homingRange": 256,
+			"backColor": "c74567",
+			"frontColor": "c74567",
+			"trailColor": "c74567",
+			"trailLength": 3,
+			"trailWidth": 3,
+			"shootEffect": "shootSmall",
+			"smokeEffect": "shootSmallSmoke"
+		}
+	},
+	{
+		"name": "condor-w",
+		"shoot": {
+			"type": "shootPattern",
+			"shotDelay": 6,
+			"firstShotDelay": 20,
+			"shots": 3
+		},
+		"reload": 80,
+		"x": 7,
+		"y": 4,
+		"baseRotation": -40,
+		"top": true,
+		"shootCone": 60,
+		"layerOffset": -2,
+		"shootSound": "Pulse",
+		"rotate": false,
+		"mirror": false,
+		"bullet": {
+			"type": "BasicBulletType",
+			"damage": 80,
+			"pierceArmor": true,
+			"speed": 6,
+			"width": 8,
+			"length": 12,
+			"lifetime": 40,
+			"homingPower": 0.6,
+			"homingDelay": 3,
+			"homingRange": 256,
+			"backColor": "c74567",
+			"frontColor": "c74567",
+			"trailColor": "c74567",
+			"trailLength": 3,
+			"trailWidth": 3,
+			"shootEffect": "shootSmall",
+			"smokeEffect": "shootSmallSmoke"
+		}
+	},
+	{
+		"name": "condor-w",
+		"shoot": {
+			"type": "shootPattern",
+			"shotDelay": 6,
+			"firstShotDelay": 20,
+			"shots": 3
+		},
+		"reload": 80,
+		"x": -7,
+		"y": 4,
+		"baseRotation": 40,
+		"top": true,
+		"shootCone": 60,
+		"layerOffset": -2,
+		"shootSound": "Pulse",
+		"rotate": false,
+		"mirror": false,
+		"bullet": {
+			"type": "BasicBulletType",
+			"damage": 80,
+			"pierceArmor": true,
+			"speed": 6,
+			"width": 8,
+			"length": 12,
+			"lifetime": 40,
+			"homingPower": 0.6,
+			"homingDelay": 3,
+			"homingRange": 256,
+			"backColor": "c74567",
+			"frontColor": "c74567",
+			"trailColor": "c74567",
+			"trailLength": 3,
+			"trailWidth": 3,
+			"shootEffect": "shootSmall",
+			"smokeEffect": "shootSmallSmoke"
+		}
+	},
+	{
+		"name": "condor-w",
+		"shoot": {
+			"type": "shootPattern",
+			"shotDelay": 6,
+			"firstShotDelay": 40,
+			"shots": 3
+		},
+		"reload": 80,
+		"x": 12,
+		"y": -2,
+		"baseRotation": -70,
+		"top": true,
+		"shootCone": 60,
+		"layerOffset": -2,
+		"shootSound": "Pulse",
+		"rotate": false,
+		"mirror": false,
+		"bullet": {
+			"type": "BasicBulletType",
+			"damage": 80,
+			"pierceArmor": true,
+			"speed": 6,
+			"width": 8,
+			"length": 12,
+			"lifetime": 40,
+			"homingPower": 0.6,
+			"homingDelay": 3,
+			"homingRange": 256,
+			"backColor": "c74567",
+			"frontColor": "c74567",
+			"trailColor": "c74567",
+			"trailLength": 3,
+			"trailWidth": 3,
+			"shootEffect": "shootSmall",
+			"smokeEffect": "shootSmallSmoke"
+		}
+	},
+	{
+		"name": "condor-w",
+		"shoot": {
+			"type": "shootPattern",
+			"shotDelay": 6,
+			"firstShotDelay": 40,
+			"shots": 3
+		},
+		"reload": 80,
+		"x": -12,
+		"y": -2,
+		"baseRotation": 70,
+		"top": true,
+		"shootCone": 60,
+		"layerOffset": -2,
+		"shootSound": "Pulse",
+		"rotate": false,
+		"mirror": false,
+		"bullet": {
+			"type": "BasicBulletType",
+			"damage": 80,
+			"pierceArmor": true,
+			"speed": 6,
+			"width": 8,
+			"length": 12,
+			"lifetime": 40,
+			"homingPower": 0.6,
+			"homingDelay": 3,
+			"homingRange": 256,
 			"backColor": "c74567",
 			"frontColor": "c74567",
 			"trailColor": "c74567",
