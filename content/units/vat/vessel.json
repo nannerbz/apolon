@@ -10,7 +10,7 @@ rotateShooting: false
 shootSound: lasershoot
 hitSize: 20
 range: 96
-itemCapacity: 10
+itemCapacity: 80
 outlineColor: 222222
 abilities: [
 	{
@@ -68,7 +68,7 @@ weapons: [
 		speed: 6
 		width: 10
 		length: 16
-		lifetime: 32
+		lifetime: 16
 		trailColor: ffffff
 		trailLength: 10
 		trailWidth: 4

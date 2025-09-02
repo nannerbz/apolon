@@ -1,0 +1,129 @@
+type: tank
+name: Vitrine
+speed: 0.2
+health: 8600
+omniMovement: false
+rotateSpeed: 2.3
+armor: 11
+treadPullOffset: 6
+rotateShooting: false
+shootSound: lasershoot
+hitSize: 30
+range: 128
+itemCapacity: 240
+outlineColor: 222222
+abilities: [
+	{
+		type: LiquidExplodeAbility
+		liquid: cryofluid
+		amount: 200
+		radAmountScale: 4
+		radScale: 2
+		noiseMag: 5
+		noiseScl: 5
+	}
+	{
+		type: LiquidRegenAbility
+		liquid: cryofluid
+		slurpSpeed: 6
+		regenPerSlurp: 0.9
+		slurpEffectChance: 0.6
+	}
+]
+treadRects: [
+	{
+		x: -56,
+		y: -54,
+		width: 27,
+		height: 112
+	}
+	{
+		"x": -12,
+		"y": -46,
+		"width": 24,
+		"height": 96
+	}
+	{
+		"x": 29,
+		"y": -54,
+		"width": 27,
+		"height": 112
+	}
+]
+weapons: [
+	{
+		name: vitrine-cw
+		reload: 100
+		x: 0
+		y: 0
+		top: true
+		shots: 1
+		spacing: 3
+		innacuracy: 0
+		rotate: true
+		mirror: false
+		shootY: 0
+		recoil: 0
+		shootSound: Fling
+		ejectEffect: casing1
+		bullet: {
+			type: BasicBulletType
+			damage: 56
+			speed: 6
+			width: 10
+			length: 16
+			lifetime: 21.4
+			trailColor: ffffff
+			trailLength: 10
+			trailWidth: 4
+			homingDelay: 10
+			homingRange: 128
+			homingPower: 0.3
+			shootEffect: shootSmall
+			smokeEffect: shootSmallSmoke
+		}
+		shoot: {
+			type: ShootSpread
+			shots: 12
+			spread: 30
+		}
+	}
+	    {
+        name: vitrine-sw
+        reload: 12
+        x: 8
+        y: 8
+        top: true
+	innacuracy: 0
+	rotate: false
+        mirror: true
+	shootY: 0
+	  recoil: 2
+	  shootSound: Fling
+        ejectEffect: casing1
+        bullet: {
+		type: BasicBulletType
+			damage: 36
+			shootCone: 45
+				
+        controllable: false
+		speed: 12
+		width: 10
+		length: 16
+		lifetime: 4
+		trailColor: ffffff
+		trailLength: 10
+		trailWidth: 4
+    		homingDelay: 10
+    		homingRange: 128
+    		homingPower: 0.3
+		shootEffect: shootSmall
+		smokeEffect: shootSmallSmoke
+        }
+	shoot: {
+		type: ShootSpread
+		shots: 8
+		spread: 10
+	}
+    }
+]

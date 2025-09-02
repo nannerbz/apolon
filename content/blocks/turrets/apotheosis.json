@@ -24,7 +24,7 @@
             ]
         }
     },
-        "shootCone": 15,
+        "shootCone": 10,
         "rotateSpeed": 1,
         "range": 380,
         "ammoTypes": {
