@@ -1,4 +1,6 @@
 type: StaticTree
+name: Pearl Stalagmite
+variants: 2
 attributes: {
 	pearl: 1.5
 }
