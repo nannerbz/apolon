@@ -136,13 +136,13 @@ solarSystem: sun
 # Probably useless since the Interplanetary Accelerator is hidden and not working.
 launchCandidates: []
 rules: {
-	{"waveTeam": "blue"}
-	{"showSpawns": false}
-	{"coreDestroyClear": true}
-	{"coreIncinerates": true}
-	{"fog": true}
-	{"staticFog": true}
-	{"airUseSpawns": false}
+	"waveTeam": "blue"
+	"showSpawns": false
+	"coreDestroyClear": true
+	"coreIncinerates": true
+	"fog": true
+	"staticFog": true
+	"airUseSpawns": false
 }
 # Items not available in this planet.
 hiddenItems: [
