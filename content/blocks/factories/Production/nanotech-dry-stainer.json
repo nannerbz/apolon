@@ -1,5 +1,5 @@
 {
-	"type": "GenericCrafter",
+	"type": "HeatProducer",
 	"name": "Nanotech Dry Stainer",
 	"description": "Takes metaglass, chromium, neodymium, and cyanogen to make photoglass.",
 	"outputItem": {"item": "photoglass-item", "amount": 5},
@@ -8,7 +8,10 @@
 	"hasItems": true,
 	"hasLiquids": true,
 	"craftTime": 60,
+	"rotateDraw": false
 	"updateEffect": "smeltsmoke",
+	"regionRotated1": 2
+	"heatOutput": 8
 	"consumes": {
 		power: 3
 		"items": {

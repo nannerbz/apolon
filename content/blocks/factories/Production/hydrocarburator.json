@@ -18,7 +18,7 @@
 		}
 		liquids: {
 			liquids: [
-				{ "liquid": "hydrogen", "amount": 0.6 }
+				{ "liquid": "hydrogen", "amount": 0.4 }
 			]
 		}
 	}

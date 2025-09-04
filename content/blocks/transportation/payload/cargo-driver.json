@@ -4,6 +4,7 @@ description: Launches cargo across very long distances.
 category: units
 size: 3
 reload: 240
+outlineColor: 222222
 chargeTime: 120
 range: 700
 maxPayloadSize: 2.5

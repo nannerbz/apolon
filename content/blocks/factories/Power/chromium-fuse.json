@@ -27,7 +27,7 @@
 		}
 		liquids: {
 			liquids: [
-				{ "liquid": "cryofluid", "amount": 0.4 }
+				{ "liquid": "cryofluid", "amount": 0.2 }
 			]
 		}
 	}
