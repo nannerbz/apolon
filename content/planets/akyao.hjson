@@ -135,15 +135,15 @@ solarSystem: sun
 # In the current version, only 1 entry is applicable if you decide to use modded accelerators.
 # Probably useless since the Interplanetary Accelerator is hidden and not working.
 launchCandidates: []
-# ruleSetter: {
-#	{"waveTeam": "blue"}
-#	{"showSpawns": false}
-#	{"coreDestroyClear": true}
-#	{"coreIncinerates": true}
-#	{"fog": true}
-#	{"staticFog": true}
-#	{"airUseSpawns": false}
-# }
+rules: {
+	{"waveTeam": "blue"}
+	{"showSpawns": false}
+	{"coreDestroyClear": true}
+	{"coreIncinerates": true}
+	{"fog": true}
+	{"staticFog": true}
+	{"airUseSpawns": false}
+}
 # Items not available in this planet.
 hiddenItems: [
         "copper",
