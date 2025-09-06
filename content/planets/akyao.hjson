@@ -140,16 +140,16 @@ solarSystem: sun
 launchCandidates: []
 # God bless Sh1penfire for figuring this out. This shit needs to be GLOBAL JSON MODDING KNOWLEDGE.
 campaignRuleDefaults: {
-	"waveTeam": "blue"
-	"showSpawns": false
-	"coreDestroyClear": true
-	"coreIncinerates": true
+# 	"waveTeam": "blue"
+ 	"showSpawns": false
+# 	"coreDestroyClear": true
+# 	"coreIncinerates": true
 	"fog": true
-	"staticFog": true
-	"placeRangeCheck": false
-	"airUseSpawns": false
-	"coreDestroyClear": true
-	"hideBannedBlocks": true
+# 	"staticFog": true
+# 	"placeRangeCheck": false
+# 	"airUseSpawns": false
+# 	"coreDestroyClear": true
+# 	"hideBannedBlocks": true
 }
 # Items not available in this planet.
 hiddenItems: [
