@@ -20,8 +20,8 @@
             "type": "WaveEffect",
             "colorFrom": "8c887b",
             "colorTo": "ffffff",
-            "sizeTo": 8,
-            "lifetime": 240,
+            "sizeTo": 32,
+            "lifetime": 90,
             "strokeFrom": 3
 	}
 	applyExtend: false
