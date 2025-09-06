@@ -54,7 +54,7 @@
 	            	  suffix : "-rotator1"
 				  spinSprite: true
 				  rotateSpeed: 4
-	            	},]
+	            	},
 	            	{
 	            	  type : DrawRegion
 	            	  suffix : "-rotator2"
