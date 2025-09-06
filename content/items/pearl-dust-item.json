@@ -5,6 +5,7 @@
 	"hardness": 1,
 	"cost": 0.25,
 	"color": "f0f0f0"
-	"research": "cobalt"
+	"research": "cobalt-item"
 	"lowPriority": true
+	"buildable": false
 }

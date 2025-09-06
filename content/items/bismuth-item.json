@@ -3,7 +3,7 @@
 	"name": "Bismuth",
 	"description": "A resource used for basic needs, good as a isolator",
 	"hardness": 1,
-	"cost": 0.8,
+	"cost": 0.9,
 	"color": "534b58"
-	"research": "cobalt"
+	"research": "cobalt-item"
 }

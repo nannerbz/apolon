@@ -5,6 +5,7 @@
 	"hardness": 1,
 	"cost": 0.3,
 	"color": "6fb573"
-	"research": "pearl-dust"
+	"research": "pearl-dust-item"
 	"lowPriority": true
+	"buildable": false
 }

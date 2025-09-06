@@ -3,7 +3,7 @@
 	"name": "Hypersteel",
 	"description": "A strong durable alloy, hyperenergetic",
 	"hardness": 3,
-	"cost": 4.2,
+	"cost": 5,
 	"color": "645ab0"
 	"research": "tungsten"
 }
