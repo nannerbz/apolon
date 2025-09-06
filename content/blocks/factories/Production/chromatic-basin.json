@@ -1,0 +1,69 @@
+{
+	"type": "GenericCrafter",
+	"name": "Chromatic Basin",
+	"description": "Uses arkycite and bismuth, mixing it into a chromatic, color changing liquid.",
+	"outputLiquid": {"liquid": "chromatic-fluid", "amount": 0.8},
+	"size": 3,
+	"hasPower": true,
+	"hasItems": true,
+	"hasLiquids": true,
+	"craftTime": 60,
+	"updateEffect": "smeltsmoke",
+	"consumes": {
+		power: 0.6
+		"items": {
+			"items": [
+				{ "item": "bismuth-item", "amount": 2 }
+			]
+                }
+		"liquids": {
+			"liquids": [
+				{ "liquid": "cryofluid", "amount": 0.4 }
+			]
+		}
+	},
+	"requirements": [
+		{ "item": "chromium-item", "amount": 80 }
+		{ "item": "metaglass", "amount": 40 }
+		{ "item": "cobalt-item", "amount": 85 }
+	],
+	"category": "crafting",
+	"research": "light-carburator",
+	"idleSound": "respawning",
+	"idleSoundVolume": 0.5
+	"researchCostMultiplier": 0.05
+	drawer: {
+	    type: DrawMulti
+	    drawers : [
+	            	{
+	            	  type : DrawRegion
+	            	  suffix : "-bottom"
+	            	},
+	            	{
+	            	  type : DrawLiquidRegion
+	            	  suffix : "-liquid"
+			  drawLiquid : "arkycite"
+	            	},
+	            	{
+	            	  type : DrawLiquidRegion
+	            	  suffix : "-liquid"
+			  drawLiquid : "chromatic-fluid"
+	            	},
+	            	{
+	            	  type : DrawRegion
+	            	  suffix : "-rotator1"
+				  spinSprite: true
+				  rotateSpeed: 4
+	            	},]
+	            	{
+	            	  type : DrawRegion
+	            	  suffix : "-rotator2"
+				  spinSprite: true
+				  rotateSpeed: -3
+	            	},
+	            	{
+	            	  type : DrawDefault
+	            	},
+			]
+		}
+}
