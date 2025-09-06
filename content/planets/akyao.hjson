@@ -1,7 +1,6 @@
 # The planet's display name. If you want to support multiple languages, use bundles instead!
 localizedName: Akyao
 allowLaunchLoadout: false
-clear
 # The mesh of the planet. Only NoiseMesh is still supported...
 mesh: {
   # A class name.
