@@ -25,8 +25,8 @@
         "despawnEffect": "none",
         "smokeEffect": "none",
 	"hitSound": "pingradar",
-	"effect": "threat-tracked",
-	"effectDuration": 120,
+	"status": "threat-tracked",
+	"statusDuration": 120,
 	"pierce": true,
 	"pierceCap": 999
         "shootEffect": {

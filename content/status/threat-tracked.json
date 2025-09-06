@@ -1,6 +1,6 @@
 {
 	type: StatusEffect
-	name: Threat-tracked
+	name: Threat tracked
 	outline: false
 	damageMultiplier: 1
 	healthMultiplier: 1
@@ -20,8 +20,8 @@
             "type": "WaveEffect",
             "colorFrom": "8c887b",
             "colorTo": "ffffff",
-            "sizeTo": 32,
-            "lifetime": 90,
+            "sizeTo": 64,
+            "lifetime": 60,
             "strokeFrom": 3
 	}
 	applyExtend: false
