@@ -5,11 +5,11 @@
 	"outputLiquids": [
 		{
 		"liquid": "hydrogen",
-		"amount": 1.8
+		"amount": 1.2
 		}
 		{
 		"liquid": "cryofluid",
-		"amount": 2.4
+		"amount": 2
 		}
 	]
 	"rotate": true
@@ -29,7 +29,7 @@
                 }
 		"liquids": {
 			"liquids": [
-				{ "liquid": "arkycite", "amount": 0.4 }
+				{ "liquid": "chromatic-fluid", "amount": 0.4 }
 			]
 		}
 	},

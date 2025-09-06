@@ -1,0 +1,56 @@
+{
+	type: AttributeCrafter
+	name: Hydrodenser
+	description: Makes hydrogen from vents at an accelerated rate, using cryofluid. Useful for when there aren't many vents.
+	attribute: steam
+	minEfficiency: 8.8
+	baseEfficiency: 0
+	displayEfficiency: false
+	craftEffect: drillSteam
+	craftTime: 40
+	size: 3
+	ambientSound: hum
+	ambientSoundVolume: 0.08
+	hasLiquids: true
+	squareSprite: false
+	boostScale: 1.2
+	outputLiquid: {"liquid": "hydrogen", "amount": 3.2}
+	hasPower: true
+	hasLiquids: true
+	liquidCapacity: 100
+	category: production
+	research: hydrodenser
+	researchCostMultiplier: 0.05
+	"updateEffect": "drillSteam",
+	"consumes": {
+		power: 3.5
+		"liquids": {
+			"liquids": [
+				{ "liquid": "cryofluid", "amount": 0.6 }
+			]
+		}
+	},
+	requirements: [
+	  bismuth-item/50
+	  metaglass/80
+	  neodymium-item/60
+	  
+	]
+	drawer: {
+	    type: DrawMulti
+	    drawers : [
+	            	{
+	            	  type : DrawRegion
+	            	  suffix : "-bottom"
+	            	},
+	            	{
+	            	  type : DrawLiquidRegion
+	            	  suffix : "-liquid"
+			  drawLiquid : "cryofluid"
+	            	},
+	            	{
+	            	  type : DrawDefault
+	            	},
+			]
+		}
+}

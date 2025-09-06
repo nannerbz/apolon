@@ -3,7 +3,7 @@
 	name: Ebonic Radiator
 	description: Uses radiation from ebonic stone to make power.
 	attribute: plasma
-	powerProduction: 0.05
+	powerProduction: 0.025
 	floating: true
 	size: 1
 	ambientSound: hum

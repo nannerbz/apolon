@@ -20,6 +20,7 @@
 	"shootSound": "none"
 	"researchCostMultiplier": 0.05,
 	"shootWarmupSpeed": 0.2,
+    	"fogRadiusMultiplier": 0.1,
 	"consumes": {
 		"liquids": {
 			"liquids": [

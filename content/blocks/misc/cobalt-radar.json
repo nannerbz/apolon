@@ -2,9 +2,9 @@ type: radar
 name: Cobalt Radar
 description: Used to uncover land, good for finding new things without the use of units.
 outlineColor: 222222
-fogRadius: 30
+fogRadius: 40
 consumes: {
-	power: 0.2
+	power: 0.1
 }
 category: effect
 research: ash

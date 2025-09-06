@@ -11,7 +11,7 @@
     "reload": 360,
     "xRand": 0,
     "squareSprite": false,
-    "shootCone": 4,
+    "shootCone": 25,
     "shootY": 8,
     "range": 1600,
     "recoil": 0,
@@ -20,9 +20,15 @@
     },
     "shootType": {
         "Type": "BulletType",
-        "instantDisappear": true,
+	"speed": 12
+	"lifetime": 133.3
         "despawnEffect": "none",
         "smokeEffect": "none",
+	"hitSound": "pingradar",
+	"effect": "threat-tracked",
+	"effectDuration": 120,
+	"pierce": true,
+	"pierceCap": 999
         "shootEffect": {
             "type": "WaveEffect",
             "colorFrom": "8c887b",
@@ -32,6 +38,11 @@
             "strokeFrom": 3
         }
     },
+	shoot: {
+		type: ShootSpread
+		shots: 30
+		spread: 2
+	}
     "requirements": [
         {
             "item": "cobalt-item",
@@ -64,10 +75,10 @@
     },
     "category": "effect",
     "fogRadiusMultiplier": 0,
-    "shootSound": "pingradar",
+    "shootSound": "none",
     "research": {
         "parent": "cobalt-radar"
     },
-    "shake": 3,
+    "shake": 0,
     "researchCostMultiplier": 0.05
 }

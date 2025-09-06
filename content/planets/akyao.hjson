@@ -1,5 +1,7 @@
 # The planet's display name. If you want to support multiple languages, use bundles instead!
 localizedName: Akyao
+allowLaunchLoadout: false
+clear
 # The mesh of the planet. Only NoiseMesh is still supported...
 mesh: {
   # A class name.
@@ -116,7 +118,9 @@ iconColor: bcf3ff
 # Another self-explanatory field...
 hasAtmosphere: true
 # Whether simulate waves when off-planet
-allowWaveSimulation: true
+allowWaveSimulation: false
+allowSectorInvasion: false
+defaultCore: core-ash
 # Whether sectors are reset when a player loses them
 clearSectorOnLose: true
 # Causes numbered sectors to be playable
@@ -135,14 +139,18 @@ solarSystem: sun
 # In the current version, only 1 entry is applicable if you decide to use modded accelerators.
 # Probably useless since the Interplanetary Accelerator is hidden and not working.
 launchCandidates: []
-rules: {
+# God bless Sh1penfire for figuring this out. This shit needs to be GLOBAL JSON MODDING KNOWLEDGE.
+campaignRuleDefaults: {
 	"waveTeam": "blue"
 	"showSpawns": false
 	"coreDestroyClear": true
 	"coreIncinerates": true
 	"fog": true
 	"staticFog": true
+	"placeRangeCheck": false
 	"airUseSpawns": false
+	"coreDestroyClear": true
+	"hideBannedBlocks": true
 }
 # Items not available in this planet.
 hiddenItems: [

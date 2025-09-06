@@ -6,7 +6,7 @@ rotateDraw: false
 craftTime: 60,
 rotate: true
 size: 2
-heatOutput: 3
+heatOutput: 2
 regionRotated1: 1
 ambientSound: hum
 	consumes: {

@@ -1,0 +1,31 @@
+{
+	type: StatusEffect
+	name: Threat-tracked
+	outline: false
+	damageMultiplier: 1
+	healthMultiplier: 1
+	speedMultiplier: 1
+	reloadMultiplier: 1
+	dragMultiplier: 1
+	disarm: false
+	damage: 0
+	effectChance: 0.1
+	parentizeEffect: false
+	permanent: false
+	reactive: false
+	show: true
+	color: ffffff
+	effect: none
+	applyEffect: {
+            "type": "WaveEffect",
+            "colorFrom": "8c887b",
+            "colorTo": "ffffff",
+            "sizeTo": 8,
+            "lifetime": 240,
+            "strokeFrom": 3
+	}
+	applyExtend: false
+	applyColor: ffffff
+	parentizeApplyEffect: false
+	transitionDamage: 0
+}

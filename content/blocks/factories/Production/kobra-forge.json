@@ -46,14 +46,17 @@
 	    type: DrawMulti
 	    drawers : [
 	            	{
-	            	  type : DrawDefault
-	            	},
-	            	{
 	            	  type : DrawRegion
 	            	  suffix : "-bottom"
 	            	},
 	            	{
 	            	  type : DrawArcSmelt
+	            	},
+	            	{
+	            	  type : DrawDefault
+	            	},
+	            	{
+	            	  type : DrawHeatInput
 	            	},
 	    ]
 	}

@@ -5,9 +5,9 @@
   "health": 265,
   "size": 1,
   "range": 11,
-  "healPercent": 0.04,
+  "healPercent": 0.03,
  "consumes": {
-    "power": 0.1,
+    "power": 0.05,
   },
 
   "requirements": [

@@ -12,6 +12,7 @@
     "squareSprite": false
     "coolantMultiplier": 0.5
     "outlineColor": 222222
+    "fogRadiusMultiplier": 0.5,
   "consumes": {
     "coolant": {
       "amount": 0.5
