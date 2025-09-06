@@ -18,7 +18,7 @@
                 }
 		"liquids": {
 			"liquids": [
-				{ "liquid": "cryofluid", "amount": 0.4 }
+				{ "liquid": "arkycite", "amount": 0.4 }
 			]
 		}
 	},
