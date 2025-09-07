@@ -13,7 +13,7 @@
 	targetAir: true
 	targetGround: true
 	speed: 4
-	lifetime: 61.25
+	lifetime: 160
 	health: 4500
 	abilities: [
 		{

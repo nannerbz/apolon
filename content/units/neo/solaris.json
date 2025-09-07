@@ -58,7 +58,7 @@ weapons: [
         bullet: {
     		type: BasicBulletType
     		shootEffect: shootBig
-    		smokeEffect: titanSmoke
+    		smokeEffect: shootSmokeTitan
     		ammoMultiplier: 1
     		spawnUnit: solaris-missile
         }
