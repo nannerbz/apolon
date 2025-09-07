@@ -74,7 +74,6 @@ weapons: [
                 "lifetime": 20,
                 "strokeFrom": 2
             },
-            "buildingDamageMultiplier": 0.05,
             "frontColor": "7ec0cc",
             "hitSound": "none",
             "lightColor": "7ec0cc",
@@ -84,6 +83,9 @@ weapons: [
             "weaveScale": 4,
             "trailChance": -1,
             "despawnSound": "dullExplosion",
+	    "pierce": true
+	    "pierceBuilding": true
+	    "pierceCap": 5
             "despawnEffect": "none",
         }
 	parts: [
