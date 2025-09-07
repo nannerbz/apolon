@@ -26,7 +26,7 @@ legGroupSize: 2
 legSplashDamage: 75
 legSplashRange: 15
 outlineColor: 222222
-range: 245
+range: 200
 hitSize: 48
 abilities: [
 	{

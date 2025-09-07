@@ -56,6 +56,7 @@
 			shake: 10
 			bullet: {
 				type: ExplosionBulletType
+				killShooter: true
 				splashDamage: 125
 				splashDamageRadius: 95
 				ammoMultiplier: 1

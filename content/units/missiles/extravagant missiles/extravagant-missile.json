@@ -74,6 +74,7 @@
 				splashDamage: 128
 				splashDamageRadius: 64
 				ammoMultiplier: 1
+				killShooter: true
 		}
 	}
 	]

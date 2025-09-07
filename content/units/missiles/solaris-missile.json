@@ -54,6 +54,7 @@
            		damage: 65
 			length: 55
 			width: 9
+			killShooter: true
 			toColor: 37727d
 		}
 	}
