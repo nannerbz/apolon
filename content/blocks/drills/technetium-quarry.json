@@ -1,0 +1,58 @@
+{
+	type: AttributeCrafter
+	name: Technetium Quarry
+	description: Mines Technetium from vents using Cryogel. Mines in bursts.
+	attribute: steam
+	minEfficiency: 8.8
+	baseEfficiency: 0
+	displayEfficiency: false
+	craftEffect: drillSteam
+	craftTime: 240
+	size: 3
+	ambientSound: hum
+	ambientSoundVolume: 0.08
+	hasLiquids: true
+	squareSprite: false
+	boostScale: 1.2
+	outputItem: {"item": "technetium-item", "amount": 3}
+	hasPower: true
+	hasLiquids: true
+	category: production
+	research: fuge-extractor
+	researchCostMultiplier: 0.05
+	"updateEffect": "drillSteam",
+	"consumes": {
+		power: 3.5
+		"items": {
+			"items": [
+				{ "item": "cryogel-item", "amount": 2 }
+			]
+		}
+	},
+	requirements: [
+	  bismuth-item/80
+	  carbide/50
+	  chromium-item/75
+	  photoglass-item/50
+	]
+	drawer: {
+	    type: DrawMulti
+	    drawers : [
+	            	{
+	            	  type : DrawDefault
+	            	},
+	            	{
+	            	  type : DrawRegion
+	            	  suffix : "-rotator1"
+				  spinSprite: true
+				  rotateSpeed: 2
+	            	},
+	            	{
+	            	  type : DrawRegion
+	            	  suffix : "-rotator2"
+				  spinSprite: true
+				  rotateSpeed: 3
+	            	},
+			]
+		}
+}
