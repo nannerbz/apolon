@@ -42,8 +42,8 @@ weapons: [
 	layerOffset: 1
 	minWarmup: 0.98
 	warmupMaintainTime: 20
-	shootWarmupSpeed: 0.02
-        reload: 20
+	shootWarmupSpeed: 0.06
+        reload: 180
         x: 12
         y: -6
         top: true
@@ -56,15 +56,11 @@ weapons: [
 	  rotationLimit: 45
 	  rotate: true
         bullet: {
-            type: LaserBulletType
-		recoil: 0.1
-		hitSize: 6
-		lifetime: 6
-		drawSize: 520
-		collidesAir: true
-                damage: 110
-		length: 245
-		toColor: 37727d
+    		type: BasicBulletType
+    		shootEffect: shootBig
+    		smokeEffect: titanSmoke
+    		ammoMultiplier: 1
+    		spawnUnit: solaris-missile
         }
 	parts: [
 		{
@@ -115,8 +111,8 @@ weapons: [
 	layerOffset: 1
 	minWarmup: 0.98
 	warmupMaintainTime: 20
-	shootWarmupSpeed: 0.02
-        reload: 35
+	shootWarmupSpeed: 0.04
+        reload: 140
         x: 10
         y: 6
         top: true
@@ -129,15 +125,11 @@ weapons: [
 	  rotationLimit: 45
 	  rotate: true
         bullet: {
-            type: LaserBulletType
-		recoil: 0.2
-		hitSize: 6
-		lifetime: 6
-		drawSize: 520
-		collidesAir: true
-                damage: 210
-		length: 245
-		toColor: 37727d
+    		type: BasicBulletType
+    		shootEffect: shootBig
+    		smokeEffect: titanSmoke
+    		ammoMultiplier: 1
+    		spawnUnit: solaris-missile
         }
 	parts: [
 		{

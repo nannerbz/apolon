@@ -48,12 +48,18 @@ weapons: [
 	  rotationLimit: 65
 	  rotate: true
         bullet: {
-            type: ShrapnelBulletType
+            type: LaserBulletType
 		recoil: 1
-            damage: 115
+		hitSize: 4
+		lifetime: 12
+		drawSize: 85
+		collidesAir: true
+                damage: 115
 		length: 85
-		width: 11
 		toColor: 37727d
+		pierce: true
+		pierceCap: 3
+		pierceBuilding: true
         }
 	parts: [
 		{

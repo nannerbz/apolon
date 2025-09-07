@@ -20,9 +20,9 @@
 	category: production
 	research: fuge-extractor
 	researchCostMultiplier: 0.05
-	"updateEffect": "drillSteam",
+	"updateEffect": "mine",
 	"consumes": {
-		power: 3.5
+		power: 1.4
 		"items": {
 			"items": [
 				{ "item": "cryogel-item", "amount": 2 }

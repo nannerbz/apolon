@@ -1,0 +1,61 @@
+{
+	template: MissileUnitType
+	name: Solaris Missile
+	hitSize: 16
+	maxRange: 12
+	rotateSpeed: 2.4
+	trailLength: 72
+	missileAccelTime: 64
+	lowAltitude: true
+	loopSound: missileTrail
+	loopSoundVolume: 3
+	deathSound: largeExplosion
+	targetAir: true
+	targetGround: true
+	speed: 4
+	lifetime: 61.25
+	health: 4500
+	abilities: [
+		{
+			type: MoveLightningAbility
+			damage: 25
+			chance: 0.3
+			length: 8
+			minSpeed: 0.5
+			maxSpeed: 3
+			color: 7ec0cc
+			alternate: false	
+		}
+	]
+	weapons: [
+		{
+			name: weapon
+			shootCone: 360
+			mirror: false
+			reload: 1
+			deathExplosionEffect: {
+				type: MultiEffect
+				effects: [
+					bigShockwave
+					titanSmoke
+					massiveExplosion
+				]
+			}
+			deathSound: plasmaboom
+			shootOnDeath: true
+			shake: 4
+			shoot: {
+				type: ShootSpread
+				shots: 5
+				spread: 72
+			}
+			bullet: {
+           		type: ShrapnelBulletType
+           		damage: 65
+			length: 55
+			width: 9
+			toColor: 37727d
+		}
+	}
+	]
+}

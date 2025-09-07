@@ -54,15 +54,37 @@ weapons: [
 	  rotationLimit: 45
 	  rotate: true
         bullet: {
-            type: LaserBulletType
-		recoil: 1.5
-		hitSize: 4
-		lifetime: 12
-		drawSize: 480
-		collidesAir: true
-                damage: 185
-		length: 185
-		toColor: 37727d
+            "type": "MissileBulletType",
+            "trailWidth": 3,
+            "trailLength": 25,
+            "speed": 4,
+            "lifetime": 36.25,
+            "damage": 185,
+            "width": 10,
+            "height": 10,
+            "shootEffect": "shootBig2",
+            "smokeEffect": "shootSmokeTitan",
+            "splashDamage": 20,
+            "splashDamageRadius": 16,
+            "despawnEffect": {
+                "type": "WaveEffect",
+                "colorFrom": "7ec0cc",
+                "colorTo": "37727d",
+                "sizeTo": 30,
+                "lifetime": 20,
+                "strokeFrom": 2
+            },
+            "buildingDamageMultiplier": 0.05,
+            "frontColor": "7ec0cc",
+            "hitSound": "none",
+            "lightColor": "7ec0cc",
+            "trailColor": "599ca8",
+            "backColor": "37727d",
+            "weaveMag": 5,
+            "weaveScale": 4,
+            "trailChance": -1,
+            "despawnSound": "dullExplosion",
+            "despawnEffect": "none",
         }
 	parts: [
 		{
