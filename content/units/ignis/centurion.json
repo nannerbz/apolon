@@ -33,7 +33,7 @@ treadRects: [
 weapons: [
     {
         name: centurion-w
-        reload: 10
+        reload: 4
         x: 0
         y: 0
         top: true
@@ -49,10 +49,10 @@ weapons: [
         ejectEffect: none
         bullet: {
 		type: BasicBulletType
-		damage: 35
+		damage: 20
 		speed: 4
 		width: 8
-		length: 10
+		length: 16
 		lifetime: 43.75
 		trailColor: ffffff
 		trailLength: 10
