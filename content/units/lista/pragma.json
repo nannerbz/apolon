@@ -38,7 +38,7 @@ weapons: [
 			type: BasicBulletType
 			sprite: mine-bullet
 			collidesTeam: true
-			healPercent: 5
+			healPercent: 1.5
 			width: 8
 			height: 8
 			shootEffect: none
@@ -60,8 +60,8 @@ weapons: [
 			trailColor: 64c990
 			trailWidth: 3
 			trailLength: 8
-			splashDamage: 32
-			splashDamageRadius: 48
+			splashDamage: 12
+			splashDamageRadius: 24
 		}
 	}
 	{

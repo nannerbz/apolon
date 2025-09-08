@@ -37,7 +37,7 @@ weapons: [
 			shootEffect: none
 			smokeEffect: none
 			collidesTeam: true
-			healPercent: 4
+			healPercent: 1
 			maxRange: 95
 			hitSound: plasmaboom
 			hitSize: 16
@@ -54,8 +54,8 @@ weapons: [
 			trailColor: 64c990
 			trailWidth: 3
 			trailLength: 8
-			splashDamage: 12
-			splashDamageRadius: 24
+			splashDamage: 16
+			splashDamageRadius: 32
 		}
 	}
 	{
