@@ -38,11 +38,6 @@ weapons: [
 		rotate: true
 		rotateSpeed: 1
 		rotationLimit: 25
-		shoot: {
-			type: ShootHelix
-			mag: 3
-			scl: 2
-		}
 		bullet: {
     			type: BasicBulletType
     			shootEffect: shootBig
