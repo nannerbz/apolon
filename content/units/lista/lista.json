@@ -21,3 +21,23 @@ abilities: [
 		range: 45
 	}
 ]
+weapons: [
+	{
+		type: PointDefenseWeapon
+		name: lista-w
+		reload: 45
+		targetInterval: 45
+		targetSwitchInterval: 35
+		recoil: 0.4
+		x: 0
+		y: -2
+		bullet: {
+			type: BulletType
+			shootSound: lasershoot
+			shootEffect: sparkShoot
+			hitEffect: pointHit
+			maxRange: 75
+			damage: 25
+		}
+	}
+]
