@@ -9,7 +9,7 @@ treadPullOffset: 5
 rotateShooting: false
 shootSound: lasershoot
 hitSize: 20
-range: 95
+range: 65
 itemCapacity: 0
 buildSpeed: 1.1
 outlineColor: 222222
@@ -44,24 +44,27 @@ weapons: [
         spacing: 3
 	innacuracy: 10
 	rotate: true
+	rotateSpeed: 1.8
         mirror: false
 	  recoil: 1
-	  shootSound: shootBig
+	  shootSound: flame
         ejectEffect: none
         bullet: {
-		type: BasicBulletType
-		damage: 42
-		collidesTeam: true
-		healPercent: 0.5
-		speed: 3
-		width: 6
-		length: 10
-		lifetime: 31.6
-		trailColor: ffffff
-		trailLength: 8
-		trailWidth: 2
-		shootEffect: shootSmall
-		smokeEffect: shootSmallSmoke
+    		type: BulletType
+    		damage: 68
+    		ammoMultiplier: 1
+    		hitSize: 6
+    		lifetime: 21.66
+    		speed: 3
+    		pierce: true
+    		statusDuration: 240
+    		shootEffect: shootSmallFlame
+    		hitEffect: hitFlameSmall
+		buildingDamageMultiplier : 0.05
+    		despawnEffect: none
+    		status: burning
+    		keepVelocity: false
+    		hittable: false
         }
     }
 ]

@@ -1,6 +1,6 @@
 {
 	type: AttributeCrafter
-	name: Hydrodenser
+	name: Hydrocharger
 	description: Makes hydrogen from vents at an accelerated rate, using cryofluid. Useful for when there aren't many vents.
 	attribute: steam
 	minEfficiency: 8.8

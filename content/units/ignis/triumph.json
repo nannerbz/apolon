@@ -62,8 +62,6 @@ weapons: [
 		    width: 10
 		    height: 10
 		    drag: -0.03
-			collidesTeam: true
-			healPercent: 1.4
 		    shootEffect: shootBig2
 		    smokeEffect: shootSmokeTitan
 		    splashDamage: 45

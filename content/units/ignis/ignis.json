@@ -47,8 +47,6 @@ weapons: [
         bullet: {
 		type: BasicBulletType
 		damage: 20
-		collidesTeam: true
-		healPercent: 0.4
 		speed: 3
 		width: 6
 		length: 10
