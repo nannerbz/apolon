@@ -13,7 +13,7 @@
 	targetAir: true
 	targetGround: true
 	speed: 5
-	lifetime: 131
+	lifetime: 160
 	health: 2550
 	weapons: [
 		{
@@ -35,8 +35,8 @@
 			bullet: {
            			type: ExplosionBulletType
 				scaledSplashDamage: true
-				splashDamage: 128
-				splashDamageRadius: 32
+				splashDamage: 512
+				splashDamageRadius: 64
 				killShooter: true
 			}
 		}
