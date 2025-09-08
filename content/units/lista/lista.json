@@ -12,19 +12,12 @@ itemCapacity: 0
 outlineColor: 222222
 range: 75
 isEnemy: false
-weapons: [
+research: airborne-fabricator
+abilities: [
 	{
-		type: RepairBeamWeapon
-		name: lista-w
-		beamWidth: 0.8
-		repairSpeed: 0.3
-		mirror: false
-		x: 0
-		y: -2
-		bullet: {
-			type: BulletType
-			maxRange: 75
-		}
+		type: RepairFieldAbility
+		amount: 4
+		reload: 120
+		range: 45
 	}
 ]
-	research: airborne-fabricator

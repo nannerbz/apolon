@@ -36,6 +36,8 @@ weapons: [
 			height: 8
 			shootEffect: none
 			smokeEffect: none
+			collidesTeam: true
+			healPercent: 4
 			maxRange: 95
 			hitSound: plasmaboom
 			hitSize: 16

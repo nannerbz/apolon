@@ -37,6 +37,8 @@ weapons: [
 		bullet: {
 			type: BasicBulletType
 			sprite: mine-bullet
+			collidesTeam: true
+			healPercent: 5
 			width: 8
 			height: 8
 			shootEffect: none
