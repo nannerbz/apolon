@@ -38,9 +38,9 @@ weapons: [
         "ejectEffect": "casing1",
         "bullet": {
             "type": "LaserBoltBulletType",
-            "damage": 16,
+            "damage": 12,
             "pierce": true,
-            "pierceCap": 300,
+            "pierceCap": 5,
             "speed": 9,
             "width": 2,
             "length": 6,

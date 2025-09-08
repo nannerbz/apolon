@@ -30,29 +30,26 @@ parts: [
 weapons: [
 	{
 		name: corsair-w
-		reload: 60
+		reload: 120
 		x: 8
 		y: 1.4
-		shootSound: artillery
+		shootSound: railgun
+		alternate: false
+		mirror: true
 		top: false
 		rotate: true
 		rotateSpeed: 2
 		rotationLimit: 10
 		bullet: {
-			type: ArtilleryBulletType
-			damage: 40
-			splashDamage: 35
-			splashDamageRadius: 64
-			hitEffect: blastExplosion
-			speed: 4
-			knockback: 1.2
-			collides: true
-			collidesTiles: true
-			width: 20
-			height: 20
-			lifetime: 106.25
-			shootEffect: shootSmall
-			smokeEffect: shootSmallSmoke
+			type: RailBulletType
+			length: 425
+			pierceDamageFactor: 0.5
+			damage: 125
+			hitEffect: massiveExplosion
+			pointEffect: railTrail
+			pierceEffect: railHit
+			shootEffect: railShoot
+			smokeEffect: shootBig2
 		}
 	}
 ]

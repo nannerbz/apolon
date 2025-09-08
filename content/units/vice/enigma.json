@@ -30,7 +30,7 @@ parts: [
 weapons: [
 	{
 		name: enigma-w
-		reload: 120
+		reload: 480
 		x: 14
 		y: 0
 		shootSound: artillery
@@ -44,20 +44,11 @@ weapons: [
 			scl: 2
 		}
 		bullet: {
-			type: ArtilleryBulletType
-			damage: 120
-			splashDamage: 48
-			splashDamageRadius: 128
-			hitEffect: blastExplosion
-			speed: 5
-			knockback: 1.2
-			collides: true
-			collidesTiles: true
-			width: 20
-			height: 20
-			lifetime: 131
-			shootEffect: shootSmall
-			smokeEffect: shootSmallSmoke
+    			type: BasicBulletType
+    			shootEffect: shootBig
+    			smokeEffect: shootSmokeTitan
+    			ammoMultiplier: 1
+    			spawnUnit: enigma-missile
 		}
 	}
 ]

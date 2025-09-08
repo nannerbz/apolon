@@ -1,0 +1,44 @@
+{
+	template: MissileUnitType
+	name: Enigma Missile
+	hitSize: 16
+	maxRange: 12
+	rotateSpeed: 1.4
+	trailLength: 72
+	missileAccelTime: 24
+	lowAltitude: true
+	loopSound: missileTrail
+	loopSoundVolume: 3
+	deathSound: largeExplosion
+	targetAir: true
+	targetGround: true
+	speed: 5
+	lifetime: 131
+	health: 2550
+	weapons: [
+		{
+			name: weapon
+			shootCone: 360
+			mirror: false
+			reload: 1
+			deathExplosionEffect: {
+				type: MultiEffect
+				effects: [
+					bigShockwave
+					titanSmoke
+					massiveExplosion
+				]
+			}
+			deathSound: plasmaboom
+			shootOnDeath: true
+			shake: 4
+			bullet: {
+           			type: ExplosionBulletType
+				scaledSplashDamage: true
+				splashDamage: 128
+				splashDamageRadius: 32
+				killShooter: true
+			}
+		}
+	]
+}

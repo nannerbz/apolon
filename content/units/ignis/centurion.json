@@ -42,6 +42,7 @@ weapons: [
 	innacuracy: 0
 	rotate: true
 	rotateSpeed: 1.2
+	shootCone: 45
 	shootY: 2
         mirror: false
 	  recoil: 1
