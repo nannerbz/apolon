@@ -60,7 +60,6 @@ weapons: [
     		statusDuration: 240
     		shootEffect: shootSmallFlame
     		hitEffect: hitFlameSmall
-		buildingDamageMultiplier : 0.05
     		despawnEffect: none
     		status: burning
     		keepVelocity: false

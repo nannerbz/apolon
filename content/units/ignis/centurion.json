@@ -33,22 +33,23 @@ treadRects: [
 weapons: [
     {
         name: centurion-w
-        reload: 2
+        reload: 10
         x: 0
         y: 0
         top: true
-	xRand: 2
+	xRand: 0
         spacing: 3
 	innacuracy: 0
 	rotate: true
 	rotateSpeed: 1.2
+	shootY: 2
         mirror: false
 	  recoil: 1
 	  shootSound: shootBig
         ejectEffect: none
         bullet: {
 		type: BasicBulletType
-		damage: 15
+		damage: 35
 		speed: 4
 		width: 8
 		length: 10
