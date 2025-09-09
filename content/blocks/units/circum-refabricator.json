@@ -2,6 +2,8 @@ type: Reconstructor
 
 health: 3250
 name: Circum Manipulator
+description: Used to upgrade T2 units to T3 units. Removed.
+buildVisibility: editorOnly
 size: 5
 itemCapacity: 100
 constructTime: 4800

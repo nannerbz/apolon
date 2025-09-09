@@ -1,7 +1,7 @@
 type: UnitAssembler
 
 health: 1250
-name: Airborne Reformer
+name: Fleet Reformer
 size: 7
 itemCapacity: 100
 constructTime: 4500
@@ -9,15 +9,16 @@ areaSize: 9
 
 requirements: [
     bismuth-item/350
-    cobalt-item/250
-    metaglass/300
-    carbide/200
-    chromium-item/150
+    cobalt-item/100
+    metaglass/400
+    carbide/300
+    neodymium-item/350
+    chromium-item/450
     kobra-alloy-item/250
 ]
 
 consumes: {
-	power: 3.5
+	power: 3
 	liquids: [
 	cyanogen/0.4
 	]
@@ -26,21 +27,12 @@ consumes: {
 plans: [
 	{
 		type: AssemblerUnitPlan
-		unit: tritium
-		time: 2250
+		unit: peregrine
+		time: 2650
         	requirements: [
-			apolon-quark/3
-			apolon-large-cobalt-wall/2
-		]
-	},
-	{
-		type: AssemblerUnitPlan
-		unit: desmos
-		time: 3250
-        	requirements: [
-			apolon-pion/3
+			apolon-lista/4
 			apolon-large-neodymium-wall/2
-			apolon-chisel/2
+			apolon-bismuth-mender/2
 		]
 	},
 ]

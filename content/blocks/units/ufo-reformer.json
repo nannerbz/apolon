@@ -5,27 +5,36 @@ name: UFO Reformer
 size: 7
 itemCapacity: 100
 constructTime: 4500
-areaSize: 8
+areaSize: 9
 
 requirements: [
     bismuth-item/450
     cobalt-item/350
-    metaglass/420
-    carbide/360
-    neodymium-item/380
-    photoglass-item/160
-    tungsten/60
-    chromium-item/420
+    metaglass/450
+    carbide/400
+    neodymium-item/500
+    chromium-item/650
+    kobra-alloy-item/250
 ]
 
 consumes: {
-	power: 3.5
+	power: 4
 	liquids: [
-	cyanogen/0.4
+	cyanogen/0.6
 	]
 }
 
 plans: [
+	{
+		type: AssemblerUnitPlan
+		unit: logos
+		time: 2950
+        	requirements: [
+			apolon-quo/2
+			apolon-vacuum/3
+			apolon-large-chromium-wall/4
+		]
+	},
 	{
 		type: AssemblerUnitPlan
 		unit: sophia
@@ -33,6 +42,7 @@ plans: [
         	requirements: [
 			apolon-quo/1
 			apolon-dota/3
+			apolon-chip/2
 			apolon-large-chromium-wall/4
 		]
 	},

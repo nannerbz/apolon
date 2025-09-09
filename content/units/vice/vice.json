@@ -79,3 +79,8 @@ weapons: [
 	}
 ]
 	research: float-fabricator
+	researchCost: {
+		carbide/50
+		metaglass/50
+		bismuth/25
+	}

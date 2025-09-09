@@ -1,5 +1,6 @@
 template: UnitType
 unitController: DefenderAI
+defaultCommand: rebuildCommand
 name: Lista
 flying: true
 speed: 2.9
@@ -12,6 +13,7 @@ itemCapacity: 0
 outlineColor: 222222
 range: 75
 isEnemy: false
+targetable: false
 research: airborne-fabricator
 abilities: [
 	{

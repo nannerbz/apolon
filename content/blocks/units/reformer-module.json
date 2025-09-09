@@ -1,0 +1,18 @@
+{
+	type: UnitAssemblerModule
+	category: units
+	size: 7
+	consumes: {
+		power: 3.5
+	}
+
+	requirements: [
+		bismuth-item/500
+		carbide/450
+		kobra-alloy/350
+		tungsten/250
+		photoglass-item/300
+	]
+	researchCostMultiplier: 0.6
+	research: deca-refabricator
+}

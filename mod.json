@@ -9,18 +9,19 @@ Discord: fandslimu
   "minGameVersion": 150
     "contentOrder": [
         #Items
-        "cobalt",
-        "bismuth",
-        "pearl-dust",
-        "rad-snow",
-        "chromium",
-        "neodymium",
-        "kobra-alloy",
-        "flux",
-        "photoglass",
-        "technetium",
-        "hypersteel",
-        "hyemos"
+        "cobalt-item",
+        "bismuth-item",
+        "pearl-dust-item",
+        "rad-snow-item",
+        "chromium-item",
+        "neodymium-item",
+        "flux-item",
+        "kobra-alloy-item",
+	"cryogel-item",
+        "photoglass-item",
+        "technetium-item",
+        "hypersteel-item",
+        "hyemos-item"
         #Units
         "spark",
         "volt",

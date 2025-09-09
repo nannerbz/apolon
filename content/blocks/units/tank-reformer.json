@@ -5,17 +5,16 @@ name: Tank Reformer
 size: 7
 itemCapacity: 100
 constructTime: 4500
-areaSize: 8
+areaSize: 9
 
 requirements: [
-    bismuth-item/320
-    cobalt-item/240
-    metaglass/380
-    carbide/280
-    neodymium-item/380
-    chromium-item/360
-    photoglass-item/180
-    tungsten/60
+    bismuth-item/200
+    cobalt-item/200
+    metaglass/300
+    carbide/300
+    neodymium-item/250
+    chromium-item/250
+    kobra-alloy-item/350
 ]
 
 consumes: {
@@ -28,17 +27,27 @@ consumes: {
 plans: [
 	{
 		type: AssemblerUnitPlan
-		unit: triumph
-		time: 3200
+		unit: centurion
+		time: 2750
         	requirements: [
 			apolon-ignis/2
-			apolon-large-neodymium-wall/2
-			apolon-kobra-wall/2
 			apolon-chisel/2
+			apolon-kobra-wall/2
+		]
+	},
+	{
+		type: AssemblerUnitPlan
+		unit: triumph
+		time: 3650
+        	requirements: [
+			apolon-vanguard/2
+			apolon-large-neodymium-wall/3
+			apolon-kobra-wall/3
+			apolon-chisel/4
 		]
 	},
 ]
 
 category: units
-research: circum-refabricator
+research: deca-refabricator
 "researchCostMultiplier": 0.05

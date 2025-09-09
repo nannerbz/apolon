@@ -5,16 +5,15 @@ name: Crawl Reformer
 size: 7
 itemCapacity: 100
 constructTime: 4500
-areaSize: 8
+areaSize: 9
 
 requirements: [
-    bismuth-item/320
-    cobalt-item/240
-    metaglass/360
-    carbide/220
-    neodymium-item/330
-    photoglass-item/120
-    tungsten/60
+    bismuth-item/160
+    cobalt-item/300
+    metaglass/250
+    carbide/350
+    neodymium-item/250
+    kobra-alloy-item/200
 ]
 
 consumes: {
@@ -27,16 +26,25 @@ consumes: {
 plans: [
 	{
 		type: AssemblerUnitPlan
-		unit: solaris
-		time: 2450
+		unit: chronos
+		time: 2150
         	requirements: [
-			apolon-neo/3
+			apolon-neo/2
 			apolon-large-cobalt-wall/2
-			apolon-chip/2
+		]
+	},
+	{
+		type: AssemblerUnitPlan
+		unit: solaris
+		time: 2850
+        	requirements: [
+			apolon-sigma/3
+			apolon-large-cobalt-wall/4
+			apolon-chip/3
 		]
 	},
 ]
 
 category: units
-research: circum-refabricator
+research: deca-refabricator
 "researchCostMultiplier": 0.05

@@ -5,16 +5,15 @@ name: Float Reformer
 size: 7
 itemCapacity: 100
 constructTime: 4500
-areaSize: 8
+areaSize: 9
 
 requirements: [
-    bismuth-item/320
-    cobalt-item/240
-    metaglass/380
-    carbide/280
-    neodymium-item/320
-    photoglass-item/160
-    tungsten/60
+    bismuth-item/350
+    cobalt-item/150
+    metaglass/400
+    carbide/350
+    chromium-item/200
+    kobra-alloy-item/350
 ]
 
 consumes: {
@@ -27,16 +26,26 @@ consumes: {
 plans: [
 	{
 		type: AssemblerUnitPlan
-		unit: enigma
+		unit: corsair
 		time: 2850
         	requirements: [
-			apolon-vice/4
-			apolon-blast/4
+			apolon-vice/2
+			apolon-chip/3
 			apolon-blast-carbide-wall/2
+		]
+	},
+	{
+		type: AssemblerUnitPlan
+		unit: enigma
+		time: 3250
+        	requirements: [
+			apolon-argo/4
+			apolon-blast/4
+			apolon-large-blast-carbide-wall/4
 		]
 	},
 ]
 
 category: units
-research: circum-refabricator
+research: deca-refabricator
 "researchCostMultiplier": 0.05
