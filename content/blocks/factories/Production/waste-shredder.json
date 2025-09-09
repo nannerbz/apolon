@@ -9,6 +9,7 @@ category: effect
 size: 1
 research: cobalt-duct
 researchCostMultiplier: 0.05
+category: crafting,
 requirements: [
 	cobalt-item/25
 	carbide/50
