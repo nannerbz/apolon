@@ -4,6 +4,6 @@
 	"description": "A resource used for basic needs, good as a isolator",
 	"hardness": 1,
 	"cost": 0.9,
-	"color": "534b58"
+	"color": "de8ec9"
 	"research": "cobalt-item"
 }
