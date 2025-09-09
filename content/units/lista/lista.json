@@ -1,6 +1,5 @@
 template: UnitType
 unitController: DefenderAI
-defaultCommand: rebuildCommand
 name: Lista
 flying: true
 speed: 2.9

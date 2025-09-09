@@ -9,7 +9,7 @@
 	requirements: [
 		bismuth-item/500
 		carbide/450
-		kobra-alloy/350
+		kobra-alloy-item/350
 		tungsten/250
 		photoglass-item/300
 	]

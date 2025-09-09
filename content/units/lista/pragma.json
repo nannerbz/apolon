@@ -1,5 +1,4 @@
 template: UnitType
-defaultCommand: rebuildCommand
 name: Pragma
 flying: true
 speed: 2.6
