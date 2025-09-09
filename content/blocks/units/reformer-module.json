@@ -1,5 +1,7 @@
 {
 	type: UnitAssemblerModule
+	name: Reformer Module
+	description: Can be put adjacent to the build area of a reformer to change it to instead upgrade into tier 4 units. Can accept payload to allow for additional payload acces points.
 	category: units
 	size: 7
 	consumes: {
