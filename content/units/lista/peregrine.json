@@ -11,7 +11,7 @@ itemCapacity: 0
 outlineColor: 222222
 range: 125
 isEnemy: false
-payloadCapacity: 96
+payloadCapacity: 256
 weapons: [
 	{
 		name: peregrine-w

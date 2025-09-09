@@ -19,7 +19,7 @@ requirements: [
 consumes: {
 	power: 3
 	liquids: [
-	cyanogen/0.2
+	cyanogen/0.8
 	]
 }
 

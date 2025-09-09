@@ -1,0 +1,15 @@
+type: ItemIncinerator
+name: Waste Shredder
+description: Deletes items using power. Use this carefully, wouldn't want to cause any pandemonium by deleting a valuable resource!
+outlineColor: 222222
+consumes: {
+	power: 0.075
+}
+category: effect
+size: 1
+research: cobalt-duct
+researchCostMultiplier: 0.05
+requirements: [
+	cobalt-item/25
+	carbide/50
+]
