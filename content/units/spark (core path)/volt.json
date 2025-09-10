@@ -1,7 +1,7 @@
 type: flying
 name: Volt
-speed: 2.9
-drag: 0.07
+speed: 4.8
+drag: 0.1
 accel: 0.13
 flying: true
 coreUnitDock: true
@@ -10,8 +10,7 @@ hitSize: 24
 mineSpeed: 10
 minePower: 2
 drillPower: 2
-buildSpeed: 4
-buildPower: 1.9
+buildSpeed: 1.6
 mineTier: 1
 rotateShooting: true
 armor: 3
