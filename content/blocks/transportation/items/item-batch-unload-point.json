@@ -8,6 +8,6 @@ researchCostMultiplier: 0.35
 requirements: [
 	bismuth-item/75
 	carbide/25
-	photoglass/5
+	photoglass-item/5
 ]
 category: distribution

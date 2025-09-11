@@ -14,7 +14,7 @@ unitBuildTime: 640
 requirements: [
 	cobalt-item/150
 	carbide/75
-	photoglass/50
+	photoglass-item/50
 ]
 	"consumes": {
 		power: 2

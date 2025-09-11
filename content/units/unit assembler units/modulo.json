@@ -11,8 +11,7 @@ payloadCapacity: 0
 targetable: false
 bounded: false
 useUnitCap: false
-envDisabled: none
-envEnabled: any
+envDisabled: 0
 createWreck: false
 isEnemy: false
 speed: 1.2
