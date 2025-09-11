@@ -93,6 +93,8 @@ Discord: fandslimu
         "cobalt-overload",
         "cobalt-underload",
         "cobalt-unloader",
+        "item-batch-loader",
+        "item-batch-unload-point",
         #Liquids
         "bismuth-conduit",
         "bismuth-junction",

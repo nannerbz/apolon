@@ -1,0 +1,13 @@
+type: UnitCargoUnloadPoint
+name: Item Batch Unload Point
+description: Takes in the selected item from the Item Batch Loader.
+size: 2
+itemCapacity: 100
+research: neo-duct
+researchCostMultiplier: 0.35
+requirements: [
+	bismuth-item/75
+	carbide/25
+	photoglass/5
+]
+category: distribution

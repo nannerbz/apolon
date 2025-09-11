@@ -1,0 +1,31 @@
+type: UnitCargoLoader
+name: Item Batch Loader
+description: Makes units that transport items to Item Batch Unload Point's.
+size: 3
+itemCapacity: 200
+research: neo-duct
+researchCostMultiplier: 0.25
+unitType: cascade
+polyStroke: 2
+polyRadius: 14
+polyRotateSpeed: 3
+polyColor: d65e74
+unitBuildTime: 640
+requirements: [
+	cobalt-item/150
+	carbide/75
+	photoglass/50
+]
+	"consumes": {
+		power: 2
+		"items": {
+			"items": [
+			]
+                }
+		"liquids": {
+			"liquids": [
+				{ "liquid": "cyanogen", "amount": 1 }
+			]
+		}
+	},
+category: distribution
