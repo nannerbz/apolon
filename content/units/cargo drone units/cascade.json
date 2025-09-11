@@ -1,4 +1,4 @@
-template: UnitType
+type: tether
 name: Cascade
 controller: CargoAI
 flying: true

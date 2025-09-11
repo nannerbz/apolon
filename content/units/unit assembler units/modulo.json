@@ -1,4 +1,4 @@
-template: UnitType
+type: tether
 name: Modulo
 controller: AssemblerAI
 flying: true
