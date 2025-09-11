@@ -5,7 +5,7 @@
 	category: units
 	size: 7
 	consumes: {
-		power: 3.5
+		power: 0.6
 	}
 
 	requirements: [

@@ -6,6 +6,9 @@ size: 7
 itemCapacity: 100
 constructTime: 4500
 areaSize: 9
+droneType: modulo
+donesCreated: 4
+droneConstructTime: 360
 
 requirements: [
     bismuth-item/160
