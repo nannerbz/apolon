@@ -22,7 +22,7 @@ legMoveSpace: 1
 legGroupSize: 3
 range: 75
 outlineColor: 222222
-hitSize: 22
+hitSize: 20
 abilities: [
 	{
 		type: SpawnDeathAbility
