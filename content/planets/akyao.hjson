@@ -141,16 +141,8 @@ launchCandidates: []
 # God bless Sh1penfire for figuring this out. This shit needs to be GLOBAL JSON MODDING KNOWLEDGE.
 showRtsAIRule: false
 campaignRules: {
-# 	"waveTeam": "blue"
 	"showSpawns": false
-# 	"coreDestroyClear": true
-# 	"coreIncinerates": true
 	"fog": true
-# 	"staticFog": true
-# 	"placeRangeCheck": false
-# 	"airUseSpawns": false
-# 	"coreDestroyClear": true
-# 	"hideBannedBlocks": true
 	"sectorInvasion": false
 	"randomWaveAI": false
 	"legacyLaunchPads": false
@@ -158,16 +150,8 @@ campaignRules: {
 }
 campaignRuleDefaults: {
 	"difficulty": normal
-# 	"waveTeam": "blue"
 	"showSpawns": false
-# 	"coreDestroyClear": true
-# 	"coreIncinerates": true
 	"fog": true
-# 	"staticFog": true
-# 	"placeRangeCheck": false
-# 	"airUseSpawns": false
-# 	"coreDestroyClear": true
-# 	"hideBannedBlocks": true
 	"sectorInvasion": false
 	"randomWaveAI": false
 	"legacyLaunchPads": false
@@ -193,11 +177,5 @@ hiddenItems: [
         "beryllium",
         "oxide",
         "dormant-cyst"
-]
-bannedBlocks: [
-        "slagIncinerator",
-        "conduit",
-        "reinforcedPayloadConveyor",
-        "reinforcedPayloadRouter",
 ]
 alwaysUnlocked: true

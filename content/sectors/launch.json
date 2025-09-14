@@ -7,9 +7,29 @@
   "allowLaunchLoadout": false,
   "allowLaunchSchematics": false,
   "sector": 6,
-  "addStartingItems": true,
+  "addStartingItems": false,
   "overrideLaunchDefaults": true,
   "research": ash
   "alwaysUnlocked": true
   "overrideLaunchDefaults": true
+# Planet Rules
+  "waveTeam": "blue"
+  "defaultTeam": "sharded"
+  "coreDestroyClear": true
+  "onlyDepositCore": true
+  "derelictRepair": false
+  "coreIncinerates": true
+  "staticFog": true
+  "placeRangeCheck": false
+  "airUseSpawns": false
+  "coreDestroyClear": true
+  "hideBannedBlocks": true
+  "launchLoadout": [
+   ]
+   bannedBlocks: [
+        "slagIncinerator",
+        "conduit",
+        "reinforcedPayloadConveyor",
+        "reinforcedPayloadRouter",
+   ]
 } 
