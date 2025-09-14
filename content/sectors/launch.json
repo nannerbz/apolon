@@ -7,7 +7,7 @@
   "allowLaunchLoadout": false,
   "allowLaunchSchematics": false,
   "sector": 6,
-  "addStartingItems": false
+  "addStartingItems": true
   "research": ash
   "alwaysUnlocked": true
   "overrideLaunchDefaults": true
