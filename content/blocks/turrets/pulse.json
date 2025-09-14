@@ -3,6 +3,7 @@
     "name": "Pulse",
     "description": "Fires a cluster of lasers and electricity arcs at ground enemies from a range.",
     "targetAir": false,
+    "predictTarget": false,
     "targetGround": true,
     "collidesAir": false,
     "health": 10250
