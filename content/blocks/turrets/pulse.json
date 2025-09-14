@@ -162,10 +162,11 @@
 			ammoMultiplier: 2
 			pierce: true
 			pierceCap: 8
-			damage: 1000
+			damage: 400
 			buildingDamageMultiplier : 0.05
-			lightningSpacing: 4
-			ligtningAngleRand: 45
+			lightningSpacing: 16
+			lightningAngleRand: 45
+			lightningDamage: 50
 		}
 		{
             		"type": "BulletType",
