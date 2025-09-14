@@ -14,15 +14,12 @@
     "squareSprite": false
     "coolantMultiplier": 0.65
   "consumes": {
-	"power": 1.2
+	"power": 2.4
 	"liquids": {
 		"liquids": [
 			{ "liquid": "chromatic-fluid", "amount": 0.4 }
 		]
 	}
-    "coolant": {
-      "amount": 0.8
-    }
   }
     "shootCone": 8,
     "rotateSpeed": 3,
@@ -66,6 +63,157 @@
             		"smokeEffect": "shootSmallSmoke",
             		"hitEffect": "hitLancer",
 	    		"spawnBullets": [
+				{
+				"type": "LightningBulletType",
+				"damage": 50,
+				"lightningColor": "cf926a",
+				"lightningLength": 66.6,
+				"lightningCone": 20,
+				"collidesAir": false,
+				"buildingDamageMultiplier": 0.05
+				}
+				{
+				"type": "LightningBulletType",
+				"damage": 50,
+				"lightningColor": "cf926a",
+				"lightningLength": 66.6,
+				"lightningCone": 20,
+				"collidesAir": false,
+				"buildingDamageMultiplier": 0.05
+				}
+				{
+				"type": "LightningBulletType",
+				"damage": 50,
+				"lightningColor": "cf926a",
+				"lightningLength": 66.6,
+				"lightningCone": 20,
+				"collidesAir": false,
+				"buildingDamageMultiplier": 0.05
+				}
+				{
+				"type": "LightningBulletType",
+				"damage": 50,
+				"lightningColor": "cf926a",
+				"lightningLength": 66.6,
+				"lightningCone": 20,
+				"collidesAir": false,
+				"buildingDamageMultiplier": 0.05
+				}
+				{
+				"type": "LightningBulletType",
+				"damage": 50,
+				"lightningColor": "cf926a",
+				"lightningLength": 66.6,
+				"lightningCone": 20,
+				"collidesAir": false,
+				"buildingDamageMultiplier": 0.05
+				}
+				{
+				"type": "LightningBulletType",
+				"damage": 50,
+				"lightningColor": "cf926a",
+				"lightningLength": 66.6,
+				"lightningCone": 20,
+				"collidesAir": false,
+				"buildingDamageMultiplier": 0.05
+				}
+				{
+				"type": "LightningBulletType",
+				"damage": 50,
+				"lightningColor": "cf926a",
+				"lightningLength": 66.6,
+				"lightningCone": 20,
+				"collidesAir": false,
+				"buildingDamageMultiplier": 0.05
+				}
+				{
+				"type": "LightningBulletType",
+				"damage": 50,
+				"lightningColor": "cf926a",
+				"lightningLength": 66.6,
+				"lightningCone": 20,
+				"collidesAir": false,
+				"buildingDamageMultiplier": 0.05
+				}
+	    		]
+		}
+	    ]
+        }
+        neodymium-item: {
+            "type": "BulletType",
+	    "instantDisappear": true
+            "shrinkY": 0,
+            "shrinkX": 0,
+            "speed": 1,
+            "lifetime": 1,
+            "shootEffect": "shootSmall",
+            "smokeEffect": "shootSmallSmoke",
+            "hitEffect": "hitLancer",
+            "ammoMultiplier": 1,
+	    "spawnBullets": [
+		{
+			Type: LaserBulletType
+			chargeEffect: lancerLaserCharge
+			hitEffect: hitLancer
+			hitSize: 5
+			drawSize: 800
+			collidesAir: false
+			length: 400
+			ammoMultiplier: 2
+			pierce: true
+			pierceCap: 8
+			damage: 1000
+			buildingDamageMultiplier : 0.05
+			lightningSpacing: 4
+			ligtningAngleRand: 45
+		}
+		{
+            		"type": "BulletType",
+	    		"instantDisappear": true
+            		"shrinkY": 0,
+            		"shrinkX": 0,
+            		"speed": 1,
+            		"lifetime": 1,
+            		"shootEffect": "shootSmall",
+            		"smokeEffect": "shootSmallSmoke",
+            		"hitEffect": "hitLancer",
+	    		"spawnBullets": [
+				{
+				"type": "LightningBulletType",
+				"damage": 50,
+				"lightningColor": "cf926a",
+				"lightningLength": 66.6,
+				"lightningCone": 20,
+				"collidesAir": false,
+				"buildingDamageMultiplier": 0.05
+				}
+				{
+				"type": "LightningBulletType",
+				"damage": 50,
+				"lightningColor": "cf926a",
+				"lightningLength": 66.6,
+				"lightningCone": 20,
+				"collidesAir": false,
+				"buildingDamageMultiplier": 0.05
+				}
+				{
+				"type": "LightningBulletType",
+				"damage": 50,
+				"lightningColor": "cf926a",
+				"lightningLength": 66.6,
+				"lightningCone": 20,
+				"collidesAir": false,
+				"buildingDamageMultiplier": 0.05
+				}
+				{
+				"type": "LightningBulletType",
+				"damage": 50,
+				"lightningColor": "cf926a",
+				"lightningLength": 66.6,
+				"lightningCone": 20,
+				"collidesAir": false,
+				"buildingDamageMultiplier": 0.05
+				}
 				{
 				"type": "LightningBulletType",
 				"damage": 50,
@@ -187,6 +335,7 @@
       			heatColor : "c7455a"
       			mirror : true
       			under : false
+			y : 2
       			moveX : 2
 			moveY : -2
       			moveRot : -25
@@ -207,8 +356,9 @@
       			heatColor : "c7455a"
       			mirror : true
       			under : false
+			y : -1
       			moveX : 3
-			moveY : -7
+			moveY : -5
       			moveRot : -35
 			moves: [
 				{
