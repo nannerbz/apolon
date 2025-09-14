@@ -24,7 +24,7 @@
   "airUseSpawns": false
   "coreDestroyClear": true
   "hideBannedBlocks": true
-  "launchLoadout": [
+  "loadout": [
    ]
    bannedBlocks: [
         "slagIncinerator",
