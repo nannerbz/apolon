@@ -201,6 +201,18 @@
     			},
     			{
       			type : RegionPart
+      			suffix : "-cannon"
+      			progress : recoil
+      			heatProgress : warmup
+      			heatColor : "c7455a"
+      			mirror : false
+      			under : false
+      			moveX : 0
+			moveY : -4
+      			moveRot : 0
+    			},
+    			{
+      			type : RegionPart
       			suffix : "-plate"
       			progress : warmup
       			heatProgress : warmup
