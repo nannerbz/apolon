@@ -139,9 +139,11 @@ solarSystem: sun
 # Probably useless since the Interplanetary Accelerator is hidden and not working.
 launchCandidates: []
 # God bless Sh1penfire for figuring this out. This shit needs to be GLOBAL JSON MODDING KNOWLEDGE.
-campaignRuleDefaults: {
+showRtsAIRule: false
+campaignRules: {
+	"difficulty": normal
 # 	"waveTeam": "blue"
- 	"showSpawns": false
+	"showSpawns": false
 # 	"coreDestroyClear": true
 # 	"coreIncinerates": true
 	"fog": true
@@ -150,6 +152,10 @@ campaignRuleDefaults: {
 # 	"airUseSpawns": false
 # 	"coreDestroyClear": true
 # 	"hideBannedBlocks": true
+	"sectorInvasion": false
+	"randomWaveAI": false
+	"legacyLaunchPads": false
+	"rtsAI": true
 }
 # Items not available in this planet.
 hiddenItems: [
