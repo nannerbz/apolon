@@ -139,7 +139,7 @@
 		}
 	    ]
         }
-        neodymium-item: {
+        photoglass-item: {
             "type": "BulletType",
 	    "instantDisappear": true
             "shrinkY": 0,
