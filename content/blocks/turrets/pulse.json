@@ -204,7 +204,7 @@
       			suffix : "-bar"
       			progress : warmup
       			heatProgress : warmup
-      			heatColor - "c7455a"
+      			heatColor : "c7455a"
       			mirror : true
       			under : false
       			moveX : 3
