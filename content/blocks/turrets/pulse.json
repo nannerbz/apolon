@@ -240,7 +240,6 @@
 			{
 				type: "OnSector"
 				preset: unite
-				# Siphon
 			}
 		]
 	}
