@@ -2,7 +2,7 @@
 	"type": "GenericCrafter",
 	"name": "Chromatic Basin",
 	"description": "Uses arkycite and bismuth, mixing it into a chromatic, color changing liquid.",
-	"outputLiquid": {"liquid": "chromatic-fluid", "amount": 0.8},
+	"outputLiquid": {"liquid": "chromatic-fluid", "amount": 0.6},
 	"size": 3,
 	"hasPower": true,
 	"hasItems": true,

@@ -1,0 +1,249 @@
+{
+    "type": "ItemTurret",
+    "name": "Pulse",
+    "description": "Fires a cluster of lasers and electricity arcs at ground enemies from a range.",
+    "targetAir": false,
+    "targetGround": true,
+    "collidesAir": false,
+    "health": 10250
+    "size": 4
+    "inaccuracy": 0
+    "reload": 600
+    "outlineColor": 222222
+    "xRand": 0,
+    "squareSprite": false
+    "coolantMultiplier": 0.65
+  "consumes": {
+	"power": 1.2
+	"liquids": {
+		"liquids": [
+			{ "liquid": "chromatic-fluid", "amount": 0.4 }
+		]
+	}
+    "coolant": {
+      "amount": 0.8
+    }
+  }
+    "shootCone": 8,
+    "rotateSpeed": 3,
+    "shots": 1,
+    "range": 400
+    "ammoTypes": {
+        neodymium-item: {
+            "type": "BulletType",
+	    "instantDisappear": true
+            "shrinkY": 0,
+            "shrinkX": 0,
+            "speed": 1,
+            "lifetime": 1,
+            "shootEffect": "shootSmall",
+            "smokeEffect": "shootSmallSmoke",
+            "hitEffect": "hitLancer",
+            "ammoMultiplier": 1,
+	    "spawnBullets": [
+		{
+			Type: LaserBulletType
+			chargeEffect: lancerLaserCharge
+			hitEffect: hitLancer
+			hitSize: 5
+			drawSize: 400
+			collidesAir: false
+			length: 200
+			ammoMultiplier: 2
+			pierce: true
+			pierceCap: 5
+			damage: 650
+			buildingDamageMultiplier : 0.05
+		}
+		{
+            		"type": "BulletType",
+	    		"instantDisappear": true
+            		"shrinkY": 0,
+            		"shrinkX": 0,
+            		"speed": 1,
+            		"lifetime": 1,
+            		"shootEffect": "shootSmall",
+            		"smokeEffect": "shootSmallSmoke",
+            		"hitEffect": "hitLancer",
+	    		"spawnBullets": [
+				{
+				"type": "LightningBulletType",
+				"damage": 18,
+				"lightningColor": "cf926a",
+				"lightningLength": 66.6,
+				"lightningCone": 20,
+				"collidesAir": false,
+				"buildingDamageMultiplier": 0.05
+				}
+				{
+				"type": "LightningBulletType",
+				"damage": 18,
+				"lightningColor": "cf926a",
+				"lightningLength": 66.6,
+				"lightningCone": 20,
+				"collidesAir": false,
+				"buildingDamageMultiplier": 0.05
+				}
+				{
+				"type": "LightningBulletType",
+				"damage": 18,
+				"lightningColor": "cf926a",
+				"lightningLength": 66.6,
+				"lightningCone": 20,
+				"collidesAir": false,
+				"buildingDamageMultiplier": 0.05
+				}
+				{
+				"type": "LightningBulletType",
+				"damage": 18,
+				"lightningColor": "cf926a",
+				"lightningLength": 66.6,
+				"lightningCone": 20,
+				"collidesAir": false,
+				"buildingDamageMultiplier": 0.05
+				}
+				{
+				"type": "LightningBulletType",
+				"damage": 18,
+				"lightningColor": "cf926a",
+				"lightningLength": 66.6,
+				"lightningCone": 20,
+				"collidesAir": false,
+				"buildingDamageMultiplier": 0.05
+				}
+				{
+				"type": "LightningBulletType",
+				"damage": 18,
+				"lightningColor": "cf926a",
+				"lightningLength": 66.6,
+				"lightningCone": 20,
+				"collidesAir": false,
+				"buildingDamageMultiplier": 0.05
+				}
+				{
+				"type": "LightningBulletType",
+				"damage": 18,
+				"lightningColor": "cf926a",
+				"lightningLength": 66.6,
+				"lightningCone": 20,
+				"collidesAir": false,
+				"buildingDamageMultiplier": 0.05
+				}
+				{
+				"type": "LightningBulletType",
+				"damage": 18,
+				"lightningColor": "cf926a",
+				"lightningLength": 66.6,
+				"lightningCone": 20,
+				"collidesAir": false,
+				"buildingDamageMultiplier": 0.05
+				}
+	    		]
+		}
+	    ]
+        }
+    }
+	drawer: {
+		type: DrawTurret,
+     		basePrefix: base,
+		parts : [
+    			{
+      			type : RegionPart
+      			suffix : "-b"
+      			progress : warmup
+      			heatProgress : warmup
+      			heatColor : "c7455a"
+      			mirror : false
+      			under : true
+      			moveX : 0
+			moveY : 0
+      			moveRot : 0
+    			},
+    			{
+      			type : RegionPart
+      			suffix : "-bar"
+      			progress : warmup
+      			heatProgress : warmup
+      			heatColor : "c7455a"
+      			mirror : true
+      			under : false
+      			moveX : 2
+			moveY : 0
+      			moveRot : -25
+			moves: [
+				{
+					x: 1
+					y: -2
+					rot: -10
+					progress: recoil
+				}
+			]
+    			},
+    			{
+      			type : RegionPart
+      			suffix : "-bar"
+      			progress : warmup
+      			heatProgress : warmup
+      			heatColor : "c7455a"
+      			mirror : true
+      			under : false
+      			moveX : 3
+			moveY : 0
+      			moveRot : 35
+			moves: [
+				{
+					x: 2
+					y: -2
+					rot: -10
+					progress: recoil
+				}
+			]
+    			},
+    			{
+      			type : RegionPart
+      			suffix : "-plate"
+      			progress : warmup
+      			heatProgress : warmup
+      			heatColor : "c7455a"
+      			mirror : true
+      			under : false
+      			moveX : 0
+			moveY : 1
+      			moveRot : -15
+			moves: [
+				{
+					x: 0
+					y: 1
+					rot: -10
+					progress: recoil
+				}
+			]
+    			},
+		]
+	}
+    "requirements": [
+        { "item": "carbide", "amount": 275 },
+	  { "item": "neodymium-item", "amount": 225 },
+        { "item": "metaglass", "amount": 165 },
+	  { "item": "cobalt-item", "amount": 300 },
+	  { "item": "kobra-alloy-item", "amount": 160 },
+    ],
+    "category": "turret"
+    "minWarmup": 0.96
+    "shootWarmupSpeed": 0.05
+    "shootSound": "railgun"
+    "loopSound": "glow"
+    "loopSoundVolume": 0.5
+	  "research": {
+		parent: chip
+		objectives: [
+			{
+				type: "OnSector"
+				preset: unite
+				# Siphon
+			}
+		]
+	}
+    "shake": 3
+    "researchCostMultiplier": 0.05
+}
