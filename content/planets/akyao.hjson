@@ -141,6 +141,22 @@ launchCandidates: []
 # God bless Sh1penfire for figuring this out. This shit needs to be GLOBAL JSON MODDING KNOWLEDGE.
 showRtsAIRule: false
 campaignRules: {
+# 	"waveTeam": "blue"
+	"showSpawns": false
+# 	"coreDestroyClear": true
+# 	"coreIncinerates": true
+	"fog": true
+# 	"staticFog": true
+# 	"placeRangeCheck": false
+# 	"airUseSpawns": false
+# 	"coreDestroyClear": true
+# 	"hideBannedBlocks": true
+	"sectorInvasion": false
+	"randomWaveAI": false
+	"legacyLaunchPads": false
+	"rtsAI": true
+}
+campaignRuleDefaults: {
 	"difficulty": normal
 # 	"waveTeam": "blue"
 	"showSpawns": false
