@@ -2,16 +2,18 @@ template: UnitType
 name: Murder
 flying: true
 armor: 9
-speed: 0.15
-rotateSpeed: 0.6
-accel: 0.07
+speed: 0.6
+rotateSpeed: 0.8
+accel: 0.005
 drag: 0.04
 health: 28500
 hitSize: 36
 itemCapacity: 10
 outlineColor: 222222
 circleTarget: false
-	lowAltitude: true
+trailLength: 36
+trailColor: "c25757"
+lowAltitude: true
 range: 320 
    parts: [
 	{
@@ -31,13 +33,13 @@ range: 320
 		"name": "murder-w",
 		"shoot": {
 			"type": "shootAlternate",
-			"shots": 16
-			"barrels": 16
-			"x": 6
+			"shots": 22
+			"barrels": 22
+			"x": 1.2
 		},
 		"reload": 50,
 		"shootY": 20
-		"recoil": 24
+		"recoil": 12
 		"x": 0,
 		"y": 0,
 		"baseRotation": 0,
