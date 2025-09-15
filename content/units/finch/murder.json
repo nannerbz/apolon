@@ -4,14 +4,14 @@ flying: true
 armor: 9
 speed: 0.6
 rotateSpeed: 0.8
-accel: 0.005
+accel: 0.025
 drag: 0.04
 health: 28500
 hitSize: 36
 itemCapacity: 10
 outlineColor: 222222
 circleTarget: false
-trailLength: 36
+trailLength: 72
 trailColor: "c25757"
 lowAltitude: true
 range: 320 
