@@ -1,0 +1,64 @@
+template: UnitType
+name: Murder
+flying: true
+armor: 9
+speed: 0.2
+accel: 0.07
+drag: 0.04
+health: 28500
+hitSize: 36
+itemCapacity: 10
+outlineColor: 222222
+circleTarget: false
+	lowAltitude: true
+range: 320 
+   parts: [
+	{
+		"type": "FlarePart",
+		"color1": "c25757",
+		"color2": "c99784",
+		"followRotation": false,
+		"sides": 9,
+		"x": 0,
+		"y": -6,
+		"radius": 18,
+		"stroke": 1,
+		"layer": 106
+	}
+] weapons: [
+	{
+		"name": "murder-w",
+		"shoot": {
+			"type": "shootAlternate",
+			"shots": 8,
+			"barrels": 8,
+			"x": 6
+		},
+		"reload": 70,
+		"x": 0,
+		"y": 0,
+		"baseRotation": 0,
+		"top": false,
+		"shootCone": 6,
+		"shootSound": "Pulse",
+		"rotate": false,
+		"mirror": false,
+		"bullet": {
+			"type": "BasicBulletType",
+			"damage": 80,
+			"inaccuracy": 5,
+			"pierceArmor": true,
+			"speed": 16,
+			"width": 14,
+			"length": 18,
+			"lifetime": 20,
+			"backColor": "c74567",
+			"frontColor": "c74567",
+			"trailColor": "c74567",
+			"trailLength": 6,
+			"trailWidth": 4,
+			"shootEffect": "shootSmall",
+			"smokeEffect": "shootSmallSmoke"
+		}
+	},
+]
