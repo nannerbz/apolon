@@ -2,7 +2,8 @@ template: UnitType
 name: Murder
 flying: true
 armor: 9
-speed: 0.2
+speed: 0.15
+rotateSpeed: 0.6
 accel: 0.07
 drag: 0.04
 health: 28500
@@ -20,7 +21,7 @@ range: 320
 		"followRotation": false,
 		"sides": 9,
 		"x": 0,
-		"y": -6,
+		"y": -8,
 		"radius": 18,
 		"stroke": 1,
 		"layer": 106
@@ -30,11 +31,13 @@ range: 320
 		"name": "murder-w",
 		"shoot": {
 			"type": "shootAlternate",
-			"shots": 8,
-			"barrels": 8,
+			"shots": 16
+			"barrels": 16
 			"x": 6
 		},
-		"reload": 70,
+		"reload": 50,
+		"shootY": 20
+		"recoil": 24
 		"x": 0,
 		"y": 0,
 		"baseRotation": 0,
@@ -45,8 +48,8 @@ range: 320
 		"mirror": false,
 		"bullet": {
 			"type": "BasicBulletType",
-			"damage": 80,
-			"inaccuracy": 5,
+			"damage": 50,
+			"inaccuracy": 10
 			"pierceArmor": true,
 			"speed": 16,
 			"width": 14,
