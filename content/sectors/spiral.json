@@ -26,4 +26,22 @@
 			}
 		]
 	}
+
+  "waveTeam": "blue"
+  "defaultTeam": "sharded"
+  "coreDestroyClear": true
+  "onlyDepositCore": true
+  "derelictRepair": false
+  "coreIncinerates": true
+  "staticFog": true
+  "placeRangeCheck": false
+  "airUseSpawns": false
+  "coreDestroyClear": true
+  "hideBannedBlocks": true
+   bannedBlocks: [
+        "slagIncinerator",
+        "conduit",
+        "reinforcedPayloadConveyor",
+        "reinforcedPayloadRouter",
+   ]
 } 
