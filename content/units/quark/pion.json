@@ -70,12 +70,13 @@ weapons: [
 		]
 	}
 ]
+	"researchCostMultiplier": 0.15
 	  "research": {
 		parent: quark
 		objectives: [
 			{
-				type: "SectorComplete"
-				preset: clue
+				type: "OnSector"
+				preset: force
 			}
 		]
 	}

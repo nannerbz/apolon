@@ -45,6 +45,14 @@
 	            	},
 			]
 		}
-	research: rdg-oscillator
+    "research": {
+        "parent": "rdg-oscillator",
+        "objectives": [
+            {
+                "type": "SectorComplete",
+                "preset": "topple"
+            }
+        ]
+    },
 	researchCostMultiplier: 0.05
 }

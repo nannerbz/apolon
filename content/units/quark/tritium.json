@@ -56,4 +56,13 @@ weapons: [
 		}
 	}
 ]
-	research: pion
+	"researchCostMultiplier": 0.45
+	  "research": {
+		parent: pion
+		objectives: [
+			{
+				type: "OnSector"
+				preset: facade
+			}
+		]
+	}

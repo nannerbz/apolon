@@ -1,20 +1,20 @@
 {
-  "localizedName": "Clue",
-  "description": "Enemy waves have been detected here. Lots of craters are here... but why?",
-  "difficulty": 2,
-  "captureWave": 26,
+  "localizedName": "Siphon",
+  "description": "Enemy waves have been detected here. This sector is very broad, and the enemy plans to take advantage of it, surrounding you core in enemy waves. Defend frome every angle, including the skies.",
+  "difficulty": 5,
+  "captureWave": 36,
   "planet": "akyao",
   "allowLaunchLoadout": false,
   "allowLaunchSchematics": false,
-  "sector": 63,
+  "sector": 36,
   "addStartingItems": true
   "overrideLaunchDefaults": true
 	  "research": {
-		parent: tide
+		parent: unite
 		objectives: [
 			{
 				type: "SectorComplete"
-				preset: tide
+				preset: unite
 			}
 		]
 	}
@@ -36,4 +36,4 @@
         "reinforcedPayloadConveyor",
         "reinforcedPayloadRouter",
    ]
-} 
+}

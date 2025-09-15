@@ -19,7 +19,15 @@
 	hasLiquids: true
 	liquidCapacity: 100
 	category: production
-	research: hydrodenser
+	  "research": {
+		parent: hydrodenser
+		objectives: [
+			{
+				type: "OnSector"
+				preset: flood
+			}
+		]
+	}
 	researchCostMultiplier: 0.05
 	"updateEffect": "drillSteam",
 	"consumes": {

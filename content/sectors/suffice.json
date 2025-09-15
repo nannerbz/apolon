@@ -1,20 +1,20 @@
 {
-  "localizedName": "Clue",
-  "description": "Enemy waves have been detected here. Lots of craters are here... but why?",
-  "difficulty": 2,
-  "captureWave": 26,
+  "localizedName": "Suffice",
+  "description": "Enemy waves have been detected here. This sector is blotchy, having multiple pockets of air scattered about. Launching resources will be a must here.",
+  "difficulty": 3,
+  "captureWave": 36,
   "planet": "akyao",
   "allowLaunchLoadout": false,
   "allowLaunchSchematics": false,
-  "sector": 63,
+  "sector": 82,
   "addStartingItems": true
   "overrideLaunchDefaults": true
 	  "research": {
-		parent: tide
+		parent: compact
 		objectives: [
 			{
 				type: "SectorComplete"
-				preset: tide
+				preset: compact
 			}
 		]
 	}
@@ -36,4 +36,4 @@
         "reinforcedPayloadConveyor",
         "reinforcedPayloadRouter",
    ]
-} 
+}

@@ -53,12 +53,13 @@ weapons: [
 		}
 	}
 ]
+	"researchCostMultiplier": 0.20
 	  "research": {
 		parent: vice
 		objectives: [
 			{
-				type: "SectorComplete"
-				preset: clue
+				type: "OnSector"
+				preset: flood
 			}
 		]
 	}

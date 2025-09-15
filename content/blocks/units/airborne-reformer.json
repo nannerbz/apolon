@@ -49,5 +49,13 @@ plans: [
 ]
 
 category: units
-research: deca-refabricator
+	  "research": {
+		parent: deca-refabricator
+		objectives: [
+			{
+				type: "OnSector"
+				preset: facade
+			}
+		]
+	}
 "researchCostMultiplier": 0.05

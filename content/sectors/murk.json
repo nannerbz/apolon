@@ -1,20 +1,20 @@
 {
-  "localizedName": "Clue",
-  "description": "Enemy waves have been detected here. Lots of craters are here... but why?",
-  "difficulty": 2,
-  "captureWave": 26,
+  "localizedName": "Murk",
+  "description": "Enemy waves have been detected here. This sector sends strong units at you in bursts, so be prepared to defend tough encounters, while researching new useful technology. This sector also seems to have SWARM enemies present, but not in large abundance.",
+  "difficulty": 4,
+  "captureWave": 15,
   "planet": "akyao",
   "allowLaunchLoadout": false,
   "allowLaunchSchematics": false,
-  "sector": 63,
+  "sector": 28,
   "addStartingItems": true
   "overrideLaunchDefaults": true
 	  "research": {
-		parent: tide
+		parent: compact
 		objectives: [
 			{
 				type: "SectorComplete"
-				preset: tide
+				preset: compact
 			}
 		]
 	}
@@ -36,4 +36,4 @@
         "reinforcedPayloadConveyor",
         "reinforcedPayloadRouter",
    ]
-} 
+}

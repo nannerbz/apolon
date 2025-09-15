@@ -41,8 +41,8 @@
 		parent: vacuum
 		objectives: [
 			{
-				type: "SectorComplete"
-				preset: spiral
+				type: "OnSector"
+				preset: suffice
 			}
 		]
 	}

@@ -21,5 +21,13 @@ requirements: [
 	metaglass/25
 	carbide/20
 ]
-research: hydric-heater
+    "research": {
+        "parent": "hydric-heater",
+        "objectives": [
+            {
+                "type": "OnSector",
+                "preset": "clue"
+            }
+        ]
+    },
 researchCostMultiplier: 0.02

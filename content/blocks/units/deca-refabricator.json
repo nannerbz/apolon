@@ -53,7 +53,7 @@ category: units
 		objectives: [
 			{
 				type: "OnSector"
-				preset: unite
+				preset: force
 			}
 		]
 	}

@@ -23,5 +23,13 @@
 		{ "item": "metaglass", "amount": 60 }
 	]
 	researchCostMultiplier: 0.05
-	research: rdg-oscillator
+	  "research": {
+		parent: rdg-oscillator
+		objectives: [
+			{
+				type: "SectorComplete"
+				preset: siphon
+			}
+		]
+	}
 }

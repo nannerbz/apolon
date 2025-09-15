@@ -1,7 +1,15 @@
 type: CoreBlock
 name: Core: Magma
 size: 6
-research: ash
+	  "research": {
+		parent: ash
+		objectives: [
+			{
+				type: "OnSector"
+				preset: facade
+			}
+		]
+	}
 hasItems: true
 itemCapacity: 5000
 health: 7500

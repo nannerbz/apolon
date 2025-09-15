@@ -89,7 +89,15 @@
     ],
     "category": "turret"
     "shootSound": "flame"
-    "research": chisel
+	  "research": {
+		parent: chisel
+		objectives: [
+			{
+				type: "OnSector"
+				preset: unite
+			}
+		]
+	}
     "shake": 0
     "researchCostMultiplier": 0.05
 }

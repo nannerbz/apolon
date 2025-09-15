@@ -89,12 +89,13 @@ weapons: [
 	]
     }
 ]
+	"researchCostMultiplier": 0.15
 	  "research": {
 		parent: neo
 		objectives: [
 			{
 				type: "OnSector"
-				preset: clue
+				preset: force
 			}
 		]
 	}

@@ -21,7 +21,15 @@ requirements: [
 	chromium-item/30
 	neodymium-item/40
 ]
-research: methanization-plant
+	  "research": {
+		parent: methanization-plant
+		objectives: [
+			{
+				type: "OnSector"
+				preset: murk
+			}
+		]
+	}
 researchCostMultiplier: 0.02
 	drawer: {
 	    type: DrawMulti

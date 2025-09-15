@@ -30,7 +30,7 @@
 		objectives: [
 			{
 				type: "SectorComplete"
-				preset: tide
+				preset: murk
 			}
 		]
 	}

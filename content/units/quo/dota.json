@@ -79,12 +79,13 @@ weapons: [
 		}
 	}
 ]
+	"researchCostMultiplier": 0.25
 	  "research": {
 		parent: quo
 		objectives: [
 			{
-				type: "SectorComplete"
-				preset: clue
+				type: "OnSector"
+				preset: flood
 			}
 		]
 	}

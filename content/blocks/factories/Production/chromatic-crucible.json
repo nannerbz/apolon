@@ -78,9 +78,15 @@
 		]
 	},
 	"category": "crafting",
-	"research": {
-		"parent": "light-carburator"
-	},
+	  "research": {
+		parent: chromatic-basin
+		objectives: [
+			{
+				type: "OnSector"
+				preset: swale
+			}
+		]
+	}
 	"idleSound": "fluxloop",
 	"idleSoundVolume": 0.1,
 	"researchCostMultiplier": 0.05

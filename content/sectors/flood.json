@@ -1,20 +1,21 @@
 {
-  "localizedName": "Clue",
-  "description": "Enemy waves have been detected here. Lots of craters are here... but why?",
-  "difficulty": 2,
-  "captureWave": 26,
+  "localizedName": "Flood",
+  "description": "An enemy base has been detected here. The new and improved sector the enemys took after ditching Topple, with lots of cryofluid. This sector is defended well and thankfully a bad sector to launch the SWARM to, in return giving no time limit to destroy it. Research Tier 2 hover units and new power generation, and try to get another core as soon as possible to obtain Chromium.",
+  "difficulty": 5,
   "planet": "akyao",
   "allowLaunchLoadout": false,
   "allowLaunchSchematics": false,
-  "sector": 63,
+  "sector": 77,
   "addStartingItems": true
   "overrideLaunchDefaults": true
 	  "research": {
-		parent: tide
+		parent: topple
 		objectives: [
+			kobra-alloy-item,
+			force,
 			{
 				type: "SectorComplete"
-				preset: tide
+				preset: topple
 			}
 		]
 	}
@@ -36,4 +37,4 @@
         "reinforcedPayloadConveyor",
         "reinforcedPayloadRouter",
    ]
-} 
+}

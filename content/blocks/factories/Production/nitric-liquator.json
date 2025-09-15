@@ -29,7 +29,16 @@
 		{ "item": "cobalt-item", "amount": 85 }
 	],
 	"category": "crafting",
-	"research": "methanization-plant",
+	  "research": {
+		parent: methanization-plant
+		objectives: [
+			clue,
+			{
+				type: "OnSector"
+				preset: facade
+			}
+		]
+	}
 	"idleSound": "respawning",
 	"idleSoundVolume": 0.5
 	"researchCostMultiplier": 0.05

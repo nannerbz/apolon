@@ -1,20 +1,20 @@
 {
   "localizedName": "Unite",
-  "description": "This sector is litered with resources for you to use, but that just means the enemy will try harder to take it! Research new tech to overcome them!",
+  "description": "This sector is litered with resources for you to use everywhere, allowing you to not need payload launchers this sector. Instead focus on defense.",
   "difficulty": 2,
   "captureWave": 36,
   "planet": "akyao",
   "allowLaunchLoadout": false,
   "allowLaunchSchematics": false,
-  "sector": 7,
+  "sector": 68,
   "addStartingItems": true
   "overrideLaunchDefaults": true
 	  "research": {
-		parent: spiral
+		parent: compact
 		objectives: [
 			{
 				type: "SectorComplete"
-				preset: spiral
+				preset: compact
 			}
 		]
 	}

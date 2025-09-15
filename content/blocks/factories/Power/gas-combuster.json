@@ -29,6 +29,14 @@
 		{ "item": "metaglass", "amount": 100 }
 		{ "item": "carbide", "amount": 80 }
 	]
-	research: rdg-compressor
+    "research": {
+        "parent": "rdg-compressor",
+        "objectives": [
+            {
+                "type": "OnSector",
+                "preset": "suffice"
+            }
+        ]
+    },
 	researchCostMultiplier: 0.05
 }

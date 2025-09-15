@@ -277,7 +277,15 @@
     "shootSound": "cannon"
     "loopSound": "glow"
     "loopSoundVolume": 0.5
-    "research": dash
+	  "research": {
+		parent: dash
+		objectives: [
+			{
+				type: "OnSector"
+				preset: alter
+			}
+		]
+	}
     "shake": 2
     "researchCostMultiplier": 0.05
 }

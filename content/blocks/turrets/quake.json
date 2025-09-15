@@ -201,7 +201,15 @@
     "shootSound": "caboom"
     "loopSound": "glow"
     "loopSoundVolume": 0.5
-    "research": blast
+  	  "research": {
+		parent: blast
+		objectives: [
+			{
+				type: "OnSector"
+				preset: murk
+			}
+		]
+	}
     "shake": 5
     "researchCostMultiplier": 0.05
 }

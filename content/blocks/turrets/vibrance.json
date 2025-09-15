@@ -542,7 +542,15 @@
     ],
     "category": "turret",
     "shootSound": "supspark",
-    "research": "vacuum",
+	  "research": {
+		parent: chip
+		objectives: [
+			{
+				type: "OnSector"
+				preset: alter
+			}
+		]
+	}
     "shake": 0,
     "researchCostMultiplier": 0.05
 }

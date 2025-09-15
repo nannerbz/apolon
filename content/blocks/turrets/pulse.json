@@ -403,7 +403,7 @@
 		objectives: [
 			{
 				type: "OnSector"
-				preset: unite
+				preset: siphon
 			}
 		]
 	}

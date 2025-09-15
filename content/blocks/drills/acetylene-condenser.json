@@ -23,7 +23,15 @@
 		power: 0.4
 	}
 	hasLiquids: true
-	research: hydrodenser
+	  "research": {
+		parent: hydrodenser
+		objectives: [
+			{
+				type: "OnSector"
+				preset: unite
+			}
+		]
+	}
 	researchCostMultiplier: 0.05
 	liquidCapacity: 100
 	category: production

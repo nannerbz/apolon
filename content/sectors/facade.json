@@ -1,20 +1,19 @@
 {
-  "localizedName": "Clue",
-  "description": "Enemy waves have been detected here. Lots of craters are here... but why?",
-  "difficulty": 2,
-  "captureWave": 26,
+  "localizedName": "Facade",
+  "description": "An enemy base has been detected here. The enemy is hiding in spots around a main path, launching units to the path to send them to your core. Destroy the middle path to stop their units from attacking you directly.",
+  "difficulty": 4,
   "planet": "akyao",
   "allowLaunchLoadout": false,
   "allowLaunchSchematics": false,
-  "sector": 63,
+  "sector": 84,
   "addStartingItems": true
   "overrideLaunchDefaults": true
 	  "research": {
-		parent: tide
+		parent: force
 		objectives: [
 			{
 				type: "SectorComplete"
-				preset: tide
+				preset: force
 			}
 		]
 	}
@@ -36,4 +35,4 @@
         "reinforcedPayloadConveyor",
         "reinforcedPayloadRouter",
    ]
-} 
+}

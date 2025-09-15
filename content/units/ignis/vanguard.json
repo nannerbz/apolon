@@ -67,12 +67,13 @@ weapons: [
         }
     }
 ]
+	"researchCostMultiplier": 0.15
 	  "research": {
 		parent: ignis
 		objectives: [
 			{
-				type: "SectorComplete"
-				preset: clue
+				type: "OnSector"
+				preset: force
 			}
 		]
 	}

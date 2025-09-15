@@ -14,5 +14,13 @@ requirements: [
 	metaglass/50
 	kobra-alloy-item/25
 ]
-research: cargo-conveyor
+    "research": {
+        "parent": "cargo-conveyor",
+        "objectives": [
+            {
+                "type": "OnSector",
+                "preset": "suffice"
+            }
+        ]
+    },
 researchCostMultiplier: 0.05
