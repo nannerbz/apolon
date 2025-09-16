@@ -1,7 +1,7 @@
 template: UnitType
 name: Ophanim
 flying: true
-speed: 1.2
+speed: 0.8
 accel: 0.05
 drag: 0.04
 health: 13100
@@ -9,7 +9,7 @@ hitSize: 32
 armor: 10
 itemCapacity: 0
 outlineColor: 222222
-range: 200
+range: 210
 isEnemy: false
 payloadCapacity: 256
 weapons: [
@@ -34,53 +34,88 @@ weapons: [
 		"chargeSound": "lasercharge",
 		"chargeEffect": "chargeBegin",
 		"shake": 3,
+		"shoot": {
+			"firstShotDelay": 120
+		},
 		"bullet": {
-			"type": "PointLaserBulletType",
-			"lifetime": 240,
-			"pierce": true,
-			"beamEffect": "colorTrail",
-			"beamEffectInterval": 3,
+			"spawnBullets": [
+				{
+					"type": "BasicBulletType",
+					"instantDisappear": true,
+					"damage": 0,
+					"shootEffect": "shootBig",
+					"smokeEffect": "shootSmokeDisperse"
+				}
+			],
+			"type": "ContinuousLaserBulletType",
+			"length": 210,
+			"width": 6,
+			"shootEffect": "shootBig2",
+			"despawnEffect": "blastExplosion",
+			"smokeEffect": "shootSmokeMissile",
+			"hitEffect": "hitMeltdown",
+			"shake": 0.5,
 			"damageInterval": 6,
-			"damage": 50
-			"oscScl": 2,
-			"oscMag": 0.3,
-			"shake": 2
+			"damage": 50,
+			"lifetime": 240,
+			"fadeTime": 40,
+			"incendSpread": 0,
+			"incendAmount": 0,
+			"incendChance": 0,
+			"colors": [ "baa164", "d3b672", "edc66c", "fae0a3", "ffffff" ],
+			"despawnSound": "none",
+			"pierceCap": 6,
+			"despawnSound": "explosion"
+		},
+		"parts": [
+			{
+				"type": "RegionPart",
+				"suffix": "-blade",
+				"progress": "warmup",
+				"heatProgress": "recoil",
+				"heatColor": "ffffff",
+				"mirror": true,
+				"under": true,
+				"moveX": 10,
+				"moveY": -10,
+				"moveRot": 0
+			},
+			{
+		]
+	},
+			{
+				"type": "PointDefenseWeapon",
+				"name": "ophanim-p",
+				"reload": 10,
+				"targetInterval": 10,
+				"targetSwitchInterval": 8,
+				"mirror": true,
+				"recoil": 0.8,
+				"x": 16,
+				"y": -5,
+				"bullet": {
+					"type": "BulletType",
+					"shootSound": "lasershoot",
+					"shootEffect": "sparkShoot",
+					"hitEffect": "pointHit",
+					"maxRange": 140,
+					"damage": 185
+				}
+			},
+			{
+				"type": "RepairBeamWeapon",
+				"name": "peregrine-h",
+				"beamWidth": 1.2,
+				"repairSpeed": 0.8,
+				"mirror": true,
+				"x": 8,
+				"y": -2,
+				"bullet": {
+					"type": "BulletType",
+					"maxRange": 85
+				}
+			}
+		],
+		"research": {
+			"parent": "peregrine"
 		}
-
-	}
-	{
-		type: PointDefenseWeapon
-		name: ophanim-p
-		reload: 10
-		targetInterval: 10
-		targetSwitchInterval: 8
-		mirror: true
-		recoil: 0.8
-		x: 16
-		y: -5
-		bullet: {
-			type: BulletType
-			shootSound: lasershoot
-			shootEffect: sparkShoot
-			hitEffect: pointHit
-			maxRange: 140
-			damage: 185
-		}
-	}
-	{
-		type: RepairBeamWeapon
-		name: peregrine-h
-		beamWidth: 1.2
-		repairSpeed: 0.8
-		mirror: true
-		x: 8
-		y: -2
-		bullet: {
-			type: BulletType
-			maxRange: 85
-		}
-	}
-]
-	  "research": {
-		parent: peregrine
-	}
