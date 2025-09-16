@@ -7,7 +7,7 @@
     "health": 13500
     "size": 5
     "inaccuracy": 10
-    "reload": 10
+    "reload": 6
     "outlineColor": 222222
     "xRand": 0,
     "squareSprite": false
@@ -29,7 +29,7 @@
             "trailLength": 8,
             "speed": 6,
             "lifetime": 33.33,
-            "damage": 45,
+            "damage": 80,
             "backColor": "8a1d3f",
             "frontColor": "cf926a",
             "trailColor": "544736",
@@ -53,7 +53,7 @@
             "trailLength": 8,
             "speed": 6,
             "lifetime": 33.33,
-            "damage": 75,
+            "damage": 135,
             "backColor": "8a1d3f",
             "frontColor": "cf926a",
             "trailColor": "544736",
@@ -74,7 +74,7 @@
 			type: shootAlternate
 			shots: 1
 			barrels: 3
-			x: 11
+			spread: 6
 	}
 	drawer: {
 		type: DrawTurret,
