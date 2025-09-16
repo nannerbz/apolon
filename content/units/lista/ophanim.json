@@ -18,16 +18,10 @@ weapons: [
 		"reload": 60,
 		"x": 0,
 		"y": 0,
-		"shootSound": "missile",
-		"rotateSpeed": 3,
-		"rotationLimit": 35,
-		"shoot": {
-			"shots": 4,
-			"shotDelay": 3
-		},
+		"shootStatus": "unmoving",
+		"shootStatusDuration": 180
 		"shootY": 0,
-		"top": true,
-		"layerOffset": -2,
+		"top": false,
 		"rotate": false,
 		"mirror": false,
 		"chargeTime": 120,
@@ -35,53 +29,70 @@ weapons: [
 		"chargeEffect": "chargeBegin",
 		"shake": 3,
 		"shoot": {
-			"firstShotDelay": 120
+			"type": "shootAlternate",
+			"shots": 4,
+			"barrels": 4,
+			"spread": 8,
+			"firstShotDelay": 180
 		},
 		"bullet": {
-			"spawnBullets": [
-				{
-					"type": "BasicBulletType",
-					"instantDisappear": true,
-					"damage": 0,
-					"shootEffect": "shootBig",
-					"smokeEffect": "shootSmokeDisperse"
-				}
-			],
-			"type": "ContinuousLaserBulletType",
-			"length": 210,
-			"width": 6,
-			"shootEffect": "shootBig2",
-			"despawnEffect": "blastExplosion",
-			"smokeEffect": "shootSmokeMissile",
-			"hitEffect": "hitMeltdown",
-			"shake": 0.5,
-			"damageInterval": 6,
-			"damage": 50,
-			"lifetime": 240,
-			"fadeTime": 40,
-			"incendSpread": 0,
-			"incendAmount": 0,
-			"incendChance": 0,
-			"colors": [ "377d6e", "377d6e", "58a68c", "64c990", "ffffff" ],
-			"despawnSound": "none",
-			"pierceCap": 6,
-			"despawnSound": "explosion"
-		},
-		"parts": [
-			{
-				"type": "RegionPart",
-				"suffix": "-blade",
-				"progress": "warmup",
-				"heatProgress": "recoil",
-				"heatColor": "ffffff",
-				"mirror": true,
-				"under": true,
-				"moveX": 10,
-				"moveY": -10,
-				"moveRot": 0
+			"chargeEffect": {
+				"type": "ParticleEffect",
+				"length": 64,
+				"lifetime": 120,
+				"region": "circle-bullet",
+				"particles": 18,
+				"lightColor": "64c990",
+				"colorFrom": "377d6e",
+				"colorTo": "64c990",
+				"sizeFrom": 12,
+				"sizeTo": 0
 			}
-		]
-	}
+
+				"spawnBullets": [
+					{
+						"type": "BasicBulletType",
+						"instantDisappear": true,
+						"damage": 0,
+						"shootEffect": "shootBig",
+						"smokeEffect": "shootSmokeDisperse"
+					}
+				],
+				"type": "ContinuousLaserBulletType",
+				"length": 210,
+				"width": 6,
+				"shootEffect": "shootBig2",
+				"despawnEffect": "blastExplosion",
+				"smokeEffect": "shootSmokeMissile",
+				"hitEffect": "hitMeltdown",
+				"shake": 0.5,
+				"damageInterval": 6,
+				"damage": 50,
+				"lifetime": 240,
+				"fadeTime": 40,
+				"incendSpread": 0,
+				"incendAmount": 0,
+				"incendChance": 0,
+				"colors": [ "377d6e", "377d6e", "58a68c", "64c990", "ffffff" ],
+				"despawnSound": "none",
+				"pierceCap": 6,
+				"despawnSound": "explosion"
+			},
+			"parts": [
+				{
+					"type": "RegionPart",
+					"suffix": "-blade",
+					"progress": "warmup",
+					"heatProgress": "recoil",
+					"heatColor": "ffffff",
+					"mirror": true,
+					"under": true,
+					"moveX": 10,
+					"moveY": -10,
+					"moveRot": 0
+				}
+			]
+		}
 			{
 				"type": "PointDefenseWeapon",
 				"name": "ophanim-p",
