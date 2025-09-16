@@ -26,6 +26,6 @@ requirements: [
   neodymium-item/500
   kobra-alloy-item/500
 ]
-researchCostMultiplier: 0.4
+researchCostMultiplier: 2.8
 solid: true
 armor: 16
