@@ -23,7 +23,8 @@ abilities: [
 		"status": "burning",
 		"statusDuration": 120,
 		"color": "cf926a",
-		"targetAir": false
+		"targetAir": false,
+		"healPercent": 0
 	}
 	{
 		type: SuppressionFieldAbility
