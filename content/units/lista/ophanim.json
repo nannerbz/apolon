@@ -1,8 +1,8 @@
 template: UnitType
 name: Ophanim
-rotateSpeed: 0.5
+rotateSpeed: 0.7
 flying: true
-speed: 0.3
+speed: 0.45
 accel: 0.05
 drag: 0.04
 health: 13400
@@ -12,7 +12,7 @@ itemCapacity: 0
 outlineColor: 222222
 range: 240
 lowAltitude: true
-trailLength: 48
+trailLength: 96
 trailColor: "64c990"
 payloadCapacity: 512
 	engines: [
@@ -91,7 +91,7 @@ weapons: [
 		"shootSound": "spadoom",
 		"chargeSound": "weirdasscharge",
 		"chargeEffect": "chargeBegin",
-		"shake": 12,
+		"shake": 7,
 		"shoot": {
 			"firstShotDelay": 180,
 			"shots": 3,
@@ -165,7 +165,7 @@ weapons: [
 		"parts": [
 			{
 				"type": "RegionPart",
-				"layer": 88,
+				"layer": 89,
 				"suffix": "-blade",
 				"progress": "warmup",
 				"heatProgress": "recoil",
