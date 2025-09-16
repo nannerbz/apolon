@@ -9,18 +9,18 @@ hitSize: 32
 armor: 10
 itemCapacity: 0
 outlineColor: 222222
-range: 210
+range: 120
 isEnemy: false
 payloadCapacity: 256
 weapons: [
 	{
 		"name": "ophanim-w",
-		"reload": 60,
+		"reload": 30,
 		"x": 0,
 		"y": 0,
-		"shootStatus": "unmoving",
+		"shootStatus": "slown",
 		"shootStatusDuration": 180
-		"shootY": 0,
+		"shootY": 8,
 		"top": false,
 		"rotate": false,
 		"mirror": false,
@@ -29,11 +29,11 @@ weapons: [
 		"chargeEffect": "chargeBegin",
 		"shake": 3,
 		"shoot": {
-			"type": "shootAlternate",
-			"shots": 4,
-			"barrels": 4,
-			"spread": 8,
-			"firstShotDelay": 180
+			"type": "shootHelix",
+			"mag": 16
+			"offset":32
+			"scale":16
+			"firstShotDelay": 120
 		},
 		"bullet": {
 			"chargeEffect": {
@@ -67,8 +67,8 @@ weapons: [
 				"hitEffect": "hitMeltdown",
 				"shake": 0.5,
 				"damageInterval": 6,
-				"damage": 50,
-				"lifetime": 240,
+				"damage": 400,
+				"lifetime": 30,
 				"fadeTime": 40,
 				"incendSpread": 0,
 				"incendAmount": 0,

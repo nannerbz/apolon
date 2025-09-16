@@ -1,0 +1,17 @@
+{
+	type: StatusEffect
+	name: Slown
+	outline: false
+	speedMultiplier: 0.35
+	disarm: false
+	damage: 0
+	parentizeEffect: false
+	permanent: false
+	reactive: false
+	show: true
+	color: ffffff
+	applyExtend: false
+	applyColor: ffffff
+	parentizeApplyEffect: true
+	transitionDamage: 0
+}
