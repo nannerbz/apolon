@@ -56,13 +56,13 @@ weapons: [
 				"lifetime": 120,
 				"strokeFrom": 6
 			},
-
+			"recoil": 18
 			"type": "BulletType",
 			"damage": 0,
 			"pierce": true,
 			"pierceCap": 4,
-			"speed": 12,
-			"lifetime": 20,
+			"speed": 16,
+			"lifetime": 15,
 			"intervalBullets": 1,
 			"intervalSpread": 0,
 			"intervalRandomSpread": 0,
@@ -72,9 +72,9 @@ weapons: [
 			"intervalBullet": {
 				"type": "ContinuousLaserBulletType",
 				"continuous": true,
-				"length": 120,
-				"width": 20,
-				"despawnEffect": "blastExplosion",
+				"length": 70,
+				"width": 30,
+				"despawnEffect": "none",
 				"smokeEffect": "none",
 				"hitEffect": "none",
 				"shake": 0.5,
