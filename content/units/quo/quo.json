@@ -92,8 +92,8 @@ weapons: [
 		parent: float-fabricator
 		objectives: [
 			{
-				type: "SectorComplete"
-				preset: clue
+				type: "OnSector"
+				preset: force
 			}
 		]
 	}

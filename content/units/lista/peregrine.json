@@ -96,7 +96,7 @@ weapons: [
 		objectives: [
 			{
 				type: "SectorComplete"
-				preset: clue
+				preset: flood
 			}
 		]
 	}

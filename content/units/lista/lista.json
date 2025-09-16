@@ -13,7 +13,15 @@ outlineColor: 222222
 range: 75
 isEnemy: false
 targetable: false
-research: airborne-fabricator
+	  "research": {
+		parent: airborne-fabricator
+		objectives: [
+			{
+				type: "SectorComplete"
+				preset: topple
+			}
+		]
+	}
 abilities: [
 	{
 		type: RepairFieldAbility
