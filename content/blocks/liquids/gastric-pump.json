@@ -1,7 +1,7 @@
 type: Pump
 name: Gastric Pump
 description: Used to pump liquids in large amounts, takes methane to work.
-pumpAmount: 0.3
+pumpAmount: 0.2
 size: 3
 liquidCapacity: 100
 consumes: {
@@ -26,5 +26,20 @@ category: liquid
 				preset: grind
 			}
 		]
+	}
+	drawer: {
+	    type: DrawMulti
+	    drawers : [
+	            	{
+	            	  type : DrawRegion
+	            	  suffix : "-bottom"
+	            	},
+	            	{
+	            	  type : DrawPumpLiquid
+	            	},
+	            	{
+	            	  type : DrawDefault
+	            	},
+	    ]
 	}
 researchCostMultiplier: 0.05

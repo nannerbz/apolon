@@ -16,6 +16,21 @@ requirements: [
 	metaglass/10
 	carbide/10
 ]
+	drawer: {
+	    type: DrawMulti
+	    drawers : [
+	            	{
+	            	  type : DrawRegion
+	            	  suffix : "-bottom"
+	            	},
+	            	{
+	            	  type : DrawPumpLiquid
+	            	},
+	            	{
+	            	  type : DrawDefault
+	            	},
+	    ]
+	}
 category: liquid
 research: bismuth-conduit
 researchCostMultiplier: 0.05
