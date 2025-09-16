@@ -47,4 +47,4 @@ weapons: [
     }
 ]
 	research: crawl-fabricator
-	"researchCostMultiplier": 0.15
+	"researchCostMultiplier": 0.50

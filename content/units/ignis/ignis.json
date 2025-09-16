@@ -65,7 +65,7 @@ weapons: [
 	}
     }
 ]
-	"researchCostMultiplier": 0.15
+	"researchCostMultiplier": 0.50
 	  "research": {
 		parent: crawl-fabricator
 		objectives: [
