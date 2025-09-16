@@ -15,7 +15,7 @@ payloadCapacity: 256
 weapons: [
 	{
 		"name": "ophanim-w",
-		"reload": 30,
+		"reload": 180,
 		"x": 0,
 		"y": 0,
 		"shootStatus": "slown",
@@ -24,22 +24,18 @@ weapons: [
 		"top": false,
 		"rotate": false,
 		"mirror": false,
-		"chargeTime": 120,
+		"chargeTime": 180,
 		"chargeSound": "lasercharge",
 		"chargeEffect": "chargeBegin",
 		"shake": 3,
 		"shoot": {
-			"type": "shootHelix",
-			"mag": 16
-			"offset":32
-			"scale":16
-			"firstShotDelay": 120
+			"firstShotDelay": 180
 		},
 		"bullet": {
 			"chargeEffect": {
 				"type": "ParticleEffect",
 				"length": 64,
-				"lifetime": 120,
+				"lifetime": 180,
 				"region": "circle-bullet",
 				"particles": 18,
 				"lightColor": "64c990",
@@ -59,8 +55,9 @@ weapons: [
 					}
 				],
 				"type": "ContinuousLaserBulletType",
-				"length": 210,
-				"width": 6,
+				"continuous": true
+				"length": 120,
+				"width": 20,
 				"shootEffect": "shootBig2",
 				"despawnEffect": "blastExplosion",
 				"smokeEffect": "shootSmokeMissile",
@@ -68,7 +65,7 @@ weapons: [
 				"shake": 0.5,
 				"damageInterval": 6,
 				"damage": 400,
-				"lifetime": 30,
+				"lifetime": 90,
 				"fadeTime": 40,
 				"incendSpread": 0,
 				"incendAmount": 0,
