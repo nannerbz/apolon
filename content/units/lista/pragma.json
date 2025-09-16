@@ -86,6 +86,7 @@ weapons: [
 	  "research": {
 		parent: lista
 		objectives: [
+			deca-refabricator,
 			{
 				type: "OnSector"
 				preset: clue
