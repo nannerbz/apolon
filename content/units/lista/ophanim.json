@@ -26,18 +26,20 @@ payloadCapacity: 256
 			"color": "64c990",
 			"particleColor": "64c990"
 		}
-		{
-			"type": "FlarePart",
-			"color1": "377d6e",
-			"color2": "64c990",
-			"followRotation": false,
-			"sides": 7,
-			"x": 0,
-			"y": -16,
-			"radius": 20,
-			"stroke": 2,
-			"layer": 106
-		}
+]
+parts: [
+	{
+		"type": "FlarePart",
+		"color1": "377d6e",
+		"color2": "64c990",
+		"followRotation": false,
+		"sides": 7,
+		"x": 0,
+		"y": -16,
+		"radius": 20,
+		"stroke": 2,
+		"layer": 106
+	}
 ]
 weapons: [
 	{
@@ -83,13 +85,23 @@ weapons: [
 				"lifetime": 120,
 				"strokeFrom": 6
 			},
-			"recoil": 1
+			"recoil": 1,
 			"type": "BulletType",
 			"damage": 0,
 			"pierce": true,
 			"pierceCap": 4,
 			"speed": 24,
 			"lifetime": 10,
+			"trailInterval": 1,
+			"trailEffect": {
+				"type": "WaveEffect",
+				"colorFrom": "64c990",
+				"colorTo": "377d6e",
+				"sizeTo": 0,
+				"sizeFrom": 35,
+				"lifetime": 10,
+				"strokeFrom": 5
+			},
 			"intervalBullets": 1,
 			"intervalSpread": 0,
 			"intervalRandomSpread": 0,
@@ -114,7 +126,7 @@ weapons: [
 				"incendChance": 0,
 				"colors": [ "377d6e", "377d6e", "58a68c", "64c990", "ffffff" ],
 				"despawnSound": "none",
-				"pierceCap": 6,
+				"pierceCap": 6
 			}
 		}
 		"parts": [
