@@ -9,27 +9,31 @@ hitSize: 32
 armor: 10
 itemCapacity: 0
 outlineColor: 222222
-range: 120
+range: 240
 isEnemy: false
 payloadCapacity: 256
 weapons: [
 	{
 		"name": "ophanim-w",
-		"reload": 180,
+		"reload": 150,
 		"x": 0,
 		"y": 0,
 		"shootStatus": "slown",
-		"shootStatusDuration": 180
+		"shootStatusDuration": 180,
 		"shootY": 8,
 		"top": false,
 		"rotate": false,
 		"mirror": false,
 		"chargeTime": 180,
-		"chargeSound": "lasercharge",
+		"inaccuracy": 5
+		"shootSound": "spadoom",
+		"chargeSound": "weirdasscharge",
 		"chargeEffect": "chargeBegin",
-		"shake": 3,
+		"shake": 6,
 		"shoot": {
-			"firstShotDelay": 180
+			"firstShotDelay": 180,
+			"shots": 3,
+			"shotDelay": 10
 		},
 		"bullet": {
 			"chargeEffect": {
@@ -43,38 +47,49 @@ weapons: [
 				"colorTo": "64c990",
 				"sizeFrom": 12,
 				"sizeTo": 0
-			}
+			},
+			"shootEffect": {
+				"type": "WaveEffect",
+				"colorFrom": "377d6e",
+				"colorTo": "64c990",
+				"sizeTo": 60,
+				"lifetime": 120,
+				"strokeFrom": 6
+			},
 
-				"spawnBullets": [
-					{
-						"type": "BasicBulletType",
-						"instantDisappear": true,
-						"damage": 0,
-						"shootEffect": "shootBig",
-						"smokeEffect": "shootSmokeDisperse"
-					}
-				],
+			"type": "BulletType",
+			"damage": 0,
+			"pierce": true,
+			"pierceCap": 4,
+			"speed": 12,
+			"lifetime": 20,
+			"intervalBullets": 1,
+			"intervalSpread": 0,
+			"intervalRandomSpread": 0,
+			"intervalAngle": 0,
+			"bulletInterval": 1,
+			"intervalDelay": 0,
+			"intervalBullet": {
 				"type": "ContinuousLaserBulletType",
-				"continuous": true
+				"continuous": true,
 				"length": 120,
 				"width": 20,
-				"shootEffect": "shootBig2",
 				"despawnEffect": "blastExplosion",
-				"smokeEffect": "shootSmokeMissile",
-				"hitEffect": "hitMeltdown",
+				"smokeEffect": "none",
+				"hitEffect": "none",
 				"shake": 0.5,
-				"damageInterval": 6,
-				"damage": 400,
-				"lifetime": 90,
-				"fadeTime": 40,
+				"damageInterval": 1,
+				"damage": 200,
+				"lifetime": 2,
+				"fadeTime": 2,
 				"incendSpread": 0,
 				"incendAmount": 0,
 				"incendChance": 0,
 				"colors": [ "377d6e", "377d6e", "58a68c", "64c990", "ffffff" ],
 				"despawnSound": "none",
 				"pierceCap": 6,
-				"despawnSound": "explosion"
-			},
+			}
+		}
 			"parts": [
 				{
 					"type": "RegionPart",
