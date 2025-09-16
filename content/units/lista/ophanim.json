@@ -1,7 +1,8 @@
 template: UnitType
 name: Ophanim
+rotateSpeed: 1
 flying: true
-speed: 0.8
+speed: 0.4
 accel: 0.05
 drag: 0.04
 health: 13100
@@ -16,8 +17,8 @@ payloadCapacity: 256
 		{
 			"type": "SuppressionFieldAbility",
 			"x": 0,
-			"y": -16,
-			"orbRadius": 2,
+			"y": -20,
+			"orbRadius": 8,
 			"particleSize": 1,
 			"particles": 4,
 			"display": false,
@@ -35,7 +36,7 @@ parts: [
 		"followRotation": false,
 		"sides": 7,
 		"x": 0,
-		"y": -16,
+		"y": -20,
 		"radius": 20,
 		"stroke": 2,
 		"layer": 106
@@ -85,7 +86,7 @@ weapons: [
 				"lifetime": 120,
 				"strokeFrom": 6
 			},
-			"recoil": 1,
+			"recoil": 0.7,
 			"type": "BulletType",
 			"damage": 0,
 			"pierce": true,
@@ -98,8 +99,8 @@ weapons: [
 				"colorFrom": "64c990",
 				"colorTo": "377d6e",
 				"sizeTo": 0,
-				"sizeFrom": 35,
-				"lifetime": 10,
+				"sizeFrom": 15,
+				"lifetime": 2,
 				"strokeFrom": 5
 			},
 			"intervalBullets": 1,
@@ -111,7 +112,7 @@ weapons: [
 			"intervalBullet": {
 				"type": "ContinuousLaserBulletType",
 				"continuous": true,
-				"length": 50,
+				"length": 55,
 				"width": 35,
 				"despawnEffect": "none",
 				"smokeEffect": "none",
