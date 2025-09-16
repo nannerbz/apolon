@@ -80,8 +80,8 @@ weapons: [
 				"moveY": -10,
 				"moveRot": 0
 			}
-	}
 		]
+	}
 			{
 				"type": "PointDefenseWeapon",
 				"name": "ophanim-p",
