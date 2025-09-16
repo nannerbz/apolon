@@ -38,8 +38,8 @@ weapons: [
 			"type": "PointLaserBulletType",
 			"lifetime": 240,
 			"pierce": true,
-			"laser": "large-laser",
-			"laserEnd": "laser-end",
+			"laser": "region:large-laser",
+			"laserEnd": "region:laser-end",
 			"beamEffect": "colorTrail",
 			"beamEffectInterval": 3,
 			"damageInterval": 6,
@@ -47,6 +47,7 @@ weapons: [
 			"oscMag": 0.3,
 			"shake": 2
 		}
+
 	}
 	{
 		type: PointDefenseWeapon
