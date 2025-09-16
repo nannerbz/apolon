@@ -1,6 +1,6 @@
 type: Pump
 name: Cobalt Pump
-description: Used to pump liquids.
+description: Used to pump liquids, takes hydrogen to work.
 pumpAmount: 0.1
 size: 2
 liquidCapacity: 100

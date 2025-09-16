@@ -1,0 +1,30 @@
+type: Pump
+name: Gastric Pump
+description: Used to pump liquids in large amounts, takes methane to work.
+pumpAmount: 0.3
+size: 3
+liquidCapacity: 100
+consumes: {
+	liquids: {
+		liquids: [
+			{ "liquid": "methane", "amount": 0.4 }
+		]
+	}
+}
+requirements: [
+	cobalt-item/45
+	metaglass/80
+	carbide/40
+	neodymium-item/50
+]
+category: liquid
+	  "research": {
+		parent: cobalt-pump
+		objectives: [
+			{
+				type: "OnSector"
+				preset: grind
+			}
+		]
+	}
+researchCostMultiplier: 0.05

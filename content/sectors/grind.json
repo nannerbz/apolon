@@ -1,20 +1,20 @@
 {
-  "localizedName": "Alter",
-  "description": "Enemy waves have been detected here. This sector has 3 main entrances with a lack of ideal choke points, research new turrets to help defend.",
-  "difficulty": 4,
-  "captureWave": 40,
+  "localizedName": "Grind",
+  "description": "Enemy waves have been detected here. The enemy will take a while to start sending units, but when they do they will send them back to back, quickly. Take advantage of the overabundance of resources on this sector.",
+  "difficulty": 3,
+  "captureWave": 60,
   "planet": "akyao",
   "allowLaunchLoadout": false,
   "allowLaunchSchematics": false,
-  "sector": 52,
+  "sector": 60,
   "addStartingItems": true
   "overrideLaunchDefaults": true
 	  "research": {
-		parent: grind
+		parent: compact
 		objectives: [
 			{
 				type: "SectorComplete"
-				preset: grind
+				preset: compact
 			}
 		]
 	}

@@ -35,7 +35,15 @@
 		"buildingDamageMultiplier": 0.001
 	},
 	"category": "turret",
-	"research": "lapse",
+	  "research": {
+		parent: lapse
+		objectives: [
+			{
+				type: "OnSector"
+				preset: grind
+			}
+		]
+	}
 	"requirements": [
 		"carbide/95",
 		"cobalt-item/160",

@@ -12,6 +12,14 @@
 		metaglass/2
 		neodymium-item/2
 	]
-	research: cobalt-duct
+	  "research": {
+		parent: cobalt-duct
+		objectives: [
+			{
+				type: "OnSector"
+				preset: grind
+			}
+		]
+	}
 	researchCostMultiplier: 0.25
 }

@@ -10,11 +10,11 @@
   "addStartingItems": true
   "overrideLaunchDefaults": true
 	  "research": {
-		parent: compact
+		parent: grind
 		objectives: [
 			{
 				type: "SectorComplete"
-				preset: compact
+				preset: grind
 			}
 		]
 	}

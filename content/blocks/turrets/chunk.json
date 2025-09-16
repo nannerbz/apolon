@@ -1,0 +1,129 @@
+{
+    "type": "ItemTurret",
+    "name": "Chunk",
+    "description": "Shoots lots of strong bullets at enemies from a decent distance, bullets are innacurate but curve towards targets.",
+    "targetAir": true,
+    "targetGround": true,
+    "health": 13500
+    "size": 5
+    "inaccuracy": 0
+    "reload": 12
+    "outlineColor": 222222
+    "xRand": 0,
+    "squareSprite": false
+    "coolantMultiplier": 0.65
+    "coolant": {
+      "amount": 0.8
+    }
+  }
+    "shootCone": 15,
+    "rotateSpeed": 3,
+    "range": 200
+    "ammoTypes": {
+        chromium-item: {
+            "type": "BasicBulletType",
+            "shrinkY": 0,
+            "shrinkX": 0,
+            "trailWidth": 3,
+            "trailLength": 8,
+            "speed": 6,
+            "lifetime": 33.33,
+            "damage": 45,
+            "backColor": "8a1d3f",
+            "frontColor": "cf926a",
+            "trailColor": "544736",
+            "burstSpacing": 4,
+            "width": 8,
+            "height": 12,
+            "shootEffect": "shootSmall",
+            "smokeEffect": "shootSmallSmoke",
+            "hitEffect": "hitLancer",
+            "ammoMultiplier": 3,
+	    "followAimSpeed": 3,
+            "pierce": true,
+            "pierceCap": 2,
+            "buildingDamageMultiplier": 0.05,
+        }
+        photoglass-item: {
+            "type": "BasicBulletType",
+            "shrinkY": 0,
+            "shrinkX": 0,
+            "trailWidth": 3,
+            "trailLength": 8,
+            "speed": 6,
+            "lifetime": 33.33,
+            "damage": 75,
+            "backColor": "8a1d3f",
+            "frontColor": "cf926a",
+            "trailColor": "544736",
+            "burstSpacing": 4,
+            "width": 8,
+            "height": 12,
+            "shootEffect": "shootSmall",
+            "smokeEffect": "shootSmallSmoke",
+            "hitEffect": "hitLancer",
+            "ammoMultiplier": 3,
+	    "followAimSpeed": 3,
+            "pierce": true,
+            "pierceCap": 2,
+            "buildingDamageMultiplier": 0.05,
+        }
+    }
+	shoot: {
+			type: shootAlternate
+			shots: 1
+			barrels: 3
+			x: 9.5
+	}
+	drawer: {
+		type: DrawTurret,
+     		basePrefix: base,
+		parts : [
+    			{
+      			type : RegionPart
+      			suffix : "-plate"
+      			progress : warmup
+      			heatProgress : warmup
+      			heatColor : "c7455a"
+      			mirror : true
+      			under : false
+      			moveX : 1
+			moveY : 2
+      			moveRot : 10
+
+			moves: [
+				{
+					x: 0
+					y: -1.25
+					rot: -2
+					progress: recoil
+				}
+			]
+    			},
+		]
+	}
+    "requirements": [
+        { "item": "carbide", "amount": 195 },
+	  { "item": "neodymium-item", "amount": 195 },
+        { "item": "metaglass", "amount": 145 },
+	  { "item": "cobalt-item", "amount": 245 },
+	  { "item": "kobra-alloy-item", "amount": 120 },
+    ],
+    "category": "turret"
+    "minWarmup": 0.96
+    "shootWarmupSpeed": 0.02
+    "shootSound": "PlasmaRipple"
+    "loopSound": "glow"
+    "loopSoundVolume": 0.5
+	  "research": {
+		parent: dash
+		objectives: [
+			{
+				type: "SectorComplete"
+				preset: force
+			}
+		]
+	}
+    "shake": 3
+    "researchCostMultiplier": 0.05
+}
