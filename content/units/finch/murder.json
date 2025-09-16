@@ -45,9 +45,9 @@ range: 320
 		"name": "murder-w",
 		"shoot": {
 			"type": "shootAlternate",
-			"shots": 22
-			"barrels": 22
-			"x": 0.2
+			"shots": 22,
+			"barrels": 22,
+			"spread": 1
 		},
 		"reload": 20,
 		"shootY": 30

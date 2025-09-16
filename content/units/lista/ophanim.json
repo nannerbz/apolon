@@ -16,8 +16,8 @@ weapons: [
 	{
 		"name": "ophanim-w",
 		"reload": 60,
-		"x": -10,
-		"y": 8,
+		"x": 0,
+		"y": 0,
 		"shootSound": "missile",
 		"rotateSpeed": 3,
 		"rotationLimit": 35,
@@ -62,7 +62,7 @@ weapons: [
 			"incendSpread": 0,
 			"incendAmount": 0,
 			"incendChance": 0,
-			"colors": [ "baa164", "d3b672", "edc66c", "fae0a3", "ffffff" ],
+			"colors": [ "377d6e", "377d6e", "58a68c", "64c990", "ffffff" ],
 			"despawnSound": "none",
 			"pierceCap": 6,
 			"despawnSound": "explosion"
