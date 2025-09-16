@@ -1,6 +1,7 @@
 template: UnitType
 name: Sparrow
 flying: true
+armor:2
 speed: 2
 accel: 0.07
 drag: 0.04
