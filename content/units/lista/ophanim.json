@@ -10,8 +10,35 @@ armor: 10
 itemCapacity: 0
 outlineColor: 222222
 range: 240
-isEnemy: false
+lowAltitude: true
 payloadCapacity: 256
+	abilities: [
+		{
+			"type": "SuppressionFieldAbility",
+			"x": 0,
+			"y": -16,
+			"orbRadius": 2,
+			"particleSize": 1,
+			"particles": 4,
+			"display": false,
+			"active": false,
+			"layerOffset": -0.001,
+			"color": "64c990",
+			"particleColor": "64c990"
+		}
+		{
+			"type": "FlarePart",
+			"color1": "377d6e",
+			"color2": "64c990",
+			"followRotation": false,
+			"sides": 7,
+			"x": 0,
+			"y": -16,
+			"radius": 20,
+			"stroke": 2,
+			"layer": 106
+		}
+]
 weapons: [
 	{
 		"name": "ophanim-w",
@@ -56,24 +83,24 @@ weapons: [
 				"lifetime": 120,
 				"strokeFrom": 6
 			},
-			"recoil": 2
+			"recoil": 1
 			"type": "BulletType",
 			"damage": 0,
 			"pierce": true,
 			"pierceCap": 4,
-			"speed": 16,
-			"lifetime": 15,
+			"speed": 24,
+			"lifetime": 10,
 			"intervalBullets": 1,
 			"intervalSpread": 0,
 			"intervalRandomSpread": 0,
 			"intervalAngle": 0,
-			"bulletInterval": 1,
+			"bulletInterval": 0.2,
 			"intervalDelay": 0,
 			"intervalBullet": {
 				"type": "ContinuousLaserBulletType",
 				"continuous": true,
-				"length": 70,
-				"width": 30,
+				"length": 50,
+				"width": 35,
 				"despawnEffect": "none",
 				"smokeEffect": "none",
 				"hitEffect": "none",
@@ -81,7 +108,7 @@ weapons: [
 				"damageInterval": 1,
 				"damage": 200,
 				"lifetime": 2,
-				"fadeTime": 2,
+				"fadeTime": 3,
 				"incendSpread": 0,
 				"incendAmount": 0,
 				"incendChance": 0,
@@ -123,14 +150,30 @@ weapons: [
 				"layer": 110,
 				"y": 18,
 				"haloRotation": 90,
-				"shapes": 4,
+				"shapes": 3,
 				"triLength": 0,
 				"triLengthTo": 6,
 				"haloRadius": 28,
 				"tri": true,
 				"radius": 12,
 				"shapeRotation": 180,
-				"haloRotateSpeed": 10
+				"haloRotateSpeed": 15
+			}
+			{
+				"type": "HaloPart",
+				"progress": "warmup",
+				"color": "64c990",
+				"layer": 110,
+				"y": 18,
+				"haloRotation": 90,
+				"shapes": 3,
+				"triLength": 0,
+				"triLengthTo": 6,
+				"haloRadius": 28,
+				"tri": true,
+				"radius": 12,
+				"shapeRotation": 180,
+				"haloRotateSpeed": -11
 			}
 		]
 		}
