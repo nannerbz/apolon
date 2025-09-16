@@ -13,10 +13,26 @@ range: 95
 isEnemy: false
 abilities: [
 	{
-		type: RepairFieldAbility
-		amount: 14
-		reload: 360
-		range: 60
+		"type": "RepairFieldAbility",
+		"amount": 14,
+		"reload": 360,
+		"range": 60,
+		"activeEffect": {
+			"type": "WaveEffect",
+			"colorFrom": "377d6e",
+			"colorTo": "64c990",
+			"sizeTo": 20,
+			"lifetime": 45,
+			"strokeFrom": 2
+		},
+		"healEffect": {
+			"type": "WaveEffect",
+			"colorFrom": "377d6e",
+			"colorTo": "64c990",
+			"sizeTo": 4,
+			"lifetime": 10,
+			"strokeFrom": 2
+		}
 	}
 ]
 weapons: [

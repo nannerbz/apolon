@@ -1,0 +1,262 @@
+template: UnitType
+name: Ophanim
+rotateSpeed: 0.7
+flying: true
+speed: 0.45
+accel: 0.05
+drag: 0.04
+health: 13400
+hitSize: 32
+armor: 10
+itemCapacity: 0
+outlineColor: 222222
+range: 240
+lowAltitude: true
+trailLength: 96
+trailColor: "64c990"
+payloadCapacity: 512
+	engines: [
+  {
+    x: 0
+    y: -20
+    rotation: 0
+    radius: 4
+  }
+]
+	abilities: [
+		{
+			"type": "SuppressionFieldAbility",
+			"x": 0,
+			"y": -20,
+			"orbRadius": 8,
+			"particleSize": 1,
+			"particles": 12,
+			"display": false,
+			"active": false,
+			"layerOffset": -0.001,
+			"color": "64c990",
+			"particleColor": "64c990"
+		}
+		{
+			"type": "RepairFieldAbility",
+			"amount": 400,
+			"reload": 240,
+			"range": 85,
+			"activeEffect": {
+				"type": "WaveEffect",
+				"colorFrom": "377d6e",
+				"colorTo": "64c990",
+				"sizeTo": 32,
+				"lifetime": 60,
+				"strokeFrom": 3
+			},
+			"healEffect": {
+				"type": "WaveEffect",
+				"colorFrom": "377d6e",
+				"colorTo": "64c990",
+				"sizeTo": 4,
+				"lifetime": 10,
+				"strokeFrom": 1
+			}
+		}
+]
+parts: [
+	{
+		"type": "FlarePart",
+		"color1": "377d6e",
+		"color2": "64c990",
+		"followRotation": false,
+		"sides": 7,
+		"x": 0,
+		"y": -20,
+		"radius": 20,
+		"stroke": 2,
+		"layer": 106
+	}
+]
+weapons: [
+	{
+		"name": "ophanim-w",
+		"reload": 150,
+		"x": 0,
+		"y": 0,
+		"shootStatus": "slown",
+		"shootStatusDuration": 180,
+		"shootY": 8,
+		"top": false,
+		"rotate": false,
+		"mirror": false,
+		"chargeTime": 180,
+		"inaccuracy": 5
+		"shootSound": "spadoom",
+		"chargeSound": "weirdasscharge",
+		"chargeEffect": "chargeBegin",
+		"shake": 7,
+		"shoot": {
+			"firstShotDelay": 180,
+			"shots": 3,
+			"shotDelay": 10
+		},
+		"bullet": {
+			"chargeEffect": {
+				"type": "ParticleEffect",
+				"length": 64,
+				"lifetime": 180,
+				"region": "circle-bullet",
+				"particles": 18,
+				"lightColor": "64c990",
+				"colorFrom": "377d6e",
+				"colorTo": "64c990",
+				"sizeFrom": 12,
+				"sizeTo": 0
+			},
+			"shootEffect": {
+				"type": "WaveEffect",
+				"colorFrom": "377d6e",
+				"colorTo": "64c990",
+				"sizeTo": 60,
+				"lifetime": 120,
+				"strokeFrom": 6
+			},
+			"recoil": 0.7,
+			"type": "BulletType",
+			"damage": 0,
+			"pierce": true,
+			"pierceCap": 4,
+			"speed": 24,
+			"lifetime": 10,
+			"trailInterval": 1,
+			"trailEffect": {
+				"type": "WaveEffect",
+				"colorFrom": "64c990",
+				"colorTo": "377d6e",
+				"sizeTo": 0,
+				"sizeFrom": 25,
+				"lifetime": 4,
+				"strokeFrom": 5
+			},
+			"intervalBullets": 1,
+			"intervalSpread": 0,
+			"intervalRandomSpread": 0,
+			"intervalAngle": 0,
+			"bulletInterval": 0.2,
+			"intervalDelay": 0,
+			"intervalBullet": {
+				"type": "ContinuousLaserBulletType",
+				"continuous": true,
+				"length": 55,
+				"width": 35,
+				"despawnEffect": "none",
+				"smokeEffect": "none",
+				"hitEffect": "none",
+				"shake": 0.5,
+				"damageInterval": 1,
+				"damage": 200,
+				"lifetime": 2,
+				"fadeTime": 3,
+				"incendSpread": 0,
+				"incendAmount": 0,
+				"incendChance": 0,
+				"colors": [ "377d6e", "377d6e", "58a68c", "64c990", "ffffff" ],
+				"despawnSound": "none",
+				"pierceCap": 6
+			}
+		}
+		"parts": [
+			{
+				"type": "RegionPart",
+				"layer": 89,
+				"suffix": "-blade",
+				"progress": "warmup",
+				"heatProgress": "recoil",
+				"heatColor": "ffffff",
+				"mirror": true,
+				"under": true,
+				"moveX": 10,
+				"moveY": -10,
+				"moveRot": 0
+			},
+			{
+				"type": "ShapePart",
+				"progress": "warmup",
+				"color": "64c990",
+				"layer": 110,
+				"sides": 100,
+				"rotation": 0,
+				"hollow": true,
+				"stroke": 0,
+				"strokeTo": 4,
+				"radius": 10,
+				"y": 18
+			},
+			{
+				"type": "HaloPart",
+				"progress": "warmup",
+				"color": "64c990",
+				"layer": 110,
+				"y": 18,
+				"haloRotation": 90,
+				"shapes": 3,
+				"triLength": 0,
+				"triLengthTo": 6,
+				"haloRadius": 28,
+				"tri": true,
+				"radius": 12,
+				"shapeRotation": 180,
+				"haloRotateSpeed": 15
+			}
+			{
+				"type": "HaloPart",
+				"progress": "warmup",
+				"color": "64c990",
+				"layer": 110,
+				"y": 18,
+				"haloRotation": 90,
+				"shapes": 3,
+				"triLength": 0,
+				"triLengthTo": 6,
+				"haloRadius": 28,
+				"tri": true,
+				"radius": 12,
+				"shapeRotation": 180,
+				"haloRotateSpeed": -11
+			}
+		]
+		}
+			{
+				"type": "PointDefenseWeapon",
+				"name": "ophanim-p",
+				"reload": 10,
+				"targetInterval": 10,
+				"targetSwitchInterval": 8,
+				"mirror": true,
+				"recoil": 0.8,
+				"x": 16,
+				"y": -5,
+				"bullet": {
+					"type": "BulletType",
+					"shootSound": "lasershoot",
+					"shootEffect": "sparkShoot",
+					"hitEffect": "pointHit",
+					"maxRange": 140,
+					"damage": 185
+				}
+			},
+	{
+		"type": "RepairBeamWeapon",
+		"name": "peregrine-h",
+		"beamWidth": 1.2,
+		"repairSpeed": 0.8,
+		"mirror": true,
+		"laserColor": "58a68c",
+		"x": 8,
+		"y": -2,
+		"bullet": {
+			"type": "BulletType",
+			"maxRange": 85
+		}
+	}
+],
+		"research": {
+			"parent": "peregrine"
+		}

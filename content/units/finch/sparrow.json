@@ -33,7 +33,7 @@ weapons: [
 			"type": "shootAlternate",
 			"shots": 2,
 			"barrels": 2,
-			"x": 6
+			"spread": 3
 		},
 		"reload": 128,
 		"x": 0,
