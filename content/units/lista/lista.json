@@ -16,10 +16,26 @@ targetable: false
 research: airborne-fabricator
 abilities: [
 	{
-		type: RepairFieldAbility
-		amount: 4
-		reload: 120
-		range: 45
+		"type": "RepairFieldAbility",
+		"amount": 4,
+		"reload": 120,
+		"range": 45,
+		"activeEffect": {
+			"type": "WaveEffect",
+			"colorFrom": "377d6e",
+			"colorTo": "64c990",
+			"sizeTo": 16,
+			"lifetime": 30,
+			"strokeFrom": 2
+		},
+		"healEffect": {
+			"type": "WaveEffect",
+			"colorFrom": "377d6e",
+			"colorTo": "64c990",
+			"sizeTo": 3,
+			"lifetime": 7,
+			"strokeFrom": 1
+		}
 	}
 ]
 weapons: [

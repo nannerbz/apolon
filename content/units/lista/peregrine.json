@@ -78,16 +78,17 @@ weapons: [
 		}
 	}
 	{
-		type: RepairBeamWeapon
-		name: peregrine-h
-		beamWidth: 1.2
-		repairSpeed: 0.5
-		mirror: true
-		x: -12
-		y: -9
-		bullet: {
-			type: BulletType
-			maxRange: 125
+		"type": "RepairBeamWeapon",
+		"name": "peregrine-h",
+		"beamWidth": 1.2,
+		"repairSpeed": 0.5,
+		"mirror": true,
+		"laserColor": "58a68c",
+		"x": -12,
+		"y": -9,
+		"bullet": {
+			"type": "BulletType",
+			"maxRange": 125
 		}
 	}
 ]
