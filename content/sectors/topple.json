@@ -22,6 +22,7 @@
   "waveTeam": "blue"
   "defaultTeam": "sharded"
   "coreDestroyClear": true
+  "attackMode": true,
   "onlyDepositCore": true
   "derelictRepair": false
   "coreIncinerates": true

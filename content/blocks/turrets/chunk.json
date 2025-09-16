@@ -74,7 +74,7 @@
 			type: shootAlternate
 			shots: 1
 			barrels: 3
-			spread: 6
+			spread: 7
 	}
 	drawer: {
 		type: DrawTurret,
