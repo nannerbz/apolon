@@ -56,7 +56,7 @@ weapons: [
 				"lifetime": 120,
 				"strokeFrom": 6
 			},
-			"recoil": 18
+			"recoil": 2
 			"type": "BulletType",
 			"damage": 0,
 			"pierce": true,
@@ -90,20 +90,49 @@ weapons: [
 				"pierceCap": 6,
 			}
 		}
-			"parts": [
-				{
-					"type": "RegionPart",
-					"suffix": "-blade",
-					"progress": "warmup",
-					"heatProgress": "recoil",
-					"heatColor": "ffffff",
-					"mirror": true,
-					"under": true,
-					"moveX": 10,
-					"moveY": -10,
-					"moveRot": 0
-				}
-			]
+		"parts": [
+			{
+				"type": "RegionPart",
+				"suffix": "-blade",
+				"progress": "warmup",
+				"heatProgress": "recoil",
+				"heatColor": "ffffff",
+				"mirror": true,
+				"under": true,
+				"moveX": 10,
+				"moveY": -10,
+				"moveRot": 0
+			},
+			{
+				"type": "ShapePart",
+				"progress": "warmup",
+				"color": "64c990",
+				"layer": 110,
+				"sides": 100,
+				"rotation": 0,
+				"hollow": true,
+				"stroke": 0,
+				"strokeTo": 4,
+				"radius": 10,
+				"y": 18
+			},
+			{
+				"type": "HaloPart",
+				"progress": "warmup",
+				"color": "64c990",
+				"layer": 110,
+				"y": 18,
+				"haloRotation": 90,
+				"shapes": 4,
+				"triLength": 0,
+				"triLengthTo": 6,
+				"haloRadius": 28,
+				"tri": true,
+				"radius": 12,
+				"shapeRotation": 180,
+				"haloRotateSpeed": 10
+			}
+		]
 		}
 			{
 				"type": "PointDefenseWeapon",
