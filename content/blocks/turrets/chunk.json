@@ -12,8 +12,9 @@
     "xRand": 0,
     "squareSprite": false
     "coolantMultiplier": 0.65
+  "consumes": {
     "coolant": {
-      "amount": 0.8
+      "amount": 0.6
     }
   }
     "shootCone": 15,
