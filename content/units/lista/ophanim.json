@@ -38,11 +38,10 @@ weapons: [
 			"type": "PointLaserBulletType",
 			"lifetime": 240,
 			"pierce": true,
-			"laser": "region:large-laser",
-			"laserEnd": "region:laser-end",
 			"beamEffect": "colorTrail",
 			"beamEffectInterval": 3,
 			"damageInterval": 6,
+			"damage": 50
 			"oscScl": 2,
 			"oscMag": 0.3,
 			"shake": 2
