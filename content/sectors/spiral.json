@@ -10,20 +10,12 @@
   "addStartingItems": true
   "overrideLaunchDefaults": true
 	  "research": {
-		parent: clue
+		parent: tide
 		objectives: [
 			{
 				"type": "SectorComplete",
-				"preset": "compact"
+				"preset": "tide"
 			},
-			{
-				"type": "SectorComplete",
-				"preset": "clue"
-			},
-			{
-				"type": "SectorComplete",
-				"preset": "topple"
-			}
 		]
 	}
 
