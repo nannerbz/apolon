@@ -6,7 +6,7 @@ speed: 0.45
 accel: 0.05
 drag: 0.04
 health: 13400
-hitSize: 32
+hitSize: 68
 armor: 10
 itemCapacity: 0
 outlineColor: 222222
@@ -24,19 +24,6 @@ payloadCapacity: 512
   }
 ]
 	abilities: [
-		{
-			"type": "SuppressionFieldAbility",
-			"x": 0,
-			"y": -20,
-			"orbRadius": 8,
-			"particleSize": 1,
-			"particles": 12,
-			"display": false,
-			"active": false,
-			"layerOffset": -0.001,
-			"color": "64c990",
-			"particleColor": "64c990"
-		}
 		{
 			"type": "RepairFieldAbility",
 			"amount": 400,
@@ -151,12 +138,14 @@ weapons: [
 				"hitEffect": "none",
 				"shake": 0.5,
 				"damageInterval": 1,
-				"damage": 200,
+				"damage": 50,
 				"lifetime": 2,
 				"fadeTime": 3,
 				"incendSpread": 0,
 				"incendAmount": 0,
 				"incendChance": 0,
+				"healPercent": 2
+				"collidesTeam": true,
 				"colors": [ "377d6e", "377d6e", "58a68c", "64c990", "ffffff" ],
 				"despawnSound": "none",
 				"pierceCap": 6

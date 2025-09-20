@@ -33,8 +33,8 @@ abilities: [
 		orbRadius: 3
 		particleSize: 2
 		particles: 6
-		display: false
-		active: false
+		display: true
+		active: true
 		layerOffset: -0.001
 		color: e2ca4b
 		particleColor: e2ca4b

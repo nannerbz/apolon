@@ -25,6 +25,39 @@ range: 45
 			"layer": 106
 		}
 ]
+abilities: [
+	{
+		type: MoveEffectAbility
+		minVelocity: 0
+		interval: 10
+		chance: 0
+		amount: 1
+		x: 0
+		y: 0
+		rotation: 0
+		rangeX: 0
+		rangeY: 0
+		rangeLengthMin: 0
+		rangeLengthMax: 0
+		rotateEffect: true
+		effectParem: 0
+		teamColor: false
+		parentizeEffects: false
+		color: c25757
+		effect: {
+			"type": "ParticleEffect",
+			"length": 1,
+			"lifetime": 60,
+			"region": "apolon-finchTrail",
+			"particles": 1,
+			"lightColor": "c25757",
+			"colorFrom": "ffffff",
+			"colorTo": "c25757",
+			"sizeFrom": 1,
+			"sizeTo": 1
+		}
+	}
+]
 weapons: [
 	{
 		name: finch-w
