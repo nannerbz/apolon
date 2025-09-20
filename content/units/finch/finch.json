@@ -28,8 +28,8 @@ range: 45
 abilities: [
 	{
 		type: MoveEffectAbility
-		minVelocity: 3
-		interval: 10
+		minVelocity: 2
+		interval: 7
 		chance: 0
 		amount: 1
 		x: 0
@@ -47,14 +47,14 @@ abilities: [
 		effect: {
 			"type": "ParticleEffect",
 			"length": 1,
-			"lifetime": 60,
+			"lifetime": 20,
 			"region": "apolon-finchTrail",
 			"particles": 1,
 			"lightColor": "c25757",
 			"colorFrom": "ffffff",
-			"colorTo": "c25757",
+			"colorTo": "c25757ff",
 			"sizeFrom": 8,
-			"sizeTo": 8
+			"sizeTo": 0
 		}
 	}
 ]

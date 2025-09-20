@@ -25,6 +25,19 @@ payloadCapacity: 512
 ]
 	abilities: [
 		{
+			"type": "SuppressionFieldAbility",
+			"x": 0,
+			"y": -20,
+			"orbRadius": 8,
+			"particleSize": 1,
+			"particles": 12,
+			"display": false,
+			"active": false,
+			"layerOffset": -0.001,
+			"color": "64c990",
+			"particleColor": "64c990"
+		}
+		{
 			"type": "RepairFieldAbility",
 			"amount": 400,
 			"reload": 240,
