@@ -28,7 +28,7 @@ range: 45
 abilities: [
 	{
 		type: MoveEffectAbility
-		minVelocity: 0
+		minVelocity: 3
 		interval: 10
 		chance: 0
 		amount: 1
@@ -53,8 +53,8 @@ abilities: [
 			"lightColor": "c25757",
 			"colorFrom": "ffffff",
 			"colorTo": "c25757",
-			"sizeFrom": 1,
-			"sizeTo": 1
+			"sizeFrom": 8,
+			"sizeTo": 8
 		}
 	}
 ]
