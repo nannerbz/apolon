@@ -33,9 +33,19 @@ plans: [
 		unit: peregrine
 		time: 2650
         	requirements: [
-			apolon-lista/4
-			apolon-large-neodymium-wall/2
+			apolon-lista/3
+			apolon-large-neodymium-wall/1
 			apolon-bismuth-mender/2
+		]
+	},
+	{
+		type: AssemblerUnitPlan
+		unit: ophanim
+		time: 4560
+        	requirements: [
+			apolon-pragma/2
+			apolon-large-neodymium-wall/1
+			apolon-advanced-bismuth-mender/2
 		]
 	},
 ]
