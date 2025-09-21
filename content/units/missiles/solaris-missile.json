@@ -20,7 +20,7 @@
 			type: MoveLightningAbility
 			damage: 25
 			chance: 0.3
-			length: 8
+			length: 24
 			minSpeed: 0.5
 			maxSpeed: 3
 			color: 7ec0cc
@@ -51,7 +51,7 @@
 			}
 			bullet: {
            		type: ShrapnelBulletType
-           		damage: 65
+           		damage: 175
 			length: 55
 			width: 9
 			killShooter: true
