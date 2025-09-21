@@ -74,6 +74,13 @@
 				"type": "DrawArcSmelt",
 				"flameColor": "0bbfb9",
 				"midColor": "0bbfb9"
+			},
+			{
+				"type": "DrawPulseShape",
+				"color": "0bbfb9",
+				"square": false,
+				"stroke": 1,
+				"minStroke": 0.4
 			}
 		]
 	},

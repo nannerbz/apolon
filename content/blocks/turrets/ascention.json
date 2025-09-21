@@ -5,9 +5,9 @@
     "targetAir": true,
     "targetGround": true,
     "health": 12600
-	"inaccuracy": 7
+	"inaccuracy": 27
     "size": 5
-    "reload": 90
+    "reload": 130
     "outlineColor": 222222
     "xRand": 0,
     "squareSprite": false
@@ -40,7 +40,7 @@
 			"homingPower": 0.4,
 			"homingRange": 128,
 			"homingDelay": 32,
-			"damage": 84,
+			"damage": 184,
 			"width": 15,
 			"height": 15,
 			"splashDamage": 32,
@@ -108,7 +108,7 @@
 			"speed": 0.4,
 			"drag": -0.04,
 			"lifetime": 80,
-			"damage": 145,
+			"damage": 245,
 			"width": 15,
 			"height": 15,
 			"homingPower": 0.4,
@@ -174,7 +174,7 @@
 			"speed": 0.1,
 			"drag": -0.06,
 			"lifetime": 80,
-			"damage": 165,
+			"damage": 285,
 			"width": 15,
 			"height": 15,
 			"homingPower": 0.4,
@@ -193,8 +193,8 @@
 		}
     }
 	shoot: {
-		shots: 6
-		shotDelay: 5
+		shots: 12
+		shotDelay: 2.5
 	}
 	drawer: {
 		type: DrawTurret,
