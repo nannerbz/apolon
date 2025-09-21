@@ -16,7 +16,7 @@
 			"items": [
 				{ "item": "neodymium-item", "amount": 1 }
 				{ "item": "technetium-item", "amount": 3 }
-				{ "item": "cryogel", "amount": 4 }
+				{ "item": "cryogel-item", "amount": 4 }
 			]
                 }
 		"liquids": {
