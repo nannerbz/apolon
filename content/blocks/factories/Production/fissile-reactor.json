@@ -12,10 +12,10 @@
 		"type": "WaveEffect",
 		"colorFrom": "4a6949",
 		"colorTo": "8bbeb0",
-		"sizeFrom": 32,
+		"sizeFrom": 24,
 		"sizeTo": 0,
 		"lifetime": 80,
-		"strokeFrom": 12,
+		"strokeFrom": 4,
 		"strokeTo": 0
 	},
 	"consumes": {
@@ -52,7 +52,7 @@
 	"category": "crafting",
 	"research": "technetium-quarry",
 	"idleSound": "superreactor",
-	"idleSoundVolume": 3
+	"idleSoundVolume": 2
 "researchCostMultiplier": 0.05
 	drawer: {
 	    type: DrawMulti
@@ -65,9 +65,9 @@
 				"type": "DrawPulseShape",
 				"color": "5e988d",
 				"square": false,
-				"stroke": 2,
-				"minStroke": 2,
-				"timeScl": 4
+				"stroke": 4,
+				"minStroke": 0,
+				"timeScl": 0.6
 			}
 			{
 				"type": "DrawMultiWeave",
