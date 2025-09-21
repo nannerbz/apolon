@@ -1,6 +1,6 @@
 {
-	"type": "HeatCrafter",
-	"name": "Hyperlucent Forge",
+	"type": "GenericCrafter",
+	"name": "Fissile Cycle Reactor",
 	"description": "Synthetizes more manageable nuclear fuel from Technetium, utilizing Methane and Neodymium in the process. Huge amounts of cryogenic agents are required for this process.",
 	"outputItem": {"item": "fissile-matter", "amount": 2},
 	"size": 5,
@@ -8,10 +8,18 @@
 	"hasItems": true,
 	"hasLiquids": true,
 	"craftTime": 120,
-	"updateEffect": "colorSparkBig",
-	"hasHeat": false
+	"updateEffect": {
+		"type": "WaveEffect",
+		"colorFrom": "4a6949",
+		"colorTo": "8bbeb0",
+		"sizeFrom": 32,
+		"sizeTo": 0,
+		"lifetime": 80,
+		"strokeFrom": 12,
+		"strokeTo": 0
+	},
 	"consumes": {
-		power: 4
+		power: 5
 		"items": {
 			"items": [
 				{ "item": "neodymium-item", "amount": 1 }
@@ -24,6 +32,10 @@
 				{
 					"liquid": "methane",
 					"amount": 0.5
+				}
+				{
+					"liquid": "cryofluid",
+					"amount": 0.8
 				}
 			]
 		}
@@ -40,7 +52,7 @@
 	"category": "crafting",
 	"research": "technetium-quarry",
 	"idleSound": "superreactor",
-	"idleSoundVolume": 0.5
+	"idleSoundVolume": 3
 "researchCostMultiplier": 0.05
 	drawer: {
 	    type: DrawMulti
@@ -49,6 +61,14 @@
 				"type": "DrawRegion",
 				"suffix": "-bottom"
 			},
+			{
+				"type": "DrawPulseShape",
+				"color": "5e988d",
+				"square": false,
+				"stroke": 2,
+				"minStroke": 2,
+				"timeScl": 4
+			}
 			{
 				"type": "DrawMultiWeave",
 				"glowColor": "5e988d"
