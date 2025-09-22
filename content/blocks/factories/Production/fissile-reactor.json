@@ -135,7 +135,7 @@
 					"stroke": 3,
 					"minStroke": 3,
 					"timeScl": 20
-					"radiusScl" 16
+					"radiusScl": 16
 				}
 				{
 					"type": "DrawMultiWeave",
