@@ -1,86 +1,153 @@
 {
 	"type": "GenericCrafter",
 	"name": "Fissile Cycle Reactor",
-	"description": "Synthetizes more manageable nuclear fuel from Technetium, utilizing Methane and Neodymium in the process. Huge amounts of cryogenic agents are required for this process.",
-	"outputItem": {"item": "fissile-matter", "amount": 2},
-	"size": 5,
-	"hasPower": true,
-	"hasItems": true,
-	"hasLiquids": true,
-	"craftTime": 120,
-	"updateEffect": {
-		"type": "WaveEffect",
-		"colorFrom": "4a6949",
-		"colorTo": "8bbeb0",
-		"sizeFrom": 20,
-		"sizeTo": 0,
-		"lifetime": 80,
-		"strokeFrom": 0,
-		"strokeTo": 4
-	},
-	"consumes": {
-		power: 5
-		"items": {
-			"items": [
-				{ "item": "neodymium-item", "amount": 1 }
-				{ "item": "technetium-item", "amount": 3 }
-				{ "item": "cryogel-item", "amount": 4 }
-			]
-                }
-		"liquids": {
-			"liquids": [
+	"description": "Synthetizes more manageable nuclear fuel from Technetium, utilizing Methane and Neodymium in the process. Huge amounts of cryogenic agents are required for this process. Might get clogged with residual Rad Snow.",
+	"outputItems": [
+		{
+			"item": "fissile-matter",
+			"amount": 2
+		},
+		{
+			"item": "rad-snow-item",
+			"amount": 9
+		}
+	]
+		"size"
+		:
+		5,
+		"hasPower"
+		:
+		true,
+		"hasItems"
+		:
+		true,
+		"hasLiquids"
+		:
+		true,
+		"craftTime"
+		:
+		120,
+		"updateEffect"
+		:
+		{
+			"type": "WaveEffect",
+			"colorFrom": "4a6949",
+			"colorTo": "8bbeb0",
+			"sizeFrom": 20,
+			"sizeTo": 0,
+			"lifetime": 80,
+			"strokeFrom": 0,
+			"strokeTo": 4
+		},
+		"consumes"
+		:
+		{
+			power: 5
+			"items": {
+				"items": [
+					{
+						"item": "neodymium-item",
+						"amount": 1
+					}
+					{
+						"item": "technetium-item",
+						"amount": 3
+					}
+					{
+						"item": "cryogel-item",
+						"amount": 4
+					}
+				]
+			}
+			"liquids": {
+				"liquids": [
+					{
+						"liquid": "methane",
+						"amount": 0.5
+					}
+					{
+						"liquid": "cryofluid",
+						"amount": 0.8
+					}
+				]
+			}
+		},
+		"requirements"
+		:
+		[
+			{
+				"item": "carbide",
+				"amount": 120
+			}
+			{
+				"item": "bismuth-item",
+				"amount": 140
+			}
+			{
+				"item": "neodymium-item",
+				"amount": 160
+			}
+			{
+				"item": "cryogel-item",
+				"amount": 180
+			}
+			{
+				"item": "kobra-alloy-item",
+				"amount": 100
+			}
+			{
+				"item": "tungsten",
+				"amount": 120
+			}
+			{
+				"item": "photoglass-item",
+				"amount": 80
+			}
+		],
+		"category"
+		:
+		"crafting",
+		"research"
+		:
+		"technetium-quarry",
+		"idleSound"
+		:
+		"superreactor",
+		"idleSoundVolume"
+		:
+		2
+		"researchCostMultiplier"
+		:
+		0.05
+		drawer
+		:
+		{
+			type: DrawMulti
+			drawers: [
 				{
-					"liquid": "methane",
-					"amount": 0.5
+					"type": "DrawRegion",
+					"suffix": "-bottom"
+				},
+				{
+					"type": "DrawPulseShape",
+					"color": "5e988d",
+					"square": false,
+					"stroke": 3,
+					"minStroke": 3,
+					"timeScl": 30
 				}
 				{
-					"liquid": "cryofluid",
-					"amount": 0.8
+					"type": "DrawMultiWeave",
+					"glowColor": "5e988d"
+				},
+				{
+					"type": "DrawDefault"
+				},
+				{
+					"type": "DrawGlowRegion",
+					"color": "5e988d",
+					"glowIntensity": 0.9
 				}
 			]
 		}
-	},
-	"requirements": [
-		{ "item": "carbide", "amount": 120 }
-		{ "item": "bismuth-item", "amount": 140 }
-		{ "item": "neodymium-item", "amount": 160 }
-		{ "item": "cryogel-item", "amount": 180 }
-		{ "item": "kobra-alloy-item", "amount": 100 }
-		{ "item": "tungsten", "amount": 120 }
-		{ "item": "photoglass-item", "amount": 80 }
-	],
-	"category": "crafting",
-	"research": "technetium-quarry",
-	"idleSound": "superreactor",
-	"idleSoundVolume": 2
-"researchCostMultiplier": 0.05
-	drawer: {
-	    type: DrawMulti
-		drawers: [
-			{
-				"type": "DrawRegion",
-				"suffix": "-bottom"
-			},
-			{
-				"type": "DrawPulseShape",
-				"color": "5e988d",
-				"square": false,
-				"stroke": 3,
-				"minStroke": 3,
-				"timeScl": 0.02
-			}
-			{
-				"type": "DrawMultiWeave",
-				"glowColor": "5e988d"
-			},
-			{
-				"type": "DrawDefault"
-			},
-			{
-				"type": "DrawGlowRegion",
-				"color": "5e988d",
-				"glowIntensity": 0.9
-			}
-		]
-	}
 }
