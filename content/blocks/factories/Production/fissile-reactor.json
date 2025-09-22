@@ -12,11 +12,11 @@
 		"type": "WaveEffect",
 		"colorFrom": "4a6949",
 		"colorTo": "8bbeb0",
-		"sizeFrom": 24,
+		"sizeFrom": 20,
 		"sizeTo": 0,
 		"lifetime": 80,
-		"strokeFrom": 4,
-		"strokeTo": 0
+		"strokeFrom": 0,
+		"strokeTo": 4
 	},
 	"consumes": {
 		power: 5
@@ -65,9 +65,9 @@
 				"type": "DrawPulseShape",
 				"color": "5e988d",
 				"square": false,
-				"stroke": 4,
-				"minStroke": 0,
-				"timeScl": 0.6
+				"stroke": 3,
+				"minStroke": 3,
+				"timeScl": 0.02
 			}
 			{
 				"type": "DrawMultiWeave",

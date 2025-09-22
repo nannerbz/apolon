@@ -79,7 +79,7 @@
 				"type": "DrawPulseShape",
 				"color": "0bbfb9",
 				"square": false,
-				"stroke": 3,
+				"stroke": 4,
 				"minStroke": 0
 			}
 		]
