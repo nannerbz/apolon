@@ -9,7 +9,7 @@
 		},
 		{
 			"item": "rad-snow-item",
-			"amount": 9
+			"amount": 21
 		}
 	]
 		"size"
@@ -134,7 +134,8 @@
 					"square": false,
 					"stroke": 3,
 					"minStroke": 3,
-					"timeScl": 30
+					"timeScl": 20
+					"radiusScl" 16
 				}
 				{
 					"type": "DrawMultiWeave",
