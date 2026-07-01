@@ -181,7 +181,7 @@
     "category": "turret"
     "minWarmup": 0.9
     "shootWarmupSpeed": 0.15
-    "shootSound": "shootAlt"
+    "shootSound": "shootBreach"
     "research": acrylon
     "shake": 0
     "researchCostMultiplier": 0.05

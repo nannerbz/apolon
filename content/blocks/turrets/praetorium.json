@@ -274,7 +274,7 @@
     "category": "turret"
     "minWarmup": 0.9
     "shootWarmupSpeed": 0.06
-    "shootSound": "cannon"
+    "shootSound": "shootTank"
     "loopSound": "glow"
     "loopSoundVolume": 0.5
 	  "research": {

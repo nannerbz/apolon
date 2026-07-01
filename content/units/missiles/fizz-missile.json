@@ -6,7 +6,7 @@
 	trailLength: 48
 	missileAccelTime: 60
 	lowAltitude: true
-	loopSound: missileTrail
+	loopSound: loopMissileTrail
 	loopSoundVolume: 3.5
 	deathSound: largeExplosion
 	targetAir: true

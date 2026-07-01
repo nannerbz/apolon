@@ -25,7 +25,7 @@ weapons: [
         	reload: 60
         	x: 3.5
         	y: 1.75
-		shootSound: bolt
+		shootSound: shootLancer
         	top: false
         	shots: 1
         	spacing: 4

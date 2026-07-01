@@ -48,7 +48,7 @@ weapons: [
         ejectEffect: casing1
 	  rotationLimit: 45
 	  rotate: true
-	  shootSound: missileLarge
+	  shootSound: shootScathe
         bullet: {
     		type: BasicBulletType
     		shootEffect: shootBig
@@ -74,7 +74,7 @@ weapons: [
         ejectEffect: casing1
 	  rotationLimit: 45
 	  rotate: true
-	  shootSound: missileLarge
+	  shootSound: shootScathe
         bullet: {
     		type: BasicBulletType
     		shootEffect: shootBig
@@ -99,7 +99,7 @@ weapons: [
         ejectEffect: casing1
 	  rotationLimit: 45
 	  rotate: true
-	  shootSound: missileLarge
+	  shootSound: shootScathe
         bullet: {
     		type: BasicBulletType
     		shootEffect: shootBig
@@ -124,7 +124,7 @@ weapons: [
         ejectEffect: casing1
 	  rotationLimit: 45
 	  rotate: true
-	  shootSound: missileLarge
+	  shootSound: shootScathe
         bullet: {
     		type: BasicBulletType
     		shootEffect: shootBig
@@ -149,7 +149,7 @@ weapons: [
         ejectEffect: casing1
 	  rotationLimit: 45
 	  rotate: true
-	  shootSound: missileLarge
+	  shootSound: shootScathe
         bullet: {
     		type: BasicBulletType
     		shootEffect: shootBig

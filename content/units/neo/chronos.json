@@ -6,7 +6,7 @@ armor: 8
 drag: 0.1
 rotateSpeed: 4
 rotateShoot: true
-shootSound: lasershoot
+shootSound: shootCleroi
 legCount: 6
 hovering: true
 allowLegStep: true
@@ -49,7 +49,7 @@ weapons: [
         spacing: 3
         mirror: true
 	  recoil: 2
-	  shootSound: lasershoot
+	  shootSound: shootCleroi
         ejectEffect: casing1
 	  rotationLimit: 45
 	  rotate: true

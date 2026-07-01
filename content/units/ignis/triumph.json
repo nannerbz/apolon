@@ -50,7 +50,7 @@ weapons: [
         mirror: false
 	shootY: 16
 	  recoil: 2
-	  shootSound: malignShoot
+	  shootSound: shootMalign
         ejectEffect: none
         bullet: {
     		type: MissileBulletType

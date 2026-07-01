@@ -33,7 +33,7 @@ weapons: [
 		reload: 120
 		x: 8
 		y: 1.4
-		shootSound: railgun
+		shootSound: shootSpectre
 		alternate: false
 		mirror: true
 		top: false

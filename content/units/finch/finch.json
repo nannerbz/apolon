@@ -65,6 +65,7 @@ weapons: [
 		x: 0
 		y: 0
 		shootSound: none
+		shootEffect: titanSmoke
 		rotate: false
 		bullet: {
             type: BasicBulletType

@@ -17,7 +17,7 @@
 	"range": 600,
     	"heatRequirement": 8
     	"maxHeatEfficiency": 2
-	"loopSound": "laserbeam",
+	"loopSound": "beamLustre",
 	"shootSound": "none"
 	"researchCostMultiplier": 0.05,
 	"shootWarmupSpeed": 0.2,

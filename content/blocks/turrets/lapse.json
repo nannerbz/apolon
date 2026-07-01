@@ -16,7 +16,7 @@
 	"aimChangeSpeed": 1.6,
 	"shootY": 4,
 	"range": 850,
-	"loopSound": "laserbeam",
+	"loopSound": "beamLustre",
 	"shootSound": "none"
 	"researchCostMultiplier": 0.05,
 	"shootWarmupSpeed": 0.2,

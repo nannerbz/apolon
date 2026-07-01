@@ -101,7 +101,7 @@
     ],
     "category": "turret"
     "shootSound": "none"
-    "loopSound": torch
+    "loopSound": shootSublimate
     "loopSoundVolume": 0.5
 	  "research": {
 		parent: chisel

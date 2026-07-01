@@ -33,7 +33,7 @@ weapons: [
 		reload: 480
 		x: 14
 		y: 0
-		shootSound: artillery
+		shootSound: shootTank
 		top: false
 		rotate: true
 		rotateSpeed: 1

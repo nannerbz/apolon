@@ -229,7 +229,7 @@
         { "item": "cobalt-item", "amount": 25 },
     ],
     "category": "turret"
-    "shootSound": "artillery"
+    "shootSound": "shootArtillerySmall"
     "research": dart
     "shake": 0
     "researchCostMultiplier": 0.05

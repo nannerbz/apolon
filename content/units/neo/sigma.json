@@ -4,7 +4,7 @@ speed: 0.6
 health: 1100
 armor: 6
 rotateShoot: true
-shootSound: lasershoot
+shootSound: shootLaser
 legCount: 6
 hovering: true
 allowLegStep: true
@@ -43,7 +43,7 @@ weapons: [
         spacing: 3
         mirror: true
 	  recoil: 2
-	  shootSound: lasershoot
+	  shootSound: shootLaser
         ejectEffect: casing1
 	  rotationLimit: 65
 	  rotate: true

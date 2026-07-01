@@ -88,7 +88,7 @@
 	  { "item": "carbide", "amount": 95 },
     ],
     "category": "turret"
-    "shootSound": "flame"
+    "shootSound": "shootFlame"
 	  "research": {
 		parent: chisel
 		objectives: [

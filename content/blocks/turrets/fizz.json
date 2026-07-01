@@ -117,7 +117,7 @@
         }
     ],
     "category": "turret"
-    "shootSound": "mediumCannon"
+    "shootSound": "shootTank"
     "research": bit
     "shake": 10
     "researchCostMultiplier": 0.05

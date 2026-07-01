@@ -32,7 +32,7 @@ weapons: [
 		reload: 90
 		x: 5.5
 		y: 0
-		shootSound: artillery
+		shootSound: shootArtillerySmall
 		top: false
 		rotate: false
 		bullet: {

@@ -109,7 +109,7 @@ weapons: [
 		reload: 5
 		x: 9
 		y: -8
-		shootSound: bolt
+		shootSound: shootDisperse
 		top: true
 		mirror: true
 		rotate: true

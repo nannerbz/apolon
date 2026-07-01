@@ -16,7 +16,7 @@ weapons: [
 		reload: 70
 		x: 0
 		y: 3
-		shootSound: bolt
+		shootSound: shootPulsar
 		mirror: false
 		rotate: false
 		pierce: true

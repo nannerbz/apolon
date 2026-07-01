@@ -6,7 +6,7 @@ armor: 9
 drag: 0.2
 rotateSpeed: 3
 rotateShoot: true
-shootSound: lasershoot
+shootSound: shootScathe
 legCount: 6
 hovering: true
 allowLegStep: true
@@ -51,7 +51,7 @@ weapons: [
         spacing: 3
         mirror: true
 	  recoil: 1
-	  shootSound: lasershoot
+	  shootSound: shootScathe
         ejectEffect: casing1
 	  rotationLimit: 45
 	  rotate: true

@@ -40,7 +40,7 @@ weapons: [
 	  recoil: 0
         ejectEffect: none
 	  rotate: false
-	  shootSound: pew
+	  shootSound: shootMissileLarge
         bullet: {
     		type: BasicBulletType
     		shootEffect: shootBig

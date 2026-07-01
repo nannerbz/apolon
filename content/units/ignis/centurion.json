@@ -46,7 +46,7 @@ weapons: [
 	shootY: 2
         mirror: false
 	  recoil: 1
-	  shootSound: shootBig
+	  shootSound: shootSalvo
         ejectEffect: none
         bullet: {
 		type: BasicBulletType

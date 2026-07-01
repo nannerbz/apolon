@@ -17,7 +17,7 @@ weapons: [
 		reload: 100
 		x: 0
 		y: 0
-		shootSound: artillery
+		shootSound: shootArtillerySmall
 		mirror: false
 		rotate: false
 		bullet: {

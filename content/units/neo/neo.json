@@ -4,7 +4,7 @@ speed: 0.9
 health: 575
 armor: 5
 rotateShoot: true
-shootSound: lasershoot
+shootSound: shootLaser
 legCount: 6
 hovering: true
 allowLegStep: true
@@ -35,7 +35,7 @@ weapons: [
         spacing: 3
         mirror: false
 	  recoil: 0
-	  shootSound: lasershoot
+	  shootSound: shootLaser
         ejectEffect: casing1
         bullet: {
             type: ShrapnelBulletType

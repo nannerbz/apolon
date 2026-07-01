@@ -47,7 +47,7 @@ weapons: [
 	rotateSpeed: 1.8
         mirror: false
 	  recoil: 1
-	  shootSound: flame
+	  shootSound: shootFlame
         ejectEffect: none
         bullet: {
     		type: BulletType

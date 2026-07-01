@@ -114,7 +114,7 @@
     "category": "turret"
     "minWarmup": 0.9
     "shootWarmupSpeed": 0.12
-    "shootSound": "shootBig"
+    "shootSound": "shootCyclone"
 	  "research": {
 		parent: dash
 		objectives: [

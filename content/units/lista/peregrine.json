@@ -18,7 +18,7 @@ weapons: [
 		reload: 60
 		x: -10
 		y: 8
-		shootSound: missile
+		shootSound: shootRetusa
 		rotateSpeed: 3
 		rotationLimit: 35
 		shoot: {

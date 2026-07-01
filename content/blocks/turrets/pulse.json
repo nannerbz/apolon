@@ -395,7 +395,7 @@
     "category": "turret"
     "minWarmup": 0.96
     "shootWarmupSpeed": 0.05
-    "shootSound": "railgun"
+    "shootSound": "shootSmite"
     "loopSound": "glow"
     "loopSoundVolume": 0.5
 	  "research": {
