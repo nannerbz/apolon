@@ -7,7 +7,8 @@ rotateDraw: false
 rotate: true
 size: 3
 heatOutput: 4
-ambientSound: hum
+	"ambientSound": "loopHum",
+	"ambientSoundVolume": 0.5
 	consumes: {
 		liquids: {
 			liquids: [

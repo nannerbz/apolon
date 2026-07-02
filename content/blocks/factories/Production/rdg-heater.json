@@ -8,7 +8,8 @@ rotate: true
 size: 1
 heatOutput: 1
 regionRotated1: 1
-ambientSound: hum
+	"ambientSound": "loopHum",
+	"ambientSoundVolume": 0.5
 	consumes: {
 		items: {
 			items: [

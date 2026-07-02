@@ -35,7 +35,7 @@
 	],
 	"category": "crafting",
 	"research": "kobra-forge",
-	"idleSound": "respawning",
-	"idleSoundVolume": 0.5
+	"ambientSound": "loopHum",
+	"ambientSoundVolume": 0.5
 	"researchCostMultiplier": 0.05
 }
