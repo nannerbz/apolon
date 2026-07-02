@@ -41,7 +41,7 @@
 	],
 	"category": "crafting",
 	"research": "kobra-forge",
-	"ambientSound": "electricHum",
+	"ambientSound": "loopElectricHum",
 	"ambientSoundVolume": 0.5
 	"researchCostMultiplier": 0.05
 	"liquidOutputDirections": [1, 3]

@@ -6,7 +6,7 @@
 	powerProduction: 0.025
 	floating: true
 	size: 1
-	ambientSound: hum
+	ambientSound: loopHum
 	ambientSoundVolume: 0.04
 	category: power
 	requirements: [

@@ -4,7 +4,7 @@
 	description: Takes rad snow and makes power, simple!
 	powerProduction: 0.4
 	itemDuration: 180
-	ambientSound: smelter
+	ambientSound: loopSmelter
 	ambientSoundVolume: 0.05
 	generateEffect: blastExplosion
 	size: 1

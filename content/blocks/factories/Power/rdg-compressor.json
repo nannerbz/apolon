@@ -3,7 +3,7 @@
 	name: Rdg Compressor
 	description: Compresses radiation from rad snow and combines it with cryofluid to make power.
 	size: 2
-	ambientSound: hum
+	ambientSound: loopHum
 	ambientSoundVolume: 0.04
 	hasItems: true,
 	hasLiquids: true,

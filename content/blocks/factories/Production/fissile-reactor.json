@@ -2,6 +2,7 @@
 	"type": "GenericCrafter",
 	"name": "Fissile Cycle Reactor",
 	"description": "Synthetizes more manageable nuclear fuel from Technetium, utilizing Methane and Neodymium in the process. Huge amounts of cryogenic agents are required for this process. Might get clogged with residual Rad Snow.",
+	"itemCapacity": 25,
 	"outputItems": [
 		{
 			"item": "fissile-matter",

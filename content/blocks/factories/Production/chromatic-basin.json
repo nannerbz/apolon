@@ -29,8 +29,8 @@
 	],
 	"category": "crafting",
 	"research": "light-carburator",
-	"idleSound": "respawning",
-	"idleSoundVolume": 0.5
+	"ambientSound": "loopHum",
+	"ambientSoundVolume": 0.5
 	"researchCostMultiplier": 0.05
 	drawer: {
 	    type: DrawMulti

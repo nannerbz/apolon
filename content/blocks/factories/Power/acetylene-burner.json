@@ -4,7 +4,7 @@
 	description: Takes acetylene and makes power.
 	powerProduction: 2
 	liquidDuration: 120
-	ambientSound: smelter
+	ambientSound: loopSmelter
 	ambientSoundVolume: 0.05
 	generateEffect: blastExplosion
 	size: 2

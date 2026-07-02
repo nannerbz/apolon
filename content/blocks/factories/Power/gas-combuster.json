@@ -4,7 +4,7 @@
 	description: Takes in lots of hydrogen and rad snow, producing lots of power in return. Makes lots of heat as a nice byproduct!
 	powerProduction: 12
 	itemDuration: 30
-	ambientSound: smelter
+	ambientSound: loopSmelter
 	ambientSoundVolume: 0.05
 	generateEffect: blastExplosion
 	size: 4

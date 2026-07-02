@@ -5,7 +5,7 @@
 	outputLiquid: { "liquid": "acetylene", "amount": 0.4 }
 	powerProduction: 6
 	liquidDuration: 90
-	ambientSound: smelter
+	ambientSound: loopSmelter
 	ambientSoundVolume: 0.05
 	generateEffect: blastExplosion
 	size: 3
