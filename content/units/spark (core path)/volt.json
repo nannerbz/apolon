@@ -35,6 +35,7 @@ weapons: [
         "under": true,
         "inaccuracy": 10,
         "ejectEffect": "casing1",
+        "under": true
         "bullet": {
             "type": "LaserBoltBulletType",
 	    "buildingDamageMultiplier": 0.01
