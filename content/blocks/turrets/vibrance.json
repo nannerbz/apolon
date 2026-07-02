@@ -39,7 +39,7 @@
             "pierceArmor": true,
             "speed": 4.5,
             "lifetime": 5,
-            "damage": 26,
+            "damage": 40,
             "width": 8,
             "height": 8,
             "intervalBullet": {

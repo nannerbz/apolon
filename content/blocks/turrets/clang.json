@@ -20,7 +20,7 @@
       "amount": 0.5
     }
   }
-    "shootCone": 3
+    "shootCone": 1
     "rotateSpeed": 3
     "shots": 1,
     "range": 650
@@ -46,6 +46,10 @@
 	fragBullets: 300
 	fragRandomSpread: 360
 	fragVelocityMin: 0.6
+	homingPower: 0.03
+    homingDelay: 10
+    homingRange: 999
+    homingCone: 360
 	fragBullet: {
 		type: BasicBulletType
 		trailWidth: 2
@@ -83,6 +87,10 @@
 	fragBullets: 200
 	fragRandomSpread: 360
 	fragVelocityMin: 0.6
+	homingPower: 0.03
+    homingDelay: 10
+    homingRange: 999
+    homingCone: 360
 	fragBullet: {
 		type: BasicBulletType
 		trailWidth: 2
