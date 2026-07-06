@@ -15,7 +15,7 @@
     "squareSprite": false
     "coolantMultiplier": 0.65
 	"unitSort": "strongest",
-    "shootY": 8
+    "shootY": 10
     "consumes": {
         "coolant": {
             "amount": 0.4
@@ -65,11 +65,31 @@
       			heatProgress : recoil
       			heatColor : "ffffff"
       			mirror : false
-      			under : false
+      			under : true
       			moveX : 0
 				moveY : 0
       			moveRot : 0
     			},
+							    {
+      			type : RegionPart
+      			suffix : "-lever"
+      			progress : warmup
+      			heatProgress : recoil
+      			heatColor : "ffffff"
+      			mirror : true
+      			under : false
+      			moveX : 2
+				moveY : 0
+      			moveRot : -5
+			moves: [
+				{
+					x: 2
+					y: 2
+					rot: -45
+					progress: recoil
+				}
+			]
+				},
     			{
       			type : RegionPart
       			suffix : "-arm"
@@ -97,43 +117,24 @@
       				heatProgress : recoil
       				heatColor : "ffffff"
       				mirror : true
-      				under : true
+      				under : false
+					layerOffset: -0.01,
       				moveX : 0
 					moveY : -2
       				moveRot : 0
     				},
 				]
     			},
-			    {
-      			type : RegionPart
-      			suffix : "-lever"
-      			progress : warmup
-      			heatProgress : recoil
-      			heatColor : "ffffff"
-      			mirror : true
-      			under : true
-      			moveX : 2
-				moveY : 0
-      			moveRot : -5
-			moves: [
-				{
-					x: 0
-					y: -2
-					rot: -5
-					progress: recoil
-				}
-			]
-				}
 		]
 	}
     "requirements": [
         {
             "item": "carbide",
-            "amount": 300
+            "amount": 125
         },
         {
             "item": "metaglass",
-            "amount": 150
+            "amount": 75
         },
         {
             "item": "kobra-alloy-item",
@@ -145,7 +146,7 @@
         },
         {
             "item": "neodymium-item",
-            "amount": 300
+            "amount": 100
         }
     ],
     "category": "turret"
