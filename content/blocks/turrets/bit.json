@@ -10,6 +10,7 @@
 	"hasLiquids": true
 	"outlineColor": "222222",
 	"squareSprite": false,
+	"unitSort": "strongest",
 	"shootCone": 360,
 	"rotateSpeed": 0.3,
 	"aimChangeSpeed": 0.3,

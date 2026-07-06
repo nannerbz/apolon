@@ -18,6 +18,7 @@
     "shootCone": 8,
     "rotateSpeed": 4,
     "shots": 1,
+	"unitSort": "strongest",
     "moveWhileCharging": false
     "range": 125
     "consumes": {

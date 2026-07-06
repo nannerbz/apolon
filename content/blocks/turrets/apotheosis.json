@@ -12,6 +12,7 @@
     "outlineColor": 222222,
     "xRand": 0,
     "squareSprite": false,
+    "unitSort": "strongest",
     "shootY": 0,
     "consumes": {
         "power": 18,

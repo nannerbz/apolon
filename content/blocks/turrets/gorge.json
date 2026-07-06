@@ -1,0 +1,146 @@
+{
+    "type": "ItemTurret",
+    "name": "Gorge",
+    "description": "Fires long range, giant pinpoint beams across large distances. Fires multiple times, more time for the longer its firing.",
+    "targetAir": true,
+    "targetGround": true,
+	"predictTarget": false
+    "hasPower": false
+    "health": 9550
+    "size": 4
+    "inaccuracy": 0
+    "reload": 80
+    "outlineColor": 222222
+    "xRand": 0,
+    "squareSprite": false
+    "coolantMultiplier": 0.65
+	"unitSort": "strongest",
+    "shootY": -8
+    "coolant": {
+      "amount": 0.5
+    }
+  }
+    "shootCone": 2
+    "rotateSpeed": 3
+    "shots": 1,
+    "range": 550
+    "ammoPerShot": 4
+    "ammoTypes": {
+               neodymium-item: {
+    		type: RailBulletType
+			length: 550
+			pierceDamageFactor: 0.5
+			damage: 45
+			hitEffect: massiveExplosion
+			pointEffect: railTrail
+			pierceEffect: railHit
+			shootEffect: railShoot
+			smokeEffect: shootBig2
+	}
+}
+	shoot: {
+		shots: 4
+		shotDelay: 15.
+	}
+	drawer: {
+		type: DrawTurret,
+     		basePrefix: base,
+		parts : [
+    			{
+      			type : RegionPart
+      			suffix : "-b"
+      			progress : recoil
+      			heatProgress : recoil
+      			heatColor : "ffffff"
+      			mirror : false
+      			under : false
+      			moveX : 0
+				moveY : 0
+      			moveRot : 0
+    			},
+    			{
+      			type : RegionPart
+      			suffix : "-arm"
+      			progress : warmup
+      			heatProgress : recoil
+      			heatColor : "ffffff"
+      			mirror : true
+      			under : false
+      			moveX : 0
+				moveY : 2
+      			moveRot : 3
+			moves: [
+				{
+					x: 0
+					y: -2
+					rot: -8
+					progress: recoil
+				}
+			]
+			children: [
+    				{
+      				type : RegionPart
+      				suffix : "-pump"
+      				progress : recoil
+      				heatProgress : recoil
+      				heatColor : "ffffff"
+      				mirror : true
+      				under : true
+      				moveX : 0
+					moveY : -2
+      				moveRot : 0
+    				},
+				]
+    			},
+			    {
+      			type : RegionPart
+      			suffix : "-lever"
+      			progress : warmup
+      			heatProgress : recoil
+      			heatColor : "ffffff"
+      			mirror : true
+      			under : false
+      			moveX : 2
+				moveY : 0
+      			moveRot : -5
+			moves: [
+				{
+					x: 0
+					y: -2
+					rot: -5
+					progress: recoil
+				}
+			]
+				}
+		]
+	}
+    "requirements": [
+        {
+            "item": "carbide",
+            "amount": 300
+        },
+        {
+            "item": "metaglass",
+            "amount": 150
+        },
+        {
+            "item": "kobra-alloy-item",
+            "amount": 125
+        },
+        {
+            "item": "photoglass-item",
+            "amount": 50
+        },
+        {
+            "item": "neodymium-item",
+            "amount": 300
+        }
+    ],
+    "category": "turret"
+    "minWarmup": 0.9
+    "shootWarmupSpeed": 0.07
+    "shootSound": "shootForeshadow"
+    "research": acrylon
+    "shake": 0
+    "researchCostMultiplier": 0.05
+}

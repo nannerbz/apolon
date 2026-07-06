@@ -11,6 +11,7 @@
     "inaccuracy": 0
     "reload": 750
     "outlineColor": 222222
+	"unitSort": "strongest",
     "xRand": 0,
     "squareSprite": false
     "coolantMultiplier": 0.65

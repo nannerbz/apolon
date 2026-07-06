@@ -5,6 +5,7 @@
     "targetAir": true,
     "targetGround": true,
     "health": 9560
+    "unitSort": "strongest",
     "size": 4
     "inaccuracy": 0
     "reload": 240
