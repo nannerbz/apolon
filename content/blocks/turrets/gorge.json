@@ -1,7 +1,7 @@
 {
     "type": "ItemTurret",
     "name": "Gorge",
-    "description": "Fires long range, giant pinpoint beams across large distances. Fires multiple times.",
+    "description": "Fires long range, giant pinpoint beams across large distances.",
     "targetAir": true,
     "targetGround": true,
 	"predictTarget": false
@@ -25,13 +25,12 @@
     "rotateSpeed": 3
     "shots": 1,
     "range": 550
-    "ammoPerShot": 4
     "ammoTypes": {
                neodymium-item: {
     		type: RailBulletType
 			length: 550
 			pierceDamageFactor: 0.5
-			damage: 45
+			damage: 200
 			hitEffect: massiveExplosion
 			pointEffect: railTrail
 			pierceEffect: railHit
@@ -42,7 +41,7 @@
     		type: RailBulletType
 			length: 550
 			pierceDamageFactor: 0.5
-			damage: 95
+			damage: 450
 			hitEffect: massiveExplosion
 			pointEffect: railTrail
 			pierceEffect: railHit
@@ -50,10 +49,6 @@
 			smokeEffect: shootBig2
 	}
 }
-	shoot: {
-		shots: 4
-		shotDelay: 15.
-	}
 	drawer: {
 		type: DrawTurret,
      		basePrefix: base,
@@ -79,11 +74,11 @@
       			mirror : true
       			under : false
       			moveX : 2
-				moveY : 0
+				moveY : -2
       			moveRot : -5
 			moves: [
 				{
-					x: 2
+					x: 5
 					y: 2
 					rot: -45
 					progress: recoil
@@ -99,13 +94,13 @@
       			mirror : true
       			under : false
       			moveX : 0
-				moveY : 2
+				moveY : 4
       			moveRot : 3
 			moves: [
 				{
 					x: 0
 					y: -2
-					rot: -8
+					rot: -10
 					progress: recoil
 				}
 			]
