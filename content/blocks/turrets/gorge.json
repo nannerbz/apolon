@@ -15,7 +15,7 @@
     "squareSprite": false
     "coolantMultiplier": 0.65
 	"unitSort": "strongest",
-    "shootY": 10
+    "shootY": 11
     "consumes": {
         "coolant": {
             "amount": 0.4
@@ -73,13 +73,13 @@
       			heatColor : "ffffff"
       			mirror : true
       			under : false
-      			moveX : 2
+      			moveX : 1
 				moveY : -2
       			moveRot : -5
 			moves: [
 				{
-					x: 5
-					y: 2
+					x: 7
+					y: 5
 					rot: -45
 					progress: recoil
 				}
@@ -93,7 +93,7 @@
       			heatColor : "ffffff"
       			mirror : true
       			under : false
-      			moveX : 0
+      			moveX : -0.5
 				moveY : 4
       			moveRot : 3
 			moves: [
