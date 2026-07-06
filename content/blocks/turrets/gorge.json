@@ -30,7 +30,8 @@
     		type: RailBulletType
 			length: 550
 			pierceDamageFactor: 0.5
-			damage: 200
+			buildingDamageMultiplier: 0.01,
+			damage: 80
 			hitEffect: massiveExplosion
 			pointEffect: railTrail
 			pierceEffect: railHit
@@ -41,7 +42,8 @@
     		type: RailBulletType
 			length: 550
 			pierceDamageFactor: 0.5
-			damage: 450
+			buildingDamageMultiplier: 0.01,
+			damage: 150
 			hitEffect: massiveExplosion
 			pointEffect: railTrail
 			pierceEffect: railHit
@@ -78,8 +80,8 @@
       			moveRot : -5
 			moves: [
 				{
-					x: 7
-					y: -1
+					x: 6
+					y: 0
 					rot: -45
 					progress: recoil
 				}
