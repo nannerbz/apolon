@@ -16,9 +16,11 @@
     "coolantMultiplier": 0.65
 	"unitSort": "strongest",
     "shootY": -8
-    "coolant": {
-      "amount": 0.5
-    }
+    "consumes": {
+        "coolant": {
+            "amount": 0.4
+        }
+    },
     "shootCone": 2
     "rotateSpeed": 3
     "shots": 1,
