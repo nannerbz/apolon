@@ -1,7 +1,7 @@
 {
     "type": "ItemTurret",
     "name": "Gorge",
-    "description": "Fires long range, giant pinpoint beams across large distances. Fires multiple times, more time for the longer its firing.",
+    "description": "Fires long range, giant pinpoint beams across large distances. Fires multiple times.",
     "targetAir": true,
     "targetGround": true,
 	"predictTarget": false
@@ -15,7 +15,7 @@
     "squareSprite": false
     "coolantMultiplier": 0.65
 	"unitSort": "strongest",
-    "shootY": -8
+    "shootY": 8
     "consumes": {
         "coolant": {
             "amount": 0.4
@@ -32,6 +32,17 @@
 			length: 550
 			pierceDamageFactor: 0.5
 			damage: 45
+			hitEffect: massiveExplosion
+			pointEffect: railTrail
+			pierceEffect: railHit
+			shootEffect: railShoot
+			smokeEffect: shootBig2
+	}
+	               photoglass-item: {
+    		type: RailBulletType
+			length: 550
+			pierceDamageFactor: 0.5
+			damage: 95
 			hitEffect: massiveExplosion
 			pointEffect: railTrail
 			pierceEffect: railHit
@@ -100,7 +111,7 @@
       			heatProgress : recoil
       			heatColor : "ffffff"
       			mirror : true
-      			under : false
+      			under : true
       			moveX : 2
 				moveY : 0
       			moveRot : -5
