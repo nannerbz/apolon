@@ -79,7 +79,7 @@
 			moves: [
 				{
 					x: 7
-					y: 3
+					y: 1
 					rot: -45
 					progress: recoil
 				}
