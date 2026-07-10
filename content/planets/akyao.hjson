@@ -93,6 +93,8 @@ orbitSpacing: 3
 radius: 1.1
 # Start sector
 startSector: 6
+# StarterCore
+defaultCore: ash
 # Minimum camera zoom.
 minZoom: 0.6
 # Whether to draw the orbit.
@@ -119,7 +121,6 @@ hasAtmosphere: true
 # Whether simulate waves when off-planet
 allowWaveSimulation: false
 allowSectorInvasion: false
-defaultCore: core-ash
 # Whether sectors are reset when a player loses them
 clearSectorOnLose: true
 # Causes numbered sectors to be playable

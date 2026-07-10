@@ -1,0 +1,15 @@
+{
+	"type": "Floor",
+	"drownTime": 230,
+	"status": "melting",
+	"statusDuration": 240,
+	"speedMultiplier": 0.19,
+	"variants": 0,
+	"isLiquid": true,
+	"cacheLayer": slag,
+	"emitLight": true,
+	"lightRadius": 40,
+	"lightColor": "efc223",
+	"obstructsLight": true,
+	"forceDrawLight": true
+}
