@@ -2,8 +2,8 @@ template: UnitType
 type: naval
 name: Sway
 speed: 4
-accel: 0.04
-drag: 0.06
+accel: 0.11
+drag: 0.6
 health: 750
 hitSize: 14
 itemCapacity: 60
@@ -30,10 +30,11 @@ weapons: [
 		y: 0.5
 		shootSound: shootLocus
 		rotate: true
+		mirror: false
 		bullet: {
 			type: RailBulletType
 			damage: 16
-			length: 180
+			length: 360
 			smokeEffect: colorSpark
 			pierceDamageFactor: 0.8
 		}

@@ -2,14 +2,13 @@ template: UnitType
 type: naval
 name: Clash
 speed: 2.4
-accel: 0.11
-drag: 0.04
+accel: 0.4
+drag: 0.9
 health: 975
 hitSize: 14
 itemCapacity: 0
 outlineColor: 222222
 circleTarget: false
-rotateSpeed: 1.8
 faceTarget: false
 moveSoundVolume: 0.4
 moveSound: "shipMove"
@@ -30,6 +29,7 @@ weapons: [
 		y: 1
 		shootSound: shootLaser
 		rotate: true
+		mirror: false
 		shoot: {
 			type: "shootSpread",
 			shots: 3,
@@ -47,7 +47,7 @@ weapons: [
 			trailWidth: 2
 			shootEffect: shootSmall
 			smokeEffect: shootSmallSmoke
-			homingPower: 0.06
+			homingPower: 0.15
 			homingDelay: 10
 			homingRange: 120
 			homingCone: 360
