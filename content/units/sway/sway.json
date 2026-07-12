@@ -34,8 +34,10 @@ weapons: [
 		bullet: {
 			type: RailBulletType
 			damage: 16
-			length: 360
+			length: 180
 			smokeEffect: colorSpark
+			pierceEffect: railHit
+			pointEffect: sparkShoot
 			pierceDamageFactor: 0.8
 		}
 	}
