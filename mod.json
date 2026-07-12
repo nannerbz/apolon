@@ -168,6 +168,7 @@ Discord: fandslimu
         "crawl-fabricator",
         "airborne-fabricator",
         "float-fabricator",
+        "sail-fabricator",
         "cargo-conveyor",
         "cargo-router",
         "cargo-driver",
@@ -182,6 +183,8 @@ Discord: fandslimu
         "airborne-reformer",
         "float-reformer",
         "ufo-reformer",
+        "sail-reformer",
+        "ship-reformer",
         #Effect
         "ash",
         "magma",
