@@ -1,0 +1,65 @@
+template: UnitType
+type: naval
+name: Clash
+speed: 2.4
+accel: 0.11
+drag: 0.04
+health: 975
+hitSize: 14
+itemCapacity: 0
+outlineColor: 222222
+circleTarget: false
+rotateSpeed: 1.8
+faceTarget: false
+moveSoundVolume: 0.4
+moveSound: "shipMove"
+trailLength: 20
+waveTrailX: 4
+trailScl: 1
+range: 120
+immunities: [
+	{status: "melting"},
+	{status: "freezing"},
+	{status: "tarred"},
+],
+weapons: [
+	{
+		name: clash-weapon
+		reload: 45
+		x: 0
+		y: 1
+		shootSound: shootLaser
+		rotate: true
+		shoot: {
+			type: "shootSpread",
+			shots: 3,
+			spread: 45
+		}
+		bullet: {
+			type: BasicBulletType
+			damage: 48
+			speed: 4
+			width: 8
+			length: 12
+			lifetime: 30
+			trailColor: ffffff
+			trailLength: 8
+			trailWidth: 2
+			shootEffect: shootSmall
+			smokeEffect: shootSmallSmoke
+			homingPower: 0.06
+			homingDelay: 10
+			homingRange: 120
+			homingCone: 360
+		}
+	}
+]
+	  "research": {
+		parent: sail-fabricator
+		objectives: [
+			{
+				type: "SectorComplete"
+				preset: topple
+			}
+		]
+	}

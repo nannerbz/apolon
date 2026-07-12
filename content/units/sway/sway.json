@@ -1,0 +1,50 @@
+template: UnitType
+type: naval
+name: Sway
+speed: 4
+accel: 0.04
+drag: 0.06
+health: 750
+hitSize: 14
+itemCapacity: 60
+outlineColor: 222222
+circleTarget: false
+rotateSpeed: 2.4
+faceTarget: false
+moveSoundVolume: 0.4
+moveSound: "shipMove"
+trailLength: 50
+waveTrailX: 4
+trailScl: 1
+range: 180
+immunities: [
+	{status: "melting"},
+	{status: "freezing"},
+	{status: "tarred"},
+],
+weapons: [
+	{
+		name: sway-weapon
+		reload: 90
+		x: 0
+		y: 0.5
+		shootSound: shootLocus
+		rotate: true
+		bullet: {
+			type: RailBulletType
+			damage: 16
+			length: 180
+			smokeEffect: colorSpark
+			pierceDamageFactor: 0.8
+		}
+	}
+]
+	  "research": {
+		parent: sail-fabricator
+		objectives: [
+			{
+				type: "SectorComplete"
+				preset: topple
+			}
+		]
+	}

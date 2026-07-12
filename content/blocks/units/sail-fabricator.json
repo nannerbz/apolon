@@ -1,0 +1,36 @@
+{
+	type: UnitFactory
+	name: Sail Fabricator
+	health: 750
+	size: 3
+	consumes: {
+		power: 1.2
+	}
+
+	requirements: [
+		carbide/75
+		metaglass/95
+	]
+
+	plans: [
+		{
+			unit: clash
+			requirements: [
+				rad-snow-item/10
+				carbide/6
+			]
+			time: 1650
+		}
+		{
+			unit: sway
+			requirements: [
+				neodymium-item/6
+				carbide/6
+			]
+			time: 1200
+		}
+	]
+	category: units
+	research: float-fabricator
+	researchCostMultiplier: 0.05
+}

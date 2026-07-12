@@ -1,6 +1,6 @@
 {
 	type: UnitFactory
-	name: Airborne Fabricator
+	name: Glide Fabricator
 	health: 540
 	size: 3
 	consumes: {

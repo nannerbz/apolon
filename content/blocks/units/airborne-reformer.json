@@ -1,7 +1,7 @@
 type: UnitAssembler
 
 health: 1250
-name: Airborne Reformer
+name: Glide Reformer
 size: 7
 itemCapacity: 100
 constructTime: 4500
