@@ -18,9 +18,9 @@ waveTrailX: 4
 trailScl: 1
 range: 180
 immunities: [
-	{status: "melting"},
-	{status: "freezing"},
-	{status: "tarred"},
+	{name: "melting"},
+	{name: "freezing"},
+	{name: "tarred"},
 ],
 weapons: [
 	{
