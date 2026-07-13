@@ -2,7 +2,7 @@ template: UnitType
 type: naval
 name: Sway
 speed: 4
-accel: 0.7
+accel: 0.5
 drag: 0.2
 health: 750
 hitSize: 14
