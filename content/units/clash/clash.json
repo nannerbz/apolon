@@ -15,6 +15,7 @@ moveSound: "shipMove"
 trailLength: 20
 waveTrailX: 4
 trailScl: 1
+omniMovement: false
 range: 120
 immunities: [
 	"melting",
@@ -47,8 +48,8 @@ weapons: [
 			trailWidth: 2
 			shootEffect: shootSmall
 			smokeEffect: shootSmallSmoke
-			homingPower: 0.15
-			homingDelay: 10
+			homingPower: 0.18
+			homingDelay: 8
 			homingRange: 120
 			homingCone: 360
 		}

@@ -2,8 +2,8 @@ template: UnitType
 type: naval
 name: Sway
 speed: 4
-accel: 0.11
-drag: 0.6
+accel: 0.7
+drag: 0.2
 health: 750
 hitSize: 14
 itemCapacity: 60
@@ -16,6 +16,7 @@ moveSound: "shipMove"
 trailLength: 50
 waveTrailX: 4
 trailScl: 1
+omniMovement: false
 range: 180
 immunities: [
 	"melting",
