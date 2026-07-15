@@ -29,11 +29,12 @@ weapons: [
 	{
 		name: sail-weapon
 		reload: 90
-		x: 3.5
+		x: 5
 		y: 7
 		layerOffset: -20
 		shootSound: shootArtilleryBig
 		rotate: true
+		rotateSpeed: 2
 		rotationLimit: 35,
 		mirror: true
 		under: true
