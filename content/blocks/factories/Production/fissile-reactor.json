@@ -6,11 +6,11 @@
 	"outputItems": [
 		{
 			"item": "fissile-matter",
-			"amount": 2
+			"amount": 1
 		},
 		{
 			"item": "rad-snow-item",
-			"amount": 21
+			"amount": 9
 		}
 	]
 		"size"
@@ -27,7 +27,7 @@
 		true,
 		"craftTime"
 		:
-		120,
+		60,
 		"updateEffect"
 		:
 		{
@@ -52,7 +52,7 @@
 					}
 					{
 						"item": "technetium-item",
-						"amount": 3
+						"amount": 2
 					}
 					{
 						"item": "cryogel-item",
@@ -136,7 +136,7 @@
 					"stroke": 3,
 					"minStroke": 3,
 					"timeScl": 20
-					"radiusScl": 16
+					"radiusScl": 0.8
 				}
 				{
 					"type": "DrawMultiWeave",
