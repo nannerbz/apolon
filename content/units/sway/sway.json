@@ -38,7 +38,7 @@ weapons: [
 			length: 180
 			smokeEffect: colorSpark
 			pierceEffect: railHit
-			pointEffect: railPoint
+			pointEffect: railTrail
 			pierceDamageFactor: 0.8
 		}
 	}
