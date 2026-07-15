@@ -1,23 +1,23 @@
 template: UnitType
 type: naval
-name: Sway
-speed: 4
-accel: 0.5
-drag: 0.2
-health: 750
-hitSize: 14
-itemCapacity: 80
+name: Bolide
+speed: 2.4
+accel: 0.3
+drag: 0.9
+health: 975
+hitSize: 20
+itemCapacity: 0
 outlineColor: 222222
 circleTarget: false
-rotateSpeed: 2.4
 faceTarget: false
 moveSoundVolume: 0.4
 moveSound: "shipMove"
-trailLength: 50
-waveTrailX: 4
+trailLength: 20
+waveTrailX: 5
+waveTrailY: -2
 trailScl: 1
 omniMovement: false
-range: 180
+range: 240
 immunities: [
 	"melting",
 	"freezing",
@@ -25,21 +25,23 @@ immunities: [
 ],
 weapons: [
 	{
-		name: sway-weapon
-		reload: 90
+		name: bolide-weapon
+		reload: 240
 		x: 0
-		y: 0.5
-		shootSound: shootLocus
+		y: 0
+		shootSound: shootForeshadow
 		rotate: true
 		mirror: false
 		bullet: {
 			type: RailBulletType
-			damage: 16
-			length: 180
+			damage: 180
+			length: 240
 			smokeEffect: colorSpark
 			pierceEffect: railHit
-			pointEffect: railPoint
+			pointEffect: sparkShoot
 			pierceDamageFactor: 0.8
+			pierce: true
+			pierceCap: 4,
 		}
 	}
 ]

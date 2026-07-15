@@ -1,0 +1,79 @@
+template: UnitType
+type: naval
+name: Sail
+speed: 4
+accel: 0.4
+drag: 0.2
+health: 750
+hitSize: 20
+itemCapacity: 200
+outlineColor: 222222
+circleTarget: false
+rotateSpeed: 2.1
+faceTarget: false
+moveSoundVolume: 0.4
+moveSound: "shipMove"
+trailLength: 50
+waveTrailX: 5
+waveTrailY: -2
+trailScl: 1
+omniMovement: false
+range: 300
+immunities: [
+	"melting",
+	"freezing",
+	"tarred",
+],
+weapons: [
+	{
+		name: sail-weapon
+		reload: 90
+		x: 3.5
+		y: 7
+		layerOffset: -20
+		shootSound: shootArtilleryBig
+		rotate: true
+		rotationLimit: 35,
+		mirror: true
+		under: true
+		bullet: {
+			type: ArtilleryBulletType
+			damage: 60
+			speed: 5
+			width: 8
+			height: 12
+			lifetime: 60
+			trailColor: ffffff
+			trailLength: 8
+			trailWidth: 2
+			shootEffect: shootSmall
+			smokeEffect: shootSmallSmoke
+			splashDamage: 120
+			splashDamageRadius: 64
+			despawnShake: 2
+		}
+		parts: [
+		{
+      		type : RegionPart
+      		suffix : "-barrel"
+      		progress : recoil
+      		heatProgress : recoil
+      		heatColor : "ffffff"
+      		mirror : false
+      		under : true
+      		moveX : 0
+			moveY : -2
+      		moveRot : 0
+    	},
+	]
+	}
+]
+	  "research": {
+		parent: sail-fabricator
+		objectives: [
+			{
+				type: "SectorComplete"
+				preset: topple
+			}
+		]
+	}
