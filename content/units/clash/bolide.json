@@ -4,7 +4,8 @@ name: Bolide
 speed: 2.4
 accel: 0.3
 drag: 0.9
-health: 975
+health: 3450
+armor: 4
 hitSize: 20
 itemCapacity: 0
 outlineColor: 222222
@@ -31,6 +32,7 @@ weapons: [
 		y: 0
 		shootSound: shootForeshadow
 		rotate: true
+		rotateSpeed: 3
 		mirror: false
 		bullet: {
 			type: RailBulletType
@@ -38,7 +40,7 @@ weapons: [
 			length: 240
 			smokeEffect: colorSpark
 			pierceEffect: railHit
-			pointEffect: sparkShoot
+			pointEffect: railTrail
 			pierceDamageFactor: 0.8
 			pierce: true
 			pierceCap: 4,

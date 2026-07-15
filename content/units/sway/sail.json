@@ -4,13 +4,14 @@ name: Sail
 speed: 4
 accel: 0.4
 drag: 0.2
-health: 750
+health: 2300
+armor: 5
 hitSize: 20
 itemCapacity: 200
 outlineColor: 222222
 circleTarget: false
 rotateSpeed: 2.1
-faceTarget: false
+faceTarget: true
 moveSoundVolume: 0.4
 moveSound: "shipMove"
 trailLength: 50

@@ -31,6 +31,7 @@ weapons: [
 		y: 0.5
 		shootSound: shootLocus
 		rotate: true
+		rotateSpeed: 2
 		mirror: false
 		bullet: {
 			type: RailBulletType
