@@ -1,14 +1,14 @@
 type: ParticleWeather
 particleRegion: apolon-swarmFinch
 color: 222222
-sizeMax: 1
-sizeMin: 1
+sizeMax: 50
+sizeMin: 50
 density: 7500
 useWindVector: false
 drawNoise: false
 opacityMultiplier: 0.4
-baseSpeed: 4
+baseSpeed: 12
 force: 0
 attrs: {
-  light: -0.05
+  light: -0.15
 }
