@@ -1,8 +1,8 @@
 type: ParticleWeather
 particleRegion: apolon-swarmMurder
 color: 222222
-sizeMax: 32
-sizeMin: 24
+sizeMax: 256
+sizeMin: 192
 density: 2500
 useWindVector: false
 drawNoise: false

@@ -1,8 +1,8 @@
 type: ParticleWeather
 particleRegion: apolon-swarmCondor
 color: 222222
-sizeMax: 32
-sizeMin: 24
+sizeMax: 64
+sizeMin: 56
 density: 4000
 useWindVector: false
 drawNoise: false
@@ -14,5 +14,5 @@ minAlpha: 0.3
 maxAlpha: 0.5
 force: 0
 attrs: {
-  light: -0.15
+  light: -0.2
 }
