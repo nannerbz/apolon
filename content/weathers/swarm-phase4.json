@@ -3,7 +3,7 @@ particleRegion: apolon-swarmMurder
 color: 222222
 sizeMax: 256
 sizeMin: 192
-density: 2500
+density: 300
 useWindVector: false
 drawNoise: false
 opacityMultiplier: 0.8
