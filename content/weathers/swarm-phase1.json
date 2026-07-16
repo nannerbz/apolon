@@ -3,7 +3,7 @@ particleRegion: apolon-swarmFinch
 color: 222222
 sizeMax: 32
 sizeMin: 24
-density: 7500
+density: 4000
 useWindVector: false
 drawNoise: false
 opacityMultiplier: 0.8

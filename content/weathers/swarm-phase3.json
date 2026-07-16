@@ -3,7 +3,7 @@ particleRegion: apolon-swarmCondor
 color: 222222
 sizeMax: 64
 sizeMin: 56
-density: 4000
+density: 8000
 useWindVector: false
 drawNoise: false
 opacityMultiplier: 0.8
