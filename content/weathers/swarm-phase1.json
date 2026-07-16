@@ -9,7 +9,9 @@ drawNoise: false
 opacityMultiplier: 0.8
 baseSpeed:  30
 yspeed: 0
-xspeed: 8
+xspeed: 14
+minAlpha: 0.25
+maxAlpha: 0.45
 force: 0
 attrs: {
   light: -0.15
