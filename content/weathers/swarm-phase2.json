@@ -1,0 +1,18 @@
+type: ParticleWeather
+particleRegion: apolon-swarmSparrow
+color: 222222
+sizeMax: 32
+sizeMin: 24
+density: 6000
+useWindVector: false
+drawNoise: false
+opacityMultiplier: 0.8
+baseSpeed:  30
+yspeed: 0
+xspeed: 12
+minAlpha: 0.25
+maxAlpha: 0.45
+force: 0
+attrs: {
+  light: -0.15
+}
