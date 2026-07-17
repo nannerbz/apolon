@@ -26,7 +26,7 @@ requirements: [
   neodymium-item/1500
   kobra-alloy-item/1000
   photoglass-item/1250
-  tungsten-item/1000
+  tungsten/1000
 ]
 researchCostMultiplier: 2.8
 solid: true
