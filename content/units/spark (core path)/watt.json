@@ -25,11 +25,13 @@ weapons: [
         "reload": 5,
         "x": 0,
         "y": 6.75,
-        "shootSound": "Fling",
+        "shootSound": "shootArc",
+        "shootEffect": "lightningShoot",
         "top": true,
         "rotate": false,
         "inaccuracy": 30,
         "minWarmup": 0.95
+        "mirror": false,
         "shootWarmupSpeed": 0.12
         "bullet": {
             "type": "LightningBulletType",
@@ -47,7 +49,7 @@ weapons: [
       		under : false
 		    x: 0
 		    y: -6.75
-      		moveX : 0
+      		moveX : 1
 		    moveY : 1
       		moveRot : 8
     		},
