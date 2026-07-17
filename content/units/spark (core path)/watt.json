@@ -28,7 +28,6 @@ weapons: [
         "shootSound": "Fling",
         "top": true,
         "rotate": false,
-        "under": ,
         "inaccuracy": 30,
         "minWarmup": 0.95
         "shootWarmupSpeed": 0.12
