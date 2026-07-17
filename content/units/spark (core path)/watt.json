@@ -21,7 +21,7 @@ itemCapacity: 80
 isEnemy: false
 weapons: [
     {
-        "name": "watt-w",
+        "name": "watt-weapon",
         "reload": 5,
         "x": 0,
         "y": 6.75,
@@ -34,12 +34,12 @@ weapons: [
         "bullet": {
             "type": "LightningBulletType",
 	        "buildingDamageMultiplier": 0.01
-            "damage": 8,
+            "damage": 30,
         }
         parts: [
 		{
       		type : RegionPart
-      		suffix : "-weapon-arm"
+      		suffix : "-arm"
       		progress : warmup
       		heatProgress : recoil
       		heatColor : "ffffff"
