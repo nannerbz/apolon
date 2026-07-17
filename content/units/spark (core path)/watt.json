@@ -1,0 +1,58 @@
+type: flying
+name: Watt
+speed: 5.2
+drag: 0.1
+accel: 0.14
+flying: true
+coreUnitDock: true
+health: 950
+hitSize: 28
+mineSpeed: 14
+minePower: 2
+drillPower: 2
+buildSpeed: 1.6
+mineTier: 1
+rotateShooting: true
+armor: 4
+range: 320
+fogRadius: 0
+outlineColor: 222222
+itemCapacity: 80
+isEnemy: false
+weapons: [
+    {
+        "name": "watt-w",
+        "reload": 5,
+        "x": 0,
+        "y": 6.75,
+        "shootSound": "Fling",
+        "top": true,
+        "rotate": false,
+        "under": ,
+        "inaccuracy": 30,
+        "minWarmup": 0.95
+        "shootWarmupSpeed": 0.12
+        "bullet": {
+            "type": "LightningBulletType",
+	        "buildingDamageMultiplier": 0.01
+            "damage": 8,
+        }
+        parts: [
+		{
+      		type : RegionPart
+      		suffix : "-weapon-arm"
+      		progress : warmup
+      		heatProgress : recoil
+      		heatColor : "ffffff"
+      		mirror : true
+      		under : false
+		    x: 0
+		    y: -6.75
+      		moveX : 0
+		    moveY : 1
+      		moveRot : 8
+    		},
+	]
+    }
+]
+alwaysUnlocked: true

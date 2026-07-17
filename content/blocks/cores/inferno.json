@@ -1,0 +1,33 @@
+type: CoreBlock
+name: Core: Inferno
+size: 6
+	  "research": {
+		parent: magma
+		objectives: [
+			{
+				type: "OnSector"
+				preset: facade
+			}
+		]
+	}
+hasItems: true
+itemCapacity: 8000
+health: 12500
+category: effect
+unitType: watt
+unitCapModifier: 40
+lightRadius: 32
+buildCost: 45
+squareSprite: false
+requirements: [
+  cobalt-item/2500
+  metaglass/2000
+  chromium-item/1500
+  neodymium-item/1500
+  kobra-alloy-item/1000
+  photoglass-item/1250
+  tungsten-item/1000
+]
+researchCostMultiplier: 2.8
+solid: true
+armor: 23
