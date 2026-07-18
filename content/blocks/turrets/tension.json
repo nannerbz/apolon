@@ -36,10 +36,10 @@
     trailLength: 10
     speed: 6
 	lifetime: 62.5
-    damage: 60
+    damage: 40
     burstSpacing: 4,
-    width: 6
-    height: 10
+    width: 16
+    height: 24
     shootEffect: colorSparkBig
     smokeEffect: shootSmallSmoke
 	hitEffect: hitLancer
@@ -49,6 +49,26 @@
 	shrinkY: 0
 	pierce: true
 	pierceCap: 5
+	fragOnHit: true
+	fragRandomSpread: 0
+	fragSpread: 8
+	fragBullets: 5
+	fragVelocityMin: 2.5
+	despawnSound: dullExplosion
+	fragBullet: {
+		type: basicBulletType
+		width: 6
+		height: 10
+		hitSize: 3
+		trailWidth: 2.5
+		trailLength: 5
+		collidesAir: true
+		homingPower: 0.2
+		homingDelay: 5
+		speed: 2
+		damage: 8
+		lifetime: 20
+		}
 	}
                tungsten: {
     type: BasicBulletType
@@ -58,8 +78,8 @@
 	lifetime: 46.875
     damage: 120
     burstSpacing: 4,
-    width: 8
-    height: 12
+    width: 16
+    height: 24
     shootEffect: colorSparkBig
     smokeEffect: shootSmallSmoke
 	hitEffect: hitLancer

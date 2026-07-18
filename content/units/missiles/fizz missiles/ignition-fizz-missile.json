@@ -1,0 +1,77 @@
+{
+	template: MissileUnitType
+	name: Ignition Fizz Missile
+	maxRange: 8
+	rotateSpeed: 0.4
+	trailLength: 48
+	missileAccelTime: 60
+	lowAltitude: true
+	loopSound: loopMissileTrail
+	loopSoundVolume: 3.5
+	deathSound: largeExplosion
+	targetAir: true
+	speed: 5
+	lifetime: 170
+	health: 4850
+	abilities: [
+	{
+		type: MoveEffectAbility
+		minVelocity: 2
+		interval: 7
+		chance: 0
+		amount: 1
+		x: 0
+		y: -4
+		rotation: 180
+		rangeX: 0
+		rangeY: 0
+		rangeLengthMin: 0
+		rangeLengthMax: 0
+		rotateEffect: true
+		effectParem: 0
+		teamColor: false
+		parentizeEffects: false
+		color: c25757
+		effect: shootSmallFlame
+	}
+]
+	weapons: [
+		{
+			name: weapon
+			shootCone: 360
+			mirror: false
+			reload: 1
+			deathExplosionEffect: reactorExplosion
+			shootOnDeath: true
+			shake: 10
+			bullet: {
+				type: ExplosionBulletType
+				killShooter: true
+				splashDamage: 400
+				splashDamageRadius: 256
+				ammoMultiplier: 1
+				fragBullets: 8
+				fragRandomSpread: 360
+				buildingDamageMultiplier : 0.05
+				fragSpread: 22.5
+				fragBullet: {
+					type: ArtilleryBulletType
+					damage: 45
+					splashDamage: 48
+					splashDamageRadius: 16
+					hitEffect: blastExplosion
+					speed: 3
+					knockback: 0.9
+					collides: true
+					collidesTiles: true
+					width: 14
+					height: 14
+					lifetime: 73.75
+					shootEffect: shootSmall
+					smokeEffect: shootSmallSmoke
+					buildingDamageMultiplier : 0.05
+				}
+			}
+		}
+	]
+}

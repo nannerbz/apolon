@@ -19,7 +19,7 @@
   }
     "shootCone": 15,
     "rotateSpeed": 3,
-    "range": 200
+    "range": 260
     "ammoTypes": {
         chromium-item: {
             "type": "BasicBulletType",
@@ -28,7 +28,7 @@
             "trailWidth": 3,
             "trailLength": 8,
             "speed": 6,
-            "lifetime": 33.33,
+            "lifetime": 43.33,
             "damage": 80,
             "backColor": "8a1d3f",
             "frontColor": "cf926a",
@@ -51,8 +51,8 @@
             "shrinkX": 0,
             "trailWidth": 3,
             "trailLength": 8,
-            "speed": 6,
-            "lifetime": 33.33,
+            "speed": 7,
+            "lifetime": 37.14,
             "damage": 135,
             "backColor": "8a1d3f",
             "frontColor": "cf926a",

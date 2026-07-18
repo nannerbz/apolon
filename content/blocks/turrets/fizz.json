@@ -25,14 +25,28 @@
 		]
 	}
     }
-    "ammoPerShot": 8
+    "ammoPerShot": 2
     "ammoTypes": {
                photoglass-item: {
     type: BasicBulletType
     shootEffect: shootBig
     smokeEffect: shootSmokeMissile
     ammoMultiplier: 1
-    spawnUnit: fizz-missile
+    spawnUnit: photoglass-fizz-missile
+  },
+                 hypersteel-item: {
+    type: BasicBulletType
+    shootEffect: shootBig
+    smokeEffect: shootSmokeMissile
+    ammoMultiplier: 1
+    spawnUnit: hyper-fizz-missile
+  },
+                 vulcan-alloy-item: {
+    type: BasicBulletType
+    shootEffect: shootBig
+    smokeEffect: shootSmokeMissile
+    ammoMultiplier: 1
+    spawnUnit: ignition-fizz-missile
   }
 },
 	drawer: {

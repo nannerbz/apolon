@@ -1,0 +1,85 @@
+{
+	template: MissileUnitType
+	name: Photoglass Fizz Missile
+	maxRange: 8
+	rotateSpeed: 0.4
+	trailLength: 48
+	missileAccelTime: 60
+	lowAltitude: true
+	loopSound: loopMissileTrail
+	loopSoundVolume: 3.5
+	deathSound: largeExplosion
+	targetAir: true
+	speed: 5
+	lifetime: 170
+	health: 4850
+	weapons: [
+		{
+			name: weapon
+			shootCone: 360
+			mirror: false
+			reload: 1
+			deathExplosionEffect: {
+				type: MultiEffect
+				effects: [
+					{
+   						layer: 60
+        					length: 300
+        					lifetime: 600
+       						cone: 360
+        					particles: 10
+          					interp: pow2Out
+       					   	sizeInterp: linear 
+       					   	region: particle
+       					   	sizeFrom: 80
+       						sizeTo: 0
+       					   	colorFrom: ffffff
+       						colorTo: 000000
+       					 }
+					{
+   						layer: 60
+        					length: 300
+        					lifetime: 600
+       						cone: 360
+        					particles: 30
+          					interp: pow2Out
+       					   	sizeInterp: linear 
+       					   	region: particle
+       					   	sizeFrom: 125
+       						sizeTo: 0
+       					   	colorFrom: ffffff
+       						colorTo: 000000
+       					 }
+				]
+			}
+			shootOnDeath: true
+			shake: 10
+			bullet: {
+				type: ExplosionBulletType
+				killShooter: true
+				splashDamage: 125
+				splashDamageRadius: 96
+				ammoMultiplier: 1
+				fragBullets: 16
+				fragRandomSpread: 0
+				buildingDamageMultiplier : 0.05
+				fragSpread: 22.5
+				fragBullet: {
+            		type: LaserBulletType
+					buildingDamageMultiplier : 0.05
+					recoil: 1
+					hitSize: 4
+					lifetime: 12
+					drawSize: 40
+					collidesAir: true
+                	damage: 35
+					length: 40
+					toColor: 37727d
+					pierce: true
+					pierceCap: 3
+					pierceBuilding: false
+				}
+			}
+		}
+	]
+}
