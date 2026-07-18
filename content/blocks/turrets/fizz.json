@@ -32,21 +32,21 @@
     shootEffect: shootBig
     smokeEffect: shootSmokeMissile
     ammoMultiplier: 1
-    spawnUnit: photoglass-fizz-missile
+    spawnUnit: fizz-missile-photoglass
   },
                  hypersteel-item: {
     type: BasicBulletType
     shootEffect: shootBig
     smokeEffect: shootSmokeMissile
     ammoMultiplier: 1
-    spawnUnit: hyper-fizz-missile
+    spawnUnit: fizz-missile-hyper
   },
                  vulcan-alloy-item: {
     type: BasicBulletType
     shootEffect: shootBig
     smokeEffect: shootSmokeMissile
     ammoMultiplier: 1
-    spawnUnit: ignition-fizz-missile
+    spawnUnit: fizz-missile-ignition
   }
 },
 	drawer: {
@@ -89,9 +89,12 @@
 			moveY : -4
       			moveRot : 0
     			},
-    			{
+		],
+        ammoParts: {
+            photoglass-item: [
+                {
       			type : RegionPart
-      			suffix : "-missile"
+      			suffix : "-missile-photoglass"
       			progress : reload
       			heatProgress : recoil
       			heatColor : "ffffff"
@@ -105,8 +108,47 @@
 			mixColor: 00000000
 			mixColorTo: ffd37fff
 			layerOffset: -0.01
-    			},
-		]
+            }
+        ],
+            hypersteel-item: [
+                {
+      			type : RegionPart
+      			suffix : "-missile-hypersteel"
+      			progress : reload
+      			heatProgress : recoil
+      			heatColor : "ffffff"
+      			mirror : false
+      			under : true
+      			moveX : 0
+			moveY : -4
+      			moveRot : 0
+			color: ffffffff
+			colorTo: ffffff00
+			mixColor: 00000000
+			mixColorTo: ffd37fff
+			layerOffset: -0.01
+            }
+        ],
+            vulcan-alloy-item: [
+                {
+      			type : RegionPart
+      			suffix : "-missile-ignition"
+      			progress : reload
+      			heatProgress : recoil
+      			heatColor : "ffffff"
+      			mirror : false
+      			under : true
+      			moveX : 0
+			moveY : -4
+      			moveRot : 0
+			color: ffffffff
+			colorTo: ffffff00
+			mixColor: 00000000
+			mixColorTo: ffd37fff
+			layerOffset: -0.01
+            }
+        ],
+        }
 	}
     "requirements": [
         {
