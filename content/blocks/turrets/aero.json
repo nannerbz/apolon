@@ -23,7 +23,7 @@
             "trailColor": "599ca8",
             "speed": 3,
             "lifetime": 88,
-            "damage": 35,
+            "damage": 30,
             "width": 8,
             "height": 8,
             "shrinkY": 0,
@@ -36,6 +36,19 @@
             "homingPower": 0.04,
             "status": "freezing",
             "statusDuration": 120
+
+            intervalBullet: {
+			    type: LiquidBulletType
+                lifetime: 60
+                speed: 0
+                puddleSize: 8
+                liquid: "cryofluid"
+                damage: 4
+    	    }
+
+		    bulletInterval: 3
+		    intervalRandomSpread: 360
+		    intervalBullets: 1
         },
         "arkycite": {
             "type": "MissileBulletType",

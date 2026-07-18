@@ -3,7 +3,7 @@ name: Bismuth Lighthouse
 description: Emits a large bright light to allow you to see extremely far in very dark places.
 size: 3
 brightness: 0.95
-radius: 1600
+radius: 800
 consumes: {
 	power: 3.8
 		"liquids": {
