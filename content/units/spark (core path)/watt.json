@@ -14,7 +14,7 @@ buildSpeed: 1.6
 mineTier: 1
 rotateShooting: true
 armor: 4
-range: 320
+range: 150
 fogRadius: 0
 outlineColor: 222222
 itemCapacity: 80
