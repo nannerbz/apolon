@@ -1,0 +1,51 @@
+type: lightBlock
+name: Bismuth Lighthouse
+description: Emits a large bright light to allow you to see extremely far in very dark places.
+size: 3
+brightness: 0.95
+radius: 1600
+consumes: {
+	power: 3.8
+		"liquids": {
+			"liquids": [
+				{ "liquid": "cryofluid", "amount": 0.4 }
+			]
+		}
+}
+requirements: [
+	bismuth-item/10
+	metaglass/10
+]
+	  "research": {
+		parent: simple-display-cell
+		objectives: [
+			{
+				type: "SectorComplete"
+				preset: tide
+			}
+		]
+	}
+		drawer: {
+		type: DrawMulti
+		drawers : [
+	            	{
+	            	  type : DrawDefault
+	            	},
+	            	{
+	            	  type : DrawBlurSpin
+	            	  suffix : "-rotator"
+	            	  rotateSpeed: 8
+	            	},
+	            	{
+	            	  type : DrawRegion
+	            	  suffix : "-bulb"
+	            	},
+					{
+	            	  type : DrawRegion
+	            	  suffix : "-top"
+	            	},
+		]
+	}
+researchCostMultiplier: 0.15
+buildVisiblity: lightingOnly
+category: effect

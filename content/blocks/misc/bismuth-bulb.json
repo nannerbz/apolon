@@ -1,0 +1,25 @@
+type: lightBlock
+name: Bismuth Bulb
+description: Emits a simple glow of light to help brighten up very dark areas.
+size: 1
+brightness: 0.8
+radius: 200
+consumes: {
+	power: 0.1
+}
+requirements: [
+	bismuth-item/10
+	metaglass/10
+]
+	  "research": {
+		parent: simple-display-cell
+		objectives: [
+			{
+				type: "SectorComplete"
+				preset: tide
+			}
+		]
+	}
+researchCostMultiplier: 0.15
+buildVisiblity: lightingOnly
+category: effect
