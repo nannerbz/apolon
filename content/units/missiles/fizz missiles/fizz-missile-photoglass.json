@@ -9,9 +9,10 @@
 	loopSound: loopMissileTrail
 	loopSoundVolume: 3.5
 	deathSound: largeExplosion
+	trailColor: 64c990
 	targetAir: true
 	speed: 5
-	lifetime: 170
+	lifetime: 200
 	health: 4850
 	weapons: [
 		{
@@ -19,7 +20,7 @@
 			shootCone: 360
 			mirror: false
 			reload: 1
-			deathExplosionEffect: {
+			shootEffect: {
 				type: MultiEffect
 				effects: [
 					{
@@ -70,10 +71,10 @@
 					recoil: 1
 					hitSize: 4
 					lifetime: 12
-					drawSize: 40
+					drawSize: 125
 					collidesAir: true
                 	damage: 35
-					length: 40
+					length: 125
 					toColor: 37727d
 					pierce: true
 					pierceCap: 3

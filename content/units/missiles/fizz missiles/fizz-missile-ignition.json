@@ -9,19 +9,20 @@
 	loopSound: loopMissileTrail
 	loopSoundVolume: 3.5
 	deathSound: largeExplosion
+	trailColor: e2ca4b
 	targetAir: true
 	speed: 5
-	lifetime: 170
+	lifetime: 200
 	health: 4850
 	abilities: [
 	{
 		type: MoveEffectAbility
 		minVelocity: 2
-		interval: 7
+		interval: 1
 		chance: 0
 		amount: 1
 		x: 0
-		y: -4
+		y: -7
 		rotation: 180
 		rangeX: 0
 		rangeY: 0
@@ -41,8 +42,8 @@
 			shootCone: 360
 			mirror: false
 			reload: 1
-			deathExplosionEffect: reactorExplosion
 			shootOnDeath: true
+			shootEffect: reactorExplosion
 			shake: 10
 			bullet: {
 				type: ExplosionBulletType
