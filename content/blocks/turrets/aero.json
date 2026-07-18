@@ -39,16 +39,18 @@
 
             intervalBullet: {
 			    type: LiquidBulletType
-                lifetime: 60
-                speed: 0
+                lifetime: 30
+                speed: 2
                 puddleSize: 8
                 liquid: "cryofluid"
-                damage: 4
+                damage: 1
     	    }
 
-		    bulletInterval: 3
-		    intervalRandomSpread: 360
-		    intervalBullets: 1
+		bulletInterval: 3
+		intervalRandomSpread: 15
+		intervalBullets: 3
+		intervalAngle: 180
+		IntervalSpread: 35
         },
         "arkycite": {
             "type": "MissileBulletType",
