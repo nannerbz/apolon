@@ -9,7 +9,7 @@
     "inaccuracy": 0,
     "reload": 60,
     "recoil": 1,
-    "shootY": -8
+    "shootY": -8,
     "outlineColor": 222222,
     "xRand": 0,
     "squareSprite": false,
@@ -395,9 +395,9 @@
                 "stroke": 0,
                 "strokeTo": 4,
                 "radius": 7,
-                "y": -8
+                "y": -8,
                 "x": 10
-            }
+            },
             {
                 "type": "ShapePart",
                 "progress": "reload",
@@ -409,8 +409,8 @@
                 "stroke": 0,
                 "strokeTo": 4,
                 "radius": 7,
-                "y": -8
-                "x":-10 
+                "y": -8,
+                "x": -10
             }
         ]
     },
@@ -446,5 +446,6 @@
     "loopSoundVolume": 0.5,
     "research": "tension",
     "shake": 0,
-    "researchCostMultiplier": 0.05
+    "researchCostMultiplier": 0.05,
+    "isHidden": true
 }

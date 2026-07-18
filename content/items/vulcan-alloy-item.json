@@ -1,0 +1,12 @@
+{
+	"type": "material",
+	"name": "Vulcan Alloy",
+	"description": "Kobra infused with radioactive isotopes and violent magmatic energy from the depths of Akyao, all binded with an acetylene carbon matrix. Extremely hot, extremely dangerous.",
+	"hardness": 7,
+	"explosiveness": 5,
+	"flammability": 1,
+	"radioactivity": 0.2,
+	"cost": 1,
+	"color": "9c3247",
+	"research": "kobra-alloy-item"
+}
