@@ -34,7 +34,7 @@
    						layer: 200
         					length: 20
         					lifetime: 450
-							sizeChangeStart: 400
+							sizeChangeStart: 400,
        						cone: 0
         					particles: 1
           					interp: pow2Out
@@ -50,7 +50,7 @@
    						layer: 199
         					length: 20
         					lifetime: 450
-							sizeChangeStart: 400
+							sizeChangeStart: 400,
        						cone: 0
         					particles: 1
           					interp: pow2Out
@@ -67,7 +67,7 @@
    						layer: 198
         					length: 20
         					lifetime: 450
-							sizeChangeStart: 400
+							sizeChangeStart: 400,
        						cone: 0
         					particles: 10
           					interp: pow2Out
