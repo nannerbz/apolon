@@ -36,6 +36,7 @@
   },
                  hypersteel-item: {
     type: BasicBulletType
+	reloadMultiplier: 0.8
     shootEffect: shootBig
     smokeEffect: shootSmokeMissile
     ammoMultiplier: 1
@@ -43,6 +44,7 @@
   },
                  vulcan-alloy-item: {
     type: BasicBulletType
+	reloadMultiplier: 0.6
     shootEffect: shootBig
     smokeEffect: shootSmokeMissile
     ammoMultiplier: 1

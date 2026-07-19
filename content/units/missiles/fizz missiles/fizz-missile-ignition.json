@@ -48,13 +48,13 @@
 				type: ExplosionBulletType
 				killShooter: true
 				splashDamage: 2750
-				splashDamageRadius: 256
+				splashDamageRadius: 128
 				status: melting
 				statusDuration: 360
 				ammoMultiplier: 1
 				shootEffect: {
 					type: explosionEffect
-					waveLife: 30
+					waveLife: 250
 					waveRad: 128
 					smokes: 10
 				},
@@ -70,8 +70,6 @@
 					hitEffect: blastExplosion
 					speed: 1
 					knockback: 0.9
-					collides: true
-					collidesTiles: true
 					width: 14
 					height: 14
 					lifetime: 73.75
