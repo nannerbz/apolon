@@ -22,7 +22,7 @@
 		chance: 0
 		amount: 1
 		x: 0
-		y: -7
+		y: -12
 		rotation: 180
 		rangeX: 0
 		rangeY: 0
@@ -43,7 +43,6 @@
 			mirror: false
 			reload: 1
 			shootOnDeath: true
-			shootEffect: reactorExplosion
 			shake: 10
 			bullet: {
 				type: ExplosionBulletType
@@ -51,6 +50,7 @@
 				splashDamage: 400
 				splashDamageRadius: 256
 				ammoMultiplier: 1
+				shootEffect: reactorExplosion
 				fragBullets: 8
 				fragRandomSpread: 360
 				buildingDamageMultiplier : 0.05
