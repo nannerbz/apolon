@@ -32,28 +32,49 @@
 				effects: [
 					{
    						layer: 200
-        					length: 300
-        					lifetime: 600
-       						cone: 360
-        					particles: 10
+        					length: 20
+        					lifetime: 450
+							sizeChangeStart: 400
+       						cone: 0
+        					particles: 1
           					interp: pow2Out
        					   	sizeInterp: linear 
        					   	region: particle
-       					   	sizeFrom: 40
+							randLength: false
+       					   	sizeFrom: 80
        						sizeTo: 0
        					   	colorFrom: 8a7ed9
        						colorTo: 000000
        					 }
 					{
-   						layer: 200
-        					length: 300
-        					lifetime: 600
-       						cone: 360
-        					particles: 30
+   						layer: 199
+        					length: 20
+        					lifetime: 450
+							sizeChangeStart: 400
+       						cone: 0
+        					particles: 1
           					interp: pow2Out
        					   	sizeInterp: linear 
        					   	region: particle
-       					   	sizeFrom: 60
+							randLength: false
+							sizeChangeStart: 
+       					   	sizeFrom: 85
+       						sizeTo: 0
+       					   	colorFrom: 000000
+       						colorTo: 000000
+       					 }
+					{
+   						layer: 198
+        					length: 20
+        					lifetime: 450
+							sizeChangeStart: 400
+       						cone: 0
+        					particles: 10
+          					interp: pow2Out
+       					   	sizeInterp: linear 
+       					   	region: particle
+							randLength: false
+       					   	sizeFrom: 90
        						sizeTo: 0
        					   	colorFrom: 8a7ed9
        						colorTo: 000000
@@ -69,7 +90,7 @@
 					type: BasicBulletType
 					speed: 0
 					damage: 100
-					lifetime: 200
+					lifetime: 400
 					spin: 18
 					width: 100
 					height: 100
@@ -90,9 +111,9 @@
 						buildingDamageMultiplier : 0.05
     	      				}
 
-					bulletInterval: 4
+					bulletInterval: 8
 					intervalRandomSpread: 360
-					intervalBullets: 5
+					intervalBullets: 4
 					intervalAngle: 360
 					IntervalSpread: 360
 					fragVelocityMin: 0
