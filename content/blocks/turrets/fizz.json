@@ -113,7 +113,7 @@
             hypersteel-item: [
                 {
       			type : RegionPart
-      			suffix : "-missile-hypersteel"
+      			suffix : "-missile-hyper"
       			progress : reload
       			heatProgress : recoil
       			heatColor : "ffffff"

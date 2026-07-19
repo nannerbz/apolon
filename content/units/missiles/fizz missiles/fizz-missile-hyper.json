@@ -39,9 +39,9 @@
           					interp: pow2Out
        					   	sizeInterp: linear 
        					   	region: particle
-       					   	sizeFrom: 80
+       					   	sizeFrom: 40
        						sizeTo: 0
-       					   	colorFrom: ffffff
+       					   	colorFrom: 8a7ed9
        						colorTo: 000000
        					 }
 					{
@@ -53,9 +53,9 @@
           					interp: pow2Out
        					   	sizeInterp: linear 
        					   	region: particle
-       					   	sizeFrom: 125
+       					   	sizeFrom: 60
        						sizeTo: 0
-       					   	colorFrom: ffffff
+       					   	colorFrom: 8a7ed9
        						colorTo: 000000
        					 }
 				]

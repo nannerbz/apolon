@@ -33,30 +33,30 @@
 					{
    						layer: 60
         					length: 300
-        					lifetime: 600
+        					lifetime: 150
        						cone: 360
-        					particles: 10
+        					particles: 4
           					interp: pow2Out
        					   	sizeInterp: linear 
        					   	region: particle
        					   	sizeFrom: 80
        						sizeTo: 0
        					   	colorFrom: ffffff
-       						colorTo: 000000
+       						colorTo: 64c990
        					 }
 					{
    						layer: 60
         					length: 300
-        					lifetime: 600
+        					lifetime: 225
        						cone: 360
-        					particles: 30
+        					particles: 6
           					interp: pow2Out
        					   	sizeInterp: linear 
        					   	region: particle
        					   	sizeFrom: 125
        						sizeTo: 0
        					   	colorFrom: ffffff
-       						colorTo: 000000
+       						colorTo: 64c990
        					 }
 				]
 			}
