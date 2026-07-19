@@ -20,7 +20,14 @@
 			shootCone: 360
 			mirror: false
 			reload: 1
-			shootEffect: {
+			shootOnDeath: true
+			shake: 10
+			bullet: {
+				type: ExplosionBulletType
+				killShooter: true
+				splashDamage: 125
+				splashDamageRadius: 96
+				shootEffect: {
 				type: MultiEffect
 				effects: [
 					{
@@ -53,13 +60,6 @@
        					 }
 				]
 			}
-			shootOnDeath: true
-			shake: 10
-			bullet: {
-				type: ExplosionBulletType
-				killShooter: true
-				splashDamage: 125
-				splashDamageRadius: 96
 				ammoMultiplier: 1
 				fragBullets: 16
 				fragRandomSpread: 0
