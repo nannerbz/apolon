@@ -25,13 +25,13 @@
 			bullet: {
 				type: ExplosionBulletType
 				killShooter: true
-				splashDamage: 125
-				splashDamageRadius: 96
+				splashDamage: 200
+				splashDamageRadius: 128
 				shootEffect: {
 				type: MultiEffect
 				effects: [
 					{
-   						layer: 60
+   						layer: 200
         					length: 300
         					lifetime: 150
        						cone: 360
@@ -45,7 +45,7 @@
        						colorTo: 64c990
        					 }
 					{
-   						layer: 60
+   						layer: 200
         					length: 300
         					lifetime: 225
        						cone: 360
@@ -73,7 +73,7 @@
 					lifetime: 12
 					drawSize: 125
 					collidesAir: true
-                	damage: 35
+                	damage: 125
 					length: 125
 					toColor: 37727d
 					pierce: true

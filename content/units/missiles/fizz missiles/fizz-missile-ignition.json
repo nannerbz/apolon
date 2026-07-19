@@ -47,10 +47,44 @@
 			bullet: {
 				type: ExplosionBulletType
 				killShooter: true
-				splashDamage: 400
+				splashDamage: 8000
 				splashDamageRadius: 256
+				status: melting
+				statusDuration: 360
 				ammoMultiplier: 1
-				shootEffect: reactorExplosion
+				shootEffect: {
+				type: MultiEffect
+				effects: [
+					{
+   						layer: 200
+        					length: 80
+        					lifetime: 200
+       						cone: 360
+        					particles: 30
+          					interp: pow2Out
+       					   	sizeInterp: linear 
+       					   	region: particle
+       					   	sizeFrom: 25
+       						sizeTo: 0
+       					   	colorFrom: e77712
+       						colorTo: 974100
+       					 }
+					{
+   						layer: 200
+        					length: 300
+        					lifetime: 350
+       						cone: 360
+        					particles: 30
+          					interp: pow2Out
+       					   	sizeInterp: linear 
+       					   	region: particle
+       					   	sizeFrom: 60
+       						sizeTo: 0
+       					   	colorFrom: ffd300
+       						colorTo: 974100
+       					 }
+				]
+			}
 				fragBullets: 8
 				fragRandomSpread: 360
 				buildingDamageMultiplier : 0.05
@@ -58,10 +92,10 @@
 				fragBullet: {
 					type: ArtilleryBulletType
 					damage: 45
-					splashDamage: 48
-					splashDamageRadius: 16
+					splashDamage: 500
+					splashDamageRadius: 96
 					hitEffect: blastExplosion
-					speed: 3
+					speed: 1
 					knockback: 0.9
 					collides: true
 					collidesTiles: true
