@@ -57,7 +57,6 @@
        					   	sizeInterp: linear 
        					   	region: particle
 							randLength: false
-							sizeChangeStart: 
        					   	sizeFrom: 85
        						sizeTo: 0
        					   	colorFrom: 000000
