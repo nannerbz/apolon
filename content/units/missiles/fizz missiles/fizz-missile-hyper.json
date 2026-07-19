@@ -32,52 +32,55 @@
 				effects: [
 					{
    						layer: 200
-        					length: 20
+        					length: 0
         					lifetime: 450
 							sizeChangeStart: 400,
        						cone: 0
         					particles: 1
 							spin: -24
           					interp: pow2Out
-       					   	sizeInterp: linear 
+       					   	sizeInterp: pow2Out 
        					   	region: apolon-circle
 							randLength: false
-       					   	sizeFrom: 30
+       					   	sizeFrom: 20
        						sizeTo: 0
+							followParent: false,
        					   	colorFrom: 8a7ed9
        						colorTo: 000000
        					 }
 					{
    						layer: 199
-        					length: 20
+        					length: 0
         					lifetime: 450
 							sizeChangeStart: 400,
        						cone: 0
         					particles: 1
 							spin: 28
           					interp: pow2Out
-       					   	sizeInterp: linear 
+       					   	sizeInterp: pow2Out 
        					   	region: apolon-circle
 							randLength: false
-       					   	sizeFrom: 32
+       					   	sizeFrom: 22
        						sizeTo: 0
+							followParent: false,
        					   	colorFrom: 000000
        						colorTo: 000000
        					 }
 					{
    						layer: 198
-        					length: 20
+        					length: 0
         					lifetime: 450
 							sizeChangeStart: 400,
        						cone: 0
         					particles: 1
 							spin: -19
           					interp: pow2Out
-       					   	sizeInterp: linear 
+       					   	sizeInterp: pow2Out 
        					   	region: apolon-circle
 							randLength: false
-       					   	sizeFrom: 34
+       					   	sizeFrom: 24
        						sizeTo: 0
+							followParent: false,
        					   	colorFrom: 8a7ed9
        						colorTo: 000000
        					 }
