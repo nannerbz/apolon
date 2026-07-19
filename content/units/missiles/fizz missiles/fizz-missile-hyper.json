@@ -39,7 +39,7 @@
         					particles: 1
           					interp: pow2Out
        					   	sizeInterp: linear 
-       					   	region: particle
+       					   	region: apolon-circle
 							randLength: false
        					   	sizeFrom: 80
        						sizeTo: 0
@@ -55,7 +55,7 @@
         					particles: 1
           					interp: pow2Out
        					   	sizeInterp: linear 
-       					   	region: particle
+       					   	region: apolon-circle
 							randLength: false
        					   	sizeFrom: 85
        						sizeTo: 0
@@ -71,7 +71,7 @@
         					particles: 10
           					interp: pow2Out
        					   	sizeInterp: linear 
-       					   	region: particle
+       					   	region: apolon-circle
 							randLength: false
        					   	sizeFrom: 90
        						sizeTo: 0
