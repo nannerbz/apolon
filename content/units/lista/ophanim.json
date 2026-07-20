@@ -83,7 +83,6 @@ weapons: [
 		"shootStatus": "slown",
 		"shootStatusDuration": 180,
 		"shootY": 8,
-		"top": false,
 		"rotate": false,
 		"mirror": false,
 		"chargeTime": 180,
@@ -173,7 +172,7 @@ weapons: [
 				"heatProgress": "recoil",
 				"heatColor": "ffffff",
 				"mirror": true,
-                "top": false,
+                "layerOffset": -0.0001
 				"moveX": 10,
 				"moveY": -10,
 				"moveRot": 0

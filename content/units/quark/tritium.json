@@ -24,16 +24,19 @@ weapons: [
 		bullet: {
 			type: BasicBulletType
 			damage: 164
-			speed: 2
+			speed: 1.5
 			width: 25
 			height: 25
+			shrinkY: 0
+			shrinkX: 0
 			sprite: large-orb
-			lifetime: 72.5
+			recoil: 0.3
+			lifetime: 110
 			backColor: a61789,
-            frontColor: a61789,
+            frontColor: de8ec9,
             trailColor: a61789,
-			trailLength: 12
-			trailWidth: 5
+			trailLength: 24
+			trailWidth: 2
 			pierce: true
 			pierceCap: 10
 			pierceBuilding: true
@@ -41,15 +44,16 @@ weapons: [
 			smokeEffect: shootSmallSmoke
 				intervalBullet: {
 					type: lightningBulletType
+					lightningColor: de8ec9,
 					damage: 30
 					collidesAir: true
-					lightningLength: 5
-					lightningLengthRand: 7
+					lightningLength: 4
+					lightningLengthRand: 2
 					buildingDamageMultiplier: 0.1			
     	      	}
-				bulletInterval: 10
+				bulletInterval: 3
 				intervalRandomSpread: 360
-				intervalBullets: 3
+				intervalBullets: 2
 				intervalAngle: 360
 				IntervalSpread: 360
 				fragVelocityMin: 0
