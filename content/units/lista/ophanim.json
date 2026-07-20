@@ -83,10 +83,11 @@ weapons: [
 		"shootStatus": "slown",
 		"shootStatusDuration": 180,
 		"shootY": 8,
+		"layerOffset": -0.0001,
 		"rotate": false,
 		"mirror": false,
 		"chargeTime": 180,
-		"inaccuracy": 5
+		"inaccuracy": 5,
 		"shootSound": "spadoom",
 		"chargeSound": "weirdasscharge",
 		"chargeEffect": "chargeBegin",
@@ -156,13 +157,13 @@ weapons: [
 				"incendSpread": 0,
 				"incendAmount": 0,
 				"incendChance": 0,
-				"healPercent": 2
+				"healPercent": 2,
 				"collidesTeam": true,
 				"colors": [ "377d6e", "377d6e", "58a68c", "64c990", "ffffff" ],
 				"despawnSound": "none",
 				"pierceCap": 6
 			}
-		}
+		},
 		"parts": [
 			{
 				"type": "RegionPart",
@@ -172,7 +173,6 @@ weapons: [
 				"heatProgress": "recoil",
 				"heatColor": "ffffff",
 				"mirror": true,
-                "layerOffset": -0.0001
 				"moveX": 10,
 				"moveY": -10,
 				"moveRot": 0
@@ -205,7 +205,7 @@ weapons: [
 				"radius": 12,
 				"shapeRotation": 180,
 				"haloRotateSpeed": 15
-			}
+			},
 			{
 				"type": "HaloPart",
 				"progress": "warmup",
@@ -223,7 +223,7 @@ weapons: [
 				"haloRotateSpeed": -11
 			}
 		]
-		}
+	}
 			{
 				"type": "PointDefenseWeapon",
 				"name": "ophanim-p",
