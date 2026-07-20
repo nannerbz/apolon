@@ -173,7 +173,7 @@ weapons: [
 				"heatProgress": "recoil",
 				"heatColor": "ffffff",
 				"mirror": true,
-				"under": true,
+                "top" = false,
 				"moveX": 10,
 				"moveY": -10,
 				"moveRot": 0
