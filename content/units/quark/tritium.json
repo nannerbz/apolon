@@ -26,10 +26,12 @@ weapons: [
 			damage: 164
 			speed: 2
 			width: 25
-			length: 25
+			height: 25
 			sprite: large-orb
 			lifetime: 72.5
-			trailColor: ffffff
+			backColor: a61789,
+            frontColor: a61789,
+            trailColor: a61789,
 			trailLength: 12
 			trailWidth: 5
 			pierce: true
