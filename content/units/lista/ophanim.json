@@ -167,7 +167,6 @@ weapons: [
 		"parts": [
 			{
 				"type": "RegionPart",
-				"layer": 89,
 				"suffix": "-blade",
 				"progress": "warmup",
 				"heatProgress": "recoil",
