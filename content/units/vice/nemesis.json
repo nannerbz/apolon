@@ -28,7 +28,7 @@ parts: [
 	}
 	{
 		type: HoverPart
-		x: 6
+		x: 10
 		y: -9
 		mirror: true
 		radius: 7
@@ -42,7 +42,7 @@ weapons: [
 	{
 		name: nemesis-arm
 		reload: 600
-		x: 22
+		x: 26
 		y: 6
 		chargeSound: chargeCorvus
 		shootSound: shootTank
@@ -115,8 +115,8 @@ weapons: [
       		heatColor : "ffffff"
       		mirror : true
       		under : true
-      		moveX : 0
-			moveY : 0
+      		moveX : 3
+			moveY : 7
       		moveRot : -10
     		},
 	]
