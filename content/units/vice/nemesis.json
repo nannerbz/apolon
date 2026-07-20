@@ -18,7 +18,7 @@ parts: [
 	{
 		type: HoverPart
 		x: 0
-		y: -5
+		y: -8
 		mirror: false
 		radius: 10
 		phase: 90
@@ -28,8 +28,8 @@ parts: [
 	}
 	{
 		type: HoverPart
-		x: 5
-		y: -5
+		x: 6
+		y: -9
 		mirror: true
 		radius: 7
 		phase: 90
