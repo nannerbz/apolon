@@ -42,10 +42,10 @@ weapons: [
 	{
 		name: nemesis-arm
 		reload: 600
-		x: 26
+		x: 24
 		y: 6
 		chargeSound: chargeCorvus
-		shootSound: shootTank
+		shootSound: shootCorvus
 		shake: 20
 		soundPitchMin: 1
 		shootStatusDuration: 120
@@ -115,8 +115,8 @@ weapons: [
       		heatColor : "ffffff"
       		mirror : true
       		under : true
-      		moveX : 3
-			moveY : 7
+      		x : 2
+			y : 7
       		moveRot : -10
     		},
 	]
