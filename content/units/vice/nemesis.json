@@ -42,8 +42,9 @@ weapons: [
 	{
 		name: nemesis-arm
 		reload: 600
-		x: 24
-		y: 6
+		x: 22.5
+		y: 7.5
+		shootY: 8
 		chargeSound: chargeCorvus
 		shootSound: shootCorvus
 		shake: 20
@@ -79,8 +80,9 @@ weapons: [
 	    {
         name: nemesis-blaster
 		layerOffset: 1
-        reload: 80
-        x: 7
+        reload: 30
+		range: 200
+        x: 18
         y: -6
         top: true
         shots: 2
@@ -93,6 +95,11 @@ weapons: [
 		targetAir: true
 	  rotate: true
 	  rotateSpeed: 1
+	  	shoot: {
+			type: ShootSpread
+			shots: 3
+			spread: 5
+		}
         bullet: {
             type: LaserBulletType
 		hitSize: 4
@@ -115,7 +122,7 @@ weapons: [
       		heatColor : "ffffff"
       		mirror : true
       		under : true
-      		x : 2
+      		x : 1
 			y : 7
       		moveRot : -10
     		},
