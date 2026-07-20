@@ -76,8 +76,9 @@ weapons: [
 			trailColor: 64c990
 			trailWidth: 3
 			trailLength: 8
-			splashDamage: 12
+			splashDamage: 24
 			splashDamageRadius: 24
+			buildingDamageMultiplier: 0.3
 		}
 	}
 	{

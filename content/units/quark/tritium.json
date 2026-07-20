@@ -46,11 +46,11 @@ weapons: [
 			"intervalBullet": {
 				"type": "lightningBulletType",
 				"lightningColor": "de8ec9",
-				"damage": 10,
+				"damage": 5,
 				"collidesAir": true,
 				"lightningLength": 0,
 				"lightningLengthRand": 8,
-				"buildingDamageMultiplier": 0.1
+				"buildingDamageMultiplier": 0.8
 			},
 			"bulletInterval": 2,
 			"intervalRandomSpread": 360,
@@ -69,18 +69,18 @@ weapons: [
 				"heatProgress": "recoil",
 				"mirror": true,
 				"moveX": 1,
-				"moveRot": -10
+				"moveRot": 10
 			},
 			{
 				"type": "ShapePart",
-				"progress": "warmup",
+				"progress": "recoil",
 				"color": "de8ec9",
 				"layer": 110,
 				"circle": true,
 				"hollow": false,
 				"stroke": 0,
-				"strokeTo": 4,
-				"radius": 4,
+				"strokeTo": 3,
+				"radius": 3,
 				"y": 0
 			},
 			{
