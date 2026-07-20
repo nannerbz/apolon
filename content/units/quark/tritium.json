@@ -31,7 +31,7 @@ weapons: [
 			"shrinkY": -2,
 			"shrinkX": -2,
 			"sprite": "large-orb",
-			"recoil": 0.3,
+			"recoil": 0.5,
 			"lifetime": 160,
 			"backColor": "a61789",
 			"frontColor": "de8ec9",
@@ -93,22 +93,6 @@ weapons: [
 				"radius": 3,
 				"y": 0
 			},
-			{
-				"type": "HaloPart",
-				"progress": "warmup",
-				"color": "de8ec9",
-				"layer": 110,
-				"y": 0,
-				"haloRotation": 90,
-				"shapes": 2,
-				"triLength": 0,
-				"triLengthTo": 3,
-				"haloRadius": 6,
-				"tri": true,
-				"radius": 8,
-				"shapeRotation": 180,
-				"haloRotateSpeed": 3
-			}
 		]
 	}
 ]
