@@ -42,7 +42,7 @@ weapons: [
 	{
 		name: nemesis-arm
 		reload: 600
-		x: 22.5
+		x: 22
 		y: 7.5
 		shootY: 8
 		chargeSound: chargeCorvus
@@ -82,7 +82,7 @@ weapons: [
 		layerOffset: 1
         reload: 30
 		range: 200
-        x: 18
+        x: 15
         y: -6
         top: true
         shots: 2
@@ -122,8 +122,8 @@ weapons: [
       		heatColor : "ffffff"
       		mirror : true
       		under : true
-      		x : 1
-			y : 7
+      		x : 1.5
+			y : 6.5
       		moveRot : -10
     		},
 	]
