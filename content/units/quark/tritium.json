@@ -43,6 +43,16 @@ weapons: [
 			"pierceBuilding": true,
 			"shootEffect": "shootSmall",
 			"smokeEffect": "shootSmallSmoke",
+			"despawnEffect": {
+				"type": "WaveEffect",
+				"colorFrom": "a61789",
+				"colorTo": "de8ec9",
+				"sizeTo": 30,
+				"lifetime": 30,
+				"strokeFrom": 4
+			},
+			"splashDamage": 82,
+			"splashDamageRadius": 30,
 			"intervalBullet": {
 				"type": "lightningBulletType",
 				"lightningColor": "de8ec9",
@@ -68,7 +78,7 @@ weapons: [
 				"progress": "recoil",
 				"heatProgress": "recoil",
 				"mirror": true,
-				"moveX": 1,
+				"moveX": -1,
 				"moveRot": 10
 			},
 			{
