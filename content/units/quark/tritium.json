@@ -8,12 +8,13 @@ health: 2545
 hitSize: 30
 armor: 6
 itemCapacity: 0
+lowAltitude: true
 outlineColor: 222222
 range: 145
 weapons: [
 	{
 		"name": "tritium-w",
-		"reload": 70,
+		"reload": 90,
 		"x": 0,
 		"y": 3,
 		"shootSound": "shootPulsar",
@@ -24,19 +25,20 @@ weapons: [
 		"bullet": {
 			"type": "BasicBulletType",
 			"damage": 164,
-			"speed": 1.5,
+			"speed": 4,
+			"drag": 0.08,
 			"width": 10,
 			"height": 10,
 			"shrinkY": -1,
 			"shrinkX": -1,
 			"sprite": "large-orb",
 			"recoil": 0.3,
-			"lifetime": 110,
+			"lifetime": 160,
 			"backColor": "a61789",
 			"frontColor": "de8ec9",
 			"trailColor": "a61789",
 			"trailLength": 24,
-			"trailWidth": 2,
+			"trailWidth": 3,
 			"pierce": true,
 			"pierceCap": 10,
 			"pierceBuilding": true,
@@ -47,11 +49,11 @@ weapons: [
 				"lightningColor": "de8ec9",
 				"damage": 10,
 				"collidesAir": true,
-				"lightningLength": 5,
+				"lightningLength": 2,
 				"lightningLengthRand": 2,
 				"buildingDamageMultiplier": 0.1
 			},
-			"bulletInterval": 4,
+			"bulletInterval": 2,
 			"intervalRandomSpread": 360,
 			"intervalBullets": 1,
 			"intervalAngle": 360,
@@ -71,22 +73,22 @@ weapons: [
 				"hollow": true,
 				"stroke": 0,
 				"strokeTo": 2,
-				"radius": 2,
-				"y": 4
+				"radius": 6,
+				"y": 0
 			},
 			{
 				"type": "HaloPart",
 				"progress": "warmup",
 				"color": "de8ec9",
 				"layer": 110,
-				"y": 4,
+				"y": 0,
 				"haloRotation": 90,
 				"shapes": 2,
 				"triLength": 0,
-				"triLengthTo": 2,
-				"haloRadius": 14,
+				"triLengthTo": 1,
+				"haloRadius": 8,
 				"tri": true,
-				"radius": 10,
+				"radius": 6,
 				"shapeRotation": 180,
 				"haloRotateSpeed": 3
 			}
