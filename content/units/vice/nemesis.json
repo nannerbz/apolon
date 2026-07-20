@@ -42,7 +42,7 @@ weapons: [
 	{
 		name: nemesis-arm
 		reload: 600
-		x: 18
+		x: 22
 		y: 6
 		chargeSound: chargeCorvus
 		shootSound: shootTank
@@ -53,11 +53,11 @@ weapons: [
 		shoot: {
 			type: ShootSpread
 			shots: 5
-			spread: 10
+			spread: 2
 			firstShotDelay: 120
 		}
 		parentizeEffects: true
-		top: true
+		top: false
 		shootCone: 0
 		rotate: true
 		rotateSpeed: 1
@@ -80,7 +80,7 @@ weapons: [
         name: nemesis-blaster
 		layerOffset: 1
         reload: 80
-        x: 4
+        x: 7
         y: -6
         top: true
         shots: 2
@@ -90,17 +90,17 @@ weapons: [
 	  recoil: 2
 	  shootSound: shootLaser
         ejectEffect: casing1
+		targetAir: true
 	  rotate: true
 	  rotateSpeed: 1
         bullet: {
             type: LaserBulletType
-		recoil: 1
 		hitSize: 4
 		lifetime: 12
-		drawSize: 85
+		drawSize: 200
 		collidesAir: true
-                damage: 115
-		length: 85
+                damage: 250
+		length: 200
 		toColor: 37727d
 		pierce: true
 		pierceCap: 3
@@ -109,26 +109,14 @@ weapons: [
 	parts: [
 		{
       		type : RegionPart
-      		suffix : "-plate"
+      		suffix : "-barrel"
       		progress : recoil
       		heatProgress : recoil
       		heatColor : "ffffff"
       		mirror : true
-      		under : false
-      		moveX : 3
-		moveY : -3
-      		moveRot : -40
-    		},
-		{
-      		type : RegionPart
-      		suffix : "-plate"
-      		progress : recoil
-      		heatProgress : recoil
-      		heatColor : "ffffff"
-      		mirror : true
-      		under : false
-      		moveX : 2
-		moveY : -1
+      		under : true
+      		moveX : 0
+			moveY : 0
       		moveRot : -10
     		},
 	]
