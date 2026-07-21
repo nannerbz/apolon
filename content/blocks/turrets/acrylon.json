@@ -27,7 +27,7 @@
     "shots": 1,
     "range": 140
     "ammoTypes": {
-        kobra-alloy-item: {
+        "kobra-alloy-item": {
             "type": "BasicBulletType",
             "shrinkY": 0,
             "shrinkX": 0,
@@ -52,8 +52,8 @@
             "buildingDamageMultiplier": 0.05,
             "knockback": 1,
             "sprite": "large-orb"
-        }
-        photoglass-item: {
+        },
+        "photoglass-item": {
             "type": "BasicBulletType",
             "shrinkY": 0,
             "shrinkX": 0,
@@ -89,6 +89,72 @@
             "pierceBuilding": true,
             "buildingDamageMultiplier": 0.05,
             "knockback": 3,
+            "sprite": "large-orb"
+        },
+        "vulcan-alloy-item": {
+            "type": "BasicBulletType",
+            "shrinkY": 0,
+            "shrinkX": 0,
+            "trailWidth": 3,
+            "trailLength": 6,
+            "speed": 8,
+            "inaccuracy": 8,
+            "lifetime": 17.5,
+            "damage": 85,
+            "reloadMultiplier": 1.4,
+            "status": "burning",
+            "statusDuration": 400,
+            "incendChance": 0.1,
+            "incendSpread": 2,
+            "incendAmount": 1,
+            "backColor": "ffa324",
+            "frontColor": "9c3247",
+            "trailColor": "ffa324",
+            "trailInterval": 1.5,
+            "trailEffect": {
+                "type": "ExplosionEffect",
+                "layer": 49,
+                "waveColor": "9c3247",
+                "smokeColor": "3b063a",
+                "sparkColor": "ffa324",
+                "waveLife": 8,
+                "waveStroke": 3,
+                "waveRad": 8,
+                "sparkStroke": 1,
+                "sparkRad": 5,
+                "sparkLen": 3,
+                "smokeSize": 0,
+                "smokeSizeBase": 0,
+                "smokeRad": 0,
+                "smokes": 0,
+                "sparks": 2
+            },
+            "shootEffect": {
+                "type": "ExplosionEffect",
+                "waveColor": "9c3247",
+                "smokeColor": "3b063a",
+                "sparkColor": "ffa324",
+                "waveLife": 20,
+                "waveStroke": 2,
+                "waveRad": 16,
+                "sparkStroke": 2,
+                "sparkRad": 18,
+                "sparkLen": 6,
+                "smokeSize": 0,
+                "smokeSizeBase": 0,
+                "smokeRad": 0,
+                "smokes": 0,
+                "sparks": 4
+            },
+            "burstSpacing": 4,
+            "width": 15,
+            "height": 15,
+            "ammoMultiplier": 2,
+            "pierce": true,
+            "pierceCap": 8,
+            "pierceBuilding": true,
+            "buildingDamageMultiplier": 0.05,
+            "knockback": 0.3,
             "sprite": "large-orb"
         }
     }
