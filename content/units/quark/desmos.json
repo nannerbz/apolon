@@ -90,6 +90,7 @@ weapons: [
 				"followParent": true,
 				"colorFrom": "de8ec9",
 				"colorTo": "a61789",
+				"startDelay": 0,
 				"sizeTo": 0,
 				"sizeFrom": 24,
 				"lifetime": 90,
@@ -101,7 +102,7 @@ weapons: [
 		"shoot": {
 			"firstShotDelay": 90,
 			"shots": 1,
-			"shotDelay": 90
+			"shotDelay": 0
 		},
 		"bullet": {
 			"type": "BasicBulletType",
@@ -168,12 +169,12 @@ weapons: [
 				"intervalAngle": 0,
 				"IntervalSpread": 0,
 				"IntervalRandomSpread": 75,
-				"fragBullet": {
+				"intervalBullet": {
 					"type": "BasicBulletType",
 					"damage": 25,
 					"speed": 0.01,
 					"accel": 0.5,
-					"lifetime": 30,
+					"lifetime": 23,
 					"backColor": "a61789",
 					"frontColor": "de8ec9",
 					"trailColor": "a61789",
