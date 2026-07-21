@@ -51,34 +51,36 @@ weapons: [
 		rotate: true
 		mirror: false
 		bullet: {
-			type: BasicBulletType
-			sprite: mine-bullet
-			collidesTeam: true
-			healPercent: 0.6
-			width: 8
-			height: 8
-			shootEffect: none
-			smokeEffect: none
-			maxRange: 95
-			ignoreRotation: false
-			hitSound: plasmaboom
-			hitSize: 16
-			lifetime: 95
-			speed: 1
-			hitEffect: blastExplosion
-			keepVelocity: false
-			shrinkX: 0
-			shrinkY: 0
-			inaccuracy: 5
-			weaveMag: 5
-			weaveScale: 4
-			homingPower: 0.04
-			trailColor: 64c990
-			trailWidth: 3
-			trailLength: 8
-			splashDamage: 24
-			splashDamageRadius: 24
-			buildingDamageMultiplier: 0.3
+			"type": "BasicBulletType",
+			"sprite": "mine-bullet",
+			"collidesTeam": true,
+			"healPercent": 0.6,
+			"width": 8,
+			"height": 8,
+			"shootEffect": "none",
+			"smokeEffect": "none",
+			"maxRange": 95,
+			"ignoreRotation": false,
+			"hitSound": "plasmaboom",
+			"hitSize": 16,
+			"lifetime": 115,
+			"speed": 1.2,
+			"hitEffect": "blastExplosion",
+			"keepVelocity": false,
+			"shrinkX": 0,
+			"shrinkY": 0,
+			"inaccuracy": 5,
+			"weaveMag": 5,
+			"weaveScale": 4,
+			"homingPower": 0.04,
+			"backColor": "64c990",
+			"frontColor": "377d6e",
+			"trailColor": "64c990",
+			"trailWidth": 3,
+			"trailLength": 8,
+			"splashDamage": 24,
+			"splashDamageRadius": 24,
+			"buildingDamageMultiplier": 0.3
 		}
 	}
 	{

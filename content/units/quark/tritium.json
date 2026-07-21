@@ -60,7 +60,7 @@ weapons: [
 				"collidesAir": true,
 				"lightningLength": 0,
 				"lightningLengthRand": 8,
-				"buildingDamageMultiplier": 0.8
+				"buildingDamageMultiplier": 2
 			},
 			"bulletInterval": 2,
 			"intervalRandomSpread": 360,
