@@ -28,7 +28,8 @@ weapons: [
 		"bullet": {
 			"type": "BasicBulletType",
 			"damage": 125,
-			"inaccuracy": 10,
+			"accel": 0.05,
+			"inaccuracy": 7,
 			"speed": 4,
 			"lifetime": 45,
 			"backColor": "a61789",
@@ -65,7 +66,7 @@ weapons: [
 				"mirror": true,
 				"moveX": 2,
 				"moveY": 8,
-				"moveRot": -20
+				"moveRot": -25
 			}
 		]
 	},
@@ -83,7 +84,7 @@ weapons: [
 		"shootSound": "shootAfflict",
 		"chargeSound": "boomrngb",
 		"chargeEffect": "chargeBegin",
-		"shake": 7,
+		"shake": 9,
 		"shoot": {
 			"firstShotDelay": 90,
 			"shots": 1,
@@ -139,8 +140,8 @@ weapons: [
 			"fragBullet": {
 				"type": "BasicBulletType",
 				"damage": 125,
-				"speed": 0,
-				"accel": 0.2,
+				"speed": 0.1,
+				"accel": 0.3,
 				"lifetime": 120,
 				"backColor": "a61789",
 				"frontColor": "de8ec9",
