@@ -92,6 +92,7 @@ weapons: [
 		"shake": 9,
 		"bullet": {
 			"type": "BasicBulletType",
+			"keepVelocity": false,
 			"damage": 160,
 			"recoil": 0.8,
 			"speed": 8,
@@ -146,7 +147,7 @@ weapons: [
 			"fragBullet": {
 				"type": "BasicBulletType",
 				"keepVelocity": false,
-				"speed": 0.01,
+				"speed": 2,
 				"width": 30,
 				"height": 30,
 				"sprite": "large-orb",
@@ -169,7 +170,7 @@ weapons: [
 				"intervalBullets": 1,
 				"intervalAngle": 180,
 				"IntervalSpread": 0,
-				"IntervalRandomSpread": 90,
+				"IntervalRandomSpread": 10,
 				"intervalBullet": {
 					"type": "BasicBulletType",
 					"keepVelocity": false,
