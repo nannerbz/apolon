@@ -6,14 +6,14 @@ rotateShooting: true
 speed: 1.3
 accel: 0.1
 drag: 0.07
-health: 45750
+health: 35700
 targetAir: false,
 targetGround: true,
 hitSize: 56
 itemCapacity: 0
 outlineColor: 222222
 armor: 35
-range: 900
+range: 750
 parts: [
 	{
 		type: HoverPart
@@ -65,12 +65,11 @@ weapons: [
 		rotationLimit: 10
 		bullet: {
 			type: RailBulletType
-			length: 900
+			length: 750
 			pierceDamageFactor: 1
-			pierce: true
-			pierceCap: 10
-			damage: 800
-			hitEffect: reactorExplosion
+			pierce: false
+			damage: 500
+			hitEffect: massiveExplosion
 			pointEffect: railTrail
 			pierceEffect: railHit
 			shootEffect: massiveExplosion
@@ -106,7 +105,7 @@ weapons: [
 		lifetime: 12
 		drawSize: 200
 		collidesAir: true
-                damage: 250
+                damage: 125
 		length: 200
 		toColor: 37727d
 		pierce: true
