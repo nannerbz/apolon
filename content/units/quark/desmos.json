@@ -92,7 +92,6 @@ weapons: [
 		"shake": 9,
 		"bullet": {
 			"type": "BasicBulletType",
-			"keepVelocity": false,
 			"damage": 160,
 			"recoil": 0.8,
 			"speed": 12,
@@ -153,8 +152,8 @@ weapons: [
 				"shrinkX": 0,
 				"trailWidth": 3,
 				"trailLength": 8,
-				"speed": 2,
-				"lifetime": 39,
+				"speed": 4,
+				"lifetime": 19,
 				"damage": 32,
 				"width": 10,
 				"height": 10,
