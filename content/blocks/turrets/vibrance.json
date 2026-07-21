@@ -454,7 +454,7 @@
                 "type": "WaveEffect",
                 "colorFrom": "e69cd3",
                 "colorTo": "c71245",
-                "sizeTo": 36,
+                "sizeTo": 20,
                 "lifetime": 30,
                 "strokeFrom": 4
             },
@@ -489,9 +489,9 @@
                     "type": "WaveEffect",
                     "colorFrom": "e69cd3",
                     "colorTo": "c71245",
-                    "sizeTo": 36,
-                    "lifetime": 25,
-                    "strokeFrom": 3
+                    "sizeTo": 20,
+                    "lifetime": 30,
+                    "strokeFrom": 4
                 },
                 "fragOnHit": true,
                 "fragVelocityMin": 1,
@@ -520,14 +520,14 @@
                     "homingDelay": 4,
                     "pierce": true,
                     "pierceCap": 1,
-                    "despawnEffect": {
-                        "type": "WaveEffect",
-                        "colorFrom": "e69cd3",
-                        "colorTo": "c71245",
-                        "sizeTo": 30,
-                        "lifetime": 20,
-                        "strokeFrom": 2
-                    },
+            "despawnEffect": {
+                "type": "WaveEffect",
+                "colorFrom": "e69cd3",
+                "colorTo": "c71245",
+                "sizeTo": 20,
+                "lifetime": 30,
+                "strokeFrom": 4
+            },
                     "fragOnHit": true,
                     "fragVelocityMin": 1,
                     "fragVelocityMax": 1,
@@ -549,13 +549,6 @@
                         "damage": 15,
                         "width": 4,
                         "height": 4,
-                        "intervalBullet": {
-                            "type": "LightningBulletType",
-                            "lightningColor": "8c887b",
-                            "damage": 3,
-                            "pierceArmor": true,
-                            "lightningLength": 10
-                        },
                         "homingPower": 1,
                         "followAimSpeed": 5,
                         "homingRange": 380,
@@ -564,33 +557,56 @@
                         "pierceCap": 1,
                         "despawnEffect": {
                             "type": "WaveEffect",
-                            "colorFrom": "8c887b",
-                            "colorTo": "dbd9d4",
-                            "sizeTo": 18,
-                            "lifetime": 10,
-                            "strokeFrom": 4
-                        },
-                        "despawnEffect": {
-                            "type": "WaveEffect",
                             "colorFrom": "e69cd3",
                             "colorTo": "c71245",
-                            "sizeTo": 26,
-                            "lifetime": 15,
-                            "strokeFrom": 2
+                            "sizeTo": 20,
+                            "lifetime": 30,
+                            "strokeFrom": 4
+                        },
+                        "fragOnHit": true,
+                        "fragVelocityMin": 1,
+                        "fragVelocityMax": 1,
+                        "fragBullets": 3,
+                        "fragSpread": 0,
+                        "fragRandomSpread": 360,
+                        "fragAngle": 0,
+                        "fragBullet": {
+                            "type": "BasicBulletType",
+                            "shrinkY": 0,
+                            "shrinkX": 0,
+                            "speed": 1,
+                            "drag": 0.2,
+                            "lifetime": 180,
+                            "damage": 40,
+                            "width": 10,
+                            "height": 10,
+                            "sprite": "large-orb",
+                            "backColor": "d45984",
+                            "frontColor": "e69cd3",
+                            "status": "irradiated",
+                            "statusDuration": 120,
+                            "pierce": true,
+                            "pierceCap": 999,
+                            "despawnEffect": {
+                                "type": "WaveEffect",
+                                "colorFrom": "e69cd3",
+                                "colorTo": "c71245",
+                                "sizeTo": 10,
+                                "lifetime": 10,
+                                "strokeFrom": 2
+                            }
                         }
                     }
-                }
             },
             "shootEffect": {
                 "type": "WaveEffect",
                 "colorFrom": "e69cd3",
                 "colorTo": "c71245",
-                "sizeTo": 36,
-                "lifetime": 45,
-                "strokeFrom": 6
+                "sizeTo": 26,
+                "lifetime": 30,
+                "strokeFrom": 4
             }
         }
-
     },
     "drawer": {
         "type": "DrawTurret",

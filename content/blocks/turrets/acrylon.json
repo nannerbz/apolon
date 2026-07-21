@@ -104,12 +104,15 @@
             "reloadMultiplier": 1.4,
             "status": "burning",
             "statusDuration": 400,
-            "incendChance": 0.5,
+            "incendChance": 0.3,
             "incendSpread": 10,
             "incendAmount": 6,
             "backColor": "ffa324",
             "frontColor": "9c3247",
             "trailColor": "ffa324",
+            "fragBullet": {
+                "type": "FireBulletType"
+            }
             "trailInterval": 1.5,
             "trailEffect": {
                 "type": "ExplosionEffect",
