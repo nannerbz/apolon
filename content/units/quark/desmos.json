@@ -3,7 +3,7 @@ flying: true
 speed: 1.2
 accel: 0.06
 drag: 0.04
-health: 18560
+health: 17560
 hitSize: 36
 armor: 12
 itemCapacity: 0
@@ -16,10 +16,10 @@ weapons: [
 		"name": "desmos-w2",
 		"shoot": {
 			"type": "shootPattern",
-			"shotDelay": 4,
+			"shotDelay": 6,
 			"shots": 7
 		},
-		"reload": 180,
+		"reload": 240,
 		"x": 0,
 		"y": 0,
 		"shootSound": "spadoom",
@@ -28,6 +28,7 @@ weapons: [
 		"bullet": {
 			"type": "BasicBulletType",
 			"damage": 125,
+			"inaccuracy": 10,
 			"speed": 4,
 			"lifetime": 45,
 			"backColor": "a61789",
@@ -41,7 +42,19 @@ weapons: [
 			"shrinkX": 0,
 			"homingPower": 0.3,
 			"homingDelay": 15,
-			"homingRange": 256
+			"homingRange": 256,
+			"trailEffect": {
+				"type": "ParticleEffect",
+				"length": 12,
+				"lifetime": 5,
+				"region": "circle-bullet",
+				"particles": 6,
+				"lightColor": "a61789",
+				"colorFrom": "a61789",
+				"colorTo": "de8ec9",
+				"sizeFrom": 2,
+				"sizeTo": 1
+			}
 		},
 		"parts": [
 			{
@@ -51,13 +64,13 @@ weapons: [
 				"mirror": true,
 				"moveX": 1,
 				"moveY": -2,
-				"moveRot": 20
+				"moveRot": -20
 			}
 		]
 	},
 	{
 		"name": "desmos-w",
-		"reload": 180,
+		"reload": 240,
 		"x": 0,
 		"y": 0,
 		"shootStatus": "slown",
@@ -71,7 +84,7 @@ weapons: [
 		"chargeEffect": "chargeBegin",
 		"shake": 7,
 		"shoot": {
-			"firstShotDelay": 180,
+			"firstShotDelay": 90,
 			"shots": 1,
 			"shotDelay": 0
 		},
@@ -79,10 +92,9 @@ weapons: [
 			"type": "BasicBulletType",
 			"damage": 160,
 			"recoil": 0.8,
-			"buildingDamageMultiplier": 2,
 			"speed": 8,
-			"width": 20,
-			"height": 35,
+			"width": 30,
+			"height": 50,
 			"sprite": "large-orb",
 			"lifetime": 30.8,
 			"backColor": "a61789",
@@ -90,12 +102,23 @@ weapons: [
 			"trailColor": "a61789",
 			"trailLength": 12,
 			"trailWidth": 5,
+			"trailEffect": {
+				"type": "WaveEffect",
+				"colorFrom": "a61789",
+				"colorTo": "de8ec9",
+				"sizeTo": 0,
+				"sizeFrom": 10,
+				"lifetime": 45,
+				"strokeFrom": 4,
+				"strokeTo": 0
+			},
 			"pierce": true,
 			"pierceCap": 999,
 			"pierceBuilding": true,
 			"shootEffect": "shootSmall",
 			"smokeEffect": "shootSmallSmoke",
 			"fragOnHit": false,
+			"buildingDamageMultiplier": 1.4,
 			"fragAngle": 180,
 			"fragRandomSpread": 75,
 			"fragSpread": 0,
@@ -114,8 +137,8 @@ weapons: [
 			"fragBullet": {
 				"type": "BasicBulletType",
 				"damage": 125,
-				"speed": 0,
-				"drag": -0.02,
+				"speed": 1,
+				"accel": 0.02,
 				"lifetime": 140,
 				"backColor": "a61789",
 				"frontColor": "de8ec9",
@@ -128,7 +151,20 @@ weapons: [
 				"shrinkX": 0,
 				"homingPower": 0.3,
 				"homingDelay": 40,
-				"homingRange": 256
+				"homingRange": 256,
+				"buildingDamageMultiplier": 2,
+				"trailEffect": {
+					"type": "ParticleEffect",
+					"length": 12,
+					"lifetime": 5,
+					"region": "circle-bullet",
+					"particles": 6,
+					"lightColor": "a61789",
+					"colorFrom": "a61789",
+					"colorTo": "de8ec9",
+					"sizeFrom": 2,
+					"sizeTo": 1
+				}
 			}
 		},
 		"parts": [
@@ -156,13 +192,5 @@ weapons: [
 		]
 	}
 ]
-	"researchCostMultiplier": 0.45
-	  "research": {
-		parent: pion
-		objectives: [
-			{
-				type: "OnSector"
-				preset: facade
-			}
-		]
-	}
+
+		research: tritium
