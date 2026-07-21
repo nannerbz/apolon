@@ -221,7 +221,6 @@
 				"lifetime": 120,
 				"pierce": true,
 				"shrinkY": 0,
-
 				"intervalBullet": {
 					"type": "BasicBulletType",
 					"trailWidth": 1,
@@ -257,7 +256,6 @@
 				"IntervalSpread": 65
 			}
 		}
-	}
     }
 	drawer: {
 		type: DrawTurret,
