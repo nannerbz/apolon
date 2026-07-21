@@ -146,7 +146,7 @@ weapons: [
 			"fragBullet": {
 				"type": "BasicBulletType",
 				"keepVelocity": false,
-				"speed": 0,
+				"speed": 0.01,
 				"width": 30,
 				"height": 30,
 				"sprite": "large-orb",
@@ -169,9 +169,10 @@ weapons: [
 				"intervalBullets": 1,
 				"intervalAngle": 180,
 				"IntervalSpread": 0,
-				"IntervalRandomSpread": 120,
+				"IntervalRandomSpread": 90,
 				"intervalBullet": {
 					"type": "BasicBulletType",
+					"keepVelocity": false,
 					"shrinkY": 0,
 					"shrinkX": 0,
 					"trailWidth": 3,
