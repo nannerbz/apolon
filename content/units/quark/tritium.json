@@ -12,50 +12,88 @@ outlineColor: 222222
 range: 145
 weapons: [
 	{
-		name: tritium-w
-		reload: 70
-		x: 0
-		y: 3
-		shootSound: shootPulsar
-		mirror: false
-		rotate: false
-		pierce: true
-		pierceCap: 10
-		bullet: {
-			type: BasicBulletType
-			damage: 164
-			speed: 2
-			width: 25
-			height: 25
-			sprite: large-orb
-			lifetime: 72.5
-			backColor: a61789,
-            frontColor: a61789,
-            trailColor: a61789,
-			trailLength: 12
-			trailWidth: 5
-			pierce: true
-			pierceCap: 10
-			pierceBuilding: true
-			shootEffect: shootSmall
-			smokeEffect: shootSmallSmoke
-				intervalBullet: {
-					type: lightningBulletType
-					damage: 30
-					collidesAir: true
-					lightningLength: 5
-					lightningLengthRand: 7
-					buildingDamageMultiplier: 0.1			
-    	      	}
-				bulletInterval: 10
-				intervalRandomSpread: 360
-				intervalBullets: 3
-				intervalAngle: 360
-				IntervalSpread: 360
-				fragVelocityMin: 0
-				fragVelocityMax: 0
-				fragLifeMin: 0.6
-		}
+		"name": "tritium-w",
+		"reload": 90,
+		"x": 0,
+		"y": 3,
+		"shootSound": "shootPulsar",
+		"mirror": false,
+		"rotate": false,
+		"pierce": true,
+		"pierceCap": 10,
+		"bullet": {
+			"type": "BasicBulletType",
+			"damage": 164,
+			"speed": 2.6,
+			"drag": 0.015,
+			"width": 10,
+			"height": 10,
+			"shrinkY": -2,
+			"shrinkX": -2,
+			"sprite": "large-orb",
+			"recoil": 0.5,
+			"lifetime": 160,
+			"backColor": "a61789",
+			"frontColor": "de8ec9",
+			"trailColor": "a61789",
+			"trailLength": 24,
+			"trailWidth": 3,
+			"pierce": true,
+			"pierceCap": 10,
+			"pierceBuilding": true,
+			"shootEffect": "shootSmall",
+			"smokeEffect": "shootSmallSmoke",
+			"despawnEffect": {
+				"type": "WaveEffect",
+				"colorFrom": "a61789",
+				"colorTo": "de8ec9",
+				"sizeTo": 30,
+				"lifetime": 30,
+				"strokeFrom": 4
+			},
+			"splashDamage": 82,
+			"splashDamageRadius": 30,
+			"intervalBullet": {
+				"type": "lightningBulletType",
+				"lightningColor": "de8ec9",
+				"damage": 5,
+				"collidesAir": true,
+				"lightningLength": 0,
+				"lightningLengthRand": 8,
+				"buildingDamageMultiplier": 2
+			},
+			"bulletInterval": 2,
+			"intervalRandomSpread": 360,
+			"intervalBullets": 1,
+			"intervalAngle": 360,
+			"IntervalSpread": 360,
+			"fragVelocityMin": 0,
+			"fragVelocityMax": 0,
+			"fragLifeMin": 0.3
+		},
+		"parts": [
+			{
+				"type": "RegionPart",
+				"suffix": "-blade",
+				"progress": "recoil",
+				"heatProgress": "recoil",
+				"mirror": true,
+				"moveX": -1,
+				"moveRot": 10
+			},
+			{
+				"type": "ShapePart",
+				"progress": "recoil",
+				"color": "de8ec9",
+				"layer": 110,
+				"circle": true,
+				"hollow": false,
+				"stroke": 0,
+				"strokeTo": 3,
+				"radius": 3,
+				"y": 0
+			},
+		]
 	}
 ]
 	"researchCostMultiplier": 0.45

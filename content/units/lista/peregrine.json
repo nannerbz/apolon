@@ -22,8 +22,8 @@ weapons: [
 		rotateSpeed: 3
 		rotationLimit: 35
 		shoot: {
-			shots: 4
-			shotDelay: 3
+			shots: 5
+			shotDelay: 2
 		}
 		shootY: 0
 		top: true,
@@ -31,31 +31,34 @@ weapons: [
 		rotate: true
 		mirror: true
 		bullet: {
-			type: MissileBulletType
-			width: 8
-			height: 8
-			shootEffect: none
-			smokeEffect: none
-			collidesTeam: true
-			healPercent: 0.4
-			maxRange: 95
-			hitSound: plasmaboom
-			hitSize: 16
-			lifetime: 41.6
-			speed: 3
-			hitEffect: blastExplosion
-			keepVelocity: false
-			shrinkX: 0
-			shrinkY: 0
-			inaccuracy: 5
-			weaveMag: 5
-			weaveScale: 4
-			homingPower: 0.04
-			trailColor: 64c990
-			trailWidth: 3
-			trailLength: 8
-			splashDamage: 16
-			splashDamageRadius: 32
+			"type": "MissileBulletType",
+			"width": 8,
+			"height": 8,
+			"shootEffect": "none",
+			"smokeEffect": "none",
+			"collidesTeam": true,
+			"healPercent": 0.4,
+			"maxRange": 95,
+			"hitSound": "plasmaboom",
+			"hitSize": 16,
+			"lifetime": 41.6,
+			"speed": 4,
+			"hitEffect": "blastExplosion",
+			"keepVelocity": false,
+			"shrinkX": 0,
+			"shrinkY": 0,
+			"inaccuracy": 5,
+			"weaveMag": 5,
+			"weaveScale": 4,
+			"homingPower": 0.04,
+			"backColor": "64c990",
+			"frontColor": "377d6e",
+			"trailColor": "64c990",
+			"trailWidth": 3,
+			"trailLength": 8,
+			"splashDamage": 30,
+			"splashDamageRadius": 32,
+			"buildingDamageMultiplier": 0.5
 		}
 	}
 	{
@@ -67,7 +70,7 @@ weapons: [
 		mirror: false
 		recoil: 0.8
 		x: 0
-		y: -8
+		y: -4
 		bullet: {
 			type: BulletType
 			shootSound: lasershoot
@@ -84,8 +87,8 @@ weapons: [
 		"repairSpeed": 0.5,
 		"mirror": true,
 		"laserColor": "58a68c",
-		"x": -12,
-		"y": -9,
+		"x": -10,
+		"y": -7,
 		"bullet": {
 			"type": "BulletType",
 			"maxRange": 125
