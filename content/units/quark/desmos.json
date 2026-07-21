@@ -95,12 +95,12 @@ weapons: [
 			"keepVelocity": false,
 			"damage": 160,
 			"recoil": 0.8,
-			"speed": 8,
-			"drag": 0.04,
+			"speed": 12,
+			"drag": 0.05,
 			"width": 30,
 			"height": 50,
 			"sprite": "large-orb",
-			"lifetime": 45.8,
+			"lifetime": 75,
 			"backColor": "a61789",
 			"frontColor": "de8ec9",
 			"trailColor": "a61789",
@@ -143,9 +143,9 @@ weapons: [
 			"bulletInterval": 2,
 			"intervalBullets": 1,
 			"intervalAngle": 180,
-			"intervalDelay": 15
-			"IntervalSpread": 0,
-			"IntervalRandomSpread": 10,
+			"intervalDelay": 45
+			"intervalSpread": 0,
+			"intervalRandomSpread": 10,
 			"intervalBullet": {
 				"type": "BasicBulletType",
 				"keepVelocity": false,
