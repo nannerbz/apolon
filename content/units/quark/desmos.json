@@ -171,7 +171,6 @@ weapons: [
 				"IntervalSpread": 0,
 				"IntervalRandomSpread": 120,
 				"intervalBullet": {
-					{
 						"type": "BasicBulletType",
 						"shrinkY": 0,
 						"shrinkX": 0,
@@ -189,7 +188,6 @@ weapons: [
 						"pierce": true,
 						"pierceCap": 4,
 						"buildingDamageMultiplier": 2
-					}
 				}
 			}
 			}
