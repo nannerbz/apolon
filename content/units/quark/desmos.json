@@ -27,7 +27,7 @@ weapons: [
 		"mirror": false,
 		"bullet": {
 			"type": "BasicBulletType",
-			"damage": 125,
+			"damage": 55,
 			"accel": 0.05,
 			"inaccuracy": 7,
 			"speed": 4,
@@ -95,9 +95,9 @@ weapons: [
 		},
 		"shake": 9,
 		"shoot": {
-			"firstShotDelay": 90,
+			"firstShotDelay": 0,
 			"shots": 1,
-			"shotDelay": 0
+			"shotDelay": 90
 		},
 		"bullet": {
 			"type": "BasicBulletType",
@@ -147,11 +147,16 @@ weapons: [
 			"splashDamageRadius": 50,
 			"fragBullets": 7,
 			"fragBullet": {
+				"shoot": {
+					"type": "shootPattern",
+					"shotDelay": 20,
+					"shots": 3
+				},
 				"type": "BasicBulletType",
-				"damage": 125,
-				"speed": 0.1,
+				"damage": 25,
+				"speed": 0.01,
 				"accel": 0.5,
-				"lifetime": 20,
+				"lifetime": 30,
 				"backColor": "a61789",
 				"frontColor": "de8ec9",
 				"trailColor": "a61789",
@@ -161,9 +166,9 @@ weapons: [
 				"length": 15,
 				"shrinkY": 0,
 				"shrinkX": 0,
-				"homingPower": 0.3,
+				"homingPower": 0.05,
 				"homingDelay": 5,
-				"homingRange": 256,
+				"homingRange": 16,
 				"buildingDamageMultiplier": 2,
 				"trailInterval": 2,
 				"trailEffect": {
