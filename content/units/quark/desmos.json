@@ -5,7 +5,7 @@ accel: 0.06
 drag: 0.04
 health: 17560
 hitSize: 36
-armor: 12
+armor: 15
 itemCapacity: 0
 outlineColor: 222222
 engineOffset: 20
@@ -27,7 +27,8 @@ weapons: [
 		"mirror": false,
 		"bullet": {
 			"type": "BasicBulletType",
-			"damage": 55,
+			"damage": 65,
+			"armorMultiplier": 0.5,
 			"accel": 0.05,
 			"inaccuracy": 7,
 			"speed": 4,
@@ -162,31 +163,31 @@ weapons: [
 				"frontColor": "de8ec9",
 				"collidesAir": false,
 				"collidesGround": false,
-				"lifetime": 58,
+				"lifetime": 61,
 				"bulletInterval": 20,
-				"intervalBullets": 3,
+				"intervalBullets": 4,
 				"intervalAngle": 180,
 				"IntervalSpread": 0,
-				"IntervalRandomSpread": 75,
+				"IntervalRandomSpread": 125,
 				"intervalBullet": {
 					"type": "BasicBulletType",
-					"damage": 25,
-					"speed": 0.01,
+					"damage": 28,
+					"pierceArmor": true,
+					"speed": 1,
 					"accel": 0.5,
-					"lifetime": 24,
+					"lifetime": 10,
 					"backColor": "a61789",
 					"frontColor": "de8ec9",
 					"trailColor": "a61789",
 					"trailLength": 18,
-					"trailWidth": 3,
-					"width": 10,
-					"height": 15,
+					"trailWidth": 1,
+					"width": 7,
+					"height": 10,
 					"shrinkY": 0,
 					"shrinkX": 0,
 					"homingPower": 0.05,
 					"homingDelay": 5,
 					"homingRange": 16,
-					"buildingDamageMultiplier": 2,
 					"trailInterval": 2,
 					"trailEffect": {
 						"type": "ParticleEffect",
