@@ -145,7 +145,7 @@ weapons: [
 			"intervalAngle": 180,
 			"intervalDelay": 45
 			"intervalSpread": 0,
-			"intervalRandomSpread": 10,
+			"intervalRandomSpread": 60,
 			"intervalBullet": {
 				"type": "BasicBulletType",
 				"keepVelocity": false,
@@ -153,8 +153,8 @@ weapons: [
 				"shrinkX": 0,
 				"trailWidth": 3,
 				"trailLength": 8,
-				"speed": 1,
-				"lifetime": 78,
+				"speed": 2,
+				"lifetime": 39,
 				"damage": 32,
 				"width": 10,
 				"height": 10,
