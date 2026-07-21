@@ -170,8 +170,6 @@
 		},
 		"technetium-item": {
 			"type": "BasicBulletType",
-			"trailWidth": 1,
-			"trailLength": 4,
 			"speed": 2,
 			"status": "irradiated",
 			"statusDuration": 600,
@@ -197,13 +195,11 @@
 			"collidesGround": false,
 			"sprite": "large-orb",
 			"shrinkY": 0,
-			"fragBullets": 3,
-			"fragRandomSpread": 360,
+			"fragBullets": 6,
+			"fragSpread": 60,
 			"fragVelocityMin": 1,
 			"fragBullet": {
 				"type": "BasicBulletType",
-				"trailWidth": 1,
-				"trailLength": 4,
 				"width": 20,
 				"height": 20,
 				"backColor": "d45984",
@@ -223,8 +219,6 @@
 				"shrinkY": 0,
 				"intervalBullet": {
 					"type": "BasicBulletType",
-					"trailWidth": 1,
-					"trailLength": 2,
 					"width": 10,
 					"height": 10,
 					"backColor": "e69cd3",
@@ -249,7 +243,7 @@
 					"homingRange": 128
 				},
 
-				"bulletInterval": 8,
+				"bulletInterval": 30,
 				"intervalRandomSpread": 15,
 				"intervalBullets": 4,
 				"intervalAngle": 180,
