@@ -1,4 +1,17 @@
-name: Desmos flying: true speed: 1.2 accel: 0.06 drag: 0.04 health: 17560 hitSize: 36 armor: 15 itemCapacity: 0 outlineColor: 222222 engineOffset: 20 engineSize: 5 range: 185 weapons: [
+name: Desmos 
+flying: true 
+speed: 1.2
+accel: 0.06 
+drag: 0.04 
+health: 17560 
+hitSize: 36 
+armor: 15 
+itemCapacity: 0 
+outlineColor: 222222
+engineOffset: 20 
+engineSize: 5 
+range: 185 
+weapons: [
 	{
 		"name": "desmos-w2",
 		"shoot": {
@@ -202,5 +215,5 @@ name: Desmos flying: true speed: 1.2 accel: 0.06 drag: 0.04 health: 17560 hitSiz
 			}
 		]
 	}
-]
+] 
 research: tritium
