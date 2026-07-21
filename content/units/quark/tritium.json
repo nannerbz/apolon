@@ -9,7 +9,7 @@ hitSize: 30
 armor: 6
 itemCapacity: 0
 outlineColor: 222222
-range: 145
+range: 165
 weapons: [
 	{
 		"name": "tritium-w",

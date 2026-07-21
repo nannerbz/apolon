@@ -1,4 +1,3 @@
-atemplate: UnitType
 name: Desmos
 flying: true
 speed: 1.2
@@ -14,47 +13,156 @@ engineSize: 5
 range: 185
 weapons: [
 	{
-		name: desmos-w
-		reload: 120
-		x: 0
-		y: 3
-		shootSound: shootAfflict
-		mirror: false
-		rotate: false
-		bullet: {
-			type: BasicBulletType
-			damage: 90
-			speed: 6
-			width: 20
-			length: 35
-			sprite: large-orb
-			lifetime: 30.8
-			trailColor: ffffff
-			trailLength: 12
-			trailWidth: 5
-			pierce: true
-			pierceCap: 10
-			pierceBuilding: true	
-			shootEffect: shootSmall
-			smokeEffect: shootSmallSmoke
-
-			fragOnHit: false
-			fragRandomSpread: 75
-			fragSpread: 0
-			despawnSound: dullExplosion
-			fragBullets: 6
-			fragBullet: {
-				type: BasicBulletType
-				damage: 145
-				speed: -3
-				lifetime: 90
-				sprite: large-orb
-				width: 15
-				length: 25
-				shrinkY: 0
-				shrinkX: 0
+		"name": "desmos-w2",
+		"shoot": {
+			"type": "shootPattern",
+			"shotDelay": 4,
+			"shots": 7
+		},
+		"reload": 180,
+		"x": 0,
+		"y": 0,
+		"shootSound": "spadoom",
+		"rotate": false,
+		"mirror": false,
+		"bullet": {
+			"type": "BasicBulletType",
+			"damage": 125,
+			"speed": 4,
+			"lifetime": 45,
+			"backColor": "a61789",
+			"frontColor": "de8ec9",
+			"trailColor": "a61789",
+			"trailLength": 18,
+			"trailWidth": 3,
+			"width": 6,
+			"length": 12,
+			"shrinkY": 0,
+			"shrinkX": 0,
+			"homingPower": 0.3,
+			"homingDelay": 15,
+			"homingRange": 256
+		},
+		"parts": [
+			{
+				"type": "RegionPart",
+				"suffix": "-thing",
+				"progress": "warmup",
+				"mirror": true,
+				"moveX": 1,
+				"moveY": -2,
+				"moveRot": 20
 			}
-		}
+		]
+	},
+	{
+		"name": "desmos-w",
+		"reload": 180,
+		"x": 0,
+		"y": 0,
+		"shootStatus": "slown",
+		"shootStatusDuration": 180,
+		"shootY": 2,
+		"rotate": false,
+		"mirror": false,
+		"chargeTime": 180,
+		"shootSound": "shootAfflict",
+		"chargeSound": "boomrngb",
+		"chargeEffect": "chargeBegin",
+		"shake": 7,
+		"shoot": {
+			"firstShotDelay": 180,
+			"shots": 1,
+			"shotDelay": 0
+		},
+		"bullet": {
+			"type": "BasicBulletType",
+			"damage": 160,
+			"recoil": 0.8,
+			"buildingDamageMultiplier": 2,
+			"speed": 8,
+			"width": 20,
+			"height": 35,
+			"sprite": "large-orb",
+			"lifetime": 30.8,
+			"backColor": "a61789",
+			"frontColor": "de8ec9",
+			"trailColor": "a61789",
+			"trailLength": 12,
+			"trailWidth": 5,
+			"pierce": true,
+			"pierceCap": 999,
+			"pierceBuilding": true,
+			"shootEffect": "shootSmall",
+			"smokeEffect": "shootSmallSmoke",
+			"fragOnHit": false,
+			"fragAngle": 180,
+			"fragRandomSpread": 75,
+			"fragSpread": 0,
+			"despawnSound": "dullExplosion",
+			"despawnEffect": {
+				"type": "WaveEffect",
+				"colorFrom": "a61789",
+				"colorTo": "de8ec9",
+				"sizeTo": 30,
+				"lifetime": 30,
+				"strokeFrom": 4
+			},
+			"splashDamage": 122,
+			"splashDamageRadius": 50,
+			"fragBullets": 7,
+			"fragBullet": {
+				"type": "BasicBulletType",
+				"damage": 125,
+				"speed": 0,
+				"drag": -0.02,
+				"lifetime": 140,
+				"backColor": "a61789",
+				"frontColor": "de8ec9",
+				"trailColor": "a61789",
+				"trailLength": 18,
+				"trailWidth": 3,
+				"width": 4,
+				"length": 8,
+				"shrinkY": 0,
+				"shrinkX": 0,
+				"homingPower": 0.3,
+				"homingDelay": 40,
+				"homingRange": 256
+			}
+		},
+		"parts": [
+			{
+				"type": "RegionPart",
+				"suffix": "-blade",
+				"progress": "recoil",
+				"mirror": true,
+				"moveX": 6,
+				"moveY": -3,
+				"moveRot": 10
+			},
+			{
+				"type": "ShapePart",
+				"progress": "recoil",
+				"color": "de8ec9",
+				"layer": 110,
+				"circle": true,
+				"hollow": false,
+				"stroke": 0,
+				"strokeTo": 8,
+				"radius": 8,
+				"y": 0
+			}
+		]
 	}
 ]
-	research: tritium
+	"researchCostMultiplier": 0.45
+	  "research": {
+		parent: pion
+		objectives: [
+			{
+				type: "OnSector"
+				preset: facade
+			}
+		]
+	}
