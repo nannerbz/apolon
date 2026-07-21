@@ -454,7 +454,7 @@
                 "type": "WaveEffect",
                 "colorFrom": "e69cd3",
                 "colorTo": "c71245",
-                "sizeTo": 18,
+                "sizeTo": 36,
                 "lifetime": 30,
                 "strokeFrom": 4
             },
@@ -489,7 +489,7 @@
                     "type": "WaveEffect",
                     "colorFrom": "e69cd3",
                     "colorTo": "c71245",
-                    "sizeTo": 18,
+                    "sizeTo": 36,
                     "lifetime": 25,
                     "strokeFrom": 3
                 },
@@ -524,7 +524,7 @@
                         "type": "WaveEffect",
                         "colorFrom": "e69cd3",
                         "colorTo": "c71245",
-                        "sizeTo": 18,
+                        "sizeTo": 30,
                         "lifetime": 20,
                         "strokeFrom": 2
                     },
@@ -574,23 +574,23 @@
                             "type": "WaveEffect",
                             "colorFrom": "e69cd3",
                             "colorTo": "c71245",
-                            "sizeTo": 18,
+                            "sizeTo": 26,
                             "lifetime": 15,
                             "strokeFrom": 2
                         }
                     }
                 }
-            }
-        },
+            },
             "shootEffect": {
                 "type": "WaveEffect",
-                "colorFrom": "8c887b",
-                "colorTo": "dbd9d4",
-                "sizeTo": 6,
-                "lifetime": 30,
-                "strokeFrom": 3
+                "colorFrom": "e69cd3",
+                "colorTo": "c71245",
+                "sizeTo": 36,
+                "lifetime": 45,
+                "strokeFrom": 6
             }
         }
+
     },
     "drawer": {
         "type": "DrawTurret",
