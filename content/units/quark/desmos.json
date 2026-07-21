@@ -41,9 +41,9 @@ weapons: [
 			"height": 18,
 			"shrinkY": 0,
 			"shrinkX": 0,
-			"homingPower": 0.05,
+			"homingPower": 0.02,
 			"homingDelay": 15,
-			"homingRange": 30,
+			"homingRange": 20,
 			"trailInterval": 2,
 			"trailEffect": {
 				"type": "ParticleEffect",
@@ -165,7 +165,7 @@ weapons: [
 				"lifetime": 61,
 				"bulletInterval": 20,
 				"intervalBullets": 3,
-				"intervalAngle": 180,
+				"intervalAngle": 0,
 				"IntervalSpread": 0,
 				"IntervalRandomSpread": 75,
 				"intervalBullet": {
