@@ -1,17 +1,4 @@
-name: Desmos
-flying: true
-speed: 1.2
-accel: 0.06
-drag: 0.04
-health: 17560
-hitSize: 36
-armor: 15
-itemCapacity: 0
-outlineColor: 222222
-engineOffset: 20
-engineSize: 5
-range: 185
-weapons: [
+name: Desmos flying: true speed: 1.2 accel: 0.06 drag: 0.04 health: 17560 hitSize: 36 armor: 15 itemCapacity: 0 outlineColor: 222222 engineOffset: 20 engineSize: 5 range: 185 weapons: [
 	{
 		"name": "desmos-w2",
 		"shoot": {
@@ -171,27 +158,26 @@ weapons: [
 				"IntervalSpread": 0,
 				"IntervalRandomSpread": 120,
 				"intervalBullet": {
-						"type": "BasicBulletType",
-						"shrinkY": 0,
-						"shrinkX": 0,
-						"trailWidth": 3,
-						"trailLength": 8,
-						"speed": 1,
-						"lifetime": 78,
-						"damage": 32,
-						"width": 10,
-						"height": 10,
-						"sprite": "large-orb",
-						"backColor": "a61789",
-						"frontColor": "de8ec9",
-						"trailColor": "a61789",
-						"pierce": true,
-						"pierceCap": 4,
-						"buildingDamageMultiplier": 2
+					"type": "BasicBulletType",
+					"shrinkY": 0,
+					"shrinkX": 0,
+					"trailWidth": 3,
+					"trailLength": 8,
+					"speed": 1,
+					"lifetime": 78,
+					"damage": 32,
+					"width": 10,
+					"height": 10,
+					"sprite": "large-orb",
+					"backColor": "a61789",
+					"frontColor": "de8ec9",
+					"trailColor": "a61789",
+					"pierce": true,
+					"pierceCap": 4,
+					"buildingDamageMultiplier": 2
 				}
 			}
-			}
-		},
+		}
 		"parts": [
 			{
 				"type": "RegionPart",
@@ -215,6 +201,6 @@ weapons: [
 				"y": 0
 			}
 		]
-
-
-		research: tritium
+	}
+]
+research: tritium
