@@ -520,14 +520,14 @@
                     "homingDelay": 4,
                     "pierce": true,
                     "pierceCap": 1,
-            "despawnEffect": {
-                "type": "WaveEffect",
-                "colorFrom": "e69cd3",
-                "colorTo": "c71245",
-                "sizeTo": 20,
-                "lifetime": 30,
-                "strokeFrom": 4
-            },
+                    "despawnEffect": {
+                        "type": "WaveEffect",
+                        "colorFrom": "e69cd3",
+                        "colorTo": "c71245",
+                        "sizeTo": 20,
+                        "lifetime": 30,
+                        "strokeFrom": 4
+                    },
                     "fragOnHit": true,
                     "fragVelocityMin": 1,
                     "fragVelocityMax": 1,
@@ -597,17 +597,18 @@
                             }
                         }
                     }
-            },
-            "shootEffect": {
-                "type": "WaveEffect",
-                "colorFrom": "e69cd3",
-                "colorTo": "c71245",
-                "sizeTo": 26,
-                "lifetime": 30,
-                "strokeFrom": 4
+                },
+                "shootEffect": {
+                    "type": "WaveEffect",
+                    "colorFrom": "e69cd3",
+                    "colorTo": "c71245",
+                    "sizeTo": 26,
+                    "lifetime": 30,
+                    "strokeFrom": 4
+                }
             }
         }
-    },
+    }
     "drawer": {
         "type": "DrawTurret",
         "basePrefix": "base",
