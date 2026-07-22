@@ -32,7 +32,7 @@ abilities: [
 ]
 weapons: [
 	{
-		"name": "apeiron-w2",
+		"name": "apeiron-effect",
 		"rotate": true,
 		"top": true,
 		"rotateSpeed": 6
@@ -89,7 +89,7 @@ weapons: [
 		]
 	},
 	{
-		"name": "apeiron-w2",
+		"name": "apeiron-w",
 		"rotate": true,
 		"top": true,
 		"rotateSpeed": 6,
@@ -142,18 +142,23 @@ weapons: [
 			"splashDamage": 14,
 			"splashDamageRadius": 20,
 			"trailInterval": 0.01,
+			"trailEffect": null,
 			"trailEffect": {
-				"type": "ParticleEffect",
-				"length": 14,
-				"lifetime": 10,
-				"region": "circle-bullet",
-				"particles": 14,
-				"colorFrom": "e2ca4b",
-				"colorTo": "e2ca4b",
-				"lightColor": "e2ca4b",
-				"lightOpacity": "e2ca4b",
-				"sizeFrom": 5,
-				"sizeTo": 0
+				"type": "ExplosionEffect",
+				"waveColor": "9c3247",
+				"smokeColor": "3b063a",
+				"sparkColor": "ffa324",
+				"waveLife": 8,
+				"waveStroke": 3,
+				"waveRad": 8,
+				"sparkStroke": 1,
+				"sparkRad": 5,
+				"sparkLen": 3,
+				"smokeSize": 0,
+				"smokeSizeBase": 0,
+				"smokeRad": 0,
+				"smokes": 0,
+				"sparks": 2
 			}
 		}
 	}
