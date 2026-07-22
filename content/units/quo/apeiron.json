@@ -99,12 +99,12 @@ weapons: [
 					"layer": 110,
 					"y": 0,
 					"shapes": 6,
-					"triLength": 8,
-					"triLengthTo": 24,
-					"haloRadius": 32,
+					"triLength": 6,
+					"triLengthTo": 12,
+					"haloRadius": 24,
 					"tri": true,
 					"radius": 3,
-					"haloRotateSpeed": 1.4
+					"haloRotateSpeed": 1.2
 				}
 			]
 	},
@@ -170,10 +170,10 @@ weapons: [
 			"trailLength": 12,
 			"trailColor": "e2ca4b",
 			"collidesAir": true,
-			"damage": 650,
+			"damage": 250,
 			"hitSize": 16,
 			"pierceArmor": true,
-			"splashDamage": 580,
+			"splashDamage": 180,
 			"splashDamageRadius": 22,
 			"status": "burning",
 			"statusDuration": 400,
