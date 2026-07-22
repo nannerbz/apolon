@@ -30,16 +30,18 @@ abilities: [
 ]
 weapons: [
 	{
-		"name": "apeiron-effect",
+		"name": "apeiron-w2",
 		"reload": 840,
 		"x": 0,
 		"y": 0,
+		"shootY": 0
 		"shootStatus": "slown",
 		"shootStatusDuration": 240,
 		"rotate": false,
 		"mirror": false,
 		"chargeTime": 240,
 		"shootSound": "deathlaserwoo",
+		"shootSoundVolume": 0.6,
 		"shoot": {
 			"firstShotDelay": 240,
 			"shots": 1,
@@ -62,37 +64,28 @@ weapons: [
 				"strokeFrom": 0,
 				"strokeTo": 16
 			},
-			"speed": 0
-			"collidesAir": false
-			"collidesGround": false
+			"speed": 0,
+			"collidesAir": false,
+			"collidesGround": false,
 			"lifetime": 1
 		},
 		"parts": [
-			{
-				"type": "RegionPart",
-				"suffix": "-blade",
-				"progress": "recoil",
-				"mirror": true,
-				"moveX": 6,
-				"moveY": -3,
-				"moveRot": 10
-			},
 			{
 				"type": "ShapePart",
 				"progress": "recoil",
 				"color": "de8ec9",
 				"layer": 110,
 				"circle": true,
-				"hollow": false,
+				"hollow": true,
 				"stroke": 0,
 				"strokeTo": 8,
-				"radius": 8,
+				"radius": 24,
 				"y": 0
 			}
 		]
 	},
 	{
-		"name": "apeiron-w1",
+		"name": "apeiron-w2",
 		"reload": 840,
 		"range": 240
 		"x": 0,
@@ -107,7 +100,6 @@ weapons: [
 			"shotDelay": 2
 		},
 		"chargeSound": "a",
-		"shake": 30,
 		"bullet": {
 			"Type": "ArtilleryBulletType",
 			"hitEffect": {
@@ -145,7 +137,7 @@ weapons: [
 				"type": "WaveEffect",
 				"colorFrom": "544736",
 				"colorTo": "e2ca4b",
-				"sizeTo": 0,
+				"sizeTo": 10,
 				"sizeFrom": 10,
 				"lifetime": 2
 			}
