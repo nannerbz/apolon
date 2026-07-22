@@ -12,13 +12,14 @@ outlineColor: 222222
 engineSize: 0
 engineOffset: 0
 range: 300
+faceTarget: false
 research: sophia
 abilities: [
 	{
 		type: SuppressionFieldAbility
 		x: 0
 		Y: 0
-		orbRadius: 6
+		orbRadius: 12
 		particleSize: 4
 		particles: 8
 		display: true
@@ -31,10 +32,11 @@ abilities: [
 weapons: [
 	{
 		"name": "apeiron-w2",
+		"rotate": true,
 		"reload": 840,
 		"x": 0,
 		"y": 0,
-		"shootY": 0
+		"shootY": 0,
 		"shootStatus": "slown",
 		"shootStatusDuration": 240,
 		"rotate": false,
@@ -86,8 +88,9 @@ weapons: [
 	},
 	{
 		"name": "apeiron-w2",
+		"rotate": true,
 		"reload": 840,
-		"range": 240
+		"range": 240,
 		"x": 0,
 		"y": 0,
 		"rotate": false,
@@ -132,14 +135,16 @@ weapons: [
 			"damage": 25,
 			"splashDamage": 14,
 			"splashDamageRadius": 20,
-			"trailInterval": 0.1,
+			"trailInterval": 0.02,
 			"trailEffect": {
 				"type": "WaveEffect",
 				"colorFrom": "544736",
 				"colorTo": "e2ca4b",
-				"sizeTo": 10,
-				"sizeFrom": 10,
-				"lifetime": 2
+				"sizeTo": 4,
+				"sizeFrom": 4,
+				"strokeFrom": 4,
+				"strokeTo": 0,
+				"lifetime": 10
 			}
 		}
 	}
