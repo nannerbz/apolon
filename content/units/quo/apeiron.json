@@ -37,7 +37,7 @@ weapons: [
 		"rotate": true,
 		"top": true,
 		"rotateSpeed": 2.5
-			"reload": 840,
+		"reload": 840,
 		"range": 260
 		"x": 0,
 		"y": 0,
@@ -100,11 +100,11 @@ weapons: [
 					"y": 0,
 					"shapes": 6,
 					"triLength": 6,
-					"triLengthTo": 12,
-					"haloRadius": 24,
+					"triLengthTo": 10,
+					"haloRadius": 18,
 					"tri": true,
 					"radius": 3,
-					"haloRotateSpeed": 1.2
+					"haloRotateSpeed": 1.5
 				}
 			]
 	},
@@ -170,10 +170,10 @@ weapons: [
 			"trailLength": 12,
 			"trailColor": "e2ca4b",
 			"collidesAir": true,
-			"damage": 250,
+			"damage": 120,
 			"hitSize": 16,
 			"pierceArmor": true,
-			"splashDamage": 180,
+			"splashDamage": 90,
 			"splashDamageRadius": 22,
 			"status": "burning",
 			"statusDuration": 400,
@@ -252,7 +252,7 @@ weapons: [
 	},
 	{
 		"name": "apeiron-w2",
-		"reload": 20,
+		"reload": 30,
 		"range": 300,
 		"x": 0,
 		"y": 0,
@@ -283,7 +283,7 @@ weapons: [
 			"statusDuration": 90,
 			"speed": 10,
 			"lifetime": 30,
-			"knockback": -40,
+			"knockback": -30,
 			"fragOnHit": true,
 			"fragOnDespawn": false,
 			"fragAngle": 180,
@@ -326,7 +326,7 @@ weapons: [
 	}
 	{
 		"name": "apeiron-w2",
-		"reload": 20,
+		"reload": 30,
 		"range": 300,
 		"x": 0,
 		"y": 0,
@@ -355,7 +355,7 @@ weapons: [
 			"statusDuration": 90,
 			"speed": 10,
 			"lifetime": 30,
-			"knockback": -40,
+			"knockback": -30,
 			"fragOnHit": true,
 			"fragOnDespawn": false,
 			"fragAngle": 180,
@@ -398,7 +398,7 @@ weapons: [
 	}
 	{
 		"name": "apeiron-w2",
-		"reload": 20,
+		"reload": 30,
 		"x": 0,
 		"y": 0,
 		"range": 300,
@@ -428,7 +428,7 @@ weapons: [
 			"statusDuration": 90,
 			"speed": 10,
 			"lifetime": 30,
-			"knockback": -40,
+			"knockback": -30,
 			"fragOnHit": true,
 			"fragOnDespawn": false,
 			"fragAngle": 180,
