@@ -89,7 +89,7 @@ weapons: [
 		]
 	},
 	{
-		"name": "apeiron-w2-blade",
+		"name": "apeiron-w2",
 		"rotate": true,
 		"top": true,
 		"rotateSpeed": 6,
@@ -144,14 +144,14 @@ weapons: [
 			"trailInterval": 0.01,
 			"trailEffect": {
 				"type": "ParticleEffect",
-				"length": 18,
+				"length": 14,
 				"lifetime": 10,
 				"region": "circle-bullet",
 				"particles": 14,
-				"colorFrom": "544736",
-				"colorTo": "544736",
-				"lightColor": "544736",
-				"lightOpacity": "544736",
+				"colorFrom": "e2ca4b",
+				"colorTo": "e2ca4b",
+				"lightColor": "e2ca4b",
+				"lightOpacity": "e2ca4b",
 				"sizeFrom": 5,
 				"sizeTo": 0
 			}
