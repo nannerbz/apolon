@@ -1,6 +1,7 @@
 atemplate: UnitType
 name: Apeiron
 flying: true
+rotateSpeed: 0.8
 speed: 0.6
 accel: 0.05
 drag: 0.04
@@ -93,7 +94,7 @@ weapons: [
 				},
 				{
 					"type": "HaloPart",
-					"progress": "life",
+					"progress": "time",
 					"color": "e2ca4b",
 					"layer": 110,
 					"y": 0,
@@ -169,10 +170,10 @@ weapons: [
 			"trailLength": 12,
 			"trailColor": "e2ca4b",
 			"collidesAir": true,
-			"damage": 250,
+			"damage": 650,
 			"hitSize": 16,
 			"pierceArmor": true,
-			"splashDamage": 140,
+			"splashDamage": 580,
 			"splashDamageRadius": 22,
 			"status": "burning",
 			"statusDuration": 400,
