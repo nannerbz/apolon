@@ -36,7 +36,8 @@ weapons: [
 		"rotate": true,
 		"top": true,
 		"rotateSpeed": 2.5
-		"reload": 840,
+			"reload": 840,
+		"range": 260
 		"x": 0,
 		"y": 0,
 		"shootY": 0,
@@ -73,20 +74,35 @@ weapons: [
 			"collidesGround": false,
 			"lifetime": 1
 		},
-		"parts": [
-			{
-				"type": "ShapePart",
-				"progress": "recoil",
-				"color": "e2ca4b",
-				"layer": 110,
-				"circle": true,
-				"hollow": true,
-				"stroke": 0,
-				"strokeTo": 6,
-				"radius": 8,
-				"y": 0
-			}
-		]
+			"parts": [
+				{
+					"type": "ShapePart",
+					"progress": "recoil",
+					"color": "e2ca4b",
+					"layer": 110,
+					"circle": true,
+					"hollow": true,
+					"stroke": 0,
+					"strokeTo": 6,
+					"radius": 8,
+					"y": 0
+				},
+				{
+					"type": "HaloPart",
+					"progress": "constant",
+					"color": "e2ca4b",
+					"layer": 110,
+					"y": 6,
+					"haloRotation": 90,
+					"shapes": 6,
+					"triLength": 0,
+					"triLengthTo": 8,
+					"haloRadius": 32,
+					"tri": true,
+					"radius": 3,
+					"haloRotateSpeed": 1.4
+				}
+			]
 	},
 	{
 		"name": "apeiron-w",
@@ -94,7 +110,7 @@ weapons: [
 		"top": true,
 		"rotateSpeed": 2.5,
 		"reload": 840,
-		"range": 240,
+		"range": 260,
 		"shake": 6
 		"x": 0,
 		"y": 0,
@@ -151,6 +167,7 @@ weapons: [
 			"trailColor": "e2ca4b",
 			"collidesAir": true,
 			"damage": 25,
+			"pierceArmor": true
 			"splashDamage": 14,
 			"splashDamageRadius": 20,
 			"status": "burning",
@@ -235,8 +252,11 @@ weapons: [
 		"x": 0,
 		"y": 0,
 		"shootSound": "Pulse",
+		"shootSound": "Pulse",
 		"shootEffect": "none",
 		"smokeEffect": "none",
+		"despawnEffect": "none",
+		"hitEffect": "none",
 		"shootY": 26,
 		"rotationLimit": 50,
 		"baseRotation": 120,
@@ -308,6 +328,8 @@ weapons: [
 		"shootSound": "Pulse",
 		"shootEffect": "none",
 		"smokeEffect": "none",
+		"despawnEffect": "none",
+		"hitEffect": "none",
 		"shootY": 26,
 		"rotationLimit": 50,
 		"mirror": false,
@@ -374,13 +396,15 @@ weapons: [
 		"reload": 20,
 		"x": 0,
 		"y": 0,
-		"range": 300
+		"range": 300,
 		"shootSound": "Pulse",
 		"shootEffect": "none",
 		"smokeEffect": "none",
+		"despawnEffect": "none",
+		"hitEffect": "none",
 		"shootY": 26,
 		"rotationLimit": 50,
-		"baseRotation": 120,
+		"baseRotation": -120,
 		"mirror": false,
 		"rotate": true,
 		"top": true,
