@@ -202,6 +202,7 @@ weapons: [
 							"lifetime": 20,
 							"strokeFrom": 2
 						}
+					}
 				],
 				"type": "ContinuousLaserBulletType",
 				"continuous": true,
