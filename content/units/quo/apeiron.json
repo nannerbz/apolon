@@ -235,7 +235,6 @@ weapons: [
 		"y": 0,
 		"shootSound": "Pulse",
 		"shootY": 0,
-		"randX": 0,
 		"mirror": false,
 		"rotate": true,
 		"rotateSpeed": 4,
@@ -276,15 +275,17 @@ weapons: [
 				}
 			}
 		},
-		"parts": {
-			"type": "RegionPart",
-			"suffix": "-blade",
-			"progress": "recoil",
-			"heatProgress": "recoil",
-			"mirror": true,
-			"moveX": 0,
-			"moveY": 0,
-			"moveRot": -10
-		}
+		"parts": [
+			{
+				"type": "RegionPart",
+				"suffix": "-blade",
+				"progress": "recoil",
+				"heatProgress": "recoil",
+				"mirror": true,
+				"moveX": 0,
+				"moveY": 0,
+				"moveRot": -10
+			}
+		]
 	}
 ]
