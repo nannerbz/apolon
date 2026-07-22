@@ -3,9 +3,9 @@ flying: true
 speed: 1.2
 accel: 0.06 
 drag: 0.04 
-health: 17560 
+health: 16400 
 hitSize: 36 
-armor: 15 
+armor: 16 
 itemCapacity: 0 
 outlineColor: 222222
 engineOffset: 20 

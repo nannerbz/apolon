@@ -21,6 +21,7 @@ abilities: [
 		"range": 350,
 		"maxTargets": 14,
 		"status": "burning",
+		"displayHeal": false,
 		"statusDuration": 120,
 		"color": "cf926a",
 		"targetAir": false,

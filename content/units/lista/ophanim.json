@@ -5,9 +5,9 @@ flying: true
 speed: 0.45
 accel: 0.05
 drag: 0.04
-health: 13400
+health: 19400
 hitSize: 50
-armor: 10
+armor: 8
 itemCapacity: 0
 outlineColor: 222222
 range: 240

@@ -1,0 +1,154 @@
+atemplate: UnitType
+name: Apeiron
+flying: true
+speed: 0.6
+accel: 0.05
+drag: 0.04
+health: 38550
+hitSize: 50
+armor:16
+itemCapacity: 0
+outlineColor: 222222
+engineSize: 0
+engineOffset: 0
+range: 300
+research: sophia
+abilities: [
+	{
+		type: SuppressionFieldAbility
+		x: 0
+		Y: 0
+		orbRadius: 6
+		particleSize: 4
+		particles: 8
+		display: true
+		active: true
+		layerOffset: -0.001
+		color: e2ca4b
+		particleColor: e2ca4b
+	}
+]
+weapons: [
+	{
+		"name": "apeiron-effect",
+		"reload": 840,
+		"x": 0,
+		"y": 0,
+		"shootStatus": "slown",
+		"shootStatusDuration": 240,
+		"rotate": false,
+		"mirror": false,
+		"chargeTime": 240,
+		"shootSound": "deathlaserwoo",
+		"shoot": {
+			"firstShotDelay": 240,
+			"shots": 1,
+			"shotDelay": 0
+		},
+		"chargeSound": "deathlasercharge",
+		"shake": 30,
+		"bullet": {
+			"type": "BulletType",
+			"chargeEffect": {
+				"type": "WaveEffect",
+				"rotWithParent": true,
+				"followParent": true,
+				"colorFrom": "544736",
+				"colorTo": "e2ca4b",
+				"startDelay": 0,
+				"sizeTo": 0,
+				"sizeFrom": 32,
+				"lifetime": 240,
+				"strokeFrom": 0,
+				"strokeTo": 16
+			},
+			"speed": 0
+			"collidesAir": false
+			"collidesGround": false
+			"lifetime": 1
+		},
+		"parts": [
+			{
+				"type": "RegionPart",
+				"suffix": "-blade",
+				"progress": "recoil",
+				"mirror": true,
+				"moveX": 6,
+				"moveY": -3,
+				"moveRot": 10
+			},
+			{
+				"type": "ShapePart",
+				"progress": "recoil",
+				"color": "de8ec9",
+				"layer": 110,
+				"circle": true,
+				"hollow": false,
+				"stroke": 0,
+				"strokeTo": 8,
+				"radius": 8,
+				"y": 0
+			}
+		]
+	},
+	{
+		"name": "apeiron-w1",
+		"reload": 840,
+		"range": 240
+		"x": 0,
+		"y": 0,
+		"rotate": false,
+		"mirror": false,
+		"chargeTime": 240,
+		"shootSound": "a",
+		"shoot": {
+			"firstShotDelay": 240,
+			"shots": 120,
+			"shotDelay": 2
+		},
+		"chargeSound": "a",
+		"shake": 30,
+		"bullet": {
+			"Type": "ArtilleryBulletType",
+			"hitEffect": {
+				"type": "WaveEffect",
+				"colorFrom": "544736",
+				"colorTo": "e2ca4b",
+				"sizeTo": 16,
+				"sizeFrom": 0,
+				"lifetime": 2,
+				"strokeFrom": 4,
+				"strokeTo": 0
+			},
+			"despawnEffect": {
+				"type": "WaveEffect",
+				"colorFrom": "544736",
+				"colorTo": "e2ca4b",
+				"sizeTo": 16,
+				"sizeFrom": 0,
+				"lifetime": 2,
+				"strokeFrom": 4,
+				"strokeTo": 0
+			},
+			"width": 0,
+			"height": 0,
+			"lifetime": 8,
+			"speed": 30,
+			"trailWidth": 0,
+			"trailLength": 0,
+			"collidesAir": true,
+			"damage": 25,
+			"splashDamage": 14,
+			"splashDamageRadius": 20,
+			"trailInterval": 0.1,
+			"trailEffect": {
+				"type": "WaveEffect",
+				"colorFrom": "544736",
+				"colorTo": "e2ca4b",
+				"sizeTo": 0,
+				"sizeFrom": 10,
+				"lifetime": 2
+			}
+		}
+	}
+]
