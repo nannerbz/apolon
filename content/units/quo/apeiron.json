@@ -35,7 +35,7 @@ weapons: [
 		"name": "apeiron-effect",
 		"rotate": true,
 		"top": true,
-		"rotateSpeed": 6
+		"rotateSpeed": 2.5
 		"reload": 840,
 		"x": 0,
 		"y": 0,
@@ -92,7 +92,7 @@ weapons: [
 		"name": "apeiron-w",
 		"rotate": true,
 		"top": true,
-		"rotateSpeed": 6,
+		"rotateSpeed": 2.5,
 		"reload": 840,
 		"range": 240,
 		"shake": 6
@@ -111,26 +111,36 @@ weapons: [
 			"Type": "ArtilleryBulletType",
 			"keepVelocity": false,
 			"hitEffect": {
-				"type": "WaveEffect",
-				"layer": 109,
-				"colorFrom": "544736",
-				"colorTo": "e2ca4b",
-				"sizeTo": 16,
-				"sizeFrom": 0,
-				"lifetime": 2,
-				"strokeFrom": 4,
-				"strokeTo": 0
+				"type": "ExplosionEffect",
+				"waveColor": "544736",
+				"sparkColor": "cf926a",
+				"waveLife": 18,
+				"waveStroke": 6,
+				"waveRad": 18,
+				"sparkStroke": 1,
+				"sparkRad": 24,
+				"sparkLen": 8,
+				"smokeSize": 0,
+				"smokeSizeBase": 0,
+				"smokeRad": 0,
+				"smokes": 0,
+				"sparks": 8
 			},
 			"despawnEffect": {
-				"type": "WaveEffect",
-				"layer": 109,
-				"colorFrom": "544736",
-				"colorTo": "e2ca4b",
-				"sizeTo": 16,
-				"sizeFrom": 0,
-				"lifetime": 2,
-				"strokeFrom": 4,
-				"strokeTo": 0
+				"type": "ExplosionEffect",
+				"waveColor": "544736",
+				"sparkColor": "cf926a",
+				"waveLife": 18,
+				"waveStroke": 6,
+				"waveRad": 18,
+				"sparkStroke": 1,
+				"sparkRad": 24,
+				"sparkLen": 8,
+				"smokeSize": 0,
+				"smokeSizeBase": 0,
+				"smokeRad": 0,
+				"smokes": 0,
+				"sparks": 8
 			},
 			"width": 0,
 			"height": 0,
@@ -143,6 +153,8 @@ weapons: [
 			"damage": 25,
 			"splashDamage": 14,
 			"splashDamageRadius": 20,
+			"status": "burning",
+			"statusDuration": 400,
 			"fragBullet": {
 				"type": "FireBulletType",
 				"radius": 8,
@@ -174,16 +186,35 @@ weapons: [
 			"bulletInterval": 0.01,
 			"intervalDelay": 0,
 			"intervalBullet": {
+				"spawnBullets": [
+					{
+						"type": "LightningBulletType",
+						"damage": 4,
+						"lightningColor": "cf926a",
+						"lightningLength": 8,
+						"lightningCone": 2,
+						"collidesAir": true,
+						"hitEffect": {
+							"type": "WaveEffect",
+							"colorFrom": "cf926a",
+							"colorTo": "e2ca4b",
+							"sizeTo": 8,
+							"lifetime": 20,
+							"strokeFrom": 2
+						}
+				],
 				"type": "ContinuousLaserBulletType",
 				"continuous": true,
 				"keepVelocity": false,
 				"speed": 0,
 				"length": 25,
-				"width": 15,
+				"width": 12,
 				"despawnEffect": "none",
 				"smokeEffect": "none",
 				"hitEffect": "none",
-				"damage": 0,
+				"damage": 2,
+				"status": "burning",
+				"statusDuration": 400,
 				"lifetime": 2,
 				"fadeTime": 1,
 				"incendSpread": 0,
@@ -196,4 +227,64 @@ weapons: [
 			}
 		}
 	}
+	{
+		"name": "apeiron-w2",
+		"reload": 20,
+		"x": 0,
+		"y": 0,
+		"shootSound": "Pulse",
+		"shootY": 0,
+		"randX": 0,
+		"mirror": false,
+		"rotate": true,
+		"rotateSpeed": 4,
+		"controllable": false,
+		"aiControllable": true,
+		"bullet": {
+			"type": "BulletType",
+			"damage": 5,
+			"status": vacuumed
+			"statusDuration": 90
+			"speed": 10,
+			"lifetime": 30,
+			"knockback": -4,
+			"fragOnHit": true,
+			"fragOnDespawn": false,
+			"fragAngle": 180,
+			"fragRandomSpread": 0,
+			"fragSpread": 0,
+			"fragBullets": 1,
+			"fragVelocityMin": 1,
+			"fragBullet": {
+				"type": "BulletType",
+				"collidesAir": false,
+				"collidesGround": false,
+				"speed": 2,
+				"damage": 0,
+				"lifetime": 10,
+				"trailInterval": 3,
+				"trailEffect": {
+					"type": "WaveEffect",
+					"colorFrom": "544736",
+					"colorTo": "cf926a",
+					"sizeTo": 0,
+					"sizeFrom": 10,
+					"lifetime": 20,
+					"strokeFrom": 4,
+					"strokeTo": 0
+				}
+			}
+		},
+		"parts": [
+			{
+				"type": "RegionPart",
+				"suffix": "-blade",
+				"progress": "recoil",
+				"heatProgress": "recoil",
+				"mirror": true,
+				"moveX": 0,
+				"moveY": 0,
+				"moveRot": -10
+			}
+		]
 ]
