@@ -89,7 +89,7 @@ weapons: [
 				},
 				{
 					"type": "HaloPart",
-					"progress": "constant",
+					"progress": "life",
 					"color": "e2ca4b",
 					"layer": 110,
 					"y": 6,
