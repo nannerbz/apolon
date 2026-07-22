@@ -227,7 +227,7 @@ weapons: [
 				"pierceCap": 999
 			}
 		}
-	}
+	},
 	{
 		"name": "apeiron-w2",
 		"reload": 20,
@@ -276,7 +276,7 @@ weapons: [
 				}
 			}
 		},
-		"parts": [
+		"parts":
 			{
 				"type": "RegionPart",
 				"suffix": "-blade",
@@ -287,5 +287,4 @@ weapons: [
 				"moveY": 0,
 				"moveRot": -10
 			}
-		]
 ]
