@@ -20,7 +20,7 @@ abilities: [
 		type: SuppressionFieldAbility
 		x: 0
 		Y: 0
-		orbRadius: 8
+		orbRadius: 7
 		particleSize: 4
 		particles: 8
 		display: true
@@ -78,13 +78,13 @@ weapons: [
 			{
 				"type": "ShapePart",
 				"progress": "recoil",
-				"color": "de8ec9",
+				"color": "e2ca4b",
 				"layer": 110,
 				"circle": true,
 				"hollow": true,
 				"stroke": 0,
-				"strokeTo": 8,
-				"radius": 24,
+				"strokeTo": 6,
+				"radius": 8,
 				"y": 0
 			}
 		]
@@ -136,23 +136,25 @@ weapons: [
 			"height": 0,
 			"lifetime": 8,
 			"speed": 20,
-			"trailWidth": 0,
-			"trailLength": 0,
+			"trailWidth": 3,
+			"trailLength": 4,
+			"trailColor": "e2ca4b",
 			"collidesAir": true,
 			"damage": 25,
 			"splashDamage": 14,
 			"splashDamageRadius": 20,
 			"trailInterval": 0.01,
 			"trailEffect": {
-				"type": "WaveEffect",
+				"type": "ParticleEffect",
+				"length": 18,
+				"lifetime": 10,
+				"region": "circle-bullet",
 				"layer": 109,
+				"particles": 9,
 				"colorFrom": "544736",
 				"colorTo": "e2ca4b",
-				"sizeTo": 4,
 				"sizeFrom": 4,
-				"strokeFrom": 6,
-				"strokeTo": 0,
-				"lifetime": 5
+				"sizeTo": 1
 			}
 		}
 	}
