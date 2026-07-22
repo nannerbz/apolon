@@ -13,13 +13,14 @@ engineSize: 0
 engineOffset: 0
 range: 300
 faceTarget: false
+lowAltitude: true
 research: sophia
 abilities: [
 	{
 		type: SuppressionFieldAbility
 		x: 0
 		Y: 0
-		orbRadius: 12
+		orbRadius: 8
 		particleSize: 4
 		particles: 8
 		display: true
@@ -33,6 +34,8 @@ weapons: [
 	{
 		"name": "apeiron-w2",
 		"rotate": true,
+		"top": true,
+		"rotateSpeed": 6
 		"reload": 840,
 		"x": 0,
 		"y": 0,
@@ -89,6 +92,8 @@ weapons: [
 	{
 		"name": "apeiron-w2",
 		"rotate": true,
+		"top": true,
+		"rotateSpeed": 6,
 		"reload": 840,
 		"range": 240,
 		"x": 0,
@@ -107,6 +112,7 @@ weapons: [
 			"Type": "ArtilleryBulletType",
 			"hitEffect": {
 				"type": "WaveEffect",
+				"layer": 109,
 				"colorFrom": "544736",
 				"colorTo": "e2ca4b",
 				"sizeTo": 16,
@@ -117,6 +123,7 @@ weapons: [
 			},
 			"despawnEffect": {
 				"type": "WaveEffect",
+				"layer": 109,
 				"colorFrom": "544736",
 				"colorTo": "e2ca4b",
 				"sizeTo": 16,
@@ -128,23 +135,24 @@ weapons: [
 			"width": 0,
 			"height": 0,
 			"lifetime": 8,
-			"speed": 30,
+			"speed": 20,
 			"trailWidth": 0,
 			"trailLength": 0,
 			"collidesAir": true,
 			"damage": 25,
 			"splashDamage": 14,
 			"splashDamageRadius": 20,
-			"trailInterval": 0.02,
+			"trailInterval": 0.01,
 			"trailEffect": {
 				"type": "WaveEffect",
+				"layer": 109,
 				"colorFrom": "544736",
 				"colorTo": "e2ca4b",
 				"sizeTo": 4,
 				"sizeFrom": 4,
-				"strokeFrom": 4,
+				"strokeFrom": 6,
 				"strokeTo": 0,
-				"lifetime": 10
+				"lifetime": 5
 			}
 		}
 	}
