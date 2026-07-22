@@ -90,7 +90,7 @@ weapons: [
 		]
 	},
 	{
-		"name": "apeiron-w2",
+		"name": "apeiron-w2-blade",
 		"rotate": true,
 		"top": true,
 		"rotateSpeed": 6,
@@ -150,11 +150,11 @@ weapons: [
 				"lifetime": 10,
 				"region": "circle-bullet",
 				"layer": 109,
-				"particles": 9,
+				"particles": 14,
 				"colorFrom": "544736",
-				"colorTo": "e2ca4b",
-				"sizeFrom": 4,
-				"sizeTo": 1
+				"colorTo": "544736",
+				"sizeFrom": 5,
+				"sizeTo": 0
 			}
 		}
 	}
