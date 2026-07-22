@@ -33,22 +33,26 @@ abilities: [
 weapons: [
 	{
 		"name": "apeiron-w2",
-		"reload": 20,
+		"reload": 15,
 		"x": 0,
 		"y": 0,
 		"shootSound": "Pulse",
-		"shootEffect": "none"
-		"smokeEffect": "none"
+		"shootEffect": "none",
+		"smokeEffect": "none",
 		"shootY": 20,
 		"mirror": false,
 		"rotate": true,
-		"top": true
+		"top": true,
 		"rotateSpeed": 4,
-		"controllable": true,
+		"controllable": false,
 		"aiControllable": true,
+		"autoTarget": true,
 		"bullet": {
 			"type": "BulletType",
 			"damage": 5,
+			"homingPower": 0.1,
+			"homingRange": 24,
+			"homingDelay": 20,
 			"status": "vacuumed",
 			"statusDuration": 90,
 			"speed": 10,
