@@ -37,6 +37,8 @@ weapons: [
 		"x": 0,
 		"y": 0,
 		"shootSound": "Pulse",
+		"shootEffect": "none"
+		"smokeEffect": "none"
 		"shootY": 20,
 		"mirror": false,
 		"rotate": true,
@@ -51,7 +53,7 @@ weapons: [
 			"statusDuration": 90,
 			"speed": 10,
 			"lifetime": 30,
-			"knockback": -4,
+			"knockback": -80,
 			"fragOnHit": true,
 			"fragOnDespawn": false,
 			"fragAngle": 180,
