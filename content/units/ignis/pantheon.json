@@ -62,12 +62,12 @@ weapons: [
     		type: MissileBulletType
     		trailWidth: 3
     		trailLength: 25
-    		speed: 0.5
+    		speed: 0.6
 			lifetime: 96
 		    damage: 96
 		    width: 14
 		    height: 14
-		    drag: -0.04
+		    drag: -0.03
 		    shootEffect: shootBig2
 		    smokeEffect: shootSmokeTitan
 		    hitSound: none
@@ -100,12 +100,12 @@ weapons: [
     		type: MissileBulletType
     		trailWidth: 3
     		trailLength: 25
-    		speed: 0.5
+    		speed: 0.6
 			lifetime: 96
 		    damage: 64
 		    width: 10
 		    height: 10
-		    drag: -0.04
+		    drag: -0.03
 		    shootEffect: shootBig2
 		    smokeEffect: shootSmokeTitan
 		    hitSound: none
@@ -150,7 +150,7 @@ weapons: [
     		burstSpacing: 4,
     		width: 25
     		height: 25
-			shrinkX: 1
+			shrinkX: -1
 			shrinkY: -1
     		shootEffect: shootSmall
     		smokeEffect: shootSmallSmoke
@@ -160,14 +160,12 @@ weapons: [
 			pierceCap: 5
 			pierceBuilding: true
 			knockback: 0
-			collidesGround: false
 			sprite: large-orb
-			shrinkY: 0
 			intervalBullet: {
     			type: MissileBulletType
     			trailWidth: 3
     			trailLength: 25
-    			speed: 0.5
+    			speed: 0.4
 				lifetime: 96
 			    damage: 256
 			    width: 10
@@ -190,9 +188,9 @@ weapons: [
 				homingDelay: 30
     		}
 			bulletInterval: 8
-			intervalRandomSpread: 10
-			intervalBullets: 2
-			intervalAngle: 90
+			intervalRandomSpread: 0
+			intervalBullets: 3
+			intervalAngle: 180
 			IntervalSpread: 45
 		}
 		parts: [
