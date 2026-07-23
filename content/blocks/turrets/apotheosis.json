@@ -21,7 +21,7 @@
         "damage": 15000,
         "splashDamage": 15000,
         "splashDamageRadius": 96,
-        "despawnHit": true
+        "despawnHit": true,
         "hitEffect": {
             "type": "ExplosionEffect",
             "waveColor": "275861",
