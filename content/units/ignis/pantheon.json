@@ -56,7 +56,7 @@ weapons: [
 	shootY: 2
         mirror: true
 	  recoil: 1
-	  shootSound: shootSalvo
+	  shootSound: shootMalign
         ejectEffect: none
         bullet: {
     		type: MissileBulletType
@@ -126,13 +126,14 @@ weapons: [
         shoot: {
 			type: shootHelix
 			scl: 3
-			mag: 1.75
+			mag: 9
 		}
 	minWarmup: 0.96
 	shootWarmupSpeed: 0.02
         spacing: 3
 	innacuracy: 0
 	rotate: true
+	rotateSpeed: 1
         mirror: false
 	shootY: 16
 	  recoil: 2
@@ -189,12 +190,12 @@ weapons: [
 			intervalRandomSpread: 0
 			intervalBullets: 2
 			intervalAngle: 180
-			IntervalSpread: 85
+			IntervalSpread: 45
 		}
 		parts: [
 			{
     	  		type : RegionPart
-    	  		suffix : "-cannon-mid"
+    	  		suffix : "-mid"
     	  		progress : recoil
     	  		heatProgress : recoil
     	  		heatColor : "ffffff"
@@ -208,7 +209,7 @@ weapons: [
 				children: [
     				{
       					type : RegionPart
-      					suffix : "-cannon-barrel"
+      					suffix : "-barrel"
       					progress : recoil
       					heatProgress : recoil
       					heatColor : "ffffff"
@@ -220,7 +221,7 @@ weapons: [
 						children: [
     						{
       							type : RegionPart
-      							suffix : "-cannon-barrel-plate"
+      							suffix : "-plate"
       							progress : recoil
       							heatProgress : recoil
       							heatColor : "ffffff"
@@ -244,7 +245,7 @@ weapons: [
     		},
 			{
       			type : RegionPart
-      			suffix : "-cannon-spike"
+      			suffix : "-spike"
       			progress : warmup
       			heatProgress : recoil
       			heatColor : "ffffff"
