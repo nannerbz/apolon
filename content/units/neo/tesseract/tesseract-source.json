@@ -30,7 +30,7 @@ weapons: [
         spacing: 3
 	innacuracy: 10
 		rotate: false
-			shootWarmupSpeed: 0.01
+			shootWarmupSpeed: 0.006
         mirror: false
 	  recoil: 1
 	  shootSound: none
@@ -61,8 +61,69 @@ weapons: [
 			stroke: 1
 			strokeTo: 6
 			moveRot: 99999
+			rotateSpeed: 10
 			color: 7ec0cc
     		},
-	]
+			{
+      		type : ShapePart
+			hollow: true
+			sides: 12
+			radius: 0
+			radiusTo: 512
+			stroke: 1
+			strokeTo: 6
+			moveRot: -40000
+			rotateSpeed: -7
+			color: 7ec0cc
+    		},
+			{
+      		type : ShapePart
+			hollow: true
+			sides: 8
+			radius: 0
+			radiusTo: 256
+			stroke: 1
+			strokeTo: 6
+			moveRot: 9999
+			rotateSpeed: 5
+			color: 7ec0cc
+    		},
+			{
+      		type : ShapePart
+			hollow: true
+			sides: 10
+			radius: 0
+			radiusTo: 128
+			stroke: 1
+			strokeTo: 6
+			moveRot: -7000
+			rotateSpeed: -4
+			color: 73c0cc
+    		},
+			{
+      		type : ShapePart
+			hollow: true
+			sides: 12
+			radius: 0
+			radiusTo: 64
+			stroke: 1
+			strokeTo: 6
+			moveRot: 5000
+			rotateSpeed: 3
+			color: 7ec0cc
+    		},
+			{
+      		type : ShapePart
+			hollow: true
+			sides: 12
+			radius: 0
+			radiusTo: 32
+			stroke: 1
+			strokeTo: 6
+			moveRot: -2000
+			rotateSpeed: -2
+			color: 7ec0cc
+    		},
+		]
     }
 ]
