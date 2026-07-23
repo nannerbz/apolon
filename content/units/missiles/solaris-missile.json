@@ -12,15 +12,15 @@
 	deathSound: largeExplosion
 	targetAir: true
 	targetGround: true
-	speed: 4
-	lifetime: 160
+	speed: 3
+	lifetime: 100
 	health: 4500
 	abilities: [
 		{
 			type: MoveLightningAbility
 			damage: 25
 			chance: 0.3
-			length: 24
+			length: 48
 			minSpeed: 0.5
 			maxSpeed: 3
 			color: 7ec0cc

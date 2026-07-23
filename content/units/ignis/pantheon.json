@@ -8,7 +8,7 @@ armor: 25
 treadPullOffset: 7
 rotateShooting: false
 shootSound: lasershoot
-hitSize: 28
+hitSize: 56
 range: 225
 itemCapacity: 0
 crushDamage: 3.4
