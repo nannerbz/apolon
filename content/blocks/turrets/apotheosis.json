@@ -230,10 +230,11 @@
                         }
                     },
                     {
-                        "type": "BulletType",
+                        "type": "ArtilleryBulletType",
                         "createChance": 0.6,
                         "collidesTeam": true,
                         "speed": 1,
+                        "damage": 50000
                         "splashDamage": 15000,
                         "splashDamageRadius": 38,
                         "fragOnHit": true,
@@ -264,7 +265,6 @@
                             "sparks": 15
                         },
                         "lifetime": 1,
-                        "killShooter": true
                     }
                 ],
                 "trailInterval": 6,
