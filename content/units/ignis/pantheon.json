@@ -148,7 +148,7 @@ weapons: [
     		damage: 256
     		burstSpacing: 4,
     		width: 25
-    		height: 35
+    		height: 25
     		shootEffect: shootSmall
     		smokeEffect: shootSmallSmoke
 			hitEffect: hitLancer
@@ -189,8 +189,8 @@ weapons: [
 			bulletInterval: 8
 			intervalRandomSpread: 0
 			intervalBullets: 2
-			intervalAngle: 180
-			IntervalSpread: 65
+			intervalAngle: 90
+			IntervalSpread: 0
 		}
 		parts: [
 			{
@@ -200,8 +200,7 @@ weapons: [
     	  		heatProgress : recoil
     	  		heatColor : "ffffff"
     	  		mirror : true
-    	  		under : false
-				layerOffset: -0.001
+    	  		under : true
 				outline: true
 				x: 0
 				y: 0
@@ -216,8 +215,7 @@ weapons: [
       					heatProgress : recoil
       					heatColor : "ffffff"
       					mirror : true
-      					under : false
-						layerOffset: -0.002
+      					under : true
 						outline: true
       					moveX : 0
 						moveY : -2
@@ -230,8 +228,8 @@ weapons: [
       							heatProgress : recoil
       							heatColor : "ffffff"
       							mirror : true
-      							under : false
-								layerOffset: -0.001
+      							under : true
+								outline: true
 								x: 0
 								y: 15
       							moveX : 0
@@ -257,8 +255,8 @@ weapons: [
       			heatProgress : recoil
       			heatColor : "ffffff"
       			mirror : true
-      			under : false
-				layerOffset: -0.002
+      			under : true
+				outline: true
 				x: 0
 				y: -25
       			moveX : 0
