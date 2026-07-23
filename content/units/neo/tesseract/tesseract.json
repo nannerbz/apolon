@@ -84,7 +84,7 @@ weapons: [
 			despawnEffect: none
 			width: 0.55
 			lifetime: 45
-			knockback -1
+			knockback: -1
         }
     },
 	{
@@ -109,7 +109,7 @@ weapons: [
 			despawnEffect: none
 			width: 0.6
 			lifetime: 45
-			knockback -1
+			knockback: -1
         }
     },
 	{
