@@ -119,7 +119,7 @@ weapons: [
     },
 	{
         name: pantheon-cannon
-        reload: 200
+        reload: 300
         x: 0
         y: 0
         top: true
@@ -145,7 +145,7 @@ weapons: [
     		trailWidth: 2
     		trailLength: 8
     		speed: 10
-			drag: 0.03
+			drag: 0.0
 			lifetime: 75
     		damage: 256
     		burstSpacing: 4,
@@ -174,7 +174,7 @@ weapons: [
 			    drag: -0.04
 			    shootEffect: shootBig2
 			    smokeEffect: shootSmokeTitan
-			    splashDamage: 32
+			    splashDamage: 24
 			    splashDamageRadius: 64
 			    hitSound: none
 			    weaveMag: 6
@@ -190,9 +190,9 @@ weapons: [
     		}
 			bulletInterval: 8
 			intervalRandomSpread: 0
-			intervalBullets: 2
+			intervalBullets: 3
 			intervalAngle: 0
-			intervalSpread: 90
+			intervalSpread: 45
 		}
 		parts: [
 			{
