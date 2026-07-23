@@ -150,6 +150,8 @@ weapons: [
     		burstSpacing: 4,
     		width: 25
     		height: 25
+			shrinkX: 3
+			shrinkY: 3
     		shootEffect: shootSmall
     		smokeEffect: shootSmallSmoke
 			hitEffect: hitLancer
@@ -190,7 +192,7 @@ weapons: [
 			bulletInterval: 8
 			intervalRandomSpread: 0
 			intervalBullets: 2
-			intervalAngle: 0
+			intervalAngle: 90
 			IntervalSpread: 90
 		}
 		parts: [
@@ -236,13 +238,37 @@ weapons: [
 								x: 0
 								y: 15
       							moveX : 0
-								moveY : 5
+								moveY : -3
       							moveRot : -45
 								moves: [
 									{
 										x: 6
 										y: 0
 										rot: 0
+										progress: warmup
+									}
+								]
+    						},
+							{
+      							type : RegionPart
+      							suffix : "-plate"
+      							progress : recoil
+      							heatProgress : recoil
+      							heatColor : "ffffff"
+      							mirror : true
+      							under : true
+								outline: true
+								layerOffset: -0.002
+								x: 0
+								y: 12
+      							moveX : 0
+								moveY : -3
+      							moveRot : -45
+								moves: [
+									{
+										x: 6
+										y: 0
+										rot: -15
 										progress: warmup
 									}
 								]
@@ -261,10 +287,25 @@ weapons: [
       			under : true
 				outline: true
 				x: -3
-				y: -22
+				y: -25
       			moveX : 0
 				moveY : 0
       			moveRot : -90
+    		},
+						{
+      			type : RegionPart
+      			suffix : "-spike"
+      			progress : warmup
+      			heatProgress : recoil
+      			heatColor : "ffffff"
+      			mirror : true
+      			under : true
+				outline: true
+				x: 0
+				y: -25
+      			moveX : 1
+				moveY : 0
+      			moveRot : -75
     		},
 		]
     }
