@@ -47,6 +47,8 @@ weapons: [
         shots: 2
         spacing: 3
         mirror: true
+		rotate: true
+		rotateSpeed: 4,
 	  recoil: 1
 	  shootSound: shootSap
         bullet: {
@@ -72,6 +74,8 @@ weapons: [
         shots: 2
         spacing: 3
         mirror: true
+		rotate: true
+		rotateSpeed: 4,
 	    recoil: 1
 	    shootSound: shootSap
         bullet: {
@@ -97,6 +101,8 @@ weapons: [
         shots: 2
         spacing: 3
         mirror: true
+		rotate: true
+		rotateSpeed: 4,
 	  recoil: 1
 	  shootSound: shootSap
         bullet: {
@@ -170,12 +176,9 @@ weapons: [
 	{
         name: tesseract-blaster
 	layerOffset: -0.001
-	minWarmup: 0.9
-	warmupMaintainTime: 20
-	shootWarmupSpeed: 0.05
         reload: 30
         x: 26
-        y: 18
+        y: 8
         top: true
         shots: 2
         spacing: 3
@@ -226,7 +229,7 @@ weapons: [
         name: tesseract-shotgun
         reload: 25
         x: 14
-        y: 20
+        y: 22
         top: true
 	xRand: 0
         spacing: 3
@@ -267,7 +270,7 @@ weapons: [
       		heatProgress : recoil
       		heatColor : "ffffff"
       		mirror : true
-      		under : false
+      		under : true
 			layerOffset: -0.001
       		moveX : 4
 			moveY : -2
