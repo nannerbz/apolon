@@ -29,7 +29,7 @@
         "rotateSpeed": 1,
         "range": 380,
         "ammoTypes": {
-            "technetium": {
+            "technetium-item": {
                 "ammoMultiplier": 1,
                 "reloadMultiplier": 3,
                 "type": "BasicBulletType",
