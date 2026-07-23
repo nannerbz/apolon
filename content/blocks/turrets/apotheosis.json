@@ -230,41 +230,41 @@
                         }
                     },
                     {
-                        "type": "ArtilleryBulletType",
+                        "type": "BulletType",
                         "createChance": 0.6,
+                        "hitUnder": true,
                         "collidesTeam": true,
                         "speed": 1,
-                        "damage": 50000
+                        "damage": 50000,
                         "splashDamage": 15000,
                         "splashDamageRadius": 38,
                         "fragOnHit": true,
-                        "fragOnDespawn": true
+                        "fragOnDespawn": true,
                         "fragBullets": 4,
                         "fragBullet": {
                             "type": "FireBulletType",
-                            "radius": 8,
                             "incendChance": 1,
                             "incendSpread": 80,
-                            "incendAmount": 20
+                            "incendAmount": 80
                         },
                         "shootEffect": {
                             "type": "ExplosionEffect",
                             "waveColor": "c71245",
                             "sparkColor": "e69cd3",
                             "smokeColor": "d45984",
-                            "waveLife": 45,
-                            "waveStroke": 8,
+                            "waveLife": 120,
+                            "waveStroke": 16,
                             "waveRad": 48,
                             "sparkStroke": 3,
-                            "sparkRad": 64,
+                            "sparkRad": 88,
                             "sparkLen": 16,
-                            "smokeSize": 4,
-                            "smokeSizeBase": 10,
-                            "smokeRad": 20,
+                            "smokeSize": 8,
+                            "smokeSizeBase": 16,
+                            "smokeRad": 40,
                             "smokes": 18,
-                            "sparks": 15
+                            "sparks": 30
                         },
-                        "lifetime": 1,
+                        "lifetime": 1
                     }
                 ],
                 "trailInterval": 6,
