@@ -16,7 +16,7 @@
     "shootY": 0,
     "destroyBullet": {
         "type": "ArtilleryBulletType",
-        "speed": 1,
+        "speed": 0,
         "lifetime": 6,
         "intervalBullet": {
             "type": "lightningBulletType",
@@ -30,7 +30,7 @@
         "intervalRandomSpread": 360,
         "intervalBullets": 4,
         "damage": 15000,
-        "hitShake": 20
+        "hitShake": 30
         "splashDamage": 15000,
         "splashDamageRadius": 96,
         "despawnHit": true,
@@ -40,7 +40,7 @@
             "effects": [
                 {
                     "type": "ExplosionEffect",
-                    "waveColor": "275861",
+                    "waveColor": "58a68c",
                     "sparkColor": "7eccbc",
                     "smokeColor": "3d3e47",
                     "waveLife": 120,
@@ -59,7 +59,7 @@
                     "type": "ParticleEffect",
                     "length": 12,
                     "lifetime": 180,
-                    "region": "circle-shadow",
+                    "region": "circle-bullet",
                     "particles": 60,
                     "lightColor": "7eccbc",
                     "colorFrom": "7eccbc",
@@ -70,10 +70,10 @@
                 {
                     "type": "WaveEffect",
                     "colorFrom": "275861",
-                    "colorTo": "d45984",
+                    "colorTo": "58a68c",
                     "sizeTo": 96,
                     "sizeFrom": 0,
-                    "lifetime": 40,
+                    "lifetime": 20,
                     "strokeFrom": 6,
                     "strokeTo": 5
                 }
