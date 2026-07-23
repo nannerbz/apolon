@@ -23,9 +23,6 @@
 			{ "liquid": "hydrogen", "amount": 0.1 }
 		]
 	}
-    "coolant": {
-      "amount": 0.5
-    }
     }
     "ammoTypes": {
         bismuth-item: {

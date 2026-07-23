@@ -11,7 +11,7 @@
     "outlineColor": 222222
     "xRand": 0,
     "squareSprite": false
-    "coolantMultiplier": 0.45
+    "coolantMultiplier": 0.55
   "consumes": {
     "coolant": {
       "amount": 0.5

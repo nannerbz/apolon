@@ -11,7 +11,7 @@
     "inaccuracy": 0
     "reload": 60
     "xRand": 0,
-    "coolantMultiplier": 0.5
+    "coolantMultiplier": 0.4
     "heatRequirement": 6
     "maxHeatEfficiency": 3
     "squareSprite": false
@@ -24,7 +24,7 @@
     "consumes": {
 	power: 0.4
     	"coolant": {
-    	  "amount": 1.2
+    	  "amount": 1
     	}
     }
 	shootType: {

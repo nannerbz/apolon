@@ -23,9 +23,6 @@
 		"liquids": [
 		]
 	}
-    	"coolant": {
-    		"amount": 1.2
-    	}
     }
     "ammoTypes": {
         "carbide": {

@@ -18,7 +18,7 @@
     "shootY": 0
   "consumes": {
     "coolant": {
-      "amount": 0.5
+      "amount": 0.3
     }
   }
     "shootCone": 1

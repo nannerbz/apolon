@@ -20,9 +20,6 @@
 			{ "liquid": "hydrogen", "amount": 0.8 }
 		]
 	}
-    "coolant": {
-      "amount": 0.5
-    }
   }
     "shootCone": 3
     "rotateSpeed": 3

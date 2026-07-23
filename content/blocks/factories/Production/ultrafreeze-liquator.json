@@ -2,16 +2,19 @@
 	"type": "GenericCrafter",
 	"name": "Ultrafreeze Liquator",
 	"description": "Melts down rad-snow and cryogel with cryofluid and hydrogen to form one of the best coolants of Akyao, Mellowfluid.",
-	"outputLiquid": {"liquid": "mellowfluid", "amount": 4},
+	"outputLiquid": {"liquid": "mellowfluid", "amount": 2},
 	"rotate": true
 	"size": 4,
 	"hasPower": true,
 	"hasItems": true,
 	"hasLiquids": true,
-	"craftTime": 30,
+	"craftTime": 120,
 	"craftEffect": {
 			"type": "RadialEffect",
-			"effect": "surgeCruciSmoke"
+			"effect": "surgeCruciSmoke",
+			"rotationSpacing": 90,
+			"lengthOffset": 10,
+			"rotationOffset": 45
 	}
 	"consumes": {
 		power: 2
@@ -23,8 +26,8 @@
                 }
 		"liquids": {
 			"liquids": [
-				{ "liquid": "cryofluid", "amount": 2 },
-				{ "liquid": "hydrogen", "amount": 1 }
+				{ "liquid": "cryofluid", "amount": 0.6 },
+				{ "liquid": "hydrogen", "amount": 0.2 }
 			]
 		}
 	},

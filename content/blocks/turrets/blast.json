@@ -16,7 +16,7 @@
     "coolantMultiplier": 0.5
   "consumes": {
     "coolant": {
-      "amount": 0.5
+      "amount": 0.6
     }
   }
     "shootCone": 8,

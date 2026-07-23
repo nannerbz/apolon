@@ -10,12 +10,12 @@
     "reload": 10
     "xRand": 0,
     "squareSprite": false
-    "coolantMultiplier": 0.5
+    "coolantMultiplier": 0.3
     "outlineColor": 222222
     "fogRadiusMultiplier": 0.5,
   "consumes": {
     "coolant": {
-      "amount": 0.5
+      "amount": 0.2
     }
   }
     "shootCone": 8,
