@@ -12,16 +12,16 @@ hovering: true
 allowLegStep: true
 legStraightness: 3
 legContinuousMove: true
-legLength: 48
+legLength: 72
 lockLegBase: true
 stepShake: 1.3
-legExtension: -3
-legMaxLength: 1.7
-legMinLength: 0.5
-rippleScale: 0.7
-legLengthScl : 1.06
+legExtension: -4
+legMaxLength: 2.6
+legMinLength: 1.1
+rippleScale: 1.2
+legLengthScl : 0.7
 legForwardScl : 0.8
-legMoveSpace: 1.7
+legMoveSpace: 1.8
 legGroupSize: 2
 legSplashDamage: 128
 legSplashRange: 32
@@ -270,12 +270,12 @@ weapons: [
       		heatProgress : recoil
       		heatColor : "ffffff"
       		mirror : true
-      		under : true
-			layerOffset: -0.001
+      		under : false
+			layerOffset: -0.002
       		moveX : 4
 			moveY : -2
-      		moveRot : 35
-			outline: false
+      		moveRot : -35
+			outline: true
     		},
 	]
     }

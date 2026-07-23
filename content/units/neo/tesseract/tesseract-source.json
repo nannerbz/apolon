@@ -20,7 +20,77 @@ abilities: [
 	}
 ]
 weapons: [
+
     {
+        name: tesseract-effects
+        reload: 9999
+        x: 0
+        y: 0
+        top: true
+        shots: 1
+        spacing: 3
+	innacuracy: 10
+		rotate: false
+        mirror: false
+	  recoil: 1
+		shootSound: "beepboomcountdown",
+	  alwaysShooting: true
+        bullet: {
+				"type": "BulletType",
+				"shootEffect": {
+					"type": MultiEffect
+					"effects": [
+						{
+							"type": "WaveEffect",
+							"rotWithParent": true,
+							"followParent": true,
+							"colorFrom": "181441",
+							"colorTo": "37727d",
+							"startDelay": 0,
+							"sizeTo": 0,
+							"sizeFrom": 512,
+							"lifetime": 1500,
+							"strokeFrom": 0,
+							"strokeTo": 16
+						},
+						{
+							"type": "WaveEffect",
+							"rotWithParent": true,
+							"followParent": true,
+							"colorFrom": "181441",
+							"colorTo": "599ca8",
+							"startDelay": 600,
+							"sizeTo": 0,
+							"sizeFrom": 512,
+							"lifetime": 900,
+							"strokeFrom": 0,
+							"strokeTo": 16
+						},
+						{
+							"type": "WaveEffect",
+							"rotWithParent": true,
+							"followParent": true,
+							"colorFrom": "181441",
+							"colorTo": "7ec0cc",
+							"startDelay": 900,
+							"sizeTo": 0,
+							"sizeFrom": 512,
+							"lifetime": 600,
+							"strokeFrom": 0,
+							"strokeTo": 16
+						},
+					]
+				},
+				"speed": 0,
+				"smokeEffect": "none",
+				"despawnEffect": "none",
+				"hitEffect": "none",
+				"collidesAir": false,
+				"collidesGround": false,
+				"lifetime": 1
+        }
+    },
+	{
         name: tesseract-w
         reload: 9999
         x: 0
@@ -33,10 +103,10 @@ weapons: [
 			shootWarmupSpeed: 0.006
         mirror: false
 	  recoil: 1
-	  shootSound: none
+	  shootSound: "roarangel",
 	  alwaysShooting: true
 	  shoot: {
-		firstShotDelay: 1200
+		firstShotDelay: 1500
 	  }
         bullet: {
 			type: ExplosionBulletType
@@ -45,10 +115,63 @@ weapons: [
 			ammoMultiplier: 1
 			killShooter: true
 			shootEffect: {
-				type: explosionEffect
-				waveLife: 250
-				waveRad: 256
-				smokes: 10
+				"shootEffect": {
+					"type": MultiEffect
+					"effects": [
+						{
+							"type": "WaveEffect",
+							"rotWithParent": true,
+							"followParent": true,
+							"colorFrom": "ffffff",
+							"colorTo": "37727d",
+							"startDelay": 0,
+							"sizeTo": 576,
+							"sizeFrom": 0,
+							"lifetime": 600,
+							"strokeFrom": 50,
+							"strokeTo": 0
+						},
+						{
+							"type": "WaveEffect",
+							"rotWithParent": true,
+							"followParent": true,
+							"colorFrom": "ffffff",
+							"colorTo": "37727d",
+							"startDelay": 0,
+							"sizeTo": 544,
+							"sizeFrom": 0,
+							"lifetime": 500,
+							"strokeFrom": 40,
+							"strokeTo": 0
+						},
+						{
+							"type": "WaveEffect",
+							"rotWithParent": true,
+							"followParent": true,
+							"colorFrom": "ffffff",
+							"colorTo": "37727d",
+							"startDelay": 0,
+							"sizeTo": 512,
+							"sizeFrom": 0,
+							"lifetime": 400,
+							"strokeFrom": 35,
+							"strokeTo": 0
+						},
+						{
+							"type": "WaveEffect",
+							"rotWithParent": true,
+							"followParent": true,
+							"colorFrom": "ffffff",
+							"colorTo": "37727d",
+							"startDelay": 0,
+							"sizeTo": 448,
+							"sizeFrom": 0,
+							"lifetime": 250,
+							"strokeFrom": 30,
+							"strokeTo": 0
+						},
+					]
+				},
 			},
         }
 	parts: [
@@ -86,7 +209,7 @@ weapons: [
 			strokeTo: 6
 			moveRot: 9999
 			rotateSpeed: 5
-			color: 7ec0cc
+			color: 599ca8
     		},
 			{
       		type : ShapePart
@@ -98,7 +221,7 @@ weapons: [
 			strokeTo: 6
 			moveRot: -7000
 			rotateSpeed: -4
-			color: 73c0cc
+			color: 599ca8
     		},
 			{
       		type : ShapePart
@@ -110,7 +233,7 @@ weapons: [
 			strokeTo: 6
 			moveRot: 5000
 			rotateSpeed: 3
-			color: 7ec0cc
+			color: 37727d
     		},
 			{
       		type : ShapePart
@@ -122,7 +245,7 @@ weapons: [
 			strokeTo: 6
 			moveRot: -2000
 			rotateSpeed: -2
-			color: 7ec0cc
+			color: 37727d
     		},
 		]
     }
