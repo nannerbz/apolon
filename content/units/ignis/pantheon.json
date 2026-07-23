@@ -192,8 +192,8 @@ weapons: [
 			bulletInterval: 8
 			intervalRandomSpread: 0
 			intervalBullets: 2
-			intervalAngle: 90
-			IntervalSpread: 90
+			intervalAngle: 0
+			IntervalSpread: 45
 		}
 		parts: [
 			{
@@ -242,7 +242,7 @@ weapons: [
       							moveRot : -45
 								moves: [
 									{
-										x: 6
+										x: 8
 										y: 0
 										rot: 0
 										progress: warmup
@@ -260,13 +260,13 @@ weapons: [
 								outline: true
 								layerOffset: -0.002
 								x: 0
-								y: 12
+								y: 9
       							moveX : 0
 								moveY : -3
       							moveRot : -45
 								moves: [
 									{
-										x: 6
+										x: 8
 										y: 0
 										rot: -15
 										progress: warmup
@@ -303,9 +303,9 @@ weapons: [
 				outline: true
 				x: 0
 				y: -25
-      			moveX : 1
+      			moveX : 7
 				moveY : 0
-      			moveRot : -75
+      			moveRot : -60
     		},
 		]
     }
