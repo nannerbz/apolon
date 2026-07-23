@@ -145,7 +145,7 @@ weapons: [
     		trailWidth: 2
     		trailLength: 8
     		speed: 10
-			drag: 0.08
+			drag: 0.03
 			lifetime: 75
     		damage: 256
     		burstSpacing: 4,
@@ -191,8 +191,8 @@ weapons: [
 			bulletInterval: 8
 			intervalRandomSpread: 0
 			intervalBullets: 2
-			intervalAngle: 180
-			intervalSpread: 180
+			intervalAngle: 0
+			intervalSpread: 90
 		}
 		parts: [
 			{
