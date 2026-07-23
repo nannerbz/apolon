@@ -167,13 +167,13 @@ weapons: [
     			trailLength: 25
     			speed: 0.4
 				lifetime: 96
-			    damage: 256
+			    damage: 128
 			    width: 10
 			    height: 10
 			    drag: -0.04
 			    shootEffect: shootBig2
 			    smokeEffect: shootSmokeTitan
-			    splashDamage: 96
+			    splashDamage: 32
 			    splashDamageRadius: 64
 			    hitSound: none
 			    weaveMag: 6
@@ -191,7 +191,7 @@ weapons: [
 			intervalRandomSpread: 0
 			intervalBullets: 2
 			intervalAngle: 180
-			intervalSpread: 90
+			intervalSpread: 180
 		}
 		parts: [
 			{
