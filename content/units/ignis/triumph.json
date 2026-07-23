@@ -48,6 +48,7 @@ weapons: [
 	innacuracy: 35
 	rotate: true
         mirror: false
+		layerOffset: 0.001
 	shootY: 16
 	  recoil: 2
 	  shootSound: shootMalign

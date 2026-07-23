@@ -150,8 +150,8 @@ weapons: [
     		burstSpacing: 4,
     		width: 25
     		height: 25
-			shrinkX: -1
-			shrinkY: 1
+			shrinkX: 1
+			shrinkY: -1
     		shootEffect: shootSmall
     		smokeEffect: shootSmallSmoke
 			hitEffect: hitLancer
@@ -192,8 +192,8 @@ weapons: [
 			bulletInterval: 8
 			intervalRandomSpread: 10
 			intervalBullets: 2
-			intervalAngle: 50
-			IntervalSpread: 0
+			intervalAngle: 90
+			IntervalSpread: 45
 		}
 		parts: [
 			{
