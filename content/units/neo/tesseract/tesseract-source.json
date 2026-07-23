@@ -48,8 +48,8 @@ weapons: [
 							"colorTo": "37727d",
 							"startDelay": 0,
 							"sizeTo": 0,
-							"sizeFrom": 256,
-							"lifetime": 1200,
+							"sizeFrom": 512,
+							"lifetime": 1500,
 							"strokeFrom": 0,
 							"strokeTo": 16
 						},
@@ -61,8 +61,8 @@ weapons: [
 							"colorTo": "599ca8",
 							"startDelay": 600,
 							"sizeTo": 0,
-							"sizeFrom": 256,
-							"lifetime": 600,
+							"sizeFrom": 512,
+							"lifetime": 900,
 							"strokeFrom": 0,
 							"strokeTo": 16
 						},
@@ -74,8 +74,8 @@ weapons: [
 							"colorTo": "7ec0cc",
 							"startDelay": 900,
 							"sizeTo": 0,
-							"sizeFrom": 256,
-							"lifetime": 300,
+							"sizeFrom": 512,
+							"lifetime": 600,
 							"strokeFrom": 0,
 							"strokeTo": 16
 						},
@@ -103,10 +103,10 @@ weapons: [
 			shootWarmupSpeed: 0.006
         mirror: false
 	  recoil: 1
-	  shootSound: none
+	  shootSound: "roarangel",
 	  alwaysShooting: true
 	  shoot: {
-		firstShotDelay: 1200
+		firstShotDelay: 1500
 	  }
         bullet: {
 			type: ExplosionBulletType
@@ -115,10 +115,63 @@ weapons: [
 			ammoMultiplier: 1
 			killShooter: true
 			shootEffect: {
-				type: explosionEffect
-				waveLife: 250
-				waveRad: 256
-				smokes: 10
+				"shootEffect": {
+					"type": MultiEffect
+					"effects": [
+						{
+							"type": "WaveEffect",
+							"rotWithParent": true,
+							"followParent": true,
+							"colorFrom": "ffffff",
+							"colorTo": "37727d",
+							"startDelay": 0,
+							"sizeTo": 576,
+							"sizeFrom": 0,
+							"lifetime": 600,
+							"strokeFrom": 50,
+							"strokeTo": 0
+						},
+						{
+							"type": "WaveEffect",
+							"rotWithParent": true,
+							"followParent": true,
+							"colorFrom": "ffffff",
+							"colorTo": "37727d",
+							"startDelay": 0,
+							"sizeTo": 544,
+							"sizeFrom": 0,
+							"lifetime": 500,
+							"strokeFrom": 40,
+							"strokeTo": 0
+						},
+						{
+							"type": "WaveEffect",
+							"rotWithParent": true,
+							"followParent": true,
+							"colorFrom": "ffffff",
+							"colorTo": "37727d",
+							"startDelay": 0,
+							"sizeTo": 512,
+							"sizeFrom": 0,
+							"lifetime": 400,
+							"strokeFrom": 35,
+							"strokeTo": 0
+						},
+						{
+							"type": "WaveEffect",
+							"rotWithParent": true,
+							"followParent": true,
+							"colorFrom": "ffffff",
+							"colorTo": "37727d",
+							"startDelay": 0,
+							"sizeTo": 448,
+							"sizeFrom": 0,
+							"lifetime": 250,
+							"strokeFrom": 30,
+							"strokeTo": 0
+						},
+					]
+				},
 			},
         }
 	parts: [
