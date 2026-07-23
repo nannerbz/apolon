@@ -36,7 +36,7 @@
                 "pierce": true,
                 "pierceCap": 300,
                 "lightOpacity": 0.6,
-                "lightColor": "58a68c",
+                "lightColor": "d45984",
                 "lightRadius": 40,
                 "status": "irradiated",
                 "statusDuration": 400,
@@ -94,15 +94,15 @@
                             "damage": 120,
                             "length": 40,
                             "width": 9,
-                            "toColor": "58a68c"
+                            "toColor": "d45984"
                         },
                         "trailInterval": 20,
                         "homingPower": 0.12,
                         "homingRange": 380,
                         "trailEffect": {
                             "type": "WaveEffect",
-                            "colorFrom": "58a68c",
-                            "colorTo": "58a68c",
+                            "colorFrom": "d45984",
+                            "colorTo": "d45984",
                             "sizeTo": 22,
                             "sizeFrom": 16,
                             "lifetime": 140,
@@ -231,17 +231,36 @@
                     },
                     {
                         "type": "BulletType",
-                        "createChance": 0.3,
+                        "createChance": 0.6,
                         "collidesTeam": true,
                         "speed": 1,
                         "splashDamage": 15000,
-                        "splashDamageRadius": 32,
+                        "splashDamageRadius": 38,
+                        "fragOnHit": true,
+                        "fragOnDespawn": true
+                        "fragBullets": 4,
                         "fragBullet": {
                             "type": "FireBulletType",
                             "radius": 8,
                             "incendChance": 1,
-                            "incendSpread": 64,
-                            "incendAmount": 16
+                            "incendSpread": 80,
+                            "incendAmount": 20
+                        },
+                        "hitEffect": {
+                            "type": "ExplosionEffect",
+                            "waveColor": "544736",
+                            "sparkColor": "cf926a",
+                            "waveLife": 45,
+                            "waveStroke": 8,
+                            "waveRad": 48,
+                            "sparkStroke": 3,
+                            "sparkRad": 64,
+                            "sparkLen": 16,
+                            "smokeSize": 4,
+                            "smokeSizeBase": 10,
+                            "smokeRad": 20,
+                            "smokes": 18,
+                            "sparks": 15
                         },
                         "despawnEffect": {
                             "type": "ExplosionEffect",
