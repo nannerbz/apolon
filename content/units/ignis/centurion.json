@@ -41,7 +41,7 @@ treadRects: [
 weapons: [
     {
         name: centurion-w
-        reload: 60
+        reload: 90
         x: 0
         y: 0
         top: true
@@ -52,7 +52,7 @@ weapons: [
 	rotateSpeed: 1.2
 	shoot: {
 		type: ShootSpread
-		shots: 12
+		shots: 8
 		spread: 4
 	}
 	shootCone: 45
@@ -63,7 +63,7 @@ weapons: [
         ejectEffect: none
         bullet: {
 		type: BasicBulletType
-		damage: 95
+		damage: 60
 		speed: 4
 		width: 8
 		length: 16
