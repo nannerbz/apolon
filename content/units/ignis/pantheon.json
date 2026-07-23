@@ -45,7 +45,7 @@ weapons: [
         name: pantheon-blaster
         reload: 27
         x: 10
-        y: 25
+        y: 10
         top: true
 	xRand: 0
         spacing: 3
@@ -83,7 +83,7 @@ weapons: [
         name: pantheon-blaster
         reload: 20
         x: 15
-        y: -25
+        y: -15
         top: true
 	xRand: 0
         spacing: 3
@@ -133,7 +133,7 @@ weapons: [
         spacing: 3
 	innacuracy: 0
 	rotate: true
-	rotateSpeed: 1
+	rotateSpeed: 0.6
         mirror: false
 	shootY: 16
 	  recoil: 2
@@ -190,7 +190,7 @@ weapons: [
 			intervalRandomSpread: 0
 			intervalBullets: 2
 			intervalAngle: 180
-			IntervalSpread: 45
+			IntervalSpread: 65
 		}
 		parts: [
 			{
