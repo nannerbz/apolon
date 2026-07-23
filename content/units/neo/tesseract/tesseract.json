@@ -1,7 +1,7 @@
 type: legs
 name: Tesseract
 speed: 0.3
-health: 42575
+health: 32500
 armor: 32
 drag: 0.2
 rotateSpeed: 2
@@ -169,13 +169,13 @@ weapons: [
     },
 	{
         name: tesseract-blaster
-	layerOffset: -1
+	layerOffset: -0.001
 	minWarmup: 0.9
 	warmupMaintainTime: 20
 	shootWarmupSpeed: 0.05
         reload: 30
         x: 26
-        y: 12
+        y: 18
         top: true
         shots: 2
         spacing: 3
@@ -224,13 +224,13 @@ weapons: [
     },
 	{
         name: tesseract-shotgun
-        reload: 90
+        reload: 25
         x: 14
-        y: 24
+        y: 20
         top: true
 	xRand: 0
         spacing: 3
-		layerOffset: -1
+		layerOffset: -0.001
 	innacuracy: 0
 	rotate: true
 	rotateSpeed: 1
@@ -272,7 +272,7 @@ weapons: [
       		moveX : 4
 			moveY : -2
       		moveRot : 35
-			outline: true
+			outline: false
     		},
 	]
     }
