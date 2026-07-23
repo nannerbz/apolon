@@ -18,32 +18,30 @@ abilities: [
 	{
 		type: ForceFieldAbility
 		radius: 120
-		regen: 0.03
+		regen: 0.2
 		max: 300
-		cooldown: 600
+		cooldown: 900
 		sides: 6
 	}
 ]
 treadRects: [
-	{
-		type: rect
-		x: -41
-		y: -51
-		width: 17
-		height: 102
-	},
-	{
-		type: rect
-		x: 24
-		y: -31
-		width: 13
-		height: 62
-	}
+    {
+        x: 24,
+        y: -51,
+        width: 17,
+        height: 101
+    },
+    {
+        x: -41,
+        y: -51,
+        width: 17,
+        height: 101
+    },
 ]
 weapons: [
     {
         name: centurion-w
-        reload: 90
+        reload: 60
         x: 0
         y: 0
         top: true
@@ -54,7 +52,7 @@ weapons: [
 	rotateSpeed: 1.2
 	shoot: {
 		type: ShootSpread
-		shots: 8
+		shots: 12
 		spread: 4
 	}
 	shootCone: 45

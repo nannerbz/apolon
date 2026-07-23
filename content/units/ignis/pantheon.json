@@ -185,7 +185,7 @@ weapons: [
  			    knockback: 0
 				homingPower: 0.06
 				homingRange: 300
-				homingCone: 360
+				homingCone: 45
 				homingDelay: 30
     		}
 			bulletInterval: 8
