@@ -14,6 +14,37 @@
     "squareSprite": false,
     "unitSort": "strongest",
     "shootY": 0,
+    "destroyBullet": {
+        "type": "ArtilleryBulletType",
+        "speed": 1
+        "lifetime": 1,
+        "damage": 15000
+        "splashDamage": 15000
+        "splashDamageRadius": 96
+        "fragBullets": 4
+        "fragBullet": {
+            "type": "FireBulletType",
+            "incendChance": 1,
+            "incendSpread": 80,
+            "incendAmount": 60
+        }
+    }
+    "destroyEffect": {
+        "type": "ExplosionEffect",
+        "waveColor": "275861",
+        "sparkColor": "7eccbc",
+        "waveLife": 120,
+        "waveStroke": 16,
+        "waveRad": 96,
+        "sparkStroke": 3,
+        "sparkRad": 120,
+        "sparkLen": 16,
+        "smokeSize": 8,
+        "smokeSizeBase": 16,
+        "smokeRad": 40,
+        "smokes": 18,
+        "sparks": 30
+    },
     "consumes": {
         "power": 18,
         "liquids": {
@@ -25,494 +56,463 @@
             ]
         }
     },
-        "shootCone": 10,
-        "rotateSpeed": 1,
-        "range": 380,
-        "ammoTypes": {
-            "technetium-item": {
-                "ammoMultiplier": 1,
-                "reloadMultiplier": 3,
-                "type": "BasicBulletType",
-                "pierce": true,
-                "pierceCap": 300,
-                "lightOpacity": 0.6,
-                "lightColor": "d45984",
-                "lightRadius": 40,
-                "status": "irradiated",
-                "statusDuration": 400,
-                "color": "c71245",
-                "backColor": "c71245",
-                "frontColor": "c71245",
-                "trailColor": "c71245",
-                "trailWidth": 8,
-                "trailLength": 256,
-                "speed": 0.5,
-                "lifetime": 760,
-                "shrinkY": 0,
-                "shrinkX": 0,
-                "damage": 1800,
-                "width": 40,
-                "height": 40,
-                "weaveMag": 8,
-                "weaveScale": 8,
-                "sprite": "large-orb",
-                "hitSound": "lucer",
-                "spawnBulletRandomSpread": 10,
-                "spawnBullets": [
-                    {
-                        "type": "BulletType",
-                        "hitSound": "lucer",
-                        "lightOpacity": 0.6,
-                        "lightColor": "e69cd3",
-                        "lightRadius": 40,
-                        "collidesAir": false,
-                        "status": "irradiated",
-                        "statusDuration": 400,
-                        "pierce": true,
-                        "pierceCap": 300,
-                        "speed": 0.26,
-                        "lifetime": 1234,
-                        "damage": 200,
-                        "width": 30,
-                        "height": 30,
-                        "shootEffect": "none",
-                        "fragOnHit": true,
-                        "fragVelocityMin": 2,
-                        "fragVelocityMax": 2,
-                        "fragBullets": 4,
-                        "fragSpread": 90,
-                        "fragRandomSpread": 0,
-                        "fragAngle": 45,
-                        "intervalBullets": 6,
-                        "intervalSpread": 60,
-                        "intervalRandomSpread": 0,
-                        "intervalAngle": 0,
-                        "bulletInterval": 60,
-                        "intervalDelay": 60,
-                        "intervalBullet": {
-                            "type": "ShrapnelBulletType",
-                            "damage": 120,
-                            "length": 40,
-                            "width": 9,
-                            "toColor": "d45984"
-                        },
-                        "trailInterval": 20,
-                        "homingPower": 0.12,
-                        "homingRange": 380,
-                        "trailEffect": {
-                            "type": "WaveEffect",
-                            "colorFrom": "d45984",
-                            "colorTo": "d45984",
-                            "sizeTo": 22,
-                            "sizeFrom": 16,
-                            "lifetime": 140,
-                            "strokeFrom": 5
-                        },
-                        "fragBullet": {
-                            "type": "BasicBulletType",
-                            "damage": 190,
-                            "smokeEffect": "none",
-                            "despawnEffect": {
-                                "type": "WaveEffect",
-                                "colorFrom": "c71245",
-                                "colorTo": "c71245",
-                                "sizeTo": 16,
-                                "lifetime": 60,
-                                "strokeFrom": 3
-                            },
-                            "trailWidth": 4,
-                            "trailLength": 40,
-                            "color": "e69cd3",
-                            "backColor": "e69cd3",
-                            "frontColor": "e69cd3",
-                            "trailColor": "e69cd3",
-                            "speed": 0.5,
-                            "homingPower": 0.8,
-                            "homingDelay": 3,
-                            "homingRange": 380,
-                            "shrinkY": 0,
-                            "shrinkX": 0,
-                            "width": 16,
-                            "height": 16,
-                            "sprite": "circle-bullet",
-                            "lifetime": 150,
-                            "intervalBullets": 2,
-                            "intervalRandomSpread": 360,
-                            "intervalAngle": 0,
-                            "bulletInterval": 10,
-                            "intervalDelay": 0,
-                            "status": "irradiated",
-                            "statusDuration": 100,
-                            "hitSound": "lucer",
-                            "intervalBullet": {
-                                "type": "LightningBulletType",
-                                "lightningColor": "e69cd3",
-                                "status": "irradiated",
-                                "statusDuration": 100,
-                                "damage": 20,
-                                "lightningLength": 10,
-                                "hitSound": "lucer"
-                            }
-                        },
+    "shootCone": 10,
+    "rotateSpeed": 1,
+    "range": 380,
+    "ammoTypes": {
+        "technetium-item": {
+            "ammoMultiplier": 1,
+            "reloadMultiplier": 3,
+            "type": "BasicBulletType",
+            "pierce": true,
+            "pierceCap": 300,
+            "lightOpacity": 0.6,
+            "lightColor": "d45984",
+            "lightRadius": 40,
+            "status": "irradiated",
+            "statusDuration": 400,
+            "color": "c71245",
+            "backColor": "c71245",
+            "frontColor": "c71245",
+            "trailColor": "c71245",
+            "trailWidth": 8,
+            "trailLength": 256,
+            "speed": 0.5,
+            "lifetime": 760,
+            "shrinkY": 0,
+            "shrinkX": 0,
+            "damage": 1800,
+            "width": 40,
+            "height": 40,
+            "weaveMag": 8,
+            "weaveScale": 8,
+            "sprite": "large-orb",
+            "hitSound": "lucer",
+            "spawnBulletRandomSpread": 10,
+            "spawnBullets": [
+                {
+                    "type": "BulletType",
+                    "hitSound": "lucer",
+                    "lightOpacity": 0.6,
+                    "lightColor": "e69cd3",
+                    "lightRadius": 40,
+                    "collidesAir": false,
+                    "status": "irradiated",
+                    "statusDuration": 400,
+                    "pierce": true,
+                    "pierceCap": 300,
+                    "speed": 0.26,
+                    "lifetime": 1234,
+                    "damage": 200,
+                    "width": 30,
+                    "height": 30,
+                    "shootEffect": "none",
+                    "fragOnHit": true,
+                    "fragVelocityMin": 2,
+                    "fragVelocityMax": 2,
+                    "fragBullets": 4,
+                    "fragSpread": 90,
+                    "fragRandomSpread": 0,
+                    "fragAngle": 45,
+                    "intervalBullets": 6,
+                    "intervalSpread": 60,
+                    "intervalRandomSpread": 0,
+                    "intervalAngle": 0,
+                    "bulletInterval": 60,
+                    "intervalDelay": 60,
+                    "intervalBullet": {
+                        "type": "ShrapnelBulletType",
+                        "damage": 120,
+                        "length": 40,
+                        "width": 9,
+                        "toColor": "d45984"
+                    },
+                    "trailInterval": 20,
+                    "homingPower": 0.12,
+                    "homingRange": 380,
+                    "trailEffect": {
+                        "type": "WaveEffect",
+                        "colorFrom": "d45984",
+                        "colorTo": "d45984",
+                        "sizeTo": 22,
+                        "sizeFrom": 16,
+                        "lifetime": 140,
+                        "strokeFrom": 5
+                    },
+                    "fragBullet": {
+                        "type": "BasicBulletType",
+                        "damage": 190,
+                        "smokeEffect": "none",
                         "despawnEffect": {
                             "type": "WaveEffect",
                             "colorFrom": "c71245",
                             "colorTo": "c71245",
-                            "sizeTo": 60,
-                            "lifetime": 180,
-                            "strokeFrom": 8
+                            "sizeTo": 16,
+                            "lifetime": 60,
+                            "strokeFrom": 3
                         },
+                        "trailWidth": 4,
+                        "trailLength": 40,
+                        "color": "e69cd3",
+                        "backColor": "e69cd3",
+                        "frontColor": "e69cd3",
+                        "trailColor": "e69cd3",
+                        "speed": 0.5,
+                        "homingPower": 0.8,
+                        "homingDelay": 3,
+                        "homingRange": 380,
+                        "shrinkY": 0,
+                        "shrinkX": 0,
+                        "width": 16,
+                        "height": 16,
+                        "sprite": "circle-bullet",
+                        "lifetime": 150,
+                        "intervalBullets": 2,
+                        "intervalRandomSpread": 360,
+                        "intervalAngle": 0,
+                        "bulletInterval": 10,
+                        "intervalDelay": 0,
+                        "status": "irradiated",
+                        "statusDuration": 100,
+                        "hitSound": "lucer",
+                        "intervalBullet": {
+                            "type": "LightningBulletType",
+                            "lightningColor": "e69cd3",
+                            "status": "irradiated",
+                            "statusDuration": 100,
+                            "damage": 20,
+                            "lightningLength": 10,
+                            "hitSound": "lucer"
+                        }
+                    },
+                    "despawnEffect": {
+                        "type": "WaveEffect",
+                        "colorFrom": "c71245",
+                        "colorTo": "c71245",
+                        "sizeTo": 60,
+                        "lifetime": 180,
+                        "strokeFrom": 8
+                    },
+                    "smokeEffect": "none",
+                    "hitEffect": {
+                        "type": "WaveEffect",
+                        "colorFrom": "c71245",
+                        "colorTo": "c71245",
+                        "sizeTo": 30,
+                        "lifetime": 90,
+                        "strokeFrom": 8
+                    },
+                    "frontColor": "00897b",
+                    "pierce": false,
+                    "sprite": "fractalia2-rumbus"
+                },
+                {
+                    "type": "BulletType",
+                    "lifetime": 1,
+                    "fragVelocityMin": 2,
+                    "fragVelocityMax": 2,
+                    "fragBullets": 5,
+                    "fragSpread": 5,
+                    "fragRandomSpread": 5,
+                    "fragAngle": 0,
+                    "fragBullet": {
+                        "type": "BasicBulletType",
+                        "damage": 190,
+                        "pierce": true,
+                        "pierceCap": 300,
                         "smokeEffect": "none",
-                        "hitEffect": {
+                        "despawnEffect": {
                             "type": "WaveEffect",
                             "colorFrom": "c71245",
                             "colorTo": "c71245",
-                            "sizeTo": 30,
-                            "lifetime": 90,
-                            "strokeFrom": 8
+                            "sizeTo": 16,
+                            "lifetime": 60,
+                            "strokeFrom": 3
                         },
-                        "frontColor": "00897b",
-                        "pierce": false,
-                        "sprite": "fractalia2-rumbus"
-                    },
-                    {
-                        "type": "BulletType",
-                        "lifetime": 1,
-                        "fragVelocityMin": 2,
-                        "fragVelocityMax": 2,
-                        "fragBullets": 5,
-                        "fragSpread": 5,
-                        "fragRandomSpread": 5,
-                        "fragAngle": 0,
-                        "fragBullet": {
-                            "type": "BasicBulletType",
-                            "damage": 190,
-                            "pierce": true,
-                            "pierceCap": 300,
-                            "smokeEffect": "none",
-                            "despawnEffect": {
-                                "type": "WaveEffect",
-                                "colorFrom": "c71245",
-                                "colorTo": "c71245",
-                                "sizeTo": 16,
-                                "lifetime": 60,
-                                "strokeFrom": 3
-                            },
-                            "trailWidth": 4,
-                            "trailLength": 40,
-                            "color": "e69cd3",
-                            "backColor": "e69cd3",
-                            "frontColor": "e69cd3",
-                            "trailColor": "e69cd3",
-                            "speed": 0.2,
-                            "status": "irradiated",
-                            "statusDuration": 100,
-                            "shrinkY": 0,
-                            "shrinkX": 0,
-                            "width": 16,
-                            "height": 16,
-                            "sprite": "circle-bullet",
-                            "lifetime": 1000,
-                            "intervalBullets": 4,
-                            "intervalSpread": 90,
-                            "intervalRandomSpread": 0,
-                            "intervalAngle": 0,
-                            "bulletInterval": 15,
-                            "intervalDelay": 10,
-                            "hitSound": "lucer",
-                            "intervalBullet": {
-                                "type": "ShrapnelBulletType",
-                                "damage": 60,
-                                "length": 20,
-                                "width": 9,
-                                "toColor": "e69cd3"
-                            }
+                        "trailWidth": 4,
+                        "trailLength": 40,
+                        "color": "e69cd3",
+                        "backColor": "e69cd3",
+                        "frontColor": "e69cd3",
+                        "trailColor": "e69cd3",
+                        "speed": 0.2,
+                        "status": "irradiated",
+                        "statusDuration": 100,
+                        "shrinkY": 0,
+                        "shrinkX": 0,
+                        "width": 16,
+                        "height": 16,
+                        "sprite": "circle-bullet",
+                        "lifetime": 1000,
+                        "intervalBullets": 4,
+                        "intervalSpread": 90,
+                        "intervalRandomSpread": 0,
+                        "intervalAngle": 0,
+                        "bulletInterval": 15,
+                        "intervalDelay": 10,
+                        "hitSound": "lucer",
+                        "intervalBullet": {
+                            "type": "ShrapnelBulletType",
+                            "damage": 60,
+                            "length": 20,
+                            "width": 9,
+                            "toColor": "e69cd3"
                         }
-                    },
-                    {
-                        "type": "BulletType",
-                        "createChance": 0.6,
-                        "hitUnder": true,
-                        "collidesTeam": true,
-                        "speed": 1,
-                        "damage": 50000,
-                        "splashDamage": 15000,
-                        "splashDamageRadius": 38,
-                        "fragOnHit": true,
-                        "fragOnDespawn": true,
-                        "fragBullets": 4,
-                        "fragBullet": {
-                            "type": "FireBulletType",
-                            "incendChance": 1,
-                            "incendSpread": 80,
-                            "incendAmount": 80
-                        },
-                        "shootEffect": {
-                            "type": "ExplosionEffect",
-                            "waveColor": "c71245",
-                            "sparkColor": "e69cd3",
-                            "smokeColor": "d45984",
-                            "waveLife": 120,
-                            "waveStroke": 16,
-                            "waveRad": 48,
-                            "sparkStroke": 3,
-                            "sparkRad": 88,
-                            "sparkLen": 16,
-                            "smokeSize": 8,
-                            "smokeSizeBase": 16,
-                            "smokeRad": 40,
-                            "smokes": 18,
-                            "sparks": 30
-                        },
-                        "lifetime": 1
                     }
-                ],
-                "trailInterval": 6,
-                "trailEffect": {
-                    "type": "ParticleEffect",
-                    "length": 24,
-                    "lifetime": 240,
-                    "region": "ring-item",
-                    "particles": 6,
-                    "lightColor": "ffffff",
-                    "colorFrom": "c71245",
-                    "colorTo": "e69cd3",
-                    "sizeFrom": 6,
-                    "sizeTo": 2
                 },
-                "shootEffect": {
-                    "type": "WaveEffect",
-                    "colorFrom": "c71245",
-                    "colorTo": "e69cd3",
-                    "sizeTo": 80,
-                    "lifetime": 180,
-                    "strokeFrom": 8
-                },
+                {
+                    "type": "BulletType",
+                    "createChance": 0.6,
+                    "lifetime": 1,
+                    "killShooter": true
+                }
+            ],
+            "trailInterval": 6,
+            "trailEffect": {
+                "type": "ParticleEffect",
+                "length": 24,
+                "lifetime": 240,
+                "region": "ring-item",
+                "particles": 6,
+                "lightColor": "ffffff",
+                "colorFrom": "c71245",
+                "colorTo": "e69cd3",
+                "sizeFrom": 6,
+                "sizeTo": 2
+            },
+            "shootEffect": {
+                "type": "WaveEffect",
+                "colorFrom": "c71245",
+                "colorTo": "e69cd3",
+                "sizeTo": 80,
+                "lifetime": 180,
+                "strokeFrom": 8
+            },
+            "smokeEffect": "none",
+            "despawnEffect": {
+                "type": "WaveEffect",
+                "colorFrom": "c71245",
+                "colorTo": "c71245",
+                "sizeTo": 80,
+                "lifetime": 180,
+                "strokeFrom": 8
+            },
+            "hitEffect": {
+                "type": "WaveEffect",
+                "colorFrom": "c71245",
+                "colorTo": "c71245",
+                "sizeTo": 40,
+                "lifetime": 90,
+                "strokeFrom": 8
+            },
+            "intervalBullets": 1,
+            "intervalRandomSpread": 0,
+            "intervalAngle": 180,
+            "bulletInterval": 88,
+            "intervalDelay": 50,
+            "intervalBullet": {
+                "type": "BasicBulletType",
+                "damage": 200,
                 "smokeEffect": "none",
                 "despawnEffect": {
                     "type": "WaveEffect",
                     "colorFrom": "c71245",
                     "colorTo": "c71245",
-                    "sizeTo": 80,
-                    "lifetime": 180,
-                    "strokeFrom": 8
+                    "sizeTo": 16,
+                    "lifetime": 60,
+                    "strokeFrom": 3
                 },
-                "hitEffect": {
-                    "type": "WaveEffect",
-                    "colorFrom": "c71245",
-                    "colorTo": "c71245",
-                    "sizeTo": 40,
-                    "lifetime": 90,
-                    "strokeFrom": 8
-                },
-                "intervalBullets": 1,
-                "intervalRandomSpread": 0,
-                "intervalAngle": 180,
-                "bulletInterval": 88,
-                "intervalDelay": 50,
+                "trailWidth": 4,
+                "trailLength": 40,
+                "color": "e69cd3",
+                "backColor": "e69cd3",
+                "frontColor": "e69cd3",
+                "trailColor": "e69cd3",
+                "speed": 0.3,
+                "drag": -0.015,
+                "homingPower": 0.6,
+                "homingDelay": 3,
+                "homingRange": 380,
+                "shrinkY": 0,
+                "shrinkX": 0,
+                "width": 16,
+                "height": 16,
+                "sprite": "circle-bullet",
+                "lifetime": 190,
+                "intervalBullets": 2,
+                "intervalRandomSpread": 360,
+                "intervalAngle": 0,
+                "bulletInterval": 10,
+                "intervalDelay": 0,
+                "status": "irradiated",
+                "statusDuration": 100,
+                "hitSound": "lucer",
                 "intervalBullet": {
-                    "type": "BasicBulletType",
-                    "damage": 200,
-                    "smokeEffect": "none",
-                    "despawnEffect": {
-                        "type": "WaveEffect",
-                        "colorFrom": "c71245",
-                        "colorTo": "c71245",
-                        "sizeTo": 16,
-                        "lifetime": 60,
-                        "strokeFrom": 3
-                    },
-                    "trailWidth": 4,
-                    "trailLength": 40,
-                    "color": "e69cd3",
-                    "backColor": "e69cd3",
-                    "frontColor": "e69cd3",
-                    "trailColor": "e69cd3",
-                    "speed": 0.3,
-                    "drag": -0.015,
-                    "homingPower": 0.6,
-                    "homingDelay": 3,
-                    "homingRange": 380,
-                    "shrinkY": 0,
-                    "shrinkX": 0,
-                    "width": 16,
-                    "height": 16,
-                    "sprite": "circle-bullet",
-                    "lifetime": 190,
-                    "intervalBullets": 2,
-                    "intervalRandomSpread": 360,
-                    "intervalAngle": 0,
-                    "bulletInterval": 10,
-                    "intervalDelay": 0,
-                    "status": "irradiated",
-                    "statusDuration": 100,
-                    "hitSound": "lucer",
-                    "intervalBullet": {
-                        "type": "LightningBulletType",
-                        "lightningColor": "e69cd3",
-                        "damage": 190,
-                        "lightningLength": 10,
-                        "fragVelocityMin": 2,
-                        "fragVelocityMax": 2,
-                        "fragBullets": 2,
-                        "fragSpread": 120,
-                        "fragRandomSpread": 0,
-                        "fragAngle": 0,
-                        "fragBullet": {
-                            "type": "BasicBulletType",
-                            "damage": 75,
-                            "smokeEffect": "none",
-                            "despawnEffect": "none",
-                            "trailWidth": 3,
-                            "trailLength": 3,
-                            "color": "ffffff",
-                            "backColor": "ffffff",
-                            "frontColor": "ffffff",
-                            "trailColor": "ffffff",
-                            "speed": 6,
-                            "homingPower": 1,
-                            "homingDelay": 3,
-                            "homingRange": 380,
-                            "shrinkY": 0,
-                            "shrinkX": 0,
-                            "width": 6,
-                            "height": 6,
-                            "sprite": "circle-bullet",
-                            "lifetime": 9
-                        }
+                    "type": "LightningBulletType",
+                    "lightningColor": "e69cd3",
+                    "damage": 190,
+                    "lightningLength": 10,
+                    "fragVelocityMin": 2,
+                    "fragVelocityMax": 2,
+                    "fragBullets": 2,
+                    "fragSpread": 120,
+                    "fragRandomSpread": 0,
+                    "fragAngle": 0,
+                    "fragBullet": {
+                        "type": "BasicBulletType",
+                        "damage": 75,
+                        "smokeEffect": "none",
+                        "despawnEffect": "none",
+                        "trailWidth": 3,
+                        "trailLength": 3,
+                        "color": "ffffff",
+                        "backColor": "ffffff",
+                        "frontColor": "ffffff",
+                        "trailColor": "ffffff",
+                        "speed": 6,
+                        "homingPower": 1,
+                        "homingDelay": 3,
+                        "homingRange": 380,
+                        "shrinkY": 0,
+                        "shrinkX": 0,
+                        "width": 6,
+                        "height": 6,
+                        "sprite": "circle-bullet",
+                        "lifetime": 9
                     }
                 }
             }
-        },
-        "drawer": {
-            "type": "DrawTurret",
-            "basePrefix": "base",
-            "parts": [
-                {
-                    "type": "RegionPart",
-                    "suffix": "-b",
-                    "progress": "warmup",
-                    "heatProgress": "recoil",
-                    "heatColor": "58a68c",
-                    "mirror": false,
-                    "moveX": 0,
-                    "moveY": 0,
-                    "moveRot": 0
-                },
-                {
-                    "type": "RegionPart",
-                    "suffix": "-sl",
-                    "progress": "recoil",
-                    "heatProgress": "recoil",
-                    "heatColor": "58a68c",
-                    "mirror": false,
-                    "under": false,
-                    "moveX": -4,
-                    "moveY": 4,
-                    "moveRot": 0,
-                    "moves": [
-                        {
-                            "x": 8,
-                            "y": -8,
-                            "rot": 0,
-                            "progress": "recoil"
-                        }
-                    ]
-                },
-                {
-                    "type": "RegionPart",
-                    "suffix": "-sr",
-                    "progress": "recoil",
-                    "heatProgress": "recoil",
-                    "heatColor": "58a68c",
-                    "mirror": false,
-                    "under": false,
-                    "moveX": 4,
-                    "moveY": 4,
-                    "moveRot": 0,
-                    "moves": [
-                        {
-                            "x": -8,
-                            "y": -8,
-                            "rot": 0,
-                            "progress": "recoil"
-                        }
-                    ]
-                },
-                {
-                    "type": "RegionPart",
-                    "suffix": "-wl",
-                    "progress": "recoil",
-                    "heatProgress": "recoil",
-                    "heatColor": "58a68c",
-                    "mirror": false,
-                    "under": false,
-                    "moveX": -6,
-                    "moveY": -6,
-                    "moveRot": 0,
-                    "moves": [
-                        {
-                            "x": -2,
-                            "y": -2,
-                            "rot": 0,
-                            "progress": "recoil"
-                        }
-                    ]
-                },
-                {
-                    "type": "RegionPart",
-                    "suffix": "-wr",
-                    "progress": "recoil",
-                    "heatProgress": "recoil",
-                    "heatColor": "58a68c",
-                    "mirror": false,
-                    "under": false,
-                    "moveX": 6,
-                    "moveY": -6,
-                    "moveRot": 0,
-                    "moves": [
-                        {
-                            "x": 2,
-                            "y": -2,
-                            "rot": 0,
-                            "progress": "recoil"
-                        }
-                    ]
-                },
-            ]
-        },
-        "requirements": [
+        }
+    },
+    "drawer": {
+        "type": "DrawTurret",
+        "basePrefix": "base",
+        "parts": [
             {
-                "item": "hypersteel-item",
-                "amount": 150
+                "type": "RegionPart",
+                "suffix": "-b",
+                "progress": "warmup",
+                "heatProgress": "recoil",
+                "heatColor": "58a68c",
+                "mirror": false,
+                "moveX": 0,
+                "moveY": 0,
+                "moveRot": 0
             },
             {
-                "item": "tungsten",
-                "amount": 180
+                "type": "RegionPart",
+                "suffix": "-sl",
+                "progress": "recoil",
+                "heatProgress": "recoil",
+                "heatColor": "58a68c",
+                "mirror": false,
+                "under": false,
+                "moveX": -4,
+                "moveY": 4,
+                "moveRot": 0,
+                "moves": [
+                    {
+                        "x": 8,
+                        "y": -8,
+                        "rot": 0,
+                        "progress": "recoil"
+                    }
+                ]
             },
             {
-                "item": "cobalt-item",
-                "amount": 840
+                "type": "RegionPart",
+                "suffix": "-sr",
+                "progress": "recoil",
+                "heatProgress": "recoil",
+                "heatColor": "58a68c",
+                "mirror": false,
+                "under": false,
+                "moveX": 4,
+                "moveY": 4,
+                "moveRot": 0,
+                "moves": [
+                    {
+                        "x": -8,
+                        "y": -8,
+                        "rot": 0,
+                        "progress": "recoil"
+                    }
+                ]
             },
             {
-                "item": "fissile-matter",
-                "amount": 100
+                "type": "RegionPart",
+                "suffix": "-wl",
+                "progress": "recoil",
+                "heatProgress": "recoil",
+                "heatColor": "58a68c",
+                "mirror": false,
+                "under": false,
+                "moveX": -6,
+                "moveY": -6,
+                "moveRot": 0,
+                "moves": [
+                    {
+                        "x": -2,
+                        "y": -2,
+                        "rot": 0,
+                        "progress": "recoil"
+                    }
+                ]
             },
             {
-                "item": "photoglass-item",
-                "amount": 540
-            },
-            {
-                "item": "kobra-alloy-item",
-                "amount": 390
+                "type": "RegionPart",
+                "suffix": "-wr",
+                "progress": "recoil",
+                "heatProgress": "recoil",
+                "heatColor": "58a68c",
+                "mirror": false,
+                "under": false,
+                "moveX": 6,
+                "moveY": -6,
+                "moveRot": 0,
+                "moves": [
+                    {
+                        "x": 2,
+                        "y": -2,
+                        "rot": 0,
+                        "progress": "recoil"
+                    }
+                ]
             }
-        ],
-        "category": "turret",
-        "minWarmup": 0.9,
-        "shootWarmupSpeed": 0.004,
-        "shootSound": "roarangel",
-        "loopSound": "twoloop",
-        "research": "ascention",
-        "shake": 7,
-        "researchCostMultiplier": 0.05
-    }
+        ]
+    },
+    "requirements": [
+        {
+            "item": "hypersteel-item",
+            "amount": 150
+        },
+        {
+            "item": "tungsten",
+            "amount": 180
+        },
+        {
+            "item": "cobalt-item",
+            "amount": 840
+        },
+        {
+            "item": "fissile-matter",
+            "amount": 100
+        },
+        {
+            "item": "photoglass-item",
+            "amount": 540
+        },
+        {
+            "item": "kobra-alloy-item",
+            "amount": 390
+        }
+    ],
+    "category": "turret",
+    "minWarmup": 0.9,
+    "shootWarmupSpeed": 0.004,
+    "shootSound": "roarangel",
+    "loopSound": "twoloop",
+    "research": "ascention",
+    "shake": 7,
+    "researchCostMultiplier": 0.05
+}
