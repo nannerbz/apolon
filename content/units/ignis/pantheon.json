@@ -3,7 +3,7 @@ name: Pantheon
 speed: 0.2
 health: 62750
 omniMovement: false
-rotateSpeed: 1.8
+rotateSpeed: 0.8
 armor: 25
 treadPullOffset: 7
 rotateShooting: false
