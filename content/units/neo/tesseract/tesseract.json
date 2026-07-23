@@ -35,7 +35,7 @@ abilities: [
 		amount: 1
 		spread: 1
 	}
-]
+],
 weapons: [
     {
         name: tesseract-sapper
@@ -59,7 +59,7 @@ weapons: [
 			despawnEffect: none
 			width: 0.55
 			lifetime: 45
-			knockback -1
+			knockback: -1
         }
     },
 	{
