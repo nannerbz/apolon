@@ -119,7 +119,7 @@ weapons: [
     },
 	{
         name: pantheon-cannon
-        reload: 400
+        reload: 200
         x: 0
         y: 0
         top: true
@@ -144,7 +144,8 @@ weapons: [
     		type: BasicBulletType
     		trailWidth: 2
     		trailLength: 8
-    		speed: 3
+    		speed: 10
+			drag: 0.08
 			lifetime: 75
     		damage: 256
     		burstSpacing: 4,
