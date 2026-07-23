@@ -1,0 +1,75 @@
+{
+	"type": "GenericCrafter",
+	"name": "Ultrafreeze Liquator",
+	"description": "Melts down rad-snow and cryogel with cryofluid and hydrogen to form one of the best coolants of Akyao, Mellowfluid.",
+	"outputLiquid": {"liquid": "mellowfluid", "amount": 4},
+	"rotate": true
+	"size": 4,
+	"hasPower": true,
+	"hasItems": true,
+	"hasLiquids": true,
+	"craftTime": 30,
+	"craftEffect": {
+		{
+			"type": "RadialEffect",
+			"effect": surgeCruciSmoke
+		},
+	}
+	"consumes": {
+		power: 2
+		"items": {
+			"items": [
+				{ "item": "rad-snow-item", "amount": 3 },
+				{ "item": "cryogel-item", "amount": 1 }
+			]
+                }
+		"liquids": {
+			"liquids": [
+				{ "liquid": "cryofluid", "amount": 2 },
+				{ "liquid": "hydrogen", "amount": 1 }
+			]
+		}
+	},
+	"requirements": [
+		{ "item": "metaglass", "amount": 80 }
+		{ "item": "cobalt-item", "amount": 60 }
+		{ "item": "neodymium-item", "amount": 80 }
+		{ "item": "kobra-alloy-item", "amount": 40 }
+		{ "item": "tungsten", "amount": 80 }
+	],
+	"category": "crafting",
+	"research": "nitric-liquator",
+	"ambientSound": "loopSmelter",
+	"ambientSoundVolume": 0.5
+	"researchCostMultiplier": 0.05
+	drawer: {
+	    type: DrawMulti
+	    drawers : [
+	            	{
+	            	  type : DrawRegion
+	            	  suffix : "-bottom"
+	            	},
+	            	{
+	            	  type : DrawLiquidRegion
+	            	  suffix : "-liqInput"
+			  		  drawLiquid : "cryofluid"
+	            	},
+	            	{
+	            	  type : DrawLiquidRegion
+	            	  suffix : "-liqResult"
+			  		  drawLiquid : "cryofluid"
+	            	},
+					{
+	            	  type : DrawLiquidRegion
+	            	  suffix : "-liqResult"
+			  		  drawLiquid : "mellowfluid"
+	            	},
+		           	{
+	            	  type : DrawArcSmelt
+	            	},
+		           	{
+	            	  type : DrawDefault
+	            	},
+			]
+		}
+}

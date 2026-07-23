@@ -64,7 +64,7 @@ weapons: [
     		trailLength: 25
     		speed: 0.6
 			lifetime: 96
-		    damage: 96
+		    damage: 124
 		    width: 14
 		    height: 14
 		    drag: -0.03
@@ -102,7 +102,7 @@ weapons: [
     		trailLength: 25
     		speed: 0.6
 			lifetime: 96
-		    damage: 64
+		    damage: 72
 		    width: 10
 		    height: 10
 		    drag: -0.03
@@ -174,7 +174,7 @@ weapons: [
 			    drag: -0.03
 			    shootEffect: shootBig2
 			    smokeEffect: shootSmokeTitan
-			    splashDamage: 24
+			    splashDamage: 48
 			    splashDamageRadius: 64
 			    hitSound: none
 			    weaveMag: 6
