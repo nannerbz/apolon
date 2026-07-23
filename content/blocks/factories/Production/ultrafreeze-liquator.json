@@ -3,7 +3,6 @@
 	"name": "Ultrafreeze Liquator",
 	"description": "Melts down rad-snow and cryogel with cryofluid and hydrogen to form one of the best coolants of Akyao, Mellowfluid.",
 	"outputLiquid": {"liquid": "mellowfluid", "amount": 2},
-	"rotate": true
 	"size": 4,
 	"hasPower": true,
 	"hasItems": true,
@@ -13,7 +12,7 @@
 			"type": "RadialEffect",
 			"effect": "surgeCruciSmoke",
 			"rotationSpacing": 90,
-			"lengthOffset": 10,
+			"lengthOffset": 13,
 			"rotationOffset": 45
 	}
 	"consumes": {
