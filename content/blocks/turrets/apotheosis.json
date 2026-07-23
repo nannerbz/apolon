@@ -1,7 +1,7 @@
 {
     "type": "ItemTurret",
     "name": "Apotheosis",
-    "description": "The most powerful divine form of destruction in Akyao. Capable of wrecking entire continents with its nuclear powered blasts.",
+    "description": "The most powerful divine form of destruction in Akyao. Capable of wrecking entire continents with its nuclear powered blasts. It's not reccomended to use Technetium as ammunition!'",
     "targetAir": true,
     "targetGround": true,
     "hasPower": true,
@@ -19,8 +19,8 @@
         "liquids": {
             "liquids": [
                 {
-                    "liquid": "cryofluid",
-                    "amount": 2.6
+                    "liquid": "mellowfluid",
+                    "amount": 0.6
                 }
             ]
         }
@@ -29,20 +29,21 @@
         "rotateSpeed": 1,
         "range": 380,
         "ammoTypes": {
-            "fissile-matter": {
+            "technetium-item": {
                 "ammoMultiplier": 1,
+                "reloadMultiplier": 3,
                 "type": "BasicBulletType",
                 "pierce": true,
                 "pierceCap": 300,
                 "lightOpacity": 0.6,
                 "lightColor": "58a68c",
                 "lightRadius": 40,
-                "status": "intense-radiation",
+                "status": "irradiated",
                 "statusDuration": 400,
-                "color": "275861",
-                "backColor": "275861",
-                "frontColor": "275861",
-                "trailColor": "275861",
+                "color": "c71245",
+                "backColor": "c71245",
+                "frontColor": "c71245",
+                "trailColor": "c71245",
                 "trailWidth": 8,
                 "trailLength": 256,
                 "speed": 0.5,
@@ -62,10 +63,10 @@
                         "type": "BulletType",
                         "hitSound": "lucer",
                         "lightOpacity": 0.6,
-                        "lightColor": "7eccbc",
+                        "lightColor": "e69cd3",
                         "lightRadius": 40,
                         "collidesAir": false,
-                        "status": "intense-radiation",
+                        "status": "irradiated",
                         "statusDuration": 400,
                         "pierce": true,
                         "pierceCap": 300,
@@ -113,18 +114,18 @@
                             "smokeEffect": "none",
                             "despawnEffect": {
                                 "type": "WaveEffect",
-                                "colorFrom": "275861",
-                                "colorTo": "275861",
+                                "colorFrom": "c71245",
+                                "colorTo": "c71245",
                                 "sizeTo": 16,
                                 "lifetime": 60,
                                 "strokeFrom": 3
                             },
                             "trailWidth": 4,
                             "trailLength": 40,
-                            "color": "7eccbc",
-                            "backColor": "7eccbc",
-                            "frontColor": "7eccbc",
-                            "trailColor": "7eccbc",
+                            "color": "e69cd3",
+                            "backColor": "e69cd3",
+                            "frontColor": "e69cd3",
+                            "trailColor": "e69cd3",
                             "speed": 0.5,
                             "homingPower": 0.8,
                             "homingDelay": 3,
@@ -140,13 +141,13 @@
                             "intervalAngle": 0,
                             "bulletInterval": 10,
                             "intervalDelay": 0,
-                            "status": "intense-radiation",
+                            "status": "irradiated",
                             "statusDuration": 100,
                             "hitSound": "lucer",
                             "intervalBullet": {
                                 "type": "LightningBulletType",
-                                "lightningColor": "7eccbc",
-                                "status": "intense-radiation",
+                                "lightningColor": "e69cd3",
+                                "status": "irradiated",
                                 "statusDuration": 100,
                                 "damage": 20,
                                 "lightningLength": 10,
@@ -155,8 +156,8 @@
                         },
                         "despawnEffect": {
                             "type": "WaveEffect",
-                            "colorFrom": "275861",
-                            "colorTo": "275861",
+                            "colorFrom": "c71245",
+                            "colorTo": "c71245",
                             "sizeTo": 60,
                             "lifetime": 180,
                             "strokeFrom": 8
@@ -164,8 +165,8 @@
                         "smokeEffect": "none",
                         "hitEffect": {
                             "type": "WaveEffect",
-                            "colorFrom": "275861",
-                            "colorTo": "275861",
+                            "colorFrom": "c71245",
+                            "colorTo": "c71245",
                             "sizeTo": 30,
                             "lifetime": 90,
                             "strokeFrom": 8
@@ -191,20 +192,20 @@
                             "smokeEffect": "none",
                             "despawnEffect": {
                                 "type": "WaveEffect",
-                                "colorFrom": "275861",
-                                "colorTo": "275861",
+                                "colorFrom": "c71245",
+                                "colorTo": "c71245",
                                 "sizeTo": 16,
                                 "lifetime": 60,
                                 "strokeFrom": 3
                             },
                             "trailWidth": 4,
                             "trailLength": 40,
-                            "color": "7eccbc",
-                            "backColor": "7eccbc",
-                            "frontColor": "7eccbc",
-                            "trailColor": "7eccbc",
+                            "color": "e69cd3",
+                            "backColor": "e69cd3",
+                            "frontColor": "e69cd3",
+                            "trailColor": "e69cd3",
                             "speed": 0.2,
-                            "status": "intense-radiation",
+                            "status": "irradiated",
                             "statusDuration": 100,
                             "shrinkY": 0,
                             "shrinkX": 0,
@@ -224,11 +225,43 @@
                                 "damage": 60,
                                 "length": 20,
                                 "width": 9,
-                                "toColor": "7eccbc",
+                                "toColor": "e69cd3"
                             }
                         }
+                    },
+                    {
+                        "type": "BulletType",
+                        "createChance": 0.3,
+                        "collidesTeam": true,
+                        "speed": 1,
+                        "splashDamage": 15000,
+                        "splashDamageRadius": 32,
+                        "fragBullet": {
+                            "type": "FireBulletType",
+                            "radius": 8,
+                            "incendChance": 1,
+                            "incendSpread": 64,
+                            "incendAmount": 16
+                        },
+                        "despawnEffect": {
+                            "type": "ExplosionEffect",
+                            "waveColor": "544736",
+                            "sparkColor": "cf926a",
+                            "waveLife": 45,
+                            "waveStroke": 8,
+                            "waveRad": 48,
+                            "sparkStroke": 3,
+                            "sparkRad": 64,
+                            "sparkLen": 16,
+                            "smokeSize": 4,
+                            "smokeSizeBase": 10,
+                            "smokeRad": 20,
+                            "smokes": 18,
+                            "sparks": 15
+                        },
+                        "lifetime": 1,
+                        "killShooter": true
                     }
-
                 ],
                 "trailInterval": 6,
                 "trailEffect": {
@@ -238,15 +271,15 @@
                     "region": "ring-item",
                     "particles": 6,
                     "lightColor": "ffffff",
-                    "colorFrom": "275861",
-                    "colorTo": "7eccbc",
+                    "colorFrom": "c71245",
+                    "colorTo": "e69cd3",
                     "sizeFrom": 6,
                     "sizeTo": 2
                 },
                 "shootEffect": {
                     "type": "WaveEffect",
-                    "colorFrom": "275861",
-                    "colorTo": "7eccbc",
+                    "colorFrom": "c71245",
+                    "colorTo": "e69cd3",
                     "sizeTo": 80,
                     "lifetime": 180,
                     "strokeFrom": 8
@@ -254,16 +287,16 @@
                 "smokeEffect": "none",
                 "despawnEffect": {
                     "type": "WaveEffect",
-                    "colorFrom": "275861",
-                    "colorTo": "275861",
+                    "colorFrom": "c71245",
+                    "colorTo": "c71245",
                     "sizeTo": 80,
                     "lifetime": 180,
                     "strokeFrom": 8
                 },
                 "hitEffect": {
                     "type": "WaveEffect",
-                    "colorFrom": "275861",
-                    "colorTo": "275861",
+                    "colorFrom": "c71245",
+                    "colorTo": "c71245",
                     "sizeTo": 40,
                     "lifetime": 90,
                     "strokeFrom": 8
@@ -279,18 +312,18 @@
                     "smokeEffect": "none",
                     "despawnEffect": {
                         "type": "WaveEffect",
-                        "colorFrom": "275861",
-                        "colorTo": "275861",
+                        "colorFrom": "c71245",
+                        "colorTo": "c71245",
                         "sizeTo": 16,
                         "lifetime": 60,
                         "strokeFrom": 3
                     },
                     "trailWidth": 4,
                     "trailLength": 40,
-                    "color": "7eccbc",
-                    "backColor": "7eccbc",
-                    "frontColor": "7eccbc",
-                    "trailColor": "7eccbc",
+                    "color": "e69cd3",
+                    "backColor": "e69cd3",
+                    "frontColor": "e69cd3",
+                    "trailColor": "e69cd3",
                     "speed": 0.3,
                     "drag": -0.015,
                     "homingPower": 0.6,
@@ -307,12 +340,12 @@
                     "intervalAngle": 0,
                     "bulletInterval": 10,
                     "intervalDelay": 0,
-                    "status": "intense-radiation",
+                    "status": "irradiated",
                     "statusDuration": 100,
                     "hitSound": "lucer",
                     "intervalBullet": {
                         "type": "LightningBulletType",
-                        "lightningColor": "7eccbc",
+                        "lightningColor": "e69cd3",
                         "damage": 190,
                         "lightningLength": 10,
                         "fragVelocityMin": 2,
@@ -325,7 +358,7 @@
                             "type": "BasicBulletType",
                             "damage": 75,
                             "smokeEffect": "none",
-                            "despawnEffect": "none"
+                            "despawnEffect": "none",
                             "trailWidth": 3,
                             "trailLength": 3,
                             "color": "ffffff",
@@ -343,8 +376,8 @@
                             "sprite": "circle-bullet",
                             "lifetime": 9
                         }
-                        }
                     }
+                }
             }
         },
         "drawer": {
