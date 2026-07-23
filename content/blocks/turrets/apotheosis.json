@@ -246,26 +246,11 @@
                             "incendSpread": 80,
                             "incendAmount": 20
                         },
-                        "hitEffect": {
+                        "shootEffect": {
                             "type": "ExplosionEffect",
-                            "waveColor": "544736",
-                            "sparkColor": "cf926a",
-                            "waveLife": 45,
-                            "waveStroke": 8,
-                            "waveRad": 48,
-                            "sparkStroke": 3,
-                            "sparkRad": 64,
-                            "sparkLen": 16,
-                            "smokeSize": 4,
-                            "smokeSizeBase": 10,
-                            "smokeRad": 20,
-                            "smokes": 18,
-                            "sparks": 15
-                        },
-                        "despawnEffect": {
-                            "type": "ExplosionEffect",
-                            "waveColor": "544736",
-                            "sparkColor": "cf926a",
+                            "waveColor": "c71245",
+                            "sparkColor": "e69cd3",
+                            "smokeColor": "d45984",
                             "waveLife": 45,
                             "waveStroke": 8,
                             "waveRad": 48,
