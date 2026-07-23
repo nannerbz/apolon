@@ -134,7 +134,7 @@ weapons: [
 	innacuracy: 0
 	rotate: true
 	rotateSpeed: 0.6
-	layerOffset: 0.002
+	layerOffset: 0.005
         mirror: false
 	shootY: 16
 	  recoil: 2
@@ -191,7 +191,7 @@ weapons: [
 			intervalRandomSpread: 0
 			intervalBullets: 2
 			intervalAngle: 0
-			IntervalSpread: 180
+			IntervalSpread: 90
 		}
 		parts: [
 			{
@@ -218,6 +218,7 @@ weapons: [
       					mirror : true
       					under : true
 						outline: true
+						layerOffset: -0.001
       					moveX : 0
 						moveY : -2
       					moveRot : 0
@@ -231,10 +232,11 @@ weapons: [
       							mirror : true
       							under : true
 								outline: true
+								layerOffset: -0.002
 								x: 0
 								y: 15
       							moveX : 0
-								moveY : 3
+								moveY : 5
       							moveRot : -45
 								moves: [
 									{
@@ -258,8 +260,8 @@ weapons: [
       			mirror : true
       			under : true
 				outline: true
-				x: 0
-				y: -25
+				x: -3
+				y: -22
       			moveX : 0
 				moveY : 0
       			moveRot : -90
