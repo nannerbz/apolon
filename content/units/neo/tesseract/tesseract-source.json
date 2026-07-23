@@ -1,7 +1,7 @@
 type: tank
 name: Tesseract Source
 speed: 0
-health: 20000
+health: 10000
 omniMovement: false
 rotateSpeed: 0
 armor: 5
@@ -22,14 +22,14 @@ abilities: [
 weapons: [
     {
         name: tesseract-w
-        reload: 1200
+        reload: 9999
         x: 0
         y: 0
         top: true
         shots: 1
         spacing: 3
 	innacuracy: 10
-	rotate: true
+	rotate: false
         mirror: false
 	  recoil: 1
 	  shootSound: none
@@ -39,10 +39,29 @@ weapons: [
 	  }
         bullet: {
 			type: ExplosionBulletType
-			splashDamage: 5000
+			splashDamage: 10000
 			splashDamageRadius: 256
 			ammoMultiplier: 1
 			killShooter: true
+			shootEffect: {
+				type: explosionEffect
+				waveLife: 250
+				waveRad: 256
+				smokes: 10
+			},
         }
+	parts: [
+		{
+      		type : ShapePart
+			hollow: true
+			sides: 5
+			radius: 0
+			radiusTo: 256
+			stroke: 1
+			strokeTo: 6
+			moveRot: 99999
+			color: 37727d
+    		},
+	]
     }
 ]
