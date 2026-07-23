@@ -1,0 +1,30 @@
+{
+	template: MissileUnitType
+	name: Tesseract Missile
+	hitSize: 16
+	maxRange: 12
+	rotateSpeed: 5
+	trailLength: 32
+	missileAccelTime: 16
+	lowAltitude: true
+	loopSound: loopMissileTrail
+	loopSoundVolume: 0.2
+	deathSound: largeExplosion
+	targetAir: true
+	targetGround: true
+	speed: 4
+	lifetime: 100
+	health: 1250
+	abilities: [
+		{
+			type: MoveLightningAbility
+			damage: 25
+			chance: 0.3
+			length: 16
+			minSpeed: 0.5
+			maxSpeed: 3
+			color: 7ec0cc
+			alternate: false	
+		}
+	]
+}

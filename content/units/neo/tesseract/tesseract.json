@@ -1,0 +1,267 @@
+type: legs
+name: Tesseract
+speed: 0.3
+health: 42575
+armor: 32
+drag: 0.2
+rotateSpeed: 2
+rotateShoot: true
+shootSound: shootScathe
+legCount: 6
+hovering: true
+allowLegStep: true
+legStraightness: 3
+legContinuousMove: true
+legLength: 48
+lockLegBase: true
+stepShake: 1.3
+legExtension: -3
+legMaxLength: 1.7
+legMinLength: 0.5
+rippleScale: 0.7
+legLengthScl : 1.06
+legForwardScl : 0.8
+legMoveSpace: 1.7
+legGroupSize: 2
+legSplashDamage: 128
+legSplashRange: 32
+outlineColor: 222222
+range: 400
+hitSize: 56
+abilities: [
+	{
+		type: SpawnDeathAbility
+		unit: tesseract-source
+		amount: 1
+		spread: 1
+	}
+],
+weapons: [
+    {
+        name: tesseract-sapper
+	layerOffset: 1
+        reload: 30
+        x: 24
+        y: -4
+        top: true
+        shots: 2
+        spacing: 3
+        mirror: true
+	  recoil: 1
+	  shootSound: shootSap
+        bullet: {
+    		type: SapBulletType
+			sapStrength: 0.65
+			length: 150
+			damage: 50
+			shootEffect: shootSmall
+			hitColor: 7ec0cc
+			despawnEffect: none
+			width: 0.55
+			lifetime: 45
+			knockback: -1
+        }
+    },
+	{
+        name: tesseract-sapper
+		layerOffset: 1
+        reload: 33
+        x: 24
+        y: -16
+        top: true
+        shots: 2
+        spacing: 3
+        mirror: true
+	    recoil: 1
+	    shootSound: shootSap
+        bullet: {
+    		type: SapBulletType
+			sapStrength: 0.7
+			length: 150
+			damage: 60
+			shootEffect: shootSmall
+			hitColor: 7ec0cc
+			despawnEffect: none
+			width: 0.55
+			lifetime: 45
+			knockback: -1
+        }
+    },
+	{
+        name: tesseract-sapper
+	layerOffset: 1
+        reload: 37
+        x: 12
+        y: -24
+        top: true
+        shots: 2
+        spacing: 3
+        mirror: true
+	  recoil: 1
+	  shootSound: shootSap
+        bullet: {
+    		type: SapBulletType
+			sapStrength: 0.7
+			length: 150
+			damage: 70
+			shootEffect: shootSmall
+			hitColor: 7ec0cc
+			despawnEffect: none
+			width: 0.6
+			lifetime: 45
+			knockback: -1
+        }
+    },
+	{
+        name: tesseract-missilelauncher
+	layerOffset: 1
+	minWarmup: 0.98
+	warmupMaintainTime: 20
+	shootWarmupSpeed: 0.06
+        reload: 180
+        x: 12
+        y: -6
+        top: true
+        shots: 2
+        spacing: 3
+        mirror: true
+	  recoil: 1
+	  shootSound: shootSalvo
+        ejectEffect: casing1
+	  rotateSpeed: 1.5
+	  rotate: true
+        bullet: {
+    		type: BasicBulletType
+    		shootEffect: shootBig
+    		smokeEffect: shootSmokeTitan
+    		ammoMultiplier: 1
+    		spawnUnit: solaris-missile
+        }
+	parts: [
+		{
+      		type : RegionPart
+      		suffix : "-plate"
+      		progress : warmup
+      		heatProgress : recoil
+      		heatColor : "ffffff"
+      		mirror : true
+      		under : true
+      		moveX : 2
+		moveY : -3
+      		moveRot : -15
+		outline: true
+    		},
+		{
+      		type : RegionPart
+      		suffix : "-plate"
+      		progress : recoil
+      		heatProgress : recoil
+      		heatColor : "ffffff"
+      		mirror : true
+      		under : false
+      		moveX : 4
+		moveY : -2
+      		moveRot : -35
+		top: true
+		outline: true
+    		},
+	]
+    },
+	{
+        name: tesseract-blaster
+	layerOffset: -1
+	minWarmup: 0.9
+	warmupMaintainTime: 20
+	shootWarmupSpeed: 0.05
+        reload: 60
+        x: 24
+        y: 8
+        top: true
+        shots: 2
+        spacing: 3
+        mirror: true
+		under: true
+	  recoil: 2
+	  shootSound: shootCleroi
+        ejectEffect: casing1
+	  rotationLimit: 30
+	  rotateSpeed: 1
+	  rotate: true
+        bullet: {
+            "type": "MissileBulletType",
+            "trailWidth": 3,
+            "trailLength": 25,
+            "speed": 4,
+            "lifetime": 36.25,
+            "damage": 185,
+            "width": 10,
+            "height": 10,
+            "shootEffect": "shootBig2",
+            "smokeEffect": "shootSmokeTitan",
+            "splashDamage": 20,
+            "splashDamageRadius": 16,
+            "despawnEffect": {
+                "type": "WaveEffect",
+                "colorFrom": "7ec0cc",
+                "colorTo": "37727d",
+                "sizeTo": 30,
+                "lifetime": 20,
+                "strokeFrom": 2
+            },
+            "frontColor": "7ec0cc",
+            "hitSound": "none",
+            "lightColor": "7ec0cc",
+            "trailColor": "599ca8",
+            "backColor": "37727d",
+            "weaveMag": 5,
+            "weaveScale": 4,
+            "trailChance": -1,
+            "despawnSound": "dullExplosion",
+	    "pierce": true
+	    "pierceBuilding": true
+	    "pierceCap": 5
+            "despawnEffect": "none",
+        }
+    },
+	{
+        name: tesseract-shotgun
+        reload: 90
+        x: 8
+        y: 24
+        top: true
+	xRand: 0
+        spacing: 3
+		layerOffset: -1
+		under: true
+	innacuracy: 0
+	rotate: true
+	rotateSpeed: 1
+	rotationLimit: 15
+	shoot: {
+		type: ShootSpread
+		shots: 5
+		spread: 7
+	}
+	shootCone: 45
+	shootY: 10
+        mirror: true
+	  recoil: 1
+	  shootSound: shootDiffuse
+        ejectEffect: none
+        bullet: {
+            type: LaserBulletType
+			recoil: 1
+			hitSize: 4
+			lifetime: 12
+			drawSize: 85
+			collidesAir: true
+            damage: 115
+			length: 85
+			toColor: 37727d
+			pierce: true
+			pierceCap: 3
+			pierceBuilding: true
+        }
+    }
+]
+	research: solaris
