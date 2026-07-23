@@ -29,7 +29,8 @@ weapons: [
         shots: 1
         spacing: 3
 	innacuracy: 10
-	rotate: false
+		rotate: false
+			shootWarmupSpeed: 0.01
         mirror: false
 	  recoil: 1
 	  shootSound: none
@@ -40,7 +41,7 @@ weapons: [
         bullet: {
 			type: ExplosionBulletType
 			splashDamage: 10000
-			splashDamageRadius: 256
+			splashDamageRadius: 512
 			ammoMultiplier: 1
 			killShooter: true
 			shootEffect: {
@@ -54,13 +55,13 @@ weapons: [
 		{
       		type : ShapePart
 			hollow: true
-			sides: 5
+			sides: 12
 			radius: 0
-			radiusTo: 256
+			radiusTo: 512
 			stroke: 1
 			strokeTo: 6
 			moveRot: 99999
-			color: 37727d
+			color: 7ec0cc
     		},
 	]
     }
