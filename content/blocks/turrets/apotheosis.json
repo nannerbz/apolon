@@ -16,34 +16,36 @@
     "shootY": 0,
     "destroyBullet": {
         "type": "ArtilleryBulletType",
-        "speed": 1
+        "speed": 1,
         "lifetime": 1,
-        "damage": 15000
-        "splashDamage": 15000
-        "splashDamageRadius": 96
-        "fragBullets": 4
+        "damage": 15000,
+        "splashDamage": 15000,
+        "splashDamageRadius": 96,
+        "despawnHit": true
+        "hitEffect": {
+            "type": "ExplosionEffect",
+            "waveColor": "275861",
+            "sparkColor": "7eccbc",
+            "smokeColor": "3d3e47",
+            "waveLife": 120,
+            "waveStroke": 16,
+            "waveRad": 96,
+            "sparkStroke": 3,
+            "sparkRad": 120,
+            "sparkLen": 16,
+            "smokeSize": 8,
+            "smokeSizeBase": 16,
+            "smokeRad": 40,
+            "smokes": 18,
+            "sparks": 30
+        },
+        "fragBullets": 4,
         "fragBullet": {
             "type": "FireBulletType",
             "incendChance": 1,
             "incendSpread": 80,
             "incendAmount": 60
         }
-    }
-    "destroyEffect": {
-        "type": "ExplosionEffect",
-        "waveColor": "275861",
-        "sparkColor": "7eccbc",
-        "waveLife": 120,
-        "waveStroke": 16,
-        "waveRad": 96,
-        "sparkStroke": 3,
-        "sparkRad": 120,
-        "sparkLen": 16,
-        "smokeSize": 8,
-        "smokeSizeBase": 16,
-        "smokeRad": 40,
-        "smokes": 18,
-        "sparks": 30
     },
     "consumes": {
         "power": 18,
