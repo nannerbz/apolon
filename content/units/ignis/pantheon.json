@@ -134,6 +134,7 @@ weapons: [
 	innacuracy: 0
 	rotate: true
 	rotateSpeed: 0.6
+	layerOffset: 0.002
         mirror: false
 	shootY: 16
 	  recoil: 2
@@ -189,8 +190,8 @@ weapons: [
 			bulletInterval: 8
 			intervalRandomSpread: 0
 			intervalBullets: 2
-			intervalAngle: 90
-			IntervalSpread: 0
+			intervalAngle: 0
+			IntervalSpread: 180
 		}
 		parts: [
 			{
