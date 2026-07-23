@@ -22,7 +22,7 @@ abilities: [
 weapons: [
 
     {
-        name: tesseract-w
+        name: tesseract-effects
         reload: 9999
         x: 0
         y: 0
@@ -31,14 +31,10 @@ weapons: [
         spacing: 3
 	innacuracy: 10
 		rotate: false
-			shootWarmupSpeed: 0.006
         mirror: false
 	  recoil: 1
-	  shootSound: none
+		shootSound: "beepboomcountdown",
 	  alwaysShooting: true
-	  shoot: {
-		firstShotDelay: 1200
-	  }
         bullet: {
 				"type": "BulletType",
 				"shootEffect": {
@@ -88,7 +84,6 @@ weapons: [
 				"speed": 0,
 				"smokeEffect": "none",
 				"despawnEffect": "none",
-				"shootSound": "beepboomcountdown",
 				"hitEffect": "none",
 				"collidesAir": false,
 				"collidesGround": false,

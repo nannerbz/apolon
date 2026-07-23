@@ -12,10 +12,10 @@ hovering: true
 allowLegStep: true
 legStraightness: 3
 legContinuousMove: true
-legLength: 48
+legLength: 72
 lockLegBase: true
 stepShake: 1.3
-legExtension: 0
+legExtension: -4
 legMaxLength: 2.6
 legMinLength: 1.1
 rippleScale: 0.7
