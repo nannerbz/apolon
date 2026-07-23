@@ -10,10 +10,8 @@
 	"hasLiquids": true,
 	"craftTime": 30,
 	"craftEffect": {
-		{
 			"type": "RadialEffect",
-			"effect": surgeCruciSmoke
-		},
+			"effect": "surgeCruciSmoke"
 	}
 	"consumes": {
 		power: 2
