@@ -145,7 +145,7 @@ weapons: [
     		trailWidth: 2
     		trailLength: 8
     		speed: 10
-			drag: 0.0
+			drag: 0.03
 			lifetime: 75
     		damage: 256
     		burstSpacing: 4,
