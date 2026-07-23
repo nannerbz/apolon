@@ -24,7 +24,23 @@
             "damage": 1000,
             "collidesAir": true,
             "lightningLength": 8,
-            "lightningLengthRand": 12
+            "lightningLengthRand": 12,
+            "hitEffect": {
+                "type": "ExplosionEffect",
+                "waveColor": "58a68c",
+                "sparkColor": "7eccbc",
+                "waveLife": 30,
+                "waveStroke": 5,
+                "waveRad": 12,
+                "sparkStroke": 3,
+                "sparkRad": 16,
+                "sparkLen": 6,
+                "smokeSize": 0,
+                "smokeSizeBase": 0,
+                "smokeRad": 0,
+                "smokes": 0,
+                "sparks": 4
+            }
         },
         "bulletInterval": 1,
         "intervalRandomSpread": 360,
@@ -57,7 +73,7 @@
                 },
                 {
                     "type": "ParticleEffect",
-                    "length": 12,
+                    "length": 72,
                     "lifetime": 180,
                     "region": "circle-bullet",
                     "particles": 60,
@@ -73,9 +89,9 @@
                     "colorTo": "58a68c",
                     "sizeTo": 96,
                     "sizeFrom": 0,
-                    "lifetime": 20,
-                    "strokeFrom": 6,
-                    "strokeTo": 5
+                    "lifetime": 16,
+                    "strokeFrom": 7,
+                    "strokeTo": 0
                 }
             ]
         },
