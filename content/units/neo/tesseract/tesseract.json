@@ -66,7 +66,7 @@ weapons: [
         name: tesseract-sapper
 		layerOffset: 1
         reload: 33
-        x: 24
+        x: 20
         y: -16
         top: true
         shots: 2
@@ -92,7 +92,7 @@ weapons: [
 	layerOffset: 1
         reload: 37
         x: 12
-        y: -24
+        y: -20
         top: true
         shots: 2
         spacing: 3
@@ -118,9 +118,9 @@ weapons: [
 	minWarmup: 0.98
 	warmupMaintainTime: 20
 	shootWarmupSpeed: 0.06
-        reload: 180
+        reload: 60
         x: 12
-        y: -6
+        y: -2
         top: true
         shots: 2
         spacing: 3
@@ -134,8 +134,8 @@ weapons: [
     		type: BasicBulletType
     		shootEffect: shootBig
     		smokeEffect: shootSmokeTitan
-    		ammoMultiplier: 1
-    		spawnUnit: solaris-missile
+			shootSound: shootSalvo
+    		spawnUnit: tesseract-missile
         }
 	parts: [
 		{
@@ -173,14 +173,13 @@ weapons: [
 	minWarmup: 0.9
 	warmupMaintainTime: 20
 	shootWarmupSpeed: 0.05
-        reload: 60
-        x: 24
-        y: 8
+        reload: 30
+        x: 26
+        y: 12
         top: true
         shots: 2
         spacing: 3
         mirror: true
-		under: true
 	  recoil: 2
 	  shootSound: shootCleroi
         ejectEffect: casing1
@@ -226,13 +225,12 @@ weapons: [
 	{
         name: tesseract-shotgun
         reload: 90
-        x: 8
+        x: 14
         y: 24
         top: true
 	xRand: 0
         spacing: 3
 		layerOffset: -1
-		under: true
 	innacuracy: 0
 	rotate: true
 	rotateSpeed: 1
@@ -250,7 +248,6 @@ weapons: [
         ejectEffect: none
         bullet: {
             type: LaserBulletType
-			recoil: 1
 			hitSize: 4
 			lifetime: 12
 			drawSize: 85
@@ -262,6 +259,22 @@ weapons: [
 			pierceCap: 3
 			pierceBuilding: true
         }
+	parts: [
+		{
+      		type : RegionPart
+      		suffix : "-plate"
+      		progress : recoil
+      		heatProgress : recoil
+      		heatColor : "ffffff"
+      		mirror : true
+      		under : false
+			layerOffset: -0.001
+      		moveX : 4
+			moveY : -2
+      		moveRot : 35
+			outline: true
+    		},
+	]
     }
 ]
 	research: solaris
