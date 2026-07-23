@@ -17,27 +17,67 @@
     "destroyBullet": {
         "type": "ArtilleryBulletType",
         "speed": 1,
-        "lifetime": 1,
+        "lifetime": 6,
+        "intervalBullet": {
+            "type": "lightningBulletType",
+            "lightningColor": "7eccbc",
+            "damage": 1000,
+            "collidesAir": true,
+            "lightningLength": 8,
+            "lightningLengthRand": 12
+        },
+        "bulletInterval": 1,
+        "intervalRandomSpread": 360,
+        "intervalBullets": 4,
         "damage": 15000,
+        "hitShake": 20
         "splashDamage": 15000,
         "splashDamageRadius": 96,
         "despawnHit": true,
+        "hitSound": "explosionReactor",
         "hitEffect": {
-            "type": "ExplosionEffect",
-            "waveColor": "275861",
-            "sparkColor": "7eccbc",
-            "smokeColor": "3d3e47",
-            "waveLife": 120,
-            "waveStroke": 16,
-            "waveRad": 96,
-            "sparkStroke": 3,
-            "sparkRad": 120,
-            "sparkLen": 16,
-            "smokeSize": 8,
-            "smokeSizeBase": 16,
-            "smokeRad": 40,
-            "smokes": 18,
-            "sparks": 30
+            "type": "MultiEffect",
+            "effects": [
+                {
+                    "type": "ExplosionEffect",
+                    "waveColor": "275861",
+                    "sparkColor": "7eccbc",
+                    "smokeColor": "3d3e47",
+                    "waveLife": 120,
+                    "waveStroke": 16,
+                    "waveRad": 96,
+                    "sparkStroke": 3,
+                    "sparkRad": 120,
+                    "sparkLen": 16,
+                    "smokeSize": 8,
+                    "smokeSizeBase": 16,
+                    "smokeRad": 40,
+                    "smokes": 18,
+                    "sparks": 30
+                },
+                {
+                    "type": "ParticleEffect",
+                    "length": 12,
+                    "lifetime": 180,
+                    "region": "circle-shadow",
+                    "particles": 60,
+                    "lightColor": "7eccbc",
+                    "colorFrom": "7eccbc",
+                    "colorTo": "275861",
+                    "sizeFrom": 16,
+                    "sizeTo": 4
+                },
+                {
+                    "type": "WaveEffect",
+                    "colorFrom": "275861",
+                    "colorTo": "d45984",
+                    "sizeTo": 96,
+                    "sizeFrom": 0,
+                    "lifetime": 40,
+                    "strokeFrom": 6,
+                    "strokeTo": 5
+                }
+            ]
         },
         "fragBullets": 4,
         "fragBullet": {
