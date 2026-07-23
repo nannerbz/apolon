@@ -1,0 +1,270 @@
+type: tank
+name: Pantheon
+speed: 0.2
+health: 62750
+omniMovement: false
+rotateSpeed: 1.8
+armor: 25
+treadPullOffset: 7
+rotateShooting: false
+shootSound: lasershoot
+hitSize: 28
+range: 225
+itemCapacity: 0
+crushDamage: 3.4
+buildSpeed: 2.4
+outlineColor: 222222
+treadRects: [
+    {
+        x: 75,
+        y: 9,
+        width: 10,
+        height: 91
+    },
+	{
+        x: -85,
+        y: 9,
+        width: 10,
+        height: 91
+	},
+    {
+        x: 75,
+        y: -99,
+        width: 10,
+        height: 58
+    },
+    {
+        x: -85,
+        y: -99,
+        width: 10,
+        height: 58
+    }
+]
+weapons: [
+    {
+        name: pantheon-blaster
+        reload: 27
+        x: 10
+        y: 25
+        top: true
+	xRand: 0
+        spacing: 3
+	innacuracy: 25
+	rotate: true
+	rotateSpeed: 1.2
+	shootCone: 10
+	shootY: 2
+        mirror: true
+	  recoil: 1
+	  shootSound: shootSalvo
+        ejectEffect: none
+        bullet: {
+    		type: MissileBulletType
+    		trailWidth: 3
+    		trailLength: 25
+    		speed: 0.5
+			lifetime: 96
+		    damage: 96
+		    width: 14
+		    height: 14
+		    drag: -0.04
+		    shootEffect: shootBig2
+		    smokeEffect: shootSmokeTitan
+		    hitSound: none
+		    weaveMag: 6
+		    weaveScale: 4
+		    trailChance: -1
+		    despawnSound: dullExplosion
+		    despawnEffect: none
+ 		   knockback: 0
+        }
+    },
+	{
+        name: pantheon-blaster
+        reload: 20
+        x: 15
+        y: -25
+        top: true
+	xRand: 0
+        spacing: 3
+	innacuracy: 25
+	rotate: true
+	rotateSpeed: 1.2
+	shootCone: 10
+	shootY: 2
+        mirror: true
+	  recoil: 1
+	  shootSound: shootMalign
+        ejectEffect: none
+        bullet: {
+    		type: MissileBulletType
+    		trailWidth: 3
+    		trailLength: 25
+    		speed: 0.5
+			lifetime: 96
+		    damage: 64
+		    width: 10
+		    height: 10
+		    drag: -0.04
+		    shootEffect: shootBig2
+		    smokeEffect: shootSmokeTitan
+		    hitSound: none
+		    weaveMag: 6
+		    weaveScale: 4
+		    trailChance: -1
+		    despawnSound: dullExplosion
+		    despawnEffect: none
+ 		   knockback: 0
+        }
+    },
+	{
+        name: pantheon-cannon
+        reload: 400
+        x: 0
+        y: 0
+        top: true
+        shoot: {
+			type: shootHelix
+			scl: 3
+			mag: 1.75
+		}
+	minWarmup: 0.96
+	shootWarmupSpeed: 0.02
+        spacing: 3
+	innacuracy: 0
+	rotate: true
+        mirror: false
+	shootY: 16
+	  recoil: 2
+	  shootSound: Minipulse
+        ejectEffect: none
+        bullet: {
+    		type: BasicBulletType
+    		trailWidth: 2
+    		trailLength: 8
+    		speed: 3
+			lifetime: 75
+    		damage: 256
+    		burstSpacing: 4,
+    		width: 25
+    		height: 35
+    		shootEffect: shootSmall
+    		smokeEffect: shootSmallSmoke
+			hitEffect: hitLancer
+    		ammoMultiplier: 1
+			pierce: true
+			pierceCap: 5
+			pierceBuilding: true
+			knockback: 0
+			collidesGround: false
+			sprite: large-orb
+			shrinkY: 0
+			intervalBullet: {
+    			type: MissileBulletType
+    			trailWidth: 3
+    			trailLength: 25
+    			speed: 0.5
+				lifetime: 96
+			    damage: 256
+			    width: 10
+			    height: 10
+			    drag: -0.04
+			    shootEffect: shootBig2
+			    smokeEffect: shootSmokeTitan
+			    splashDamage: 96
+			    splashDamageRadius: 64
+			    hitSound: none
+			    weaveMag: 6
+			    weaveScale: 4
+			    trailChance: -1
+			    despawnSound: dullExplosion
+			    despawnEffect: none
+ 			    knockback: 0
+				homingPower: 0.06
+				homingRange: 300
+				homingCone: 360
+				homingDelay: 30
+    		}
+			bulletInterval: 8
+			intervalRandomSpread: 0
+			intervalBullets: 2
+			intervalAngle: 180
+			IntervalSpread: 85
+		}
+		parts: [
+			{
+    	  		type : RegionPart
+    	  		suffix : "-cannon-mid"
+    	  		progress : recoil
+    	  		heatProgress : recoil
+    	  		heatColor : "ffffff"
+    	  		mirror : true
+    	  		under : true
+				x: 0
+				y: 0
+    	  		moveX : 0
+				moveY : -2
+    	  		moveRot : 0
+				children: [
+    				{
+      					type : RegionPart
+      					suffix : "-cannon-barrel"
+      					progress : recoil
+      					heatProgress : recoil
+      					heatColor : "ffffff"
+      					mirror : true
+      					under : true
+      					moveX : 0
+						moveY : -2
+      					moveRot : 0
+						children: [
+    						{
+      							type : RegionPart
+      							suffix : "-cannon-barrel-plate"
+      							progress : recoil
+      							heatProgress : recoil
+      							heatColor : "ffffff"
+      							mirror : true
+      							under : true
+      							moveX : 0
+								moveY : 3
+      							moveRot : -45
+								moves: [
+									{
+										x: 6
+										y: 0
+										rot: 0
+										progress: warmup
+									}
+								]
+    						},
+						]
+    				},
+				]
+    		},
+			{
+      			type : RegionPart
+      			suffix : "-cannon-spike"
+      			progress : warmup
+      			heatProgress : recoil
+      			heatColor : "ffffff"
+      			mirror : true
+      			under : true
+				x: 5
+				y: -15
+      			moveX : 0
+				moveY : 0
+      			moveRot : -90
+    		},
+		]
+    }
+]
+	  "research": {
+		parent: vanguard
+		objectives: [
+			{
+				type: "SectorComplete"
+				preset: clue
+			}
+		]
+	}
