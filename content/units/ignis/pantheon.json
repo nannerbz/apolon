@@ -1,6 +1,6 @@
 type: tank
 name: Pantheon
-speed: 0.2
+speed: 0.45
 health: 62750
 omniMovement: false
 rotateSpeed: 0.8
@@ -171,7 +171,7 @@ weapons: [
 			    damage: 128
 			    width: 10
 			    height: 10
-			    drag: -0.04
+			    drag: -0.03
 			    shootEffect: shootBig2
 			    smokeEffect: shootSmokeTitan
 			    splashDamage: 24

@@ -1,6 +1,6 @@
 type: tank
 name: Centurion
-speed: 0.4
+speed: 0.65
 health: 6450
 omniMovement: false
 rotateSpeed: 2
@@ -14,6 +14,16 @@ itemCapacity: 0
 crushDamage: 1.6
 buildSpeed: 1.3
 outlineColor: 222222
+abilities: [
+	{
+		type: ForceFieldAbility
+		radius: 120
+		regen: 0.03
+		max: 300
+		cooldown: 600
+		sides: 6
+	}
+]
 treadRects: [
 	{
 		type: rect
@@ -33,7 +43,7 @@ treadRects: [
 weapons: [
     {
         name: centurion-w
-        reload: 4
+        reload: 90
         x: 0
         y: 0
         top: true
@@ -42,19 +52,24 @@ weapons: [
 	innacuracy: 0
 	rotate: true
 	rotateSpeed: 1.2
+	shoot: {
+		type: ShootSpread
+		shots: 8
+		spread: 4
+	}
 	shootCone: 45
-	shootY: 2
+	shootY: 10
         mirror: false
 	  recoil: 1
-	  shootSound: shootSalvo
+	  shootSound: shootDiffuse
         ejectEffect: none
         bullet: {
 		type: BasicBulletType
-		damage: 20
+		damage: 95
 		speed: 4
 		width: 8
 		length: 16
-		lifetime: 43.75
+		lifetime: 36.25
 		trailColor: ffffff
 		trailLength: 10
 		trailWidth: 4

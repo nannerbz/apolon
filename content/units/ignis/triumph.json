@@ -1,6 +1,6 @@
 type: tank
 name: Triumph
-speed: 0.3
+speed: 0.55
 health: 19550
 omniMovement: false
 rotateSpeed: 1

@@ -1,6 +1,6 @@
 type: tank
 name: Ignis
-speed: 0.6
+speed: 0.75
 health: 955
 omniMovement: false
 rotateSpeed: 3
