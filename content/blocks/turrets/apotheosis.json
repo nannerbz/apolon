@@ -598,7 +598,7 @@
                         "damage": 8000,
                         "hitShake": 30,
                         "splashDamage": 8000,
-                        "splashDamageRadius":192,
+                        "splashDamageRadius": 192,
                         "despawnHit": true,
                         "hitSound": "explosionReactor",
                         "hitEffect": {
@@ -645,6 +645,7 @@
                                 }
                             ]
                         }
+                    }
                 ]
             }
         }
