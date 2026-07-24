@@ -444,8 +444,12 @@
         },
         "fissile-matter": {
             "type": "BasicBulletType",
+            "shootSound": "synthangel",
+            "despawnSound": "roarangel",
             "speed": 0.2,
             "lifetime": 720,
+            "shrinkX": 0.1,
+            "shrinkY": 0.1,
             "damage": 0,
             "weaveMag": 4,
             "weaveScale": 4,
@@ -469,7 +473,7 @@
                         "speed": 0.001,
                         "lifetime": 420,
                         "damage": 0,
-                        "rotateSpeed": 4,
+                        "rotateSpeed": 1,
                         "intervalDelay": 120,
                         "intervalBullets": 2,
                         "intervalSpread": 180,
@@ -566,6 +570,7 @@
                                     }
                                 ],
                                 "type": "ContinuousLaserBulletType",
+                                "shake": 6
                                 "continuous": true,
                                 "keepVelocity": false,
                                 "speed": 0,
