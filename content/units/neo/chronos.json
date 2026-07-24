@@ -24,6 +24,7 @@ legForwardScl : 0.7
 legMoveSpace: 1.4
 legGroupSize: 2
 outlineColor: 222222
+shadowElevation: 0.3
 range: 145
 hitSize: 32
 abilities: [

@@ -13,6 +13,7 @@ outlineColor: 222222
 armor: 1
 buildSpeed: 0.2
 boostMultiplier: 1.5
+shadowElevation: 0.1
 canBoost: true
 range: 95
 parts: [

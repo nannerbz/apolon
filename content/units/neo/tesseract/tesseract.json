@@ -10,7 +10,7 @@ shootSound: shootScathe
 legCount: 6
 hovering: true
 allowLegStep: true
-legStraightness: 3
+legStraightness: 0.3
 legContinuousMove: true
 legLength: 96
 lockLegBase: true
@@ -21,11 +21,12 @@ legMinLength: 1.1
 rippleScale: 1.2
 legLengthScl : 0.7
 legForwardScl : 0.8
-legMoveSpace: 1.2
+legMoveSpace: 1.8
 legGroupSize: 2
 legSplashDamage: 128
 legSplashRange: 32
 outlineColor: 222222
+shadowElevation: 0.5
 range: 400
 hitSize: 56
 abilities: [

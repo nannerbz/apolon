@@ -10,6 +10,7 @@ health: 855
 hitSize: 14
 itemCapacity: 35
 outlineColor: 222222
+shadowElevation: 0.05
 armour: 1
 range: 256
 parts: [

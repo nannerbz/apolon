@@ -12,6 +12,7 @@ targetGround: true,
 hitSize: 56
 itemCapacity: 0
 outlineColor: 222222
+shadowElevation: 0.3
 armor: 35
 range: 750
 parts: [
