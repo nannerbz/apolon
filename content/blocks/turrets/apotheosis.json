@@ -7,7 +7,6 @@
     "hasPower": true,
     "health": 14550,
     "size": 5,
-    "inaccuracy": 30,
     "reload": 1160,
     "outlineColor": 222222,
     "xRand": 0,
@@ -121,6 +120,7 @@
     "ammoTypes": {
         "technetium-item": {
             "ammoMultiplier": 1,
+            "inaccuracy": 30,
             "reloadMultiplier": 3,
             "type": "BasicBulletType",
             "pierce": true,
@@ -444,16 +444,16 @@
         },
         "fissile-matter": {
             "type": "BasicBulletType",
-            "speed": 0.5,
+            "speed": 0.2,
             "lifetime": 720,
             "damage": 0,
-            "weaveMag": 1,
-            "weaveScale": 1,
-            "width": 40,
-            "height": 40,
-            "backColor": "d45984",
-            "frontColor": "e69cd3",
-            "trailColor": "c71245",
+            "weaveMag": 4,
+            "weaveScale": 4,
+            "width": 20,
+            "height": 20,
+            "backColor": "275861",
+            "frontColor": "7eccbc",
+            "trailColor": "275861",
             "collidesAir": false,
             "collidesGround": false,
             "sprite": "large-orb",
@@ -466,18 +466,16 @@
                         "type": "BulletType",
                         "collidesAir": false,
                         "collidesGround": false,
-                        "speed": 0,
+                        "speed": 0.001,
                         "lifetime": 420,
                         "damage": 0,
                         "rotateSpeed": 4,
                         "intervalDelay": 120,
                         "intervalBullets": 2,
-                        "intervalRandomSpread": 5,
-                        "intervalSpread": 180
-                        "bulletInterval": 2
+                        "intervalSpread": 180,
+                        "bulletInterval": 2,
                         "intervalBullet": {
                             "Type": "ArtilleryBulletType",
-                            "keepVelocity": false,
                             "hitEffect": {
                                 "type": "ExplosionEffect",
                                 "waveColor": "275861",
@@ -590,7 +588,7 @@
                                 "pierceCap": 999
                             }
                         }
-                    }
+                    },
                     {
                         "type": "ArtilleryBulletType",
                         "speed": 0,
