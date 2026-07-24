@@ -21,6 +21,7 @@ legForwardScl : 2.1
 legBaseOffset: 3.5
 legMoveSpace: 1.1
 legGroupSize: 3
+shadowElevation: 0.1
 outlineColor: 222222
 hitSize: 12
 range: 45

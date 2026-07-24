@@ -12,6 +12,7 @@ targetGround: true,
 hitSize: 26
 itemCapacity: 60
 outlineColor: 222222
+shadowElevation: 0.15
 armor: 7
 range: 220
 	abilities: [

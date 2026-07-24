@@ -20,6 +20,7 @@ legLengthScl : 0.9
 legForwardScl : 0.8
 legMoveSpace: 1
 legGroupSize: 3
+shadowElevation: 0.2
 range: 75
 outlineColor: 222222
 hitSize: 20

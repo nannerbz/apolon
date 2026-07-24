@@ -29,7 +29,7 @@ weapons: [
         top: true
         shots: 1
         spacing: 3
-	innacuracy: 10
+	innacuracy: 0
 		rotate: false
         mirror: false
 	  recoil: 1
@@ -49,7 +49,7 @@ weapons: [
 							"startDelay": 0,
 							"sizeTo": 0,
 							"sizeFrom": 512,
-							"lifetime": 1500,
+							"lifetime": 1400,
 							"strokeFrom": 0,
 							"strokeTo": 16
 						},
@@ -62,7 +62,7 @@ weapons: [
 							"startDelay": 600,
 							"sizeTo": 0,
 							"sizeFrom": 512,
-							"lifetime": 900,
+							"lifetime": 800,
 							"strokeFrom": 0,
 							"strokeTo": 16
 						},
@@ -75,7 +75,7 @@ weapons: [
 							"startDelay": 900,
 							"sizeTo": 0,
 							"sizeFrom": 512,
-							"lifetime": 600,
+							"lifetime": 500,
 							"strokeFrom": 0,
 							"strokeTo": 16
 						},
@@ -106,7 +106,7 @@ weapons: [
 	  shootSound: "roarangel",
 	  alwaysShooting: true
 	  shoot: {
-		firstShotDelay: 1500
+		firstShotDelay: 1400
 	  }
         bullet: {
 			type: ExplosionBulletType
@@ -114,7 +114,6 @@ weapons: [
 			splashDamageRadius: 512
 			ammoMultiplier: 1
 			killShooter: true
-			shootEffect: {
 				"shootEffect": {
 					"type": MultiEffect
 					"effects": [
@@ -173,7 +172,6 @@ weapons: [
 					]
 				},
 			},
-        }
 	parts: [
 		{
       		type : ShapePart
