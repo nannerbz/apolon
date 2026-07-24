@@ -445,7 +445,7 @@
         "fissile-matter": {
             "type": "BasicBulletType",
             "shootSound": "synthangel",
-            "despawnSound": "roarangel",
+            "despawnSound": "spadoomer",
             "speed": 0.2,
             "lifetime": 720,
             "shrinkX": 0.1,
@@ -570,7 +570,7 @@
                                     }
                                 ],
                                 "type": "ContinuousLaserBulletType",
-                                "shake": 6
+                                "shake": 6,
                                 "continuous": true,
                                 "keepVelocity": false,
                                 "speed": 0,
@@ -648,6 +648,15 @@
                                 }
                             ]
                         }
+                    }
+                    {
+                        "type": "BulletType",
+                        "collidesAir": false,
+                        "collidesGround": false,
+                        "speed": 0,
+                        "lifetime": 120,
+                        "damage": 0,
+                        "despawnSound": "deathburn"
                     }
                 ]
             }
