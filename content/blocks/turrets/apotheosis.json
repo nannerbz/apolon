@@ -442,7 +442,7 @@
                 }
             }
         },
-        "fissile-matter-item": {
+        "fissile-matter": {
             "type": "BasicBulletType",
             "speed": 0.5,
             "lifetime": 720,
@@ -523,7 +523,7 @@
                             "pierceArmor": true,
                             "splashDamage": 350,
                             "splashDamageRadius": 22,
-                            "status": "burning",
+                            "status": "intense-radiation",
                             "statusDuration": 400,
                             "trailInterval": 0.01,
                             "trailEffect": {
@@ -577,7 +577,7 @@
                                 "smokeEffect": "none",
                                 "hitEffect": "none",
                                 "damage": 2,
-                                "status": "burning",
+                                "status": "intense-radiation",
                                 "statusDuration": 400,
                                 "lifetime": 2,
                                 "fadeTime": 1,
