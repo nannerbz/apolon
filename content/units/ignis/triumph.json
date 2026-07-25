@@ -98,7 +98,7 @@ weapons: [
 		"type": BuildWeapon
 		"mirror": true
 		"rotate": false
-		"x": 7
+		"x": 10
 		"y": 14
 		"layerOffset": -0.001
     }

@@ -81,6 +81,7 @@ weapons: [
 		"mirror": false
 		"rotate": false
 		"y": 9
+		"x": 0
 		"layerOffset": -0.001
     }
 ]
