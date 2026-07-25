@@ -1,0 +1,21 @@
+type: ShieldWall
+name: Large Kinetic Wall
+health: 2400
+category: defense
+size: 2
+hasPower: true
+consumesPower: true
+conductivePower: true
+outputsPower: false
+shieldHealth: 2400
+breakCooldown: 1200
+regenSpeed: 2
+"consumes": {
+	power:0.8
+},
+requirements: [
+	photoglass-item/24
+	cryogel-item/24
+]
+research: kinetic-wall
+researchCostMultiplier: 0.05

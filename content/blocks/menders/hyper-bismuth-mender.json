@@ -1,18 +1,19 @@
 {
   "name": "Hyper Bismuth Mender",
-  "description": "Heals nearby blocks slowly, but has singificantly higher range that allows for mass healing. Requires cryofluid to function, and can be boosted with photoglass.",
+  "description": "Heals nearby blocks slowly, but has singificantly higher range that allows for mass healing. Requires cryofluid to function, and can be boosted with cryogel.",
   "type": "RegenProjector",
   "health": 1650,
   "size": 3,
-  "range": 60,
-  "healPercent": 0.4,
+  "range": 75,
+  "healPercent": 0.2,
+  "optionalMultiplier": 2.5
   "consumes": {
     "power": 1.4,
     "items": {
       "items": [
         {
           "amount": 1,
-          "item": "photoglass-item"
+          "item": "cryogel-item"
         }
       ],
       "optional": true,
