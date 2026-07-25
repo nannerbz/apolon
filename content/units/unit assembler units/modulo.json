@@ -18,7 +18,7 @@ speed: 1.2
 accel: 0.1
 drag: 0.04
 health: 120
-hitSize: 16
+hitSize: 12
 itemCapacity: 0
 outlineColor: 222222
 range: 65
