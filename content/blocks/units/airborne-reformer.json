@@ -39,7 +39,7 @@ plans: [
 	{
 		type: AssemblerUnitPlan
 		unit: desmos
-		time: 3250
+		time: 3750
         	requirements: [
 			apolon-pion/3
 			apolon-large-neodymium-wall/2

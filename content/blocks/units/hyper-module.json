@@ -1,0 +1,23 @@
+{
+	type: UnitAssemblerModule
+	name: Hyper Module
+	description: Can be put adjacent to the build area of a reformer with the reformer module to change it to instead upgrade from tier 3 into tier 5 units. Can accept payload to allow for additional payload acces points.
+	category: units
+	size: 7
+	consumes: {
+		power: 2
+	}
+	tier: 2
+	requirements: [
+		bismuth-item/800
+		hypersteel-item/250
+		neodymium-item/500
+		chromium-item/500
+		carbide/450
+		kobra-alloy-item/350
+		tungsten/250
+		photoglass-item/300
+	]
+	researchCostMultiplier: 0.6
+	research: reformer-module
+}

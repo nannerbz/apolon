@@ -31,7 +31,7 @@ plans: [
 	{
 		type: AssemblerUnitPlan
 		unit: logos
-		time: 2950
+		time: 3150
         	requirements: [
 			apolon-quo/2
 			apolon-vacuum/3
@@ -41,12 +41,25 @@ plans: [
 	{
 		type: AssemblerUnitPlan
 		unit: sophia
-		time: 3450
+		time: 4750
         	requirements: [
 			apolon-quo/1
 			apolon-dota/3
 			apolon-chip/2
 			apolon-large-chromium-wall/4
+		]
+	},
+	{
+		type: AssemblerUnitPlan
+		unit: apeiron
+		time: 9500
+        	requirements: [
+			apolon-quo/5
+			apolon-dota/3
+			apolon-logos/1
+			apolon-vaccuum/3
+			apolon-lapse/3
+			apolon-large-chromium-wall/8
 		]
 	},
 ]

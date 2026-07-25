@@ -34,7 +34,7 @@ plans: [
 		time: 2750
         	requirements: [
 			apolon-ignis/2
-			apolon-chisel/2
+			apolon-chip/2
 			apolon-kobra-wall/2
 		]
 	},
@@ -47,6 +47,19 @@ plans: [
 			apolon-large-neodymium-wall/3
 			apolon-kobra-wall/3
 			apolon-chisel/4
+		]
+	},
+	{
+		type: AssemblerUnitPlan
+		unit: triumph
+		time: 3650
+        	requirements: [
+			apolon-vanguard/2
+			apolon-ignis/4
+			apolon-large-neodymium-wall/5
+			apolon-kobra-wall/4
+			apolon-chisel/4
+			apolon-blast/2
 		]
 	},
 ]

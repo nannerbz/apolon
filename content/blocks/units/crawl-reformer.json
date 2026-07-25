@@ -39,11 +39,23 @@ plans: [
 	{
 		type: AssemblerUnitPlan
 		unit: solaris
-		time: 2850
+		time: 3750
         	requirements: [
 			apolon-sigma/3
 			apolon-large-cobalt-wall/4
 			apolon-chip/3
+		]
+	},
+	{
+		type: AssemblerUnitPlan
+		unit: tesseract
+		time: 7550
+        	requirements: [
+			apolon-sigma/2
+			apolon-neo/8
+			apolon-large-cobalt-wall/6
+			apolon-chip/3
+			apolon-chisel/3
 		]
 	},
 ]
