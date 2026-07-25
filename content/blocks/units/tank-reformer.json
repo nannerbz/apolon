@@ -51,7 +51,7 @@ plans: [
 	},
 	{
 		type: AssemblerUnitPlan
-		unit: triumph
+		unit: pantheon
 		time: 3650
         	requirements: [
 			apolon-vanguard/2
