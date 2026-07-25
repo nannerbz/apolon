@@ -1,15 +1,13 @@
 {
   "name": "Advanced Bismuth Mender",
   "description": "Heals nearby blocks quickly. Can be boosted with photoglass.",
-  "type": "MendProjector",
+  "type": "RegenProjector",
   "health": 600,
   "size": 2,
-  "range": 60,
-  "healPercent": 24,
-  "phaseBoost": 8
-  "phaseRangeBoost": 40
+  "range": 16,
+  "healPercent": 0.05,
   "consumes": {
-    "power": 0.35,
+    "power": 0.4,
     "items": {
       "items": [
         {
