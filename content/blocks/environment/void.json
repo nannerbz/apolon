@@ -1,5 +1,6 @@
 {
-	"type": "EmptyTile",
-	"name": "Void",
-	"solid": false,
+	"type": "Floor",
+	"drownTime": 0,
+	"isLiquid": true,
+	"obstructsLight": true,
 }
