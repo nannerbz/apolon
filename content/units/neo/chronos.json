@@ -15,15 +15,17 @@ legContinuousMove: true
 legLength: 30
 lockLegBase: true
 stepShake: 1.1
+legBaseOffset: 4
 legExtension: -2
 legMaxLength: 1.6
 legMinLength: 0.4
 rippleScale: 0.6
-legLengthScl : 0.98
+legLengthScl : 1.1
 legForwardScl : 0.7
 legMoveSpace: 1.4
 legGroupSize: 2
 outlineColor: 222222
+legSpeed: 0.7
 shadowElevation: 0.3
 range: 145
 hitSize: 32
