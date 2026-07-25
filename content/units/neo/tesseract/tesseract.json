@@ -17,10 +17,10 @@ lockLegBase: true
 legBaseOffset: 18
 stepShake: 1.9
 legExtension: -20
-legMaxLength: 1.1
+legMaxLength: 1.4
 legMinLength: 0.6
 rippleScale: 1.2
-legLengthScl : 0.7
+legLengthScl : 0.96
 legForwardScl : 0.8
 legMoveSpace: 1.6
 legGroupSize: 2
