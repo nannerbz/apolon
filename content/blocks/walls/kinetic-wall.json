@@ -1,0 +1,21 @@
+type: ShieldWall
+name: Kinetic Wall
+health: 600
+category: defense
+size: 1
+hasPower: true
+consumesPower: true
+conductivePower: true
+outputsPower: false
+shieldHealth: 600
+breakCooldown: 300
+regenSpeed: 0.5
+"consumes": {
+	power:0.2
+},
+requirements: [
+	photoglass-item/6
+	cryogel-item/6
+]
+research: chromium-wall
+researchCostMultiplier: 0.05
