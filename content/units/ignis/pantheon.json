@@ -14,6 +14,7 @@ itemCapacity: 0
 crushDamage: 3.4
 buildSpeed: 2.4
 outlineColor: 222222
+drawBuildBeam: false
 treadRects: [
     {
         x: 75,
@@ -307,6 +308,22 @@ weapons: [
       			moveRot : -60
     		},
 		]
+    },
+	{
+		"type": BuildWeapon
+		"mirror": true
+		"rotate": false
+		"x": 7
+		"y": 17
+		"layerOffset": -0.001
+    },
+	{
+		"type": BuildWeapon
+		"mirror": true
+		"rotate": false
+		"x": 11
+		"y": 19
+		"layerOffset": -0.001
     }
 ]
 	  "research": {

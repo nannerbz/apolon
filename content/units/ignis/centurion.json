@@ -14,6 +14,7 @@ itemCapacity: 0
 crushDamage: 1.6
 buildSpeed: 1.3
 outlineColor: 222222
+drawBuildBeam: false
 abilities: [
 	{
 		type: ForceFieldAbility
@@ -74,6 +75,13 @@ weapons: [
 		shootEffect: shootSmall
 		smokeEffect: shootSmallSmoke
         }
+    },
+	{
+		"type": BuildWeapon
+		"mirror": false
+		"rotate": false
+		"y": 9
+		"layerOffset": -0.001
     }
 ]
 	  "research": {

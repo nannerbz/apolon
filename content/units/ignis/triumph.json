@@ -14,6 +14,7 @@ itemCapacity: 0
 buildSpeed: 1.4
 crushDamage: 3.4
 outlineColor: 222222
+drawBuildBeam: false
 treadRects: [
 	{
 		type: rect
@@ -92,6 +93,14 @@ weapons: [
       		moveRot : 90
     		},
 	]
+    },
+	{
+		"type": BuildWeapon
+		"mirror": true
+		"rotate": false
+		"x": 7
+		"y": 14
+		"layerOffset": -0.001
     }
 ]
 	research: centurion
