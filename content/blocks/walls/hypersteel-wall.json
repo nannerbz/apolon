@@ -5,7 +5,7 @@
     "targetAir": true,
     "targetGround": true,
     "health": 1600,
-    "size": 2,
+    "size": 1,
     "outlineColor": 222222,
     "inaccuracy": 0,
     "reload": 30,
@@ -13,7 +13,7 @@
     "shootCone": 360,
     "rotate": false,
     "rotateSpeed": 0,
-    "shootY": 8,
+    "shootY": 0,
     "range": 70,
     "recoil": 0,
     "hasPower": true,
@@ -32,29 +32,25 @@
         "smokeEffect": "none",
 	    "status": "irradiated",
 	    "statusDuration": 60,
+        "hitEffect": none,
 	    "pierce": true,
 	    "pierceCap": 999
         "shootEffect": {
-				type: MultiEffect
-				effects: [
-				{
    					layer: 200
-        			length: 32
+        			length: 8
         			lifetime: 120
        				cone: 360
         			particles: 1
-					spin: 4
+					spin: -12
           			interp: pow2Out
        				sizeInterp: pow2Out 
        				region: apolon-swirl
 					randLength: true
-       			  	sizeFrom: 2
+       			  	sizeFrom: 5
        				sizeTo: 0
 					followParent: false,
     			   	colorFrom: 8a7ed9
   					colorTo: 4b3799
-       			},
-			]
         }
     },
 	shoot: {
@@ -70,6 +66,7 @@
     ],
     "drawer": {
 		"type": "DrawMulti",
+        "basePrefix": "hypersteelWall",
 		"drawers": [
 			{
 				"type": "DrawPulseShape",
