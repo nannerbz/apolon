@@ -25,7 +25,7 @@ legMoveSpace: 1.7
 legGroupSize: 2
 legSplashDamage: 75
 legSplashRange: 15
-legSpeed: 0.6
+legSpeed: 1.2
 outlineColor: 222222
 shadowElevation: 0.4
 range: 300

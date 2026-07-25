@@ -65,8 +65,8 @@
         },
     ],
     "drawer": {
-		"type": "DrawMulti",
-        "basePrefix": "hypersteelwall",
+		"type": "DrawTurret",
+        "basePrefix": "hyper",
 		"drawers": [
 			{
 				"type": "DrawPulseShape",

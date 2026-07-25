@@ -23,7 +23,7 @@ rippleScale: 1.2
 legLengthScl : 0.7
 legForwardScl : 0.8
 legMoveSpace: 1.4
-legGroupSize: 2
+legGroupSize: 3
 legSplashDamage: 128
 legSplashRange: 32
 legSpeed: 0.4
