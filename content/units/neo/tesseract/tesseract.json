@@ -21,9 +21,9 @@ legMaxLength: 1.1
 legMinLength: 0.6
 rippleScale: 1.2
 legLengthScl : 0.7
-legForwardScl : 0.8
-legMoveSpace: 1.4
-legGroupSize: 3
+legForwardScl : 0.6
+legMoveSpace: 0.8
+legGroupSize: 2
 legSplashDamage: 128
 legSplashRange: 32
 legSpeed: 0.4

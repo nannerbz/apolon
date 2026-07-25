@@ -12,7 +12,8 @@ legStraightness: 0.4
 legContinuousMove: true
 legLength: 8
 lockLegBase: true
-legExtension: -1.5
+legExtension: -2.5
+legBaseOffset: 1
 legMaxLength: 0.9
 legMinLength: 0.3
 rippleScale: 0.3
