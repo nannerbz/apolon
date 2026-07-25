@@ -52,7 +52,7 @@ plans: [
 	{
 		type: AssemblerUnitPlan
 		unit: pantheon
-		time: 3650
+		time: 6250
         	requirements: [
 			apolon-vanguard/2
 			apolon-ignis/4
