@@ -34,7 +34,7 @@ plans: [
 		time: 2750
         	requirements: [
 			apolon-ignis/2
-			apolon-chip/2
+			apolon-chisel/2
 			apolon-kobra-wall/2
 		]
 	},
