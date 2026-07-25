@@ -1,0 +1,91 @@
+{
+    "type": "PowerTurret",
+    "name": "Large Hypersteel Wall",
+    "description": "Pulses a damaging aura around itself quickly while enemies are nearby.",
+    "targetAir": true,
+    "targetGround": true,
+    "health": 1600,
+    "size": 2,
+    "outlineColor": 222222,
+    "inaccuracy": 0,
+    "reload": 30,
+    "xRand": 0,
+    "shootCone": 360,
+    "rotate": false,
+    "rotateSpeed": 0,
+    "shootY": 8,
+    "range": 70,
+    "recoil": 0,
+    "hasPower": true,
+    "consumesPower": true,
+    "conductivePower": true,
+    "outputsPower": false,
+    "consumes": {
+        "power": 1.6
+    },
+    "shootType": {
+        "Type": "BulletType",
+	    "speed": 5,
+	    "lifetime": 14
+        "damage": 48
+        "despawnEffect": "none",
+        "smokeEffect": "none",
+	    "status": "irradiated",
+	    "statusDuration": 60,
+	    "pierce": true,
+	    "pierceCap": 999
+        "shootEffect": {
+				type: MultiEffect
+				effects: [
+				{
+   					layer: 200
+        			length: 32
+        			lifetime: 120
+       				cone: 360
+        			particles: 1
+					spin: 4
+          			interp: pow2Out
+       				sizeInterp: pow2Out 
+       				region: apolon-swirl
+					randLength: true
+       			  	sizeFrom: 2
+       				sizeTo: 0
+					followParent: false,
+    			   	colorFrom: 8a7ed9
+  					colorTo: 4b3799
+       			},
+			]
+        }
+    },
+	shoot: {
+		type: ShootSpread
+		shots: 36
+		spread: 10
+	}
+    "requirements": [
+        {
+            "item": "hypersteel-item",
+            "amount": 8
+        },
+    ],
+    "drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			{
+				"type": "DrawPulseShape",
+				"color": "8a7ed9",
+				"square": true,
+				"stroke": 2,
+				"minStroke": 0
+			}
+		]
+	},
+    "category": "defense",
+    "fogRadiusMultiplier": 0,
+    "shootSound": "none",
+    "research": {
+        "parent": "kinetic-wall"
+    },
+    "shake": 0,
+    "researchCostMultiplier": 0.05
+}

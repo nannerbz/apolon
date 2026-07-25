@@ -9,7 +9,7 @@ conductivePower: true
 outputsPower: false
 shieldHealth: 2400
 breakCooldown: 1200
-regenSpeed: 2
+regenSpeed: 0.5
 "consumes": {
 	power:0.8
 },
