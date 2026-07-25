@@ -33,7 +33,7 @@
 		"damage": 10,
 		"hitColor": "d65e74"
 		"buildingDamageMultiplier": 0.05
-		"status": prolapsed,
+		"status": slown,
 		"statusDuration": 120,
 	},
 	"category": "turret",
