@@ -1,7 +1,7 @@
 {
   "name": "Barrier Projector",
   "description": "Makes a large shield to help block enemy projectiles. Can be boosted with cryogel, and cooled.",
-  "type": "ShieldProjector",
+  "type": "ForceProjector",
   "health": 7500,
   "size": 3,
   "radius": 120,
