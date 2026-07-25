@@ -27,7 +27,7 @@
         "Type": "BulletType",
 	    "speed": 5,
 	    "lifetime": 14
-        "damage": 48
+        "damage": 16
         "despawnEffect": "none",
         "smokeEffect": "none",
 	    "status": "irradiated",
@@ -37,7 +37,7 @@
 	    "pierceCap": 999
         "shootEffect": {
    					layer: 200
-        			length: 8
+        			length: 16
         			lifetime: 120
        				cone: 360
         			particles: 1
@@ -66,7 +66,7 @@
     ],
     "drawer": {
 		"type": "DrawMulti",
-        "basePrefix": "hypersteelWall",
+        "basePrefix": "hypersteelwall",
 		"drawers": [
 			{
 				"type": "DrawPulseShape",
