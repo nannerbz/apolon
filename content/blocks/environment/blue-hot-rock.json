@@ -1,0 +1,11 @@
+type: Floor
+name: Bluehot rock
+parent: basalt
+blendGroup: basalt
+variants: 3
+emitLight: true
+lightRadius: 50,
+lightColor: 7ec0cc
+attributes: {
+	heat: 1
+}

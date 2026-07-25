@@ -1,0 +1,11 @@
+type: Floor
+name: Bluehot magma
+parent: basalt
+blendGroup: basalt
+variants: 3
+emitLight: true
+lightRadius: 75,
+lightColor: 9ddce7
+attributes: {
+	heat: 1.25
+}
