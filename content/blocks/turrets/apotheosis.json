@@ -768,11 +768,11 @@
       			mirror : true
       			under : true
                 rotation: 90
-                x: 4
-                y: 3
-      			moveX : -8
+                x: 0
+                y: 0
+      			moveX : 8
 			    moveY : -4
-      			moveRot : -45
+      			moveRot : -65
 			    children: [
                 {
       		    	type : RegionPart
