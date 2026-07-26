@@ -782,7 +782,7 @@
       		    	heatProgress : warmup
                     heatLight : true
       		    	heatColor : "ffffff"
-                    rotation: 65
+                    rotation: 35
                     x: -5
                     y: 7
       		    	mirror : false
@@ -790,7 +790,7 @@
                     drawRegion: false
       		    	moveX : -2
 			        moveY : 0
-      		    	moveRot : -65
+      		    	moveRot : -35
 			    },
                 {
       		       	type : RegionPart
@@ -801,13 +801,13 @@
       		    	heatColor : "ffffff"
                     rotation: 65
                     x: -7
-                    y: 7
+                    y: 6
       		        mirror : false
       			    under : true
                     drawRegion: false
       	    	    moveX : -1
 		            moveY : 2
-  		    	    moveRot : -65
+  		    	    moveRot : -60
 	            }
 				]
 			},
