@@ -768,15 +768,15 @@
       			mirror : true
       			under : true
                 rotation: 90
-                x: 0
+                x: -6
                 y: 0
-      			moveX : 25
+      			moveX : -20
 			    moveY : -4
       			moveRot : -65
 			    children: [
                 {
       		    	type : RegionPart
-      			    suffix : "-wing-mid"
+      			    suffix : "-mid"
       		    	progress : warmup
       		    	heatProgress : warmup
                     heatLight : true
@@ -789,25 +789,23 @@
       		    	moveX : 0
 			        moveY : 0
       		    	moveRot : -35
-                    children: [
-                        {
-      		        	type : RegionPart
-      			        suffix : "-wing-end"
-      		        	progress : warmup
-      		        	heatProgress : warmup
-                        heatLight : true
-      		        	heatColor : "ffffff"
-                        rotation: 35
-                        x: 0
-                        y: 0
-      		    	    mirror : false
-      		    	    under : true
-      		    	    moveX : 0
-			            moveY : 0
-      		    	    moveRot : -35
-			            },
-				    ]
 			    },
+                {
+      		       	type : RegionPart
+      		        suffix : "-end"
+      	        	progress : warmup
+    	        	heatProgress : warmup
+                    heatLight : true
+      		    	heatColor : "ffffff"
+                    rotation: 35
+                    x: 0
+                    y: 0
+      		        mirror : false
+      			    under : true
+      	    	    moveX : 0
+		            moveY : 0
+  		    	    moveRot : -35
+	            }
 				]
 			},
         ]
