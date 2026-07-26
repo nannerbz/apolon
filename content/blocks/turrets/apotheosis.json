@@ -767,17 +767,17 @@
       			heatColor : "ffffff"
       			mirror : true
       			under : true
-                rotation: 90
+                rotation: 80
                 x: -6
-                y: -16
+                y: -13
                 drawRegion: false
-      			moveX : -20
-			    moveY : 16
-      			moveRot : -60
+      			moveX : -23
+			    moveY : 19
+      			moveRot : -70
                 "moves": [
                     {
-                        "x": 1,
-                        "y": -2,
+                        "x": 0,
+                        "y": -3,
                         "rot": 30,
                         "progress": "recoil"
                     }
@@ -828,17 +828,17 @@
       			heatColor : "ffffff"
       			mirror : true
       			under : true
-                rotation: 90
+                rotation: 70
                 x: -6
                 y: -16
                 drawRegion: false
       			moveX : -20
 			    moveY : 4
-      			moveRot : -35
+      			moveRot : -55
                 "moves": [
                     {
-                        "x": 2,
-                        "y": -2,
+                        "x": 3,
+                        "y": -3,
                         "rot": 25,
                         "progress": "recoil"
                     }
@@ -891,15 +891,15 @@
       			under : true
                 rotation: 90
                 x: -6
-                y: -16
+                y: -10
                 drawRegion: false
       			moveX : -20
-			    moveY : 40
+			    moveY : 34
       			moveRot : -90
                 "moves": [
                     {
-                        "x": -1,
-                        "y": -2,
+                        "x": -3,
+                        "y": -3,
                         "rot": 35,
                         "progress": "recoil"
                     }
