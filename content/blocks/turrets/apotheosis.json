@@ -769,11 +769,11 @@
       			under : true
                 rotation: 90
                 x: -6
-                y: 0
+                y: -8
                 drawRegion: false
       			moveX : -20
-			    moveY : -4
-      			moveRot : -65
+			    moveY : 4
+      			moveRot : -75
 			    children: [
                 {
       		    	type : RegionPart
@@ -782,7 +782,7 @@
       		    	heatProgress : warmup
                     heatLight : true
       		    	heatColor : "ffffff"
-                    rotation: 35
+                    rotation: 50
                     x: -5
                     y: 7
       		    	mirror : false
@@ -790,7 +790,7 @@
                     drawRegion: false
       		    	moveX : -2
 			        moveY : 0
-      		    	moveRot : -35
+      		    	moveRot : -50
 			    },
                 {
       		       	type : RegionPart
@@ -799,7 +799,7 @@
     	        	heatProgress : warmup
                     heatLight : true
       		    	heatColor : "ffffff"
-                    rotation: 65
+                    rotation: 75
                     x: -7
                     y: 6
       		        mirror : false
@@ -807,7 +807,7 @@
                     drawRegion: false
       	    	    moveX : -1
 		            moveY : 2
-  		    	    moveRot : -60
+  		    	    moveRot : -70
 	            }
 				]
 			},
