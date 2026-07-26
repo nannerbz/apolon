@@ -769,10 +769,10 @@
       			under : true
                 rotation: 90
                 x: -6
-                y: -8
+                y: -16
                 drawRegion: false
       			moveX : -20
-			    moveY : 8
+			    moveY : 16
       			moveRot : -60
                 "moves": [
                     {
@@ -830,7 +830,7 @@
       			under : true
                 rotation: 90
                 x: -6
-                y: -8
+                y: -16
                 drawRegion: false
       			moveX : -20
 			    moveY : 4
@@ -891,10 +891,10 @@
       			under : true
                 rotation: 90
                 x: -6
-                y: -8
+                y: -16
                 drawRegion: false
       			moveX : -20
-			    moveY : 16
+			    moveY : 40
       			moveRot : -90
                 "moves": [
                     {
