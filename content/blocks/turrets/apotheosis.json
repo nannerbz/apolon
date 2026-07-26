@@ -770,13 +770,14 @@
                 rotation: 90
                 x: -6
                 y: 0
+                drawRegion: false
       			moveX : -20
 			    moveY : -4
       			moveRot : -65
 			    children: [
                 {
       		    	type : RegionPart
-      			    suffix : "-mid"
+      			    suffix : "-wing-mid"
       		    	progress : warmup
       		    	heatProgress : warmup
                     heatLight : true
@@ -786,13 +787,14 @@
                     y: 2
       		    	mirror : false
       		    	under : true
+                    drawRegion: false
       		    	moveX : 0
 			        moveY : 0
       		    	moveRot : -35
 			    },
                 {
       		       	type : RegionPart
-      		        suffix : "-end"
+      		        suffix : "-wing-end"
       	        	progress : warmup
     	        	heatProgress : warmup
                     heatLight : true
@@ -802,6 +804,7 @@
                     y: 0
       		        mirror : false
       			    under : true
+                    drawRegion: false
       	    	    moveX : 0
 		            moveY : 0
   		    	    moveRot : -35
