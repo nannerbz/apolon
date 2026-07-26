@@ -771,8 +771,8 @@
                 x: -6
                 y: -13
                 drawRegion: false
-      			moveX : -23
-			    moveY : 16
+      			moveX : -28
+			    moveY : 12
       			moveRot : -55
                 "moves": [
                     {
@@ -893,8 +893,8 @@
                 x: -6
                 y: -10
                 drawRegion: false
-      			moveX : -20
-			    moveY : 30
+      			moveX : -23
+			    moveY : 24
       			moveRot : -90
                 "moves": [
                     {
