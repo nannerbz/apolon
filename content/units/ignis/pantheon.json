@@ -55,6 +55,7 @@ weapons: [
 	rotateSpeed: 1.2
 	shootCone: 10
 	shootY: 2
+	predictTarget: false
         mirror: true
 	  recoil: 1
 	  shootSound: shootMalign
@@ -77,7 +78,7 @@ weapons: [
 		    trailChance: -1
 		    despawnSound: dullExplosion
 		    despawnEffect: none
- 		   knockback: 0
+ 		    knockback: 0
         }
     },
 	{
@@ -92,6 +93,7 @@ weapons: [
 	rotate: true
 	rotateSpeed: 1.2
 	shootCone: 10
+	predictTarget: false
 	shootY: 2
         mirror: true
 	  recoil: 1
@@ -138,6 +140,7 @@ weapons: [
 	layerOffset: 0.005
         mirror: false
 	shootY: 16
+	predictTarget: false
 	  recoil: 2
 	  shootSound: Minipulse
         ejectEffect: none

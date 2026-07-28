@@ -47,6 +47,7 @@ weapons: [
 	xRand: 3
         spacing: 3
 	innacuracy: 35
+	predictTarget: false
 	rotate: true
         mirror: false
 		layerOffset: 0.001

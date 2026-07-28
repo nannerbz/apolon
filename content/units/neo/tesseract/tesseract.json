@@ -30,7 +30,7 @@ legSpeed: 0.4
 legStraightness: 0.3
 outlineColor: 222222
 shadowElevation: 0.5
-range: 400
+range: 100
 hitSize: 56
 abilities: [
 	{
@@ -139,6 +139,7 @@ weapons: [
 	  shootSound: shootSalvo
         ejectEffect: casing1
 	  rotateSpeed: 1.5
+	  useAttackRange: false
 	  rotate: true
         bullet: {
     		type: BasicBulletType
