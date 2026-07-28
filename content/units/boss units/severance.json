@@ -4,7 +4,7 @@ flying: true
 speed: 0.9
 accel: 0.05
 drag: 0.06
-health: 75850
+health: 250000
 hitSize: 68
 itemCapacity: 0
 outlineColor: 222222
@@ -79,7 +79,8 @@ weapons: [
       			heatProgress : recoil
       			heatColor : "ffffff"
       			mirror : true
-      			under : true
+      			under : false
+				layerOffset: -0.001
       			moveX : 1
 			moveY : -1
       			moveRot : -10 
@@ -137,7 +138,8 @@ weapons: [
       			heatProgress : recoil
       			heatColor : "ffffff"
       			mirror : true
-      			under : true
+      			under : false
+				layerOffset: -0.001
       			moveX : 1
 			moveY : -1
       			moveRot : -10 
