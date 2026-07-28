@@ -75,7 +75,11 @@ weapons: [
 		    trailChance: -1
 		    despawnSound: dullExplosion
 		    despawnEffect: none
- 		   knockback: 0
+ 		    knockback: 0
+			homingPower: 0.03
+			homingRange: 300
+			homingCone: 60
+			homingDelay: 0
         }
 
 	parts: [
