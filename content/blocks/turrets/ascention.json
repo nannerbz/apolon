@@ -223,7 +223,7 @@
 			"intervalDelay": 45,
 			"intervalBullet": {
 				"type": "BasicBulletType",
-				"createChance": 0.05,
+				"createChance": 0.2,
 				"damage": 200,
 				"keepVelocity": false,
 				"speed": 3,
@@ -236,6 +236,11 @@
 				"width": 8,
 				"height": 8,
 				"lifetime": 200,
+				"intervalBullets": 6,
+				"intervalRandomSpread": 0,
+				"intervalSpread": 60,
+				"intervalAngle": 60,
+				"bulletInterval": 20,
 				"intervalBullet": {
 					"type": "ShrapnelBulletType",
 					"damage": 120,
@@ -246,18 +251,8 @@
 					"status": "permafrozen",
 					"statusduration": 25
 				},
-				"intervalBullets": 6,
-				"intervalRandomSpread": 0,
-				"intervalSpread": 60,
-				"intervalAngle": 0,
-				"bulletInterval": 20,
 				"pierce": true,
 				"pierceCap": 20,
-				"intervalRandomSpread": 360,
-				"intervalBullets": 1,
-				"intervalAngle": 360,
-				"IntervalSpread": 360,
-				"trailInterval": 1
 			}
 			"trailInterval": 1,
 			"trailEffect": {
