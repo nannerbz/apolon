@@ -255,7 +255,6 @@
 				"IntervalSpread": 360,
 				"trailInterval": 1
 			}
-			},
 			"trailInterval": 1,
 			"trailEffect": {
 				"type": "ExplosionEffect",
