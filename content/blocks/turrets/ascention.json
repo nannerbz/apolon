@@ -31,6 +31,7 @@
 	"ammoTypes": {
 		"hypersteel-item": {
 			"type": "BasicBulletType",
+			"collidesGround": false,
 			"shrinkY": 0,
 			"shrinkX": 0,
 			"trailWidth": 3,
@@ -65,6 +66,7 @@
 			"intervalRandomSpread": 20,
 			"intervalBullet": {
 				"type": "BasicBulletType",
+				"collidesGround": false,
 				"createChance": 0.02,
 				"damage": 160,
 				"keepVelocity": false,
@@ -146,6 +148,7 @@
 			"spawnBullets": [
 				{
 					"type": "BasicBulletType",
+					"collidesGround": false,
 					"createChance": 0.12,
 					"trailWidth": 4,
 					"trailLength": 5,
@@ -192,6 +195,7 @@
 		},
 		"hyemos-item": {
 			"type": "BasicBulletType",
+			"collidesGround": false,
 			"shrinkY": 0,
 			"shrinkX": 0,
 			"trailWidth": 4,
@@ -225,6 +229,7 @@
 			"intervalDelay": 45,
 			"intervalBullet": {
 				"type": "BasicBulletType",
+				"collidesGround": false,
 				"createChance": 0.2,
 				"damage": 200,
 				"keepVelocity": false,
@@ -245,6 +250,8 @@
 				"bulletInterval": 20,
 				"intervalBullet": {
 					"type": "ShrapnelBulletType",
+					"collidesGround": false,
+					"collidesAir": true,
 					"damage": 120,
 					"length": 40,
 					"width": 9,
@@ -295,6 +302,7 @@
 			"spawnBullets": [
 				{
 					"type": "BasicBulletType",
+					"collidesGround": false,
 					"createChance": 0.12,
 					"trailWidth": 6,
 					"trailLength": 5,
@@ -318,6 +326,8 @@
 					"intervalDelay": 60,
 					"intervalBullet": {
 						"type": "lightningBulletType",
+						"collidesGround": false,
+						"collidesAir": true,
 						"lightningColor": "687db6",
 						"damage": 30,
 						"collidesAir": true,
@@ -325,6 +335,8 @@
 						"lightningLengthRand": 1,
 						"fragBullet": {
 							"type": "ShrapnelBulletType",
+							"collidesGround": false,
+							"collidesAir": true,
 							"damage": 80,
 							"length": 20,
 							"width": 6,
@@ -347,6 +359,7 @@
 		},
 		"vulcan-alloy-item": {
 			"type": "BasicBulletType",
+			"collidesGround": false,
 			"shrinkY": 0,
 			"shrinkX": 0,
 			"trailWidth": 4,
@@ -437,6 +450,7 @@
 			"spawnBullets": [
 				{
 					"type": "BasicBulletType",
+					"collidesGround": false,
 					"inaccuracy": 40,
 					"createChance": 0.08,
 					"trailWidth": 5,
@@ -457,6 +471,8 @@
 					"fragBullets": 1,
 					"fragBullet": {
 						"type": "ArtilleryBulletType",
+						"collidesGround": false,
+						"collidesAir": true,
 						"speed": 0,
 						"lifetime": 6,
 						"bulletInterval": 1,
@@ -523,19 +539,25 @@
 					"intervalBullets": 1,
 					"intervalSpread": 0,
 					"intervalRandomSpread": 0,
-					"intervalAngle": 0,
-					"bulletInterval": 5,
+					"intervalAngle": 180,
+					"bulletInterval": 2,
 					"intervalDelay": 30,
 					"intervalBullet": {
-						"type": "ContinuousFlameBulletType",
+						"type": "ContinuousLaserBulletType",
+						"collidesGround": false,
+						"collidesAir": true,
 						"damage": 30,
-						"flareWidth": 3,
-						"flareColor": "9c3247",
+						"continuous": true,
 						"status": "burning",
 						"statusduration": 300,
+						"despawnEffect": "none",
+						"smokeEffect": "none",
+						"hitEffect": "none",
 						"length": 40,
+						"pierce": true,
 						"pierceCap": 50,
-						"lifetime": 5,
+						"lifetime": 2,
+						"fadeTime": 1,
 						"colors": [
 							"3b063a",
 							"9c3247",
