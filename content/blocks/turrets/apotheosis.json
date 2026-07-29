@@ -757,7 +757,190 @@
                         "progress": "recoil"
                     }
                 ]
-            }
+            },
+            {
+      			type : RegionPart
+      			suffix : "-wing-base"
+      			progress : warmup
+      			heatProgress : warmup
+                heatLight : true
+      			heatColor : "ffffff"
+      			mirror : true
+      			under : true
+                rotation: 80
+                x: -6
+                y: -13
+                drawRegion: false
+      			moveX : -28
+			    moveY : 12
+      			moveRot : -55
+                "moves": [
+                    {
+                        "x": 0,
+                        "y": -3,
+                        "rot": 30,
+                        "progress": "recoil"
+                    }
+                ]
+			    children: [
+                {
+      		    	type : RegionPart
+      			    suffix : "-wing-mid"
+      		    	progress : warmup
+      		    	heatProgress : warmup
+                    heatLight : true
+      		    	heatColor : "ffffff"
+                    rotation: 50
+                    x: -5
+                    y: 7
+      		    	mirror : false
+      		    	under : true
+                    drawRegion: false
+      		    	moveX : -2
+			        moveY : 0
+      		    	moveRot : -50
+			    },
+                {
+      		       	type : RegionPart
+      		        suffix : "-wing-end"
+      	        	progress : warmup
+    	        	heatProgress : warmup
+                    heatLight : true
+      		    	heatColor : "ffffff"
+                    rotation: 75
+                    x: -7
+                    y: 6
+      		        mirror : false
+      			    under : true
+                    drawRegion: false
+      	    	    moveX : -1
+		            moveY : 2
+  		    	    moveRot : -70
+	            }
+				]
+			},
+            {
+      			type : RegionPart
+      			suffix : "-wing-base"
+      			progress : warmup
+      			heatProgress : warmup
+                heatLight : true
+      			heatColor : "ffffff"
+      			mirror : true
+      			under : true
+                rotation: 70
+                x: -6
+                y: -16
+                drawRegion: false
+      			moveX : -20
+			    moveY : -4
+      			moveRot : -25
+                "moves": [
+                    {
+                        "x": 3,
+                        "y": -3,
+                        "rot": 25,
+                        "progress": "recoil"
+                    }
+                ]
+			    children: [
+                {
+      		    	type : RegionPart
+      			    suffix : "-wing-mid"
+      		    	progress : warmup
+      		    	heatProgress : warmup
+                    heatLight : true
+      		    	heatColor : "ffffff"
+                    rotation: 50
+                    x: -5
+                    y: 7
+      		    	mirror : false
+      		    	under : true
+                    drawRegion: false
+      		    	moveX : -2
+			        moveY : 0
+      		    	moveRot : -50
+			    },
+                {
+      		       	type : RegionPart
+      		        suffix : "-wing-end"
+      	        	progress : warmup
+    	        	heatProgress : warmup
+                    heatLight : true
+      		    	heatColor : "ffffff"
+                    rotation: 75
+                    x: -7
+                    y: 6
+      		        mirror : false
+      			    under : true
+                    drawRegion: false
+      	    	    moveX : -1
+		            moveY : 2
+  		    	    moveRot : -70
+	            }
+				]
+			},
+            {
+      			type : RegionPart
+      			suffix : "-wing-base"
+      			progress : warmup
+      			heatProgress : warmup
+                heatLight : true
+      			heatColor : "ffffff"
+      			mirror : true
+      			under : true
+                rotation: 90
+                x: -6
+                y: -10
+                drawRegion: false
+      			moveX : -23
+			    moveY : 24
+      			moveRot : -90
+                "moves": [
+                    {
+                        "x": -3,
+                        "y": -3,
+                        "rot": 35,
+                        "progress": "recoil"
+                    }
+                ]
+			    children: [
+                {
+      		    	type : RegionPart
+      			    suffix : "-wing-mid"
+      		    	progress : warmup
+      		    	heatProgress : warmup
+                    heatLight : true
+      		    	heatColor : "ffffff"
+                    rotation: 50
+                    x: -5
+                    y: 7
+      		    	mirror : false
+      		    	under : true
+                    drawRegion: false
+      		    	moveX : -2
+			        moveY : 0
+      		    	moveRot : -50
+			    },
+                {
+      		       	type : RegionPart
+      		        suffix : "-wing-end"
+      	        	progress : warmup
+    	        	heatProgress : warmup
+                    heatLight : true
+      		    	heatColor : "ffffff"
+                    rotation: 75
+                    x: -7
+                    y: 6
+      		        mirror : false
+      			    under : true
+                    drawRegion: false
+      	    	    moveX : -1
+		            moveY : 2
+  		    	    moveRot : -70
+	            }
+				]
+			},
         ]
     },
     "requirements": [

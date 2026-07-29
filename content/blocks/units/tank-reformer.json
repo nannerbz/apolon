@@ -49,6 +49,19 @@ plans: [
 			apolon-chisel/4
 		]
 	},
+	{
+		type: AssemblerUnitPlan
+		unit: pantheon
+		time: 6250
+        	requirements: [
+			apolon-vanguard/2
+			apolon-ignis/4
+			apolon-large-neodymium-wall/5
+			apolon-kobra-wall/4
+			apolon-chisel/4
+			apolon-blast/2
+		]
+	},
 ]
 
 category: units

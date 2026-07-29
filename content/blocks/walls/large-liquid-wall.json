@@ -1,0 +1,16 @@
+type: LiquidRouter
+name: Large Liquid Wall
+description: Stores liquid while also being very tanky. Useful for making front line walls that detonate on enemies using combustible gasses or liquids.
+size: 2
+solid: true
+liquidCapacity: 800
+liquidPadding: 3
+health: 1120
+research: liquid-wall
+researchCostMultiplier: 0.05
+requirements: [
+	neodymium-item/8
+	metaglass/16
+	bismuth-item/8
+]
+category: defense

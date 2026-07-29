@@ -7,7 +7,7 @@
 	consumes: {
 		power: 0.6
 	}
-
+	tier: 1
 	requirements: [
 		bismuth-item/500
 		carbide/450

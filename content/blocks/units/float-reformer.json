@@ -40,10 +40,21 @@ plans: [
 	{
 		type: AssemblerUnitPlan
 		unit: enigma
-		time: 3250
+		time: 4500
         	requirements: [
 			apolon-argo/4
-			apolon-blast/4
+			apolon-blast/2
+			apolon-large-blast-carbide-wall/4
+		]
+	},
+	{
+		type: AssemblerUnitPlan
+		unit: nemesis
+		time: 6650
+        	requirements: [
+			apolon-argo/4
+			apolon-vice/4
+			apolon-chip/4
 			apolon-large-blast-carbide-wall/4
 		]
 	},

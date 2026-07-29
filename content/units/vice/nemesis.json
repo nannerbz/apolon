@@ -60,7 +60,7 @@ weapons: [
 		}
 		parentizeEffects: true
 		top: false
-		shootCone: 0
+		shootCone: 10
 		rotate: true
 		rotateSpeed: 1
 		rotationLimit: 10

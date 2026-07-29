@@ -10,24 +10,27 @@ shootSound: shootScathe
 legCount: 6
 hovering: true
 allowLegStep: true
-legStraightness: 0.3
+legStraightness: 0.6
 legContinuousMove: true
-legLength: 96
+legLength: 84
 lockLegBase: true
+legBaseOffset: 18
 stepShake: 1.9
-legExtension: -8
-legMaxLength: 1.3
-legMinLength: 1.1
+legExtension: -20
+legMaxLength: 1.4
+legMinLength: 0.6
 rippleScale: 1.2
-legLengthScl : 0.7
-legForwardScl : 0.7
-legMoveSpace: 1.4
+legLengthScl : 0.9
+legForwardScl : 0.8
+legMoveSpace: 1.6
 legGroupSize: 2
 legSplashDamage: 128
 legSplashRange: 32
+legSpeed: 0.4
+legStraightness: 0.3
 outlineColor: 222222
 shadowElevation: 0.5
-range: 400
+range: 100
 hitSize: 56
 abilities: [
 	{
@@ -136,6 +139,7 @@ weapons: [
 	  shootSound: shootSalvo
         ejectEffect: casing1
 	  rotateSpeed: 1.5
+	  useAttackRange: false
 	  rotate: true
         bullet: {
     		type: BasicBulletType

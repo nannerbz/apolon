@@ -1,0 +1,7 @@
+{
+	"type": "Floor",
+	"drownTime": 1,
+	"isLiquid": true,
+	"variants": 0,
+	"obstructsLight": true,
+}

@@ -14,6 +14,7 @@ itemCapacity: 0
 crushDamage: 3.4
 buildSpeed: 2.4
 outlineColor: 222222
+drawBuildBeam: false
 treadRects: [
     {
         x: 75,
@@ -54,6 +55,7 @@ weapons: [
 	rotateSpeed: 1.2
 	shootCone: 10
 	shootY: 2
+	predictTarget: false
         mirror: true
 	  recoil: 1
 	  shootSound: shootMalign
@@ -76,7 +78,11 @@ weapons: [
 		    trailChance: -1
 		    despawnSound: dullExplosion
 		    despawnEffect: none
- 		   knockback: 0
+ 		    knockback: 0
+			homingPower: 0.03
+			homingRange: 300
+			homingCone: 60
+			homingDelay: 0
         }
     },
 	{
@@ -91,6 +97,7 @@ weapons: [
 	rotate: true
 	rotateSpeed: 1.2
 	shootCone: 10
+	predictTarget: false
 	shootY: 2
         mirror: true
 	  recoil: 1
@@ -114,7 +121,11 @@ weapons: [
 		    trailChance: -1
 		    despawnSound: dullExplosion
 		    despawnEffect: none
- 		   knockback: 0
+ 		    knockback: 0
+			homingPower: 0.03
+			homingRange: 300
+			homingCone: 60
+			homingDelay: 0
         }
     },
 	{
@@ -137,6 +148,7 @@ weapons: [
 	layerOffset: 0.005
         mirror: false
 	shootY: 16
+	predictTarget: false
 	  recoil: 2
 	  shootSound: Minipulse
         ejectEffect: none
@@ -307,6 +319,22 @@ weapons: [
       			moveRot : -60
     		},
 		]
+    },
+	{
+		"type": BuildWeapon
+		"mirror": true
+		"rotate": false
+		"x": 8
+		"y": 20
+		"layerOffset": -0.001
+    },
+	{
+		"type": BuildWeapon
+		"mirror": true
+		"rotate": false
+		"x": 15
+		"y": 22
+		"layerOffset": -0.001
     }
 ]
 	  "research": {

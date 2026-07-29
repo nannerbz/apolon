@@ -1,0 +1,54 @@
+{
+  "name": "Barrier Projector",
+  "description": "Makes a large shield to help block enemy projectiles. Can be boosted with cryogel, and cooled.",
+  "type": "ForceProjector",
+  "health": 7500,
+  "size": 3,
+  "radius": 120,
+  "shieldRotation": 0,
+  "shieldHealth": 2400,
+  "cooldownNormal": 2,
+  "cooldownLiquid": 1.4,
+  "cooldownBrokenBase": 0.1,
+  "coolantConsumption": 0.1,
+  "sides": 8,
+  "phaseRadiusBoost": 80,
+  "phaseShieldBoost": 1200,
+  "consumes": {
+    "power": 3,
+    "coolant": {
+      "amount": 0.6
+    }
+    "items": {
+      "items": [
+        {
+          "amount": 1,
+          "item": "cryogel-item"
+        }
+      ],
+      "optional": true,
+      "booster": true
+    }
+  },
+  "requirements": [
+    {
+      "item": "metaglass",
+      "amount": 250
+    },
+    {
+      "item": "neodymium-item",
+      "amount": 100
+    },
+    {
+      "item": "chromium-item",
+      "amount": 50
+    },
+    {
+      "item": "hypersteel-item",
+      "amount": 50
+    },
+  ],
+  "category": "effect",
+  "research": "kobra-wall"
+  "researchCostMultiplier": 0.15
+}

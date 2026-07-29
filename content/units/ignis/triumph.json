@@ -14,6 +14,7 @@ itemCapacity: 0
 buildSpeed: 1.4
 crushDamage: 3.4
 outlineColor: 222222
+drawBuildBeam: false
 treadRects: [
 	{
 		type: rect
@@ -46,6 +47,7 @@ weapons: [
 	xRand: 3
         spacing: 3
 	innacuracy: 35
+	predictTarget: false
 	rotate: true
         mirror: false
 		layerOffset: 0.001
@@ -73,7 +75,11 @@ weapons: [
 		    trailChance: -1
 		    despawnSound: dullExplosion
 		    despawnEffect: none
- 		   knockback: 0
+ 		    knockback: 0
+			homingPower: 0.03
+			homingRange: 300
+			homingCone: 60
+			homingDelay: 0
         }
 
 	parts: [
@@ -92,6 +98,14 @@ weapons: [
       		moveRot : 90
     		},
 	]
+    },
+	{
+		"type": BuildWeapon
+		"mirror": true
+		"rotate": false
+		"x": 10
+		"y": 14
+		"layerOffset": -0.001
     }
 ]
 	research: centurion
