@@ -1,30 +1,34 @@
 {
-    "type": "ItemTurret",
-    "name": "Ascention",
-    "description": "Multipurpose explosive machine gun, shoots accelerating bursts of blast projectiles. The supreme manifestation of antiair turrets.",
-    "targetAir": true,
-    "targetGround": true,
-    "health": 12600
-    "size": 5
-    "reload": 270
-    "outlineColor": 222222
-    "xRand": 0,
-    "squareSprite": false
-    "coolantMultiplier": 0.65
-    "heatRequirement": 20
-    "maxHeatEfficiency": 1.5
-  "consumes": {
-	"liquids": {
-		"liquids": [
-			{ "liquid": "cyanogen", "amount": 0.4 }
-		]
-	}
-  }
-    "shootCone": 26,
-    "rotateSpeed": 2.1,
-    "range": 1850
-    "ammoTypes": {
-		hypersteel-item: {
+	"type": "ItemTurret",
+	"name": "Ascention",
+	"description": "Multipurpose explosive machine gun, shoots accelerating bursts of blast projectiles. The supreme manifestation of antiair turrets.",
+	"targetAir": true,
+	"targetGround": true,
+	"health": 12600,
+	"size": 5,
+	"reload": 270,
+	"outlineColor": 222222,
+	"xRand": 0,
+	"squareSprite": false,
+	"coolantMultiplier": 0.65,
+	"heatRequirement": 20,
+	"predictTarget": false,
+	"maxHeatEfficiency": 1.5,
+	"consumes": {
+		"liquids": {
+			"liquids": [
+				{
+					"liquid": "cyanogen",
+					"amount": 0.4
+				}
+			]
+		}
+	},
+	"shootCone": 26,
+	"rotateSpeed": 2.1,
+	"range": 1850,
+	"ammoTypes": {
+		"hypersteel-item": {
 			"type": "BasicBulletType",
 			"shrinkY": 0,
 			"shrinkX": 0,
@@ -32,45 +36,46 @@
 			"trailLength": 40,
 			"speed": 0.1,
 			"accel": 0.3,
-			"lifetime": 100,
-			"damage": 255,
+			"lifetime": 108,
+			"damage": 355,
 			"width": 15,
 			"height": 15,
-			"homingPower": 0.05,
-			"homingRange": 128,
+			"homingPower": 0.01,
+			"homingRange": 60,
 			"homingDelay": 32,
-			"weaveMag": 5,
-			"weaveScale": 4,
+			"weaveMag": 6,
+			"weaveScale": 2,
 			"shootEffect": "colorSparkBig",
 			"smokeEffect": "shootSmallSmoke",
-			"ammoMultiplier": 2,
+			"ammoMultiplier": 0.5,
 			"pierce": true,
-			"pierceCap": 6,
+			"pierceCap": 2,
 			"buildingDamageMultiplier": 0.05,
 			"sprite": "large-orb",
 			"frontColor": "a47ad6",
 			"backColor": "4f24ab",
 			"trailColor": "2f204a",
-			"splashDamage": 480,
+			"splashDamage": 280,
 			"splashDamageRadius": 32,
 			"intervalBullets": 1,
-			"intervalRandomSpread": 0,
 			"intervalAngle": 0,
 			"bulletInterval": 1,
 			"intervalDelay": 45,
+			"intervalRandomSpread": 20,
 			"intervalBullet": {
 				"type": "BasicBulletType",
 				"createChance": 0.02,
 				"damage": 160,
 				"keepVelocity": false,
-				"speed": 0.01,
+				"speed": 2,
+				"drag": 0.06,
 				"frontColor": "a47ad6",
 				"backColor": "4f24ab",
 				"trailColor": "2f204a",
 				"width": 8,
 				"height": 8,
 				"lifetime": 340,
-				"trailInterval": 1
+				"trailInterval": 1,
 				"trailEffect": {
 					"type": "ParticleEffect",
 					"length": 24,
@@ -81,7 +86,24 @@
 					"colorFrom": "a47ad6",
 					"colorTo": "2f204a",
 					"sizeFrom": 2,
-					"sizeTo": 1
+					"sizeTo": 1,
+					"despawnEffect": {
+						"type": "ExplosionEffect",
+						"waveColor": "2f204a",
+						"smokeColor": "4f24ab",
+						"sparkColor": "a47ad6",
+						"waveLife": 20,
+						"waveStroke": 2,
+						"waveRad": 16,
+						"sparkStroke": 2,
+						"sparkRad": 36,
+						"sparkLen": 6,
+						"smokeSize": 0,
+						"smokeSizeBase": 0,
+						"smokeRad": 0,
+						"smokes": 0,
+						"sparks": 8
+					}
 				}
 			},
 			"trailInterval": 1,
@@ -128,7 +150,7 @@
 					"trailLength": 5,
 					"speed": 0.05,
 					"accel": 0.1,
-					"lifetime": 200,
+					"lifetime": 190,
 					"damage": 1600,
 					"frontColor": "a47ad6",
 					"backColor": "4f24ab",
@@ -166,93 +188,261 @@
 					"pierceCap": 3
 				}
 			]
+		},
+		"hyemos-item": {
+			"type": "BasicBulletType",
+			"shrinkY": 0,
+			"shrinkX": 0,
+			"trailWidth": 4,
+			"trailLength": 10,
+			"speed": 5,
+			"status": "permafrozen",
+			"statusduration": 25,
+			"reloadMultiplier": 0.76,
+			"lifetime": 370,
+			"damage": 485,
+			"width": 15,
+			"height": 15,
+			"shootEffect": "colorSparkBig",
+			"smokeEffect": "shootSmallSmoke",
+			"ammoMultiplier": 1,
+			"pierce": true,
+			"pierceCap": 3,
+			"buildingDamageMultiplier": 0.05,
+			"sprite": "large-orb",
+			"frontColor": "f0fcff",
+			"backColor": "87ceeb",
+			"trailColor": "687db6",
+			"splashDamage": 410,
+			"splashDamageRadius": 48,
+			"intervalBullets": 6,
+			"intervalRandomSpread": 0,
+			"intervalSpread": 60
+			"intervalAngle": 0,
+			"bulletInterval": 20,
+			"intervalDelay": 45,
+			"intervalBullet": {
+				"type": "BasicBulletType",
+				"createChance": 0.3,
+				"damage": 200,
+				"keepVelocity": false,
+				"speed": 3,
+				"drag": 0.1,
+				"status": "permafrozen",
+				"statusduration": 25,
+				"frontColor": "a47ad6",
+				"backColor": "4f24ab",
+				"trailColor": "2f204a",
+				"width": 8,
+				"height": 8,
+				"lifetime": 200,
+				"intervalBullet": {
+					"type": "lightningBulletType",
+					"lightningColor": "87ceeb",
+					"damage": 30,
+					"collidesAir": true,
+					"lightningLength": 0,
+					"lightningLengthRand": 8
+				},
+				"bulletInterval": 2,
+				"intervalRandomSpread": 360,
+				"intervalBullets": 1,
+				"intervalAngle": 360,
+				"IntervalSpread": 360,
+				"trailInterval": 1,
+				"trailEffect": {
+					"type": "ParticleEffect",
+					"length": 24,
+					"lifetime": 5,
+					"region": "circle-bullet",
+					"particles": 6,
+					"lightColor": "a47ad6",
+					"colorFrom": "a47ad6",
+					"colorTo": "2f204a",
+					"sizeFrom": 2,
+					"sizeTo": 1,
+					"despawnEffect": {
+						"type": "ExplosionEffect",
+						"waveColor": "2f204a",
+						"smokeColor": "4f24ab",
+						"sparkColor": "a47ad6",
+						"waveLife": 20,
+						"waveStroke": 2,
+						"waveRad": 16,
+						"sparkStroke": 2,
+						"sparkRad": 36,
+						"sparkLen": 6,
+						"smokeSize": 0,
+						"smokeSizeBase": 0,
+						"smokeRad": 0,
+						"smokes": 0,
+						"sparks": 8
+					}
+				}
+			},
+			"trailInterval": 1,
+			"trailEffect": {
+				"type": "ExplosionEffect",
+				"layer": 49,
+				"waveColor": "87ceeb",
+				"smokeColor": "687db6",
+				"sparkColor": "f0fcff",
+				"waveLife": 5,
+				"waveStroke": 2,
+				"waveRad": 6,
+				"sparkStroke": 1,
+				"sparkRad": 8,
+				"sparkLen": 4,
+				"smokeSize": 0,
+				"smokeSizeBase": 0,
+				"smokeRad": 0,
+				"smokes": 0,
+				"sparks": 3
+			},
+			"despawnEffect": {
+				"type": "ExplosionEffect",
+				"waveColor": "87ceeb",
+				"smokeColor": "687db6",
+				"sparkColor": "f0fcff",
+				"waveLife": 20,
+				"waveStroke": 2,
+				"waveRad": 16,
+				"sparkStroke": 2,
+				"sparkRad": 18,
+				"sparkLen": 6,
+				"smokeSize": 0,
+				"smokeSizeBase": 0,
+				"smokeRad": 0,
+				"smokes": 0,
+				"sparks": 4
+			},
+			"spawnBullets": [
+				{
+					"type": "BasicBulletType",
+					"createChance": 0.12,
+					"trailWidth": 6,
+					"trailLength": 5,
+					"speed": 3,
+					"lifetime": 616.7,
+					"damage": 700,
+					"frontColor": "a47ad6",
+					"backColor": "4f24ab",
+					"trailColor": "2f204a",
+					"width": 20,
+					"height": 20,
+					"status": "permafrozen",
+					"statusduration": 25,
+					"splashDamage": 500,
+					"splashDamageRadius": 40,
+					"intervalBullets": 6,
+					"intervalSpread": 60,
+					"intervalRandomSpread": 0,
+					"intervalAngle": 0,
+					"bulletInterval": 20,
+					"intervalDelay": 60,
+					"intervalBullet": {
+						"type": "ShrapnelBulletType",
+						"damage": 120,
+						"length": 40,
+						"width": 9,
+						"fromColor": "f0fcff",
+						"toColor": "687db6",
+						"status": "permafrozen",
+						"statusduration": 25
+					},
+					"hitEffect": "hitLancer",
+					"shrinkY": 0,
+					"pierce": true,
+					"pierceCap": 20
+				}
+			]
 		}
-    }
-	shoot: {
-		shots: 16
-		shotDelay: 3
-	}
-	drawer: {
-		type: DrawTurret,
-     		basePrefix: base,
-		parts : [
-    			{
-      			type : RegionPart
-      			suffix : "-e"
-      			progress : warmup
-      			heatProgress : warmup
-      			heatColor : "de8ec9"
-      			mirror : false
-      			under : false
-      			moveX : 0
-			    moveY : 0
-      			moveRot : 0
-				  moves: [
+	},
+	"shoot": {
+		"shots": 16,
+		"shotDelay": 3
+	},
+	"drawer": {
+		"type": "DrawTurret",
+		"basePrefix": "base",
+		"parts": [
+			{
+				"type": "RegionPart",
+				"suffix": "-e",
+				"progress": "warmup",
+				"heatProgress": "warmup",
+				"heatColor": "de8ec9",
+				"mirror": false,
+				"under": false,
+				"moveX": 0,
+				"moveY": 0,
+				"moveRot": 0,
+				"moves": [
 					{
-					type: PartMove
-					x: 0,
-					y: -2.4,
-					rot: 0
-					progress : recoil
+						"type": "PartMove",
+						"x": 0,
+						"y": -2.4,
+						"rot": 0,
+						"progress": "recoil"
 					}
 				]
-    			},
-    			{
-      			type : RegionPart
-      			suffix : "-body"
-      			progress : warmup
-      			heatProgress : warmup
-      			heatColor : "de8ec9"
-      			mirror : false
-      			under : false
-      			moveX : 0
-			moveY : 0
-      			moveRot : 0
-    			},
-			{
-			type: ShapePart
-			progress: warmup
-			color: de8ec9
-			layer: 110
-			sides: 100
-			rotation: 0
-			hollow: true
-			stroke: 0
-			strokeTo: 2
-			radius: 5
-			y: -18
 			},
 			{
-				type: ShapePart
-				progress: warmup
-				color: de8ec9
-				layer: 110
-				sides: 100
-				rotation: 0
-				hollow: true
-				stroke: 0
-				strokeTo: 2
-				radius: 2
-				y: -18
-				},
-			{
-			type: HaloPart
-			progress: warmup
-			color: de8ec9
-			layer: 110
-			y: -18
-			haloRotation: 90
-			shapes: 3
-			triLength: 0
-			triLengthTo: 6
-			haloRadius: 14
-			tri: true
-			radius: 6
-			shapeRotation: 180
-			haloRotateSpeed: -5
+				"type": "RegionPart",
+				"suffix": "-body",
+				"progress": "warmup",
+				"heatProgress": "warmup",
+				"heatColor": "de8ec9",
+				"mirror": false,
+				"under": false,
+				"moveX": 0,
+				"moveY": 0,
+				"moveRot": 0
 			},
+			{
+				"type": "ShapePart",
+				"progress": "warmup",
+				"color": "de8ec9",
+				"layer": 110,
+				"sides": 100,
+				"rotation": 0,
+				"hollow": true,
+				"stroke": 0,
+				"strokeTo": 2,
+				"radius": 5,
+				"y": -18
+			},
+			{
+				"type": "ShapePart",
+				"progress": "warmup",
+				"color": "de8ec9",
+				"layer": 110,
+				"sides": 100,
+				"rotation": 0,
+				"hollow": true,
+				"stroke": 0,
+				"strokeTo": 2,
+				"radius": 2,
+				"y": -18
+			},
+			{
+				"type": "HaloPart",
+				"progress": "warmup",
+				"color": "de8ec9",
+				"layer": 110,
+				"y": -18,
+				"haloRotation": 90,
+				"shapes": 3,
+				"triLength": 0,
+				"triLengthTo": 6,
+				"haloRadius": 14,
+				"tri": true,
+				"radius": 6,
+				"shapeRotation": 180,
+				"haloRotateSpeed": -5
+			}
 		]
-	}
+	},
 	"requirements": [
 		{
 			"item": "carbide",
@@ -279,13 +469,13 @@
 			"amount": 50
 		}
 	],
-    "category": "turret"
-    "minWarmup": 0.96
-    "shootWarmupSpeed": 0.02
-    "shootSound": "TurbineBlast"
-    "loopSound": "glow"
-    "loopSoundVolume": 0.5
-    "research": praetorium
-    "shake": 6
-    "researchCostMultiplier": 0.05
+	"category": "turret",
+	"minWarmup": 0.96,
+	"shootWarmupSpeed": 0.02,
+	"shootSound": "TurbineBlast",
+	"loopSound": "glow",
+	"loopSoundVolume": 0.5,
+	"research": "praetorium",
+	"shake": 6,
+	"researchCostMultiplier": 0.05
 }
