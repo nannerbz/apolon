@@ -11,12 +11,12 @@
     "xRand": 0,
     "squareSprite": false
     "coolantMultiplier": 0.65
-    "heatRequirement": 2
-    "maxHeatEfficiency": 2
+    "heatRequirement": 20
+    "maxHeatEfficiency": 1.5
   "consumes": {
 	"liquids": {
 		"liquids": [
-			{ "liquid": "cyanogen", "amount": 0.2 }
+			{ "liquid": "cyanogen", "amount": 0.4 }
 		]
 	}
   }
@@ -32,13 +32,15 @@
 			"trailLength": 40,
 			"speed": 0.1,
 			"accel": 0.3,
-			"lifetime": 240,
+			"lifetime": 100,
 			"damage": 255,
 			"width": 15,
 			"height": 15,
 			"homingPower": 0.05,
 			"homingRange": 128,
 			"homingDelay": 32,
+			"weaveMag": 5,
+			"weaveScale": 4,
 			"shootEffect": "colorSparkBig",
 			"smokeEffect": "shootSmallSmoke",
 			"ammoMultiplier": 2,
@@ -55,16 +57,20 @@
 			"intervalRandomSpread": 0,
 			"intervalAngle": 0,
 			"bulletInterval": 1,
-			"intervalDelay": 0,
+			"intervalDelay": 45,
 			"intervalBullet": {
 				"type": "BasicBulletType",
 				"createChance": 0.02,
 				"damage": 160,
 				"keepVelocity": false,
-				"speed": 0,
+				"speed": 0.01,
+				"frontColor": "a47ad6",
+				"backColor": "4f24ab",
+				"trailColor": "2f204a",
 				"width": 8,
 				"height": 8,
 				"lifetime": 340,
+				"trailInterval": 1
 				"trailEffect": {
 					"type": "ParticleEffect",
 					"length": 24,
@@ -122,7 +128,7 @@
 					"trailLength": 5,
 					"speed": 0.05,
 					"accel": 0.1,
-					"lifetime": 480,
+					"lifetime": 200,
 					"damage": 1600,
 					"frontColor": "a47ad6",
 					"backColor": "4f24ab",
@@ -132,15 +138,15 @@
 						"type": "ParticleEffect",
 						"colorFrom": "a47ad6",
 						"colorTo": "2f204a",
-						"lifetime": 20,
-						"length": 16,
+						"lifetime": 40,
+						"length": 32,
 						"region": "circle-small",
 						"particles": 3,
 						"sizeFrom": 3,
 						"sizeTo": 0
 					},
-					"width": 10,
-					"height": 10,
+					"width": 20,
+					"height": 20,
 					"splashDamage": 1200,
 					"splashDamageRadius": 40,
 					"despawnEffect": {
