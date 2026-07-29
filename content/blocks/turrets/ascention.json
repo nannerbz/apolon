@@ -454,6 +454,72 @@
 					"statusduration": 300,
 					"splashDamage": 450,
 					"splashDamageRadius": 64,
+					"fragBullets": 1,
+					"fragBullet": {
+						"type": "ArtilleryBulletType",
+						"speed": 0,
+						"lifetime": 6,
+						"bulletInterval": 1,
+						"intervalRandomSpread": 360,
+						"intervalBullets": 4,
+						"damage": 1500,
+						"hitShake": 30,
+						"splashDamage": 1500,
+						"splashDamageRadius": 56,
+						"despawnHit": true,
+						"hitSound": "explosionReactor",
+						"hitEffect": {
+							"type": "MultiEffect",
+							"effects": [
+								{
+									"type": "ExplosionEffect",
+									"waveColor": "9c3247",
+									"sparkColor": "ffa324",
+									"smokeColor": "3b063a",
+									"waveLife": 120,
+									"waveStroke": 16,
+									"waveRad": 56,
+									"sparkStroke": 3,
+									"sparkRad": 120,
+									"sparkLen": 16,
+									"smokeSize": 8,
+									"smokeSizeBase": 16,
+									"smokeRad": 40,
+									"smokes": 18,
+									"sparks": 30
+								},
+								{
+									"type": "ParticleEffect",
+									"length": 72,
+									"lifetime": 180,
+									"region": "circle-bullet",
+									"particles": 60,
+									"lightColor": "7eccbc",
+									"colorFrom": "ffa324",
+									"colorTo": "9c3247",
+									"sizeFrom": 16,
+									"sizeTo": 4
+								},
+								{
+									"type": "WaveEffect",
+									"colorFrom": "ffa324",
+									"colorTo": "9c3247",
+									"sizeTo": 56,
+									"sizeFrom": 0,
+									"lifetime": 16,
+									"strokeFrom": 7,
+									"strokeTo": 0
+								}
+							]
+						},
+						"fragBullets": 4,
+						"fragBullet": {
+							"type": "FireBulletType",
+							"incendChance": 1,
+							"incendSpread": 80,
+							"incendAmount": 60
+						}
+					},
 					"intervalBullets": 1,
 					"intervalSpread": 0,
 					"intervalRandomSpread": 0,
@@ -461,94 +527,26 @@
 					"bulletInterval": 5,
 					"intervalDelay": 30,
 					"intervalBullet": {
-						{
-							"type": "ContinuousFlameBulletType",
-							"damage": 30,
-							"flareWidth": 3,
-							"flareColor": "9c3247",
-							"status": "burning",
-							"statusduration": 300,
-							"length": 40,
-							"pierceCap": 50,
-							"lifetime": 5,
-							"colors": [
-								"3b063a",
-								"9c3247",
-								"ffa324",
-								"fff0e3",
-								"ffffff"
-							],
-							"fragBullets": 1,
-							"fragBullet": {
-								"type": "ArtilleryBulletType",
-								"speed": 0,
-								"lifetime": 6,
-								"bulletInterval": 1,
-								"intervalRandomSpread": 360,
-								"intervalBullets": 4,
-								"damage": 1500,
-								"hitShake": 30,
-								"splashDamage": 1500,
-								"splashDamageRadius": 56,
-								"despawnHit": true,
-								"hitSound": "explosionReactor",
-								"hitEffect": {
-									"type": "MultiEffect",
-									"effects": [
-										{
-											"type": "ExplosionEffect",
-											"waveColor": "9c3247",
-											"sparkColor": "ffa324",
-											"smokeColor": "3b063a",
-											"waveLife": 120,
-											"waveStroke": 16,
-											"waveRad": 56,
-											"sparkStroke": 3,
-											"sparkRad": 120,
-											"sparkLen": 16,
-											"smokeSize": 8,
-											"smokeSizeBase": 16,
-											"smokeRad": 40,
-											"smokes": 18,
-											"sparks": 30
-										},
-										{
-											"type": "ParticleEffect",
-											"length": 72,
-											"lifetime": 180,
-											"region": "circle-bullet",
-											"particles": 60,
-											"lightColor": "7eccbc",
-											"colorFrom": "ffa324",
-											"colorTo": "9c3247",
-											"sizeFrom": 16,
-											"sizeTo": 4
-										},
-										{
-											"type": "WaveEffect",
-											"colorFrom": "ffa324",
-											"colorTo": "9c3247",
-											"sizeTo": 56,
-											"sizeFrom": 0,
-											"lifetime": 16,
-											"strokeFrom": 7,
-											"strokeTo": 0
-										}
-									]
-								},
-								"fragBullets": 4,
-								"fragBullet": {
-									"type": "FireBulletType",
-									"incendChance": 1,
-									"incendSpread": 80,
-									"incendAmount": 60
-								}
-							}
-						},
-						"shrinkY": 0,
-						"pierce": true,
-						"pierceCap": 20
-					}
+						"type": "ContinuousFlameBulletType",
+						"damage": 30,
+						"flareWidth": 3,
+						"flareColor": "9c3247",
+						"status": "burning",
+						"statusduration": 300,
+						"length": 40,
+						"pierceCap": 50,
+						"lifetime": 5,
+						"colors": [
+							"3b063a",
+							"9c3247",
+							"ffa324",
+							"fff0e3",
+							"ffffff"
+						]
+					},
+					"pierce": true,
+					"pierceCap": 50
+				}
 			]
 		}
 	},
