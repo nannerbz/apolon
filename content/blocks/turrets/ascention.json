@@ -6,7 +6,7 @@
     "targetGround": true,
     "health": 12600
     "size": 5
-    "reload": 100
+    "reload": 270
     "outlineColor": 222222
     "xRand": 0,
     "squareSprite": false
@@ -20,8 +20,8 @@
 		]
 	}
   }
-    "shootCone": 24,
-    "rotateSpeed": 2.4,
+    "shootCone": 26,
+    "rotateSpeed": 2.1,
     "range": 1850
     "ammoTypes": {
 		hypersteel-item: {
@@ -31,9 +31,9 @@
 			"trailWidth": 3,
 			"trailLength": 40,
 			"speed": 0.1,
-			"accel": 0.02,
+			"accel": 0.3,
 			"lifetime": 240,
-			"damage": 755,
+			"damage": 255,
 			"width": 15,
 			"height": 15,
 			"homingPower": 0.05,
@@ -51,7 +51,34 @@
 			"trailColor": "2f204a",
 			"splashDamage": 480,
 			"splashDamageRadius": 32,
-			"trailInterval": 1
+			"intervalBullets": 1,
+			"intervalRandomSpread": 0,
+			"intervalAngle": 0,
+			"bulletInterval": 1,
+			"intervalDelay": 0,
+			"intervalBullet": {
+				"type": "BasicBulletType",
+				"createChance": 0.02,
+				"damage": 160,
+				"keepVelocity": false,
+				"speed": 0,
+				"width": 8,
+				"height": 8,
+				"lifetime": 340,
+				"trailEffect": {
+					"type": "ParticleEffect",
+					"length": 24,
+					"lifetime": 5,
+					"region": "circle-bullet",
+					"particles": 6,
+					"lightColor": "a47ad6",
+					"colorFrom": "a47ad6",
+					"colorTo": "2f204a",
+					"sizeFrom": 2,
+					"sizeTo": 1
+				}
+			},
+			"trailInterval": 1,
 			"trailEffect": {
 				"type": "ExplosionEffect",
 				"layer": 49,
@@ -70,8 +97,6 @@
 				"smokes": 0,
 				"sparks": 3
 			},
-			"shootSound": "shotgunto",
-			"despawnSound": "unitExplode1",
 			"despawnEffect": {
 				"type": "ExplosionEffect",
 				"waveColor": "2f204a",
@@ -88,16 +113,16 @@
 				"smokeRad": 0,
 				"smokes": 0,
 				"sparks": 4
-			}
+			},
 			"spawnBullets": [
 				{
 					"type": "BasicBulletType",
-					"createChance": 0.2,
+					"createChance": 0.12,
 					"trailWidth": 4,
 					"trailLength": 5,
 					"speed": 0.05,
-					"accel": 0.02,
-					"lifetime": 242,
+					"accel": 0.1,
+					"lifetime": 480,
 					"damage": 1600,
 					"frontColor": "a47ad6",
 					"backColor": "4f24ab",
@@ -138,8 +163,8 @@
 		}
     }
 	shoot: {
-		shots: 18
-		shotDelay: 2
+		shots: 16
+		shotDelay: 3
 	}
 	drawer: {
 		type: DrawTurret,
