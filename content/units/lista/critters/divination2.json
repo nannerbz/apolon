@@ -91,8 +91,8 @@ weapons: [
 			"spread": 3
 		},
 		"reload": 70,
-		"x": 10,
-		"y": 12,
+		"x": 9,
+		"y": 8,
 		"shootSound": "Pulse",
 		"rotate": true,
 		"top": true,
@@ -117,7 +117,7 @@ weapons: [
 	{
 		"name": "pulsew1",
 		"reload": 30,
-		"x": 12,
+		"x": 9,
 		"y": 20,
 		"shootSound": "shootLaser",
 		"shoot": {
