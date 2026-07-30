@@ -9,23 +9,13 @@
     "size": 6,
     "extinguish": false,
     "reload": 1200,
-    "heatRequirement": 75,
+    "heatRequirement": 50,
     "maxHeatEfficiency": 1.5,
     "outlineColor": 222222,
     "xRand": 0,
     "squareSprite": false,
     "unitSort": "strongest",
     "shootY": 0,
-    "consumes": {
-        "liquids": {
-            "liquids": [
-                {
-                    "liquid": "cyanogen",
-                    "amount": 4
-                }
-            ]
-        }
-    },
     shoot: {
 		firstShotDelay: 600
 		shots: 150
