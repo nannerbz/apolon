@@ -1,7 +1,7 @@
 {
 	"type": "liquid",
-	"name": "Hypermelt Fluid",
-	"description": "One of the hottest substances ever conceived, ",
+	"name": "Ultramelt Fluid",
+	"description": "One of the hottest substances ever conceived, able to burn through anything with ease.",
 	"flammability": 5000,
 	"temperature": 3000,
 	"boilPoint": 15,
