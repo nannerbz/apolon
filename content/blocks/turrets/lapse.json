@@ -81,7 +81,7 @@
 				"under": false,
 				"progress": "warmup",
 				"heatColor": "ffffff",
-				"moveY": 2
+				"moveY": 0
 				"moveX": 2
 				"moveRot": -25
 			},
