@@ -337,11 +337,11 @@
       			heatProgress : warmup
       			heatColor : "c7455a"
       			mirror : true
-      			under : false
-			y : 2
-      			moveX : 2
-			moveY : -2
-      			moveRot : -25
+      			under : true
+				y : 2
+      			moveX : 6
+				moveY : -2
+      			moveRot : -15
 			moves: [
 				{
 					x: 1
@@ -358,11 +358,11 @@
       			heatProgress : warmup
       			heatColor : "c7455a"
       			mirror : true
-      			under : false
-			y : -1
-      			moveX : 3
-			moveY : -5
-      			moveRot : -35
+      			under : true
+			y : 2
+      			moveX : 12
+			moveY : -3
+      			moveRot : -25
 			moves: [
 				{
 					x: 2

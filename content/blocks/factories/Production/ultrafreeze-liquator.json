@@ -20,13 +20,12 @@
 		"items": {
 			"items": [
 				{ "item": "rad-snow-item", "amount": 3 },
-				{ "item": "cryogel-item", "amount": 1 }
+				{ "item": "cobalt-item", "amount": 1 }
 			]
                 }
 		"liquids": {
 			"liquids": [
-				{ "liquid": "cryofluid", "amount": 0.6 },
-				{ "liquid": "hydrogen", "amount": 0.2 }
+				{ "liquid": "cyanogen", "amount": 2 },
 			]
 		}
 	},
@@ -52,12 +51,12 @@
 	            	{
 	            	  type : DrawLiquidRegion
 	            	  suffix : "-liqInput"
-			  		  drawLiquid : "cryofluid"
+			  		  drawLiquid : "cyanogen"
 	            	},
 	            	{
 	            	  type : DrawLiquidRegion
 	            	  suffix : "-liqResult"
-			  		  drawLiquid : "cryofluid"
+			  		  drawLiquid : "cyanogen"
 	            	},
 					{
 	            	  type : DrawLiquidRegion
