@@ -1,28 +1,29 @@
 type: legs
-name: Nanobe
+name: Microbe
 speed: 0.7
-health: 300
-armor: 3
+health: 1800
+armor: 8
 rotateShoot: true
-legCount: 4
+legCount: 6
 hovering: true
 allowLegStep: true
 legStraightness: 0.4
 legContinuousMove: true
-legLength: 6
+legLength: 10
 lockLegBase: true
 legExtension: -2.5
-legMaxLength: 0.5
+legMaxLength: 0.8
 legMinLength: 0.2
-rippleScale: 0.3
+rippleScale: 0.4
 legLengthScl : 1.5
 legForwardScl : 2.1
-legBaseOffset: 2.5
+legBaseOffset: 3
 legMoveSpace: 1.1
-legGroupSize: 2
+legGroupSize: 3
 shadowElevation: 0.1
 outlineColor: 222222
-hitSize: 8
+hitSize: 16
+range: 180
 weapons: [
     {
         "name": "shitquark",
@@ -44,6 +45,32 @@ weapons: [
             "collidesGround": false,
             "damage": 0,
             "killShooter": true
+        }
+    }
+    {
+        "name": "logos-w2",
+        "reload": 40,
+        "x": 0,
+        "y": 0,
+        "shootSound": "lasershoot",
+        "shoot": {
+            "shots": 4,
+            "shotDelay": 2
+        },
+        "shootY": 0,
+        "randX": 0,
+        "mirror": false,
+        "rotate": true,
+        "top": true
+        "bullet": {
+            "type": "LaserBoltBulletType",
+            "damage": 106,
+            "speed": 4,
+            "lifetime": 45,
+            "frontColor": "64c990",
+            "backColor": "377d6e",
+            "shootEffect": "shootSmall",
+            "smokeEffect": "shootSmallSmoke"
         }
     }
 ]

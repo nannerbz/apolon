@@ -1,0 +1,82 @@
+template: UnitType
+name: Virion
+flying: true
+speed: 2.6
+accel: 0.06
+drag: 0.05
+health: 1250
+hitSize: 16
+armor: 7
+itemCapacity: 0
+outlineColor: 222222
+range: 95
+weapons: [
+	{
+		"name": "shitquark",
+		"reload": 9999,
+		"x": 0,
+		"y": 0,
+		"shots": 1,
+		"mirror": false,
+		"shootSound": "none",
+		"alwaysShooting": true,
+		"shoot": {
+			"firstShotDelay": 1200
+		},
+		"bullet": {
+			"type": "BulletType",
+			"lifetime": 1
+			"speed": 0
+			"collidesAir": false
+			"collidesGround": false
+			"damage": 0
+			"killShooter": true,
+		},
+	}
+	{
+		name: pragma-w2
+		reload: 60
+		x: 0
+		y: 0
+		shootSound: shootRetusa
+		rotateSpeed: 180
+		shoot: {
+			shots: 2
+			shotDelay: 6
+		}
+		shootY: 0
+		rotate: true
+		mirror: false
+		bullet: {
+			"type": "BasicBulletType",
+			"sprite": "mine-bullet",
+			"collidesTeam": true,
+			"healPercent": 0.6,
+			"width": 8,
+			"height": 8,
+			"shootEffect": "none",
+			"smokeEffect": "none",
+			"maxRange": 95,
+			"ignoreRotation": false,
+			"hitSound": "plasmaboom",
+			"hitSize": 16,
+			"lifetime": 115,
+			"speed": 2,
+			"hitEffect": "blastExplosion",
+			"keepVelocity": false,
+			"shrinkX": 0,
+			"shrinkY": 0,
+			"inaccuracy": 5,
+			"weaveMag": 5,
+			"weaveScale": 4,
+			"homingPower": 0.04,
+			"backColor": "64c990",
+			"frontColor": "377d6e",
+			"trailColor": "64c990",
+			"trailWidth": 3,
+			"trailLength": 8,
+			"splashDamage": 32,
+			"splashDamageRadius": 24,
+		}
+	}
+]
