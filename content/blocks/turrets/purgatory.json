@@ -32,9 +32,10 @@
     "shootSoundVolume": 1,
     "ammoTypes": {
         "cryofluid": {
-            "type": "BulletType",
+            "type": "LaserBulletType",
             "speed": 0,
             "lifetime": 300,
+            "damage": 5000
             "collides": false,
 
             intervalBullet: {
