@@ -267,12 +267,12 @@
                 "mirror": true,
                 "moveX": 1,
                 "moveY": 0,
-                "moveRot": -10,
+                "moveRot": 10,
                 "moves": [
                 {
                     x: 1
                     y: 0
-                    rot: -10,
+                    rot: 10,
                     progress: recoil
                 },
                 ]
@@ -490,7 +490,7 @@
                 "radiusTo": 15,
                 "stroke": 0,
                 "strokeTo": 2,
-                "y": -30,
+                "y": -15,
                 "progress": warmup,
                 "color": f5a15d,
             },
@@ -502,7 +502,7 @@
                 "radiusTo": 20,
                 "stroke": 0,
                 "strokeTo": 1,
-                "y": -30,
+                "y": -15,
                 "progress": warmup,
                 "color": f5a15d,
             },
@@ -514,7 +514,7 @@
                 "radiusTo": 7,
                 "stroke": 0,
                 "strokeTo": 2,
-                "y": -30,
+                "y": -15,
                 "progress": warmup,
                 "color": f5a15d,
             },
@@ -531,7 +531,7 @@
                 "triLengthTo": 8
                 "stroke": 0,
                 "strokeTo": 4,
-                "y": -30,
+                "y": -15,
                 "progress": warmup,
                 "color": f5a15d,
                 "haloRotateSpeed": 4,
@@ -549,7 +549,7 @@
                 "triLengthTo": 15
                 "stroke": 0,
                 "strokeTo": 4,
-                "y": -30,
+                "y": -15,
                 "progress": warmup,
                 "color": f5a15d,
                 "haloRotateSpeed": -2.5,
