@@ -12,7 +12,7 @@ regionRotated1: 1
 	consumes: {
 		items: {
 			items: [
-				{ "item": "vulcan-alloy-item", "amount": 1 }
+				{ "item": "vulcan-alloy-item", "amount": 3 }
 			]
 		}
 	}
@@ -32,10 +32,10 @@ regionRotated1: 1
 					"sparkStroke": 2,
 					"sparkRad": 18,
 					"sparkLen": 6,
-					"smokeSize": 3,
-					"smokeSizeBase": 6,
-					"smokeRad": 16,
-					"smokes": 4,
+					"smokeSize": 1,
+					"smokeSizeBase": 4,
+					"smokeRad": 12,
+					"smokes": 3,
 					"sparks": 4
 				},
 				"rotationSpacing": 90,
@@ -49,23 +49,23 @@ regionRotated1: 1
 				"lengthOffset": 10,
 				"rotationOffset": 45
 			},
-			{
-				"type": "ExplosionEffect",
-				"waveColor": "9c3247",
-				"smokeColor": "3b063a",
-				"sparkColor": "ffa324",
-				"waveLife": 20,
-				"waveStroke": 2,
-				"waveRad": 16,
-				"sparkStroke": 2,
-				"sparkRad": 18,
-				"sparkLen": 6,
-				"smokeSize": 3,
-				"smokeSizeBase": 6,
-				"smokeRad": 16,
-				"smokes": 4,
-				"sparks": 4
-			}
+				"effect": {
+					"type": "ExplosionEffect",
+					"waveColor": "9c3247",
+					"smokeColor": "3b063a",
+					"sparkColor": "ffa324",
+					"waveLife": 20,
+					"waveStroke": 2,
+					"waveRad": 16,
+					"sparkStroke": 2,
+					"sparkRad": 18,
+					"sparkLen": 6,
+					"smokeSize": 1,
+					"smokeSizeBase": 4,
+					"smokeRad": 12,
+					"smokes": 3,
+					"sparks": 4
+				},
 			{
 				"effect": "heatReactorSmoke"
 			}
