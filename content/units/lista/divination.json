@@ -2,7 +2,7 @@ template: UnitType
 name: Divination
 rotateSpeed: 0.8
 flying: true
-speed: 0.1
+speed: 0.2
 accel: 0.05
 drag: 0.04
 health: 40400
@@ -31,20 +31,6 @@ trailColor: "64c990"
 			"spread": 0
 		}
 ]
-parts: [
-	{
-		"type": "FlarePart",
-		"color1": "377d6e",
-		"color2": "64c990",
-		"followRotation": false,
-		"sides": 9,
-		"x": 0,
-		"y": 12,
-		"radius": 30,
-		"stroke": 2,
-		"layer": 106
-	}
-]
 weapons: [
 	{
 		"name": "divination-w",
@@ -60,17 +46,28 @@ weapons: [
 		"shootSound": "shootTank",
 		"bullet": {
 			"type": "ArtilleryBulletType",
-			"region": "apolon-boxx",
-			"width": 24
-			"height": 24
+			"width": 0,
+			"height": 0,
+			"trailWidth": 0
 			"collideAir": false,
 			"damage": 5000,
 			"splashDamage": 4000,
 			"splashDamageArea": 64,
 			"speed": 2,
 			"lifetime": 240,
-			"trailInterval": 5,
-			"trailEffect": "surgeCruciSmoke",
+			"trailInterval": 20,
+			"trailEffect": {
+				"type": "ParticleEffect",
+				"length": 0,
+				"lifetime": 60,
+				"region": "apolon-boxx",
+				"particles": 1,
+				"lightColor": "ffffff",
+				"colorFrom": "ffffff",
+				"colorTo": "ffffff",
+				"sizeFrom": 20,
+				"sizeTo": 0
+			},
 			"despawnEffect": {
 				"type": "ExplosionEffect",
 				"waveColor": "377d6e",
@@ -112,7 +109,7 @@ weapons: [
 		"repairSpeed": 0.8,
 		"mirror": true,
 		"laserColor": "58a68c",
-		"x": 18,
+		"x": 38,
 		"y": -16,
 		"bullet": {
 			"type": "BulletType",

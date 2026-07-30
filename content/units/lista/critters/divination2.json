@@ -30,20 +30,6 @@ trailColor: "64c990"
 			"spread": 60
 		}
 ]
-parts: [
-	{
-		"type": "FlarePart",
-		"color1": "377d6e",
-		"color2": "64c990",
-		"followRotation": false,
-		"sides": 9,
-		"x": 0,
-		"y": 12,
-		"radius": 30,
-		"stroke": 2,
-		"layer": 106
-	}
-]
 weapons: [
 	{
 		"type": "RepairBeamWeapon",
@@ -66,7 +52,7 @@ weapons: [
 		"repairSpeed": 0.8,
 		"mirror": true,
 		"laserColor": "58a68c",
-		"x": 18,
+		"x": 38,
 		"y": -16,
 		"bullet": {
 			"type": "BulletType",
@@ -74,6 +60,3 @@ weapons: [
 		}
 	}
 ],
-		"research": {
-			"parent": "ophanim"
-		}
