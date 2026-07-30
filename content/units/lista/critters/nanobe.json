@@ -1,0 +1,26 @@
+type: legs
+name: Nanobe
+speed: 0.7
+health: 300
+armor: 3
+rotateShoot: true
+legCount: 4
+hovering: true
+allowLegStep: true
+legStraightness: 0.4
+legContinuousMove: true
+legLength: 9
+lockLegBase: true
+legExtension: -2.5
+legBaseOffset: 1
+legMaxLength: 0.8
+legMinLength: 0.3
+rippleScale: 0.3
+legLengthScl : 1.9
+legForwardScl : 2.1
+legBaseOffset: 3.5
+legMoveSpace: 1.1
+legGroupSize: 2
+shadowElevation: 0.1
+outlineColor: 222222
+hitSize: 8
