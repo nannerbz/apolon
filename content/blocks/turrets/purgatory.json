@@ -385,6 +385,104 @@
                 ]
             },
             {
+                "type": "HaloPart",
+                "sides": 4,
+                "shapes": 4,
+                "tri": true,
+                "radius": 0,
+                "radiusTo": 5,
+                "haloRadius": 1,
+                "haloRadiusTo": 15,
+                "triLength": 0
+                "triLengthTo": 8
+                "stroke": 0,
+                "strokeTo": 4,
+                "y": -30,
+                "progress": warmup,
+                "color": f5a15d,
+                "haloRotateSpeed": 20,
+                "x": 0,
+                "y": 32,
+                "moveY": -24
+                "progress": {
+                        type: charge
+                        ops: [
+                            {
+                                op: curve
+                                interp: circleIn
+                            }
+                        ]
+                    },
+                "color": f5a15d,
+                "moves": [
+                {
+                    x: 2
+                    y: 0
+                    rot: 0,
+                    progress: {
+                        type: charge
+                        ops: [
+                            {
+                                op: sin
+                                scl: 3
+                                mag: 5
+                                offset: 5
+                            }
+                        ]
+                    }
+                },
+                ]
+            },
+            {
+                "type": "HaloPart",
+                "sides": 4,
+                "shapes": 4,
+                "tri": true,
+                "radius": 0,
+                "radiusTo": 5,
+                "haloRadius": 1,
+                "haloRadiusTo": 15,
+                "triLength": 0
+                "triLengthTo": 14
+                "stroke": 0,
+                "strokeTo": 4,
+                "y": -30,
+                "progress": warmup,
+                "color": f5a15d,
+                "haloRotateSpeed": -15,
+                "x": 0,
+                "y": 32,
+                "moveY": -24
+                "progress": {
+                        type: charge
+                        ops: [
+                            {
+                                op: curve
+                                interp: circleIn
+                            }
+                        ]
+                    },
+                "color": f5a15d,
+                "moves": [
+                {
+                    x: 2
+                    y: 0
+                    rot: 0,
+                    progress: {
+                        type: charge
+                        ops: [
+                            {
+                                op: sin
+                                scl: 3
+                                mag: 5
+                                offset: 5
+                            }
+                        ]
+                    }
+                },
+                ]
+            },
+            {
                 "type": "ShapePart",
                 "sides": 10,
                 "hollow": true,
@@ -392,7 +490,7 @@
                 "radiusTo": 15,
                 "stroke": 0,
                 "strokeTo": 2,
-                "y": -13,
+                "y": -30,
                 "progress": warmup,
                 "color": f5a15d,
             },
@@ -400,11 +498,11 @@
                 "type": "ShapePart",
                 "sides": 10,
                 "hollow": true,
-                "radius": 22,
-                "radiusTo": 18,
+                "radius": 24,
+                "radiusTo": 20,
                 "stroke": 0,
-                "strokeTo": 2,
-                "y": -13,
+                "strokeTo": 1,
+                "y": -30,
                 "progress": warmup,
                 "color": f5a15d,
             },
@@ -416,7 +514,7 @@
                 "radiusTo": 7,
                 "stroke": 0,
                 "strokeTo": 2,
-                "y": -13,
+                "y": -30,
                 "progress": warmup,
                 "color": f5a15d,
             },
@@ -433,7 +531,7 @@
                 "triLengthTo": 8
                 "stroke": 0,
                 "strokeTo": 4,
-                "y": -13,
+                "y": -30,
                 "progress": warmup,
                 "color": f5a15d,
                 "haloRotateSpeed": 4,
@@ -451,7 +549,7 @@
                 "triLengthTo": 15
                 "stroke": 0,
                 "strokeTo": 4,
-                "y": -13,
+                "y": -30,
                 "progress": warmup,
                 "color": f5a15d,
                 "haloRotateSpeed": -2.5,
