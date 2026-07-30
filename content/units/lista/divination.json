@@ -37,7 +37,7 @@ weapons: [
 		"reload": 1200,
 		"x": 0,
 		"y": 0,
-		"shootY": 16
+		"shootY": 24
 		"recoil": 16
 		"shootStatus": "slown",
 		"shootStatusDuration": 180,
@@ -48,27 +48,26 @@ weapons: [
 			"type": "ArtilleryBulletType",
 			"width": 0,
 			"height": 0,
-			"trailWidth": 0
+			"trailWidth": 0,
 			"collideAir": false,
 			"damage": 8000,
 			"splashDamage": 5000,
 			"splashDamageArea": 64,
 			"speed": 1,
 			"lifetime": 960,
-			"trailInterval": 60,
+			"trailInterval": 120,
 			"trailEffect": {
 				"type": "ParticleEffect",
-				"length": 2,
-				"lifetime": 150,
+				"length": 0,
+				"lifetime": 120,
 				"region": "apolon-boxx",
 				"particles": 1,
 				"lightColor": "64c990",
 				"colorFrom": "64c990",
 				"colorTo": "377d6e",
 				"sizeFrom": 10,
-				"spin": 1.5,
-				"useRotation": true,
-				"sizeTo": 5
+				"spin": 4,
+				"sizeTo": 0
 			},
 			"despawnEffect": {
 				"type": "ExplosionEffect",

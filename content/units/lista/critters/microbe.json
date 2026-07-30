@@ -9,17 +9,17 @@ hovering: true
 allowLegStep: true
 legStraightness: 0.4
 legContinuousMove: true
-legLength: 10
+legLength: 7
 lockLegBase: true
 legExtension: -2.5
-legMaxLength: 0.8
+legMaxLength: 0.5
 legMinLength: 0.2
-rippleScale: 0.4
+rippleScale: 0.3
 legLengthScl : 1.5
 legForwardScl : 2.1
-legBaseOffset: 3
+legBaseOffset: 2.2
 legMoveSpace: 1.1
-legGroupSize: 3
+legGroupSize: 2
 shadowElevation: 0.1
 outlineColor: 222222
 hitSize: 16
@@ -52,10 +52,10 @@ weapons: [
         "reload": 40,
         "x": 0,
         "y": 0,
-        "shootSound": "lasershoot",
+        "shootSound": "shootLaser",
         "shoot": {
             "shots": 4,
-            "shotDelay": 2
+            "shotDelay": 8
         },
         "shootY": 0,
         "randX": 0,
@@ -65,8 +65,8 @@ weapons: [
         "bullet": {
             "type": "LaserBoltBulletType",
             "damage": 106,
-            "speed": 4,
-            "lifetime": 45,
+            "speed": 6,
+            "lifetime": 30,
             "frontColor": "64c990",
             "backColor": "377d6e",
             "shootEffect": "shootSmall",
