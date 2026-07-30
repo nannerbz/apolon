@@ -176,7 +176,7 @@
       			heatColor : "c7455a"
       			mirror : true
       			under : false
-      			moveX : 12
+      			moveX : 9
 			    moveY : -2
       			moveRot : 0
                 "moves": [
