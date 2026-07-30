@@ -9,17 +9,17 @@ hovering: true
 allowLegStep: true
 legStraightness: 0.4
 legContinuousMove: true
-legLength: 7
+legLength: 12
 lockLegBase: true
 legExtension: -2.5
-legMaxLength: 0.5
+legMaxLength: 0.7
 legMinLength: 0.2
 rippleScale: 0.3
 legLengthScl : 1.5
 legForwardScl : 2.1
-legBaseOffset: 2.2
-legMoveSpace: 1.1
-legGroupSize: 2
+legBaseOffset: 2
+legMoveSpace: 1
+legGroupSize: 3
 shadowElevation: 0.1
 outlineColor: 222222
 hitSize: 16
@@ -48,7 +48,7 @@ weapons: [
         }
     }
     {
-        "name": "logos-w2",
+        "name": "microbe-w",
         "reload": 40,
         "x": 0,
         "y": 0,
