@@ -212,9 +212,9 @@
 
 		bulletInterval: 1
 		intervalRandomSpread: 5
-		intervalBullets: 2
+		intervalBullets: 3
 		intervalAngle: 0
-		intervalSpread: 35
+		intervalSpread: 8
         },
     }
     "drawer": {
@@ -332,11 +332,11 @@
                 "type": "ShapePart",
                 "sides": 8,
                 "hollow": true,
-                "radius": 4,
-                "radiusTo": 5,
+                "radius": 12,
+                "radiusTo": 15,
                 "stroke": 0,
-                "strokeTo": 4,
-                "y": -8,
+                "strokeTo": 2,
+                "y": -15,
                 "progress": warmup,
                 "color": f5a15d,
             },
@@ -366,7 +366,7 @@
                 "y": -8,
                 "progress": warmup,
                 "color": f5a15d,
-                "rotateSpeed": 4,
+                "haloRotateSpeed": 4,
             },
         ]
     },
