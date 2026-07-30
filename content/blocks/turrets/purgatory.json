@@ -41,6 +41,7 @@
             "type": "BulletType",
             "despawnShake": 4
             "spawnBullets": [
+                {
                 "type": "BasicBulletType",
                 "shrinkY": 0,
                 "shrinkX": 0,
@@ -92,6 +93,7 @@
 		        intervalBullets: 1
 		        intervalAngle: 0
 		        IntervalSpread: 0
+            },
             ],
             },
 
