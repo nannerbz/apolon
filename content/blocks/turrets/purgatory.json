@@ -344,8 +344,8 @@
                 "stroke": 0,
                 "strokeTo": 2,
                 "x": 0,
-                "y": 16,
-                "moveY": -8
+                "y": 32,
+                "moveY": -24
                 "progress": {
                         type: charge
                         ops: [
@@ -369,6 +369,7 @@
                                 op: sin
                                 scl: 3
                                 mag: 5
+                                offset: 5
                             }
                         ]
                     }

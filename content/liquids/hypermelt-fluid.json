@@ -10,7 +10,7 @@
 	"viscosity": 0.2,
 	"heatCapacity": 0,
 	"research": [ vulcan-alloy-item, mellowfluid ]
-	"explosiveness": 10,
+	"explosiveness": 0.5,
 	"barColor": "f5a15d",
 	"gas": false
 }
