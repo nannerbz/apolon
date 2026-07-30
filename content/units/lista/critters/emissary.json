@@ -44,6 +44,7 @@ weapons: [
         "shootSound": "Pulse",
         "rotate": true,
         "top": true,
+        "mirror": false,
         "bullet": {
             "type": "BasicBulletType",
             "damage": 200,
@@ -68,8 +69,10 @@ weapons: [
         "y": 0,
         "shootSound": "none",
         "shootEffect": "surgeCruciSmoke",
+        "mirror": false
         "rotate": true,
         "top": true,
+        "alwaysShooting": true,
         "bullet": {
             "type": "BulletType",
             "lifetime": 1,
@@ -79,10 +82,12 @@ weapons: [
             "damage": 0,
             "spawnBullets": [
                 {
-                    "spawnUnit": microbe
+                    "type": "BulletType",
+                    "spawnUnit": "microbe"
                 },
                 {
-                    "spawnUnit": virion
+                    "type": "BulletType",
+                    "spawnUnit": "virion"
                 }
             ]
         }

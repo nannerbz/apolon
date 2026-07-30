@@ -44,7 +44,8 @@ weapons: [
         "y": 0,
         "shootSound": "Pulse",
         "rotate": true,
-        "top": true
+        "top": true,
+        "mirror": false,
         "bullet": {
             "type": "BasicBulletType",
             "damage": 200,

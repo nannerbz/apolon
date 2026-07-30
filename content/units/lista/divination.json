@@ -87,6 +87,219 @@ weapons: [
 				"sparks": 4
 			},
 			"despawnHit": true
+			"fragBullets": 1
+			"fragBullet": {
+				"type": "BulletType",
+				"lifetime": 1,
+				"speed": 0,
+				"collidesAir": false,
+				"collidesGround": false,
+				"damage": 0,
+				"spawnBullets": [
+					{
+						"type": "BulletType",
+						"spawnUnit": "temperance"
+					},
+					{
+						"type": "BasicBulletType",
+						"width": 0,
+						"height": 0,
+						"trailWidth": 0,
+						"collideAir": false,
+						"damage": 8000,
+						"splashDamage": 5000,
+						"splashDamageArea": 64,
+						"speed": 1,
+						"lifetime": 40,
+						"trailInterval": 60,
+						"trailEffect": {
+							"type": "ParticleEffect",
+							"length": 0,
+							"lifetime": 30,
+							"region": "apolon-boxx",
+							"particles": 1,
+							"lightColor": "64c990",
+							"colorFrom": "64c990",
+							"colorTo": "377d6e",
+							"sizeFrom": 20,
+							"spin": 4,
+							"sizeTo": 0
+						},
+						"despawnEffect": {
+							"type": "ExplosionEffect",
+							"waveColor": "377d6e",
+							"smokeColor": "377d6e",
+							"sparkColor": "64c990",
+							"waveLife": 20,
+							"waveStroke": 2,
+							"waveRad": 64,
+							"sparkStroke": 2,
+							"sparkRad": 64,
+							"sparkLen": 6,
+							"smokeSize": 0,
+							"smokeSizeBase": 0,
+							"smokeRad": 0,
+							"smokes": 0,
+							"sparks": 4
+						},
+						"despawnHit": true,
+						"fragBullets": 2,
+						"fragSpread": 90
+						"fragBullet": {
+							"type": "BasicBulletType",
+							"width": 0,
+							"height": 0,
+							"trailWidth": 0,
+							"collideAir": false,
+							"damage": 8000,
+							"splashDamage": 5000,
+							"splashDamageArea": 64,
+							"speed": 1,
+							"lifetime": 40,
+							"trailInterval": 60,
+							"trailEffect": {
+								"type": "ParticleEffect",
+								"length": 0,
+								"lifetime": 30,
+								"region": "apolon-boxx",
+								"particles": 1,
+								"lightColor": "64c990",
+								"colorFrom": "64c990",
+								"colorTo": "377d6e",
+								"sizeFrom": 20,
+								"spin": 4,
+								"sizeTo": 0
+							},
+							"despawnEffect": {
+								"type": "ExplosionEffect",
+								"waveColor": "377d6e",
+								"smokeColor": "377d6e",
+								"sparkColor": "64c990",
+								"waveLife": 20,
+								"waveStroke": 2,
+								"waveRad": 64,
+								"sparkStroke": 2,
+								"sparkRad": 64,
+								"sparkLen": 6,
+								"smokeSize": 0,
+								"smokeSizeBase": 0,
+								"smokeRad": 0,
+								"smokes": 0,
+								"sparks": 4
+							},
+							"despawnHit": true,
+							"fragBullets": 1,
+							"fragBullet": {
+								"type": "BulletType",
+								"lifetime": 1,
+								"speed": 0,
+								"collidesAir": false,
+								"collidesGround": false,
+								"damage": 0,
+								"spawnBullets": [
+									{
+										"type": "BulletType",
+										"spawnUnit": "stoic"
+									}
+									{
+										"type": "BasicBulletType",
+										"width": 0,
+										"height": 0,
+										"trailWidth": 0,
+										"collideAir": false,
+										"damage": 8000,
+										"splashDamage": 5000,
+										"splashDamageArea": 64,
+										"speed": 1,
+										"lifetime": 80,
+										"trailInterval": 60,
+										"trailEffect": {
+											"type": "ParticleEffect",
+											"length": 0,
+											"lifetime": 30,
+											"region": "apolon-boxx",
+											"particles": 1,
+											"lightColor": "64c990",
+											"colorFrom": "64c990",
+											"colorTo": "377d6e",
+											"sizeFrom": 20,
+											"spin": 4,
+											"sizeTo": 0
+										},
+										"despawnEffect": {
+											"type": "ExplosionEffect",
+											"waveColor": "377d6e",
+											"smokeColor": "377d6e",
+											"sparkColor": "64c990",
+											"waveLife": 20,
+											"waveStroke": 2,
+											"waveRad": 64,
+											"sparkStroke": 2,
+											"sparkRad": 64,
+											"sparkLen": 6,
+											"smokeSize": 0,
+											"smokeSizeBase": 0,
+											"smokeRad": 0,
+											"smokes": 0,
+											"sparks": 4
+										},
+										"despawnHit": true,
+										"angleOffset": 180,
+										"fragBullet": {
+											"type": "BulletType",
+											"spawnUnit": "soprano"
+										}
+										},
+										{
+											"type": "BasicBulletType",
+											"width": 0,
+											"height": 0,
+											"trailWidth": 0,
+											"collideAir": false,
+											"damage": 8000,
+											"splashDamage": 5000,
+											"splashDamageArea": 64,
+											"speed": 1,
+											"lifetime": 80,
+											"trailInterval": 60,
+											"trailEffect": {
+												"type": "ParticleEffect",
+												"length": 0,
+												"lifetime": 30,
+												"region": "apolon-boxx",
+												"particles": 1,
+												"lightColor": "64c990",
+												"colorFrom": "64c990",
+												"colorTo": "377d6e",
+												"sizeFrom": 20,
+												"spin": 4,
+												"sizeTo": 0
+											},
+											"despawnEffect": {
+												"type": "ExplosionEffect",
+												"waveColor": "377d6e",
+												"smokeColor": "377d6e",
+												"sparkColor": "64c990",
+												"waveLife": 20,
+												"waveStroke": 2,
+												"waveRad": 64,
+												"sparkStroke": 2,
+												"sparkRad": 64,
+												"sparkLen": 6,
+												"smokeSize": 0,
+												"smokeSizeBase": 0,
+												"smokeRad": 0,
+												"smokes": 0,
+												"sparks": 4
+											},
+											"despawnHit": true
+										}
+								]
+							}
+							}
+						}
+				]
+			}
 		},
 	}
 	{
