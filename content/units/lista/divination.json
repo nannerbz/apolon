@@ -1,8 +1,8 @@
 template: UnitType
 name: Divination
-rotateSpeed: 0.8
+rotateSpeed: 0.7
 flying: true
-speed: 0.2
+speed: 0.4
 accel: 0.05
 drag: 0.04
 health: 40400

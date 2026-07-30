@@ -1,6 +1,6 @@
 type: legs
 name: Nanobe
-speed: 0.7
+speed: 1.5
 health: 300
 armor: 3
 rotateShoot: true
@@ -34,7 +34,7 @@ weapons: [
         "shootSound": "none",
         "alwaysShooting": true,
         "shoot": {
-            "firstShotDelay": 1200
+            "firstShotDelay": 900
         },
         "bullet": {
             "type": "BulletType",

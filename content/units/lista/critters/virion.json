@@ -1,7 +1,7 @@
 template: UnitType
 name: Virion
 flying: true
-speed: 2.8
+speed: 3
 accel: 0.06
 drag: 0.05
 health: 1250
@@ -29,7 +29,7 @@ weapons: [
 		"shootSound": "none",
 		"alwaysShooting": true,
 		"shoot": {
-			"firstShotDelay": 1200
+			"firstShotDelay": 900
 		},
 		"bullet": {
 			"type": "BulletType",
@@ -69,8 +69,8 @@ weapons: [
 			"ignoreRotation": false,
 			"hitSound": "plasmaboom",
 			"hitSize": 16,
-			"lifetime": 115,
-			"speed": 2,
+			"lifetime": 57,
+			"speed": 4,
 			"hitEffect": "blastExplosion",
 			"keepVelocity": false,
 			"shrinkX": 0,
