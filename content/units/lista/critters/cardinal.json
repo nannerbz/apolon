@@ -1,5 +1,5 @@
 template: UnitType
-name: Temperate
+name: Cardinal
 speed: 0
 health: 5000
 armor: 20
@@ -11,8 +11,30 @@ range: 320
     abilities: [
         {
             "type": "RepairFieldAbility",
-            "amount": 500,
+            "amount": 250,
             "reload": 60,
+            "range": 80,
+            "activeEffect": {
+                "type": "WaveEffect",
+                "colorFrom": "377d6e",
+                "colorTo": "64c990",
+                "sizeTo": 80,
+                "lifetime": 30,
+                "strokeFrom": 2
+            },
+            "healEffect": {
+                "type": "WaveEffect",
+                "colorFrom": "377d6e",
+                "colorTo": "64c990",
+                "sizeTo": 16,
+                "lifetime": 7,
+                "strokeFrom": 1
+            }
+        }
+        {
+            "type": "StatusFieldAbility",
+            "effect": vitality,
+            "reload": 90,
             "range": 80,
             "activeEffect": {
                 "type": "WaveEffect",
@@ -97,7 +119,7 @@ weapons: [
                                 }
                             ]
                         }
-                    },
+                    }
                 ]
             }
 

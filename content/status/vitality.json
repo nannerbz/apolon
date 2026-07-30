@@ -1,0 +1,34 @@
+{
+	"type": "StatusEffect",
+	"name": "Permafrozen",
+	"outline": false,
+	"speedMultiplier": 1.2,
+	"healthMultiplier": 3,
+	"disarm": false,
+	"damage": 0,
+	"parentizeEffect": true,
+	"permanent": false,
+	"reactive": false,
+	"show": true,
+	"color": "64c990",
+	"effect": {
+		"type": "WaveEffect",
+		"colorFrom": "377d6e",
+		"colorTo": "64c990",
+		"sizeTo": 8,
+		"lifetime": 7,
+		"strokeFrom": 1
+	},
+	"applyEffect": {
+		"type": "WaveEffect",
+		"colorFrom": "377d6e",
+		"colorTo": "64c990",
+		"sizeTo": 16,
+		"lifetime": 30,
+		"strokeFrom": 2
+	},
+	"applyExtend": false,
+	"applyColor": "87ceeb",
+	"parentizeApplyEffect": true,
+	"transitionDamage": 0
+}

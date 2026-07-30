@@ -1,5 +1,5 @@
 template: UnitType
-name: Nihilo
+name: Stoic
 rotateShoot: false
 rotateSpeed:0
 speed: 0
@@ -43,7 +43,8 @@ weapons: [
         "x": 0,
         "y": 0,
         "shootSound": "Pulse",
-        "rotate": false,
+        "rotate": true,
+        "top": true
         "bullet": {
             "type": "BasicBulletType",
             "damage": 200,
