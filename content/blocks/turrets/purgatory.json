@@ -1,0 +1,203 @@
+{
+    "type": "LiquidTurret",
+    "name": "Purgatory",
+    "description": "The most deadly demonic form of destruction in Akyao. Capable of blasting down any and all things opposing it in mere seconds, leaving nothing but smoldering craters and utter chaos in its wake.",
+    "targetAir": true,
+    "targetGround": true,
+    "hasPower": true,
+    "health": 14550,
+    "size": 6,
+    "extinguish": false,
+    "reload": 1200,
+    "heatRequirement": 75,
+    "maxHeatEfficiency": 1.5,
+    "outlineColor": 222222,
+    "xRand": 0,
+    "squareSprite": false,
+    "unitSort": "strongest",
+    "shootY": 0,
+    "consumes": {
+        "liquids": {
+            "liquids": [
+                {
+                    "liquid": "cyanogen",
+                    "amount": 4
+                }
+            ]
+        }
+    },
+    shoot: {
+		firstShotDelay: 600
+		shots: 150
+		shotDelay: 2
+	}
+    "shootCone": 45,
+    "rotateSpeed": 1,
+    "range": 380,
+    "loopSound": "hellAmbient",
+    "chargeSound": "demonicBeckoning",
+    "shootSound": "demonicUproar",
+    "ammoTypes": {
+        "cryofluid": {
+            "type": "MissileBulletType",
+            "frontColor": "7ec0cc",
+            "backColor": "37727d",
+            "trailColor": "599ca8",
+            "speed": 3,
+            "lifetime": 88,
+            "damage": 30,
+            "width": 8,
+            "height": 8,
+            "shrinkY": 0,
+            "splashDamage": 15,
+            "splashDamageRadius": 48,
+            "ammoMultiplier": 1,
+            "hitEffect": "hitLiquid",
+            "despawnEffect": "hitLiquid",
+            "buildingDamageMultiplier": 0.05,
+            "homingPower": 0.04,
+            "status": "freezing",
+            "statusDuration": 120
+
+            intervalBullet: {
+			    type: LiquidBulletType
+                lifetime: 30
+                speed: 2
+                puddleSize: 8
+                liquid: "cryofluid"
+                damage: 1
+    	    }
+
+		bulletInterval: 3
+		intervalRandomSpread: 15
+		intervalBullets: 3
+		intervalAngle: 180
+		IntervalSpread: 35
+        },
+    }
+    "drawer": {
+        "type": "DrawTurret",
+        "basePrefix": "base",
+        "parts": [
+            {
+                "type": "RegionPart",
+                "suffix": "-saw",
+                "progress": "warmup",
+                "heatProgress": "warmup",
+                "heatColor": "f5a15d",
+                "mirror": true,
+                "moveX": 5,
+                "moveY": 3,
+                "moveRot": 0,
+                "spinSprite": true,
+                "rotateSpeed": 15,
+            },
+            {
+                "type": "RegionPart",
+                "suffix": "-back",
+                "progress": "warmup",
+                "heatProgress": "warmup",
+                "heatColor": "f5a15d",
+                "mirror": false,
+                "moveX": 0,
+                "moveY": 0,
+                "moveRot": 0
+            },
+            {
+                "type": "RegionPart",
+                "suffix": "-cannon",
+                "progress": "recoil",
+                "heatProgress": "recoil",
+                "heatColor": "f5a15d",
+                "mirror": true,
+                "moveX": 1,
+                "moveY": 0,
+                "moveRot": 5,
+            },
+            {
+                "type": "RegionPart",
+                "suffix": "-barrel",
+                "progress": "warmup",
+                "heatProgress": "warmup",
+                "heatColor": "f5a15d",
+                "mirror": true,
+                "moveX": 0,
+                "moveY": 1,
+                "moveRot": -10,
+            },
+            {
+                "type": "RegionPart",
+                "suffix": "-plate",
+                "progress": "warmup",
+                "heatProgress": "warmup",
+                "heatColor": "f5a15d",
+                "mirror": true,
+                "moveX": -3,
+                "moveY": -1,
+                "moveRot": 35,
+            },
+            {
+                "type": "RegionPart",
+                "suffix": "-arm",
+                "progress": "warmup",
+                "heatProgress": "warmup",
+                "heatColor": "f5a15d",
+                "mirror": true,
+                "moveX": 0,
+                "moveY": 3,
+                "moveRot": 35,
+            },
+            {
+                "type": "RegionPart",
+                "suffix": "-center",
+                "progress": "recoil",
+                "heatProgress": "recoil",
+                "heatColor": "f5a15d",
+                "mirror": false,
+                "moveX": 0,
+                "moveY": -3,
+                "moveRot": 0
+            },
+        ]
+    },
+    "requirements": [
+        {
+            "item": "hypersteel-item",
+            "amount": 250
+        },
+        {
+            "item": "tungsten",
+            "amount": 350
+        },
+        {
+            "item": "cobalt-item",
+            "amount": 500
+        },
+        {
+            "item": "metaglass",
+            "amount": 250
+        },
+        {
+            "item": "fissile-matter",
+            "amount": 250
+        },
+        {
+            "item": "photoglass-item",
+            "amount": 750
+        },
+        {
+            "item": "chromium-item",
+            "amount": 500
+        },
+        {
+            "item": "kobra-alloy-item",
+            "amount": 300
+        }
+    ],
+    "category": "turret",
+    "minWarmup": 0.9,
+    "shootWarmupSpeed": 0.004,
+    "research": "ascention",
+    "shake": 7,
+    "researchCostMultiplier": 0.05
+}
