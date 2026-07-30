@@ -1,0 +1,16 @@
+{
+	"type": "liquid",
+	"name": "Hypermelt Fluid",
+	"description": "One of the hottest substances ever conceived, ",
+	"flammability": 5000,
+	"temperature": 3000,
+	"boilPoint": 15,
+	"color": "f5a15d",
+	"gasColor": "f5a15d",
+	"viscosity": 0.2,
+	"heatCapacity": 0,
+	"research": [ vulcan-alloy-item, mellowfluid ]
+	"explosiveness": 10,
+	"barColor": "f5a15d",
+	"gas": false
+}

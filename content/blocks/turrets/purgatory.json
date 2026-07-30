@@ -23,7 +23,7 @@
 	}
     "shootCone": 5,
     "rotateSpeed": 1,
-    "range": 500,
+    "range": 250,
     "loopSound": "hellambient",
     "loopSoundVolume": 1.5,
     "chargeSound": "demonicBeckoning",
@@ -31,52 +31,72 @@
     "moveWhileCharging": false,
     "shootSoundVolume": 1,
     "ammoTypes": {
-        "cryofluid": {
-            "type": "LaserBulletType",
+        "hypermelt-fluid": {
+            "type": "BulletType",
             "speed": 0,
             "lifetime": 300,
-            "damage": 5000
             "collides": false,
-
+            
             intervalBullet: {
-            "type": "MissileBulletType",
-            "frontColor": "7ec0cc",
-            "backColor": "37727d",
-            "trailColor": "599ca8",
-            "speed": 8,
-            "lifetime": 30,
-            "damage": 30,
-            "width": 8,
-            "height": 8,
-            "shrinkY": 0,
-            "splashDamage": 15,
-            "splashDamageRadius": 48,
-            "ammoMultiplier": 1,
-            "hitEffect": "hitLiquid",
-            "despawnEffect": "hitLiquid",
-            "buildingDamageMultiplier": 0.05,
-            "homingPower": 0.04,
-            "status": "freezing",
-            "statusDuration": 120
+            "type": "BulletType",
+            "despawnShake": 4
+            "spawnBullets": [
+                "type": "BasicBulletType",
+                "shrinkY": 0,
+                "shrinkX": 0,
+                "trailWidth": 3,
+                "trailLength": 8,
+                "speed": 12,
+                "lifetime": 20.83,
+                "damage": 80,
+                "backColor": "9c3247",
+                "frontColor": "f5a15d",
+                "trailColor": "3b063a",
+                "burstSpacing": 4,
+                "width": 16,
+                "height": 24,
+                "hitEffect": "hitLancer",
+                "ammoMultiplier": 3,
+                "followAimSpeed": 2,
+                "pierce": true,
+                "pierceCap": 999,
+                "buildingDamageMultiplier": 0.01
+                intervalBullet: {
+                    "type": "ContinuousLaserBulletType",
+                    "shake": 6,
+                    "continuous": true,
+                    "keepVelocity": false,
+                    "speed": 0,
+                    "length": 25,
+                    "width": 12,
+                    "despawnEffect": "none",
+                    "smokeEffect": "none",
+                    "hitEffect": "none",
+                    "damage": 20,
+                    "damageInterval": 1,
+                    "status": "melting",
+                    "statusDuration": 400,
+                    "lifetime": 2,
+                    "fadeTime": 1,
+                    "incendSpread": 30,
+                    "incendAmount": 3,
+                    "incendChance": 0.8,
+                    "colors": [ "275861", "58a68c", "7eccbc", "abdbce", "ffffff" ],
+                    "despawnSound": "none",
+                    "pierce": true,
+                    "pierceCap": 999
+                },
 
-            intervalBullet: {
-			    type: LiquidBulletType
-                lifetime: 30
-                speed: 2
-                puddleSize: 8
-                liquid: "cryofluid"
-                damage: 1
-    	    }
+		        bulletInterval: 3
+		        intervalRandomSpread: 15
+		        intervalBullets: 1
+		        intervalAngle: 0
+		        IntervalSpread: 0
+            ],
+            },
 
 		bulletInterval: 3
-		intervalRandomSpread: 15
-		intervalBullets: 3
-		intervalAngle: 180
-		IntervalSpread: 35
-        },
-
-		bulletInterval: 3
-		intervalRandomSpread: 15
+		intervalRandomSpread: 5
 		intervalBullets: 3
 		intervalAngle: 0
 		IntervalSpread: 35
@@ -131,7 +151,7 @@
                 "type": "RegionPart",
                 "suffix": "-barrel",
                 "progress": "warmup",
-                "heatProgress": "warmup",
+                "heatProgress": "recoil",
                 "heatColor": "f5a15d",
                 "mirror": true,
                 "moveX": 0,
