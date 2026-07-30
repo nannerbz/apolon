@@ -20,8 +20,6 @@
     },
     shoot: {
 		firstShotDelay: 500
-        shots: 150
-        shotDelay: 2
 	}
     "shootCone": 5,
     "rotateSpeed": 1,
@@ -31,15 +29,21 @@
     "chargeSound": "demonicBeckoning",
     "shootSound": "demonicUproar",
     "moveWhileCharging": false,
-    "shootSoundVolume": 2.5,
+    "shootSoundVolume": 1,
     "ammoTypes": {
         "cryofluid": {
+            "type": "BulletType",
+            "speed": 0,
+            "lifetime": 300,
+            "collides": false,
+
+            intervalBullet: {
             "type": "MissileBulletType",
             "frontColor": "7ec0cc",
             "backColor": "37727d",
             "trailColor": "599ca8",
-            "speed": 3,
-            "lifetime": 88,
+            "speed": 8,
+            "lifetime": 30,
             "damage": 30,
             "width": 8,
             "height": 8,
@@ -69,6 +73,13 @@
 		intervalAngle: 180
 		IntervalSpread: 35
         },
+
+		bulletInterval: 3
+		intervalRandomSpread: 15
+		intervalBullets: 3
+		intervalAngle: 0
+		IntervalSpread: 35
+        },
     }
     "drawer": {
         "type": "DrawTurret",
@@ -81,14 +92,14 @@
                 "heatProgress": "warmup",
                 "heatColor": "f5a15d",
                 "mirror": true,
-                "moveX": 18,
-                "moveY": 6,
+                "moveX": 12,
+                "moveY": 2,
                 "moveRot": 0,
                 "moves": [
                 {
                     x: 0
                     y: 0
-                    rot: 360,
+                    rot: 30,
                     progress: time
                 },
                 ]
