@@ -1,8 +1,8 @@
 template: UnitType
 name: Cardinal
 speed: 0
-health: 5000
-armor: 20
+health: 2000
+armor: 10
 rotateShoot: false
 rotateSpeed:0
 outlineColor: 222222
@@ -11,8 +11,8 @@ range: 320
     abilities: [
         {
             "type": "RepairFieldAbility",
-            "amount": 250,
-            "reload": 60,
+            "amount": 80,
+            "reload": 80,
             "range": 80,
             "activeEffect": {
                 "type": "WaveEffect",
@@ -35,7 +35,7 @@ range: 320
             "type": "StatusFieldAbility",
             "effect": vitality,
             "reload": 90,
-            "range": 80,
+            "range": 60,
             "activeEffect": {
                 "type": "WaveEffect",
                 "colorFrom": "377d6e",
@@ -52,6 +52,12 @@ range: 320
                 "lifetime": 7,
                 "strokeFrom": 1
             }
+        }
+        {
+            "type": "SpawnDeathAbility",
+            "unit": "nanobe",
+            "amount": 4,
+            "spread": 8
         }
 ]
 weapons: [

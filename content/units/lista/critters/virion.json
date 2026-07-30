@@ -10,6 +10,14 @@ armor: 7
 itemCapacity: 0
 outlineColor: 222222
 range: 95
+		abilities: [
+		{
+			"type": "SpawnDeathAbility",
+			"unit": "nanobe",
+			"amount": 3,
+			"spread": 8
+		}
+]
 weapons: [
 	{
 		"name": "shitquark",

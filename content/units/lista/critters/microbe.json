@@ -1,8 +1,8 @@
 type: legs
 name: Microbe
 speed: 0.7
-health: 1800
-armor: 8
+health: 1400
+armor: 6
 rotateShoot: false
 legCount: 6
 hovering: true
@@ -24,6 +24,14 @@ shadowElevation: 0.1
 outlineColor: 222222
 hitSize: 16
 range: 180
+    		abilities: [
+		{
+			"type": "SpawnDeathAbility",
+			"unit": "nanobe",
+			"amount": 1,
+			"spread": 8
+		}
+]
 weapons: [
     {
         "name": "shitquark",

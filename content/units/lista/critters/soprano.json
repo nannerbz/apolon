@@ -3,12 +3,20 @@ name: Soprano
 rotateShoot: false
 rotateSpeed:0
 speed: 0
-health: 5000
-armor: 20
+health: 2000
+armor: 10
 rotateShoot: false
 outlineColor: 222222
 hitSize: 16
 range: 320
+    		abilities: [
+		{
+			"type": "SpawnDeathAbility",
+			"unit": "nanobe",
+			"amount": 4,
+			"spread": 8
+		}
+]
 weapons: [
     {
         "name": "shitquark",
