@@ -1,0 +1,90 @@
+template: UnitType
+name: Emissary
+speed: 0
+health: 8000
+armor: 20
+rotateShoot: false
+rotateSpeed:0
+outlineColor: 222222
+hitSize: 16
+range: 640
+weapons: [
+    {
+        "name": "shitquark",
+        "reload": 9999,
+        "x": 0,
+        "y": 0,
+        "shots": 1,
+        "mirror": false,
+        "shootSound": "none",
+        "alwaysShooting": true,
+        "shoot": {
+            "firstShotDelay": 2400
+        },
+        "bullet": {
+            "type": "BulletType",
+            "lifetime": 1,
+            "speed": 0,
+            "collidesAir": false,
+            "collidesGround": false,
+            "damage": 0,
+            "killShooter": true
+        }
+    }
+    {
+        "name": "pulsew2",
+        "shoot": {
+            "type": "shootSpread",
+            "shots": 3,
+            "spread": 4
+        },
+        "reload": 40,
+        "x": 0,
+        "y": -3,
+        "shootSound": "Pulse",
+        "rotate": true,
+        "top": true,
+        "bullet": {
+            "type": "BasicBulletType",
+            "damage": 200,
+            "pierceArmor": true,
+            "speed": 4,
+            "width": 8,
+            "height": 12,
+            "lifetime": 160,
+            "backColor": "377d6e",
+            "frontColor": "64c990",
+            "trailColor": "377d6e",
+            "trailLength": 8,
+            "trailWidth": 4,
+            "shootEffect": "shootSmall",
+            "smokeEffect": "shootSmallSmoke"
+        }
+    }
+    {
+        "name": "shitquark",
+        "reload": 180,
+        "x": 0,
+        "y": 0,
+        "shootSound": "none",
+        "shootEffect": "surgeCruciSmoke",
+        "rotate": true,
+        "top": true,
+        "bullet": {
+            "type": "BulletType",
+            "lifetime": 1,
+            "speed": 0,
+            "collidesAir": false,
+            "collidesGround": false,
+            "damage": 0,
+            "spawnBullets": [
+                {
+                    "spawnUnit": microbe
+                },
+                {
+                    "spawnUnit": virion
+                }
+            ]
+        }
+    }
+]

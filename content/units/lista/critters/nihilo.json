@@ -41,7 +41,7 @@ weapons: [
         "mirror": false,
         "recoil": 0.8,
         "x": 0,
-        "y": 2,
+        "y": 0,
         "bullet": {
             "type": "BulletType",
             "shootSound": "lasershoot",
