@@ -9,7 +9,7 @@
     "health": 14550,
     "size": 6,
     "extinguish": false,
-    "reload": 1200,
+    "reload": 2400,
     "outlineColor": 222222,
     "xRand": 0,
     "squareSprite": false,
@@ -23,7 +23,7 @@
 	}
     "shootCone": 5,
     "rotateSpeed": 1,
-    "range": 250,
+    "range": 600,
     "loopSound": "hellambient",
     "loopSoundVolume": 1.5,
     "chargeSound": "demonicBeckoning",
@@ -40,6 +40,7 @@
             intervalBullet: {
             "type": "BulletType",
             "despawnShake": 4
+            "despawnEffect": none,
             "spawnBullets": [
                 {
                 "type": "BasicBulletType",
@@ -47,8 +48,8 @@
                 "shrinkX": 0,
                 "trailWidth": 3,
                 "trailLength": 8,
-                "speed": 12,
-                "lifetime": 20.83,
+                "speed": 16,
+                "lifetime": 37.5,
                 "damage": 80,
                 "backColor": "9c3247",
                 "frontColor": "f5a15d",
@@ -82,7 +83,7 @@
                     "incendSpread": 30,
                     "incendAmount": 3,
                     "incendChance": 0.8,
-                    "colors": [ "275861", "58a68c", "7eccbc", "abdbce", "ffffff" ],
+                    "colors": [ "3b063a", "5b1237", "9c3247", "d46742", "f5a15d" ],
                     "despawnSound": "none",
                     "pierce": true,
                     "pierceCap": 999
@@ -122,8 +123,28 @@
                 {
                     x: 0
                     y: 0
-                    rot: 30,
-                    progress: time
+                    rot: 3600,
+                    progress: {
+                        type: charge
+                        ops: [
+                            {
+                                op: slope
+                            }
+                        ]
+                    }
+                },
+                {
+                    x: 0
+                    y: 0
+                    rot: -720,
+                    progress: {
+                        type: recoil
+                        ops: [
+                            {
+                                op: inv
+                            }
+                        ]
+                    }
                 },
                 ]
             },
