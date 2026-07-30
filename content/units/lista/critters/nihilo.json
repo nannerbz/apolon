@@ -1,0 +1,52 @@
+template: UnitType
+name: Nihilo
+speed: 0
+health: 5000
+armor: 20
+rotateShoot: false
+outlineColor: 222222
+hitSize: 16
+range: 320
+weapons: [
+    {
+        "name": "shitquark",
+        "reload": 9999,
+        "x": 0,
+        "y": 0,
+        "shots": 1,
+        "mirror": false,
+        "shootSound": "none",
+        "alwaysShooting": true,
+        "shoot": {
+            "firstShotDelay": 1800
+        },
+        "bullet": {
+            "type": "BulletType",
+            "lifetime": 1,
+            "speed": 0,
+            "collidesAir": false,
+            "collidesGround": false,
+            "damage": 0,
+            "killShooter": true
+        }
+    }
+    {
+        "type": "PointDefenseWeapon",
+        "name": "peregrine-p",
+        "reload": 5,
+        "targetInterval": 10,
+        "targetSwitchInterval": 8,
+        "mirror": false,
+        "recoil": 0.8,
+        "x": 0,
+        "y": 0,
+        "bullet": {
+            "type": "BulletType",
+            "shootSound": "lasershoot",
+            "shootEffect": "sparkShoot",
+            "hitEffect": "pointHit",
+            "maxRange": 320,
+            "damage": 50
+        }
+    }
+]

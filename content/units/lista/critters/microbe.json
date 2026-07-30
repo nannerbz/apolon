@@ -3,7 +3,7 @@ name: Microbe
 speed: 0.7
 health: 1800
 armor: 8
-rotateShoot: true
+rotateShoot: false
 legCount: 6
 hovering: true
 allowLegStep: true
@@ -64,6 +64,8 @@ weapons: [
         "top": true
         "bullet": {
             "type": "LaserBoltBulletType",
+            "collidesTeam": true,
+            "healPercent": 0.3,
             "damage": 106,
             "speed": 6,
             "lifetime": 30,

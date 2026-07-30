@@ -1,0 +1,91 @@
+template: UnitType
+name: Temperate
+speed: 0
+health: 5000
+armor: 20
+rotateShoot: false
+outlineColor: 222222
+hitSize: 16
+range: 320
+    abilities: [
+	{
+		type: ForceFieldAbility
+		radius: 80
+		regen: 1
+		max: 10000
+		cooldown: 180
+		sides: 4
+	}
+]
+weapons: [
+    {
+        "name": "shitquark",
+        "reload": 9999,
+        "x": 0,
+        "y": 0,
+        "shots": 1,
+        "mirror": false,
+        "shootSound": "none",
+        "alwaysShooting": true,
+        "shoot": {
+            "firstShotDelay": 2400
+        },
+        "bullet": {
+            "type": "BulletType",
+            "lifetime": 1,
+            "speed": 0,
+            "collidesAir": false,
+            "collidesGround": false,
+            "damage": 0,
+            "killShooter": true
+        }
+    }
+    {
+        "name": "projector",
+        "mirror": false,
+        "reload": 9999,
+        "alwaysShooting": true,
+        "shoot": {
+            "firstShotDelay": 2400
+        },
+        "x": 0,
+        "y": 0,
+        "bullet": {
+            "type": "BulletType",
+            "lifetime": 1,
+            "speed": 0,
+            "collidesAir": false,
+            "collidesGround": false,
+            "damage": 0
+        },
+        "parts": [
+            {
+                "type": "RegionPart",
+                "suffix": "-f",
+                "progress": "time",
+                "heatProgress": "time",
+                "mirror": false,
+                "moveX": 0,
+                "moveY": 0,
+                "moveRot": 0,
+                "moves": [
+                    {
+                        "x": 0,
+                        "y": 0,
+                        "rot": 14400,
+                        "progress": {
+                            "type": "charge",
+                            "ops": [
+                                {
+                                    "op": "curve",
+                                    "interp": "circleIn"
+                                }
+                            ]
+                        }
+                    },
+                ]
+            }
+
+        ]
+    }
+]

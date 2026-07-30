@@ -59,7 +59,7 @@ weapons: [
 			"trailEffect": {
 				"type": "ParticleEffect",
 				"length": 0,
-				"lifetime": 5,
+				"lifetime": 30,
 				"region": "apolon-boxx",
 				"particles": 1,
 				"lightColor": "64c990",
