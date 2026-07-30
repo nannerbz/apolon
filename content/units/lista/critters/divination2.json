@@ -14,19 +14,11 @@ range: 480
 lowAltitude: true
 trailLength: 96
 trailColor: "64c990"
-	engines: [
-  {
-    x: 0
-    y: -20
-    rotation: 0
-    radius: 4
-  }
-]
 	abilities: [
 		{
 			"type": "SpawnDeathAbility",
-			"unit": "nanobe",
-			"amount": 100,
+			"unit": "microbe",
+			"amount": 20,
 			"spread": 60
 		}
 ]

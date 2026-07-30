@@ -1,7 +1,7 @@
 template: UnitType
 name: Temperate
 speed: 0
-health: 2000
+health: 4000
 armor: 10
 rotateShoot: false
 rotateSpeed:0
@@ -11,10 +11,10 @@ range: 320
     abilities: [
         {
             type: ForceFieldAbility
-            radius: 80
-            regen: 1
-            max: 3000
-            cooldown: 180
+            radius: 120
+            regen: 0.5
+            max: 10000
+            cooldown: 360
             sides: 4
         }
         {

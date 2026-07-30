@@ -1,8 +1,8 @@
 template: UnitType
 name: Emissary
 speed: 0
-health: 4000
-armor: 15
+health: 5000
+armor: 12
 rotateShoot: false
 rotateSpeed:0
 outlineColor: 222222
@@ -55,7 +55,7 @@ weapons: [
         "mirror": false,
         "bullet": {
             "type": "BasicBulletType",
-            "damage": 200,
+            "damage": 70,
             "pierceArmor": true,
             "speed": 4,
             "width": 8,
@@ -72,7 +72,7 @@ weapons: [
     }
     {
         "name": "shitquark",
-        "reload": 180,
+        "reload": 200,
         "x": 0,
         "y": 0,
         "shootSound": "none",

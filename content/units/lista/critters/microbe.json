@@ -74,7 +74,7 @@ weapons: [
             "type": "LaserBoltBulletType",
             "collidesTeam": true,
             "healPercent": 0.3,
-            "damage": 106,
+            "damage": 54,
             "speed": 6,
             "lifetime": 30,
             "frontColor": "64c990",
