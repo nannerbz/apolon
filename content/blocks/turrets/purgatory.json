@@ -92,7 +92,7 @@
                     "despawnSound": "none",
                     "pierce": true,
                     "pierceCap": 999
-                    "spawnBulletRandomSpread": 360
+                    "spawnBulletRandomSpread": 60
                     "spawnBullets": [
                         {
                             "type": "MissileBulletType",
@@ -131,8 +131,8 @@
                             "type": "MissileBulletType",
                             "trailWidth": 3,
                             "trailLength": 25,
-                            "speed": 2,
-                            "lifetime": 70,
+                            "speed": 1,
+                            "lifetime": 30,
                             "damage": 15,
                             "width": 10,
                             "height": 10,
@@ -170,7 +170,7 @@
 		        intervalRandomSpread: 0
 		        intervalBullets: 1
 		        intervalAngle: 0
-		        IntervalSpread: 0
+		        intervalSpread: 0
             },
             {
                 "type": "MissileBulletType",
@@ -179,8 +179,8 @@
                 "speed": 1,
                 "lifetime": 30,
                 "damage": 75,
-                "width": 10,
-                "height": 10,
+                "width": 30,
+                "height": 50,
                 "splashDamage": 25,
                 "splashDamageRadius": 32,
                 "despawnEffect": {
@@ -214,7 +214,7 @@
 		intervalRandomSpread: 5
 		intervalBullets: 2
 		intervalAngle: 0
-		IntervalSpread: 35
+		intervalSpread: 35
         },
     }
     "drawer": {
@@ -327,6 +327,46 @@
                 "moveX": 0,
                 "moveY": -3,
                 "moveRot": 0
+            },
+            {
+                "type": "ShapePart",
+                "sides": 8,
+                "hollow": true,
+                "radius": 4,
+                "radiusTo": 5,
+                "stroke": 0,
+                "strokeTo": 4,
+                "y": -8,
+                "progress": warmup,
+                "color": f5a15d,
+            },
+            {
+                "type": "ShapePart",
+                "sides": 8,
+                "hollow": true,
+                "radius": 4,
+                "radiusTo": 5,
+                "stroke": 0,
+                "strokeTo": 4,
+                "y": 8,
+                "progress": charge,
+                "color": f5a15d,
+            },
+            {
+                "type": "HaloPart",
+                "sides": 4,
+                "shapes": 4,
+                "tri": true,
+                "radius": 0,
+                "radiusTo": 5,
+                "haloRadius": 4,
+                "haloRadiusTo": 5,
+                "stroke": 0,
+                "strokeTo": 4,
+                "y": -8,
+                "progress": warmup,
+                "color": f5a15d,
+                "rotateSpeed": 4,
             },
         ]
     },
