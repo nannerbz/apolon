@@ -396,8 +396,8 @@
                 "radiusTo": 5,
                 "haloRadius": 12,
                 "haloRadiusTo": 15,
-                "triLength": 6
-                "triLengthTo":
+                "triLength": 0
+                "triLengthTo": 8
                 "stroke": 0,
                 "strokeTo": 4,
                 "y": -13,
