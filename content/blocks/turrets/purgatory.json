@@ -68,8 +68,8 @@
                     "continuous": true,
                     "keepVelocity": false,
                     "speed": 0,
-                    "length": 25,
-                    "width": 12,
+                    "length": 35,
+                    "width": 20,
                     "despawnEffect": "none",
                     "smokeEffect": "none",
                     "hitEffect": "none",
@@ -88,8 +88,8 @@
                     "pierceCap": 999
                 },
 
-		        bulletInterval: 3
-		        intervalRandomSpread: 15
+		        bulletInterval: 1
+		        intervalRandomSpread: 0
 		        intervalBullets: 1
 		        intervalAngle: 0
 		        IntervalSpread: 0
@@ -97,9 +97,9 @@
             ],
             },
 
-		bulletInterval: 3
+		bulletInterval: 1
 		intervalRandomSpread: 5
-		intervalBullets: 3
+		intervalBullets: 2
 		intervalAngle: 0
 		IntervalSpread: 35
         },
