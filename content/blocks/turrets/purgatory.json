@@ -218,7 +218,7 @@
                 "type": "RegionPart",
                 "suffix": "-saw",
                 "progress": "warmup",
-                "heatProgress": "warmup",
+                "heatProgress": "charge",
                 "heatColor": "f5a15d",
                 "mirror": true,
                 "moveX": 12,
@@ -334,6 +334,14 @@
                 "moveX": 0,
                 "moveY": -3,
                 "moveRot": 0
+                "moves": [
+                {
+                    x: 0
+                    y: 6
+                    rot: 0,
+                    progress: charge
+                },
+                ]
             },
             {
                 "type": "ShapePart",
@@ -389,6 +397,30 @@
                 "color": f5a15d,
             },
             {
+                "type": "ShapePart",
+                "sides": 10,
+                "hollow": true,
+                "radius": 22,
+                "radiusTo": 18,
+                "stroke": 0,
+                "strokeTo": 2,
+                "y": -13,
+                "progress": warmup,
+                "color": f5a15d,
+            },
+            {
+                "type": "ShapePart",
+                "sides": 10,
+                "hollow": true,
+                "radius": 5,
+                "radiusTo": 7,
+                "stroke": 0,
+                "strokeTo": 2,
+                "y": -13,
+                "progress": warmup,
+                "color": f5a15d,
+            },
+            {
                 "type": "HaloPart",
                 "sides": 4,
                 "shapes": 4,
@@ -405,6 +437,24 @@
                 "progress": warmup,
                 "color": f5a15d,
                 "haloRotateSpeed": 4,
+            },
+            {
+                "type": "HaloPart",
+                "sides": 4,
+                "shapes": 4,
+                "tri": true,
+                "radius": 0,
+                "radiusTo": 5,
+                "haloRadius": 11,
+                "haloRadiusTo": 15,
+                "triLength": 0
+                "triLengthTo": 15
+                "stroke": 0,
+                "strokeTo": 4,
+                "y": -13,
+                "progress": warmup,
+                "color": f5a15d,
+                "haloRotateSpeed": -2.5,
             },
         ]
     },
