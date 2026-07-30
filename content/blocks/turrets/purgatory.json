@@ -105,10 +105,11 @@
                             {
                                 op: mod
                                 amount: 360
-                            },
+                            }
                         ]
                     }
-                }
+                },
+                ]
             },
             {
                 "type": "RegionPart",
