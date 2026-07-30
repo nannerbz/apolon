@@ -267,12 +267,12 @@
                 "mirror": true,
                 "moveX": 1,
                 "moveY": 0,
-                "moveRot": 10,
+                "moveRot": -10,
                 "moves": [
                 {
                     x: 1
                     y: 0
-                    rot: 10,
+                    rot: -10,
                     progress: recoil
                 },
                 ]

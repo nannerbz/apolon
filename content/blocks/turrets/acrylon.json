@@ -168,6 +168,26 @@
 		type: DrawTurret,
      		basePrefix: base,
 		parts : [
+                {
+      			type : RegionPart
+      			suffix : "-duow"
+      			progress : warmup
+      			heatProgress : warmup
+      			heatColor : "c7455a"
+      			mirror : true
+      			under : false
+      			moveX : 12
+			    moveY : -2
+      			moveRot : 0
+                "moves": [
+                {
+                    x: 0
+                    y: -2
+                    rot: 0,
+                    progress: recoil
+                },
+                ]
+    			},
     			{
       			type : RegionPart
       			suffix : "-magic-plate"
@@ -236,15 +256,15 @@
                 },
                 ]
     			},
-    			{
+                {
       			type : RegionPart
-      			suffix : "-duow"
+      			suffix : "-w"
       			progress : warmup
       			heatProgress : warmup
       			heatColor : "c7455a"
       			mirror : true
       			under : false
-      			moveX : 12
+      			moveX : 2
 			    moveY : -2
       			moveRot : 0
                 "moves": [
