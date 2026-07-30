@@ -5,17 +5,27 @@
     "targetAir": true,
     "targetGround": true,
     "hasPower": true,
+    "hasItems": true,
     "health": 14550,
     "size": 6,
     "extinguish": false,
     "reload": 1200,
-    "heatRequirement": 50,
-    "maxHeatEfficiency": 1.5,
     "outlineColor": 222222,
     "xRand": 0,
     "squareSprite": false,
     "unitSort": "strongest",
     "shootY": 0,
+    "consumes": {
+        "power": 50,
+        "items": {
+            "items": [
+                {
+                    "item": "hypersteel-item",
+                    "amount": 30,
+                }
+            ]
+        }
+    },
     shoot: {
 		firstShotDelay: 600
 		shots: 150
@@ -23,8 +33,9 @@
 	}
     "shootCone": 45,
     "rotateSpeed": 1,
-    "range": 380,
+    "range": 500,
     "loopSound": "hellAmbient",
+    "loopSoundVolume": 1.5,
     "chargeSound": "demonicBeckoning",
     "shootSound": "demonicUproar",
     "ammoTypes": {
@@ -76,11 +87,28 @@
                 "heatProgress": "warmup",
                 "heatColor": "f5a15d",
                 "mirror": true,
-                "moveX": 5,
-                "moveY": 3,
+                "moveX": 12,
+                "moveY": 6,
                 "moveRot": 0,
-                "spinSprite": true,
-                "rotateSpeed": 15,
+                "moves": [
+                {
+                    x: 0
+                    y: 0
+                    rot: 360,
+                    progress: {
+                        type: warmup
+                        ops: [
+                            {
+                                op: loop
+                                time: 5
+                            },
+                            {
+                                op: mod
+                                amount: 360
+                            },
+                        ]
+                    }
+                }
             },
             {
                 "type": "RegionPart",
@@ -124,7 +152,7 @@
                 "mirror": true,
                 "moveX": -3,
                 "moveY": -1,
-                "moveRot": 35,
+                "moveRot": -35,
             },
             {
                 "type": "RegionPart",
@@ -135,7 +163,7 @@
                 "mirror": true,
                 "moveX": 0,
                 "moveY": 3,
-                "moveRot": 35,
+                "moveRot": -35,
             },
             {
                 "type": "RegionPart",
