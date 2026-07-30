@@ -1,5 +1,5 @@
 {
-    "type": "LiquidTurret",
+    "type": "ContinuousLiquidTurret",
     "name": "Purgatory",
     "description": "The most deadly demonic form of destruction in Akyao. Capable of blasting down any and all things opposing it in mere seconds, leaving nothing but smoldering craters and utter chaos in its wake.",
     "targetAir": true,
