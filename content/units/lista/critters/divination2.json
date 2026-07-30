@@ -1,6 +1,6 @@
 template: UnitType
 name: Divination
-rotateSpeed: 0.9
+rotateSpeed: 1
 flying: true
 speed: 0.3
 accel: 0.05
@@ -38,7 +38,7 @@ parts: [
 		"followRotation": false,
 		"sides": 9,
 		"x": 0,
-		"y": 125,
+		"y": 12,
 		"radius": 30,
 		"stroke": 2,
 		"layer": 106
@@ -52,8 +52,8 @@ weapons: [
 		"repairSpeed": 0.8,
 		"mirror": true,
 		"laserColor": "58a68c",
-		"x": 14,
-		"y": 4,
+		"x": 24,
+		"y": 10,
 		"bullet": {
 			"type": "BulletType",
 			"maxRange": 85
@@ -66,7 +66,7 @@ weapons: [
 		"repairSpeed": 0.8,
 		"mirror": true,
 		"laserColor": "58a68c",
-		"x": 10,
+		"x": 18,
 		"y": -16,
 		"bullet": {
 			"type": "BulletType",

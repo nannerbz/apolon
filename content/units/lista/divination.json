@@ -1,6 +1,6 @@
 template: UnitType
 name: Divination
-rotateSpeed: 0.6
+rotateSpeed: 0.8
 flying: true
 speed: 0.1
 accel: 0.05
@@ -12,6 +12,7 @@ itemCapacity: 0
 outlineColor: 222222
 range: 480
 lowAltitude: true
+rotateShoot: true
 trailLength: 96
 trailColor: "64c990"
 	engines: [
@@ -38,7 +39,7 @@ parts: [
 		"followRotation": false,
 		"sides": 9,
 		"x": 0,
-		"y": 125,
+		"y": 12,
 		"radius": 30,
 		"stroke": 2,
 		"layer": 106
@@ -47,25 +48,21 @@ parts: [
 weapons: [
 	{
 		"name": "divination-w",
-		"reload": 150,
+		"reload": 600,
 		"x": 0,
 		"y": 0,
+		"shootY": 16
+		"recoil": 16
 		"shootStatus": "slown",
 		"shootStatusDuration": 180,
 		"rotate": false,
 		"mirror": false,
 		"shootSound": "shootTank",
 		"bullet": {
-			"shootEffect": {
-				"type": "WaveEffect",
-				"colorFrom": "377d6e",
-				"colorTo": "64c990",
-				"sizeTo": 60,
-				"lifetime": 120,
-				"strokeFrom": 6
-			},
 			"type": "ArtilleryBulletType",
 			"region": "apolon-boxx",
+			"width": 24
+			"height": 24
 			"collideAir": false,
 			"damage": 5000,
 			"splashDamage": 4000,
@@ -93,64 +90,6 @@ weapons: [
 			},
 			"despawnHit": true
 		},
-		"parts": [
-			{
-				"type": "RegionPart",
-				"suffix": "-blade",
-				"progress": "warmup",
-				"heatProgress": "recoil",
-				"heatColor": "ffffff",
-				"mirror": true,
-				"moveX": 10,
-				"moveY": -10,
-				"moveRot": 0
-			},
-			{
-				"type": "ShapePart",
-				"progress": "warmup",
-				"color": "64c990",
-				"layer": 110,
-				"sides": 100,
-				"rotation": 0,
-				"hollow": true,
-				"stroke": 0,
-				"strokeTo": 4,
-				"radius": 10,
-				"y": 18
-			},
-			{
-				"type": "HaloPart",
-				"progress": "warmup",
-				"color": "64c990",
-				"layer": 110,
-				"y": 18,
-				"haloRotation": 90,
-				"shapes": 3,
-				"triLength": 0,
-				"triLengthTo": 6,
-				"haloRadius": 28,
-				"tri": true,
-				"radius": 12,
-				"shapeRotation": 180,
-				"haloRotateSpeed": 15
-			},
-			{
-				"type": "HaloPart",
-				"progress": "warmup",
-				"color": "64c990",
-				"layer": 110,
-				"y": 18,
-				"haloRotation": 90,
-				"shapes": 3,
-				"triLength": 0,
-				"triLengthTo": 6,
-				"haloRadius": 28,
-				"tri": true,
-				"radius": 12,
-				"shapeRotation": 180,
-				"haloRotateSpeed": -11
-			}
-		]
 	}
 	{
 		"type": "RepairBeamWeapon",
@@ -159,8 +98,8 @@ weapons: [
 		"repairSpeed": 0.8,
 		"mirror": true,
 		"laserColor": "58a68c",
-		"x": 14,
-		"y": 4,
+		"x": 24,
+		"y": 10,
 		"bullet": {
 			"type": "BulletType",
 			"maxRange": 85
@@ -173,7 +112,7 @@ weapons: [
 		"repairSpeed": 0.8,
 		"mirror": true,
 		"laserColor": "58a68c",
-		"x": 10,
+		"x": 18,
 		"y": -16,
 		"bullet": {
 			"type": "BulletType",
