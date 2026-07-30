@@ -1,0 +1,49 @@
+{
+	"type": "StatusEffect",
+	"name": "Permafrozen",
+	"outline": false,
+	"speedMultiplier": 0.05,
+	"reloadMultiplier": 0.5,
+	"disarm": false,
+	"damage": 0,
+	"parentizeEffect": true,
+	"permanent": false,
+	"reactive": false,
+	"show": true,
+	"color": "87ceeb",
+	"effect": {
+		"type": "ExplosionEffect",
+		"waveColor": "87ceeb",
+		"sparkColor": "f0fcff",
+		"waveLife": 10,
+		"waveStroke": 1,
+		"waveRad": 8,
+		"sparkStroke": 3,
+		"sparkRad": 24,
+		"sparkLen": 4,
+		"smokeSize": 0,
+		"smokeSizeBase": 0,
+		"smokeRad": 0,
+		"smokes": 0,
+		"sparks": 4
+	}
+	"applyEffect": {
+		"type": "ExplosionEffect",
+		"smokeColor": "87ceeb",
+		"waveLife": 0,
+		"waveStroke": 0,
+		"waveRad": 0,
+		"sparkStroke": 0,
+		"sparkRad": 0,
+		"sparkLen": 0,
+		"smokeSize": 3,
+		"smokeSizeBase": 6,
+		"smokeRad": 24,
+		"smokes": 8,
+		"sparks": 0
+	}
+	"applyExtend": false,
+	"applyColor": "87ceeb",
+	"parentizeApplyEffect": true,
+	"transitionDamage": 0
+}
