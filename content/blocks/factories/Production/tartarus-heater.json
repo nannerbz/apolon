@@ -17,12 +17,60 @@ regionRotated1: 1
 		}
 	}
 	"craftEffect": {
-			"type": "RadialEffect",
-			"effect": "surgeCruciSmoke",
-			"rotationSpacing": 90,
-			"lengthOffset": 10,
-			"rotationOffset": 45
-	}
+	 "type": "MultiEffect",
+		"effects": [
+			{
+				"type": "RadialEffect",
+				"effect": {
+					"type": "ExplosionEffect",
+					"waveColor": "9c3247",
+					"smokeColor": "3b063a",
+					"sparkColor": "ffa324",
+					"waveLife": 20,
+					"waveStroke": 2,
+					"waveRad": 16,
+					"sparkStroke": 2,
+					"sparkRad": 18,
+					"sparkLen": 6,
+					"smokeSize": 3,
+					"smokeSizeBase": 6,
+					"smokeRad": 16,
+					"smokes": 4,
+					"sparks": 4
+				},
+				"rotationSpacing": 90,
+				"lengthOffset": 10,
+				"rotationOffset": 45
+			},
+			{
+				"type": "RadialEffect",
+				"effect": "heatReactorSmoke",
+				"rotationSpacing": 90,
+				"lengthOffset": 10,
+				"rotationOffset": 45
+			},
+			{
+				"type": "ExplosionEffect",
+				"waveColor": "9c3247",
+				"smokeColor": "3b063a",
+				"sparkColor": "ffa324",
+				"waveLife": 20,
+				"waveStroke": 2,
+				"waveRad": 16,
+				"sparkStroke": 2,
+				"sparkRad": 18,
+				"sparkLen": 6,
+				"smokeSize": 3,
+				"smokeSizeBase": 6,
+				"smokeRad": 16,
+				"smokes": 4,
+				"sparks": 4
+			}
+			{
+				"effect": "heatReactorSmoke"
+			}
+		]
+}
 requirements: [
 	cobalt-item/185
 	metaglass/65
