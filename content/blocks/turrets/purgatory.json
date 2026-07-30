@@ -81,7 +81,7 @@
                 "heatProgress": "warmup",
                 "heatColor": "f5a15d",
                 "mirror": true,
-                "moveX": 12,
+                "moveX": 18,
                 "moveY": 6,
                 "moveRot": 0,
                 "moves": [
@@ -89,19 +89,7 @@
                     x: 0
                     y: 0
                     rot: 360,
-                    progress: {
-                        type: charge
-                        ops: [
-                            {
-                                op: loop
-                                time: 500
-                            },
-                            {
-                                op: mod
-                                amount: 360
-                            }
-                        ]
-                    }
+                    progress: time
                 },
                 ]
             },
@@ -125,7 +113,7 @@
                 "mirror": true,
                 "moveX": 1,
                 "moveY": 0,
-                "moveRot": 5,
+                "moveRot": -10,
             },
             {
                 "type": "RegionPart",
@@ -137,6 +125,14 @@
                 "moveX": 0,
                 "moveY": 1,
                 "moveRot": -10,
+                "moves": [
+                {
+                    x: 3
+                    y: 1
+                    rot: -10,
+                    progress: charge
+                },
+                ]
             },
             {
                 "type": "RegionPart",
@@ -145,9 +141,9 @@
                 "heatProgress": "warmup",
                 "heatColor": "f5a15d",
                 "mirror": true,
-                "moveX": 3,
-                "moveY": 0,
-                "moveRot": -35,
+                "moveX": 1,
+                "moveY": 1,
+                "moveRot": -55,
             },
             {
                 "type": "RegionPart",
