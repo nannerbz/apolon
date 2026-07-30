@@ -10,7 +10,7 @@ hitSize: 60
 armor: 12
 itemCapacity: 0
 outlineColor: 222222
-range: 960
+range: 320
 lowAltitude: true
 rotateShoot: true
 trailLength: 96
@@ -54,7 +54,7 @@ weapons: [
 			"splashDamage": 5000,
 			"splashDamageArea": 64,
 			"speed": 1,
-			"lifetime": 960,
+			"lifetime": 320,
 			"trailInterval": 60,
 			"trailEffect": {
 				"type": "ParticleEffect",
