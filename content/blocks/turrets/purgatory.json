@@ -17,14 +17,6 @@
     "shootY": 0,
     "consumes": {
         "power": 50,
-        "items": {
-            "items": [
-                {
-                    "item": "hypersteel-item",
-                    "amount": 30,
-                }
-            ]
-        }
     },
     shoot: {
 		firstShotDelay: 600
