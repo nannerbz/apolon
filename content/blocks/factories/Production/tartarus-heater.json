@@ -1,0 +1,47 @@
+type: HeatProducer
+name: Tartarus Radiator
+category: crafting
+description: Generates insane amounts of heat from vulcan alloy.
+rotateDraw: false
+rotate: true
+size: 4
+heatOutput: 18
+regionRotated1: 1
+	"ambientSound": "tartaria",
+	"ambientSoundVolume": 0.5
+	consumes: {
+		items: {
+			items: [
+				{ "item": "vulcan-alloy-item", "amount": 1 }
+			]
+		}
+	}
+	"craftEffect": {
+			"type": "RadialEffect",
+			"effect": "surgeCruciSmoke",
+			"rotationSpacing": 90,
+			"lengthOffset": 10,
+			"rotationOffset": 45
+	}
+requirements: [
+	cobalt-item/185
+	metaglass/65
+	carbide/120
+	cryogel-item/70
+	kobra-alloy-item/85
+]
+	drawer: {
+	    type: DrawMulti
+	    drawers : [
+	            	{
+	            	  type : DrawDefault
+	            	},
+			{
+				type: DrawHeatOutput
+				suffix: "-heat"
+			},
+
+	    ]
+		}
+research: monolitic-heater
+researchCostMultiplier: 0.02
