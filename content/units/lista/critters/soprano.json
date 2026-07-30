@@ -1,5 +1,5 @@
 template: UnitType
-name: Nihilo
+name: Soprano
 rotateShoot: false
 rotateSpeed:0
 speed: 0
@@ -33,22 +33,31 @@ weapons: [
         }
     }
     {
-        "type": "PointDefenseWeapon",
-        "name": "peregrine-p",
-        "reload": 5,
-        "targetInterval": 10,
-        "targetSwitchInterval": 8,
-        "mirror": false,
-        "recoil": 0.8,
+        "name": "pulsew1",
+        "reload": 30,
         "x": 0,
-        "y": 2,
+        "y": 0,
+        "shootSound": "shootLaser",
+        "shoot": {
+            "shots": 5,
+            "shotDelay": 5
+        },
+        "shootY": 0,
+        "randX": 0,
+        "mirror": false,
+        "rotate": true,
+        "top": true,
         "bullet": {
-            "type": "BulletType",
-            "shootSound": "lasershoot",
-            "shootEffect": "sparkShoot",
-            "hitEffect": "pointHit",
-            "maxRange": 320,
-            "damage": 50
+            "type": "LaserBoltBulletType",
+            "collidesTeam": true,
+            "healPercent": 0.3,
+            "damage": 86,
+            "speed": 8,
+            "lifetime": 40,
+            "frontColor": "64c990",
+            "backColor": "377d6e",
+            "shootEffect": "shootSmall",
+            "smokeEffect": "shootSmallSmoke"
         }
     }
 ]

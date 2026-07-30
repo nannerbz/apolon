@@ -9,14 +9,28 @@ outlineColor: 222222
 hitSize: 16
 range: 320
     abilities: [
-	{
-		type: ForceFieldAbility
-		radius: 80
-		regen: 1
-		max: 10000
-		cooldown: 180
-		sides: 4
-	}
+        {
+            "type": "RepairFieldAbility",
+            "amount": 500,
+            "reload": 60,
+            "range": 80,
+            "activeEffect": {
+                "type": "WaveEffect",
+                "colorFrom": "377d6e",
+                "colorTo": "64c990",
+                "sizeTo": 80,
+                "lifetime": 30,
+                "strokeFrom": 2
+            },
+            "healEffect": {
+                "type": "WaveEffect",
+                "colorFrom": "377d6e",
+                "colorTo": "64c990",
+                "sizeTo": 16,
+                "lifetime": 7,
+                "strokeFrom": 1
+            }
+        }
 ]
 weapons: [
     {
@@ -42,7 +56,7 @@ weapons: [
         }
     }
     {
-        "name": "projector",
+        "name": "dish",
         "mirror": false,
         "reload": 9999,
         "alwaysShooting": true,
