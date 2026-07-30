@@ -62,7 +62,6 @@
                 "followAimSpeed": 2,
                 "pierce": true,
                 "pierceCap": 999,
-                "knockback": 25,
                 "buildingDamageMultiplier": 0.01
                 intervalBullet: {
                     "type": "ContinuousLaserBulletType",
@@ -125,7 +124,6 @@
                             "trailChance": 0.3,
                             "despawnSound": "dullExplosion",
                             "despawnEffect": "none",
-                            "knockback": 2,
                         },
                         {
                             "type": "MissileBulletType",
@@ -139,9 +137,6 @@
                             "homingPower": 0,
                             "splashDamage": 25,
                             "splashDamageRadius": 30,
-                            "incendSpread": 60,
-                            "incendAmount": 2,
-                            "incendChance": 0.2,
                             "despawnEffect": {
                                 "type": "WaveEffect",
                                 "colorFrom": "f5a15d",
@@ -161,7 +156,6 @@
                             "trailChance": 0.3,
                             "despawnSound": "dullExplosion",
                             "despawnEffect": "none",
-                            "knockback": 2,
                         },
                     ]
                 },
@@ -176,8 +170,8 @@
                 "type": "MissileBulletType",
                 "trailWidth": 3,
                 "trailLength": 25,
-                "speed": 1,
-                "lifetime": 30,
+                "speed": 6,
+                "lifetime": 100,
                 "damage": 75,
                 "width": 30,
                 "height": 50,
@@ -205,16 +199,15 @@
                 "trailChance": 0.3,
                 "despawnSound": "dullExplosion",
                 "despawnEffect": "none",
-                "knockback": 2,
             }
             ],
             },
 
 		bulletInterval: 1
 		intervalRandomSpread: 5
-		intervalBullets: 3
+		intervalBullets: 2
 		intervalAngle: 0
-		intervalSpread: 8
+		intervalSpread: 5
         },
     }
     "drawer": {
@@ -275,6 +268,14 @@
                 "moveX": 1,
                 "moveY": 0,
                 "moveRot": -10,
+                "moves": [
+                {
+                    x: 1
+                    y: 0
+                    rot: -10,
+                    progress: recoil
+                },
+                ]
             },
             {
                 "type": "RegionPart",
@@ -288,10 +289,16 @@
                 "moveRot": -10,
                 "moves": [
                 {
-                    x: 3
-                    y: 1
+                    x: 2
+                    y: -4
                     rot: -10,
                     progress: charge
+                },
+                {
+                    x: 2
+                    y: -4
+                    rot: -10,
+                    progress: recoil
                 },
                 ]
             },
@@ -336,7 +343,7 @@
                 "radiusTo": 15,
                 "stroke": 0,
                 "strokeTo": 2,
-                "y": -15,
+                "y": -13,
                 "progress": warmup,
                 "color": f5a15d,
             },
@@ -345,12 +352,42 @@
                 "sides": 8,
                 "hollow": true,
                 "radius": 4,
-                "radiusTo": 5,
+                "radiusTo": 6,
                 "stroke": 0,
-                "strokeTo": 4,
+                "strokeTo": 2,
                 "y": 8,
-                "progress": charge,
+                "progress": {
+                        type: charge
+                        ops: [
+                            {
+                                op: curve
+                                interp: circleIn
+                            }
+                        ]
+                    }
                 "color": f5a15d,
+                "rotateSpeed": 4
+            },
+            {
+                "type": "ShapePart",
+                "sides": 8,
+                "hollow": true,
+                "radius": 4,
+                "radiusTo": 6,
+                "stroke": 0,
+                "strokeTo": 2,
+                "y": 8,
+                "progress": {
+                        type: charge
+                        ops: [
+                            {
+                                op: curve
+                                interp: circleIn
+                            }
+                        ]
+                    }
+                "color": f5a15d,
+                "rotateSpeed": -7
             },
             {
                 "type": "HaloPart",
@@ -359,11 +396,11 @@
                 "tri": true,
                 "radius": 0,
                 "radiusTo": 5,
-                "haloRadius": 4,
-                "haloRadiusTo": 5,
+                "haloRadius": 14,
+                "haloRadiusTo": 17,
                 "stroke": 0,
                 "strokeTo": 4,
-                "y": -8,
+                "y": -13,
                 "progress": warmup,
                 "color": f5a15d,
                 "haloRotateSpeed": 4,
