@@ -455,6 +455,23 @@ weapons: [
 			"maxRange": 85
 		}
 	}
+	{
+		"name": "shitquark",
+		"reload": 60,
+		"x": 0,
+		"y": 0,
+		"shootSound": "none",
+		"shootEffect": "none",
+		"mirror": false,
+		"rotate": true,
+		"top": true,
+		"alwaysShooting": true,
+		"bullet": {
+			"type": "BulletType",
+			"createChance": 0.1,
+			"spawnUnit": "virion"
+		}
+	}
 ],
 		"research": {
 			"parent": "ophanim"

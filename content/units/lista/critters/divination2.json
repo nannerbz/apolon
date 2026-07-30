@@ -18,7 +18,7 @@ trailColor: "64c990"
 		{
 			"type": "SpawnDeathAbility",
 			"unit": "microbe",
-			"amount": 20,
+			"amount": 16,
 			"spread": 60
 		}
 ]
@@ -53,7 +53,7 @@ weapons: [
 	}
 	{
 		"name": "shitquark",
-		"reload": 20,
+		"reload": 18,
 		"x": 0,
 		"y": 0,
 		"shootSound": "none",
@@ -72,7 +72,7 @@ weapons: [
 			"spawnBullets": [
 				{
 					"type": "BulletType",
-					"createChance": 0.1,
+					"createChance": 0.12,
 					"spawnUnit": "nanobe"
 				},
 				{
@@ -81,6 +81,65 @@ weapons: [
 					"spawnUnit": "microbe"
 				}
 			]
+		}
+	}
+	{
+		"name": "pulsew2",
+		"shoot": {
+			"type": "shootSpread",
+			"shots": 4,
+			"spread": 3
+		},
+		"reload": 70,
+		"x": 10,
+		"y": 12,
+		"shootSound": "Pulse",
+		"rotate": true,
+		"top": true,
+		"mirror": true,
+		"bullet": {
+			"type": "BasicBulletType",
+			"damage": 200,
+			"pierceArmor": true,
+			"speed": 4,
+			"width": 8,
+			"height": 12,
+			"lifetime": 80,
+			"backColor": "377d6e",
+			"frontColor": "64c990",
+			"trailColor": "377d6e",
+			"trailLength": 8,
+			"trailWidth": 4,
+			"shootEffect": "shootSmall",
+			"smokeEffect": "shootSmallSmoke"
+		}
+	}
+	{
+		"name": "pulsew1",
+		"reload": 30,
+		"x": 12,
+		"y": 20,
+		"shootSound": "shootLaser",
+		"shoot": {
+			"shots": 5,
+			"shotDelay": 5
+		},
+		"shootY": 0,
+		"randX": 0,
+		"mirror": true,
+		"rotate": true,
+		"top": true,
+		"bullet": {
+			"type": "LaserBoltBulletType",
+			"collidesTeam": true,
+			"healPercent": 0.3,
+			"damage": 86,
+			"speed": 8,
+			"lifetime": 40,
+			"frontColor": "64c990",
+			"backColor": "377d6e",
+			"shootEffect": "shootSmall",
+			"smokeEffect": "shootSmallSmoke"
 		}
 	}
 ],
