@@ -14,22 +14,24 @@
     "xRand": 0,
     "squareSprite": false,
     "unitSort": "strongest",
-    "shootY": 0,
+    "shootY": 15,
     "consumes": {
         "power": 50,
     },
     shoot: {
-		firstShotDelay: 600
-		shots: 150
-		shotDelay: 2
+		firstShotDelay: 500
+        shots: 150
+        shotDelay: 2
 	}
-    "shootCone": 45,
+    "shootCone": 5,
     "rotateSpeed": 1,
     "range": 500,
-    "loopSound": "hellAmbient",
+    "loopSound": "hellambient",
     "loopSoundVolume": 1.5,
     "chargeSound": "demonicBeckoning",
     "shootSound": "demonicUproar",
+    "moveWhileCharging": false,
+    "shootSoundVolume": 2.5,
     "ammoTypes": {
         "cryofluid": {
             "type": "MissileBulletType",
@@ -88,11 +90,11 @@
                     y: 0
                     rot: 360,
                     progress: {
-                        type: warmup
+                        type: charge
                         ops: [
                             {
                                 op: loop
-                                time: 5
+                                time: 500
                             },
                             {
                                 op: mod
@@ -117,7 +119,7 @@
             {
                 "type": "RegionPart",
                 "suffix": "-cannon",
-                "progress": "recoil",
+                "progress": "charge",
                 "heatProgress": "recoil",
                 "heatColor": "f5a15d",
                 "mirror": true,
@@ -143,8 +145,8 @@
                 "heatProgress": "warmup",
                 "heatColor": "f5a15d",
                 "mirror": true,
-                "moveX": -3,
-                "moveY": -1,
+                "moveX": 3,
+                "moveY": ,
                 "moveRot": -35,
             },
             {
@@ -154,7 +156,7 @@
                 "heatProgress": "warmup",
                 "heatColor": "f5a15d",
                 "mirror": true,
-                "moveX": 0,
+                "moveX": 5,
                 "moveY": 3,
                 "moveRot": -35,
             },
