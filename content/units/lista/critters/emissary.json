@@ -27,7 +27,7 @@ weapons: [
         "shootSound": "none",
         "alwaysShooting": true,
         "shoot": {
-            "firstShotDelay": 2400
+            "firstShotDelay": 1600
         },
         "bullet": {
             "type": "BulletType",
@@ -91,11 +91,18 @@ weapons: [
             "spawnBullets": [
                 {
                     "type": "BulletType",
+                    "createChance": 0.6
                     "spawnUnit": "microbe"
                 },
                 {
                     "type": "BulletType",
+                    "createChance": 0.6,
                     "spawnUnit": "virion"
+                }
+                {
+                    "type": "BulletType",
+                    "createChance": 0.6,
+                    "spawnUnit": "nanobe"
                 }
             ]
         }

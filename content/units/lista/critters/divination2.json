@@ -99,8 +99,7 @@ weapons: [
 		"mirror": true,
 		"bullet": {
 			"type": "BasicBulletType",
-			"damage": 200,
-			"pierceArmor": true,
+			"damage": 100,
 			"speed": 4,
 			"width": 8,
 			"height": 12,
@@ -133,7 +132,7 @@ weapons: [
 			"type": "LaserBoltBulletType",
 			"collidesTeam": true,
 			"healPercent": 0.3,
-			"damage": 86,
+			"damage": 46,
 			"speed": 8,
 			"lifetime": 40,
 			"frontColor": "64c990",
