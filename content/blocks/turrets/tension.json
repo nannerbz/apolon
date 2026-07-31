@@ -176,7 +176,7 @@
     "requirements": [
         {
             "item": "carbide",
-            "amount": 300
+            "amount": 100
         },
         {
             "item": "tungsten",
@@ -184,17 +184,18 @@
         },
         {
             "item": "kobra-alloy-item",
-            "amount": 125
+            "amount": 250
         },
         {
             "item": "photoglass-item",
             "amount": 50
         },
         {
-            "item": "neodymium-item",
-            "amount": 300
+            "item": "chromium-item",
+            "amount": 100
         }
     ],
+	"consumeAmmoOnce": false
     "category": "turret"
     "minWarmup": 0.9
     "shootWarmupSpeed": 0.15

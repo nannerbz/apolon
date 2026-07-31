@@ -3,7 +3,7 @@
 	name: Hydrocarburator
 	description: Takes hydrogen and carbide and makes power.
 	outputLiquid: { "liquid": "acetylene", "amount": 0.4 }
-	powerProduction: 6
+	powerProduction: 8
 	liquidDuration: 90
 	ambientSound: loopSmelter
 	ambientSoundVolume: 0.05

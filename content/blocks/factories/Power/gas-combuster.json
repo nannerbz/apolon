@@ -8,7 +8,7 @@
 	ambientSoundVolume: 0.05
 	generateEffect: blastExplosion
 	size: 4
-	heatOutput: 4
+	heatOutput: 6
 	category: power
 	consumes: {
 		items: {
@@ -18,7 +18,7 @@
 		}
 		liquids: {
 			liquids: [
-				{ "liquid": "hydrogen", "amount": 1.6 }
+				{ "liquid": "hydrogen", "amount": 0.8 }
 			]
 		}
 	}

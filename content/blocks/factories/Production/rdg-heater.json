@@ -3,7 +3,7 @@ name: Rdg Heater
 category: crafting
 description: Takes Rad Snow and turns it into heat, at the downside of it being innefficient.
 rotateDraw: false
-craftTime: 30
+craftTime: 45
 rotate: true
 size: 1
 heatOutput: 1

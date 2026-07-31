@@ -41,7 +41,7 @@ plans: [
 	{
 		type: AssemblerUnitPlan
 		unit: triumph
-		time: 3650
+		time: 4250
         	requirements: [
 			apolon-vanguard/2
 			apolon-large-neodymium-wall/3
@@ -52,7 +52,7 @@ plans: [
 	{
 		type: AssemblerUnitPlan
 		unit: pantheon
-		time: 6250
+		time: 8825
         	requirements: [
 			apolon-vanguard/2
 			apolon-ignis/4

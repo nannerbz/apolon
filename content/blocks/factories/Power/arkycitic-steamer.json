@@ -2,7 +2,7 @@
 	type: ConsumeGenerator
 	name: Arkycitic Steamer
 	description: Takes arkycite and cyanogen and makes LARGE amounts of power.
-	powerProduction: 28
+	powerProduction: 32
 	liquidDuration: 90
 	ambientSound: loopSmelter
 	ambientSoundVolume: 1.2
