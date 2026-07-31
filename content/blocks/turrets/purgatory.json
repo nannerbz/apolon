@@ -14,7 +14,7 @@
     "xRand": 0,
     "squareSprite": false,
     "unitSort": "strongest",
-    "shootY": 15,
+    "shootY": 8,
     "consumes": {
         "power": 50,
     },
@@ -265,14 +265,14 @@
                 "heatProgress": "recoil",
                 "heatColor": "f5a15d",
                 "mirror": true,
-                "moveX": 1,
-                "moveY": 0,
-                "moveRot": -10,
+                "moveX": 0,
+                "moveY": -2,
+                "moveRot": 0,
                 "moves": [
                 {
-                    x: 1
-                    y: 0
-                    rot: -10,
+                    x: 0
+                    y: -5
+                    rot: 0,
                     progress: recoil
                 },
                 ]
@@ -352,7 +352,7 @@
                 "stroke": 0,
                 "strokeTo": 2,
                 "x": 0,
-                "y": 32,
+                "y": 48,
                 "moveY": -24
                 "progress": {
                         type: charge
@@ -402,7 +402,7 @@
                 "color": f5a15d,
                 "haloRotateSpeed": 20,
                 "x": 0,
-                "y": 32,
+                "y": 48,
                 "moveY": -24
                 "progress": {
                         type: charge
@@ -451,7 +451,7 @@
                 "color": f5a15d,
                 "haloRotateSpeed": -15,
                 "x": 0,
-                "y": 32,
+                "y": 48,
                 "moveY": -24
                 "progress": {
                         type: charge
