@@ -17,9 +17,9 @@ trailColor: "64c990"
 	abilities: [
 		{
 			"type": "SpawnDeathAbility",
-			"unit": "microbe",
-			"amount": 16,
-			"spread": 60
+			"unit": "emissary",
+			"amount": 1,
+			"spread": 1
 		}
 ]
 weapons: [

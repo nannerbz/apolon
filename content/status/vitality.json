@@ -1,9 +1,9 @@
 {
 	"type": "StatusEffect",
-	"name": "Permafrozen",
+	"name": "Vitality",
 	"outline": false,
 	"speedMultiplier": 1.2,
-	"healthMultiplier": 3,
+	"healthMultiplier": 1.4,
 	"disarm": false,
 	"damage": 0,
 	"parentizeEffect": true,
