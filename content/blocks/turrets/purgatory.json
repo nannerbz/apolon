@@ -525,6 +525,7 @@
                 "color": f5a15d,
                 "haloRotateSpeed": -2.5,
             },
+        ]
             ammoParts: {
                 hypermelt-fluid: [
             {
@@ -668,7 +669,6 @@
             },
             ]
             },
-        ]
     },
     "requirements": [
         {
