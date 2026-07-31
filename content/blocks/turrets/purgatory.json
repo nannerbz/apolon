@@ -35,6 +35,8 @@
             "type": "BulletType",
             "speed": 0,
             "lifetime": 300,
+            "rangeChange": 0
+            "reloadMultiplier": 0.8
             "collides": false,
             
             intervalBullet: {
@@ -212,7 +214,7 @@
         "mellowfluid": {
             "type": "BulletType",
             "rangeChange": 0
-            "reloadMultiplier": 1.35
+            "reloadMultiplier": 1
             "speed": 0,
             "lifetime": 300,
             "collides": false,
@@ -259,6 +261,9 @@
                     "status": "permafrozen",
                     "statusDuration": 400,
                     "lifetime": 2,
+                    "incendSpread": 30,
+                    "incendAmount": 3,
+                    "incendChance": 0,
                     "fadeTime": 1,
                     "puddles": 3,
                     "puddleRange": 64,
