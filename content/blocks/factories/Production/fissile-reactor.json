@@ -63,12 +63,8 @@
 			"liquids": {
 				"liquids": [
 					{
-						"liquid": "methane",
+						"liquid": "octane",
 						"amount": 0.5
-					}
-					{
-						"liquid": "cryofluid",
-						"amount": 0.8
 					}
 				]
 			}
@@ -105,23 +101,12 @@
 				"amount": 80
 			}
 		],
-		"category"
-		:
-		"crafting",
-		"research"
-		:
-		"technetium-quarry",
-		"idleSound"
-		:
-		"superreactor",
-		"idleSoundVolume"
-		:
-		2
-		"researchCostMultiplier"
-		:
-		0.05
-		drawer
-		:
+		"category": "crafting",
+		"research": "technetium-quarry",
+		"idleSound": "superreactor",
+		"idleSoundVolume": 2
+		"researchCostMultiplier": 0.05
+		drawer:
 		{
 			type: DrawMulti
 			drawers: [
