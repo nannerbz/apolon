@@ -17,7 +17,8 @@
   "consumes": {
     "power": 3,
     "coolant": {
-      "amount": 0.6
+      "amount": 0.6,
+      "optional": true,
     }
     "items": {
       "items": [
@@ -44,8 +45,8 @@
       "amount": 50
     },
     {
-      "item": "hypersteel-item",
-      "amount": 50
+      "item": "photoglass-item",
+      "amount": 100
     },
   ],
   "category": "effect",
