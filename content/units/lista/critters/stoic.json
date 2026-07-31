@@ -3,8 +3,8 @@ name: Stoic
 rotateShoot: false
 rotateSpeed:0
 speed: 0
-health: 4000
-armor: 15
+health: 5200
+armor: 18
 rotateShoot: false
 outlineColor: 222222
 hitSize: 16

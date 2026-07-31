@@ -2,7 +2,7 @@ type: legs
 name: Microbe
 speed: 1.2
 health: 1400
-armor: 6
+armor: 4
 rotateShoot: false
 legCount: 6
 hovering: true
@@ -19,7 +19,7 @@ legLengthScl : 1.5
 legForwardScl : 2.1
 legBaseOffset: 2
 legMoveSpace: 1
-legGroupSize: 3
+legGroupSize: 2
 shadowElevation: 0.1
 outlineColor: 222222
 hitSize: 16

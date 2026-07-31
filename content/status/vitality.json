@@ -3,7 +3,7 @@
 	"name": "Vitality",
 	"outline": false,
 	"speedMultiplier": 1.2,
-	"healthMultiplier": 1.4,
+	"healthMultiplier": 1.75,
 	"disarm": false,
 	"damage": 0,
 	"parentizeEffect": true,
