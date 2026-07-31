@@ -61,7 +61,7 @@ weapons: [
 			"collidesTeam": true,
 			"healPercent": 0.6,
 			"width": 8,
-			"damage": 90,
+			"damage": 60,
 			"buildingDamageMultiplier": 0.5,
 			"height": 8,
 			"shootEffect": "none",

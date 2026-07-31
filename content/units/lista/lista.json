@@ -65,4 +65,32 @@ weapons: [
 			damage: 25
 		}
 	}
+	{
+		"name": "shitquark",
+		"reload": 140,
+		"x": 0,
+		"y": 0,
+		"shootSound": "shootLaser",
+		"rotateSpeed": 180,
+		"shoot": {
+			"shots": 2,
+			"shotDelay": 16
+		},
+		"shootY": 0,
+		"rotate": true,
+		"mirror": false,
+		"bullet": {
+			"type": "LaserBoltBulletType",
+			"collidesTeam": true,
+			"healPercent": 0.2,
+			"damage": 13,
+			"buildingDamageMultiplier": 0.2,
+			"speed": 6,
+			"lifetime": 30,
+			"frontColor": "64c990",
+			"backColor": "377d6e",
+			"shootEffect": "shootSmall",
+			"smokeEffect": "shootSmallSmoke"
+		}
+	}
 ]
