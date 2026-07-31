@@ -209,6 +209,119 @@
 		intervalAngle: 0
 		intervalSpread: 5
         },
+        "mellowfluid": {
+            "type": "BulletType",
+            "rangeChange": 0
+            "reloadMultiplier": 2
+            "speed": 0,
+            "lifetime": 300,
+            "collides": false,
+            
+            intervalBullet: {
+            "type": "BulletType",
+            "despawnShake": 4
+            "despawnEffect": none,
+            "spawnBullets": [
+                {
+                "type": "BasicBulletType",
+                "shrinkY": 0,
+                "shrinkX": 0,
+                "trailWidth": 3,
+                "trailLength": 8,
+                "speed": 16,
+                "lifetime": 37.5,
+                "damage": 25,
+                "backColor": "6586b0",
+                "frontColor": "f0fcff",
+                "trailColor": "f0fcff",
+                "burstSpacing": 4,
+                "width": 16,
+                "height": 24,
+                "hitEffect": "hitLancer",
+                "ammoMultiplier": 3,
+                "followAimSpeed": 2,
+                "pierce": true,
+                "pierceCap": 999,
+                "buildingDamageMultiplier": 0.01
+                intervalBullet: {
+                    "type": "ContinuousLaserBulletType",
+                    "shake": 6,
+                    "continuous": true,
+                    "keepVelocity": false,
+                    "speed": 0,
+                    "length": 35,
+                    "width": 20,
+                    "despawnEffect": "none",
+                    "smokeEffect": "none",
+                    "hitEffect": "none",
+                    "damage": 5,
+                    "damageInterval": 1,
+                    "status": "hyperfreeze",
+                    "statusDuration": 400,
+                    "lifetime": 2,
+                    "fadeTime": 1,
+                    "incendSpread": 30,
+                    "incendAmount": 3,
+                    "incendChance": 0.8,
+                    "puddles": 3,
+                    "puddleRange": 64,
+                    "puddleAmount": 5,
+                    "puddleLiquid": slag,
+                    "colors": [ "6586b0", "75a4b8", "8ec2d8", "c0ecff", "f0fcff" ],
+                    "despawnSound": "none",
+                    "pierce": true,
+                    "pierceCap": 999
+                },
+
+		        bulletInterval: 1
+		        intervalRandomSpread: 0
+		        intervalBullets: 1
+		        intervalAngle: 0
+		        intervalSpread: 0
+            },
+            {
+                "type": "MissileBulletType",
+                "trailWidth": 3,
+                "trailLength": 25,
+                "speed": 16,
+                "lifetime": 37.5,
+                "damage": 75,
+                "width": 30,
+                "height": 50,
+                "splashDamage": 25,
+                "splashDamageRadius": 32,
+                "despawnEffect": {
+                    "type": "WaveEffect",
+                    "colorFrom": "f0fcff",
+                    "colorTo": "6586b0",
+                    "sizeTo": 30,
+                    "lifetime": 20,
+                    "strokeFrom": 2
+                },
+                "buildingDamageMultiplier": 0.05,
+                "frontColor": "f0fcff",
+                "hitSound": "none",
+                "lightColor": "f0fcff",
+                "trailColor": "f0fcff",
+                "backColor": "6586b0",
+                "status": "freezing",
+                "statusDuration": 120,
+                "weaveMag": 2,
+                "weaveScale": 4,
+                "weaveRandom": true
+                "trailChance": 0.3,
+                "despawnSound": "dullExplosion",
+                "despawnEffect": "none",
+            }
+            ],
+            },
+
+		bulletInterval: 1
+		intervalRandomSpread: 5
+		intervalBullets: 2
+		intervalAngle: 0
+		intervalSpread: 5
+        },
     }
     "drawer": {
         "type": "DrawTurret",
@@ -271,7 +384,7 @@
                 "moves": [
                 {
                     x: 0
-                    y: -10
+                    y: -40
                     rot: 0,
                     progress: recoil
                 },
