@@ -12,7 +12,7 @@ range: 320
         {
             "type": "RepairFieldAbility",
             "amount": 80,
-            "reload": 80,
+            "reload": 40,
             "range": 80,
             "activeEffect": {
                 "type": "WaveEffect",

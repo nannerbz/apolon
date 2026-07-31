@@ -5,7 +5,7 @@ flying: true
 speed: 0.4
 accel: 0.05
 drag: 0.04
-health: 30300
+health: 50400
 hitSize: 60
 armor: 12
 itemCapacity: 0
@@ -52,6 +52,7 @@ weapons: [
 			"collideAir": false,
 			"damage": 6000,
 			"splashDamage": 5000,
+			"buildingDamageMultiplier": 0.5,
 			"splashDamageArea": 64,
 			"speed": 1,
 			"lifetime": 240,
@@ -86,8 +87,8 @@ weapons: [
 				"smokes": 0,
 				"sparks": 4
 			},
-			"despawnHit": true
-			"fragBullets": 1
+			"despawnHit": true,
+			"fragBullets": 1,
 			"fragBullet": {
 				"type": "BulletType",
 				"lifetime": 1,
@@ -108,6 +109,7 @@ weapons: [
 						"collideAir": false,
 						"damage": 1000,
 						"splashDamage": 1000,
+						"buildingDamageMultiplier": 0.5,
 						"splashDamageArea": 64,
 						"speed": 1,
 						"lifetime": 40,
@@ -144,7 +146,7 @@ weapons: [
 						},
 						"despawnHit": true,
 						"fragBullets": 2,
-						"fragSpread": 90
+						"fragSpread": 90,
 						"fragBullet": {
 							"type": "BasicBulletType",
 							"width": 0,
@@ -153,6 +155,7 @@ weapons: [
 							"collideAir": false,
 							"damage": 1000,
 							"splashDamage": 1000,
+							"buildingDamageMultiplier": 0.5,
 							"splashDamageArea": 64,
 							"speed": 1,
 							"lifetime": 40,
@@ -209,6 +212,7 @@ weapons: [
 										"collideAir": false,
 										"damage": 1000,
 										"splashDamage": 1000,
+										"buildingDamageMultiplier": 0.5,
 										"splashDamageArea": 64,
 										"speed": 1,
 										"lifetime": 80,
@@ -259,6 +263,7 @@ weapons: [
 										"collideAir": false,
 										"damage": 1000,
 										"splashDamage": 1000,
+										"buildingDamageMultiplier": 0.5,
 										"splashDamageArea": 64,
 										"speed": 1,
 										"lifetime": 80,
@@ -315,6 +320,7 @@ weapons: [
 													"collideAir": false,
 													"damage": 1000,
 													"splashDamage": 1000,
+													"buildingDamageMultiplier": 0.5,
 													"splashDamageArea": 64,
 													"angleOffset": 180,
 													"speed": 1,
@@ -372,6 +378,7 @@ weapons: [
 																"collideAir": false,
 																"damage": 1000,
 																"splashDamage": 1000,
+																"buildingDamageMultiplier": 0.5,
 																"splashDamageArea": 64,
 																"speed": 1,
 																"lifetime": 60,
@@ -410,7 +417,7 @@ weapons: [
 																"fragBullets": 1,
 																"fragBullet": {
 																	"type": "BulletType",
-																	"createChance": 0.5
+																	"createChance": 0.5,
 																	"spawnUnit": "emissary"
 																}
 															}
@@ -423,7 +430,7 @@ weapons: [
 								]
 							}
 						}
-						}
+					}
 				]
 			}
 		},

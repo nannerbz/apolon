@@ -202,7 +202,7 @@
 			"trailLength": 10,
 			"speed": 10,
 			"status": "permafrozen",
-			"statusduration": 25,
+			"statusduration": 5,
 			"reloadMultiplier": 0.76,
 			"lifetime": 185,
 			"damage": 355,
@@ -236,7 +236,7 @@
 				"speed": 3,
 				"drag": 0.1,
 				"status": "permafrozen",
-				"statusduration": 25,
+				"statusduration": 5,
 				"frontColor": "f0fcff",
 				"backColor": "87ceeb",
 				"trailColor": "687db6",
@@ -258,7 +258,7 @@
 					"fromColor": "f0fcff",
 					"toColor": "687db6",
 					"status": "permafrozen",
-					"statusduration": 25
+					"statusduration": 5
 				},
 				"pierce": true,
 				"pierceCap": 20
@@ -315,7 +315,7 @@
 					"width": 20,
 					"height": 20,
 					"status": "permafrozen",
-					"statusduration": 25,
+					"statusduration": 5,
 					"splashDamage": 360,
 					"splashDamageRadius": 40,
 					"intervalBullets": 6,
@@ -343,7 +343,7 @@
 							"fromColor": "f0fcff",
 							"toColor": "687db6",
 							"status": "permafrozen",
-							"statusduration": 15
+							"statusduration": 5
 						},
 						"fragBullets": 6,
 						"fragRandomSpread": 0,

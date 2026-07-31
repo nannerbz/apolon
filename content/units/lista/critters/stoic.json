@@ -56,8 +56,8 @@ weapons: [
         "mirror": false,
         "bullet": {
             "type": "BasicBulletType",
-            "damage": 200,
-            "pierceArmor": true,
+            "damage": 180,
+            "buildingDamageMultiplier": 0.5,
             "speed": 4,
             "width": 8,
             "height": 12,

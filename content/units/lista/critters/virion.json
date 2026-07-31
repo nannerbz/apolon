@@ -61,7 +61,8 @@ weapons: [
 			"collidesTeam": true,
 			"healPercent": 0.6,
 			"width": 8,
-			"damage": 100
+			"damage": 90,
+			"buildingDamageMultiplier": 0.5,
 			"height": 8,
 			"shootEffect": "none",
 			"smokeEffect": "none",
@@ -85,7 +86,7 @@ weapons: [
 			"trailWidth": 3,
 			"trailLength": 8,
 			"splashDamage": 82,
-			"splashDamageRadius": 24,
+			"splashDamageRadius": 24
 		}
 	}
 ]
