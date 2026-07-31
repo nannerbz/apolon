@@ -13,8 +13,10 @@ consumes: {
 		}
 }
 requirements: [
-	bismuth-item/10
-	metaglass/10
+	bismuth-item/150
+	metaglass/40
+	chromium-item/15
+	carbide-item/100
 ]
 	  "research": {
 		parent: simple-display-cell

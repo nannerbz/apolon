@@ -4,7 +4,7 @@ description: Extracts tungsten from any walls with tungsten.
 drillTime: 150
 tier: 6
 size: 3
-range: 1
+range: 2
 requirements: [
 	photoglass-item/75
 	kobra-alloy-item/50
