@@ -264,7 +264,7 @@
                 "progress": "charge",
                 "heatProgress": "recoil",
                 "heatColor": "f5a15d",
-                "mirror": true,
+                "mirror": false,
                 "moveX": 0,
                 "moveY": -2,
                 "moveRot": 0,
