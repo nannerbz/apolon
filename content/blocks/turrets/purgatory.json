@@ -271,7 +271,7 @@
                 "moves": [
                 {
                     x: 0
-                    y: -5
+                    y: -10
                     rot: 0,
                     progress: recoil
                 },
@@ -592,7 +592,7 @@
     ],
     "category": "turret",
     "minWarmup": 0.9,
-    "shootWarmupSpeed": 0.004,
+    "shootWarmupSpeed": 0.01,
     "research": "ascention",
     "shake": 7,
     "researchCostMultiplier": 0.05
