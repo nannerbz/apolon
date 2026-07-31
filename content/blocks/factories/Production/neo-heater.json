@@ -3,7 +3,7 @@ name: Neo Heater
 category: crafting
 description: Takes Neodymium and Cryofluid, turning it into a big chunk of heat.
 rotateDraw: false
-craftTime: 120,
+craftTime: 60,
 rotate: true
 size: 2
 heatOutput: 4
@@ -11,14 +11,10 @@ regionRotated1: 1
 	"ambientSound": "loopHum",
 	"ambientSoundVolume": 0.5
 	consumes: {
+		"power": 4
 		items: {
 			items: [
 				{ "item": "neodymium-item", "amount": 1 }
-			]
-		}
-		liquids: {
-			liquids: [
-				{ "liquid": "cryofluid", "amount": 0.2 }
 			]
 		}
 	}

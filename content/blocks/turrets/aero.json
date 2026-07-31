@@ -15,7 +15,7 @@
     "rotateSpeed": 4,
     "shots": 1,
     "range": 265,
-    "ammoPerShot": 8
+    "ammoPerShot": 1
     "ammoTypes": {
         "cryofluid": {
             "type": "MissileBulletType",
@@ -60,7 +60,7 @@
             "trailColor": "3c7141",
             "speed": 3,
             "lifetime": 88,
-            "damage": 45,
+            "damage": 25,
             "width": 8,
             "height": 8,
             "shrinkY": 0,
