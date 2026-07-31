@@ -5,7 +5,7 @@ flying: true
 speed: 0.45
 accel: 0.05
 drag: 0.04
-health: 20200
+health: 18200
 hitSize: 60
 armor: 12
 itemCapacity: 0

@@ -5,12 +5,12 @@ flying: true
 speed: 0.4
 accel: 0.05
 drag: 0.04
-health: 40400
+health: 30300
 hitSize: 60
 armor: 12
 itemCapacity: 0
 outlineColor: 222222
-range: 320
+range: 360
 lowAltitude: true
 rotateShoot: true
 trailLength: 96
@@ -34,7 +34,7 @@ trailColor: "64c990"
 weapons: [
 	{
 		"name": "divination-w",
-		"reload": 1200,
+		"reload": 1800,
 		"x": 0,
 		"y": 0,
 		"shootY": 24
@@ -50,11 +50,11 @@ weapons: [
 			"height": 0,
 			"trailWidth": 0,
 			"collideAir": false,
-			"damage": 8000,
+			"damage": 6000,
 			"splashDamage": 5000,
 			"splashDamageArea": 64,
 			"speed": 1,
-			"lifetime": 320,
+			"lifetime": 240,
 			"trailInterval": 60,
 			"trailEffect": {
 				"type": "ParticleEffect",
@@ -106,8 +106,8 @@ weapons: [
 						"height": 0,
 						"trailWidth": 0,
 						"collideAir": false,
-						"damage": 8000,
-						"splashDamage": 5000,
+						"damage": 1000,
+						"splashDamage": 1000,
 						"splashDamageArea": 64,
 						"speed": 1,
 						"lifetime": 40,
@@ -151,8 +151,8 @@ weapons: [
 							"height": 0,
 							"trailWidth": 0,
 							"collideAir": false,
-							"damage": 8000,
-							"splashDamage": 5000,
+							"damage": 1000,
+							"splashDamage": 1000,
 							"splashDamageArea": 64,
 							"speed": 1,
 							"lifetime": 40,
@@ -200,15 +200,15 @@ weapons: [
 									{
 										"type": "BulletType",
 										"spawnUnit": "stoic"
-									}
+									},
 									{
 										"type": "BasicBulletType",
 										"width": 0,
 										"height": 0,
 										"trailWidth": 0,
 										"collideAir": false,
-										"damage": 8000,
-										"splashDamage": 5000,
+										"damage": 1000,
+										"splashDamage": 1000,
 										"splashDamageArea": 64,
 										"speed": 1,
 										"lifetime": 80,
@@ -245,20 +245,20 @@ weapons: [
 										},
 										"despawnHit": true,
 										"angleOffset": 180,
-										"fragBullets": 1
+										"fragBullets": 1,
 										"fragBullet": {
 											"type": "BulletType",
 											"spawnUnit": "soprano"
 										}
-										},
+									},
 									{
 										"type": "BasicBulletType",
 										"width": 0,
 										"height": 0,
 										"trailWidth": 0,
 										"collideAir": false,
-										"damage": 8000,
-										"splashDamage": 5000,
+										"damage": 1000,
+										"splashDamage": 1000,
 										"splashDamageArea": 64,
 										"speed": 1,
 										"lifetime": 80,
@@ -313,8 +313,8 @@ weapons: [
 													"height": 0,
 													"trailWidth": 0,
 													"collideAir": false,
-													"damage": 8000,
-													"splashDamage": 5000,
+													"damage": 1000,
+													"splashDamage": 1000,
 													"splashDamageArea": 64,
 													"angleOffset": 180,
 													"speed": 1,
@@ -370,8 +370,8 @@ weapons: [
 																"height": 0,
 																"trailWidth": 0,
 																"collideAir": false,
-																"damage": 8000,
-																"splashDamage": 5000,
+																"damage": 1000,
+																"splashDamage": 1000,
 																"splashDamageArea": 64,
 																"speed": 1,
 																"lifetime": 60,
@@ -410,6 +410,7 @@ weapons: [
 																"fragBullets": 1,
 																"fragBullet": {
 																	"type": "BulletType",
+																	"createChance": 0.5
 																	"spawnUnit": "emissary"
 																}
 															}
@@ -418,10 +419,10 @@ weapons: [
 												}
 											]
 										}
-										}
+									}
 								]
 							}
-							}
+						}
 						}
 				]
 			}
