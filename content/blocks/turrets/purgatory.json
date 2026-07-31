@@ -256,7 +256,7 @@
                     "hitEffect": "none",
                     "damage": 5,
                     "damageInterval": 1,
-                    "status": "hyperfreeze",
+                    "status": "permafrozen",
                     "statusDuration": 400,
                     "lifetime": 2,
                     "fadeTime": 1,
