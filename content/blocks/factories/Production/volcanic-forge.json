@@ -10,9 +10,9 @@
 	"craftTime": 180,
 	"attribute": "heat",
 	"baseEfficency": 0,
-	"boostScale": 0.2,
+	"boostScale": 0.04,
 	"maxBoost": 3,
-	"minEfficiency": 1,
+	"minEfficiency": 4,
 	"scaleLiquidConsumption": true
 	"craftEffect": {
 			"type": "RadialEffect",
