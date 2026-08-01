@@ -232,7 +232,7 @@
                 "trailLength": 8,
                 "speed": 16,
                 "lifetime": 37.5,
-                "damage": 25,
+                "damage": 10,
                 "backColor": "6586b0",
                 "frontColor": "f0fcff",
                 "trailColor": "f0fcff",
@@ -287,7 +287,7 @@
                 "trailLength": 25,
                 "speed": 16,
                 "lifetime": 37.5,
-                "damage": 75,
+                "damage": 45,
                 "width": 30,
                 "height": 50,
                 "splashDamage": 25,
@@ -672,7 +672,99 @@
                 },
                 ]
             },
-            ]
+            "mellowfluid": [
+                {
+                "type": "ShapePart",
+                "sides": 10,
+                "hollow": true,
+                "radius": 1,
+                "radiusTo": 6,
+                "stroke": 0,
+                "strokeTo": 2,
+                "x": 0,
+                "y": 48,
+                "moveY": -24
+                "progress": {
+                        type: charge
+                        ops: [
+                            {
+                                op: curve
+                                interp: circleIn
+                            }
+                        ]
+                    },
+                "color": f0fcff,
+                "rotateSpeed": 4
+                "moves": [
+                {
+                    x: 2
+                    y: 0
+                    rot: 0,
+                    progress: {
+                        type: charge
+                        ops: [
+                            {
+                                op: sin
+                                scl: 3
+                                mag: 5
+                                offset: 5
+                            }
+                        ]
+                    }
+                },
+                ]
+            },
+            {
+                "type": "HaloPart",
+                "sides": 4,
+                "shapes": 6,
+                "tri": true,
+                "radius": 1,
+                "radiusTo": 6,
+                "haloRadius": 1,
+                "haloRadiusTo": 6,
+                "triLength": 0
+                "triLengthTo": 15
+                "stroke": 4,
+                "strokeTo": 4,
+                "y": -30,
+                "progress": warmup,
+                "color": f0fcff,
+                "haloRotateSpeed": 8,
+                "x": 0,
+                "y": 48,
+                "moveY": -24
+                "progress": {
+                        type: charge
+                        ops: [
+                            {
+                                op: curve
+                                interp: circleIn
+                            }
+                        ]
+                    },
+                "color": f0fcff,
+                "moves": [
+                {
+                    x: 2
+                    y: 0
+                    rot: 0,
+                    progress: {
+                        type: charge
+                        ops: [
+                            {
+                                op: sin
+                                scl: 3
+                                mag: 5
+                                offset: 5
+                            }
+                        ]
+                    }
+                },
+                ]
+            },
+            ],
+            ],
             },
     },
     "requirements": [
