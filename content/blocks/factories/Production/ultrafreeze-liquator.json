@@ -10,7 +10,7 @@
 	"craftTime": 120,
 	"craftEffect": {
 			"type": "RadialEffect",
-			"effect": "lightningShoot",
+			"effect": "surgeCruciSmoke",
 			"rotationSpacing": 90,
 			"lengthOffset": 13,
 			"rotationOffset": 45
