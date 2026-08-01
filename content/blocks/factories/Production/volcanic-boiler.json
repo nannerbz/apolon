@@ -2,7 +2,7 @@
 	"type": "HeatCrafter",
 	"name": "Volcanic Boiler",
 	"description": "Mixes chromatic slag and methane with metaglass to make a deadly, boiling hot liquid, ultramelt.",
-	"outputLiquid": {"liquid": "ultramelt-fluid", "amount": 1},
+	"outputLiquid": {"liquid": "hypermelt-fluid", "amount": 1},
 	"size": 3,
 	"hasPower": true,
 	"hasItems": true,
