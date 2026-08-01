@@ -31,7 +31,7 @@
 		{ "item": "photoglass-item", "amount": 150 }
 		{ "item": "tungsten", "amount": 100 }
 		{ "item": "bismuth-item", "amount": 150 }
-		{ "item": "chromium", "amount": 75 }
+		{ "item": "chromium-item", "amount": 75 }
 	],
 	"category": "crafting",
 	  "research": {
