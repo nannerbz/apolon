@@ -3,7 +3,7 @@
 	"name": "Volcanic Forge",
 	"description": "Only works when placed atop things that radiate heat. Uses acetylene, technetium, and chromium to form vulcan alloy.",
 	"outputItem": {"item": "vulcan-alloy-item", "amount": 2},
-	"size": 3,
+	"size": 5,
 	"hasPower": false,
 	"hasItems": true,
 	"hasLiquids": true,
