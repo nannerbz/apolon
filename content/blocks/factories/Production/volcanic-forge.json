@@ -9,8 +9,8 @@
 	"hasLiquids": true,
 	"craftTime": 180,
 	"attribute": "heat",
-	"baseEfficency": 1,
-	"boostScale": 1,
+	"baseEfficency": 0,
+	"boostScale": 0.2,
 	"maxBoost": 3,
 	"minEfficiency": 1,
 	"scaleLiquidConsumption": true
@@ -59,7 +59,7 @@
 	            	  suffix : "-inner"
 	            	},
 					{
-	            	  type : DrawHeatRegion
+	            	  type : DrawGlowRegion
 	            	  suffix : "-innerheat"
 	            	},
 					{
@@ -72,7 +72,7 @@
 	            	  type : DrawDefault
 	            	},
 					{
-	            	  type : DrawHeatRegion
+	            	  type : DrawGlowRegion
 	            	  suffix : "-heat"
 	            	},
 	            	{
