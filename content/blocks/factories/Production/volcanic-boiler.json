@@ -55,7 +55,7 @@
 					{
 	            	  type : DrawLiquidRegion
 	            	  suffix : "-liquid"
-			  		drawLiquid : "ultramelt-fluid"
+			  		drawLiquid : "hypermelt-fluid"
 	            	},
 					{
 	            	  type : DrawCircles
