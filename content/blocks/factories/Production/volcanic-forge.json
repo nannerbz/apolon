@@ -18,7 +18,7 @@
 			"type": "RadialEffect",
 			"effect": "surgeCruciSmoke",
 			"rotationSpacing": 90,
-			"lengthOffset": 4,
+			"lengthOffset": 5,
 			"rotationOffset": 0
 	}
 	"consumes": {
