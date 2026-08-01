@@ -14,7 +14,7 @@
     "xRand": 0,
     "squareSprite": false,
     "unitSort": "strongest",
-    "shootY": 15,
+    "shootY": 8,
     "consumes": {
         "power": 50,
     },
@@ -35,6 +35,8 @@
             "type": "BulletType",
             "speed": 0,
             "lifetime": 300,
+            "rangeChange": 0
+            "reloadMultiplier": 0.8
             "collides": false,
             
             intervalBullet: {
@@ -86,7 +88,7 @@
                     "puddles": 3,
                     "puddleRange": 64,
                     "puddleAmount": 5,
-                    "puddleLiquid": slag,
+                    "puddleLiquid": hypermelt-fluid,
                     "colors": [ "3b063a", "5b1237", "9c3247", "d46742", "f5a15d" ],
                     "despawnSound": "none",
                     "pierce": true,
@@ -209,6 +211,119 @@
 		intervalAngle: 0
 		intervalSpread: 5
         },
+        "mellowfluid": {
+            "type": "BulletType",
+            "rangeChange": 0
+            "reloadMultiplier": 1
+            "speed": 0,
+            "lifetime": 300,
+            "collides": false,
+            
+            intervalBullet: {
+            "type": "BulletType",
+            "despawnShake": 4
+            "despawnEffect": none,
+            "spawnBullets": [
+                {
+                "type": "BasicBulletType",
+                "shrinkY": 0,
+                "shrinkX": 0,
+                "trailWidth": 3,
+                "trailLength": 8,
+                "speed": 16,
+                "lifetime": 37.5,
+                "damage": 10,
+                "backColor": "6586b0",
+                "frontColor": "f0fcff",
+                "trailColor": "f0fcff",
+                "burstSpacing": 4,
+                "width": 16,
+                "height": 24,
+                "hitEffect": "hitLancer",
+                "ammoMultiplier": 3,
+                "followAimSpeed": 2,
+                "pierce": true,
+                "pierceCap": 999,
+                "buildingDamageMultiplier": 0.01
+                intervalBullet: {
+                    "type": "ContinuousLaserBulletType",
+                    "shake": 6,
+                    "continuous": true,
+                    "keepVelocity": false,
+                    "speed": 0,
+                    "length": 35,
+                    "width": 20,
+                    "despawnEffect": "none",
+                    "smokeEffect": "none",
+                    "hitEffect": "none",
+                    "damage": 2,
+                    "damageInterval": 1,
+                    "status": "permafrozen",
+                    "statusDuration": 400,
+                    "lifetime": 2,
+                    "incendSpread": 30,
+                    "incendAmount": 3,
+                    "incendChance": 0,
+                    "fadeTime": 1,
+                    "puddles": 3,
+                    "puddleRange": 64,
+                    "puddleAmount": 5,
+                    "puddleLiquid": mellowfluid,
+                    "colors": [ "6586b0", "75a4b8", "8ec2d8", "c0ecff", "f0fcff" ],
+                    "despawnSound": "none",
+                    "pierce": true,
+                    "pierceCap": 999
+                },
+
+		        bulletInterval: 1
+		        intervalRandomSpread: 0
+		        intervalBullets: 1
+		        intervalAngle: 0
+		        intervalSpread: 0
+            },
+            {
+                "type": "MissileBulletType",
+                "trailWidth": 3,
+                "trailLength": 25,
+                "speed": 16,
+                "lifetime": 37.5,
+                "damage": 45,
+                "width": 30,
+                "height": 50,
+                "splashDamage": 25,
+                "splashDamageRadius": 32,
+                "despawnEffect": {
+                    "type": "WaveEffect",
+                    "colorFrom": "f0fcff",
+                    "colorTo": "6586b0",
+                    "sizeTo": 30,
+                    "lifetime": 20,
+                    "strokeFrom": 2
+                },
+                "buildingDamageMultiplier": 0.05,
+                "frontColor": "f0fcff",
+                "hitSound": "none",
+                "lightColor": "f0fcff",
+                "trailColor": "f0fcff",
+                "backColor": "6586b0",
+                "status": "freezing",
+                "statusDuration": 120,
+                "weaveMag": 2,
+                "weaveScale": 4,
+                "weaveRandom": true
+                "trailChance": 0.3,
+                "despawnSound": "dullExplosion",
+                "despawnEffect": "none",
+            }
+            ],
+            },
+
+		bulletInterval: 1
+		intervalRandomSpread: 5
+		intervalBullets: 2
+		intervalAngle: 0
+		intervalSpread: 5
+        },
     }
     "drawer": {
         "type": "DrawTurret",
@@ -264,15 +379,15 @@
                 "progress": "charge",
                 "heatProgress": "recoil",
                 "heatColor": "f5a15d",
-                "mirror": true,
-                "moveX": 1,
-                "moveY": 0,
-                "moveRot": -10,
+                "mirror": false,
+                "moveX": 0,
+                "moveY": -2,
+                "moveRot": 0,
                 "moves": [
                 {
-                    x: 1
-                    y: 0
-                    rot: -10,
+                    x: 0
+                    y: -25
+                    rot: 0,
                     progress: recoil
                 },
                 ]
@@ -340,145 +455,6 @@
                     y: 6
                     rot: 0,
                     progress: charge
-                },
-                ]
-            },
-            {
-                "type": "ShapePart",
-                "sides": 8,
-                "hollow": true,
-                "radius": 1,
-                "radiusTo": 6,
-                "stroke": 0,
-                "strokeTo": 2,
-                "x": 0,
-                "y": 32,
-                "moveY": -24
-                "progress": {
-                        type: charge
-                        ops: [
-                            {
-                                op: curve
-                                interp: circleIn
-                            }
-                        ]
-                    },
-                "color": f5a15d,
-                "rotateSpeed": 4
-                "moves": [
-                {
-                    x: 2
-                    y: 0
-                    rot: 0,
-                    progress: {
-                        type: charge
-                        ops: [
-                            {
-                                op: sin
-                                scl: 3
-                                mag: 5
-                                offset: 5
-                            }
-                        ]
-                    }
-                },
-                ]
-            },
-            {
-                "type": "HaloPart",
-                "sides": 4,
-                "shapes": 4,
-                "tri": true,
-                "radius": 0,
-                "radiusTo": 5,
-                "haloRadius": 1,
-                "haloRadiusTo": 15,
-                "triLength": 0
-                "triLengthTo": 8
-                "stroke": 0,
-                "strokeTo": 4,
-                "y": -30,
-                "progress": warmup,
-                "color": f5a15d,
-                "haloRotateSpeed": 20,
-                "x": 0,
-                "y": 32,
-                "moveY": -24
-                "progress": {
-                        type: charge
-                        ops: [
-                            {
-                                op: curve
-                                interp: circleIn
-                            }
-                        ]
-                    },
-                "color": f5a15d,
-                "moves": [
-                {
-                    x: 2
-                    y: 0
-                    rot: 0,
-                    progress: {
-                        type: charge
-                        ops: [
-                            {
-                                op: sin
-                                scl: 3
-                                mag: 5
-                                offset: 5
-                            }
-                        ]
-                    }
-                },
-                ]
-            },
-            {
-                "type": "HaloPart",
-                "sides": 4,
-                "shapes": 4,
-                "tri": true,
-                "radius": 0,
-                "radiusTo": 5,
-                "haloRadius": 1,
-                "haloRadiusTo": 15,
-                "triLength": 0
-                "triLengthTo": 14
-                "stroke": 0,
-                "strokeTo": 4,
-                "y": -30,
-                "progress": warmup,
-                "color": f5a15d,
-                "haloRotateSpeed": -15,
-                "x": 0,
-                "y": 32,
-                "moveY": -24
-                "progress": {
-                        type: charge
-                        ops: [
-                            {
-                                op: curve
-                                interp: circleIn
-                            }
-                        ]
-                    },
-                "color": f5a15d,
-                "moves": [
-                {
-                    x: 2
-                    y: 0
-                    rot: 0,
-                    progress: {
-                        type: charge
-                        ops: [
-                            {
-                                op: sin
-                                scl: 3
-                                mag: 5
-                                offset: 5
-                            }
-                        ]
-                    }
                 },
                 ]
             },
@@ -555,6 +531,241 @@
                 "haloRotateSpeed": -2.5,
             },
         ]
+            ammoParts: {
+                hypermelt-fluid: [
+            {
+                "type": "ShapePart",
+                "sides": 8,
+                "hollow": true,
+                "radius": 1,
+                "radiusTo": 6,
+                "stroke": 0,
+                "strokeTo": 2,
+                "x": 0,
+                "y": 48,
+                "moveY": -24
+                "progress": {
+                        type: charge
+                        ops: [
+                            {
+                                op: curve
+                                interp: circleIn
+                            }
+                        ]
+                    },
+                "color": f5a15d,
+                "rotateSpeed": 4
+                "moves": [
+                {
+                    x: 2
+                    y: 0
+                    rot: 0,
+                    progress: {
+                        type: charge
+                        ops: [
+                            {
+                                op: sin
+                                scl: 3
+                                mag: 5
+                                offset: 5
+                            }
+                        ]
+                    }
+                },
+                ]
+            },
+            {
+                "type": "HaloPart",
+                "sides": 4,
+                "shapes": 4,
+                "tri": true,
+                "radius": 0,
+                "radiusTo": 5,
+                "haloRadius": 1,
+                "haloRadiusTo": 15,
+                "triLength": 0
+                "triLengthTo": 8
+                "stroke": 0,
+                "strokeTo": 4,
+                "y": -30,
+                "progress": warmup,
+                "color": f5a15d,
+                "haloRotateSpeed": 20,
+                "x": 0,
+                "y": 48,
+                "moveY": -24
+                "progress": {
+                        type: charge
+                        ops: [
+                            {
+                                op: curve
+                                interp: circleIn
+                            }
+                        ]
+                    },
+                "color": f5a15d,
+                "moves": [
+                {
+                    x: 2
+                    y: 0
+                    rot: 0,
+                    progress: {
+                        type: charge
+                        ops: [
+                            {
+                                op: sin
+                                scl: 3
+                                mag: 5
+                                offset: 5
+                            }
+                        ]
+                    }
+                },
+                ]
+            },
+            {
+                "type": "HaloPart",
+                "sides": 4,
+                "shapes": 4,
+                "tri": true,
+                "radius": 0,
+                "radiusTo": 5,
+                "haloRadius": 1,
+                "haloRadiusTo": 15,
+                "triLength": 0
+                "triLengthTo": 14
+                "stroke": 0,
+                "strokeTo": 4,
+                "y": -30,
+                "progress": warmup,
+                "color": f5a15d,
+                "haloRotateSpeed": -15,
+                "x": 0,
+                "y": 48,
+                "moveY": -24
+                "progress": {
+                        type: charge
+                        ops: [
+                            {
+                                op: curve
+                                interp: circleIn
+                            }
+                        ]
+                    },
+                "color": f5a15d,
+                "moves": [
+                {
+                    x: 2
+                    y: 0
+                    rot: 0,
+                    progress: {
+                        type: charge
+                        ops: [
+                            {
+                                op: sin
+                                scl: 3
+                                mag: 5
+                                offset: 5
+                            }
+                        ]
+                    }
+                },
+                ]
+            },
+            ],
+            "mellowfluid": [
+                {
+                "type": "ShapePart",
+                "sides": 10,
+                "hollow": true,
+                "radius": 1,
+                "radiusTo": 6,
+                "stroke": 0,
+                "strokeTo": 2,
+                "x": 0,
+                "y": 48,
+                "moveY": -24
+                "progress": {
+                        type: charge
+                        ops: [
+                            {
+                                op: curve
+                                interp: circleIn
+                            }
+                        ]
+                    },
+                "color": f0fcff,
+                "rotateSpeed": 4
+                "moves": [
+                {
+                    x: 2
+                    y: 0
+                    rot: 0,
+                    progress: {
+                        type: charge
+                        ops: [
+                            {
+                                op: sin
+                                scl: 3
+                                mag: 5
+                                offset: 5
+                            }
+                        ]
+                    }
+                },
+                ]
+            },
+            {
+                "type": "HaloPart",
+                "sides": 4,
+                "shapes": 6,
+                "tri": true,
+                "radius": 1,
+                "radiusTo": 6,
+                "haloRadius": 1,
+                "haloRadiusTo": 6,
+                "triLength": 0
+                "triLengthTo": 15
+                "stroke": 4,
+                "strokeTo": 4,
+                "y": -30,
+                "progress": warmup,
+                "color": f0fcff,
+                "haloRotateSpeed": 8,
+                "x": 0,
+                "y": 48,
+                "moveY": -24
+                "progress": {
+                        type: charge
+                        ops: [
+                            {
+                                op: curve
+                                interp: circleIn
+                            }
+                        ]
+                    },
+                "color": f0fcff,
+                "moves": [
+                {
+                    x: 2
+                    y: 0
+                    rot: 0,
+                    progress: {
+                        type: charge
+                        ops: [
+                            {
+                                op: sin
+                                scl: 3
+                                mag: 5
+                                offset: 5
+                            }
+                        ]
+                    }
+                },
+                ]
+            },
+            ],
+            },
     },
     "requirements": [
         {
@@ -592,7 +803,7 @@
     ],
     "category": "turret",
     "minWarmup": 0.9,
-    "shootWarmupSpeed": 0.004,
+    "shootWarmupSpeed": 0.01,
     "research": "ascention",
     "shake": 7,
     "researchCostMultiplier": 0.05

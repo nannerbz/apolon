@@ -1,7 +1,7 @@
 {
 	"type": "GenericCrafter",
 	"name": "Hydric Mixer",
-	"description": "Mixes rad snow and arkycite into cryofluid. Produces hydrogen as a byproduct. One of the only reliable ways to get cryofluid if it isn't available naturally.",
+	"description": "Mixes rad snow and chromatic slag into cryofluid. Produces hydrogen as a byproduct. One of the only reliable ways to get cryofluid if it isn't available naturally.",
 	"outputLiquids": [
 		{
 		"liquid": "hydrogen",
