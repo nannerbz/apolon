@@ -1,0 +1,84 @@
+{
+	"type": "AttributeCrafter",
+	"name": "Volcanic Forge",
+	"description": "Only works when placed atop things that radiate heat. Uses acetylene, technetium, and chromium to form vulcan alloy.",
+	"outputItem": {"item": "vulcan-alloy-item", "amount": 2},
+	"size": 5,
+	"hasPower": false,
+	"hasItems": true,
+	"hasLiquids": true,
+	"craftTime": 180,
+	"attribute": "heat",
+	"baseEfficency": 0,
+	"boostScale": 0.05,
+	"maxBoost": 3,
+	"minEfficiency": 8,
+	"scaleLiquidConsumption": true
+	"craftEffect": {
+			"type": "RadialEffect",
+			"effect": "surgeCruciSmoke",
+			"rotationSpacing": 90,
+			"lengthOffset": 5,
+			"rotationOffset": 0
+	}
+	"consumes": {
+		"items": {
+			"items": [
+				{ "item": "technetium-item", "amount": 2 }
+				{ "item": "chromium-item", "amount": 3 }
+			]
+                }
+		"liquids": {
+			"liquids": [
+				{ "liquid": "acetylene", "amount": 0.8 }
+			]
+		}
+	},
+	"requirements": [
+		{ "item": "kobra-alloy-item", "amount": 100 }
+		{ "item": "tungsten", "amount": 100 }
+		{ "item": "metaglass", "amount": 50 }
+		{ "item": "carbide", "amount": 250 }
+	],
+	"category": "crafting",
+	  "research": {
+		parent: nanotech-dry-stainer
+	}
+	"ambientSound": "loopHum",
+	"ambientSoundVolume": 0.5
+"researchCostMultiplier": 0.05
+	drawer: {
+	    type: DrawMulti
+	    drawers : [
+					{
+	            	  type : DrawRegion
+	            	  suffix : "-bottom"
+	            	},
+					{
+	            	  type : DrawRegion
+	            	  suffix : "-inner"
+	            	},
+					{
+	            	  type : DrawGlowRegion
+	            	  suffix : "-innerheat"
+	            	},
+					{
+	            		type : DrawRegion
+	            		suffix : "-rotator"
+				  		spinSprite: true
+						rotateSpeed: 3
+	            	},
+	            	{
+	            	  type : DrawDefault
+	            	},
+					{
+	            	  type : DrawGlowRegion
+	            	  suffix : "-heat"
+	            	},
+	            	{
+	            	  type : DrawRegion
+	            	  suffix : "-top"
+	            	},
+			]
+		}
+}
