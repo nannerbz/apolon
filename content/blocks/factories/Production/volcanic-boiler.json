@@ -1,0 +1,89 @@
+{
+	"type": "HeatCrafter",
+	"name": "Volcanic Boiler",
+	"description": "Mixes chromatic slag and methane with metaglass to make a deadly, boiling hot liquid, ultramelt.",
+	"outputLiquid": {"liquid": "ultramelt-fluid", "amount": 1},
+	"size": 3,
+	"hasPower": true,
+	"hasItems": true,
+	"hasLiquids": true,
+	"craftTime": 60,
+	"updateEffect": "smeltsmoke",
+    "heatRequirement": 18
+	"hasHeat": true
+	"consumes": {
+		power: 15
+		"items": {
+			"items": [
+				{ "item": "metaglass", "amount": 3 }
+			]
+                }
+		"liquids": {
+			"liquids": [
+				{ "liquid": "methane", "amount": 0.6 }
+				{ "liquid": "chromatic-fluid", "amount": 0.4 }
+			]
+		}
+	},
+	"requirements": [
+		{ "item": "carbide", "amount": 225 }
+		{ "item": "metaglass", "amount": 100 }
+		{ "item": "photoglass-item", "amount": 150 }
+		{ "item": "tungsten", "amount": 100 }
+		{ "item": "bismuth-item", "amount": 150 }
+		{ "item": "chromium", "amount": 75 }
+	],
+	"category": "crafting",
+	  "research": {
+		parent: volcanic-forge
+	}
+	"ambientSound": "loopHum",
+	"ambientSoundVolume": 0.5
+"researchCostMultiplier": 0.05
+	drawer: {
+	    type: DrawMulti
+	    drawers : [
+					{
+	            	  type : DrawRegion
+	            	  suffix : "-bottom"
+	            	},
+					{
+	            	  type : DrawLiquidRegion
+	            	  suffix : "-liquid"
+			  		drawLiquid : "chromatic-fluid"
+	            	},
+					{
+	            	  type : DrawLiquidRegion
+	            	  suffix : "-liquid"
+			  		drawLiquid : "ultramelt-fluid"
+	            	},
+					{
+	            	  type : DrawCircles
+	            	  color: 9c3247
+	            	},
+					{
+	            	  type : DrawBubbles
+	            	  color: f5a15d
+						radius: 7
+	            	},
+					{
+					  type : drawPistons
+					  sinMag: 2
+					},
+	            	{
+	            	  type : DrawDefault
+	            	},
+	            	{
+	            	  type : DrawHeatInput
+	            	  suffix : "-heat"
+	            	},
+					{
+	            	  type : DrawRegion
+	            	  suffix : "-top"
+	            	},
+	            	{
+	            	  type : DrawCrucibleFlame
+	            	},
+	    ]
+	}
+}
