@@ -355,6 +355,11 @@
                     }
                 },
                 {
+                    y: -7
+                    x: 4
+                    progress: recoil
+                },
+                {
                     x: 0
                     y: 0
                     rot: -720,
