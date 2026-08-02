@@ -67,7 +67,27 @@
 				moveY : 0
       			moveRot : 0
     			},
-				{
+    			{
+      			type : RegionPart
+      			suffix : "-launcher"
+      			progress : warmup
+      			heatProgress : recoil
+      			heatColor : "ffffff"
+      			mirror : true
+      			under : false
+      			moveX : 0
+				moveY : 0
+      			moveRot : -10
+				"moves": [
+                {
+                    x: 0
+                    y: 0
+                    rot: -5,
+                    progress: recoil
+                },
+                ]
+				children: [
+					{
       			type : RegionPart
       			suffix : "-plate"
       			progress : {
@@ -94,26 +114,6 @@
                     progress: recoil
                 },
                 ]
-				}
-    			{
-      			type : RegionPart
-      			suffix : "-launcher"
-      			progress : warmup
-      			heatProgress : recoil
-      			heatColor : "ffffff"
-      			mirror : true
-      			under : false
-      			moveX : 0
-				moveY : 0
-      			moveRot : -10
-				"moves": [
-                {
-                    x: 0
-                    y: 0
-                    rot: -5,
-                    progress: recoil
-                },
-                ]
 				children: [
 					{
       			type : RegionPart
@@ -135,6 +135,8 @@
                 },
                 ]
     			},
+				]
+				},
 				],
     			},
 				{
