@@ -61,7 +61,7 @@ drillMultipliers: {
 }
 requirements: [
   tungsten/500
-  kobra-alloy/500
+  kobra-alloy-item/500
   photoglass-item/350
   hypersteel-item/150
   carbide/350
