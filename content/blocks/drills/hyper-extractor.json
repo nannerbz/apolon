@@ -11,7 +11,7 @@ drillSound: magicImpact
 drillSoundVolume: 1
 size: 6
 tier: 2
-drillTime: 1800
+drillTime: 20
 warmupSpeed: 0.1
 hasPower: true
 drillEffect: mine
@@ -51,13 +51,13 @@ consumes: {
 	}
 }
 drillMultipliers: {
-	cobalt-item: 25,
-	bismuth-item: 25,
-	neodymium-item: 20,
-	chromium-item: 20,
-	rad-snow-item: 30,
-	pearl-dust-item: 30,
-	tungsten: 10,
+	cobalt-item: 75,
+	bismuth-item: 75,
+	neodymium-item: 60,
+	chromium-item: 60,
+	rad-snow-item: 90,
+	pearl-dust-item: 90,
+	tungsten: 40,
 }
 requirements: [
   tungsten/500
