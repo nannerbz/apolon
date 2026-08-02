@@ -2,8 +2,8 @@ name: Hyper Extractor
 description: The bulkiest drill you'll ever need. Mines in bursts at very, very slow speeds, but makes up for it with an absolutely massive dril rate.
 type: BurstDrill
 health: 4570
-shake: 10,
-invertedTime: 100
+shake: 4,
+invertedTime: 75
 arrowSpacing: 3.5
 arrows: 4,
 baseArrowColor: 3d3e47,
@@ -11,7 +11,7 @@ drillSound: magicImpact
 drillSoundVolume: 1
 size: 6
 tier: 2
-drillTime: 200
+drillTime: 125
 warmupSpeed: 0.1
 hasPower: true
 drillEffect: mine
