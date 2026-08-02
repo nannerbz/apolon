@@ -4,7 +4,7 @@ type: BurstDrill
 health: 4570
 shake: 10,
 invertedTime: 400
-arrowSpacing: 3.33
+arrowSpacing: 3.4
 arrows: 4,
 baseArrowColor: 3d3e47,
 drillSound: magicImpact
@@ -23,16 +23,6 @@ liquidBoostIntensity: 3.5,
 drawRim: false
 consumes: {
 	power: 8
-	items: {
-		items: [
-			{
-			item: cryogel-item
-			amount: 3
-			booster: false
-			optional: false
-			},
-		]
-	}
 	liquids: {
 		liquids: [
 			{
