@@ -102,7 +102,7 @@
       			heatProgress : recoil
       			heatColor : "ffffff"
       			mirror : true
-      			under : false
+      			under : true
       			moveX : 3
 				moveY : -2
       			moveRot : -10
