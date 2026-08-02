@@ -1,0 +1,74 @@
+name: Hyper Extractor
+description: The bulkiest drill you'll ever need. Mines in bursts at very, very slow speeds, but makes up for it with an absolutely massive dril rate.
+type: BurstDril
+health: 4570
+shake: 10,
+invertedTime: 1000
+arrowSpacing: 2.5
+arrows: 4,
+baseArrowColor: 3d3e47,
+drillSound: magicImpact
+drillSoundVolume: 1
+size: 6
+tier: 2
+drillTime: 1800
+warmupSpeed: 0.1
+hasPower: true
+drillEffect: mine
+updateEffect: mineBig
+heatColor: ffffff
+itemCapacity: 300
+liquidCapacity: 30
+liquidBoostIntensity: 3.5,
+drawRim: false
+consumes: {
+	power: 8
+	items: {
+		item: [
+			{
+			item: cryogel-item
+			amount: 3
+			booster: false
+			optional: false
+			},
+		]
+	}
+	liquids: {
+		liquids: [
+			{
+			liquid: acetylene
+			amount: 0.4
+			booster: false
+			optional: false
+			},
+			{
+			liquid: hypermelt-fluid
+			amount: 0.5
+			booster: true
+			optional: true
+			},
+		]
+	}
+}
+drillMultipliers: {
+	cobalt-item: 25,
+	bismuth-item: 25,
+	neodymium-item: 20,
+	chromium-item: 20,
+	rad-snow-item: 30,
+	pearl-dust-item: 30,
+	tungsten: 10,
+}
+requirements: [
+  tungsten/500
+  kobra-alloy/500
+  photoglass-item/350
+  hypersteel-item/150
+  carbide/350
+  metaglass/250
+]
+category: production
+	  "research": {
+		parent: fuge-extractor
+	}
+"researchCostMultiplier": 0.05
