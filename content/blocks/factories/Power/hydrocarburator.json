@@ -2,7 +2,7 @@
 	type: ConsumeGenerator
 	name: Hydrocarburator
 	description: Takes hydrogen and carbide and makes power.
-	outputLiquid: { "liquid": "acetylene", "amount": 0.4 }
+	outputLiquid: { "liquid": "acetylene", "amount": 1.6 }
 	powerProduction: 8
 	liquidDuration: 90
 	ambientSound: loopSmelter

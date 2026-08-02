@@ -3,15 +3,15 @@ description: The bulkiest drill you'll ever need. Mines in bursts at very, very 
 type: BurstDrill
 health: 4570
 shake: 10,
-invertedTime: 1000
-arrowSpacing: 2.5
+invertedTime: 400
+arrowSpacing: 3.33
 arrows: 4,
 baseArrowColor: 3d3e47,
 drillSound: magicImpact
 drillSoundVolume: 1
 size: 6
 tier: 2
-drillTime: 18000
+drillTime: 600
 warmupSpeed: 0.1
 hasPower: true
 drillEffect: mine
@@ -24,7 +24,7 @@ drawRim: false
 consumes: {
 	power: 8
 	items: {
-		item: [
+		items: [
 			{
 			item: cryogel-item
 			amount: 3
@@ -49,15 +49,6 @@ consumes: {
 			},
 		]
 	}
-}
-drillMultipliers: {
-	cobalt-item: 75,
-	bismuth-item: 75,
-	neodymium-item: 60,
-	chromium-item: 60,
-	rad-snow-item: 90,
-	pearl-dust-item: 90,
-	tungsten: 40,
 }
 requirements: [
   tungsten/500

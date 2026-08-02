@@ -2,7 +2,7 @@
 	type: HeaterGenerator
 	name: Gas Combuster
 	description: Takes in lots of hydrogen and rad snow, producing lots of power in return. Makes lots of heat as a nice byproduct!
-	powerProduction: 12
+	powerProduction: 6
 	itemDuration: 30
 	ambientSound: loopSmelter
 	ambientSoundVolume: 0.05
