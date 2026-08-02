@@ -118,19 +118,27 @@
 					{
       			type : RegionPart
       			suffix : "-pump"
-      			progress : warmup
+      			progress : {
+                        type: warmup
+                        ops: [
+                            {
+                                op: delay
+                                amount: 0.65
+                            }
+                        ]
+                    }
       			heatProgress : warmup
       			heatColor : "ffffff"
       			mirror : true
       			under : false
       			moveX : 0
-				moveY : 2
+				moveY : -2
       			moveRot : -5
 				"moves": [
-                {
+				{
                     x: 2
                     y: 1
-                    rot: -5,
+                    rot: -10,
                     progress: recoil
                 },
                 ]
