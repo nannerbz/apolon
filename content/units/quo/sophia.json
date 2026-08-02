@@ -41,3 +41,27 @@ abilities: [
 		particleColor: e2ca4b
 	}
 ]
+weapons:[
+	{
+		"name": "shitquark",
+		"reload": 999999,
+		"x": 0,
+		"y": 0,
+		"shootSound": "nom",
+		"rotateSpeed": 180,
+		"shootY": 0,
+		"rotate": true,
+		"mirror": false,
+		"bullet": {
+			"type": "LaserBoltBulletType",
+			"damage": 1,
+			"buildingDamageMultiplier": 0,
+			"speed": 1,
+			"lifetime": 10,
+			"shootEffect": "none",
+			"smokeEffect": "none"
+			"height": 0
+			"width": 0
+		}
+	}
+]
