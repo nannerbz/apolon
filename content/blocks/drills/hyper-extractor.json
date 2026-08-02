@@ -3,15 +3,15 @@ description: The bulkiest drill you'll ever need. Mines in bursts at very, very 
 type: BurstDrill
 health: 4570
 shake: 10,
-invertedTime: 400
-arrowSpacing: 3.4
+invertedTime: 100
+arrowSpacing: 3.5
 arrows: 4,
 baseArrowColor: 3d3e47,
 drillSound: magicImpact
 drillSoundVolume: 1
 size: 6
 tier: 2
-drillTime: 600
+drillTime: 200
 warmupSpeed: 0.1
 hasPower: true
 drillEffect: mine
@@ -19,7 +19,7 @@ updateEffect: mineBig
 heatColor: ffffff
 itemCapacity: 300
 liquidCapacity: 30
-liquidBoostIntensity: 3.5,
+liquidBoostIntensity: 1,
 drawRim: false
 consumes: {
 	power: 8
@@ -30,12 +30,6 @@ consumes: {
 			amount: 0.4
 			booster: false
 			optional: false
-			},
-			{
-			liquid: hypermelt-fluid
-			amount: 0.5
-			booster: true
-			optional: true
 			},
 		]
 	}
