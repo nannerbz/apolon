@@ -64,7 +64,7 @@
 					{
 	            	  type : DrawBubbles
 	            	  color: f5a15d
-						radius: 7
+						spread: 7
 	            	},
 					{
 					  type : drawPistons
