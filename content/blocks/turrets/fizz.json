@@ -135,34 +135,6 @@
                 },
                 ]
     			},
-    			{
-      			type : RegionPart
-      			suffix : "-plate"
-      			progress : {
-                        type: warmup
-                        ops: [
-                            {
-                                op: delay
-                                amount: 0.4
-                            }
-                        ]
-                    }
-      			heatProgress : recoil
-      			heatColor : "ffffff"
-      			mirror : true
-      			under : false
-      			moveX : 3
-				moveY : -2
-      			moveRot : -10
-				"moves": [
-                {
-                    x: 0
-                    y: -2
-                    rot: -5,
-                    progress: recoil
-                },
-                ]
-				}
 				],
     			},
 				{
