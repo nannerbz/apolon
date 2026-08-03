@@ -3,7 +3,7 @@
 	name: Tungsten Duct
 	description: A much more advanced item tranport method. Moves 
 	health: 550
-	speed: 4
+	speed: 0.8
 	itemCapacity: 3
 	bridgeReplacement: cobalt-bridge
 	requirements: [
