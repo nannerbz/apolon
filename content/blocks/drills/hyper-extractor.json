@@ -30,14 +30,14 @@ drillEffect: {
 					{
    						type: waveEffect
 						colorTo: 8a7ed9
-						interp: pow2out
+						interp: linear
 						color: 8a7ed9
 						sizeTo: 150
        				},
 					{
    						type: waveEffect
 						colorTo: 8a7ed9
-						interp: pow2out
+						interp: linear
 						color: 8a7ed9
 						sizeTo: 180
        				},
