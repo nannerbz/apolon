@@ -1,0 +1,16 @@
+{
+	type: StackConveyor
+	name: Tungsten Duct
+	description: A much more advanced item tranport method. Moves 
+	health: 550
+	speed: 12
+	itemCapacity: 3
+	bridgeReplacement: cobalt-bridge
+	requirements: [
+		tungsten/2
+		carbide/2
+		cryogel-item/2
+	]
+	research: neo-duct
+	researchCostMultiplier: 0.35
+}
