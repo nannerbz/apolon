@@ -2,14 +2,14 @@
 	"type": "liquid",
 	"name": "Ultramelt Fluid",
 	"description": "One of the hottest substances ever conceived, able to burn through anything with ease.",
-	"flammability": 5000,
-	"temperature": 3000,
+	"flammability": 2500,
+	"temperature": 1000,
 	"boilPoint": 15,
 	"color": "f5a15d",
 	"gasColor": "f5a15d",
 	"viscosity": 0.2,
 	"heatCapacity": 0,
-	"research": [ vulcan-alloy-item, mellowfluid ]
+	"research": [ vulcan-alloy-item, methane ]
 	"explosiveness": 0.5,
 	"barColor": "f5a15d",
 	"gas": false
