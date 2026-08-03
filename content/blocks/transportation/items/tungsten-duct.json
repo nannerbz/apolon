@@ -3,7 +3,7 @@
 	name: Tungsten Duct
 	description: A much more advanced item tranport method. Moves 
 	health: 550
-	speed: 12
+	speed: 4
 	itemCapacity: 3
 	bridgeReplacement: cobalt-bridge
 	requirements: [
@@ -13,4 +13,18 @@
 	]
 	research: neo-duct
 	researchCostMultiplier: 0.35
+	loadEffect: {
+   		type: waveEffect
+		colorTo: c9a5c8
+		interp: linear
+		color: 8a7ed9
+		sizeTo: 12
+	},
+	unloadEffect: {
+   		type: waveEffect
+		colorTo: c9a5c8
+		interp: linear
+		color: 8a7ed9
+		sizeTo: 12
+	},
 }
