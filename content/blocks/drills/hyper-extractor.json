@@ -19,27 +19,29 @@ drillEffect: {
 				effects: [
 					{
    						type: radialEffect
-						effect: shootTitan
-						rotationOffset: 15
+						effect: shootSmokeTitan
+						rotationOffset: 20
+						lengthOffset: 15
        				},
 					{
    						type: radialEffect
-						effect: shootTitan
-						rotationOffset: -15
+						effect: shootSmokeTitan
+						rotationOffset: -20
+						lengthOffset: 15
        				},
 					{
    						type: waveEffect
 						colorTo: 8a7ed9
 						interp: linear
 						color: 8a7ed9
-						sizeTo: 150
+						sizeTo: 30
        				},
 					{
    						type: waveEffect
 						colorTo: 8a7ed9
 						interp: linear
 						color: 8a7ed9
-						sizeTo: 180
+						sizeTo: 45
        				},
 				]
 			}
