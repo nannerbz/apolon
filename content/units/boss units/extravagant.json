@@ -45,15 +45,15 @@ parts: [
 							{
                                 op: sin
                                 scl: 10
-								mag: 2
+								mag: 1
                             }
 							{
                                 op: mul
-                                amount: 1
+                                amount: 0.5
                             }
 							{
                                 op: add
-                                amount: 0
+                                amount: 0.5
                             }
                         ]
                     },
