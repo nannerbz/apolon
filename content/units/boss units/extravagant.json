@@ -44,7 +44,7 @@ parts: [
                             }
 							{
                                 op: sin
-                                scl: 1
+                                scl: 25
 								mag: 1
 								offset: 0
                             }
@@ -65,7 +65,7 @@ parts: [
 			layerOffset: -0.01
 			x: 33
 			y: -41
-			rotation: 0
+			rotation: -15
 			moveRot: 30
     },
 	{
@@ -80,7 +80,7 @@ parts: [
                             }
 							{
                                 op: sin
-                                scl: 1
+                                scl: 25
 								mag: 1
 								offset: 3
                             }
@@ -99,9 +99,9 @@ parts: [
       		mirror : true
       		under : true
 			layerOffset: -0.01
-			x: 30
-			y: -8
-			rotation: 0
+			x: 42
+			y: -4
+			rotation: -15
 			moveRot: 30
     },
 	{
@@ -116,7 +116,7 @@ parts: [
                             }
 							{
                                 op: sin
-                                scl: 1
+                                scl: 25
 								mag: 1
 								offset: 6
                             }
@@ -135,9 +135,9 @@ parts: [
       		mirror : true
       		under : true
 			layerOffset: -0.01
-			x: 34
-			y: 34
-			rotation: 0
+			x: 30
+			y: 32
+			rotation: -15
 			moveRot: 30
     },
 ]
@@ -171,7 +171,7 @@ weapons: [
         name: extravagant-small-eye
         reload: 999999999
         x: 23.5
-        y: 36.3
+        y: 39.3
         top: false
         spacing: 3
 		outline: false
