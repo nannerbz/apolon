@@ -13,7 +13,7 @@ hovering: true
 allowLegStep: true
 legStraightness: 3
 legContinuousMove: true
-legLength: 96
+legLength: 148
 lockLegBase: true
 stepShake: 2.5
 legExtension: -2.5
@@ -21,7 +21,7 @@ legMaxLength: 2.6
 legMinLength: 1.3
 rippleScale: 1.6
 legLengthScl : 1.15
-legForwardScl : 0.9
+legForwardScl : 1.5
 legMoveSpace: 1.9
 legGroupSize: 2
 legSplashDamage: 128
@@ -38,8 +38,12 @@ parts: [
                     type: time
                         ops: [
 							{
-                                op: mul
+                                op: mod
                                 amount: 1
+                            }
+							{
+                                op: mul
+                                amount: 999
                             }
                             {
                                 op: add
@@ -56,8 +60,8 @@ parts: [
       		heatColor : "ffffff"
       		mirror : true
       		under : true
-			x: 5
-			y: 4
+			x: 40
+			y: -40
 			rotation: 0
 			moveRot: 30
     },
@@ -67,10 +71,11 @@ weapons: [
         name: extravagant-small-eye
 		layerOffset: 1
         reload: 999999999
-        x: 25
-        y: -32
+        x: 24.5
+        y: -24
         top: false
         spacing: 3
+		outline: false
         mirror: true
 		inaccuracy: 30
 	  	recoil: 0
