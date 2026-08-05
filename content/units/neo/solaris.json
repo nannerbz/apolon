@@ -61,7 +61,7 @@ weapons: [
         bullet: {
     		type: BasicBulletType
     		shootEffect: shootBig
-    		smokeEffect: shootSmokeScathe
+    		smokeEffect: shootSmokeMissileColor
 			parentizeEffect: false
     		ammoMultiplier: 1
     		spawnUnit: solaris-missile
