@@ -44,8 +44,8 @@ parts: [
                             }
 							{
                                 op: sin
-                                scl: 1
-								mag: 1
+                                scl: 10
+								mag: 2
                             }
 							{
                                 op: mul
