@@ -82,7 +82,7 @@ parts: [
                                 op: sin
                                 scl: 25
 								mag: 1
-								offset: 3
+								offset: 6
                             }
 							{
                                 op: mul
@@ -99,8 +99,8 @@ parts: [
       		mirror : true
       		under : true
 			layerOffset: -0.01
-			x: 42
-			y: -4
+			x: 43
+			y: -3
 			rotation: -15
 			moveRot: 30
     },
@@ -118,7 +118,7 @@ parts: [
                                 op: sin
                                 scl: 25
 								mag: 1
-								offset: 6
+								offset: 12
                             }
 							{
                                 op: mul
@@ -171,7 +171,7 @@ weapons: [
         name: extravagant-small-eye
         reload: 999999999
         x: 23.5
-        y: 39.3
+        y: 43.3
         top: false
         spacing: 3
 		outline: false
