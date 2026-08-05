@@ -38,26 +38,22 @@ parts: [
       		progress : {
                     type: time
                         ops: [
-							{
-                                op: mul
-                                amount: 25
-                            }
                             {
                                 op: add
                                 amount: 0
                             }
 							{
                                 op: sin
-                                scl: 10
-								mag: 15
+                                scl: 1
+								mag: 1
                             }
 							{
                                 op: mul
-                                amount: 0.5
+                                amount: 1
                             }
 							{
                                 op: add
-                                amount: 0.5
+                                amount: 0
                             }
                         ]
                     },
