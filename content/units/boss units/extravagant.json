@@ -44,7 +44,7 @@ parts: [
                             }
 							{
                                 op: sin
-                                scl: 25
+                                scl: 50
 								mag: 1
 								offset: 0
                             }
@@ -80,9 +80,9 @@ parts: [
                             }
 							{
                                 op: sin
-                                scl: 25
+                                scl: 50
 								mag: 1
-								offset: 6
+								offset: 30
                             }
 							{
                                 op: mul
@@ -116,9 +116,9 @@ parts: [
                             }
 							{
                                 op: sin
-                                scl: 25
+                                scl: 50
 								mag: 1
-								offset: 12
+								offset: 60
                             }
 							{
                                 op: mul
@@ -171,7 +171,7 @@ weapons: [
         name: extravagant-small-eye
         reload: 999999999
         x: 23.5
-        y: 43.3
+        y: 43.6
         top: false
         spacing: 3
 		outline: false
