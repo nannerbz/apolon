@@ -51,6 +51,14 @@ parts: [
                                 scl: 3
 								mag: 2
                             }
+							{
+                                op: mul
+                                amount: 0.5
+                            }
+							{
+                                op: add
+                                amount: 0.5
+                            }
                         ]
                     },
       		heatProgress : recoil
