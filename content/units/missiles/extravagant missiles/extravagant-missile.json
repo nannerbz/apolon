@@ -3,7 +3,7 @@
 	name: Extravagant Missile
 	hitSize: 14
 	maxRange: 12
-	rotateSpeed: 2.4
+	rotateSpeed: 7
 	trailLength: 64
 	missileAccelTime: 0
 	lowAltitude: true
