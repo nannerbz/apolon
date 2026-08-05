@@ -11,18 +11,18 @@ shootSound: lasershoot
 legCount: 6
 hovering: true
 allowLegStep: true
-legStraightness: 2
+legStraightness: 0.8
 legContinuousMove: true
 legLength: 148
 lockLegBase: true
 stepShake: 12
-legBaseOffset: 15
+legBaseOffset: 40
 legExtension: -2.5
 legMaxLength: 1.6
 legMinLength: 0.9
 rippleScale: 1.6
 legLengthScl : 1
-legForwardScl : 1.3
+legForwardScl : 1.6
 legMoveSpace: 1.6
 legGroupSize: 2
 legSplashDamage: 128
@@ -48,7 +48,7 @@ parts: [
                             }
 							{
                                 op: sin
-                                scl: 1
+                                scl: 2
 								mag: 3
                             }
                         ]
