@@ -45,15 +45,8 @@ parts: [
 							{
                                 op: sin
                                 scl: 100
-								mag: 1
-                            }
-							{
-                                op: mul
-                                amount: 0.5
-                            }
-							{
-                                op: add
-                                amount: 0.5
+								mag: 0.5
+								offset: 0.5
                             }
                         ]
                     },
