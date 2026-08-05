@@ -1,15 +1,15 @@
 type: legs
 name: Extravagant
 description: Boss unit. Slow yet bulky. Fires unit deploy missiles that lay units of that type onto where they land.
-speed: 0.4
-health: 144750
-armor: 5
-drag: 0.3
-rotateSpeed: 0.9
+speed: 0.1
+health: 450000
+armor: 6
+drag: 0.2
+rotateSpeed: 0.6
 rotateShoot: true
 shootSound: lasershoot
 legCount: 6
-flying: true
+hovering: true
 allowLegStep: true
 legStraightness: 3
 legContinuousMove: true
@@ -28,29 +28,8 @@ legSplashDamage: 128
 legSplashRange: 64
 outlineColor: 222222
 range: 900
-hitSize: 128
+hitSize: 64
 weapons: [
-	{
-        name: extravagant-small-eye
-		layerOffset: 1
-        reload: 999999999
-        x: 24
-        y: -38
-        top: true
-        spacing: 3
-        mirror: true
-		inaccuracy: 30
-	  	recoil: 0
-        ejectEffect: none
-	  	rotate: true
-	  	shootSound: none
-        bullet: {
-    		type: BasicBulletType
-			damage: 0
-			collides: false
-			shootEffect: none
-        }
-    }
     {
         name: extravagant-w1
 	layerOffset: 1
@@ -86,15 +65,15 @@ weapons: [
         y: -12
         top: true
         spacing: 3
-        mirror: false
+        mirror: true
 	inaccuracy: 30
 	shoot: {
-		firstShotDelay: 1600
+		firstShotDelay: 300
 	}
 	  recoil: 0
         ejectEffect: casing1
 	  rotationLimit: 45
-	  rotate: false
+	  rotate: true
 	  shootSound: shootScathe
         bullet: {
     		type: BasicBulletType
@@ -111,15 +90,15 @@ weapons: [
         y: -12
         top: true
         spacing: 3
-        mirror: false
+        mirror: true
 	inaccuracy: 30
 	shoot: {
-		firstShotDelay: 1800
+		firstShotDelay: 900
 	}
 	  recoil: 0
         ejectEffect: casing1
 	  rotationLimit: 45
-	  rotate: false
+	  rotate: true
 	  shootSound: shootScathe
         bullet: {
     		type: BasicBulletType
@@ -136,15 +115,15 @@ weapons: [
         y: -12
         top: true
         spacing: 3
-        mirror: false
+        mirror: true
 	inaccuracy: 30
 	shoot: {
-		firstShotDelay: 2000
+		firstShotDelay: 1500
 	}
 	  recoil: 0
         ejectEffect: casing1
 	  rotationLimit: 45
-	  rotate: false
+	  rotate: true
 	  shootSound: shootScathe
         bullet: {
     		type: BasicBulletType
@@ -161,15 +140,15 @@ weapons: [
         y: -12
         top: true
         spacing: 3
-        mirror: false
+        mirror: true
 	inaccuracy: 30
 	shoot: {
-		firstShotDelay: 2200
+		firstShotDelay: 2100
 	}
 	  recoil: 0
         ejectEffect: casing1
 	  rotationLimit: 45
-	  rotate: false
+	  rotate: true
 	  shootSound: shootScathe
         bullet: {
     		type: BasicBulletType
