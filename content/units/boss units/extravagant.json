@@ -40,7 +40,7 @@ parts: [
                         ops: [
 							{
                                 op: mul
-                                amount: 1
+                                amount: 10
                             }
                             {
                                 op: add
@@ -48,7 +48,7 @@ parts: [
                             }
 							{
                                 op: sin
-                                scl: 1
+                                scl: 3
 								mag: 1
                             }
 							{
@@ -77,7 +77,7 @@ weapons: [
         name: extravagant-small-eye
         reload: 999999999
         x: 24.5
-        y: -27.4
+        y: -27.3
         top: false
         spacing: 3
 		outline: false
@@ -93,8 +93,9 @@ weapons: [
 			speed: 0
 			shootEffect: none
 			hitEffect: none
+			despawnEffect: none
+			smokeEffect: none
 			collides: false
-			shootEffect: none
         }
     }
     {
