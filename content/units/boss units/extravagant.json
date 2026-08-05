@@ -40,7 +40,7 @@ parts: [
                         ops: [
 							{
                                 op: mul
-                                amount: 0.1
+                                amount: 0.01
                             }
                             {
                                 op: add
@@ -48,8 +48,8 @@ parts: [
                             }
 							{
                                 op: sin
-                                scl: 2
-								mag: 3
+                                scl: 3
+								mag: 2
                             }
                         ]
                     },
@@ -74,14 +74,17 @@ weapons: [
         spacing: 3
 		outline: false
         mirror: true
-		inaccuracy: 30
+		inaccuracy: 0
 	  	recoil: 0
         ejectEffect: none
 	  	rotate: true
 	  	shootSound: none
         bullet: {
-    		type: BasicBulletType
+    		type: BulletType
 			damage: 0
+			speed: 0
+			shootEffect: none
+			hitEffect: none
 			collides: false
 			shootEffect: none
         }
