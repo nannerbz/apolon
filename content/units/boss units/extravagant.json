@@ -20,8 +20,8 @@ legExtension: -2.5
 legMaxLength: 1.6
 legMinLength: 0.9
 rippleScale: 1.6
-legLengthScl : 1.15
-legForwardScl : 1.5
+legLengthScl : 1
+legForwardScl : 1.2
 legMoveSpace: 1.9
 legGroupSize: 2
 legSplashDamage: 128
@@ -43,7 +43,7 @@ parts: [
                             }
 							{
                                 op: mul
-                                amount: 25
+                                amount: 0.1
                             }
                             {
                                 op: add
@@ -60,8 +60,8 @@ parts: [
       		heatColor : "ffffff"
       		mirror : true
       		under : true
-			x: 40
-			y: -40
+			x: 35
+			y: -43
 			rotation: 0
 			moveRot: 30
     },
@@ -71,7 +71,7 @@ weapons: [
         name: extravagant-small-eye
         reload: 999999999
         x: 24.5
-        y: -28
+        y: -27.5
         top: false
         spacing: 3
 		outline: false
