@@ -40,7 +40,7 @@ parts: [
                         ops: [
 							{
                                 op: mul
-                                amount: 3
+                                amount: 25
                             }
                             {
                                 op: add
@@ -48,8 +48,8 @@ parts: [
                             }
 							{
                                 op: sin
-                                scl: 3
-								mag: 5
+                                scl: 10
+								mag: 15
                             }
 							{
                                 op: mul
