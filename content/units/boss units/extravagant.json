@@ -171,7 +171,57 @@ weapons: [
         name: extravagant-small-eye
         reload: 999999999
         x: 23.5
-        y: 43.6
+        y: 43.7
+        top: false
+        spacing: 3
+		outline: false
+        mirror: true
+		inaccuracy: 0
+	  	recoil: 0
+        ejectEffect: none
+	  	rotate: true
+	  	shootSound: none
+        bullet: {
+    		type: BulletType
+			damage: 0
+			speed: 0
+			shootEffect: none
+			hitEffect: none
+			despawnEffect: none
+			smokeEffect: none
+			collides: false
+        }
+    }
+	{
+        name: extravagant-small-eye
+        reload: 999999999
+        x: 18.5
+        y: 38.7
+        top: false
+        spacing: 3
+		outline: false
+        mirror: true
+		inaccuracy: 0
+	  	recoil: 0
+        ejectEffect: none
+	  	rotate: true
+	  	shootSound: none
+        bullet: {
+    		type: BulletType
+			damage: 0
+			speed: 0
+			shootEffect: none
+			hitEffect: none
+			despawnEffect: none
+			smokeEffect: none
+			collides: false
+        }
+    }
+	{
+        name: extravagant-small-eye
+        reload: 999999999
+        x: 12
+        y: 5
         top: false
         spacing: 3
 		outline: false
