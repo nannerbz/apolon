@@ -38,10 +38,6 @@ parts: [
                     type: time
                         ops: [
 							{
-                                op: mod
-                                amount: 1
-                            }
-							{
                                 op: mul
                                 amount: 0.1
                             }
