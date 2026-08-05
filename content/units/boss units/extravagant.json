@@ -38,15 +38,23 @@ parts: [
       		progress : {
                     type: time
                         ops: [
-                            {
-                                op: add
+							{
+                                op: mul
                                 amount: 0
                             }
 							{
                                 op: sin
-                                scl: 100
-								mag: 0.5
-								offset: 0.5
+                                scl: 5
+								mag: 1
+								offset: 0
+                            }
+							{
+                                op: mul
+                                amount: 0.5
+                            }
+							{
+                                op: add
+                                amount: 0.5
                             }
                         ]
                     },
@@ -67,6 +75,31 @@ weapons: [
         reload: 999999999
         x: 24.5
         y: -27.3
+        top: false
+        spacing: 3
+		outline: false
+        mirror: true
+		inaccuracy: 0
+	  	recoil: 0
+        ejectEffect: none
+	  	rotate: true
+	  	shootSound: none
+        bullet: {
+    		type: BulletType
+			damage: 0
+			speed: 0
+			shootEffect: none
+			hitEffect: none
+			despawnEffect: none
+			smokeEffect: none
+			collides: false
+        }
+    }
+	{
+        name: extravagant-small-eye
+        reload: 999999999
+        x: 23.5
+        y: 27.3
         top: false
         spacing: 3
 		outline: false
