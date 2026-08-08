@@ -195,7 +195,7 @@ weapons: [
 	{
         name: extravagant-small-eye
         reload: 999999999
-        x: 14.3
+        x: 14.4
         y: 35.4
         top: false
         spacing: 3
@@ -221,7 +221,7 @@ weapons: [
         name: extravagant-small-eye
         reload: 999999999
         x: 13.3
-        y: 3.2
+        y: 3.3
         top: false
         spacing: 3
 		outline: false
@@ -245,8 +245,8 @@ weapons: [
 	{
         name: extravagant-medium-eye
         reload: 999999999
-        x: 25
-        y: 17.2
+        x: 24.8
+        y: 18.5
         top: false
         spacing: 3
 		outline: false
@@ -270,8 +270,8 @@ weapons: [
 	{
         name: extravagant-medium-eye
         reload: 999999999
-        x: 32.9
-        y: 7
+        x: 32.8
+        y: 8.5
         top: false
         spacing: 3
 		outline: false
