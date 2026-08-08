@@ -1,7 +1,7 @@
 {
 	type: floor
 	name: Ebonic Stone
-	variants: 3
+	variants: 4
 	attributes: {
 	plasma: 1
 	}
