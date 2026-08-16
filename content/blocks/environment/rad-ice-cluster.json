@@ -1,0 +1,5 @@
+type: TallBlock
+name: Rad Ice Cluster
+variants: 3
+shadowAlpha: 0.5
+shadowOffset: -2.5

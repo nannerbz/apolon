@@ -1,0 +1,7 @@
+type: TreeBlock
+name: Ebonic Cluster
+variants: 6
+shadowOffset: -4
+attributes: {
+	plasma: 4
+}

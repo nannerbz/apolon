@@ -1,6 +1,8 @@
-type: StaticTree
+type: TallBlock
 name: Pearl Stalagmite
 variants: 2
+shadowAlpha: 0.5
+shadowOffset: -2.5
 attributes: {
 	pearl: 1.5
 }
