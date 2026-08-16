@@ -31,6 +31,7 @@ shadowElevation: 0.7
 outlineColor: 222222
 range: 900
 hitSize: 128
+groundLayer: 135
 parts: [
 	{
       		type : RegionPart

@@ -26,6 +26,7 @@ shadowElevation: 0.2
 range: 75
 outlineColor: 222222
 hitSize: 20
+groundLayer: 70
 abilities: [
 	{
 		type: SpawnDeathAbility

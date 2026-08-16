@@ -29,6 +29,7 @@ legSpeed: 1.4
 shadowElevation: 0.3
 range: 145
 hitSize: 32
+groundLayer: 75
 abilities: [
 	{
 		type: SpawnDeathAbility
