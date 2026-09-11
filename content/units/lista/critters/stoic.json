@@ -1,5 +1,6 @@
 template: UnitType
 name: Stoic
+playerControllable: false
 rotateShoot: false
 rotateSpeed:0
 speed: 0

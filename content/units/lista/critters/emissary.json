@@ -1,5 +1,6 @@
 template: UnitType
 name: Emissary
+playerControllable: false
 speed: 0
 health: 5000
 armor: 12

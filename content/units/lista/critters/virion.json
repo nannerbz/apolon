@@ -1,5 +1,6 @@
 template: UnitType
 name: Virion
+playerControllable: false
 flying: true
 speed: 3
 accel: 0.06

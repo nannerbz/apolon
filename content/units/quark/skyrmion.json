@@ -1,0 +1,106 @@
+name: Skyrmion UNFINISHED 
+flying: true 
+speed: 3
+accel: 0.008 
+drag: 0.02 
+health: 24400 
+hitSize: 42 
+armor: 20 
+itemCapacity: 0 
+outlineColor: 222222
+engineOffset: 20 
+engineSize: 6
+trailLength: 40
+trailColor: "cf5bc1"
+range: 360 
+weapons: [
+	{
+		"name": "skyrmion-prop",
+		"rotate": false,
+		"reload": 1,
+		"range": 0,
+		"alwaysShooting": true,
+		"shootEffect": "none",
+		"minShootVelocity": 1,
+		"x": 0,
+		"y": 0,
+		"shootY": 0,
+		"mirror": true,
+		"shootSound": "none",
+		"shake": 1,
+		"bullet": {
+			"type": "BulletType",
+			"speed": 0,
+			"lifetime": 0,
+			"smokeEffect": "none",
+			"despawnEffect": "none",
+			"hitEffect": "none",
+			"collidesAir": false,
+			"collidesGround": false
+		},
+		"parts": [
+			{
+				"type": "RegionPart",
+				"suffix": "-lw",
+				"progress": "time",
+				"heatProgress": "recoil",
+				"heatColor": "ffffff",
+				"mirror": true,
+				"moveX": 0,
+				"moveY": 0,
+				"moveRot": -30
+			}
+		]
+	},
+	{
+		"name": "skyrmion-ul",
+		"rotate": false,
+		"reload": 120,
+		"range": 0,
+		"alwaysShooting": true,
+		"shootEffect": {
+			"type": "WaveEffect",
+			"colorFrom": "a61789",
+			"colorTo": "e3b6df",
+			"sizeTo": 80,
+			"sizeFrom": 0,
+			"lifetime": 20,
+			"strokeFrom": 7,
+			"strokeTo": 0
+		}
+		"minShootVelocity": 3,
+		"maxShootVelocity": 3.2,
+		"x": 0,
+		"y": 0,
+		"shootY": 0,
+		"mirror": true,
+		"shootSound": "blink",
+		"loopSound": "prrfts",
+		"shake": 10,
+		"recoil": -14,
+		"bullet": {
+			"type": "BulletType",
+			"speed": 0,
+			"lifetime": 0,
+			"smokeEffect": "none",
+			"despawnEffect": "none",
+			"hitEffect": "none",
+			"collidesAir": false,
+			"collidesGround": false
+		},
+		"parts": [
+			{
+				"type": "RegionPart",
+				"suffix": "-lw",
+				"progress": "time",
+				"heatProgress": "recoil",
+				"heatColor": "ffffff",
+				"mirror": true,
+				"moveX": 0,
+				"moveY": 0,
+				"moveRot": -18
+			}
+		]
+	},
+] 
+research: desmos

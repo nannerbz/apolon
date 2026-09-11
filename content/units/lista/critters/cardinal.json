@@ -1,5 +1,6 @@
 template: UnitType
 name: Cardinal
+playerControllable: false
 speed: 0
 health: 2000
 armor: 10
