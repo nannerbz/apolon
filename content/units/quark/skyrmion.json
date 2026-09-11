@@ -1,8 +1,8 @@
 name: Skyrmion UNFINISHED 
 flying: true 
 speed: 5
-accel: 0.002 
-drag: 0.02 
+accel: 0.003 
+drag: 0.001 
 health: 24400 
 hitSize: 42 
 armor: 20 
@@ -21,7 +21,7 @@ weapons: [
 		"range": 0,
 		"alwaysShooting": true,
 		"shootEffect": "none",
-		"minShootVelocity": 3,
+		"minShootVelocity": 3000,
 		"x": 0,
 		"y": 0,
 		"shootY": 0,
