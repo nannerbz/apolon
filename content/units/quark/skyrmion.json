@@ -1,7 +1,7 @@
 name: Skyrmion UNFINISHED 
 flying: true 
 speed: 6
-accel: 0.004 
+accel: 0.0035 
 drag: 0.003 
 health: 24400 
 hitSize: 42 
@@ -43,7 +43,7 @@ weapons: [
 			{
 				"type": "RegionPart",
 				"suffix": "-lw",
-				"progress": "charge",
+				"progress": "heat",
 				"heatProgress": "recoil",
 				"heatColor": "ffffff",
 				"mirror": true,
@@ -57,7 +57,7 @@ weapons: [
 		"name": "skyrmion-ul",
 		"rotate": false,
 		"top": false,
-		"reload": 120,
+		"reload": 300,
 		"range": 0,
 		"alwaysShooting": true,
 		"shootEffect": {
@@ -81,7 +81,7 @@ weapons: [
 		"shake": 10,
 		"bullet": {
 			"type": "BulletType",
-			"recoil": -10,
+			"recoil": -8,
 			"speed": 1,
 			"lifetime": 1,
 			"smokeEffect": "none",
@@ -94,7 +94,7 @@ weapons: [
 			{
 				"type": "RegionPart",
 				"suffix": "-hw",
-				"progress": "charge",
+				"progress": "heat",
 				"heatProgress": "smoothReload",
 				"heatColor": "ffffff",
 				"mirror": true,
