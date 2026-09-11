@@ -95,7 +95,7 @@ weapons: [
 				"type": "RegionPart",
 				"suffix": "-hw",
 				"progress": "warmup",
-				"heatProgress": "smootReload",
+				"heatProgress": "smoothReload",
 				"heatColor": "ffffff",
 				"mirror": true,
 				"moveX": -2,
