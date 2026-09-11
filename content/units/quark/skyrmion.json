@@ -2,7 +2,7 @@ name: Skyrmion UNFINISHED
 flying: true 
 speed: 5
 accel: 0.003 
-drag: 0.001 
+drag: 0.06 
 health: 24400 
 hitSize: 42 
 armor: 20 
@@ -17,11 +17,11 @@ weapons: [
 	{
 		"name": "skyrmion-prop",
 		"rotate": false,
-		"reload": 1,
+		"reload": 2,
 		"range": 0,
 		"alwaysShooting": true,
 		"shootEffect": "none",
-		"minShootVelocity": 3000,
+		"minShootVelocity": 2,
 		"x": 0,
 		"y": 0,
 		"shootY": 0,
@@ -42,7 +42,7 @@ weapons: [
 			{
 				"type": "RegionPart",
 				"suffix": "-lw",
-				"progress": "time",
+				"progress": "warmup",
 				"heatProgress": "recoil",
 				"heatColor": "ffffff",
 				"mirror": true,
@@ -64,7 +64,7 @@ weapons: [
 			"colorTo": "e3b6df",
 			"sizeTo": 80,
 			"sizeFrom": 0,
-			"lifetime": 20,
+			"lifetime": 40,
 			"strokeFrom": 7,
 			"strokeTo": 0
 		}
@@ -77,11 +77,11 @@ weapons: [
 		"shootSound": "blink",
 		"loopSound": "prrfts",
 		"shake": 10,
-		"recoil": -14,
 		"bullet": {
 			"type": "BulletType",
-			"speed": 0,
-			"lifetime": 0,
+			"recoil": -14,
+			"speed": 1,
+			"lifetime": 1,
 			"smokeEffect": "none",
 			"despawnEffect": "none",
 			"hitEffect": "none",
@@ -92,7 +92,7 @@ weapons: [
 			{
 				"type": "RegionPart",
 				"suffix": "-hw",
-				"progress": "time",
+				"progress": "warmup",
 				"heatProgress": "recoil",
 				"heatColor": "ffffff",
 				"mirror": true,
