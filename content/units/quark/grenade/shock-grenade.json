@@ -25,8 +25,7 @@ hittable: false
 engineSize: 0
 itemCapacity: 0
 outlineColor: 222222
-deathExplosionEffect:
-{
+deathExplosionEffect: {
 				"type": "WaveEffect",
 				"colorFrom": "a61789",
 				"colorTo": "e3b6df",
@@ -52,7 +51,7 @@ abilities: [
 		"targetAir": false,
 		"healPercent": 0
 		"buildingDamageMultiplier": 2
-	}
+	},
 	{
 		"type": "SuppressionFieldAbility",
 		"x": 0,
