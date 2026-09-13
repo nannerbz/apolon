@@ -1,4 +1,4 @@
-name: Skyrmion UNFINISHED 
+name: Skyrmion
 flying: true 
 speed: 3
 accel: 0.0305 
@@ -13,14 +13,133 @@ engineSize: 6
 trailLength: 40
 trailColor: "cf5bc1"
 range: 360 
+abilities: [
+	{
+		"type": "SuppressionFieldAbility",
+		"x": 0,
+		"y": 16,
+		"orbRadius": 8,
+		"particleSize": 1,
+		"particles": 12,
+		"display": false,
+		"active": false,
+		"layerOffset": -0.001,
+		"color": "cf5bc1",
+		"particleColor": "cf5bc1"
+	}
+]
 weapons: [
+	{
+		"name": "skyrmion-w",
+		"reload": 340,
+		"x": 0,
+		"y": 0,
+		"shootStatus": "slown",
+		"shootStatusDuration": 180,
+		"shootY": 4,
+		"rotate": false,
+		"mirror": false,
+		"chargeTime": 90,
+		"shootSound": "sizxle",
+		"shoot": {
+			"firstShotDelay": 90,
+			"shots": 1,
+			"shotDelay": 0
+		},
+		"chargeSound": "a",
+		"shake": 9,
+		"bullet": {
+			"type": "BulletType",
+			"damage": 0,
+			"speed": 1,
+			"drag": -0.05,
+			"width": 1,
+			"height": 1,
+			"lifetime": 60,
+			"backColor": "a61789",
+			"frontColor": "de8ec9",
+			"trailColor": "a61789",
+			"trailLength": 2,
+			"trailWidth": 1,
+			"trailInterval": 1,
+			"trailEffect": {
+				"type": "MultiEffect",
+				"effects": [
+					{
+						"type": "ParticleEffect",
+						"length": 12,
+						"lifetime": 10,
+						"region": "circle-bullet",
+						"particles": 12,
+						"lightColor": "e3b6df",
+						"colorFrom": "a61789",
+						"colorTo": "e3b6df",
+						"sizeFrom": 4,
+						"sizeTo": 4
+					},
+					{
+						"type": "ExplosionEffect",
+						"smokeColor": "222222",
+						"waveLife": 0,
+						"waveStroke": 0,
+						"waveRad": 0,
+						"sparkStroke": 0,
+						"sparkRad": 0,
+						"sparkLen": 0,
+						"smokeSize": 4,
+						"smokeSizeBase": 16,
+						"smokeRad": 20,
+						"smokes": 6,
+						"sparks": 0
+					}
+				]
+			},
+			"chargeEffect": {
+				"type": "WaveEffect",
+				"rotWithParent": true,
+				"followParent": true,
+				"colorFrom": "de8ec9",
+				"colorTo": "a61789",
+				"startDelay": 0,
+				"sizeTo": 0,
+				"sizeFrom": 24,
+				"lifetime": 90,
+				"strokeFrom": 0,
+				"strokeTo": 8
+			},
+			"pierce": true,
+			"pierceCap": 999,
+			"pierceBuilding": true,
+			"collidesAir": false,
+			"collidesGround": false,
+			"shootEffect": "shootSmall",
+			"smokeEffect": "shootSmallSmoke",
+			"fragOnHit": true,
+			"despawnHit": true,
+			"despawnSound": "dullExplosion",
+			"fragBullet": {
+				"type": "BulletType",
+				"spawnUnit": "shock-grenade"
+			}
+		},
+		"parts": [
+			{
+				"type": "RegionPart",
+				"suffix": "-fb",
+				"progress": "recoil",
+				"mirror": true,
+				"moveX": 10,
+				"moveY": -4,
+				"moveRot": 10
+			},
+		]
+	}
 	{
 		"name": "skyrmion-prop",
 		"rotate": false,
 		"top": false,
 		"controllable": false,
-		"continuous": true,
-		"reload": 0
+		"reload": 500
 		"range": 0,
 		"alwaysShooting": true,
 		"shootEffect": "none",
@@ -45,17 +164,7 @@ weapons: [
 			{
 				"type": "RegionPart",
 				"suffix": "-lw",
-				"progress": {
-					"type": "charge",
-					"ops": [
-						{
-							"op": "sin",
-							"scl": 3,
-							"mag": 5,
-							"offset": 5
-						}
-					]
-				},
+				"progress": "recoil"
 				"mirror": true,
 				"layer": 114,
 				"moveX": 1,
@@ -71,6 +180,11 @@ weapons: [
 		"controllable": false,
 		"reload": 500,
 		"range": 0,
+		"shoot": {
+			"type": "shootPattern",
+			"shotDelay": 2,
+			"shots": 10
+		},
 		"alwaysShooting": true,
 		"minShootVelocity": 3,
 		"maxShootVelocity": 3.1,
@@ -79,11 +193,12 @@ weapons: [
 		"shootY": 0,
 		"mirror": false,
 		"shootSound": "blink",
+		"shootSoundVolume": 0.1
 		"loopSound": "prrfts",
 		"shake": 10,
 		"bullet": {
 			"type": "BulletType",
-			"recoil": -24,
+			"recoil": -2.4,
 			"speed": 1,
 			"lifetime": 1,
 			"smokeEffect": "none",

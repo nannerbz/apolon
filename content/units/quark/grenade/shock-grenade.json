@@ -1,0 +1,82 @@
+name: Skyrmion Grenade
+flying: true
+speed: 0
+health: 999999
+armor: 999999
+hitSize: 1
+playerControllable: false
+createWreck: false
+createScorch: false
+logicControllable: false
+isEnemy: false
+useUnitCap: false
+drawCell: false
+targetPriority: -1
+drawMinimap: false
+drawBody: false
+physics: false
+bounded: false
+hidden: true
+canDrown: false
+targetable: false
+hittable: false
+engineSize: 0
+itemCapacity: 0
+outlineColor: 222222
+lowAltitude: true
+range: 45
+abilities: [
+	{
+		"type": "EnergyFieldAbility",
+		"damage": 1600,
+		"reload": 20,
+		"range": 45,
+		"maxTargets": 64,
+		"status": "shocked",
+		"displayHeal": false,
+		"statusDuration": 120,
+		"color": "cf5bc1",
+		"targetAir": false,
+		"healPercent": 0
+		"buildingDamageMultiplier": 2
+	}
+	{
+		"type": "SuppressionFieldAbility",
+		"x": 0,
+		"Y": 0,
+		"orbRadius": 5,
+		"range": 45
+		"reload": 20
+		"particleSize": 2,
+		"particles": 6,
+		"display": true,
+		"active": true,
+		"layerOffset": -0.001,
+		"color": "de8ec9",
+		"particleColor": "de8ec9"
+	}
+]
+weapons:[
+	{
+		"name": "shitquark",
+		"reload": 9999,
+		"x": 0,
+		"y": 0,
+		"shots": 1,
+		"mirror": false,
+		"shootSound": "none",
+		"alwaysShooting": true,
+		"shoot": {
+			"firstShotDelay": 61
+		},
+		"bullet": {
+			"type": "BulletType",
+			"lifetime": 1,
+			"speed": 0,
+			"collidesAir": false,
+			"collidesGround": false,
+			"damage": 0,
+			"killShooter": true
+		}
+	}
+]
