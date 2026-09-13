@@ -176,7 +176,7 @@ weapons: [
 		"shake": 10,
 		"bullet": {
 			"type": "BulletType",
-			"recoil": -20,
+			"recoil": -10,
 			"speed": 1,
 			"lifetime": 1,
 			"smokeEffect": "none",

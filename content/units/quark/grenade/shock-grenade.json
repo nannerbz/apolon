@@ -1,6 +1,8 @@
 name: Skyrmion Grenade
 flying: true
 speed: 2
+accel: 0.0105 
+drag: 0.01 
 trailLength: 10
 trailColor: "cf5bc1"
 health: 999999
@@ -9,6 +11,7 @@ hitSize: 1
 playerControllable: false
 drawShadow: false
 drawSoftShadow: false
+shadowElevation: 0.0
 createWreck: false
 createScorch: false
 logicControllable: false
