@@ -17,7 +17,7 @@ abilities: [
 	{
 		"type": "SuppressionFieldAbility",
 		"x": 0,
-		"y": 16,
+		"y": 12,
 		"orbRadius": 8,
 		"particleSize": 1,
 		"particles": 12,
@@ -36,7 +36,7 @@ weapons: [
 		"y": 0,
 		"shootStatus": "slown",
 		"shootStatusDuration": 180,
-		"shootY": 4,
+		"shootY": 12,
 		"rotate": false,
 		"mirror": false,
 		"chargeTime": 90,
@@ -51,8 +51,8 @@ weapons: [
 		"bullet": {
 			"type": "BulletType",
 			"damage": 0,
-			"speed": 1,
-			"drag": -0.05,
+			"speed": 0.5,
+			"drag": -0.02,
 			"width": 1,
 			"height": 1,
 			"lifetime": 60,
@@ -97,6 +97,7 @@ weapons: [
 			"fragOnHit": true,
 			"despawnHit": true,
 			"despawnSound": "dullExplosion",
+			"fragBullets": 1
 			"fragBullet": {
 				"type": "BulletType",
 				"spawnUnit": "shock-grenade"
