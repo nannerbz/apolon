@@ -13,7 +13,7 @@ engineSize: 6
 trailLength: 40
 trailColor: "cf5bc1"
 targetAir: false
-range: 400 
+range: 440 
 abilities: [
 	{
 		"type": "SuppressionFieldAbility",
@@ -33,6 +33,7 @@ weapons: [
 	{
 		"name": "skyrmion-w",
 		"reload": 340,
+		"range": 440
 		"x": 0,
 		"y": 0,
 		"shootStatus": "slown",
