@@ -52,8 +52,9 @@ weapons: [
 		"bullet": {
 			"type": "BulletType",
 			"damage": 0,
-			"speed": 0.5,
-			"drag": -0.025,
+			"keepVelocity": false,
+			"speed": 0.4,
+			"drag": -0.022,
 			"width": 1,
 			"height": 1,
 			"lifetime": 120,
@@ -98,8 +99,8 @@ weapons: [
 			"fragOnHit": true,
 			"despawnHit": true,
 			"despawnSound": "dullExplosion",
-			"fragBullets": 3
-			"fragSpread": 120
+			"fragBullets": 3,
+			"fragSpread": 120,
 			"fragBullet": {
 				"type": "BulletType",
 				"spawnUnit": "shock-grenade"
