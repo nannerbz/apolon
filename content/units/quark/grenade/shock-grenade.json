@@ -5,6 +5,8 @@ health: 999999
 armor: 999999
 hitSize: 1
 playerControllable: false
+drawShadow: false
+drawSoftShadow: false
 createWreck: false
 createScorch: false
 logicControllable: false
@@ -23,14 +25,25 @@ hittable: false
 engineSize: 0
 itemCapacity: 0
 outlineColor: 222222
+deathExplosionEffect:
+{
+				"type": "WaveEffect",
+				"colorFrom": "a61789",
+				"colorTo": "e3b6df",
+				"sizeTo": 60,
+				"sizeFrom": 0,
+				"lifetime": 40,
+				"strokeFrom": 7,
+				"strokeTo": 0
+			},
 lowAltitude: true
-range: 45
+range: 90
 abilities: [
 	{
 		"type": "EnergyFieldAbility",
-		"damage": 1600,
+		"damage": 300,
 		"reload": 20,
-		"range": 45,
+		"range": 90,
 		"maxTargets": 64,
 		"status": "shocked",
 		"displayHeal": false,
@@ -45,7 +58,7 @@ abilities: [
 		"x": 0,
 		"Y": 0,
 		"orbRadius": 5,
-		"range": 45
+		"range": 90
 		"reload": 20
 		"particleSize": 2,
 		"particles": 6,

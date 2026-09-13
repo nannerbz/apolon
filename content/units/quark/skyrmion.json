@@ -63,36 +63,16 @@ weapons: [
 			"trailWidth": 1,
 			"trailInterval": 1,
 			"trailEffect": {
-				"type": "MultiEffect",
-				"effects": [
-					{
-						"type": "ParticleEffect",
-						"length": 12,
-						"lifetime": 10,
-						"region": "circle-bullet",
-						"particles": 12,
-						"lightColor": "e3b6df",
-						"colorFrom": "a61789",
-						"colorTo": "e3b6df",
-						"sizeFrom": 4,
-						"sizeTo": 4
-					},
-					{
-						"type": "ExplosionEffect",
-						"smokeColor": "222222",
-						"waveLife": 0,
-						"waveStroke": 0,
-						"waveRad": 0,
-						"sparkStroke": 0,
-						"sparkRad": 0,
-						"sparkLen": 0,
-						"smokeSize": 4,
-						"smokeSizeBase": 16,
-						"smokeRad": 20,
-						"smokes": 6,
-						"sparks": 0
-					}
-				]
+				"type": "ParticleEffect",
+				"length": 12,
+				"lifetime": 10,
+				"region": "circle-bullet",
+				"particles": 12,
+				"lightColor": "e3b6df",
+				"colorFrom": "a61789",
+				"colorTo": "e3b6df",
+				"sizeFrom": 4,
+				"sizeTo": 4
 			},
 			"chargeEffect": {
 				"type": "WaveEffect",
@@ -180,11 +160,6 @@ weapons: [
 		"controllable": false,
 		"reload": 500,
 		"range": 0,
-		"shoot": {
-			"type": "shootPattern",
-			"shotDelay": 2,
-			"shots": 10
-		},
 		"alwaysShooting": true,
 		"minShootVelocity": 3,
 		"maxShootVelocity": 3.1,
@@ -193,12 +168,12 @@ weapons: [
 		"shootY": 0,
 		"mirror": false,
 		"shootSound": "blink",
-		"shootSoundVolume": 0.1
+		"shootSoundVolume": 0.6
 		"loopSound": "prrfts",
 		"shake": 10,
 		"bullet": {
 			"type": "BulletType",
-			"recoil": -2.4,
+			"recoil": -28,
 			"speed": 1,
 			"lifetime": 1,
 			"smokeEffect": "none",
