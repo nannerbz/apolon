@@ -24,7 +24,7 @@ weapons: [
 		"range": 0,
 		"alwaysShooting": true,
 		"shootEffect": "none",
-		"minShootVelocity": 3,
+		"minShootVelocity": 3.2,
 		"x": 0,
 		"y": 0,
 		"shootY": 0,
@@ -45,14 +45,12 @@ weapons: [
 			{
 				"type": "RegionPart",
 				"suffix": "-lw",
-				"progress": "recoil",
-				"heatProgress": "recoil",
-				"heatColor": "ffffff",
+				"progress": "heat",
 				"mirror": true,
 				"layer": 114,
-				"moveX": 0,
-				"moveY": 0,
-				"moveRot": -20
+				"moveX": 1,
+				"moveY": 2,
+				"moveRot": -18
 			}
 		]
 	},
@@ -102,8 +100,6 @@ weapons: [
 				"type": "RegionPart",
 				"suffix": "-hw",
 				"progress": "recoil",
-				"heatProgress": "smoothReload",
-				"heatColor": "ffffff",
 				"mirror": true,
 				"layer": 114,
 				"moveX": -2,
