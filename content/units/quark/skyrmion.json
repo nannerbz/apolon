@@ -45,7 +45,17 @@ weapons: [
 			{
 				"type": "RegionPart",
 				"suffix": "-lw",
-				"progress": "heat",
+				"progress": {
+					"type": "charge",
+					"ops": [
+						{
+							"op": "sin",
+							"scl": 3,
+							"mag": 5,
+							"offset": 5
+						}
+					]
+				},
 				"mirror": true,
 				"layer": 114,
 				"moveX": 1,
@@ -64,9 +74,6 @@ weapons: [
 		"alwaysShooting": true,
 		"minShootVelocity": 3,
 		"maxShootVelocity": 3.1,
-		"shoot": {
-			"firstShotDelay": 120,
-		},
 		"x": 0,
 		"y": 0,
 		"shootY": 0,
