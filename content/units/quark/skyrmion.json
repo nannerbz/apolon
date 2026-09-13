@@ -1,11 +1,11 @@
 name: Skyrmion UNFINISHED 
 flying: true 
-speed: 6
-accel: 0.0035 
-drag: 0.003 
-health: 24400 
+speed: 3
+accel: 0.0305 
+drag: 0.03 
+health: 21400 
 hitSize: 42 
-armor: 20 
+armor: 19 
 itemCapacity: 0 
 outlineColor: 222222
 engineOffset: 20 
@@ -18,11 +18,12 @@ weapons: [
 		"name": "skyrmion-prop",
 		"rotate": false,
 		"top": false
+		"controllable": false
 		"reload": 2,
 		"range": 0,
 		"alwaysShooting": true,
 		"shootEffect": "none",
-		"minShootVelocity": 3,
+		"minShootVelocity": 1.6,
 		"x": 0,
 		"y": 0,
 		"shootY": 0,
@@ -43,13 +44,13 @@ weapons: [
 			{
 				"type": "RegionPart",
 				"suffix": "-lw",
-				"progress": "heat",
+				"progress": "warmup",
 				"heatProgress": "recoil",
 				"heatColor": "ffffff",
 				"mirror": true,
 				"moveX": 0,
 				"moveY": 0,
-				"moveRot": -30
+				"moveRot": -20
 			}
 		]
 	},
@@ -57,6 +58,7 @@ weapons: [
 		"name": "skyrmion-ul",
 		"rotate": false,
 		"top": false,
+		"controllable": false,
 		"reload": 300,
 		"range": 0,
 		"alwaysShooting": true,
@@ -70,8 +72,8 @@ weapons: [
 			"strokeFrom": 7,
 			"strokeTo": 0
 		},
-		"minShootVelocity": 6,
-		"maxShootVelocity": 6.1,
+		"minShootVelocity": 3,
+		"maxShootVelocity": 3.1,
 		"x": 0,
 		"y": 0,
 		"shootY": 0,
@@ -81,7 +83,7 @@ weapons: [
 		"shake": 10,
 		"bullet": {
 			"type": "BulletType",
-			"recoil": -8,
+			"recoil": -6,
 			"speed": 1,
 			"lifetime": 1,
 			"smokeEffect": "none",
@@ -94,7 +96,7 @@ weapons: [
 			{
 				"type": "RegionPart",
 				"suffix": "-hw",
-				"progress": "heat",
+				"progress": "warmup",
 				"heatProgress": "smoothReload",
 				"heatColor": "ffffff",
 				"mirror": true,
