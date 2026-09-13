@@ -1,6 +1,8 @@
 name: Skyrmion Grenade
 flying: true
-speed: 0
+speed: 2
+trailLength: 10
+trailColor: "cf5bc1"
 health: 999999
 armor: 999999
 hitSize: 1
@@ -40,10 +42,10 @@ range: 90
 abilities: [
 	{
 		"type": "EnergyFieldAbility",
-		"damage": 300,
-		"reload": 20,
+		"damage": 100,
+		"reload": 40,
 		"range": 90,
-		"maxTargets": 64,
+		"maxTargets": 12,
 		"status": "shocked",
 		"displayHeal": false,
 		"statusDuration": 120,
@@ -58,7 +60,7 @@ abilities: [
 		"Y": 0,
 		"orbRadius": 5,
 		"range": 90
-		"reload": 20
+		"reload": 40
 		"particleSize": 2,
 		"particles": 6,
 		"display": true,
@@ -79,7 +81,7 @@ weapons:[
 		"shootSound": "none",
 		"alwaysShooting": true,
 		"shoot": {
-			"firstShotDelay": 61
+			"firstShotDelay": 121
 		},
 		"bullet": {
 			"type": "BulletType",
