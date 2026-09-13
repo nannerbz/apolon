@@ -1,8 +1,8 @@
 name: Skyrmion
 flying: true 
-speed: 3
-accel: 0.0305 
-drag: 0.03 
+speed: 4
+accel: 0.0105 
+drag: 0.01 
 health: 21400 
 hitSize: 42 
 armor: 19 
@@ -52,10 +52,10 @@ weapons: [
 			"type": "BulletType",
 			"damage": 0,
 			"speed": 0.5,
-			"drag": -0.02,
+			"drag": -0.025,
 			"width": 1,
 			"height": 1,
-			"lifetime": 60,
+			"lifetime": 120,
 			"backColor": "a61789",
 			"frontColor": "de8ec9",
 			"trailColor": "a61789",
@@ -124,7 +124,7 @@ weapons: [
 		"range": 0,
 		"alwaysShooting": true,
 		"shootEffect": "none",
-		"minShootVelocity": 3.2,
+		"minShootVelocity": 4.2,
 		"x": 0,
 		"y": 0,
 		"shootY": 0,
@@ -162,8 +162,8 @@ weapons: [
 		"reload": 500,
 		"range": 0,
 		"alwaysShooting": true,
-		"minShootVelocity": 3,
-		"maxShootVelocity": 3.1,
+		"minShootVelocity": 4,
+		"maxShootVelocity": 4.1,
 		"x": 0,
 		"y": 0,
 		"shootY": 0,
