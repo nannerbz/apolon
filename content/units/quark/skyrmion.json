@@ -17,13 +17,14 @@ weapons: [
 	{
 		"name": "skyrmion-prop",
 		"rotate": false,
-		"top": false
-		"controllable": false
-		"reload": 2,
+		"top": false,
+		"controllable": false,
+		"continuous": true,
+		"reload": 0
 		"range": 0,
 		"alwaysShooting": true,
 		"shootEffect": "none",
-		"minShootVelocity": 1.6,
+		"minShootVelocity": 3,
 		"x": 0,
 		"y": 0,
 		"shootY": 0,
@@ -44,7 +45,7 @@ weapons: [
 			{
 				"type": "RegionPart",
 				"suffix": "-lw",
-				"progress": "warmup",
+				"progress": "recoil",
 				"heatProgress": "recoil",
 				"heatColor": "ffffff",
 				"mirror": true,
@@ -65,6 +66,9 @@ weapons: [
 		"alwaysShooting": true,
 		"minShootVelocity": 3,
 		"maxShootVelocity": 3.1,
+		"shoot": {
+			"firstShotDelay": 120,
+		},
 		"x": 0,
 		"y": 0,
 		"shootY": 0,
@@ -74,7 +78,7 @@ weapons: [
 		"shake": 10,
 		"bullet": {
 			"type": "BulletType",
-			"recoil": -18,
+			"recoil": -24,
 			"speed": 1,
 			"lifetime": 1,
 			"smokeEffect": "none",
