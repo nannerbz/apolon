@@ -1,8 +1,11 @@
 name: Skyrmion Grenade
 flying: true
-speed: 4
-accel: 0.0105 
-drag: 0.01 
+aiController: HugAi
+speed: 3
+accel: 0.1 
+rotateSpeed: 0.9
+omniMovement: false
+drag: 0.03 
 trailLength: 10
 trailColor: "cf5bc1"
 health: 999999
@@ -29,6 +32,7 @@ targetable: false
 hittable: false
 engineSize: 0
 itemCapacity: 0
+circleTarget: true
 outlineColor: 222222
 deathExplosionEffect: {
 				"type": "WaveEffect",
