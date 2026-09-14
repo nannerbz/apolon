@@ -15,7 +15,7 @@ trailLength: 40
 trailColor: "cf5bc1"
 targetAir: false
 targetGround: true
-range: 400 
+range: 300 
 abilities: [
 	{
 		"type": "SuppressionFieldAbility",
