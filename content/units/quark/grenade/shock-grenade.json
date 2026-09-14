@@ -1,6 +1,7 @@
 name: Skyrmion Grenade
 flying: true
-speed: 1
+aiController: SuicideAI
+speed: 2
 accel: 0.1 
 rotateSpeed: 1
 omniMovement: false
@@ -45,7 +46,7 @@ deathExplosionEffect: {
 				"strokeTo": 0
 			},
 lowAltitude: true
-range: 90
+range: 180
 abilities: [
 	{
 		"type": "EnergyFieldAbility",
