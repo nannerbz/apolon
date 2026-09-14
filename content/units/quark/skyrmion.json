@@ -1,5 +1,6 @@
 name: Skyrmion
 flying: true 
+unitController: DefenderAI
 speed: 4
 accel: 0.0105 
 drag: 0.01 

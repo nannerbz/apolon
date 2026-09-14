@@ -1,11 +1,12 @@
 name: Skyrmion Grenade
 flying: true
-speed: 6
+speed: 1
 accel: 0.1 
-rotateSpeed: 2
+rotateSpeed: 1
 omniMovement: false
+shadowRegion: "grenade-shadow"
 drag: 0.03 
-trailLength: 10
+trailLength: 50
 trailColor: "cf5bc1"
 health: 999999
 armor: 999999
