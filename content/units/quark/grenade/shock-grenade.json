@@ -1,9 +1,8 @@
 name: Skyrmion Grenade
 flying: true
-aiController: HugAi
-speed: 3
+speed: 6
 accel: 0.1 
-rotateSpeed: 0.9
+rotateSpeed: 2
 omniMovement: false
 drag: 0.03 
 trailLength: 10
