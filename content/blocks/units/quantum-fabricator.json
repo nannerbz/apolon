@@ -70,7 +70,7 @@
 			unit: condor
 			requirements: [
 				carbide/3
-				rad-snow/8
+				rad-snow-item/8
 			]
 			time: 600
 		}
