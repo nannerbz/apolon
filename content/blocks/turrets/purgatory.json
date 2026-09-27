@@ -9,7 +9,7 @@
     "health": 14550,
     "size": 6,
     "extinguish": false,
-    "reload": 2400,
+    "reload": 900,
     "outlineColor": 222222,
     "xRand": 0,
     "squareSprite": false,

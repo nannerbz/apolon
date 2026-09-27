@@ -76,9 +76,9 @@ weapons: [
 			trailColor: ffffff
 			trailLength: 10
 			trailWidth: 4
-			homingDelay: 10
+			homingDelay: 3
 			homingRange: 128
-			homingPower: 0.3
+			homingPower: 0.6
 			shootEffect: shootSmall
 			smokeEffect: shootSmallSmoke
 		}
@@ -94,8 +94,11 @@ weapons: [
         x: 8
         y: 8
         top: true
+		shootCone: 45
 	innacuracy: 0
-	rotate: false
+	rotate: true
+	rotateSpeed: 2
+	rotationLimit: 25
         mirror: true
 	shootY: 0
 	  recoil: 2
@@ -114,9 +117,6 @@ weapons: [
 		trailColor: ffffff
 		trailLength: 10
 		trailWidth: 4
-    		homingDelay: 10
-    		homingRange: 128
-    		homingPower: 0.3
 		shootEffect: shootSmall
 		smokeEffect: shootSmallSmoke
         }

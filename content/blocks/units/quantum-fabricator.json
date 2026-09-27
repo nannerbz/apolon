@@ -1,13 +1,10 @@
 {
 	type: UnitFactory
 	name: Quantum Fabricator
-	health: 2800
+	health: 17500
 	size: 3
 	consumes: {
-		power: 0.2
-		liquids: [
-		chromatic-fluid/0.2
-		]
+		power: 0.01
 	}
 
 	buildVisibility: editorOnly
@@ -16,28 +13,66 @@
 		{
 			unit: vat
 			requirements: [
-				carbide/6
-				rad-snow-item/4
-				chromium-item/4
+				cobalt-item/3
 			]
-			time: 350
+			time: 120
 		}
 		{
 			unit: inflex
 			requirements: [
-				carbide/8
-				metaglass/6
-				neodymium-item/4
+				metaglass/2
 			]
-			time: 300
+			time: 90
 		}
 		{
 			unit: finch
 			requirements: [
-				carbide/4
-				rad-snow-item/8
+				rad-snow-item/1
 			]
-			time: 275
+			time: 75
+		}{
+			unit: vessel
+			requirements: [
+				cobalt-item/5
+			]
+			time: 300
+		}
+		{
+			unit: prisma
+			requirements: [
+				metaglass/3
+			]
+			time: 200
+		}
+		{
+			unit: sparrow
+			requirements: [
+				carbide/1
+				rad-snow-item/3
+			]
+			time: 250
+		}
+		{
+			unit: vitrine
+			requirements: [
+				cobalt-item/10
+			]
+			time: 650
+		}
+		{
+			unit: speculum
+			requirements: [
+				metaglass/5
+			]
+			time: 500
+		}
+		{
+			unit: condor
+			requirements: [
+				carbide/3
+				rad-snow/8
+			]
+			time: 600
 		}
 	]
 	category: units

@@ -72,9 +72,9 @@ weapons: [
 		trailColor: ffffff
 		trailLength: 10
 		trailWidth: 4
-    		homingDelay: 10
+    		homingDelay: 6
     		homingRange: 128
-    		homingPower: 0.3
+    		homingPower: 0.5
 		shootEffect: shootSmall
 		smokeEffect: shootSmallSmoke
         }
