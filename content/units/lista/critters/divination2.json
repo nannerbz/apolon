@@ -97,6 +97,7 @@ weapons: [
 		"rotate": true,
 		"top": true,
 		"mirror": true,
+		"range": 480,
 		"bullet": {
 			"type": "BasicBulletType",
 			"damage": 100,
@@ -127,6 +128,7 @@ weapons: [
 		"shootY": 0,
 		"randX": 0,
 		"mirror": true,
+		"range": 480,
 		"rotate": true,
 		"top": true,
 		"bullet": {

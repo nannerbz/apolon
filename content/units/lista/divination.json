@@ -10,7 +10,7 @@ hitSize: 60
 armor: 12
 itemCapacity: 0
 outlineColor: 222222
-range: 360
+range: 250
 lowAltitude: true
 rotateShoot: true
 trailLength: 96
@@ -37,12 +37,13 @@ weapons: [
 		"reload": 1800,
 		"x": 0,
 		"y": 0,
-		"shootY": 24
-		"recoil": 16
+		"shootY": 24,
+		"recoil": 16,
 		"shootStatus": "slown",
 		"shootStatusDuration": 180,
 		"rotate": false,
 		"mirror": false,
+		"range": 252,
 		"shootSound": "shootTank",
 		"bullet": {
 			"type": "ArtilleryBulletType",
@@ -433,7 +434,7 @@ weapons: [
 					}
 				]
 			}
-		},
+		}
 	}
 	{
 		"type": "RepairBeamWeapon",

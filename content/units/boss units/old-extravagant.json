@@ -1,5 +1,5 @@
 type: legs
-name: Extravagant
+name: Extravagant Junior
 description: Boss unit. Slow yet bulky. Fires unit deploy missiles that lay units of that type onto where they land.
 speed: 0.1
 health: 450000
