@@ -2,7 +2,7 @@ type: legs
 name: Extravagant
 description: Boss unit. Slow yet bulky. Fires unit deploy missiles that lay units of that type onto where they land.
 speed: 0.3
-health: 144750
+health: 1447500
 armor: 5
 drag: 0.3
 rotateSpeed: 0.9
